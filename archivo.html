@@ -1,0 +1,193 @@
+<!-- =========================
+  archivo.html – Archivo (por mes)
+========================= -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archivo</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      max-width: 900px;
+      margin: 40px auto 0 auto;
+      padding: 0 20px;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      font-size: 0.9rem;
+    }
+    nav a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    nav a.active,
+    nav a:hover {
+      border-bottom: 1px solid #222;
+    }
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    .filters {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      font-size: 0.9rem;
+    }
+    select, input {
+      font-family: inherit;
+      font-size: 0.9rem;
+      padding: 6px 8px;
+      border: 1px solid #222;
+      background: #fafafa;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 650px;
+    }
+    li {
+      margin-bottom: 16px;
+    }
+    a.entry {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid #222;
+    }
+    #noEntry {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Poema du jour</a>
+      <a href="index.html?a=1">Análisis du jour</a>
+      <a href="archivo.html" class="active" >Archivo</a>
+      <a href="https://instagram.com/quemalpoema" target="_blank">Instagram</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Filtros -->
+    <div class="filters">
+      <select id="monthFilter">
+        <option value="">Mes actual</option>
+        <option value="todo">De todos los tiempos</option>
+        <option value="2026-01">Enero 2026</option>
+        <option value="2025-12">Diciembre 2025</option>
+      </select>
+
+      <select id="authorFilter">
+        <option value="">Todos los autores</option>
+        <option value="Soledad Castresana">Soledad Castresana</option>
+        <option value="Raúl Gómez Jattin">Raúl Gómez Jattin</option>
+        <option value="César Vallego">César Vallego</option>
+        <option value="Porfirio Barba-Jacob">Porfirio Barba-Jacob</option>
+      </select>
+
+      <script>
+        const authorSelect = document.getElementById('authorFilter');
+
+        const options = Array.from(authorSelect.options)
+          .slice(1) // excluye "Autor"
+          .sort((a, b) => a.text.localeCompare(b.text, 'es'));
+
+        authorSelect.length = 1; // conserva la primera opción
+
+        options.forEach(option => authorSelect.add(option));
+      </script>
+
+      <input type="text" id="keywordFilter" placeholder="Palabras clave" />
+    </div>
+
+    <!-- Lista de escritos -->
+    <ul id="entries">
+      <li data-month="2025-12" data-author="Soledad Castresana" data-keywords="luz silencio">
+        <a class="entry" href="2025-12-15.html">15 de deciembre de 2025</a>
+      </li>
+      <li data-month="2025-12" data-author="Raúl Gómez Jattin" data-keywords="noche ciudad">
+        <a class="entry" href="2025-12-14.html">14 de deciembre de 2025</a>
+      </li>
+      <li data-month="2026-01" data-author="César Vallego" data-keywords="invierno memoria">
+        <a class="entry" href="2026-01-31.html">01 de enero de 2026</a>
+      </li>
+    </ul>
+    <p id="noEntry" style="display:none;">
+      No se han encontrado escritos.
+    </p>
+  </main>
+
+  <script>
+    const monthFilter = document.getElementById('monthFilter'); //o sea mes o un mes en particular
+    const authorFilter = document.getElementById('authorFilter'); //
+    const keywordFilter = document.getElementById('keywordFilter');
+    const entries = document.querySelectorAll('#entries li[data-month]');
+    const noResultsFound = document.getElementById("noEntry");
+
+    function getCurrentMonth() {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      return `${year}-${month}`;
+    }
+
+    // Estado inicial: solo mes actual
+    const currentMonth = getCurrentMonth();
+
+    function filterEntries() {
+      const month = monthFilter.value;
+      const author = authorFilter.value;
+      const keyword = keywordFilter.value.toLowerCase();
+      let visibleCount = 0;
+
+      entries.forEach(entry => {
+        const matchMonth =
+          month === "todo" ||
+          (!month && entry.dataset.month === currentMonth) ||
+          entry.dataset.month === month;
+
+        const matchAuthor = !author || entry.dataset.author === author;
+        const matchKeyword = !keyword || entry.dataset.keywords.includes(keyword);
+
+        const visible = matchMonth && matchAuthor && matchKeyword;
+        entry.style.display = visible ? 'block' : 'none';
+
+        if (visible) visibleCount++;
+      });
+
+      noResultsFound.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    filterEntries(); //para cuando la página se carga
+    monthFilter.addEventListener('change', filterEntries);
+    authorFilter.addEventListener('change', filterEntries);
+    keywordFilter.addEventListener('input', filterEntries);
+  </script>
+</body>
+</html>

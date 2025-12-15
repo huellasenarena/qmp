@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- =========================
+  index.html – Página de inicio
+========================= -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poema du jour</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      max-width: 900px;
+      margin: 40px auto 0 auto;
+      padding: 0 20px;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      font-size: 0.9rem;
+    }
+    nav a {
+      cursor: pointer;
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    nav a.active,
+    nav a:hover {
+      border-bottom: 1px solid #222;
+    }
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+    .content {
+      max-width: 650px; /* no centrado absoluto */
+    }
+    .poem {
+      white-space: pre-line;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .analysis {
+      display: none;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a id="nav-poem" class="active" onclick="showPoem()">Poema du jour</a>
+      <a id="nav-analysis" onclick="showAnalysis()">Análisis du jour</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="https://instagram.com/quemalpoema" target="_blank">Instagram</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <h1 id="poemHeader">Poema du jour</h1>
+
+      <div class="poem" id="poem">
+        Aquí va tu poema del día.
+        Línea por línea,
+        con respiración.
+      </div>
+
+      <h1 id="analysisHeader">Análisis du jour</h1>
+      <div class="analysis" id="analysis">
+        <p>
+          Aquí va tu análisis del poema de hoy. El poema desaparece
+          para dejar espacio a la reflexión.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function showPoem() {
+      document.getElementById('poemHeader').style.display = 'block';
+      document.getElementById('poem').style.display = 'block';
+      document.getElementById('analysisHeader').style.display = 'none';
+      document.getElementById('analysis').style.display = 'none';
+      document.getElementById('nav-poem').classList.add('active');
+      document.getElementById('nav-analysis').classList.remove('active');
+    }
+
+    function showAnalysis() {
+      document.getElementById('poemHeader').style.display = 'none';
+      document.getElementById('poem').style.display = 'none';
+      document.getElementById('analysisHeader').style.display = 'block';
+      document.getElementById('analysis').style.display = 'block';
+      document.getElementById('nav-analysis').classList.add('active');
+      document.getElementById('nav-poem').classList.remove('active');
+    }
+
+    //if we go from the archive to the analysis, we want
+    //to see that and not the poem
+    const urlParams = new URLSearchParams(window.location.search);
+    const analysisFlag = urlParams.get('a');
+    if (analysisFlag) {
+        showAnalysis();
+    } else {
+      showPoem(); 
+    }
+  </script>
+</body>
+</html>
