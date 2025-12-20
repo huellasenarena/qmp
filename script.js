@@ -8,6 +8,15 @@ function escapeHtml(s) {
   .replaceAll('>', '&gt;');
 }
 
+function applyInlineFormatting(text) {
+  return text
+    // negrita: **texto**
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    // cursiva: *texto*
+    .replace(/\*(.+?)\*/g, '<em>$1</em>');
+}
+
+
 function textToParagraphs(text) {
   const paragraphs = (text || '')
   .trim()
@@ -18,8 +27,8 @@ function textToParagraphs(text) {
   return paragraphs
   .map((p, i) =>
     i === 0
-    ? `<p class="analysis-lead">${escapeHtml(p)}</p>`
-    : `<p>${escapeHtml(p)}</p>`
+    ? `<p class="analysis-lead">${applyInlineFormatting(escapeHtml(p))}</p>`
+    : `<p>${applyInlineFormatting(escapeHtml(p))}</p>`
     )
   .join('');
 }
