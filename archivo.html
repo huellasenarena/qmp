@@ -38,16 +38,12 @@
     }
 
     #noEntry {
-      min-height: 0em;     /* menos alto */
-      margin: 6px 0 8px 0;   /* poco espacio, controlado */
+      margin: 6px 0 10px 0;
       font-size: 0.9rem;
       color: #666;
-      visibility: hidden;
+      display: none; /* clave */
     }
 
-    #noEntry.show {
-      visibility: visible;
-    }
 
 
 
@@ -234,9 +230,8 @@
           .forEach(li => entriesList.appendChild(li));
         }
 
-
-
-        noResultsFound.classList.toggle('show', visibleCount === 0);
+        const hasKeyword = terms.length > 0;
+        noResultsFound.style.display = (hasKeyword && visibleCount === 0) ? 'block' : 'none';
       }
 
     //to normalize, avoid accents etc...
