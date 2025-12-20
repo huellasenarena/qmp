@@ -51,17 +51,25 @@ h1 {
 #poem {
   margin-top: 48px;
   max-width: 480px;
-  padding-left: 28px;
+  padding: 28px 0;         /* <- nuevo: arriba/abajo */
+  padding-left: 28px;      /* mantienes tu “cuaderno” a la derecha */
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.04),
+    transparent 50%
+  );
 }
 
 #poem pre {
   font-size: 1.05rem;
+  border-left: 1px solid #ccc;
+  padding-left: 18px;
 }
 
 .poem {
   line-height: 1.6;
   font-size: 1rem;
-  padding-left: 24px;
+  padding-left: 0px;
 }
 
 .poem-title{
@@ -83,28 +91,7 @@ h1 {
   letter-spacing: 0.03em;
 }
 
-#poem::after {
-  content: "";
-  display: block;
-  height: 32px;
-}
-
-/*
-#poem pre {
-  border-left: 1px solid #ccc;
-  padding-left: 18px;
-}*/
-
-
-#poem {
-  background: linear-gradient(
-    to right,
-    rgba(0,0,0,0.03),
-    transparent 60%
-  );
-}
-
-pre.analysis-poem{
+pre.analysis-poem {
   font-family: inherit;
   font-size: 0.95rem;
   line-height: 1.6;
