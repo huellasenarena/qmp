@@ -56,40 +56,32 @@ function parseEntry(text) {
   });
 
   return {
-    poem: (sections['POEMA'] || []).join('\n').trim(),
+    poem: (sections['POEMA'] || []).join('\n').replace(/\s+$/,''),
     citedPoem: (sections['POEMA_CITADO'] || []).join('\n').trim(),
     analysisText: (sections['TEXTO'] || []).join('\n').trim()
   };
 }
 
 function renderPoemWithOptionalTitle(text) {
-  const lines = (text || '').split('\n');
+  if (!text) return '';
 
-  // Si 1ª línea tiene texto y 2ª está vacía → asumimos título
-  if (lines.length > 1 && lines[0].trim() && lines[1].trim() === '') {
-    const title = lines[0].trim();
-    const body = lines.slice(2).join('\n').trim();
+  const lines = text.split('\n');
+
+  // Busca la primera línea no vacía
+  let i = 0;
+  while (i < lines.length && lines[i].trim() === '') i++;
+
+  // Si hay una línea de texto y la siguiente línea es vacía => título
+  if (i < lines.length - 1 && lines[i].trim() && lines[i + 1].trim() === '') {
+    const title = lines[i].trim();
+    const body = lines.slice(i + 2).join('\n').replace(/\s+$/,''); // conserva formato del poema
+
     return `<div class="poem-title">${escapeHtml(title)}</div><pre>${escapeHtml(body)}</pre>`;
   }
 
-  return `<pre>${escapeHtml((text || '').trim())}</pre>`;
+  // Sin título
+  return `<pre>${escapeHtml(text.replace(/\s+$/,''))}</pre>`;
 }
-
-function buildCitedMeta(entry) {
-  const a = entry?.analysis || {};
-
-  const title = a.poem_title || '';
-  const sourceParts = [];
-
-  if (a.poet) sourceParts.push(a.poet);
-  if (a.book_title) sourceParts.push(a.book_title);
-
-  return {
-    title,
-    source: sourceParts.join(' · ')
-  };
-}
-
 
 function getTodayISO() {
   const d = new Date();
@@ -170,14 +162,14 @@ function setCitedMeta(chosen) {
   const titleEl = document.querySelector('.analysis-cited-title');
   const sourceEl = document.querySelector('.analysis-cited-source');
 
-  // Si esa página no tiene este bloque, no hacemos nada
+  // Si la página no tiene ese bloque, no hacemos nada
   if (!wrap || !titleEl || !sourceEl) return;
 
   const title = (a.poem_title || '').trim();
   const poet  = (a.poet || '').trim();
   const book  = (a.book_title || '').trim();
 
-  // Si no hay nada, esconder
+  // Si no hay nada, ocultamos el bloque
   if (!title && !poet && !book) {
     wrap.style.display = 'none';
     titleEl.textContent = '';
@@ -191,11 +183,12 @@ function setCitedMeta(chosen) {
   titleEl.innerHTML = title ? `<strong>${escapeHtml(title)}</strong>` : '';
   titleEl.style.display = title ? 'block' : 'none';
 
-  // Línea 2: autor / poemario
+  // Línea 2: autor · poemario (solo lo que exista)
   const parts = [poet, book].filter(Boolean);
   sourceEl.textContent = parts.join(' · ');
   sourceEl.style.display = parts.length ? 'block' : 'none';
 }
+
 
 async function loadTodayEntry() {
   const index = await fetch('archivo.json').then(r => r.json());
@@ -251,44 +244,55 @@ async function loadPastEntry() {
   setCitedMeta(chosen);
 }
 
+// =========================
+//  Tabs: mantener URL ?a=1 sin recargar
+// =========================
+function wireTabs() {
+  const { poemTab, analysisTab } = getTabIds();
+
+  const poemLink = document.getElementById(poemTab);
+  const analysisLink = document.getElementById(analysisTab);
+
+  if (poemLink) {
+    poemLink.addEventListener('click', (e) => {
+      // index.html: es <a href="index.html"> (recarga). Aquí lo evitamos:
+      e.preventDefault();
+      showPoem();
+      setURLForPoem();
+    });
+  }
+
+  if (analysisLink) {
+    analysisLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      showAnalysis();
+      setURLForAnalysis();
+    });
+  }
+}
 
 // =========================
-//  Init (cuando el DOM existe)
+//  Boot
 // =========================
 document.addEventListener('DOMContentLoaded', () => {
-  // Clicks de pestañas (si existen)
-  const poemTabEl = document.getElementById('nav-poem') || document.getElementById('past-poem');
-  const analysisTabEl = document.getElementById('nav-analysis') || document.getElementById('past-analysis');
-
-  if (poemTabEl) {
-    poemTabEl.addEventListener('click', (e) => {
-      e.preventDefault();
-      setURLForPoem();
-      showPoem();
-    });
-  }
-
-  if (analysisTabEl) {
-    analysisTabEl.addEventListener('click', (e) => {
-      e.preventDefault();
-      setURLForAnalysis();
-      showAnalysis();
-    });
-  }
-
-  window.addEventListener('popstate', applyViewFromURL);
-
-  // Cargar contenido según la página
-  const isPastPage = document.body.dataset.page === 'passe';
-
-  const load = isPastPage ? loadPastEntry : loadTodayEntry;
-
-  load().catch(err => {
-    console.error(err);
-    const poemEl = document.getElementById('poem');
-    if (poemEl) poemEl.innerHTML = '<pre>Error cargando el texto.</pre>';
-  });
-
-  // Aplicar vista inicial según ?a=1
+  // 1) aplicar vista (poema vs análisis) desde la URL (?a=1)
   applyViewFromURL();
+
+  // 2) enganchar tabs para que cambien sin recargar
+  wireTabs();
+
+  // 3) cargar contenido según la página
+  const page = document.body?.dataset?.page;
+
+  if (page === 'passe') {
+    loadPastEntry().catch(err => {
+      console.error(err);
+      document.getElementById('poem').innerHTML = '<pre>Error cargando el texto.</pre>';
+    });
+  } else if (page === 'index') {
+    loadTodayEntry().catch(err => {
+      console.error(err);
+      document.getElementById('poem').innerHTML = '<pre>Error cargando el texto.</pre>';
+    });
+  }
 });

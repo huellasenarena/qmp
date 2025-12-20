@@ -47,11 +47,29 @@ h1 {
 .content {
   max-width: 650px; /* no centrado absoluto */
 }
+
+#poem {
+  margin-top: 48px;
+  max-width: 480px;
+  padding-left: 24px;
+}
+
+#poem pre {
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
 .poem {
-  white-space: pre-line;
   line-height: 1.6;
   font-size: 1rem;
   padding-left: 28px;
+}
+
+.poem-title{
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 14px 0;
+  letter-spacing: 0.04em;
 }
 
 .poem pre {
@@ -62,13 +80,16 @@ h1 {
   margin: 0;
 }
 
-pre.analysis-poem {
-  padding-left: 18px;
+pre.analysis-poem{
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
   border-left: 2px solid #ddd;
   margin: 10px 0 36px 0;
-  color: #444;
+  padding-left: 18px;
+  color: #555;
 }
-
 
 .analysis {
   display: none;
@@ -92,20 +113,6 @@ pre.analysis-poem {
 
 .analysis-cited-source {
   font-size: 0.85rem;
-  color: #555;
-}
-
-
-.analysis-poem {
-  padding-left: 22px;
-}
-
-pre.analysis-poem{
-  font-family: inherit;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  white-space: pre-wrap;
-  margin: 0 0 36px 0;
   color: #555;
 }
 
