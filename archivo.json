@@ -1,4 +1,47 @@
 [
+    {
+  "date": "2025-12-19",
+  "month": "2025-12",
+  "file": "textos/2025-12-19.txt",
+  "analysis": {
+    "poet": "Alfonsina Storni",
+    "poem_title": "Hombre pequeñito",
+    "book_title": ""
+    },
+    "keywords": [
+
+      { "word": "autorretrato", "weight": 3 },
+      { "word": "pintar", "weight": 3 },
+      { "word": "ignorar", "weight": 3 },
+
+  { "word": "incomprension", "weight": 3 },
+  { "word": "libertad", "weight": 3 },
+  { "word": "jaula", "weight": 3 },
+  { "word": "relacion", "weight": 3 },
+  { "word": "pequenito", "weight": 3 },
+
+  { "word": "metafora", "weight": 2 },
+  { "word": "encierro", "weight": 2 },
+  { "word": "poder", "weight": 2 },
+  { "word": "epistemologia", "weight": 2 },
+  { "word": "incompatibilidad", "weight": 2 },
+  { "word": "lenguaje afectivo", "weight": 2 },
+  { "word": "desconexion emocional", "weight": 2 },
+  { "word": "reconocimiento", "weight": 2 },
+  { "word": "autonomia", "weight": 2 },
+
+  { "word": "canario", "weight": 1 },
+  { "word": "amor", "weight": 1 },
+  { "word": "ruptura", "weight": 1 },
+  { "word": "tiempo pasado", "weight": 1 },
+  { "word": "dialogo", "weight": 1 },
+  { "word": "voz femenina", "weight": 1 },
+  { "word": "no violencia", "weight": 1 },
+  { "word": "comprension", "weight": 1 },
+  { "word": "necesidades emocionales", "weight": 1 }
+]
+
+  },
   {
   "date": "2025-12-18",
   "month": "2025-12",
