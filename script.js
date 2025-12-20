@@ -75,14 +75,21 @@ function renderPoemWithOptionalTitle(text) {
   return `<pre>${escapeHtml((text || '').trim())}</pre>`;
 }
 
-function buildCitedMeta(chosen) {
-  const a = chosen?.analysis || {};
-  const parts = [];
-  if (a.poet) parts.push(a.poet);
-  if (a.poem_title) parts.push(`“${a.poem_title}”`);
-  if (a.book_title) parts.push(a.book_title);
-  return parts.join(' · ');
+function buildCitedMeta(entry) {
+  const a = entry?.analysis || {};
+
+  const title = a.poem_title || '';
+  const sourceParts = [];
+
+  if (a.poet) sourceParts.push(a.poet);
+  if (a.book_title) sourceParts.push(a.book_title);
+
+  return {
+    title,
+    source: sourceParts.join(' · ')
+  };
 }
+
 
 function getTodayISO() {
   const d = new Date();
@@ -155,6 +162,41 @@ function setURLForAnalysis() {
 // =========================
 //  Carga de contenido
 // =========================
+
+function setCitedMeta(chosen) {
+  const a = chosen?.analysis || {};
+
+  const wrap = document.querySelector('.analysis-cited-meta');
+  const titleEl = document.querySelector('.analysis-cited-title');
+  const sourceEl = document.querySelector('.analysis-cited-source');
+
+  // Si esa página no tiene este bloque, no hacemos nada
+  if (!wrap || !titleEl || !sourceEl) return;
+
+  const title = (a.poem_title || '').trim();
+  const poet  = (a.poet || '').trim();
+  const book  = (a.book_title || '').trim();
+
+  // Si no hay nada, esconder
+  if (!title && !poet && !book) {
+    wrap.style.display = 'none';
+    titleEl.textContent = '';
+    sourceEl.textContent = '';
+    return;
+  }
+
+  wrap.style.display = 'block';
+
+  // Línea 1: título en negrita (sin comillas)
+  titleEl.innerHTML = title ? `<strong>${escapeHtml(title)}</strong>` : '';
+  titleEl.style.display = title ? 'block' : 'none';
+
+  // Línea 2: autor / poemario
+  const parts = [poet, book].filter(Boolean);
+  sourceEl.textContent = parts.join(' / ');
+  sourceEl.style.display = parts.length ? 'block' : 'none';
+}
+
 async function loadTodayEntry() {
   const index = await fetch('archivo.json').then(r => r.json());
 
@@ -171,20 +213,13 @@ async function loadTodayEntry() {
   const parsed = parseEntry(raw);
 
   document.getElementById('poem').innerHTML = renderPoemWithOptionalTitle(parsed.poem);
-
   document.querySelector('.analysis-poem').textContent = parsed.citedPoem;
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
-  const meta = buildCitedMeta(chosen);
-  const metaEl = document.querySelector('.analysis-meta');
-  if (meta) {
-    metaEl.textContent = meta;
-    metaEl.style.display = 'block';
-  } else {
-    metaEl.textContent = '';
-    metaEl.style.display = 'none';
-  }
+  // Meta del poema citado (2 líneas)
+  setCitedMeta(chosen);
 }
+
 
 async function loadPastEntry() {
   const params = new URLSearchParams(window.location.search);
@@ -210,20 +245,12 @@ async function loadPastEntry() {
   const parsed = parseEntry(raw);
 
   document.getElementById('poem').innerHTML = renderPoemWithOptionalTitle(parsed.poem);
-
   document.querySelector('.analysis-poem').textContent = parsed.citedPoem;
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
-  const meta = buildCitedMeta(chosen);
-  const metaEl = document.querySelector('.analysis-meta');
-  if (meta) {
-    metaEl.textContent = meta;
-    metaEl.style.display = 'block';
-  } else {
-    metaEl.textContent = '';
-    metaEl.style.display = 'none';
-  }
+  setCitedMeta(chosen);
 }
+
 
 // =========================
 //  Init (cuando el DOM existe)

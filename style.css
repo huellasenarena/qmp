@@ -73,11 +73,20 @@ h1 {
   margin-bottom: 4px;
 }
 
-.analysis-meta {
+.analysis-cited-meta {
+  margin-bottom: 16px;
+}
+
+.analysis-cited-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.analysis-cited-source {
   font-size: 0.85rem;
   color: #555;
-  margin-bottom: 20px;
 }
+
 
 .analysis-poem {
   padding-left: 22px;
