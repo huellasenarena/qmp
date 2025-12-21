@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-12-20",
+    "month": "2025-12",
+    "file": "textos/2025-12-20.txt",
+    "my_poem_title":"bote de byte",
+    "analysis": {
+      "poet": "Gustavo Adolfo Bécquer",
+      "poem_title": "Rima XXIII",
+      "book_title": ""
+    },
+    "keywords": [
+      { "word": "amor", "weight": 3 },
+      { "word": "transaccion", "weight": 3 },
+      { "word": "deseo", "weight": 3 },
+      { "word": "valor", "weight": 3 },
+      { "word": "afecto", "weight": 3 },
+
+      { "word": "intercambio", "weight": 2 },
+      { "word": "materialidad", "weight": 2 },
+      { "word": "expectativas irreales", "weight": 2 },
+      { "word": "presion emocional", "weight": 2 },
+      { "word": "negociacion", "weight": 2 },
+      { "word": "ternura", "weight": 2 },
+      { "word": "romanticismo", "weight": 2 },
+      { "word": "desequilibrio", "weight": 2 },
+      { "word": "autoestima", "weight": 2 },
+
+      { "word": "beso", "weight": 1 },
+      { "word": "mirada", "weight": 1 },
+      { "word": "sonrisa", "weight": 1 },
+      { "word": "precio", "weight": 1 },
+      { "word": "sacrificio", "weight": 1 },
+      { "word": "idealizacion", "weight": 1 },
+      { "word": "inseguridad", "weight": 1 },
+      { "word": "amor romantico", "weight": 1 }
+    ]
+  },
+  {
     "date": "2025-12-19",
     "month": "2025-12",
     "file": "textos/2025-12-19.txt",
