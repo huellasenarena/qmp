@@ -1,5 +1,48 @@
 [
   {
+    "date": "2025-12-23",
+    "month": "2025-12",
+    "file": "textos/2025-12-23.txt",
+    "my_poem_title":"",
+    "my_poem_snippet":"unámonos por amor",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Pez de la noche",
+      "poem_snippet": "",
+      "book_title": ""
+    },
+    "keywords": [
+      { "word": "unir", "weight": 2 },
+      { "word": "cámaras", "weight": 3 },
+      { "word": "genitales", "weight": 3 },
+
+      { "word": "autoalienacion", "weight": 3 },
+      { "word": "resistencia", "weight": 3 },
+      { "word": "identidad", "weight": 3 },
+      { "word": "margen", "weight": 3 },
+      { "word": "subsistencia", "weight": 3 },
+
+      { "word": "muerte", "weight": 2 },
+      { "word": "renuncia", "weight": 2 },
+      { "word": "intensidad emocional", "weight": 2 },
+      { "word": "sufrimiento", "weight": 2 },
+      { "word": "optimismo", "weight": 2 },
+      { "word": "nucleo del yo", "weight": 2 },
+      { "word": "permanencia", "weight": 2 },
+      { "word": "soledad", "weight": 2 },
+
+      { "word": "pez", "weight": 1 },
+      { "word": "noche", "weight": 1 },
+      { "word": "sueno", "weight": 1 },
+      { "word": "ola", "weight": 1 },
+      { "word": "pequenez", "weight": 1 },
+      { "word": "oscuridad", "weight": 1 },
+      { "word": "agua", "weight": 1 },
+      { "word": "interioridad", "weight": 1 }
+    ]
+
+  },
+  {
     "date": "2025-12-22",
     "month": "2025-12",
     "file": "textos/2025-12-22.txt",
