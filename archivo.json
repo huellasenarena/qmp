@@ -1,5 +1,45 @@
 [
   {
+    "date": "2025-12-24",
+    "month": "2025-12",
+    "file": "textos/2025-12-24.txt",
+    "my_poem_title":"crecer",
+    "my_poem_snippet":"",
+    "analysis": {
+      "poet": "Porfirio Barba-Jacob",
+      "poem_title": "Segunda canción sin motivo",
+      "poem_snippet": "",
+      "book_title": ""
+    },
+    "keywords": [
+      { "word": "incertidumbre", "weight": 3 },
+      { "word": "frontera difusa", "weight": 3 },
+      { "word": "deseo", "weight": 3 },
+      { "word": "incognoscible", "weight": 3 },
+      { "word": "ilusion", "weight": 3 },
+
+      { "word": "amor no correspondido", "weight": 2 },
+      { "word": "silencio", "weight": 2 },
+      { "word": "duda", "weight": 2 },
+      { "word": "fusion", "weight": 2 },
+      { "word": "espera", "weight": 2 },
+      { "word": "rechazo", "weight": 2 },
+      { "word": "limite", "weight": 2 },
+      { "word": "nebulosidad", "weight": 2 },
+      { "word": "pasividad", "weight": 2 },
+
+      { "word": "tarde", "weight": 1 },
+      { "word": "brumas", "weight": 1 },
+      { "word": "corazon", "weight": 1 },
+      { "word": "pregunta", "weight": 1 },
+      { "word": "esperanza", "weight": 1 },
+      { "word": "renuncia", "weight": 1 },
+      { "word": "conocimiento", "weight": 1 },
+      { "word": "camino", "weight": 1 }
+    ]
+
+  },
+  {
     "date": "2025-12-23",
     "month": "2025-12",
     "file": "textos/2025-12-23.txt",
