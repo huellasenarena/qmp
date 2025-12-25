@@ -1,7 +1,5 @@
 # POEMA
 
-escribir
-
 puede ser rojo azul violeta
 melancólico reacio perplejo
 cantado gritado susurrado

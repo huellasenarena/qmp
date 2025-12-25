@@ -189,6 +189,83 @@ function setCitedMeta(chosen) {
   sourceEl.style.display = parts.length ? 'block' : 'none';
 }
 
+function measureTextPx(text, referenceEl) {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+
+  const cs = window.getComputedStyle(referenceEl);
+  // font shorthand suficiente para measureText
+  ctx.font = `${cs.fontStyle} ${cs.fontVariant} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+
+  return ctx.measureText(text).width;
+}
+
+function renderPoemWithAnchorIndents(poemText, preEl) {
+  const lines = (poemText || '').split('\n');
+
+  // Medir con la misma fuente que el <pre>
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const cs = window.getComputedStyle(preEl);
+
+  ctx.font = `${cs.fontStyle} ${cs.fontVariant} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+
+  let anchorPx = null;
+
+  return lines.map((line) => {
+    const pipePos = line.indexOf('|');
+    if (pipePos === -1) return escapeHtml(line);
+
+    // ¿Es continuación? (líneas que empiezan con |, con o sin espacios antes)
+    const isContinuation = /^\s*\|/.test(line);
+
+    const before = line.slice(0, pipePos);     // antes del |
+    const after  = line.slice(pipePos + 1);    // después del |
+
+    if (!isContinuation) {
+      // Línea ancla: "por |el dinero"
+      // Guardamos el ancho de "por " (todo lo que haya antes del |)
+      anchorPx = ctx.measureText(before).width;
+
+      // Render normal quitando el |
+      return escapeHtml(before + after);
+    }
+
+    // Línea continuación: "| el cansancio"
+    // Quitamos espacios inmediatamente después del | para que el indent sea el único desplazamiento
+    const content = after.replace(/^\s+/, '');
+
+    // Si por alguna razón no hubo ancla antes, no indentes
+    const pad = anchorPx ?? 0;
+
+    return `<span class="indent" style="padding-left:${pad}px">${escapeHtml(content)}</span>`;
+  }).join('\n');
+}
+
+
+
+
+function renderPoemWithTitleFromJson(poemText, titleFromJson) {
+  const body = (poemText || '').replace(/\s+$/, '');
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'poem';
+
+  if (titleFromJson) {
+    const t = document.createElement('div');
+    t.className = 'poem-title';
+    t.textContent = titleFromJson;
+    wrapper.appendChild(t);
+  }
+
+  const pre = document.createElement('pre');
+  pre.dataset.raw = body;          // guardamos el texto original (con |)
+  pre.textContent = body.replaceAll('|', ''); // algo visible “temporal”
+  wrapper.appendChild(pre);
+
+  return wrapper;
+}
+
 
 async function loadTodayEntry() {
   const index = await fetch('archivo.json').then(r => r.json());
@@ -205,7 +282,18 @@ async function loadTodayEntry() {
   const raw = await fetch(chosen.file).then(r => r.text());
   const parsed = parseEntry(raw);
 
-  document.getElementById('poem').innerHTML = renderPoemWithOptionalTitle(parsed.poem);
+  const myTitle = (chosen.my_poem_title || '').trim(); // del JSON
+  const host = document.getElementById('poem');
+  host.innerHTML = '';
+
+  const title = (chosen.my_poem_title || '').trim();
+  const poemEl = renderPoemWithTitleFromJson(parsed.poem, title);
+  host.appendChild(poemEl);
+
+// Ahora que el <pre> ya está en el DOM, medimos con la fuente real:
+  const pre = poemEl.querySelector('pre');
+  pre.innerHTML = renderPoemWithAnchorIndents(pre.dataset.raw, pre);
+
   document.querySelector('.analysis-poem').textContent = parsed.citedPoem;
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
@@ -237,7 +325,17 @@ async function loadPastEntry() {
   const raw = await fetch(chosen.file).then(r => r.text());
   const parsed = parseEntry(raw);
 
-  document.getElementById('poem').innerHTML = renderPoemWithOptionalTitle(parsed.poem);
+  const host = document.getElementById('poem');
+  host.innerHTML = '';
+
+  const title = (chosen.my_poem_title || '').trim();
+  const poemEl = renderPoemWithTitleFromJson(parsed.poem, title);
+  host.appendChild(poemEl);
+
+// Ahora que el <pre> ya está en el DOM, medimos con la fuente real:
+  const pre = poemEl.querySelector('pre');
+  pre.innerHTML = renderPoemWithAnchorIndents(pre.dataset.raw, pre);
+
   document.querySelector('.analysis-poem').textContent = parsed.citedPoem;
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
