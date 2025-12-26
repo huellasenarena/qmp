@@ -1,0 +1,5 @@
+python3 scripts/make_entry_no_keywords.py textos/2025-12-25.txt
+
+python3 scripts/merge_keywords_and_append.py \
+  scripts/pending_2025-12-25.json \
+  scripts/pending_keywords.txt
