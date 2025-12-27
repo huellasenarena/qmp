@@ -1,26 +1,30 @@
 {
-  "date": "2025-12-26",
+  "date": "2025-12-27",
   "month": "2025-12",
-  "file": "textos/2025-12-26.txt",
-  "my_poem_title": "hacia la playa",
+  "file": "textos/2025-12-27.txt",
+  "my_poem_title": "seguir pensando",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Cesárea",
+    "poem_title": "Caos y corte",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "sensibilidad",
+      "word": "norma",
       "weight": 3
     },
     {
-      "word": "poder",
+      "word": "violencia legitimada",
       "weight": 3
     },
     {
-      "word": "control",
+      "word": "corte",
+      "weight": 3
+    },
+    {
+      "word": "danio",
       "weight": 3
     },
     {
@@ -28,79 +32,71 @@
       "weight": 3
     },
     {
-      "word": "intervencion",
-      "weight": 3
-    },
-    {
-      "word": "medicina",
+      "word": "obediencia",
       "weight": 2
     },
     {
-      "word": "cesarea",
+      "word": "control",
       "weight": 2
     },
     {
-      "word": "quirurgico",
+      "word": "protocolo",
       "weight": 2
     },
     {
-      "word": "autoridad",
+      "word": "precision",
       "weight": 2
     },
     {
-      "word": "desigualdad",
+      "word": "deseo de norma",
       "weight": 2
     },
     {
-      "word": "anestesia",
+      "word": "evitacion del caos",
       "weight": 2
     },
     {
-      "word": "sistema",
+      "word": "disciplinamiento",
       "weight": 2
     },
     {
-      "word": "disrupcion",
+      "word": "lenguaje normativo",
       "weight": 2
     },
     {
-      "word": "utilidad",
-      "weight": 2
-    },
-    {
-      "word": "dolor",
+      "word": "cicatriz",
       "weight": 1
     },
     {
-      "word": "conciencia",
+      "word": "mascara",
       "weight": 1
     },
     {
-      "word": "tecnica",
+      "word": "papel",
       "weight": 1
     },
     {
-      "word": "procedimiento",
+      "word": "rostro",
       "weight": 1
     },
     {
-      "word": "paciente",
+      "word": "operacion",
       "weight": 1
     },
     {
-      "word": "medicos",
+      "word": "tejido",
       "weight": 1
     },
     {
-      "word": "vulnerabilidad",
+      "word": "herida",
       "weight": 1
     },
     {
-      "word": "poesia",
+      "word": "desgarro",
       "weight": 1
     },
     {
-      "word": "camino",
+      "word": "transparencia",
       "weight": 1
     }
   ]
