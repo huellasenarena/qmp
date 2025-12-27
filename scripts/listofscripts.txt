@@ -2,6 +2,13 @@ python3 scripts/make_pending_entry.py textos/2025-12-25.txt
 
 python3 scripts/merge_pending.py
 
-q 2025-12-25
+
+Run first (to see that the correct files were created)
+q --dry-run 2025-12-25
+
+q 2025-12-26
+
+
+
 
 
