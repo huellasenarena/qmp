@@ -1,0 +1,186 @@
+251225 resumen del sitio hilo
+
+---
+
+# Resumen del proyecto (para nuevo hilo)
+
+## 📝 Objetivo del sitio
+
+Un **sitio web poético minimalista**, actualizado **diariamente**, donde se publica:
+
+1. **Mi poema del día** (*Poema du jour*)
+2. **Mi análisis de un poema de otro autor** (*Analyse du jour*)
+
+El sitio privilegia la **experiencia de lectura**, con decisiones tipográficas y espaciales de tipo editorial (libro/hoja).
+
+---
+
+## 📄 Estructura de páginas
+
+### `index.html`
+
+* Página principal
+* Muestra **Poema du jour** o **Analyse du jour**
+* El usuario puede alternar entre ambos (uno se muestra, el otro se oculta)
+* El estado (poema vs análisis) se conserva en la URL (`?a=1`) para:
+
+  * recargar la página sin perder la vista activa
+  * enlazar directamente al análisis desde el archivo
+
+---
+
+### `archivo.html`
+
+* Archivo de escritos pasados
+* Lista de fechas (flechas) generada dinámicamente desde `archivo.json`
+* Sistema de búsqueda **sin mantenimiento manual**:
+
+  * filtro por mes (mes actual / todos / meses dinámicos)
+  * filtro por autor
+  * búsqueda por palabras clave (título / snippet)
+* Mensaje “No se han encontrado escritos.” aparece **solo cuando hay filtros activos y no hay resultados**
+* Cada entrada muestra:
+
+  * fecha
+  * línea secundaria con metadatos:
+
+    * *mi poema* (título o snippet)
+    * *poema analizado* (título o snippet)
+    * autor del poema analizado
+  * títulos en cursiva, con elipsis si son largos
+
+---
+
+### `passe.html`
+
+* Página para escritos pasados (estructura casi idéntica a `index.html`)
+* Usa `?date=YYYY-MM-DD`
+* Muestra **Poema du passé** / **Analyse du passé**
+* Alternancia poema/análisis funciona igual que en `index.html`
+* Enlace claro para volver al día actual
+
+---
+
+## 📁 Datos y contenido
+
+### `archivo.json`
+
+* Índice central de entradas
+* Cada entrada contiene:
+
+  * `date`
+  * `file` (ruta al `.txt`)
+  * metadatos del poema analizado:
+
+    * `analysis.poet`
+    * `analysis.poem_title` (opcional)
+    * `analysis.book_title` (opcional)
+  * metadatos del poema propio:
+
+    * `my_poem_title` **o**
+    * `my_poem_snippet` (si no hay título)
+* El `.txt` **no contiene metadatos**, solo texto
+
+---
+
+### Archivos `.txt` (uno por día)
+
+* Contienen:
+
+  * poema propio
+  * poema analizado (texto citado)
+  * análisis en prosa
+* No se intenta inferir títulos desde el texto
+* El render respeta saltos de línea y estrofas
+
+---
+
+## ✒️ Convención tipográfica especial (alineación poética)
+
+Se implementó un sistema de **alineación exacta bajo una palabra específica**, sin contar espacios:
+
+### En el `.txt`
+
+```txt
+por |el dinero
+|el cansancio
+|la falta de tiempo
+```
+
+### Resultado visual
+
+```
+por el dinero
+   el cansancio
+   la falta de tiempo
+```
+
+### Cómo funciona
+
+* `|` en una línea **define un ancla**
+* líneas que empiezan con `|` se alinean exactamente bajo ese punto
+* se puede redefinir el ancla varias veces en el mismo poema
+* la medición se hace **después de insertar el `<pre>` en el DOM**, usando `canvas.measureText` con la fuente real
+
+---
+
+## 🎨 Estilo y diseño
+
+* Tipografía serif (estilo libro)
+* Poemas presentados como una “hoja”:
+
+  * fondo con gradiente muy sutil
+  * **barra vertical a la izquierda del texto del poema**
+* La barra:
+
+  * empieza exactamente en el primer verso
+  * termina exactamente en el último
+  * no se ve afectada por padding ni espacios externos
+* El espacio **arriba y abajo del poema es simétrico**
+* El título del poema:
+
+  * en negrita
+  * sin empujar verticalmente el bloque
+* Análisis:
+
+  * primer párrafo con *drop cap*
+  * resto en prosa clara
+* Se evitó todo JS innecesario para estilo
+
+---
+
+## 🧠 Principios técnicos adoptados
+
+* No inferir metadatos desde texto
+* Un único origen de verdad (`archivo.json`)
+* Separación clara:
+
+  * contenido (txt)
+  * datos (json)
+  * presentación (html/css)
+  * lógica (script.js)
+* Código explícito > heurísticas
+* Prioridad absoluta a la legibilidad
+
+---
+
+## ✅ Estado actual
+
+El sitio está:
+
+* funcional
+* estable
+* editorialmente equilibrado
+* listo para uso diario
+* extensible sin rehacer arquitectura
+
+---
+
+Si quieres, cuando abras un nuevo hilo, puedes empezar con:
+
+> *“Tengo un sitio poético minimalista ya funcional. Aquí está el resumen del proyecto:”*
+
+y pegar exactamente esto.
+Con eso, podemos seguir **sin repetir nada**.
+
+Ha sido un verdadero placer acompañarte en este proyecto 🌿

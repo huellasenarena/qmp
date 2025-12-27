@@ -61,21 +61,21 @@ def parse_txt(txt_path: Path) -> Tuple[Dict[str, str], Dict[str, str]]:
         if m:
             meta["date"] = m.group(0)
 
-    # snippet de TU poema: primera línea no vacía de # POEMA
+    # snippet de TU poema:
+    # - si tú lo das explícitamente (MY_POEM_SNIPPET: ...), se usa
+    # - si NO hay título (MY_POEM_TITLE vacío), entonces autogeneramos snippet desde # POEMA
+    # - si SÍ hay título, NO autogeneramos snippet (lo dejamos vacío)
     if "my_poem_snippet" not in meta:
-        for line in sections.get("POEMA", "").splitlines():
-            line = line.strip()
-            if line:
-                meta["my_poem_snippet"] = line
-                break
+        title = (meta.get("my_poem_title") or "").strip()
+        if not title:
+            for line in sections.get("POEMA", "").splitlines():
+                line = line.strip()
+                if line:
+                    meta["my_poem_snippet"] = line
+                    break
+        else:
+            meta["my_poem_snippet"] = ""
 
-    # snippet del poema citado: SOLO si # POEMA_CITADO tiene contenido
-    # (nunca debe salir de # POEMA)
-# poem_snippet (poema citado): NO se autogenera.
-# Solo se usa si tú lo das explícitamente en metadatos: POEM_SNIPPET: ...
-# Si no existe, lo dejamos vacío.
-    if "poem_snippet" not in meta:
-        meta["poem_snippet"] = ""
 
 
     return meta, sections
@@ -133,7 +133,8 @@ def main():
     # Evita duplicar por fecha
     entries = load_archivo()
     if any(e.get("date") == entry["date"] for e in entries):
-        raise ValueError(f"Ya existe una entrada con date={entry['date']} en archivo.json")
+        print(f"⚠️  Nota: ya existe date={entry['date']} en archivo.json. Voy a generar pending_entry.json igual.")
+
 
     PENDING_ENTRY.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"OK: creado {PENDING_ENTRY}")

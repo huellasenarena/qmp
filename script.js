@@ -273,7 +273,18 @@ async function loadTodayEntry() {
 
   const today = getTodayISO();
   const byDateAsc = [...index].sort((a, b) => a.date.localeCompare(b.date));
-  const chosen = index.find(e => e.date === today) || byDateAsc.at(-1);
+
+// 1) si existe hoy, perfecto
+  let chosen = index.find(e => e.date === today);
+
+// 2) si no existe hoy, agarrar la MÁS RECIENTE que sea <= hoy (nunca futura)
+  if (!chosen) {
+    const upToToday = byDateAsc.filter(e => e.date <= today);
+    chosen = upToToday.at(-1);
+  }
+
+  const pageDate = document.getElementById('pageDate');
+  if (pageDate) pageDate.textContent = formatDate(chosen.date);
 
   if (!chosen) {
     document.getElementById('poem').innerHTML = '<pre>No hay entradas todavía.</pre>';

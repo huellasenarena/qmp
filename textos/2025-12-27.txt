@@ -1,0 +1,33 @@
+FECHA: 2025-12-27
+MY_POEM_TITLE: seguir pensando
+POETA:Soledad Castresana 
+POEM_TITLE: Caos y corte
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+sigo pensando;
+el papel en blanco
+es mi máscara
+
+que cubre cada
+palabra tatuada
+en mi rostro
+
+sigo pensando 
+en el paso de los años
+y la transparencia del papel
+
+# POEMA_CITADO
+
+Prefiere cortar él mismo de tal forma
+que pueda coser prolijamente después
+para que el tejido cicatrice,
+a dejar que se desgarre.
+Que el desgarro es caótico. Mejor
+no especular, seguir el protocolo:
+cortar lo sano.
+
+# TEXTO
+
+Fuck fuck 

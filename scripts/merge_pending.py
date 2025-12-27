@@ -22,23 +22,32 @@ def load_entries() -> list:
     return data
 
 def save_entries(entries: list) -> None:
-    # Asegura que la nueva quede arriba: orden por date desc (YYYY-MM-DD)
+    # deja la más nueva arriba (date en formato YYYY-MM-DD)
     entries = sorted(entries, key=lambda e: e.get("date", ""), reverse=True)
     ARCHIVO_JSON.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 def parse_keywords_payload(text: str) -> list:
     """
     Acepta:
-    - Un array JSON: [ {"word":"x","weight":3}, ... ]
-    - O un objeto JSON: { "keywords": [ ... ] }
+    - Array JSON: [ {"word":"x","weight":3}, ... ]
+    - Objeto JSON: { "keywords": [ ... ] }
+    - Fragmento (tu caso frecuente): "keywords": [ ... ]   (lo envolvemos)
     """
-    obj = json.loads(text)
+    s = text.strip()
+
+    # soporta fragmento: empieza con "keywords":
+    if re.match(r'^\s*"?keywords"?\s*:', s):
+        s = "{ " + s
+        if not s.rstrip().endswith("}"):
+            s = s + " }"
+
+    obj = json.loads(s)
     if isinstance(obj, list):
         kws = obj
     elif isinstance(obj, dict) and isinstance(obj.get("keywords"), list):
         kws = obj["keywords"]
     else:
-        raise ValueError("pending_keywords.txt debe ser JSON válido: array [...] o {\"keywords\":[...]}")
+        raise ValueError('pending_keywords.txt debe ser JSON: [...] o {"keywords":[...]} o el fragmento "keywords": [...]')
 
     out = []
     seen = set()
@@ -74,6 +83,9 @@ def main():
 
     entry["keywords"] = parse_keywords_payload(kw_text)
 
+    # guarda pending_entry.json actualizado (importante para qmp_publish.sh)
+    PENDING_ENTRY.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     entries = load_entries()
     if any(e.get("date") == entry.get("date") for e in entries):
         raise ValueError(f"Ya existe una entrada con date={entry.get('date')} en archivo.json")
@@ -82,8 +94,6 @@ def main():
     save_entries(entries)
 
     print(f"OK: añadida entrada {entry.get('date')} con {len(entry['keywords'])} keywords.")
-    # Opcional: vaciar pending_keywords para evitar confusión mañana
-    # PENDING_KEYWORDS.write_text("", encoding="utf-8")
 
 if __name__ == "__main__":
     main()

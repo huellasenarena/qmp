@@ -19,6 +19,10 @@ header {
   font-weight: 600; /* no demasiado pesado */
 }
 
+nav .nav-left { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+nav .date { margin-left: auto; color: #555; }
+
+
 nav {
   display: flex;
   gap: 24px;
