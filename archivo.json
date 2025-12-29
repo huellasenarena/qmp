@@ -108,59 +108,75 @@
     },
     "keywords": [
       {
-        "word": "vulnerabilidad",
+        "word": "lenguaje",
         "weight": 3
       },
       {
-        "word": "cuerpo",
+        "word": "ritual",
         "weight": 3
       },
       {
-        "word": "danio",
+        "word": "comunidad",
         "weight": 3
+      },
+      {
+        "word": "equilibrio precario",
+        "weight": 3
+      },
+      {
+        "word": "costo",
+        "weight": 3
+      },
+      {
+        "word": "gesto",
+        "weight": 2
+      },
+      {
+        "word": "juego",
+        "weight": 2
+      },
+      {
+        "word": "riesgo",
+        "weight": 2
       },
       {
         "word": "poder",
-        "weight": 3
-      },
-      {
-        "word": "amor",
-        "weight": 3
-      },
-      {
-        "word": "dependencia",
         "weight": 2
       },
       {
-        "word": "confianza",
+        "word": "destruccion",
         "weight": 2
       },
       {
-        "word": "entrega",
+        "word": "efimeridad",
         "weight": 2
       },
       {
-        "word": "control",
+        "word": "violencia ritual",
         "weight": 2
       },
       {
-        "word": "limite corporal",
+        "word": "borrado",
         "weight": 2
       },
       {
-        "word": "violencia aceptada",
-        "weight": 2
+        "word": "papel",
+        "weight": 1
       },
       {
-        "word": "cuidado",
-        "weight": 2
+        "word": "dibujo",
+        "weight": 1
       },
       {
-        "word": "asimetria",
-        "weight": 2
+        "word": "pelota",
+        "weight": 1
       },
       {
-        "word": "llama",
+        "word": "pared",
+        "weight": 1
+      },
+      {
+        "word": "copa",
         "weight": 1
       },
       {
@@ -168,23 +184,23 @@
         "weight": 1
       },
       {
-        "word": "desgarro",
+        "word": "chispa",
         "weight": 1
       },
       {
-        "word": "uterus",
+        "word": "ceniza",
         "weight": 1
       },
       {
-        "word": "raspar",
+        "word": "animales",
         "weight": 1
       },
       {
-        "word": "anestesia",
+        "word": "humo",
         "weight": 1
       },
       {
-        "word": "procedimiento medico",
+        "word": "hambre",
         "weight": 1
       }
     ]
