@@ -20,11 +20,11 @@ para esconder la cicatriz
 
 Negro, el perfil de los árboles
 contra un cielo,
-				aún,
+					aún,
 de libro de horas.
 
 Un pájaro revisa
-		en este anochecer
+					en este anochecer
 la breve historia de su día,
 mientras
 		la luz que enciendo
@@ -32,7 +32,7 @@ flota
 		sobre el vidrio
 
 Como flota la vida,
-			en el vacío
+					en el vacío
 
 # TEXTO
 
