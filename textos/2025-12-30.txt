@@ -1,0 +1,45 @@
+FECHA: 2025-12-30
+MY_POEM_TITLE:
+POETA: Ida Vitale
+POEM_TITLE: Terquedad de lo Ausente
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+la luz entierra y congela 
+sus cenizas en un charco 
+cuando la vanilla no compensa
+el humo
+
+como la vida pone una curita
+porque el maquillaje no basta
+para esconder la cicatriz
+
+
+# POEMA_CITADO
+
+Negro, el perfil de los árboles
+contra un cielo,
+				aún,
+de libro de horas.
+
+Un pájaro revisa
+		en este anochecer
+la breve historia de su día,
+mientras
+		la luz que enciendo
+flota
+		sobre el vidrio
+
+Como flota la vida,
+			en el vacío
+
+# TEXTO
+
+Comparando la vida con un “libro de horas” y la flotación de la luz, Terquedad de lo Ausente juega con lo estructural y lo no estructural, presentando la vida como algo repetitivo y definido (un libro de horas) y como algo sin apoyo.
+
+El poema abre con una imagen de la naturaleza: el sol se está poniendo y se ve el perfil de unos árboles. El narrador dice que es un cielo “aún, de libro de horas”. La palabra “aún” hace pensar que el narrador nota una constancia en los árboles que puede cambiar; hasta ahora seguían el mismo camino, pero otros caminos existen. El “libro de horas” refuerza aún más la noción de orden y rutina: un libro de horas marca cada hora del día y la llena con textos; así, cuando el narrador percibe el cielo como un libro de horas, quiere mostrar una limitación y un procedimiento de la vida.
+
+Pasamos del exterior al interior en la estrofa siguiente: el narrador está en una habitación con una luz encendida y mira el anochecer y un pájaro. Lo que sigue es una metáfora de la vida; el narrador dice que la vida flota en el vacío como la luz flota “sobre el vidrio”. Hay ambigüedad acá, pero una interpretación es que la vida no tiene una dirección (“el vacío”); pero aunque la tuviera, la vida no tendría la capacidad de ir hacia una dirección (“flota”).
+
+El narrador describe la ausencia de una dirección como una “terquedad” en el título, y me parece que no cree que pueda luchar contra este aspecto de la vida. La vida tiene una cierta estructura en la medida en que hay repetición (el anochecer, por ejemplo); no obstante, el narrador interpreta esta estructura como algo vacío y no puede ir más allá. La vida tiene “terquedad” porque resiste tener una presencia, y el narrador está notando esta característica: la vida queda flotando “en el vacío”.
