@@ -18,12 +18,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_ROOT"
 
-# Validación: debe existir .git
 if [[ ! -d ".git" ]]; then
   echo "Error: $REPO_ROOT no parece ser un repo git (no hay .git)."
   exit 1
 fi
-
 
 if [[ -z "$TXT_PATH" ]]; then
   echo "Uso: scripts/qmp_publish.sh [--dry-run] textos/YYYY-MM-DD.txt \"Mensaje opcional\""
@@ -35,11 +33,12 @@ if [[ ! -f "$TXT_PATH" ]]; then
   exit 1
 fi
 
-[[ -f "archivo.json" ]] || { echo "Error: falta archivo.json en el root del repo"; exit 1; }
 [[ -f "scripts/make_pending_entry.py" ]] || { echo "Error: falta scripts/make_pending_entry.py"; exit 1; }
 [[ -f "scripts/merge_pending.py" ]] || { echo "Error: falta scripts/merge_pending.py"; exit 1; }
 [[ -f "scripts/pending_keywords.txt" ]] || { echo "Error: falta scripts/pending_keywords.txt"; exit 1; }
+[[ -f "archivo.json" ]] || { echo "Error: falta archivo.json en el root del repo"; exit 1; }
 
+# Sanity: txt has # TEXTO
 if ! grep -qE '^\s*#\s*TEXTO\s*$' "$TXT_PATH"; then
   echo "Error: $TXT_PATH no contiene el header '# TEXTO'."
   exit 1
@@ -61,6 +60,7 @@ if [[ -z "$ENTRY_DATE" ]]; then
   exit 1
 fi
 
+# ¿Existe ya la fecha?
 EXISTS="$(python3 - "$ENTRY_DATE" <<'PY'
 import json, sys
 entry_date = sys.argv[1]
@@ -69,44 +69,21 @@ print("1" if any(e.get("date")==entry_date for e in d) else "0")
 PY
 )"
 
-OVERWRITE=0
+ACTION_WORD="Entrada"
 if [[ "$EXISTS" == "1" ]]; then
-  echo "⚠️  Ya existe una entrada con date=$ENTRY_DATE en archivo.json."
-  if [[ "$DRY_RUN" == "1" ]]; then
-    echo "DRY RUN: no sobreescribo automáticamente."
-    OVERWRITE=0
-    echo "DRY RUN: paro aquí (no corro merge_pending.py) porque el merge fallaría por entrada duplicada."
-    echo "Tip: para probar el merge en dry-run, usa una fecha nueva, o corre en modo real y elige overwrite."
-    exit 0
-
-  else
-    read -r -p "¿Quieres sobreescribir esa entrada? (y/N) " ans
-    if [[ "$ans" == "y" || "$ans" == "Y" ]]; then
-      OVERWRITE=1
-    else
-      echo "Ok, no hago nada."
-      exit 0
-    fi
-  fi
+  ACTION_WORD="Edición"
 fi
 
-if [[ "$OVERWRITE" == "1" ]]; then
-  echo "→ Eliminando entrada existente date=$ENTRY_DATE (overwrite)"
-  python3 - "$ENTRY_DATE" <<'PY'
-import json, sys
-entry_date=sys.argv[1]
-p="archivo.json"
-d=json.load(open(p,"r",encoding="utf-8"))
-d=[e for e in d if e.get("date")!=entry_date]
-open(p,"w",encoding="utf-8").write(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
-PY
+echo "→ Merge keywords + upsert en archivo.json"
+if [[ "$DRY_RUN" == "1" ]]; then
+  python3 scripts/merge_pending.py --dry-run
+else
+  python3 scripts/merge_pending.py
 fi
-
-echo "→ Merge keywords + append a archivo.json"
-python3 scripts/merge_pending.py
 
 echo "→ Validando JSON..."
 python3 -m json.tool archivo.json >/dev/null
+python3 -m json.tool scripts/pending_entry.json >/dev/null
 
 KW_COUNT="$(python3 - <<'PY'
 import json
@@ -119,6 +96,7 @@ if [[ "$KW_COUNT" -lt 10 ]]; then
   exit 1
 fi
 
+# Commit semántico si no se pasó mensaje
 if [[ -z "$COMMIT_MSG" ]]; then
   TITLE="$(python3 - <<'PY'
 import json
@@ -134,15 +112,13 @@ except Exception:
 PY
 )"
   TITLE="${TITLE:0:80}"
+
   if [[ -n "$TITLE" ]]; then
-    COMMIT_MSG="Entrada ${ENTRY_DATE} — ${TITLE}"
+    COMMIT_MSG="${ACTION_WORD} ${ENTRY_DATE} — ${TITLE}"
   else
-    COMMIT_MSG="Entrada ${ENTRY_DATE}"
+    COMMIT_MSG="${ACTION_WORD} ${ENTRY_DATE}"
   fi
 fi
-
-echo "→ Git status"
-git status --porcelain || true
 
 if [[ "$DRY_RUN" == "1" ]]; then
   echo "DRY RUN: no hago commit ni push."
@@ -159,5 +135,8 @@ echo "→ Git add/commit/push"
 git add archivo.json "$TXT_PATH" scripts/pending_entry.json scripts/pending_keywords.txt || true
 git commit -m "$COMMIT_MSG"
 git push
+
+# Limpieza: borrar pending_entry (pending_keywords se queda)
+rm -f scripts/pending_entry.json
 
 echo "✅ Listo: publicado."

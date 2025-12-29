@@ -3,11 +3,19 @@ python3 scripts/make_pending_entry.py textos/2025-12-25.txt
 python3 scripts/merge_pending.py
 
 
-Run first (to see that the correct files were created)
+abre el .txt existente (si existe) o lo crea (si no):
+qd 2025-12-10 
+
+Run first (to see that the correct files were created):
 q --dry-run 2025-12-25
 
-q 2025-12-26
-
+si la entrada existe → la reemplaza (update automático)
+si no existe → la añade (new)
+commit message:
+Entrada 2025-12-10 — … (nuevo)
+Edición 2025-12-10 — … (modificación)
+al final borra scripts/pending_entry.json, pero no toca pending_keywords.txt.:
+q 2025-12-10
 
 
 
