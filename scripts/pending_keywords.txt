@@ -1,30 +1,26 @@
 {
   "keywords": [
-    { "word": "lenguaje", "weight": 3 },
-    { "word": "ritual", "weight": 3 },
-    { "word": "comunidad", "weight": 3 },
-    { "word": "equilibrio precario", "weight": 3 },
-    { "word": "costo", "weight": 3 },
+    { "word": "ausencia", "weight": 3 },
+    { "word": "vida", "weight": 3 },
+    { "word": "cicatriz", "weight": 3 },
+    { "word": "fragilidad", "weight": 3 },
+    { "word": "persistencia", "weight": 3 },
 
-    { "word": "gesto", "weight": 2 },
-    { "word": "juego", "weight": 2 },
-    { "word": "riesgo", "weight": 2 },
-    { "word": "poder", "weight": 2 },
-    { "word": "destruccion", "weight": 2 },
-    { "word": "efimeridad", "weight": 2 },
-    { "word": "violencia ritual", "weight": 2 },
-    { "word": "borrado", "weight": 2 },
+    { "word": "orden", "weight": 2 },
+    { "word": "rutina", "weight": 2 },
+    { "word": "flotacion", "weight": 2 },
+    { "word": "vacío", "weight": 2 },
+    { "word": "resistencia", "weight": 2 },
+    { "word": "ocultamiento", "weight": 2 },
+    { "word": "tiempo", "weight": 2 },
 
-    { "word": "papel", "weight": 1 },
-    { "word": "dibujo", "weight": 1 },
-    { "word": "pelota", "weight": 1 },
-    { "word": "pared", "weight": 1 },
-    { "word": "copa", "weight": 1 },
-    { "word": "fuego", "weight": 1 },
-    { "word": "chispa", "weight": 1 },
+    { "word": "luz", "weight": 1 },
     { "word": "ceniza", "weight": 1 },
-    { "word": "animales", "weight": 1 },
     { "word": "humo", "weight": 1 },
-    { "word": "hambre", "weight": 1 }
+    { "word": "maquillaje", "weight": 1 },
+    { "word": "curita", "weight": 1 },
+    { "word": "vidrio", "weight": 1 },
+    { "word": "arboles", "weight": 1 },
+    { "word": "pajaro", "weight": 1 }
   ]
 }

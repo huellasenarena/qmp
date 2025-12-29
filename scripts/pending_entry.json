@@ -1,94 +1,66 @@
 {
-  "date": "2025-12-29",
+  "date": "2025-12-30",
   "month": "2025-12",
-  "file": "textos/2025-12-29.txt",
-  "my_poem_title": "dibujar",
-  "my_poem_snippet": "",
+  "file": "textos/2025-12-30.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "la luz entierra y congela",
   "analysis": {
-    "poet": "Soldead Castresana",
-    "poem_title": "de lejos",
+    "poet": "Ida Vitale",
+    "poem_title": "Terquedad de lo Ausente",
     "poem_snippet": "",
-    "book_title": "La carne se corta"
+    "book_title": "Poesía Reunida"
   },
   "keywords": [
     {
-      "word": "lenguaje",
+      "word": "ausencia",
       "weight": 3
     },
     {
-      "word": "ritual",
+      "word": "vida",
       "weight": 3
     },
     {
-      "word": "comunidad",
+      "word": "cicatriz",
       "weight": 3
     },
     {
-      "word": "equilibrio precario",
+      "word": "fragilidad",
       "weight": 3
     },
     {
-      "word": "costo",
+      "word": "persistencia",
       "weight": 3
     },
     {
-      "word": "gesto",
+      "word": "orden",
       "weight": 2
     },
     {
-      "word": "juego",
+      "word": "rutina",
       "weight": 2
     },
     {
-      "word": "riesgo",
+      "word": "flotacion",
       "weight": 2
     },
     {
-      "word": "poder",
+      "word": "vacio",
       "weight": 2
     },
     {
-      "word": "destruccion",
+      "word": "resistencia",
       "weight": 2
     },
     {
-      "word": "efimeridad",
+      "word": "ocultamiento",
       "weight": 2
     },
     {
-      "word": "violencia ritual",
+      "word": "tiempo",
       "weight": 2
     },
     {
-      "word": "borrado",
-      "weight": 2
-    },
-    {
-      "word": "papel",
-      "weight": 1
-    },
-    {
-      "word": "dibujo",
-      "weight": 1
-    },
-    {
-      "word": "pelota",
-      "weight": 1
-    },
-    {
-      "word": "pared",
-      "weight": 1
-    },
-    {
-      "word": "copa",
-      "weight": 1
-    },
-    {
-      "word": "fuego",
-      "weight": 1
-    },
-    {
-      "word": "chispa",
+      "word": "luz",
       "weight": 1
     },
     {
@@ -96,15 +68,27 @@
       "weight": 1
     },
     {
-      "word": "animales",
-      "weight": 1
-    },
-    {
       "word": "humo",
       "weight": 1
     },
     {
-      "word": "hambre",
+      "word": "maquillaje",
+      "weight": 1
+    },
+    {
+      "word": "curita",
+      "weight": 1
+    },
+    {
+      "word": "vidrio",
+      "weight": 1
+    },
+    {
+      "word": "arboles",
+      "weight": 1
+    },
+    {
+      "word": "pajaro",
       "weight": 1
     }
   ]

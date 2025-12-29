@@ -13,83 +13,83 @@
     },
     "keywords": [
       {
-        "word": "vulnerabilidad",
+        "word": "ausencia",
         "weight": 3
       },
       {
-        "word": "cuerpo",
+        "word": "vida",
         "weight": 3
       },
       {
-        "word": "danio",
+        "word": "cicatriz",
         "weight": 3
       },
       {
-        "word": "poder",
+        "word": "fragilidad",
         "weight": 3
       },
       {
-        "word": "amor",
+        "word": "persistencia",
         "weight": 3
       },
       {
-        "word": "dependencia",
+        "word": "orden",
         "weight": 2
       },
       {
-        "word": "confianza",
+        "word": "rutina",
         "weight": 2
       },
       {
-        "word": "entrega",
+        "word": "flotacion",
         "weight": 2
       },
       {
-        "word": "control",
+        "word": "vacio",
         "weight": 2
       },
       {
-        "word": "limite corporal",
+        "word": "resistencia",
         "weight": 2
       },
       {
-        "word": "violencia aceptada",
+        "word": "ocultamiento",
         "weight": 2
       },
       {
-        "word": "cuidado",
+        "word": "tiempo",
         "weight": 2
       },
       {
-        "word": "asimetria",
-        "weight": 2
-      },
-      {
-        "word": "llama",
+        "word": "luz",
         "weight": 1
       },
       {
-        "word": "fuego",
+        "word": "ceniza",
         "weight": 1
       },
       {
-        "word": "desgarro",
+        "word": "humo",
         "weight": 1
       },
       {
-        "word": "uterus",
+        "word": "maquillaje",
         "weight": 1
       },
       {
-        "word": "raspar",
+        "word": "curita",
         "weight": 1
       },
       {
-        "word": "anestesia",
+        "word": "vidrio",
         "weight": 1
       },
       {
-        "word": "procedimiento medico",
+        "word": "arboles",
+        "weight": 1
+      },
+      {
+        "word": "pajaro",
         "weight": 1
       }
     ]
