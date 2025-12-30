@@ -1,5 +1,108 @@
 [
   {
+    "date": "2025-12-31",
+    "month": "2025-12",
+    "file": "textos/2025-12-31.txt",
+    "my_poem_title": "gorjeo",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Hondura",
+      "poem_snippet": "",
+      "book_title": "Prisión Voluntaria"
+    },
+    "keywords": [
+      {
+        "word": "lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "transformacion",
+        "weight": 3
+      },
+      {
+        "word": "adiccion",
+        "weight": 3
+      },
+      {
+        "word": "precariedad",
+        "weight": 3
+      },
+      {
+        "word": "huida",
+        "weight": 3
+      },
+      {
+        "word": "escucha",
+        "weight": 2
+      },
+      {
+        "word": "perdida de control",
+        "weight": 2
+      },
+      {
+        "word": "proceso",
+        "weight": 2
+      },
+      {
+        "word": "caida",
+        "weight": 2
+      },
+      {
+        "word": "interioridad",
+        "weight": 2
+      },
+      {
+        "word": "exterioridad",
+        "weight": 2
+      },
+      {
+        "word": "vacio",
+        "weight": 2
+      },
+      {
+        "word": "umbral",
+        "weight": 2
+      },
+      {
+        "word": "orejas",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "lava",
+        "weight": 1
+      },
+      {
+        "word": "letras",
+        "weight": 1
+      },
+      {
+        "word": "gorjeo",
+        "weight": 1
+      },
+      {
+        "word": "hilos",
+        "weight": 1
+      },
+      {
+        "word": "cama",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "hondura",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2025-12-30",
     "month": "2025-12",
     "file": "textos/2025-12-30.txt",
@@ -101,7 +204,7 @@
     "my_poem_title": "dibujar",
     "my_poem_snippet": "",
     "analysis": {
-      "poet": "Soldead Castresana",
+      "poet": "Soledad Castresana",
       "poem_title": "de lejos",
       "poem_snippet": "",
       "book_title": "La carne se corta"

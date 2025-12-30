@@ -1,26 +1,28 @@
 {
   "keywords": [
-    { "word": "ausencia", "weight": 3 },
-    { "word": "vida", "weight": 3 },
-    { "word": "cicatriz", "weight": 3 },
-    { "word": "fragilidad", "weight": 3 },
-    { "word": "persistencia", "weight": 3 },
+    { "word": "lenguaje", "weight": 3 },
+    { "word": "transformacion", "weight": 3 },
+    { "word": "adiccion", "weight": 3 },
+    { "word": "precariedad", "weight": 3 },
+    { "word": "huida", "weight": 3 },
 
-    { "word": "orden", "weight": 2 },
-    { "word": "rutina", "weight": 2 },
-    { "word": "flotacion", "weight": 2 },
-    { "word": "vacío", "weight": 2 },
-    { "word": "resistencia", "weight": 2 },
-    { "word": "ocultamiento", "weight": 2 },
-    { "word": "tiempo", "weight": 2 },
+    { "word": "escucha", "weight": 2 },
+    { "word": "perdida de control", "weight": 2 },
+    { "word": "proceso", "weight": 2 },
+    { "word": "caida", "weight": 2 },
+    { "word": "interioridad", "weight": 2 },
+    { "word": "exterioridad", "weight": 2 },
+    { "word": "vacio", "weight": 2 },
+    { "word": "umbral", "weight": 2 },
 
-    { "word": "luz", "weight": 1 },
-    { "word": "ceniza", "weight": 1 },
-    { "word": "humo", "weight": 1 },
-    { "word": "maquillaje", "weight": 1 },
-    { "word": "curita", "weight": 1 },
-    { "word": "vidrio", "weight": 1 },
-    { "word": "arboles", "weight": 1 },
-    { "word": "pajaro", "weight": 1 }
+    { "word": "orejas", "weight": 1 },
+    { "word": "palabras", "weight": 1 },
+    { "word": "lava", "weight": 1 },
+    { "word": "letras", "weight": 1 },
+    { "word": "gorjeo", "weight": 1 },
+    { "word": "hilos", "weight": 1 },
+    { "word": "cama", "weight": 1 },
+    { "word": "puerta", "weight": 1 },
+    { "word": "hondura", "weight": 1 }
   ]
 }

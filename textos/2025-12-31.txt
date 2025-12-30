@@ -1,0 +1,46 @@
+FECHA: 2025-12-31
+MY_POEM_TITLE: gorjeo
+POETA: Violeta Villalba
+POEM_TITLE: Hondura
+BOOK_TITLE: Prisión Voluntaria
+
+# POEMA
+
+en tus orejas
+mis palabras se convierten 
+en una lava fresca que siento.
+huyo
+
+para los orejas que
+reciben las letras y
+las convierten en un 
+gorjeo
+
+
+# POEMA_CITADO
+
+Para comenzar
+la adicción no es solo una
+el vicio de caer
+lo demás
+es añadidura
+–hay formas de caer
+dentro de nosotros
+o por fuera–
+delgadas líneas entre los momentos
+por donde cruzamos
+a la altura máxima de estar vivos
+caminar sobre hilos
+de la cama a la puerta
+de la puerta a la hondura
+
+# TEXTO
+
+El poema **Hondura** tiene un tono casi educativo sobre la realidad de la adicción. Comenzando con las palabras lógicas “Para comenzar”, el poema sirve como una explicación de cómo la adicción representa más que una pérdida de sentido; además de la pérdida, el poema sugiere que la adicción no tiene límites y que, aunque ocupe un pequeño tiempo de nuestras vidas, dirige a la precariedad y a un vacío donde nos encontramos sin apoyo.
+
+El narrador describe la adicción como algo más que “caer”: representa una “añadidura” de las “delgadas líneas entre los momentos por donde cruzamos”. Yo interpreto esta descripción como el hecho de que la adicción es un proceso, no un momento; la adicción es algo que dura en la vida y existe en la intersección de líneas, o sea, en un espacio infinitamente pequeño y no habitual.
+
+No obstante, a pesar de su presencia temporal pequeña, la adicción tiene un poder inmenso: puede dirigir a la gente desde la seguridad (la cama, una casa) hacia la precariedad (la hondura).
+
+El poema presenta la adicción como algo vacío (una caída) y como algo aditivo y concreto (la añadidura; las delgadas líneas). Creo que el poema muestra que la adicción no tiene una identidad única y contenida; más bien, la adicción impregna varios aspectos de la vida (lo interno y lo externo, por ejemplo, como leímos en la nota), y el resultado es la precariedad, de donde es difícil escapar (una hondura).
+
