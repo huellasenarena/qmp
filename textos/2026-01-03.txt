@@ -1,0 +1,60 @@
+FECHA: 2026-01-03
+MY_POEM_TITLE:
+POETA: César Vallejo
+POEM_TITLE: IX
+BOOK_TITLE: Trilce
+
+# POEMA
+
+ya la se
+restar una numero de pizza
+de otra pizza
+ya la ce
+ya la hago
+ya la dise
+
+pero la voz
+de ariba
+cae sobre mi frente
+como una yunke
+
+siempre la se
+yo no la dice mas
+
+
+# POEMA_CITADO
+
+Vusco volvvver de golpe el golpe.
+Sus dos hojas anchas, su válvula
+que se abre en suculenta recepción
+de multiplicando a multiplicador,
+su condición excelente para el placer,
+todo avía verdad.
+
+Busco volvver de golpe el golpe.
+A su halago, enveto bolivarianas fragosidades
+a treintidós cables y sus múltiples,
+se arrequintan pelo por pelo
+soberanos belfos, los dos tomos de la Obra,
+y no vivo entonces ausencia,
+		ni al tacto.
+
+Fallo bolver de golpe el golpe.
+No ensillaremos jamás el toroso Vaveo
+de egoísmo y de aquel ludir mortal
+de sábana,
+desque la mujer esta
+			¡cuánto pesa de general!
+
+Y hembra es el alma de la ausente.
+Y hembra es el alma mía.
+
+# TEXTO
+
+Aunque el narrador tiene un deseo de devolver un golpe a alguien (“Vusco volvvver… el golpe”, “Busco volvver… el golpe”), tiene un cierto respeto por su adversario. Al describir o bien el golpe en sí o bien a la persona que lo dio como “dos hojas anchas, su válvula que se abre en suculenta recepción… su condición excelente para el placer”, vemos tres cosas: primero, el poder físico de la persona (“dos hojas anchas”, que pueden ser los dos brazos); segundo, la idoneidad del golpe (“se abre en suculenta recepción”); tercero, cómo la violencia puede crear un *placer*. En la segunda estrofa, el narrador nos explica que un halago le da la motivación para trabajar arduamente. Todo esto sugiere que el narrador tiene un deseo pequeño, pero insistente (por la repetición), de vengarse, pero este deseo convive con la idoneidad contradictoria del golpe; un sencillo escaneo de las dos primeras estrofas revela que el lenguaje de admiración eclipsa en tamaño al lenguaje de la venganza.
+
+Más adelante, en la segunda estrofa, el hablante cuenta que “no vivo entonces ausencia, ni al tacto”, lo que plantea la idea, ya presente, de que todo lo que experimenta ahora es real y presente. Pero lo que ocurre es una escena de trabajo con unos animales, en este momento del texto anónimos, descritos como “soberanos”. (Aquí vemos la primera asociación de lo animal con el poder). La segunda estrofa muestra la *sumisión* del narrador: no solo trabaja en cuanto se le elogia, sino que ve a los animales como algo muy poderoso, como si no pudiera controlarlos. En total, el narrador se siente vivo en esta posición baja dentro de una jerarquía, aunque conserva un débil deseo de luchar.
+
+En la tercera estrofa se presentan más pruebas de la debilidad del narrador. Aquí aprendemos que el hablante “fallo bolver de golpe el golpe”, mostrando su renuncia a la lucha. Intentó dos veces luchar, pero acaba por fracasar; no era rival para su adversario. “No ensillaremos jamás el toroso Vaveo de egoísmo”, nos cuenta. Hay varias cosas interesantes aquí: primero, retornamos a lo animal, antes descrito como “soberano”; segundo, vemos el uso del plural “ensillamos”, lo que sugiere que su falta de poder no es algo único, sino social; tercero, aparece la asociación del poder con el “egoísmo”, lo que sugiere que el narrador ve a quienes tienen poder como personas egoístas. (Menos importante, me parece que el narrador asocia el poder con la muerte, como si el poder no durara).
+
+Las últimas líneas introducen el género en el poema, con el hablante diciendo: “desque la mujer esta / ¡cuánto pesa de general! / Y hembra es el alma de la ausente. / Y hembra es el alma mía”. Hay varias interpretaciones. Una que me gusta es que la presencia de la mujer le da al narrador un punto de comparación para el poder: es en relación con la mujer que el narrador puede apreciar el peso del general. Sabemos que el narrador no se siente ausente, pero establece una comparación entre su alma, la ausente, y la feminidad. Me parece que quiere decir que tener un alma femenina, como la suya según lo que dice, es equivalente a ser ausente; es decir, el narrador percibe la falta de poder como algo femenino. El narrador ocupa una posición real, percibida, dentro de una jerarquía, pero es una posición de dependencia: los deseos de quienes están abajo en el mundo deben ser frustrados, aunque puedan apreciar el poder que los gobierna.
