@@ -1,0 +1,85 @@
+name: Publish QMP
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Fecha a publicar (YYYY-MM-DD)"
+        required: true
+      dry_run:
+        description: "Si true, solo valida (no commitea/pushea)"
+        required: false
+        default: "false"
+      message:
+        description: "Mensaje extra para el commit (opcional)"
+        required: false
+        default: ""
+      run_keywords:
+        description: "Si true, corre qk antes de publicar (requiere OPENAI_API_KEY)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure git identity
+        run: |
+          git config user.name "qmp-bot"
+          git config user.email "qmp-bot@users.noreply.github.com"
+
+      - name: Ensure scripts executable
+        run: |
+          chmod +x scripts/*.sh || true
+
+      - name: Setup Python (only if keywords)
+        if: ${{ inputs.run_keywords == 'true' }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps (only if keywords)
+        if: ${{ inputs.run_keywords == 'true' }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install openai
+
+      - name: Optional keywords (qk)
+        if: ${{ inputs.run_keywords == 'true' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          ./scripts/qk.sh "${{ inputs.date }}"
+
+      - name: Publish (or dry-run)
+        run: |
+          TXT="textos/${{ inputs.date }}.txt"
+          if [ ! -f "$TXT" ]; then
+            echo "Missing $TXT. Create/commit it first (edit in GitHub web UI)."
+            exit 1
+          fi
+
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ./scripts/qmp_publish.sh --dry-run "$TXT" "${{ inputs.message }}"
+          else
+            ./scripts/qmp_publish.sh "$TXT" "${{ inputs.message }}"
+          fi
+
+      - name: Commit and push changes (only if not dry-run)
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          # Si tu qmp_publish.sh ya hace commit/push, esto no debería hacer nada.
+          # Si NO lo hace en Actions, este paso asegura que los cambios suban.
+          if git status --porcelain | grep -q .; then
+            git add -A
+            git commit -m "qmp: publish ${{ inputs.date }} ${{ inputs.message }}"
+            git push
+          else
+            echo "No changes to commit."
+          fi

@@ -1,11 +1,15 @@
 {
   "keywords": [
     {
-      "word": "voz de ariba",
+      "word": "voz de arriba",
       "weight": 3
     },
     {
-      "word": "yunke",
+      "word": "golpe",
+      "weight": 3
+    },
+    {
+      "word": "deseo de venganza",
       "weight": 3
     },
     {
@@ -13,107 +17,71 @@
       "weight": 3
     },
     {
-      "word": "repeticion",
-      "weight": 3
-    },
-    {
-      "word": "restar",
-      "weight": 3
-    },
-    {
-      "word": "numero de pizza",
-      "weight": 3
-    },
-    {
-      "word": "golpe",
-      "weight": 2
-    },
-    {
-      "word": "violencia",
-      "weight": 2
-    },
-    {
-      "word": "poder",
-      "weight": 2
-    },
-    {
-      "word": "sumision",
-      "weight": 2
-    },
-    {
-      "word": "trabajo",
-      "weight": 2
-    },
-    {
       "word": "admiracion",
-      "weight": 2
-    },
-    {
-      "word": "placer",
-      "weight": 2
-    },
-    {
-      "word": "jerarquia",
-      "weight": 2
-    },
-    {
-      "word": "egoismo",
-      "weight": 2
-    },
-    {
-      "word": "animalidad",
-      "weight": 2
+      "weight": 3
     },
     {
       "word": "hembra",
-      "weight": 1
+      "weight": 3
+    },
+    {
+      "word": "repeticion insistente",
+      "weight": 3
     },
     {
       "word": "ausencia",
+      "weight": 3
+    },
+    {
+      "word": "caida",
+      "weight": 2
+    },
+    {
+      "word": "impacto",
+      "weight": 2
+    },
+    {
+      "word": "peso",
+      "weight": 2
+    },
+    {
+      "word": "conflicto admiracion violencia",
+      "weight": 2
+    },
+    {
+      "word": "resignacion",
+      "weight": 2
+    },
+    {
+      "word": "trabajo motivado por halago",
+      "weight": 2
+    },
+    {
+      "word": "no decir",
+      "weight": 2
+    },
+    {
+      "word": "jerarquia de poder",
+      "weight": 2
+    },
+    {
+      "word": "resonancia",
+      "weight": 2
+    },
+    {
+      "word": "restar",
+      "weight": 2
+    },
+    {
+      "word": "pizza",
+      "weight": 1
+    },
+    {
+      "word": "yunke",
       "weight": 1
     },
     {
       "word": "frente",
-      "weight": 1
-    },
-    {
-      "word": "voz perdida",
-      "weight": 1
-    },
-    {
-      "word": "soberania",
-      "weight": 1
-    },
-    {
-      "word": "halago",
-      "weight": 1
-    },
-    {
-      "word": "peso",
-      "weight": 1
-    },
-    {
-      "word": "torpeza",
-      "weight": 1
-    },
-    {
-      "word": "tactil",
-      "weight": 1
-    },
-    {
-      "word": "fracaso",
-      "weight": 1
-    },
-    {
-      "word": "dependencia",
-      "weight": 1
-    },
-    {
-      "word": "presencia",
-      "weight": 1
-    },
-    {
-      "word": "lucha",
       "weight": 1
     }
   ]

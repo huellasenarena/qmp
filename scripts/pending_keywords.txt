@@ -1,91 +1,87 @@
 {
   "keywords": [
     {
-      "word": "verguenza",
+      "word": "voz de arriba",
       "weight": 3
     },
     {
-      "word": "represion",
+      "word": "golpe",
       "weight": 3
     },
     {
-      "word": "erosion de la agencia",
+      "word": "deseo de venganza",
       "weight": 3
-    },
-    {
-      "word": "priorizacion del placer",
-      "weight": 3
-    },
-    {
-      "word": "acumulacion de inmundicia",
-      "weight": 3
-    },
-    {
-      "word": "asco",
-      "weight": 3
-    },
-    {
-      "word": "minimizacion del instrumento",
-      "weight": 3
-    },
-    {
-      "word": "evasion",
-      "weight": 2
     },
     {
       "word": "silencio",
+      "weight": 3
+    },
+    {
+      "word": "admiracion",
+      "weight": 3
+    },
+    {
+      "word": "hembra",
+      "weight": 3
+    },
+    {
+      "word": "repeticion insistente",
+      "weight": 3
+    },
+    {
+      "word": "ausencia",
+      "weight": 3
+    },
+    {
+      "word": "caida",
       "weight": 2
     },
     {
-      "word": "autocensura",
+      "word": "impacto",
       "weight": 2
-    },
-    {
-      "word": "deterioro progresivo",
-      "weight": 2
-    },
-    {
-      "word": "consuelo corporal",
-      "weight": 2
-    },
-    {
-      "word": "renuncia",
-      "weight": 2
-    },
-    {
-      "word": "culpa",
-      "weight": 2
-    },
-    {
-      "word": "juicio ajeno",
-      "weight": 2
-    },
-    {
-      "word": "montana de mierda",
-      "weight": 1
-    },
-    {
-      "word": "pala",
-      "weight": 1
-    },
-    {
-      "word": "palabras no dichas",
-      "weight": 1
-    },
-    {
-      "word": "orgasmo",
-      "weight": 1
-    },
-    {
-      "word": "manos pequenas",
-      "weight": 1
     },
     {
       "word": "peso",
+      "weight": 2
+    },
+    {
+      "word": "conflicto admiracion violencia",
+      "weight": 2
+    },
+    {
+      "word": "resignacion",
+      "weight": 2
+    },
+    {
+      "word": "trabajo motivado por halago",
+      "weight": 2
+    },
+    {
+      "word": "no decir",
+      "weight": 2
+    },
+    {
+      "word": "jerarquia de poder",
+      "weight": 2
+    },
+    {
+      "word": "resonancia",
+      "weight": 2
+    },
+    {
+      "word": "restar",
+      "weight": 2
+    },
+    {
+      "word": "pizza",
       "weight": 1
     },
     {
-      "word": "restos",
+      "word": "yunke",
+      "weight": 1
+    },
+    {
+      "word": "frente",
       "weight": 1
     }
   ]
