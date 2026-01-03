@@ -1,3 +1,14 @@
+qd YYYY-MM-DD        # escribir
+qk YYYY-MM-DD        # generar keywords
+q --dry-run YYYY-MM-DD
+q YYYY-MM-DD
+
+qd YYYY-MM-DD        # escribir
+qdk YYYY-MM-DD       # keywords + dry-run
+q YYYY-MM-DD         # publicar
+
+
+__________________________________-
 qd
 qd 2026-01-01
 -usa hoy si no se pasa fecha
@@ -8,7 +19,7 @@ qd 2026-01-01
 qk
 qk 2026-01-01
 -opcional
--llama la api gemini
+-llama la api gpt
 -enerea sugerencias de keywords
 -sobresecribe pending_keywords.txt
 -crea backup automático si ya existía

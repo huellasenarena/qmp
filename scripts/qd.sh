@@ -39,8 +39,7 @@ EDITOR_CMD="${EDITOR_CMD:-subl}"
 
 FILES=("$TXT" "$KW")
 
-# Si la fecha ya existe en archivo.json, abrirlo también
-if python3 - "$DATE" <<'PY'
+EXISTS="$(python3 - "$DATE" <<'PY'
 import json, sys
 date = sys.argv[1]
 try:
@@ -49,9 +48,12 @@ try:
 except Exception:
     print("0")
 PY
-then
+)"
+
+if [[ "$EXISTS" == "1" ]]; then
   FILES+=("archivo.json")
 fi
+
 
 "$EDITOR_CMD" "${FILES[@]}"
 
