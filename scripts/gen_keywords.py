@@ -210,7 +210,7 @@ def main() -> int:
     resp = client.responses.create(
         model=DEFAULT_MODEL,
         reasoning={"effort": REASONING},
-        max_output_tokens=1200,
+        max_output_tokens=1500,
         input=[
             {"role": "system", "content": "Responde SOLO con JSON válido según el schema. Sin explicaciones."},
             {"role": "user", "content": INSTRUCTIONS + "\n\n---\n\nTEXTO COMPLETO:\n" + text},
