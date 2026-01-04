@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DATE="${1:-$(date +%F)}"
-
+DATE="${1:-}"
+if [[ -z "$DATE" ]]; then
+  echo "Uso: qk YYYY-MM-DD" >&2
+  exit 1
+fi
 if ! [[ "${DATE}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
   echo "[qk] Fecha inválida: ${DATE} (usa YYYY-MM-DD)" >&2
   exit 2
@@ -15,10 +18,10 @@ cd "$ROOT_DIR"
 IN_FILE="textos/${DATE}.txt"
 GEN="scripts/gen_keywords.py"
 OUT_ACTIVE="scripts/pending_keywords.txt"
-TMP_OUT="/tmp/qmp_keywords_${DATE}.json"
+TMP_OUT="$(mktemp)"
 
 if [[ ! -f "$IN_FILE" ]]; then
-  echo "[qk] No encuentro ${IN_FILE}" >&2
+  echo "[qk] No encuentro ${IN_FILE}. (Usa qd primero)" >&2
   exit 1
 fi
 if [[ ! -f "$GEN" ]]; then
@@ -30,20 +33,20 @@ if [[ -z "${OPENAI_API_KEY:-}" ]]; then
   exit 1
 fi
 
-# Generate keywords payload (expected: {"keywords":[...]} or [...] etc.)
+# 1) generar keywords (a temp)
 TMP_GEN="$(mktemp)"
 python3 "$GEN" "$IN_FILE" "$TMP_GEN"
 
-# Wrap with date into scripts/pending_keywords.txt
-python3 - "$DATE" "$TMP_GEN" "$OUT_ACTIVE" <<'PY'
+# 2) envolver con date y validar no-vacío (a temp final)
+python3 - "$DATE" "$TMP_GEN" "$TMP_OUT" <<'PY'
 import json, sys, pathlib
 
 date = sys.argv[1]
-src = pathlib.Path(sys.argv[2]).read_text(encoding="utf-8").strip()
-out = pathlib.Path(sys.argv[3])
+src_path = pathlib.Path(sys.argv[2])
+out_path = pathlib.Path(sys.argv[3])
 
-# accept array or object
-data = json.loads(src)
+data = json.loads(src_path.read_text(encoding="utf-8"))
+
 if isinstance(data, dict) and "keywords" in data:
     kws = data["keywords"]
 elif isinstance(data, list):
@@ -51,14 +54,16 @@ elif isinstance(data, list):
 else:
     raise SystemExit("gen_keywords.py output format not recognized")
 
+if not isinstance(kws, list) or len(kws) == 0:
+    raise SystemExit("keywords vacías: abortando para no tocar pending_keywords.txt")
+
 payload = {"date": date, "keywords": kws}
-out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 PY
 
 rm -f "$TMP_GEN"
 
-# Copy to /tmp view
-cp "$OUT_ACTIVE" "$TMP_OUT"
+# 3) move atómico: sólo ahora tocamos pending_keywords.txt
+mv "$TMP_OUT" "$OUT_ACTIVE"
 
 echo "[qk] OK: ${OUT_ACTIVE}"
-echo "[qk] Vista: ${TMP_OUT}"

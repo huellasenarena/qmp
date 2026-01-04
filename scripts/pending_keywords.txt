@@ -1,104 +1,101 @@
 {
+  "date": "2026-01-04",
   "keywords": [
     {
-      "word": "acumulacion de compromisos",
+      "word": "test",
       "weight": 3
     },
     {
-      "word": "comodificacion del cuerpo",
-      "weight": 2
-    },
-    {
-      "word": "complicidad silenciosa",
-      "weight": 2
-    },
-    {
-      "word": "cuerpo deseante",
+      "word": "decaimiento",
       "weight": 3
     },
     {
-      "word": "culpa cotidiana",
+      "word": "retorno a la tierra",
       "weight": 3
     },
     {
-      "word": "degradacion",
+      "word": "desaparicion",
       "weight": 3
     },
     {
-      "word": "erosion de recursos",
+      "word": "incertidumbre",
+      "weight": 3
+    },
+    {
+      "word": "transformacion",
+      "weight": 3
+    },
+    {
+      "word": "atencion y proximidad",
+      "weight": 3
+    },
+    {
+      "word": "evaporacion de la imagen",
       "weight": 2
     },
     {
-      "word": "habituacion al abandono",
+      "word": "dilucion en la niebla",
       "weight": 2
     },
     {
-      "word": "herramienta que empequenece",
+      "word": "perdida de contorno",
       "weight": 2
     },
     {
-      "word": "mano que trabaja",
+      "word": "cegada por el acercamiento",
+      "weight": 2
+    },
+    {
+      "word": "certeza que se deshace",
+      "weight": 2
+    },
+    {
+      "word": "metamorfosis material",
+      "weight": 2
+    },
+    {
+      "word": "erosion de lo visible",
+      "weight": 2
+    },
+    {
+      "word": "fumar como desaparicion",
+      "weight": 2
+    },
+    {
+      "word": "hojas",
       "weight": 1
     },
     {
-      "word": "materia putrefacta",
+      "word": "tierra",
       "weight": 1
     },
     {
-      "word": "merma de poder",
-      "weight": 3
-    },
-    {
-      "word": "montana de mierda",
+      "word": "niebla",
       "weight": 1
     },
     {
-      "word": "normalizacion del asco",
-      "weight": 2
-    },
-    {
-      "word": "orgasmo",
+      "word": "arboles",
       "weight": 1
     },
     {
-      "word": "orgasmo como consuelo",
-      "weight": 2
-    },
-    {
-      "word": "pala",
+      "word": "marron",
       "weight": 1
     },
     {
-      "word": "palabra",
+      "word": "arrugas",
       "weight": 1
     },
     {
-      "word": "palabras no dichas",
-      "weight": 2
+      "word": "bruma",
+      "weight": 1
     },
     {
-      "word": "prioridad al placer",
-      "weight": 3
+      "word": "ruta desierta",
+      "weight": 1
     },
     {
-      "word": "priorizar gratificacion inmediata",
-      "weight": 2
-    },
-    {
-      "word": "renuncia progresiva",
-      "weight": 2
-    },
-    {
-      "word": "resignacion",
-      "weight": 3
-    },
-    {
-      "word": "silencio autoimpuesto",
-      "weight": 3
-    },
-    {
-      "word": "trabajo humillante",
-      "weight": 3
+      "word": "luz indecisa",
+      "weight": 1
     }
   ]
 }

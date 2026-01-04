@@ -55,7 +55,7 @@ KEYWORDS_SCHEMA = {
         "properties": {
             "keywords": {
                 "type": "array",
-                "minItems": 16,
+                "minItems": 10,
                 "maxItems": MAX_KEYWORDS,
                 "items": {
                     "type": "object",

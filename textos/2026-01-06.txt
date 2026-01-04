@@ -1,0 +1,89 @@
+FECHA: 2026-01-06
+MY_POEM_TITLE:
+POETA: Soledad Castresana
+POEM_TITLE: amanecer
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+dónde estás escondido?
+solo veo tu sombra
+cuando te tenga de nuevo
+olvido la ausencia 
+
+
+# POEMA_CITADO
+
+hay que revolver la sangre
+en cruz
+con una cuchilla
+sin parar
+mientras esté vivo
+
+el cuero es duro
+es dura la grasa
+es duro atravesar
+clavar hondo
+
+¿quién puede
+soportar sin cagarse
+ver la propia sangre
+llenando una olla?
+
+el último signo vital 
+se registra en el ano
+
+mientras tanto el agua
+hierve en los tachos
+
+hay que sacar los coágulos
+con las manos
+hay que tirarlos contra un árbol
+
+para las gallinas
+para alimentar la rapacidad
+de las crías de chimangos
+
+el susurro del filo
+raspa el cuero hirviendo
+el pelo cae se apelotona
+con la sangraza
+
+el hombre que abre
+despliega su precisión
+como si midiera su miembro
+
+el filo es la forma de la mano
+el corte convierte
+al cerdo en mariposa
+la sierra divide
+
+movidas por el reflejo las entrañas
+crujen como si vivieran
+
+sobre la carretilla
+catarata de vísceras y caldos
+
+hay que lavar las tripas
+hay que escurrir
+borrar los restos
+
+las gallinas enfrentan
+la saliva de los perros
+no distinguen lo fresco
+de lo digerido
+
+mientras tanto la cabeza
+hierve en los tachos
+sin ojos
+
+el aire congela el olfato
+el frío limpia
+
+el cerebro de un cerdo cabe
+en la mano de una niña de ocho años
+
+
+# TEXTO
+
+no tengo esto por el momento
