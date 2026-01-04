@@ -13,87 +13,99 @@
     },
     "keywords": [
       {
-        "word": "voz de arriba",
+        "word": "transitoriedad",
         "weight": 3
       },
       {
-        "word": "golpe",
+        "word": "decaimiento",
         "weight": 3
       },
       {
-        "word": "deseo de venganza",
+        "word": "retorno a la tierra",
         "weight": 3
       },
       {
-        "word": "silencio",
+        "word": "desaparicion",
         "weight": 3
       },
       {
-        "word": "admiracion",
+        "word": "incertidumbre",
         "weight": 3
       },
       {
-        "word": "hembra",
+        "word": "transformacion",
         "weight": 3
       },
       {
-        "word": "repeticion insistente",
+        "word": "atencion y proximidad",
         "weight": 3
       },
       {
-        "word": "ausencia",
-        "weight": 3
-      },
-      {
-        "word": "caida",
+        "word": "evaporacion de la imagen",
         "weight": 2
       },
       {
-        "word": "impacto",
+        "word": "dilucion en la niebla",
         "weight": 2
       },
       {
-        "word": "peso",
+        "word": "perdida de contorno",
         "weight": 2
       },
       {
-        "word": "conflicto admiracion violencia",
+        "word": "cegada por el acercamiento",
         "weight": 2
       },
       {
-        "word": "resignacion",
+        "word": "certeza que se deshace",
         "weight": 2
       },
       {
-        "word": "trabajo motivado por halago",
+        "word": "metamorfosis material",
         "weight": 2
       },
       {
-        "word": "no decir",
+        "word": "erosion de lo visible",
         "weight": 2
       },
       {
-        "word": "jerarquia de poder",
+        "word": "fumar como desaparicion",
         "weight": 2
       },
       {
-        "word": "resonancia",
-        "weight": 2
-      },
-      {
-        "word": "restar",
-        "weight": 2
-      },
-      {
-        "word": "pizza",
+        "word": "hojas",
         "weight": 1
       },
       {
-        "word": "yunke",
+        "word": "tierra",
         "weight": 1
       },
       {
-        "word": "frente",
+        "word": "niebla",
+        "weight": 1
+      },
+      {
+        "word": "arboles",
+        "weight": 1
+      },
+      {
+        "word": "marron",
+        "weight": 1
+      },
+      {
+        "word": "arrugas",
+        "weight": 1
+      },
+      {
+        "word": "bruma",
+        "weight": 1
+      },
+      {
+        "word": "ruta desierta",
+        "weight": 1
+      },
+      {
+        "word": "luz indecisa",
         "weight": 1
       }
     ]
