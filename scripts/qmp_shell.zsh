@@ -26,47 +26,11 @@ _qmp_check() {
   fi
 }
 
-# Preparar día (crear/abrir txt desde template)
-qd() {"$QMP_REPO/scripts/qd.sh" "$date"}
+qd()  { _qmp_check || return 1; "$QMP_REPO/scripts/qd.sh"  "$@"; }
+qk()  { _qmp_check || return 1; "$QMP_REPO/scripts/qk.sh"  "$@"; }
+qkw() { _qmp_check || return 1; "$QMP_REPO/scripts/qkw.sh" "$@"; }
+q() { _qmp_check || return 1; "$QMP_REPO/scripts/qmp_publish.sh" "$@"; }
 
-# Keywords (OpenAI)
-qk() {"$QMP_REPO/scripts/qk.sh" "$date"}
-
-# qk + dry-run
-qdk() {
-  echo "▶️ Generando palabras clave (qk $date)…"
-  qk "$date" || { echo "❌ Error en qk. Aborto."; return 1; }
-  echo ""
-  echo "▶️ Dry run (q --dry-run $date)…"
-  q --dry-run "$date"
-}
-
-# Publicar (o dry-run)
-q() {
-  local dry=""
-  local msg=""
-  local date=""
-
-  for arg in "$@"; do
-    case "$arg" in
-      --dry-run|--dry|-n) dry="--dry-run" ;;
-      ????-??-??)         date="$arg" ;;
-      *.txt)
-        local base="${arg:t}"   # basename en zsh
-        date="${base%.txt}"
-        ;;
-      *)                  msg="$arg" ;;
-    esac
-  done
-
-  if [[ -z "$date" ]]; then
-    echo "Uso: q [--dry-run] YYYY-MM-DD [mensaje opcional]"
-    return 2
-  fi
-  
-  local txt="$QMP_REPO/textos/${date}.txt"
-  "$QMP_REPO/scripts/qmp_publish.sh" $dry "$txt" "$msg"
-}
 
 
 qhelp() {

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "date": "2026-01-01",
   "keywords": [
     {
@@ -11,13 +12,92 @@
     },
     {
       "word": "identidad",
+=======
+  "date": "2026-01-02",
+  "keywords": [
+    {
+      "word": "acumulacion de compromisos",
       "weight": 3
     },
     {
-      "word": "transformacion",
+      "word": "comodificacion del cuerpo",
+      "weight": 2
+    },
+    {
+      "word": "complicidad silenciosa",
+      "weight": 2
+    },
+    {
+      "word": "cuerpo deseante",
       "weight": 3
     },
     {
+      "word": "culpa cotidiana",
+      "weight": 3
+    },
+    {
+      "word": "degradacion",
+      "weight": 3
+    },
+    {
+      "word": "erosion de recursos",
+      "weight": 2
+    },
+    {
+      "word": "habituacion al abandono",
+      "weight": 2
+    },
+    {
+      "word": "herramienta que empequenece",
+      "weight": 2
+    },
+    {
+      "word": "mano que trabaja",
+      "weight": 1
+    },
+    {
+      "word": "materia putrefacta",
+      "weight": 1
+    },
+    {
+      "word": "merma de poder",
+>>>>>>> 4bd74d2c031f6ed97fe9c7216c8152e7c963cce7
+      "weight": 3
+    },
+    {
+      "word": "montana de mierda",
+      "weight": 1
+    },
+    {
+      "word": "normalizacion del asco",
+      "weight": 2
+    },
+    {
+      "word": "orgasmo",
+      "weight": 1
+    },
+    {
+      "word": "orgasmo como consuelo",
+      "weight": 2
+    },
+    {
+      "word": "pala",
+      "weight": 1
+    },
+    {
+      "word": "palabra",
+      "weight": 1
+    },
+    {
+      "word": "palabras no dichas",
+      "weight": 2
+    },
+    {
+      "word": "prioridad al placer",
+      "weight": 3
+    },
+    {
+<<<<<<< HEAD
       "word": "cuerpo",
       "weight": 3
     },
@@ -88,6 +168,26 @@
     {
       "word": "fantasia",
       "weight": 1
+=======
+      "word": "priorizar gratificacion inmediata",
+      "weight": 2
+    },
+    {
+      "word": "renuncia progresiva",
+      "weight": 2
+    },
+    {
+      "word": "resignacion",
+      "weight": 3
+    },
+    {
+      "word": "silencio autoimpuesto",
+      "weight": 3
+    },
+    {
+      "word": "trabajo humillante",
+      "weight": 3
+>>>>>>> 4bd74d2c031f6ed97fe9c7216c8152e7c963cce7
     }
   ]
 }
