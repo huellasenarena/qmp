@@ -1,100 +1,96 @@
 {
-  "date": "2026-01-01",
+  "date": "2026-01-02",
   "keywords": [
     {
-      "word": "fragilidad",
+      "word": "silencio",
       "weight": 3
     },
     {
-      "word": "transitoriedad",
+      "word": "represion",
       "weight": 3
     },
     {
-      "word": "visibilidad",
+      "word": "desgaste",
       "weight": 3
     },
     {
-      "word": "invisibilidad",
+      "word": "degradacion",
       "weight": 3
     },
     {
-      "word": "transformacion",
+      "word": "poder menguante",
       "weight": 3
     },
     {
-      "word": "vulnerabilidad",
+      "word": "alienacion",
       "weight": 3
     },
     {
-      "word": "derretimiento",
+      "word": "privacion de voz",
       "weight": 3
     },
     {
-      "word": "deformacion",
+      "word": "erotica priorizada",
       "weight": 3
     },
     {
-      "word": "derretimiento rapido",
+      "word": "futilidad",
+      "weight": 3
+    },
+    {
+      "word": "priorizacion del placer",
       "weight": 2
     },
     {
-      "word": "derretimiento lento",
+      "word": "evasion",
       "weight": 2
     },
     {
-      "word": "caida",
+      "word": "diminucion progresiva",
       "weight": 2
     },
     {
-      "word": "deslizamiento",
+      "word": "rendicion",
       "weight": 2
     },
     {
-      "word": "acompanamiento",
+      "word": "anomia",
       "weight": 2
     },
     {
-      "word": "cubricion lateral",
+      "word": "fatiga moral",
       "weight": 2
     },
     {
-      "word": "apilamiento",
+      "word": "acumulacion de mierda",
       "weight": 2
     },
     {
-      "word": "colision",
+      "word": "inercia",
       "weight": 2
     },
     {
-      "word": "ocultamiento",
+      "word": "contradiccion entre deseo y deber",
       "weight": 2
     },
     {
-      "word": "cambio de estado",
-      "weight": 2
-    },
-    {
-      "word": "copo de nieve",
+      "word": "montana de mierda",
       "weight": 1
     },
     {
-      "word": "gorro de invierno",
+      "word": "pala",
       "weight": 1
     },
     {
-      "word": "carreta",
+      "word": "palabras no dichas",
       "weight": 1
     },
     {
-      "word": "lado",
+      "word": "orgasmo",
       "weight": 1
     },
     {
-      "word": "superficie",
-      "weight": 1
-    },
-    {
-      "word": "gota",
+      "word": "suciedad",
       "weight": 1
     }
   ]
