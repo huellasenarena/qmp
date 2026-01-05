@@ -23,7 +23,7 @@ if [[ ! -f "$CURRENT" ]]; then
 fi
 
 # Validar que current.date coincide (candado anti-cagadas)
-CUR_DATE="$(python3 -c 'import json; import sys; d=json.load(open(sys.argv[1],encoding="utf-8")); print(d.get("date",""))' "$CURRENT")"
+CUR_DATE="$("python" -c 'import json; import sys; d=json.load(open(sys.argv[1],encoding="utf-8")); print(d.get("date",""))' "$CURRENT")"
 if [[ "$CUR_DATE" != "$DATE" ]]; then
   echo "[qkw] current_keywords.date ($CUR_DATE) != $DATE. Corre qd $DATE primero." >&2
   exit 1

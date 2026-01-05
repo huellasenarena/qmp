@@ -53,7 +53,7 @@ if [[ ! -f "$ARCHIVO" ]]; then
   exit 1
 fi
 
-OUT_JSON="$(python3 - "$DATE" "$TXT" "$ARCHIVO" "$PENDING_KW" "$APPLY_KW" <<'PY'
+OUT_JSON="$("$PYTHON"- "$DATE" "$TXT" "$ARCHIVO" "$PENDING_KW" "$APPLY_KW" <<'PY'
 import json, sys, re
 from pathlib import Path
 
@@ -265,8 +265,8 @@ print(json.dumps({
 PY
 )"
 
-COMMIT_TYPE="$(python3 -c 'import json,sys; print(json.loads(sys.stdin.read()).get("commit_type",""))' <<<"$OUT_JSON")"
-TITLE_OR_SNIP="$(python3 -c 'import json,sys; print(json.loads(sys.stdin.read()).get("title_or_snip",""))' <<<"$OUT_JSON")"
+COMMIT_TYPE="$("$PYTHON" -c 'import json,sys; print(json.loads(sys.stdin.read()).get("commit_type",""))' <<<"$OUT_JSON")"
+TITLE_OR_SNIP="$("$PYTHON" -c 'import json,sys; print(json.loads(sys.stdin.read()).get("title_or_snip",""))' <<<"$OUT_JSON")"
 
 MSG_BASE="${DATE} — ${TITLE_OR_SNIP}"
 

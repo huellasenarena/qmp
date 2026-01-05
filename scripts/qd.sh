@@ -1,6 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+PYTHON="$REPO_ROOT/.venv/bin/python"
+
+if [ ! -x "$PYTHON" ]; then
+  echo "❌ No existe .venv. Crea el entorno primero:" >&2
+  echo "   python3 -m venv .venv" >&2
+  echo "   .venv/bin/pip install -r requirements.txt" >&2
+  exit 1
+fi
+
 DATE="${1:-}"
 if [[ -z "$DATE" ]]; then
   echo "Uso: qd YYYY-MM-DD" >&2
@@ -35,7 +45,7 @@ fi
 # Regenerar current_keywords desde archivo.json (snapshot).
 # Si no existe entry, current queda vacío (pero con date).
 if [[ -f "$ARCHIVO" && -f "$PULL" ]]; then
-  if python3 "$PULL" "$DATE" "$CURRENT" >/dev/null 2>&1; then
+  if "$PYTHON" "$PULL" "$DATE" "$CURRENT" >/dev/null 2>&1; then
     :
   else
     # entry no existe => current vacío para simplicidad
