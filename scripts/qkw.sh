@@ -14,6 +14,15 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
+PYTHON="$REPO/.venv/bin/python"
+if [ ! -x "$PYTHON" ]; then
+  echo "❌ No existe .venv. Crea el entorno primero:" >&2
+  echo "   python3 -m venv .venv" >&2
+  echo "   .venv/bin/pip install -r requirements.txt" >&2
+  exit 1
+fi
+
+
 CURRENT="$REPO/scripts/current_keywords.txt"
 PENDING="$REPO/scripts/pending_keywords.txt"
 
@@ -23,7 +32,7 @@ if [[ ! -f "$CURRENT" ]]; then
 fi
 
 # Validar que current.date coincide (candado anti-cagadas)
-CUR_DATE="$("python" -c 'import json; import sys; d=json.load(open(sys.argv[1],encoding="utf-8")); print(d.get("date",""))' "$CURRENT")"
+CUR_DATE="$("$PYTHON" -c 'import json,sys; d=json.load(open(sys.argv[1],encoding="utf-8")); print(d.get("date",""))' "$CURRENT")"
 if [[ "$CUR_DATE" != "$DATE" ]]; then
   echo "[qkw] current_keywords.date ($CUR_DATE) != $DATE. Corre qd $DATE primero." >&2
   exit 1
