@@ -1,41 +1,3 @@
-# =========================
-#  ~/.zshrc — organizado
-# =========================
-
-# ---------- Helpers ----------
-# Recarga rápida
-alias sz='source ~/.zshrc'
-
-# Editar zshrc
-alias oz='subl ~/.zshrc'
-
-# ---------- Dev quick aliases ----------
-alias s='python3 -m http.server'
-
-# Abrir repo remoto en navegador (GitHub)
-alias hub='open "$(git config --get remote.origin.url | sed '\''s/git@github.com:/https:\/\/github.com\//;s/\.git$//'\'' )"'
-
-# ---------- Secrets / API keys ----------
-# NO hardcodear llaves aquí. Cargarlas desde un archivo ignorado por git.
-# Crea: ~/.config/qmp/secrets.zsh  (ver plantilla al final)
-[[ -f "$HOME/.config/qmp/secrets.zsh" ]] && source "$HOME/.config/qmp/secrets.zsh"
-
-# Defaults “no secretos”
-export OPENAI_MODEL="${OPENAI_MODEL:-gpt-5-mini}"
-
-# ---------- Git helpers ----------
-#lazy push
-lp() {
-  git add .
-  if git commit -m "$1"; then
-    git push
-    echo "\033[0;32mSuccessfully pushed to GitHub!\033[0m"
-  else
-    echo "\033[0;31mCommit failed. Push aborted.\033[0m"
-    return 1
-  fi
-}
-
 # ---------- Date validation ----------
 is_valid_date() {
   local d="$1"
@@ -181,7 +143,3 @@ Mensajes de commit (automáticos si no das uno):
 
 EOF
 }
-
-# =========================
-#  End
-# =========================
