@@ -1,101 +1,105 @@
 {
-  "date": "2026-01-04",
+  "date": "2026-01-02",
   "keywords": [
     {
-      "word": "test",
+      "word": "acumulacion de compromisos",
       "weight": 3
     },
     {
-      "word": "decaimiento",
+      "word": "comodificacion del cuerpo",
+      "weight": 2
+    },
+    {
+      "word": "complicidad silenciosa",
+      "weight": 2
+    },
+    {
+      "word": "cuerpo deseante",
       "weight": 3
     },
     {
-      "word": "retorno a la tierra",
+      "word": "culpa cotidiana",
       "weight": 3
     },
     {
-      "word": "desaparicion",
+      "word": "degradacion",
       "weight": 3
     },
     {
-      "word": "incertidumbre",
+      "word": "erosion de recursos",
+      "weight": 2
+    },
+    {
+      "word": "habituacion al abandono",
+      "weight": 2
+    },
+    {
+      "word": "herramienta que empequenece",
+      "weight": 2
+    },
+    {
+      "word": "mano que trabaja",
+      "weight": 1
+    },
+    {
+      "word": "materia putrefacta",
+      "weight": 1
+    },
+    {
+      "word": "merma de poder",
       "weight": 3
     },
     {
-      "word": "transformacion",
+      "word": "montana de mierda",
+      "weight": 1
+    },
+    {
+      "word": "normalizacion del asco",
+      "weight": 2
+    },
+    {
+      "word": "orgasmo",
+      "weight": 1
+    },
+    {
+      "word": "orgasmo como consuelo",
+      "weight": 2
+    },
+    {
+      "word": "pala",
+      "weight": 1
+    },
+    {
+      "word": "palabra",
+      "weight": 1
+    },
+    {
+      "word": "palabras no dichas",
+      "weight": 2
+    },
+    {
+      "word": "prioridad al placer",
       "weight": 3
     },
     {
-      "word": "atencion y proximidad",
+      "word": "priorizar gratificacion inmediata",
+      "weight": 2
+    },
+    {
+      "word": "renuncia progresiva",
+      "weight": 2
+    },
+    {
+      "word": "resignacion",
       "weight": 3
     },
     {
-      "word": "evaporacion de la imagen",
-      "weight": 2
+      "word": "silencio autoimpuesto",
+      "weight": 3
     },
     {
-      "word": "dilucion en la niebla",
-      "weight": 2
-    },
-    {
-      "word": "perdida de contorno",
-      "weight": 2
-    },
-    {
-      "word": "cegada por el acercamiento",
-      "weight": 2
-    },
-    {
-      "word": "certeza que se deshace",
-      "weight": 2
-    },
-    {
-      "word": "metamorfosis material",
-      "weight": 2
-    },
-    {
-      "word": "erosion de lo visible",
-      "weight": 2
-    },
-    {
-      "word": "fumar como desaparicion",
-      "weight": 2
-    },
-    {
-      "word": "hojas",
-      "weight": 1
-    },
-    {
-      "word": "tierra",
-      "weight": 1
-    },
-    {
-      "word": "niebla",
-      "weight": 1
-    },
-    {
-      "word": "arboles",
-      "weight": 1
-    },
-    {
-      "word": "marron",
-      "weight": 1
-    },
-    {
-      "word": "arrugas",
-      "weight": 1
-    },
-    {
-      "word": "bruma",
-      "weight": 1
-    },
-    {
-      "word": "ruta desierta",
-      "weight": 1
-    },
-    {
-      "word": "luz indecisa",
-      "weight": 1
+      "word": "trabajo humillante",
+      "weight": 3
     }
   ]
 }

@@ -26,20 +26,9 @@ _qmp_check() {
   fi
 }
 
-# Preparar día (crear/abrir txt desde template)
-qd() {"$QMP_REPO/scripts/qd.sh" "$date"}
-
-# Keywords (OpenAI)
-qk() {"$QMP_REPO/scripts/qk.sh" "$date"}
-
-# qk + dry-run
-qdk() {
-  echo "▶️ Generando palabras clave (qk $date)…"
-  qk "$date" || { echo "❌ Error en qk. Aborto."; return 1; }
-  echo ""
-  echo "▶️ Dry run (q --dry-run $date)…"
-  q --dry-run "$date"
-}
+qd()  { _qmp_check || return 1; "$QMP_REPO/scripts/qd.sh"  "$@"; }
+qk()  { _qmp_check || return 1; "$QMP_REPO/scripts/qk.sh"  "$@"; }
+qkw() { _qmp_check || return 1; "$QMP_REPO/scripts/qkw.sh" "$@"; }
 
 # Publicar (o dry-run)
 q() {
@@ -63,7 +52,7 @@ q() {
     echo "Uso: q [--dry-run] YYYY-MM-DD [mensaje opcional]"
     return 2
   fi
-  
+
   local txt="$QMP_REPO/textos/${date}.txt"
   "$QMP_REPO/scripts/qmp_publish.sh" $dry "$txt" "$msg"
 }
