@@ -1,6 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Python resolver (portable: Codespaces + macOS)
+PYTHON="${PYTHON:-}"
+if [[ -z "$PYTHON" ]]; then
+  if command -v python3 >/dev/null 2>&1; then
+    PYTHON="python3"
+  elif command -v python >/dev/null 2>&1; then
+    PYTHON="python"
+  else
+    echo "[q] No encuentro python/python3 en PATH" >&2
+    exit 1
+  fi
+fi
+
+
 DRY=0
 APPLY_KW=0
 DATE=""
@@ -53,7 +67,8 @@ if [[ ! -f "$ARCHIVO" ]]; then
   exit 1
 fi
 
-OUT_JSON="$("$PYTHON"- "$DATE" "$TXT" "$ARCHIVO" "$PENDING_KW" "$APPLY_KW" <<'PY'
+OUT_JSON="$("$PYTHON" - "$DATE" "$TXT" "$ARCHIVO" "$PENDING_KW" "$APPLY_KW" <<'PY'
+
 import json, sys, re
 from pathlib import Path
 
