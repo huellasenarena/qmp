@@ -1,8 +1,8 @@
 FECHA: 2026-01-07
 MY_POEM_TITLE: se me olvidó
 POETA: Raúl Gómez Jattin
-POEM_TITLE: Amanecer en el Valle del Sinú
-BOOK_TITLE: Íntimas preguntas
+POEM_TITLE: Íntimas preguntas
+BOOK_TITLE: Amanecer en el Valle del Sinú
 
 # POEMA
 
