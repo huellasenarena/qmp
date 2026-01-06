@@ -1,0 +1,48 @@
+FECHA: 2026-01-07
+MY_POEM_TITLE: se me olvidó
+POETA: Raúl Gómez Jattin
+POEM_TITLE: Amanecer en el Valle del Sinú
+BOOK_TITLE: Íntimas preguntas
+
+# POEMA
+
+pedí un paquete
+por internet
+pasé dos días
+pacientemente
+
+para abrirlo y 
+percibir que fue vacío
+
+preocuparme no lo hice
+porque en el vacío
+puedo llenar mi vida
+
+
+# POEMA_CITADO
+
+¿De profesión?
+Loco
+¿De vocación?
+Lerdo
+¿De ambición?
+Terco
+¿De formación?
+Ángel
+Y ni aún así
+pudo contrarrestar
+el cabrilleo de los ojos de Jorge
+
+¿De fornicación?
+Lento
+
+
+# TEXTO
+
+El poema satiriza las preguntas indirectas que hacemos para conocer a alguien, sugiriendo que las preguntas sobre nuestra carrera, profesión, etc., funcionan como sustitutos de la verdadera pregunta íntima: si merecemos el amor.
+ 
+Como en una entrevista de trabajo o un cuestionario, las primeras líneas presentan una serie de preguntas que revelan un conjunto de valores. El sujeto (quizás el sujeto sea el hablante mismo, pero no está claro) se pregunta sobre su ambición, trabajo y trayectoria profesional, pero da respuestas contrarias a lo normal. Yo las interpreto como el hablante viendo al sujeto a través de los ojos de la sociedad. La sociedad tiene valores de éxito profesional y el narrador se burla de estos valores al describir al sujeto. Las respuestas son cortas, como las preguntas, y muestran, creo yo, un juicio rápido del sujeto. Me parece que el narrador evalúa al sujeto rápidamente, como a un candidato a un puesto de trabajo.
+ 
+Interpreto con ironía las líneas “Y ni aun así pudo contrarrestar… los ojos”. El narrador sabe las deficiencias de aquel que describe porque, creo, sabe que las respuestas a las preguntas exponen un fracaso profesional (al menos a los ojos de la cultura). El poema sugiere que el amor se percibe a través del logro. Por eso, el descrito se queda con una “fornicación” lenta: la velocidad de su logro profesional refleja su logro amoroso; ambos son lentos.
+ 
+Me parece que el poema plantea que las cuestiones sobre el estatus son realmente una manera de responder a la pregunta más importante: ¿mereces amor o no? Sugiere que el estatus está inextricablemente vinculado al amor y que, a los ojos del narrador, juzgamos a las personas rápidamente para determinar su valor romántico.
