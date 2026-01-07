@@ -1,117 +1,105 @@
 {
-  "date": "2025-12-14",
+  "date": "2026-01-02",
   "keywords": [
     {
-      "word": "pozo",
+      "word": "acumulacion de compromisos",
       "weight": 3
     },
     {
-      "word": "cubo",
+      "word": "comodificacion del cuerpo",
+      "weight": 2
+    },
+    {
+      "word": "complicidad silenciosa",
+      "weight": 2
+    },
+    {
+      "word": "cuerpo deseante",
       "weight": 3
     },
     {
-      "word": "seco",
+      "word": "culpa cotidiana",
       "weight": 3
     },
     {
-      "word": "temer",
+      "word": "degradacion",
       "weight": 3
     },
     {
-      "word": "dominacion",
+      "word": "erosion de recursos",
+      "weight": 2
+    },
+    {
+      "word": "habituacion al abandono",
+      "weight": 2
+    },
+    {
+      "word": "herramienta que empequenece",
+      "weight": 2
+    },
+    {
+      "word": "mano que trabaja",
+      "weight": 1
+    },
+    {
+      "word": "materia putrefacta",
+      "weight": 1
+    },
+    {
+      "word": "merma de poder",
       "weight": 3
     },
     {
-      "word": "violencia",
+      "word": "montana de mierda",
+      "weight": 1
+    },
+    {
+      "word": "normalizacion del asco",
+      "weight": 2
+    },
+    {
+      "word": "orgasmo",
+      "weight": 1
+    },
+    {
+      "word": "orgasmo como consuelo",
+      "weight": 2
+    },
+    {
+      "word": "pala",
+      "weight": 1
+    },
+    {
+      "word": "palabra",
+      "weight": 1
+    },
+    {
+      "word": "palabras no dichas",
+      "weight": 2
+    },
+    {
+      "word": "prioridad al placer",
       "weight": 3
     },
     {
-      "word": "deshumanizacion",
+      "word": "priorizar gratificacion inmediata",
+      "weight": 2
+    },
+    {
+      "word": "renuncia progresiva",
+      "weight": 2
+    },
+    {
+      "word": "resignacion",
       "weight": 3
     },
     {
-      "word": "resistencia",
+      "word": "silencio autoimpuesto",
       "weight": 3
     },
     {
-      "word": "indiferencia",
+      "word": "trabajo humillante",
       "weight": 3
-    },
-    {
-      "word": "naturaleza",
-      "weight": 2
-    },
-    {
-      "word": "cuerpo",
-      "weight": 2
-    },
-    {
-      "word": "sexualidad",
-      "weight": 2
-    },
-    {
-      "word": "agresion",
-      "weight": 2
-    },
-    {
-      "word": "miedo",
-      "weight": 2
-    },
-    {
-      "word": "poder",
-      "weight": 2
-    },
-    {
-      "word": "objetificacion",
-      "weight": 2
-    },
-    {
-      "word": "violencia simbolica",
-      "weight": 2
-    },
-    {
-      "word": "confusion",
-      "weight": 2
-    },
-    {
-      "word": "animal",
-      "weight": 1
-    },
-    {
-      "word": "mujer",
-      "weight": 1
-    },
-    {
-      "word": "yegua",
-      "weight": 1
-    },
-    {
-      "word": "barro",
-      "weight": 1
-    },
-    {
-      "word": "charco",
-      "weight": 1
-    },
-    {
-      "word": "rebenque",
-      "weight": 1
-    },
-    {
-      "word": "bosque",
-      "weight": 1
-    },
-    {
-      "word": "violencia rural",
-      "weight": 1
-    },
-    {
-      "word": "frontera",
-      "weight": 1
-    },
-    {
-      "word": "cosificacion",
-      "weight": 1
     }
   ]
 }
