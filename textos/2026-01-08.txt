@@ -1,5 +1,5 @@
 FECHA: 2026-01-08
-MY_POEM_TITLE:
+MY_POEM_TITLE: 
 POETA: Raúl Gómez Jattin
 POEM_TITLE: La herencia del placer
 BOOK_TITLE: Amanecer en el Valle del Sinú
@@ -16,7 +16,6 @@ porque solo estoy acostado como
 
 OH
 
-
 # POEMA_CITADO
 
 ¿Y mis hijos?
@@ -29,7 +28,6 @@ Buenas noticias dices
 Sólo al principio
 El placer los ha vuelto insensibles
 Dígales que me alegro por ellos
-
 
 # TEXTO
 
