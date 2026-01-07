@@ -31,8 +31,8 @@
 <body>
   <header>
     <nav>
-      <a href="index.html">Poema du jour</a>
-      <a href="index.html?a=1">Análisis du jour</a>
+      <a href="../index.html">Poema du jour</a>
+      <a href="../index.html?a=1">Análisis du jour</a>
       <a href="archivo.html" class="active" >Archivo</a>
       <a href="https://instagram.com/quemalpoema" target="_blank">Instagram</a>
     </nav>
@@ -97,7 +97,7 @@
     }
 
 
-    fetch('archivo.json')
+    fetch('../archivo.json')
     .then(res => res.json())
     .then(data => {
         // 1) Crear lista de escritos
