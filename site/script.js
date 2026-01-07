@@ -5,7 +5,7 @@
 function txtPathFromDate(dateStr) {
   const y = dateStr.slice(0, 4);
   const m = dateStr.slice(5, 7);
-  return `/textos/${y}/${m}/${dateStr}.txt`;
+  return `/data/textos/${y}/${m}/${dateStr}.txt`;
 }
 
 function escapeHtml(s) {
@@ -286,7 +286,7 @@ function renderPoemWithTitleFromJson(poemText, titleFromJson) {
 
 
 async function loadTodayEntry() {
-  const index = await fetch('/textos/archivo.json').then(r => r.json());
+  const index = await fetch('/data/archivo.json').then(r => r.json());
 
   const today = getTodayISO();
   const byDateAsc = [...index].sort((a, b) => a.date.localeCompare(b.date));
@@ -344,7 +344,7 @@ async function loadPastEntry() {
   const pageDate = document.getElementById('pageDate');
   if (pageDate) pageDate.textContent = formatDate(date);
 
-  const index = await fetch('/textos/archivo.json').then(r => r.json());
+  const index = await fetch('/data/archivo.json').then(r => r.json());
   const chosen = index.find(e => e.date === date);
 
   if (!chosen) {

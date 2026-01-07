@@ -57,7 +57,7 @@ local PYTHON="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
 [[ -x "$PYTHON" ]] || die "No existe Python del proyecto: $PYTHON (crea .venv en este entorno)"
 
 local ARCHIVO="${ARCHIVO_JSON:-$QMP_REPO/archivo.json}"
-local TEMPLATE="${QMP_TEXTOS:-$QMP_REPO/textos}/templateTEXT.txt"
+local TEMPLATE="$QMP_DATA/templateTEXT.txt"
 local PULL="${QMP_SCRIPTS:-$QMP_REPO/scripts}/pull_keywords.py"
 [[ -f "$ARCHIVO" ]] || die "Falta $ARCHIVO"
 [[ -f "$TEMPLATE" ]] || die "Falta $TEMPLATE"

@@ -18,8 +18,9 @@ fi
 export QMP_SCRIPTS="$QMP_REPO/scripts"
 
 # NOTE: Por ahora, "data" vive en la raíz. Más adelante lo moveremos a /data
-export QMP_DATA="$QMP_REPO"
+export QMP_DATA="$QMP_REPO/data"
 export QMP_TEXTOS="$QMP_DATA/textos"
+
 
 # NOTE: Ahora "state" vive en /state
 export QMP_STATE="$QMP_REPO/state"
@@ -28,9 +29,8 @@ export QMP_STATE="$QMP_REPO/state"
 export QMP_PY="$QMP_REPO/.venv/bin/python"
 
 # --- Named files/dirs ---
-export ARCHIVO_JSON="$QMP_TEXTOS/archivo.json"
+export ARCHIVO_JSON="$QMP_DATA/archivo.json"
 export PUBLISH_LOG="$QMP_REPO/logs/publish_log.jsonl"
-
 export CURRENT_KW="$QMP_STATE/current_keywords.txt"
 export PENDING_KW="$QMP_STATE/pending_keywords.txt"
 export PENDING_ENTRY="$QMP_STATE/pending_entry.json"

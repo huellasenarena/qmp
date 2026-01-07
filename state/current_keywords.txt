@@ -1,100 +1,92 @@
 {
-  "date": "2026-01-05",
+  "date": "2026-01-01",
   "keywords": [
     {
-      "word": "ausencia",
+      "word": "visibilidad",
       "weight": 3
     },
     {
-      "word": "sombra",
+      "word": "amor",
       "weight": 3
     },
     {
-      "word": "ocultamiento",
+      "word": "identidad",
       "weight": 3
     },
     {
-      "word": "anhelo",
+      "word": "transformacion",
       "weight": 3
     },
     {
-      "word": "reencuentro",
+      "word": "cuerpo",
       "weight": 3
     },
     {
-      "word": "presencia ausente",
-      "weight": 3
-    },
-    {
-      "word": "fantasma",
-      "weight": 3
-    },
-    {
-      "word": "olvido",
-      "weight": 3
-    },
-    {
-      "word": "imitacion",
+      "word": "norma",
       "weight": 2
     },
     {
-      "word": "hacer sombra",
+      "word": "anormalidad",
       "weight": 2
     },
     {
-      "word": "desvanecimiento",
+      "word": "genero",
       "weight": 2
     },
     {
-      "word": "desaparicion",
+      "word": "deseo",
       "weight": 2
     },
     {
-      "word": "soledad",
+      "word": "finito",
       "weight": 2
     },
     {
-      "word": "provinciano",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "poder aparente",
+      "word": "diferencia",
       "weight": 2
     },
     {
-      "word": "performatividad",
+      "word": "convocatoria",
       "weight": 2
     },
     {
-      "word": "imitador",
-      "weight": 2
-    },
-    {
-      "word": "distancia emocional",
-      "weight": 2
-    },
-    {
-      "word": "escritorio",
+      "word": "copo de nieve",
       "weight": 1
     },
     {
-      "word": "palabra ardiente",
+      "word": "derretimiento",
       "weight": 1
     },
     {
-      "word": "piel",
+      "word": "invierno",
       "weight": 1
     },
     {
-      "word": "joven",
+      "word": "carreta",
       "weight": 1
     },
     {
-      "word": "escritor",
+      "word": "lado",
       "weight": 1
     },
     {
-      "word": "manias",
+      "word": "mano",
+      "weight": 1
+    },
+    {
+      "word": "respiracion",
+      "weight": 1
+    },
+    {
+      "word": "boca",
+      "weight": 1
+    },
+    {
+      "word": "fantasia",
       "weight": 1
     }
   ]
