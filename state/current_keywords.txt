@@ -1,92 +1,116 @@
 {
-  "date": "2026-01-01",
+  "date": "2025-12-14",
   "keywords": [
     {
-      "word": "visibilidad",
+      "word": "pozo",
       "weight": 3
     },
     {
-      "word": "amor",
+      "word": "cubo",
       "weight": 3
     },
     {
-      "word": "identidad",
+      "word": "seco",
       "weight": 3
     },
     {
-      "word": "transformacion",
+      "word": "temer",
       "weight": 3
+    },
+    {
+      "word": "dominacion",
+      "weight": 3
+    },
+    {
+      "word": "violencia",
+      "weight": 3
+    },
+    {
+      "word": "deshumanizacion",
+      "weight": 3
+    },
+    {
+      "word": "resistencia",
+      "weight": 3
+    },
+    {
+      "word": "indiferencia",
+      "weight": 3
+    },
+    {
+      "word": "naturaleza",
+      "weight": 2
     },
     {
       "word": "cuerpo",
-      "weight": 3
-    },
-    {
-      "word": "norma",
       "weight": 2
     },
     {
-      "word": "anormalidad",
+      "word": "sexualidad",
       "weight": 2
     },
     {
-      "word": "genero",
+      "word": "agresion",
       "weight": 2
     },
     {
-      "word": "deseo",
+      "word": "miedo",
       "weight": 2
     },
     {
-      "word": "finito",
+      "word": "poder",
       "weight": 2
     },
     {
-      "word": "exposicion",
+      "word": "objetificacion",
       "weight": 2
     },
     {
-      "word": "diferencia",
+      "word": "violencia simbolica",
       "weight": 2
     },
     {
-      "word": "convocatoria",
+      "word": "confusion",
       "weight": 2
     },
     {
-      "word": "copo de nieve",
+      "word": "animal",
       "weight": 1
     },
     {
-      "word": "derretimiento",
+      "word": "mujer",
       "weight": 1
     },
     {
-      "word": "invierno",
+      "word": "yegua",
       "weight": 1
     },
     {
-      "word": "carreta",
+      "word": "barro",
       "weight": 1
     },
     {
-      "word": "lado",
+      "word": "charco",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "rebenque",
       "weight": 1
     },
     {
-      "word": "respiracion",
+      "word": "bosque",
       "weight": 1
     },
     {
-      "word": "boca",
+      "word": "violencia rural",
       "weight": 1
     },
     {
-      "word": "fantasia",
+      "word": "frontera",
+      "weight": 1
+    },
+    {
+      "word": "cosificacion",
       "weight": 1
     }
   ]

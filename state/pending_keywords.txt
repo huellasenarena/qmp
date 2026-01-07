@@ -1,92 +1,96 @@
 {
-  "date": "2026-01-08",
+  "date": "2026-01-01",
   "keywords": [
     {
-      "word": "apatia",
+      "word": "impermanencia",
       "weight": 3
     },
     {
-      "word": "incredulidad",
+      "word": "desvanecimiento",
       "weight": 3
     },
     {
-      "word": "simulacion afectiva",
+      "word": "visibilidad",
       "weight": 3
-    },
-    {
-      "word": "desconexion emocional",
-      "weight": 3
-    },
-    {
-      "word": "inercia corporal",
-      "weight": 3
-    },
-    {
-      "word": "gemido",
-      "weight": 3
-    },
-    {
-      "word": "voz performativa",
-      "weight": 3
-    },
-    {
-      "word": "distanciamiento",
-      "weight": 3
-    },
-    {
-      "word": "sarcasmo",
-      "weight": 2
     },
     {
       "word": "ocultamiento",
+      "weight": 3
+    },
+    {
+      "word": "deformacion",
+      "weight": 3
+    },
+    {
+      "word": "fragilidad",
+      "weight": 3
+    },
+    {
+      "word": "caida",
+      "weight": 3
+    },
+    {
+      "word": "colectividad",
+      "weight": 3
+    },
+    {
+      "word": "derretimiento rapido",
       "weight": 2
     },
     {
-      "word": "arrepentimiento",
+      "word": "derretimiento lento",
       "weight": 2
     },
     {
-      "word": "culpa",
+      "word": "caida solitaria",
       "weight": 2
     },
     {
-      "word": "fracaso parental",
+      "word": "caida colectiva",
       "weight": 2
     },
     {
-      "word": "placeres insensibles",
+      "word": "cobertura lateral",
       "weight": 2
     },
     {
-      "word": "corrupcion de los ninos",
+      "word": "transicion material",
       "weight": 2
     },
     {
-      "word": "espectaculo",
+      "word": "visibilidad condicionada",
       "weight": 2
     },
     {
-      "word": "complacencia",
+      "word": "momento liminal",
       "weight": 2
     },
     {
-      "word": "alivio fingido",
+      "word": "tension entre verse y no verse",
       "weight": 2
     },
     {
-      "word": "estar acostado",
+      "word": "contacto y roce",
+      "weight": 2
+    },
+    {
+      "word": "copo de nieve",
       "weight": 1
     },
     {
-      "word": "oh repetido",
+      "word": "gorro de invierno",
       "weight": 1
     },
     {
-      "word": "silencio",
+      "word": "carreta",
       "weight": 1
     },
     {
-      "word": "distancia fisica",
+      "word": "superficie cubierta",
+      "weight": 1
+    },
+    {
+      "word": "lado",
       "weight": 1
     }
   ]

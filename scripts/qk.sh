@@ -40,7 +40,7 @@ cd "$QMP_REPO" || die "No puedo entrar a QMP_REPO=$QMP_REPO"
 PYTHON="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
 [[ -x "$PYTHON" ]] || die "No existe Python del proyecto: $PYTHON (crea .venv en este entorno)"
 ARCHIVO="${ARCHIVO_JSON:-$QMP_REPO/archivo.json}"
-GEN="${QMP_SCRIPTS:-$QMP_REPO/scripts}/gen_keywords.py"
+GEN="$QMP_REPO/qmp/gen_keywords.py"
 OUT_ACTIVE="${PENDING_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/pending_keywords.txt}"
 
 

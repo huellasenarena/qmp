@@ -58,7 +58,7 @@ local PYTHON="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
 
 local ARCHIVO="${ARCHIVO_JSON:-$QMP_REPO/archivo.json}"
 local TEMPLATE="$QMP_DATA/templateTEXT.txt"
-local PULL="${QMP_SCRIPTS:-$QMP_REPO/scripts}/pull_keywords.py"
+local PULL="$QMP_REPO/qmp/pull_keywords.py"
 [[ -f "$ARCHIVO" ]] || die "Falta $ARCHIVO"
 [[ -f "$TEMPLATE" ]] || die "Falta $TEMPLATE"
 [[ -f "$PULL" ]] || die "Falta $PULL"
