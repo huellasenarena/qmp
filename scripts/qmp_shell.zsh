@@ -14,6 +14,28 @@ else
   export QMP_REPO="${QMP_REPO:-$HOME/Desktop/qmp}"
 fi
 
+# --- QMP paths (single source of truth) ---
+# NOTE: Por ahora, "data" vive en la raíz. Más adelante lo moveremos a /data
+export QMP_SCRIPTS="${QMP_SCRIPTS:-$QMP_REPO/scripts}"
+export QMP_DATA="${QMP_DATA:-$QMP_REPO}"
+export QMP_TEXTOS="${QMP_TEXTOS:-$QMP_DATA/textos}"
+
+# NOTE: Por ahora, "state" vive dentro de scripts/. Más adelante lo moveremos a /state
+export QMP_STATE="${QMP_STATE:-$QMP_SCRIPTS}"
+
+# Python del proyecto (evita diferencias Mac/Codespaces)
+export QMP_PY="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
+
+# --- Named files/dirs ---
+export ARCHIVO_JSON="${ARCHIVO_JSON:-$QMP_DATA/archivo.json}"
+export PUBLISH_LOG="${PUBLISH_LOG:-$QMP_REPO/logs/publish_log.jsonl}"
+
+export CURRENT_KW="${CURRENT_KW:-$QMP_STATE/current_keywords.txt}"
+export PENDING_KW="${PENDING_KW:-$QMP_STATE/pending_keywords.txt}"
+export PENDING_ENTRY="${PENDING_ENTRY:-$QMP_STATE/pending_entry.json}"
+export KEYWORDS_BACKUPS_DIR="${KEYWORDS_BACKUPS_DIR:-$QMP_STATE/keywords_backups}"
+
+
 qmp() {
   cd "$QMP_REPO" || { echo "❌ No encuentro QMP_REPO: $QMP_REPO" >&2; return 1; }
 }
@@ -26,10 +48,11 @@ _qmp_check() {
   fi
 }
 
-qd()  { _qmp_check || return 1; "$QMP_REPO/scripts/qd.sh"  "$@"; }
-qk()  { _qmp_check || return 1; "$QMP_REPO/scripts/qk.sh"  "$@"; }
-qkw() { _qmp_check || return 1; "$QMP_REPO/scripts/qkw.sh" "$@"; }
-q() { _qmp_check || return 1; "$QMP_REPO/scripts/qmp_publish.sh" "$@"; }
+qd()  { _qmp_check || return 1; "$QMP_SCRIPTS/qd.sh"  "$@"; }
+qk()  { _qmp_check || return 1; "$QMP_SCRIPTS/qk.sh"  "$@"; }
+qkw() { _qmp_check || return 1; "$QMP_SCRIPTS/qkw.sh" "$@"; }
+q()   { _qmp_check || return 1; "$QMP_SCRIPTS/qmp_publish.sh" "$@"; }
+
 
 qhelp() {
   cat <<'EOF'

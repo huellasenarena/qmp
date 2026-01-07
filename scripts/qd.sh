@@ -36,12 +36,12 @@ confirm_yn() {
 [[ -n "${QMP_REPO:-}" ]] || die "QMP_REPO no está definido. ¿sourceaste qmp_shell.zsh?"
 cd "$QMP_REPO" || die "No puedo entrar a QMP_REPO=$QMP_REPO"
 
-local PYTHON="$QMP_REPO/.venv/bin/python"
+local PYTHON="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
 [[ -x "$PYTHON" ]] || die "No existe Python del proyecto: $PYTHON (crea .venv en este entorno)"
 
-local ARCHIVO="archivo.json"
-local TEMPLATE="textos/templateTEXT.txt"
-local PULL="scripts/pull_keywords.py"
+local ARCHIVO="${ARCHIVO_JSON:-$QMP_REPO/archivo.json}"
+local TEMPLATE="${QMP_TEXTOS:-$QMP_REPO/textos}/templateTEXT.txt"
+local PULL="${QMP_SCRIPTS:-$QMP_REPO/scripts}/pull_keywords.py"
 [[ -f "$ARCHIVO" ]] || die "Falta $ARCHIVO"
 [[ -f "$TEMPLATE" ]] || die "Falta $TEMPLATE"
 [[ -f "$PULL" ]] || die "Falta $PULL"
@@ -64,11 +64,13 @@ fi
 local MIN_DATE="" MAX_DATE="" NEXT_DATE=""
 {
   local out
-  out="$("$PYTHON" - <<'PY' 2>/dev/null
-import json
+  out="$("$PYTHON" - "$ARCHIVO" <<'PY' 2>/dev/null
+import json, sys
 from datetime import date, timedelta
 
-data = json.load(open("archivo.json", encoding="utf-8"))
+archivo = sys.argv[1]
+data = json.load(open(archivo, encoding="utf-8"))
+
 entries = data["entries"] if isinstance(data, dict) and isinstance(data.get("entries"), list) else data
 if not isinstance(entries, list):
     print("", "", "")
@@ -134,10 +136,11 @@ fi
 # Determine if entry exists
 # -------------------------
 local EXISTS="0"
-EXISTS="$("$PYTHON" - "$DATE" <<'PY' 2>/dev/null
+EXISTS="$("$PYTHON" - "$ARCHIVO" "$DATE" <<'PY' 2>/dev/null
 import json, sys
-date_str = sys.argv[1]
-data = json.load(open("archivo.json", encoding="utf-8"))
+archivo = sys.argv[1]
+date_str = sys.argv[2]
+data = json.load(open(archivo, encoding="utf-8"))
 entries = data["entries"] if isinstance(data, dict) and isinstance(data.get("entries"), list) else data
 if not isinstance(entries, list):
     print("0"); raise SystemExit(0)
@@ -153,9 +156,9 @@ fi
 # -------------------------
 # Paths for this date
 # -------------------------
-local TXT="textos/${DATE}.txt"
-local CURRENT="scripts/current_keywords.txt"
-local PENDING="scripts/pending_keywords.txt"
+local TXT="${QMP_TEXTOS:-$QMP_REPO/textos}/${DATE}.txt"
+local CURRENT="${CURRENT_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/current_keywords.txt}"
+local PENDING="${PENDING_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/pending_keywords.txt}"
 
 # Ensure txt exists
 # Ensure txt exists
