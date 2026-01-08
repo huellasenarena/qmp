@@ -1,114 +1,106 @@
 {
-  "date": "2026-01-09",
+  "date": "2026-01-07",
   "month": "2026-01",
-  "file": "textos/2026-01-09.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "es mi perro",
+  "file": "textos/2026-01-07.txt",
+  "my_poem_title": "se me olvidó",
+  "my_poem_snippet": "",
   "analysis": {
-    "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": "El pequeño solloza viendo por debajo de la puerta",
-    "book_title": ""
+    "poet": "Raúl Gómez Jattin",
+    "poem_title": "Íntimas preguntas",
+    "poem_snippet": "",
+    "book_title": "Amanecer en el Valle del Sinú"
   },
   "keywords": [
     {
-      "word": "anticipacion",
+      "word": "lentitud como indice de fracaso",
       "weight": 3
     },
     {
-      "word": "compania",
+      "word": "llenado vital",
       "weight": 3
     },
     {
-      "word": "distancia",
+      "word": "mirada como veredicto",
       "weight": 3
     },
     {
-      "word": "juntos",
+      "word": "pregunta performativa",
       "weight": 3
     },
     {
-      "word": "miedo habitual",
+      "word": "vacio como potencia",
       "weight": 3
     },
     {
-      "word": "otredad",
+      "word": "valoracion social como criterio amoroso",
       "weight": 3
     },
     {
-      "word": "perdida",
-      "weight": 3
-    },
-    {
-      "word": "persecucion",
-      "weight": 3
-    },
-    {
-      "word": "ausencia",
+      "word": "apertura como ceremonia",
       "weight": 2
     },
     {
-      "word": "caminar rapido",
+      "word": "clasificacion rapida",
       "weight": 2
     },
     {
-      "word": "ciclo repetitivo",
+      "word": "ironizacion social",
       "weight": 2
     },
     {
-      "word": "desaparicion",
+      "word": "revelacion mediante respuestas",
       "weight": 2
     },
     {
-      "word": "habito",
+      "word": "sustitucion estatus-afinidad",
       "weight": 2
     },
     {
-      "word": "mezcla con otros",
-      "weight": 2
-    },
-    {
-      "word": "predacion",
-      "weight": 2
-    },
-    {
-      "word": "seguimiento",
-      "weight": 2
-    },
-    {
-      "word": "separacion",
-      "weight": 2
-    },
-    {
-      "word": "tension expectante",
-      "weight": 2
-    },
-    {
-      "word": "caminata",
+      "word": "abrir",
       "weight": 1
     },
     {
-      "word": "franja de luz",
+      "word": "ambicion",
       "weight": 1
     },
     {
-      "word": "garras",
+      "word": "compra",
       "weight": 1
     },
     {
-      "word": "lontananza",
+      "word": "dias",
       "weight": 1
     },
     {
-      "word": "perro",
+      "word": "entrevista",
       "weight": 1
     },
     {
-      "word": "rendija",
+      "word": "fornicacion",
       "weight": 1
     },
     {
-      "word": "sollozo",
+      "word": "internet",
+      "weight": 1
+    },
+    {
+      "word": "ojos",
+      "weight": 1
+    },
+    {
+      "word": "paquete",
+      "weight": 1
+    },
+    {
+      "word": "profesion",
+      "weight": 1
+    },
+    {
+      "word": "satira",
+      "weight": 1
+    },
+    {
+      "word": "vida",
       "weight": 1
     }
   ]

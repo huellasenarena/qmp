@@ -239,83 +239,59 @@
     },
     "keywords": [
       {
-        "word": "vacio",
+        "word": "lentitud como indice de fracaso",
         "weight": 3
       },
       {
-        "word": "llenar la vida",
+        "word": "llenado vital",
         "weight": 3
       },
       {
-        "word": "paciencia",
+        "word": "mirada como veredicto",
         "weight": 3
       },
       {
-        "word": "expectativa",
+        "word": "pregunta performativa",
         "weight": 3
       },
       {
-        "word": "desilusion",
+        "word": "vacio como potencia",
         "weight": 3
       },
       {
-        "word": "potencial",
+        "word": "valoracion social como criterio amoroso",
         "weight": 3
       },
       {
-        "word": "autonomia emocional",
-        "weight": 3
-      },
-      {
-        "word": "aceptacion",
-        "weight": 3
-      },
-      {
-        "word": "esperar para abrir",
+        "word": "apertura como ceremonia",
         "weight": 2
       },
       {
-        "word": "apertura",
+        "word": "clasificacion rapida",
         "weight": 2
       },
       {
-        "word": "revelacion",
+        "word": "ironizacion social",
         "weight": 2
       },
       {
-        "word": "sorpresa negativa",
+        "word": "revelacion mediante respuestas",
         "weight": 2
       },
       {
-        "word": "calma activa",
+        "word": "sustitucion estatus-afinidad",
         "weight": 2
       },
       {
-        "word": "resiliencia",
-        "weight": 2
-      },
-      {
-        "word": "consumo online",
-        "weight": 2
-      },
-      {
-        "word": "paquete recibido",
-        "weight": 2
-      },
-      {
-        "word": "tiempo transcurrido",
-        "weight": 2
-      },
-      {
-        "word": "ausencia percibida",
-        "weight": 2
-      },
-      {
-        "word": "paquete",
+        "word": "abrir",
         "weight": 1
       },
       {
-        "word": "internet",
+        "word": "ambicion",
+        "weight": 1
+      },
+      {
+        "word": "compra",
         "weight": 1
       },
       {
@@ -323,19 +299,35 @@
         "weight": 1
       },
       {
-        "word": "caja",
+        "word": "entrevista",
         "weight": 1
       },
       {
-        "word": "manos",
+        "word": "fornicacion",
         "weight": 1
       },
       {
-        "word": "pantalla",
+        "word": "internet",
         "weight": 1
       },
       {
-        "word": "silencio",
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "paquete",
+        "weight": 1
+      },
+      {
+        "word": "profesion",
+        "weight": 1
+      },
+      {
+        "word": "satira",
+        "weight": 1
+      },
+      {
+        "word": "vida",
         "weight": 1
       }
     ]
