@@ -164,9 +164,16 @@ fi
 
 # --- Run merge_pending (build pending_entry.json + STATUS_JSON) ---
 local -a merge_args
-merge_args=("$MERGE" "$TXT")
+local -a merge_args
+merge_args=(
+  "$MERGE" "$TXT"
+  --archivo "$ARCHIVO"
+  --pending-kw "$PENDING_KW"
+  --pending-entry "$PENDING_ENTRY"
+)
 (( APPLY_KW == 1 )) && merge_args+=("--apply-keywords")
 (( DRY == 1 )) && merge_args+=("--dry-run")
+
 
 OUT="$("$PYTHON" "${merge_args[@]}" 2>&1)" || {
   # Mostrar el error real (una sola vez) y salir

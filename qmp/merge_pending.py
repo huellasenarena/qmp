@@ -6,6 +6,7 @@ import json
 import subprocess
 import sys
 import unicodedata
+import os
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -85,40 +86,62 @@ def keywords_equal(a: Any, b: Any) -> bool:
     return normalize_keywords(a) == normalize_keywords(b)
 
 
-def build_pending_entry_via_script(repo: Path, txt_path: Path, out_path: Path) -> Dict[str, Any]:
-    script = repo / "scripts" / "make_pending_entry.py"
+def build_pending_entry_via_script(txt_path: Path, out_path: Path) -> Dict[str, Any]:
+    script = Path(__file__).resolve().parent / "make_pending_entry.py"
     if not script.exists():
-        raise SystemExit("No existe scripts/make_pending_entry.py (necesario para parsear el .txt con schema histórico)")
+        raise SystemExit("No existe qmp/make_pending_entry.py (necesario para parsear el .txt)")
     cmd = [sys.executable, str(script), str(txt_path), "--out", str(out_path)]
     subprocess.check_call(cmd)
     entry = json.loads(out_path.read_text(encoding="utf-8"))
     if not isinstance(entry, dict) or entry.get("date") is None:
         raise SystemExit("pending_entry.json inválido (make_pending_entry.py no devolvió un entry correcto)")
-    # archivo.json debe ser índice: NO guardamos sections completas
     entry.pop("sections", None)
     return entry
+
+import argparse
+from pathlib import Path
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("txt_path", help="Path a textos/YYYY-MM-DD.txt")
-    ap.add_argument("--apply-keywords", action="store_true", help="Aplicar keywords desde scripts/pending_keywords.txt")
+    ap.add_argument("txt_path", type=Path, help="Path al .txt (data/textos/YYYY/MM/YYYY-MM-DD.txt)")
+    ap.add_argument("--archivo", required=True, type=Path, help="Path a data/archivo.json")
+    ap.add_argument("--pending-kw", required=True, type=Path, help="Path a state/pending_keywords.txt")
+    ap.add_argument("--pending-entry", required=True, type=Path, help="Path a state/pending_entry.json")
+    ap.add_argument("--apply-keywords", action="store_true", help="Aplicar keywords desde pending_keywords")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
+
+
+    txt_path = args.txt_path
+    archivo = args.archivo
+    pending_kw_path = args.pending_kw
+    pending_entry_path = args.pending_entry
+    APPLY_KW = args.apply_keywords
+    DRY_RUN = args.dry_run
+
+
 
     txt_path = Path(args.txt_path)
     if not txt_path.exists():
         raise SystemExit(f"No existe: {txt_path}")
 
-    repo = _repo_root_from_txt(txt_path)
-    archivo = repo / "archivo.json"
-    pending_kw_path = repo / "scripts" / "pending_keywords.txt"
-    pending_entry_path = repo / "scripts" / "pending_entry.json"
+    txt_path = args.txt_path
+    if not txt_path.exists():
+        raise SystemExit(f"No existe: {txt_path}")
+
+    archivo = args.archivo
+    pending_kw_path = args.pending_kw
+    pending_entry_path = args.pending_entry
+
+    if not archivo.exists():
+        raise SystemExit(f"Falta archivo.json: {archivo}")
+
 
     data, entries = load_archivo(archivo)
 
     # Parsear contenido con el schema histórico (single source of truth)
-    entry = build_pending_entry_via_script(repo, txt_path, pending_entry_path)
+    entry = build_pending_entry_via_script(txt_path, pending_entry_path)
     date = entry["date"]
 
     old_entry = next((e for e in entries if e.get("date") == date), None)
