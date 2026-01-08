@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-01-09",
+    "month": "2026-01",
+    "file": "textos/2026-01-09.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "es mi perro",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "",
+      "poem_snippet": "El pequeño solloza viendo por debajo de la puerta",
+      "book_title": ""
+    },
+    "keywords": [
+      {
+        "word": "anticipacion",
+        "weight": 3
+      },
+      {
+        "word": "compania",
+        "weight": 3
+      },
+      {
+        "word": "distancia",
+        "weight": 3
+      },
+      {
+        "word": "juntos",
+        "weight": 3
+      },
+      {
+        "word": "miedo habitual",
+        "weight": 3
+      },
+      {
+        "word": "otredad",
+        "weight": 3
+      },
+      {
+        "word": "perdida",
+        "weight": 3
+      },
+      {
+        "word": "persecucion",
+        "weight": 3
+      },
+      {
+        "word": "ausencia",
+        "weight": 2
+      },
+      {
+        "word": "caminar rapido",
+        "weight": 2
+      },
+      {
+        "word": "ciclo repetitivo",
+        "weight": 2
+      },
+      {
+        "word": "desaparicion",
+        "weight": 2
+      },
+      {
+        "word": "habito",
+        "weight": 2
+      },
+      {
+        "word": "mezcla con otros",
+        "weight": 2
+      },
+      {
+        "word": "predacion",
+        "weight": 2
+      },
+      {
+        "word": "seguimiento",
+        "weight": 2
+      },
+      {
+        "word": "separacion",
+        "weight": 2
+      },
+      {
+        "word": "tension expectante",
+        "weight": 2
+      },
+      {
+        "word": "caminata",
+        "weight": 1
+      },
+      {
+        "word": "franja de luz",
+        "weight": 1
+      },
+      {
+        "word": "garras",
+        "weight": 1
+      },
+      {
+        "word": "lontananza",
+        "weight": 1
+      },
+      {
+        "word": "perro",
+        "weight": 1
+      },
+      {
+        "word": "rendija",
+        "weight": 1
+      },
+      {
+        "word": "sollozo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-08",
     "month": "2026-01",
     "file": "textos/2026-01-08.txt",
@@ -2061,9 +2176,11 @@
     "month": "2025-12",
     "file": "textos/2025-12-20.txt",
     "my_poem_title": "bote de byte",
+    "my_poem_snippet": "",
     "analysis": {
       "poet": "Gustavo Adolfo Bécquer",
       "poem_title": "Rima XXIII",
+      "poem_snippet": "",
       "book_title": ""
     },
     "keywords": [
@@ -2162,9 +2279,11 @@
     "month": "2025-12",
     "file": "textos/2025-12-19.txt",
     "my_poem_title": "autorretrato",
+    "my_poem_snippet": "",
     "analysis": {
       "poet": "Alfonsina Storni",
       "poem_title": "Hombre pequeñito",
+      "poem_snippet": "",
       "book_title": ""
     },
     "keywords": [
@@ -2279,9 +2398,11 @@
     "month": "2025-12",
     "file": "textos/2025-12-18.txt",
     "my_poem_title": "escribir",
+    "my_poem_snippet": "",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "tótem",
+      "my_poem_snippet": "",
       "book_title": "La carne se corta"
     },
     "keywords": [
@@ -2400,9 +2521,11 @@
     "month": "2025-12",
     "file": "textos/2025-12-17.txt",
     "my_poem_title": "follar",
+    "my_poem_snippet": "",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "la suerte del que come",
+      "my_poem_snippet": "",
       "book_title": "La carne se corta"
     },
     "keywords": [
@@ -2532,10 +2655,12 @@
     "date": "2025-12-16",
     "month": "2025-12",
     "file": "textos/2025-12-16.txt",
+    "my_poem_title": "",
     "my_poem_snippet": "de mi mano cae cae cae",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "un entierro",
+      "poem_snippet": "",
       "book_title": "La carne se corta"
     },
     "keywords": [
@@ -2658,9 +2783,11 @@
     "month": "2025-12",
     "file": "textos/2025-12-15.txt",
     "my_poem_title": "qué hay para ver en el bosque?",
+    "my_poem_snippet": "",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "trampa para cazar caballos",
+      "poem_snippet": "",
       "book_title": "La carne se corta"
     },
     "keywords": [
@@ -2802,10 +2929,12 @@
     "date": "2025-12-14",
     "month": "2025-12",
     "file": "textos/2025-12-14.txt",
+    "my_poem_title": "",
     "my_poem_snippet": "ayer te di el agua del pozo",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "charco en calma",
+      "poem_snippet": "",
       "book_title": "La carne se corta"
     },
     "keywords": [

@@ -1,11 +1,46 @@
 FECHA: 2026-01-09
-MY_POEM_TITLE:
-POETA:
-POEM_TITLE:
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: 
 BOOK_TITLE:
 
 # POEMA
 
+es mi perro
+somos juntos
+camina más rápido
+pero somos juntos
+
+sí, hay una pequeña distancia
+pero somos juntos
+
+ya hay un otro
+persigue
+y en la lontananza
+se mezcla con los otros
+no lo veo más
+
 # POEMA_CITADO
 
+El pequeño solloza viendo por debajo de la puerta
+el gato se acuesta sobre un pantalón
+el perro aguada lo más cerquita del afuera
+
+Olfatear por la rendija lo que traiga el aire
+estirar las garras los deditos
+tanto como se pueda hacia el otro lado
+sin mirar cómo la noche se va comiendo las cosas
+tal vez alcance el pequeño a cerrar los ojos antes del mordisco en la espalda
+antes de la intocable franja de luz
+
 # TEXTO
+
+Un perro huele a su presa, ansioso por atraparla; la presa llora y busca ayuda antes de que le muerda, como hábito. Con la primera estrofa sirviendo como puesta en escena y la segunda como conflicto, el poema cuenta una pequeña historia sobre la anticipación de la violencia y el miedo, sugiriendo que el miedo es un hábito que puede desactivarse con un “despertar”, ya sea literal o figurado.
+
+Me parece que el poema nos presenta dos lados: el lado del niño y el lado del perro. El niño representa el miedo, la vulnerabilidad y el deseo de protegerse. El perro representa lo impulsivo, lo violento y lo ansioso. Entre estos lados está la puerta, una frontera delgada. Vemos la yuxtaposición de estos lados en las líneas “estirar las garras los deditos / tanto como se pueda hacia el otro lado”: mientras el perro se prepara para su ataque, el niño busca ayuda.
+
+El perro no busca la oportunidad perfecta para atacar, según leo el poema. Dice “sin mirar cómo la noche se va comiendo las cosas”, lo cual, aunque admite varias interpretaciones, interpreto como la falta de lógica en la violencia y la falta de comprensión en la víctima. Creo que esta línea se aplica tanto al perro como al niño. Para el perro, “sin mirar” implica una forma de ignorancia: no espera el momento ideal para atacar; puede hacerlo incluso cuando las condiciones no son las mejores, por ejemplo, cuando la luz vuelve la violencia más visible. Para el niño, “sin mirar” quiere decir que no puede darse cuenta de que el final está cerca.
+
+Al final vemos que “la intocable franja de luz” aparece para interrumpir la sensación repetida de la violencia. La violencia se percibe como real y el narrador experimenta un miedo real, pero finalmente la luz muestra que la violencia fue solo mental.
+
+Interpreto el poema como un ciclo trágico de la incapacidad humana de aprender: el niño experimenta un miedo que resulta ser imaginado, pero ese miedo se repite una y otra vez. A mis ojos, es un poema existencial porque presenta el miedo como algo permanente, incluso cuando nos damos cuenta de que no se basa en la realidad.

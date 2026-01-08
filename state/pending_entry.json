@@ -1,114 +1,114 @@
 {
-  "date": "2026-01-07",
+  "date": "2026-01-09",
   "month": "2026-01",
-  "file": "textos/2026-01-07.txt",
-  "my_poem_title": "se me olvidó",
-  "my_poem_snippet": "",
+  "file": "textos/2026-01-09.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "es mi perro",
   "analysis": {
-    "poet": "Raúl Gómez Jattin test",
-    "poem_title": "Íntimas preguntas",
-    "poem_snippet": "",
-    "book_title": "Amanecer en el Valle del Sinú"
+    "poet": "Violeta Villalba",
+    "poem_title": "",
+    "poem_snippet": "El pequeño solloza viendo por debajo de la puerta",
+    "book_title": ""
   },
   "keywords": [
     {
-      "word": "aceptacion",
+      "word": "anticipacion",
       "weight": 3
     },
     {
-      "word": "autonomia emocional",
+      "word": "compania",
       "weight": 3
     },
     {
-      "word": "desilusion",
+      "word": "distancia",
       "weight": 3
     },
     {
-      "word": "expectativa",
+      "word": "juntos",
       "weight": 3
     },
     {
-      "word": "llenar la vida",
+      "word": "miedo habitual",
       "weight": 3
     },
     {
-      "word": "paciencia",
+      "word": "otredad",
       "weight": 3
     },
     {
-      "word": "potencial",
+      "word": "perdida",
       "weight": 3
     },
     {
-      "word": "vacio",
+      "word": "persecucion",
       "weight": 3
     },
     {
-      "word": "apertura",
+      "word": "ausencia",
       "weight": 2
     },
     {
-      "word": "ausencia percibida",
+      "word": "caminar rapido",
       "weight": 2
     },
     {
-      "word": "calma activa",
+      "word": "ciclo repetitivo",
       "weight": 2
     },
     {
-      "word": "consumo online",
+      "word": "desaparicion",
       "weight": 2
     },
     {
-      "word": "esperar para abrir",
+      "word": "habito",
       "weight": 2
     },
     {
-      "word": "paquete recibido",
+      "word": "mezcla con otros",
       "weight": 2
     },
     {
-      "word": "resiliencia",
+      "word": "predacion",
       "weight": 2
     },
     {
-      "word": "revelacion",
+      "word": "seguimiento",
       "weight": 2
     },
     {
-      "word": "sorpresa negativa",
+      "word": "separacion",
       "weight": 2
     },
     {
-      "word": "tiempo transcurrido",
+      "word": "tension expectante",
       "weight": 2
     },
     {
-      "word": "caja",
+      "word": "caminata",
       "weight": 1
     },
     {
-      "word": "dias",
+      "word": "franja de luz",
       "weight": 1
     },
     {
-      "word": "internet",
+      "word": "garras",
       "weight": 1
     },
     {
-      "word": "manos",
+      "word": "lontananza",
       "weight": 1
     },
     {
-      "word": "pantalla",
+      "word": "perro",
       "weight": 1
     },
     {
-      "word": "paquete",
+      "word": "rendija",
       "weight": 1
     },
     {
-      "word": "silencio",
+      "word": "sollozo",
       "weight": 1
     }
   ]
