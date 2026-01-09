@@ -1,104 +1,92 @@
 {
-  "date": "2026-01-07",
+  "date": "2026-01-01",
   "keywords": [
     {
-      "word": "vacio",
+      "word": "visibilidad",
       "weight": 3
     },
     {
-      "word": "llenar la vida",
+      "word": "amor",
       "weight": 3
     },
     {
-      "word": "paciencia",
+      "word": "identidad",
       "weight": 3
     },
     {
-      "word": "expectativa",
+      "word": "transformacion",
       "weight": 3
     },
     {
-      "word": "desilusion",
+      "word": "cuerpo",
       "weight": 3
     },
     {
-      "word": "potencial",
-      "weight": 3
-    },
-    {
-      "word": "autonomia emocional",
-      "weight": 3
-    },
-    {
-      "word": "aceptacion",
-      "weight": 3
-    },
-    {
-      "word": "esperar para abrir",
+      "word": "norma",
       "weight": 2
     },
     {
-      "word": "apertura",
+      "word": "anormalidad",
       "weight": 2
     },
     {
-      "word": "revelacion",
+      "word": "genero",
       "weight": 2
     },
     {
-      "word": "sorpresa negativa",
+      "word": "deseo",
       "weight": 2
     },
     {
-      "word": "calma activa",
+      "word": "finito",
       "weight": 2
     },
     {
-      "word": "resiliencia",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "consumo online",
+      "word": "diferencia",
       "weight": 2
     },
     {
-      "word": "paquete recibido",
+      "word": "convocatoria",
       "weight": 2
     },
     {
-      "word": "tiempo transcurrido",
-      "weight": 2
-    },
-    {
-      "word": "ausencia percibida",
-      "weight": 2
-    },
-    {
-      "word": "paquete",
+      "word": "copo de nieve",
       "weight": 1
     },
     {
-      "word": "internet",
+      "word": "derretimiento",
       "weight": 1
     },
     {
-      "word": "dias",
+      "word": "invierno",
       "weight": 1
     },
     {
-      "word": "caja",
+      "word": "carreta",
       "weight": 1
     },
     {
-      "word": "manos",
+      "word": "lado",
       "weight": 1
     },
     {
-      "word": "pantalla",
+      "word": "mano",
       "weight": 1
     },
     {
-      "word": "silencio",
+      "word": "respiracion",
+      "weight": 1
+    },
+    {
+      "word": "boca",
+      "weight": 1
+    },
+    {
+      "word": "fantasia",
       "weight": 1
     }
   ]
