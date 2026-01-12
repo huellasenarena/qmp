@@ -1,114 +1,98 @@
 {
-  "date": "2026-01-12",
+  "date": "2026-01-13",
   "month": "2026-01",
-  "file": "textos/2026-01-12.txt",
+  "file": "textos/2026-01-13.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "me dije",
+  "my_poem_snippet": "dije a la flor",
   "analysis": {
-    "poet": "Luna Miguel",
-    "poem_title": "INTERROGATORIO ANTE LA PUERTA DE LOS CELOS (III)",
+    "poet": "Horacio Quiroga",
+    "poem_title": "Fragmento extraído del ensayo “LOS INTELECTUALES Y EL CINE”",
     "poem_snippet": "",
-    "book_title": "Poesía Masculina"
+    "book_title": ""
   },
   "keywords": [
     {
-      "word": "choque cultura-cuerpo",
+      "word": "autoengano",
       "weight": 3
     },
     {
-      "word": "materialidad",
+      "word": "estetizacion de la violencia",
       "weight": 3
     },
     {
-      "word": "precariedad",
+      "word": "performatividad",
       "weight": 3
     },
     {
-      "word": "proteccion invertida",
+      "word": "posesion",
       "weight": 3
     },
     {
-      "word": "reconocimiento fraterno",
+      "word": "privacion",
       "weight": 3
     },
     {
-      "word": "suspension",
+      "word": "violencia como cuidado",
       "weight": 3
     },
     {
-      "word": "coro cultural",
+      "word": "contradiccion",
       "weight": 2
     },
     {
-      "word": "corporalizacion",
+      "word": "control corporal",
       "weight": 2
     },
     {
-      "word": "estetica de la suspension",
+      "word": "declaracion vs accion",
       "weight": 2
     },
     {
-      "word": "metamorfosis material",
+      "word": "hipocresia",
       "weight": 2
     },
     {
-      "word": "somatizacion",
+      "word": "jerarquia estetica",
       "weight": 2
     },
     {
-      "word": "tension pertenencia-competencia",
+      "word": "objetivacion",
       "weight": 2
     },
     {
-      "word": "angel",
+      "word": "omision",
+      "weight": 2
+    },
+    {
+      "word": "crece",
       "weight": 1
     },
     {
-      "word": "apetito",
+      "word": "flor",
       "weight": 1
     },
     {
-      "word": "cama",
+      "word": "mi unica flora",
       "weight": 1
     },
     {
-      "word": "celos",
+      "word": "no le di de comer",
       "weight": 1
     },
     {
-      "word": "coro",
+      "word": "pedales",
       "weight": 1
     },
     {
-      "word": "frio",
+      "word": "pise",
       "weight": 1
     },
     {
-      "word": "juicio moral",
+      "word": "supongo",
       "weight": 1
     },
     {
-      "word": "maleza",
-      "weight": 1
-    },
-    {
-      "word": "manta",
-      "weight": 1
-    },
-    {
-      "word": "masculinidad",
-      "weight": 1
-    },
-    {
-      "word": "papel",
-      "weight": 1
-    },
-    {
-      "word": "techo",
-      "weight": 1
-    },
-    {
-      "word": "temblor",
+      "word": "tierra",
       "weight": 1
     }
   ]

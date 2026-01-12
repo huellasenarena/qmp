@@ -1,5 +1,104 @@
 [
   {
+    "date": "2026-01-13",
+    "month": "2026-01",
+    "file": "textos/2026-01-13.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "dije a la flor",
+    "analysis": {
+      "poet": "Horacio Quiroga",
+      "poem_title": "Fragmento extraído del ensayo “LOS INTELECTUALES Y EL CINE”",
+      "poem_snippet": "",
+      "book_title": ""
+    },
+    "keywords": [
+      {
+        "word": "autoengano",
+        "weight": 3
+      },
+      {
+        "word": "estetizacion de la violencia",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "posesion",
+        "weight": 3
+      },
+      {
+        "word": "privacion",
+        "weight": 3
+      },
+      {
+        "word": "violencia como cuidado",
+        "weight": 3
+      },
+      {
+        "word": "contradiccion",
+        "weight": 2
+      },
+      {
+        "word": "control corporal",
+        "weight": 2
+      },
+      {
+        "word": "declaracion vs accion",
+        "weight": 2
+      },
+      {
+        "word": "hipocresia",
+        "weight": 2
+      },
+      {
+        "word": "jerarquia estetica",
+        "weight": 2
+      },
+      {
+        "word": "objetivacion",
+        "weight": 2
+      },
+      {
+        "word": "omision",
+        "weight": 2
+      },
+      {
+        "word": "crece",
+        "weight": 1
+      },
+      {
+        "word": "flor",
+        "weight": 1
+      },
+      {
+        "word": "mi unica flora",
+        "weight": 1
+      },
+      {
+        "word": "no le di de comer",
+        "weight": 1
+      },
+      {
+        "word": "pedales",
+        "weight": 1
+      },
+      {
+        "word": "pise",
+        "weight": 1
+      },
+      {
+        "word": "supongo",
+        "weight": 1
+      },
+      {
+        "word": "tierra",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-12",
     "month": "2026-01",
     "file": "textos/2026-01-12.txt",

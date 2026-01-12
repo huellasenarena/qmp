@@ -1,0 +1,52 @@
+FECHA: 2026-01-13
+MY_POEM_TITLE: 
+POETA: Horacio Quiroga
+POEM_TITLE: Fragmento extraído del ensayo “LOS INTELECTUALES Y EL CINE”
+BOOK_TITLE:
+
+# POEMA
+
+dije a la flor
+crece
+sea bonita
+
+luego
+la pisé
+y no le di
+de comer
+
+la miro 
+en el montón
+de tierra
+sola
+los restos 
+de los pedales
+
+es mi única flora
+la más hermosa
+la mejor
+supongo
+
+# POEMA_CITADO
+
+Los intelectuales son gente que por lo común desprecian el cine. Suelen conocer de memoria, y ya desde enero, el elenco y programa de las compañías teatrales de primero y séptimo orden. Pero del cine no hablan jamás; y si oyen a un pobre hombre hablar de él, sonríen siempre sin despegar los labios.
+
+No es del caso averiguar si no se cumple con los intelectuales, respecto del cine, el conocido aforismo de estética por el cual todos los wagnerianos exclusivos silban sin cesar trozos de Verdi. Acaso el intelectual cultive furtivamente los solitarios cines de su barrio; pero no confesará jamás su debilidad por un espectáculo del que su cocinera gusta tanto como él, y el chico de la cocinera tanto como ambos juntos. Manantial democrático de arte, como se ve, y que a ejemplo de las canciones populares, da de beber a chicos, medianos, y hombres de vieja barba como Tolstoi.
+
+Pero el intelectual suele ser un poquillo advenedizo en cuestiones de arte. Una nueva escuela, un nuevo rumbo, una nueva tontería pasadista, momentista o futurista, está mucho más cerca de seducirle que desagradarle. Y como es de esperar, tanto más solicitado se siente a defender un ismo cualquiera, cuanto más irrita éste a la gente de humilde y pesado sentido común.
+
+¿Cómo, pues, el intelectual no halló en el arte recién creado, atractivos que por quijotería o esnobismo hicieran de él su paladín?
+
+La revista Clarté, que no se caracteriza precisamente por el estudio de frivolidades, plantea esta misma pregunta en un primer artículo así encabezado: «El problema del cine en los tiempos modernos es demasiado importante para que no entre en nuestras preocupaciones».
+
+# TEXTO
+
+Más que un argumento, este fragmento de **LOS INTELECTUALES Y EL CINE** presenta una vaga y polémica caricatura del mundo intelectual. El escritor habla sobre la reacción de los “intelectuales” ante la nueva forma de cinematografía (tengamos presente que escribió el ensayo en los años 1920). El punto global de su texto es que el cine presenta un interés para los intelectuales, tanto en términos de placer como académicos, pero que estos evitan el cine por miedo a ser considerados inssofisticados. Aunque aceptemos el ensayo no como un argumento serio sino más bien como un texto provocativo y subversivo, el escrito cae preso de aquello que critica en los intelectuales: que su raison d’être es crear clasificaciones sin sentido. Además, hay una ironía en el hecho de que el escritor sea un intelectual que critica a los intelectuales, lo que revela una falta de autoconciencia.
+
+“El cine presenta la oportunidad de inventar una nueva escuela, un nuevo rumbo, una nueva tontería pasadista”, dice el escritor. Por eso, los intelectuales deberían aprovechar la oportunidad de difundir su sabiduría e irritar a las masas. Sin embargo, el cine, a diferencia del teatro y de otras formas de arte, tiene un atractivo global que, según el narrador, desanima a los intelectuales.
+
+Los intelectuales ven el mundo a través de abstracciones como escuelas y rumbos, pero también mediante estereotipos como “wagnerianos”, “cocineras” o quienes escuchan “canciones populares”. Pero ¿qué está haciendo el narrador con su uso de “los intelectuales” y “el intelectual”? Nos presenta la misma generalización que vuelve inútil el trabajo que critica en los intelectuales. Considerando esto, está claro que incluso como texto diseñado para provocar, el ensayo no alcanza su objetivo.
+
+Horacio Quiroga fue poeta, novelista y ensayista; bajo cualquier consideración, fue un intelectual. Por eso resulta decepcionante que critique a los intelectuales sin reconocer que él mismo forma parte de ese mismo medio.
+
+En conjunto, se trata de un ensayo poco riguroso que se contradice. Para mejorar el texto, el autor habría podido precisar con mayor claridad a quiénes se refiere cuando habla de los intelectuales y evitar el uso constante de generalizaciones. Además, habría sido más convincente un ensayo que expusiera de manera positiva por qué el cine merece ser estudiado. Tal como está, el texto funciona más como un ataque al mundo intelectual que como una defensa del valor del cine. Si su objetivo era convencer a los intelectuales de que el cine tiene valor artístico, habría sido más eficaz presentar sus cualidades positivas en lugar de insultarlos y estereotiparlos. 2/10 porque hay algunas frases que me gustan.
