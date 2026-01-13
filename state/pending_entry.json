@@ -1,98 +1,90 @@
 {
-  "date": "2026-01-13",
+  "date": "2026-01-14",
   "month": "2026-01",
-  "file": "textos/2026-01-13.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "dije a la flor",
+  "file": "textos/2026-01-14.txt",
+  "my_poem_title": "piscina",
+  "my_poem_snippet": "",
   "analysis": {
-    "poet": "Horacio Quiroga",
-    "poem_title": "Fragmento extraído del ensayo “LOS INTELECTUALES Y EL CINE”",
+    "poet": "Violeta Villalba",
+    "poem_title": "Inquietud",
     "poem_snippet": "",
-    "book_title": ""
+    "book_title": "Prisión Voluntaria"
   },
   "keywords": [
     {
-      "word": "autoengano",
+      "word": "incertidumbre",
       "weight": 3
     },
     {
-      "word": "estetizacion de la violencia",
+      "word": "inscripcion corporal",
       "weight": 3
+    },
+    {
+      "word": "olvido",
+      "weight": 3
+    },
+    {
+      "word": "presencia simbolica",
+      "weight": 3
+    },
+    {
+      "word": "vida como ausencia",
+      "weight": 3
+    },
+    {
+      "word": "equivalencia vida-muerte",
+      "weight": 2
+    },
+    {
+      "word": "hipotesis",
+      "weight": 2
+    },
+    {
+      "word": "interrogacion",
+      "weight": 2
+    },
+    {
+      "word": "memoria colectiva",
+      "weight": 2
     },
     {
       "word": "performatividad",
-      "weight": 3
-    },
-    {
-      "word": "posesion",
-      "weight": 3
-    },
-    {
-      "word": "privacion",
-      "weight": 3
-    },
-    {
-      "word": "violencia como cuidado",
-      "weight": 3
-    },
-    {
-      "word": "contradiccion",
       "weight": 2
     },
     {
-      "word": "control corporal",
+      "word": "tension umbral",
       "weight": 2
     },
     {
-      "word": "declaracion vs accion",
-      "weight": 2
-    },
-    {
-      "word": "hipocresia",
-      "weight": 2
-    },
-    {
-      "word": "jerarquia estetica",
-      "weight": 2
-    },
-    {
-      "word": "objetivacion",
-      "weight": 2
-    },
-    {
-      "word": "omision",
-      "weight": 2
-    },
-    {
-      "word": "crece",
+      "word": "beber",
       "weight": 1
     },
     {
-      "word": "flor",
+      "word": "blanco",
       "weight": 1
     },
     {
-      "word": "mi unica flora",
+      "word": "mirada",
       "weight": 1
     },
     {
-      "word": "no le di de comer",
+      "word": "no",
       "weight": 1
     },
     {
-      "word": "pedales",
+      "word": "orin",
       "weight": 1
     },
     {
-      "word": "pise",
+      "word": "pregunta",
       "weight": 1
     },
     {
-      "word": "supongo",
+      "word": "silencio",
       "weight": 1
     },
     {
-      "word": "tierra",
+      "word": "trampolin",
       "weight": 1
     }
   ]

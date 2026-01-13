@@ -1,0 +1,27 @@
+FECHA: 2026-01-14
+MY_POEM_TITLE: piscina
+POETA: Violeta Villalba
+POEM_TITLE: Inquietud
+BOOK_TITLE: Prisión Voluntaria
+
+# POEMA
+
+mirando desde el trampolín
+si podríamos haber decir un no suave
+¿estaría llena con orín?
+¿o pensaríamos beber sin rendirse?
+
+# POEMA_CITADO
+
+Y si la vida resulta igualmente misteriosa que la muerte
+igual de silenciosa y blanca
+igual de incierta
+cuando estemos muertos
+
+# TEXTO
+
+En la misma manera que lo que ocurre en la muerte nos deja sin certidumbre, el lenguaje de **Inquietud** también nos deja sin certidumbre, dejando al lector con interpretaciones variadas. Una de ellas es que el narrador se pregunta cómo su vida, *como símbolo*, va a existir tras su muerte. A través de esta interpretación, el poema sugiere que, después de morir, la manera en que nuestra vida será percibida por los sobrevivientes es incognoscible, y que es este desconocimiento el que crea inquietud en el narrador.
+
+El poema no afirma lo que va a pasar; presenta una hipótesis (“Y si…”). Esta hipótesis explora las similitudes entre la vida recordada y la muerte, sugiriendo que es posible que nuestras vidas sean olvidadas (“silenciosa y blanca”) o percibidas de manera imprevisible (“incierta”). Creo que es esta falta de certeza la que asusta al narrador, porque plantea que *lo que hacemos en la vida, cuando tenemos la capacidad de actuar, no puede influir en cómo somos recordados*.
+
+Teniendo esto en cuenta, el poema sugiere un miedo no a la muerte, *sino a nuestra presencia simbólica tras la muerte*. El hablante propone una hipótesis incognoscible sobre cómo vamos a ser recordados y, por esta falta de certidumbre, se siente inquieto.

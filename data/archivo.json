@@ -1,5 +1,96 @@
 [
   {
+    "date": "2026-01-14",
+    "month": "2026-01",
+    "file": "textos/2026-01-14.txt",
+    "my_poem_title": "piscina",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Inquietud",
+      "poem_snippet": "",
+      "book_title": "Prisión Voluntaria"
+    },
+    "keywords": [
+      {
+        "word": "incertidumbre",
+        "weight": 3
+      },
+      {
+        "word": "inscripcion corporal",
+        "weight": 3
+      },
+      {
+        "word": "olvido",
+        "weight": 3
+      },
+      {
+        "word": "presencia simbolica",
+        "weight": 3
+      },
+      {
+        "word": "vida como ausencia",
+        "weight": 3
+      },
+      {
+        "word": "equivalencia vida-muerte",
+        "weight": 2
+      },
+      {
+        "word": "hipotesis",
+        "weight": 2
+      },
+      {
+        "word": "interrogacion",
+        "weight": 2
+      },
+      {
+        "word": "memoria colectiva",
+        "weight": 2
+      },
+      {
+        "word": "performatividad",
+        "weight": 2
+      },
+      {
+        "word": "tension umbral",
+        "weight": 2
+      },
+      {
+        "word": "beber",
+        "weight": 1
+      },
+      {
+        "word": "blanco",
+        "weight": 1
+      },
+      {
+        "word": "mirada",
+        "weight": 1
+      },
+      {
+        "word": "no",
+        "weight": 1
+      },
+      {
+        "word": "orin",
+        "weight": 1
+      },
+      {
+        "word": "pregunta",
+        "weight": 1
+      },
+      {
+        "word": "silencio",
+        "weight": 1
+      },
+      {
+        "word": "trampolin",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-13",
     "month": "2026-01",
     "file": "textos/2026-01-13.txt",
