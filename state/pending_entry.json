@@ -1,90 +1,114 @@
 {
-  "date": "2026-01-14",
+  "date": "2026-01-15",
   "month": "2026-01",
-  "file": "textos/2026-01-14.txt",
-  "my_poem_title": "piscina",
+  "file": "textos/2026-01-15.txt",
+  "my_poem_title": "el tren",
   "my_poem_snippet": "",
   "analysis": {
-    "poet": "Violeta Villalba",
-    "poem_title": "Inquietud",
+    "poet": "Cristina Maya",
+    "poem_title": "Deseo",
     "poem_snippet": "",
-    "book_title": "Prisión Voluntaria"
+    "book_title": ""
   },
   "keywords": [
     {
-      "word": "incertidumbre",
+      "word": "activacion",
       "weight": 3
     },
     {
-      "word": "inscripcion corporal",
+      "word": "impulso",
       "weight": 3
     },
     {
-      "word": "olvido",
+      "word": "involuntariedad",
       "weight": 3
     },
     {
-      "word": "presencia simbolica",
+      "word": "potencia-del-vacio",
       "weight": 3
     },
     {
-      "word": "vida como ausencia",
+      "word": "transformacion",
       "weight": 3
     },
     {
-      "word": "equivalencia vida-muerte",
+      "word": "umbral",
+      "weight": 3
+    },
+    {
+      "word": "choque-somatico",
       "weight": 2
     },
     {
-      "word": "hipotesis",
+      "word": "contraste-silencio-accion",
       "weight": 2
     },
     {
-      "word": "interrogacion",
+      "word": "germinacion-del-deseo",
       "weight": 2
     },
     {
-      "word": "memoria colectiva",
+      "word": "limite-reposo-acto",
       "weight": 2
     },
     {
-      "word": "performatividad",
+      "word": "puesta-en-obra",
       "weight": 2
     },
     {
-      "word": "tension umbral",
+      "word": "rito-de-paso",
       "weight": 2
     },
     {
-      "word": "beber",
+      "word": "transicion-liminal",
+      "weight": 2
+    },
+    {
+      "word": "amanecer",
       "weight": 1
     },
     {
-      "word": "blanco",
+      "word": "bajo",
       "weight": 1
     },
     {
-      "word": "mirada",
+      "word": "camino",
       "weight": 1
     },
     {
-      "word": "no",
+      "word": "fuente",
       "weight": 1
     },
     {
-      "word": "orin",
+      "word": "luz",
       "weight": 1
     },
     {
-      "word": "pregunta",
+      "word": "movimiento",
       "weight": 1
     },
     {
-      "word": "silencio",
+      "word": "parado",
       "weight": 1
     },
     {
-      "word": "trampolin",
+      "word": "preocupacion",
+      "weight": 1
+    },
+    {
+      "word": "rio",
+      "weight": 1
+    },
+    {
+      "word": "sacuda",
+      "weight": 1
+    },
+    {
+      "word": "sueno",
+      "weight": 1
+    },
+    {
+      "word": "tierra-humeda",
       "weight": 1
     }
   ]
