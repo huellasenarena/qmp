@@ -1,0 +1,27 @@
+FECHA: 2026-01-17
+MY_POEM_TITLE:
+POETA: Raúl Gómez Jattin
+POEM_TITLE: Retrato
+BOOK_TITLE: Amanecer en el Valle del Sinú
+
+# POEMA
+
+# POEMA_CITADO
+
+Si quieres saber de Raúl
+que habita estas prisiones
+lee estos duros versos
+nacidos de la desolación
+Poemas amargos
+Poemas simples y soñados
+crecidos como crece la hierba
+entre el pavimento de las calles
+
+
+# TEXTO
+
+Me pregunto qué pensaría el escritor si pudiera leer lo que escribo sobre él. Imagino al escritor retirándose entre dientes, pensando que es una pérdida de tiempo, que jamás podré encontrar las palabras necesarias para describir las obras de otro. Los poemas se sienten, no se hablan.
+
+Reflexiono también sobre las tres primeras palabras: “Si quieres saber”. No es “Para saber”, es una condición que el lector puede aceptar o rechazar. ¿Cuál respuesta espera el escritor? ¿Piensa que otros quieren saber su vida? Hay un conflicto interesante si consideramos esas palabras en el contexto del poema: el escritor se ve como un prisionero depresivo… entonces ¿por qué piensa que la gente querría conocerlo? Es un mundo oscuro al que el lector va.
+
+Creo que la respuesta que quiere el escritor es un “no”. Un “sí” es una expresión de un deseo voyeurista de entrar en el vacío; un “sí” es la confirmación de que los humanos queremos explorar la oscuridad. Al contrario, un “no” es la afirmación de que la vida debe evitar lo pesimista. Entonces, en lugar de analizar el lenguaje, digo a Raúl: no, no quiero saber tu mundo.
