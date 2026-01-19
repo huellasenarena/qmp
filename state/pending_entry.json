@@ -1,110 +1,110 @@
 {
-  "date": "2026-01-19",
+  "date": "2026-01-20",
   "month": "2026-01",
-  "file": "textos/2026-01-19.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "las palabras ya no pertenecen al escritor",
+  "file": "textos/2026-01-20.txt",
+  "my_poem_title": "este poema",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Matutina",
-    "poem_snippet": "",
-    "book_title": "Fragmentaria"
+    "poem_title": "",
+    "poem_snippet": "A veces no sé si afuera los niños juegan",
+    "book_title": ""
   },
   "keywords": [
     {
-      "word": "apropiacion",
+      "word": "autoproteccion",
       "weight": 3
     },
     {
-      "word": "desposesion",
+      "word": "distancia",
       "weight": 3
     },
     {
-      "word": "inversion de autoria",
+      "word": "incomprension",
       "weight": 3
     },
     {
-      "word": "invisibilizacion",
+      "word": "inversion del gesto",
       "weight": 3
     },
     {
-      "word": "performatividad linguistica",
+      "word": "performatividad",
       "weight": 3
     },
     {
-      "word": "transferencia de autoria",
+      "word": "represion",
       "weight": 3
     },
     {
-      "word": "actuacion interpretativa",
+      "word": "desvinculacion",
       "weight": 2
     },
     {
-      "word": "confusion ficcion-hecho",
+      "word": "especulacion",
       "weight": 2
     },
     {
-      "word": "continuidad imaginativa",
+      "word": "fingimiento",
       "weight": 2
     },
     {
-      "word": "desplazamiento de agencia",
+      "word": "memoria",
       "weight": 2
     },
     {
-      "word": "desplazamiento de sentido",
+      "word": "mirada",
       "weight": 2
     },
     {
-      "word": "azotea",
+      "word": "observacion",
+      "weight": 2
+    },
+    {
+      "word": "silencio",
+      "weight": 2
+    },
+    {
+      "word": "tension corporea",
+      "weight": 2
+    },
+    {
+      "word": "animales",
       "weight": 1
     },
     {
-      "word": "camisa",
+      "word": "carcajadas",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "ceno",
       "weight": 1
     },
     {
-      "word": "dueno",
+      "word": "dientes",
       "weight": 1
     },
     {
-      "word": "escritor",
+      "word": "golpes",
       "weight": 1
     },
     {
-      "word": "escritura",
+      "word": "juego",
       "weight": 1
     },
     {
-      "word": "muerte",
+      "word": "lagrimas",
       "weight": 1
     },
     {
-      "word": "palabras",
+      "word": "ninos",
       "weight": 1
     },
     {
-      "word": "pantalones",
+      "word": "sonrisa",
       "weight": 1
     },
     {
-      "word": "pertenecen",
-      "weight": 1
-    },
-    {
-      "word": "poema",
-      "weight": 1
-    },
-    {
-      "word": "ropa",
-      "weight": 1
-    },
-    {
-      "word": "viento",
+      "word": "ventana",
       "weight": 1
     }
   ]
