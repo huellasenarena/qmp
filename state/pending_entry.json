@@ -1,110 +1,78 @@
 {
-  "date": "2026-01-20",
+  "date": "2026-01-21",
   "month": "2026-01",
-  "file": "textos/2026-01-20.txt",
-  "my_poem_title": "este poema",
+  "file": "textos/2026-01-21.txt",
+  "my_poem_title": "en un aeropuerto",
   "my_poem_snippet": "",
   "analysis": {
-    "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": "A veces no sé si afuera los niños juegan",
+    "poet": "Horacio Quiroga",
+    "poem_title": "CULPAR A OTROS",
+    "poem_snippet": "",
     "book_title": ""
   },
   "keywords": [
     {
-      "word": "autoproteccion",
+      "word": "circularidad teleologica",
       "weight": 3
     },
     {
-      "word": "distancia",
+      "word": "inversion normativa",
       "weight": 3
     },
     {
-      "word": "incomprension",
+      "word": "obstruccion performativa",
       "weight": 3
     },
     {
-      "word": "inversion del gesto",
+      "word": "paralisis volitiva",
       "weight": 3
     },
     {
-      "word": "performatividad",
-      "weight": 3
-    },
-    {
-      "word": "represion",
-      "weight": 3
-    },
-    {
-      "word": "desvinculacion",
+      "word": "demora intencional",
       "weight": 2
     },
     {
-      "word": "especulacion",
+      "word": "externalizacion de culpa",
       "weight": 2
     },
     {
-      "word": "fingimiento",
+      "word": "friccion social",
       "weight": 2
     },
     {
-      "word": "memoria",
+      "word": "ritualizacion del retraso",
       "weight": 2
     },
     {
-      "word": "mirada",
+      "word": "tension cuerpo-aparato",
       "weight": 2
     },
     {
-      "word": "observacion",
+      "word": "transgresion pasiva",
       "weight": 2
     },
     {
-      "word": "silencio",
-      "weight": 2
-    },
-    {
-      "word": "tension corporea",
-      "weight": 2
-    },
-    {
-      "word": "animales",
+      "word": "abulia",
       "weight": 1
     },
     {
-      "word": "carcajadas",
+      "word": "bloqueo",
       "weight": 1
     },
     {
-      "word": "ceno",
+      "word": "caminar contra la direccion",
       "weight": 1
     },
     {
-      "word": "dientes",
+      "word": "cintas transportadoras",
       "weight": 1
     },
     {
-      "word": "golpes",
+      "word": "detenerse",
       "weight": 1
     },
     {
-      "word": "juego",
-      "weight": 1
-    },
-    {
-      "word": "lagrimas",
-      "weight": 1
-    },
-    {
-      "word": "ninos",
-      "weight": 1
-    },
-    {
-      "word": "sonrisa",
-      "weight": 1
-    },
-    {
-      "word": "ventana",
+      "word": "esperar",
       "weight": 1
     }
   ]

@@ -1,5 +1,84 @@
 [
   {
+    "date": "2026-01-21",
+    "month": "2026-01",
+    "file": "textos/2026-01-21.txt",
+    "my_poem_title": "en un aeropuerto",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Horacio Quiroga",
+      "poem_title": "CULPAR A OTROS",
+      "poem_snippet": "",
+      "book_title": ""
+    },
+    "keywords": [
+      {
+        "word": "circularidad teleologica",
+        "weight": 3
+      },
+      {
+        "word": "inversion normativa",
+        "weight": 3
+      },
+      {
+        "word": "obstruccion performativa",
+        "weight": 3
+      },
+      {
+        "word": "paralisis volitiva",
+        "weight": 3
+      },
+      {
+        "word": "demora intencional",
+        "weight": 2
+      },
+      {
+        "word": "externalizacion de culpa",
+        "weight": 2
+      },
+      {
+        "word": "friccion social",
+        "weight": 2
+      },
+      {
+        "word": "ritualizacion del retraso",
+        "weight": 2
+      },
+      {
+        "word": "tension cuerpo-aparato",
+        "weight": 2
+      },
+      {
+        "word": "transgresion pasiva",
+        "weight": 2
+      },
+      {
+        "word": "abulia",
+        "weight": 1
+      },
+      {
+        "word": "bloqueo",
+        "weight": 1
+      },
+      {
+        "word": "caminar contra la direccion",
+        "weight": 1
+      },
+      {
+        "word": "cintas transportadoras",
+        "weight": 1
+      },
+      {
+        "word": "detenerse",
+        "weight": 1
+      },
+      {
+        "word": "esperar",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-20",
     "month": "2026-01",
     "file": "textos/2026-01-20.txt",

@@ -1,0 +1,27 @@
+FECHA: 2026-01-21
+MY_POEM_TITLE: en un aeropuerto
+POETA: Horacio Quiroga
+POEM_TITLE: CULPAR A OTROS
+BOOK_TITLE:
+
+# POEMA
+
+nunca te pude convencer
+que la manera correcta de usar
+las cintas transportadoras
+era andar contra la dirección
+con aire abulia
+al blocar la gente que venían 
+y justo antes el fin
+detenerse
+y esperar bajar al principio
+
+# POEMA_CITADO
+
+Culpar a los otros
+es patrimonio específico
+de los corazones inferiores.
+
+# TEXTO
+
+Este poema breve de Horacio Quiroga es una prueba más de su pobre pensamiento. Presenta una declaración general sin separar los casos válidos de los inválidos. ¿Y “inferior” cómo? Culpo al narrador por su falta de precisión; eso es todo para este escritor.
