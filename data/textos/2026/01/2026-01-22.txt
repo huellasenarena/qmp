@@ -1,0 +1,26 @@
+FECHA: 2026-01-22
+MY_POEM_TITLE: 73 observaciones sobre 73
+POETA: Soledad Castresana
+POEM_TITLE: Mujer con marcas en el abdomen
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+73: un muñeco de nieve derretido cayéndose de un acantilado porque ya no tiene su cabeza
+
+73: mirando al revés, una pelota rebotando por una pendiente; su dueño demasiado atrás para atraparlo
+
+73: el gas que sale del escape del coche, que probablemente hizo que se derritiera el muñeco de nieve
+
+# POEMA_CITADO
+
+En el centro del abdomen tengo un pozo,
+la cicatriz de hija que es perfecta.
+Redonda como el mundo, un estanque
+oscuro donde hundirse. Más abajo,
+tengo la marca de madre:
+un tajo chueco
+
+# TEXTO
+
+Juzgando con las palabras, Castresana nos presenta dos cicatrices importantes: una cicatriz alta en el abdomen y otra “más abajo”. Nos queda poco claro cuáles son esas cicatrices (¿una cesárea?, ¿el estómago flácido?, ¿el útero?, ¿la niña en sí misma?). Tenemos tres descripciones: la primera es “perfecta” (como yo leo el poema), “redonda…, un estanque oscuro donde hundirse”; la segunda, “la marca de madre”. Me parece que la palabra “perfecta” significa una idoneidad más que una belleza. Así, leo el poema como una descripción de los cambios corporales asociados con el embarazo; sugiere que el embarazo tiene un misterio (“un estanque oscuro donde hundirse”), pero es un proceso normal aun así (“perfecta”, “marca de madre”).

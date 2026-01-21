@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-01-22",
+    "month": "2026-01",
+    "file": "textos/2026-01-22.txt",
+    "my_poem_title": "73 observaciones sobre 73",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Mujer con marcas en el abdomen",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "contaminacion",
+        "weight": 3
+      },
+      {
+        "word": "desidentificacion",
+        "weight": 3
+      },
+      {
+        "word": "distancia inhabilitante",
+        "weight": 3
+      },
+      {
+        "word": "marca como prueba",
+        "weight": 3
+      },
+      {
+        "word": "maternalidad tensionada",
+        "weight": 3
+      },
+      {
+        "word": "vacio como origen",
+        "weight": 3
+      },
+      {
+        "word": "erosion de limites",
+        "weight": 2
+      },
+      {
+        "word": "simetria invertida",
+        "weight": 2
+      },
+      {
+        "word": "temporalidad fragil",
+        "weight": 2
+      },
+      {
+        "word": "traslado de agencia",
+        "weight": 2
+      },
+      {
+        "word": "visibilizacion del dano",
+        "weight": 2
+      },
+      {
+        "word": "abdomen",
+        "weight": 1
+      },
+      {
+        "word": "acantilado",
+        "weight": 1
+      },
+      {
+        "word": "cabeza",
+        "weight": 1
+      },
+      {
+        "word": "cicatriz",
+        "weight": 1
+      },
+      {
+        "word": "coche",
+        "weight": 1
+      },
+      {
+        "word": "dueno",
+        "weight": 1
+      },
+      {
+        "word": "escape",
+        "weight": 1
+      },
+      {
+        "word": "gas",
+        "weight": 1
+      },
+      {
+        "word": "muneco de nieve",
+        "weight": 1
+      },
+      {
+        "word": "pelota",
+        "weight": 1
+      },
+      {
+        "word": "pendiente",
+        "weight": 1
+      },
+      {
+        "word": "pozo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-21",
     "month": "2026-01",
     "file": "textos/2026-01-21.txt",

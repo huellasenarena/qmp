@@ -1,78 +1,106 @@
 {
-  "date": "2026-01-21",
+  "date": "2026-01-22",
   "month": "2026-01",
-  "file": "textos/2026-01-21.txt",
-  "my_poem_title": "en un aeropuerto",
+  "file": "textos/2026-01-22.txt",
+  "my_poem_title": "73 observaciones sobre 73",
   "my_poem_snippet": "",
   "analysis": {
-    "poet": "Horacio Quiroga",
-    "poem_title": "CULPAR A OTROS",
+    "poet": "Soledad Castresana",
+    "poem_title": "Mujer con marcas en el abdomen",
     "poem_snippet": "",
-    "book_title": ""
+    "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "circularidad teleologica",
+      "word": "contaminacion",
       "weight": 3
     },
     {
-      "word": "inversion normativa",
+      "word": "desidentificacion",
       "weight": 3
     },
     {
-      "word": "obstruccion performativa",
+      "word": "distancia inhabilitante",
       "weight": 3
     },
     {
-      "word": "paralisis volitiva",
+      "word": "marca como prueba",
       "weight": 3
     },
     {
-      "word": "demora intencional",
+      "word": "maternalidad tensionada",
+      "weight": 3
+    },
+    {
+      "word": "vacio como origen",
+      "weight": 3
+    },
+    {
+      "word": "erosion de limites",
       "weight": 2
     },
     {
-      "word": "externalizacion de culpa",
+      "word": "simetria invertida",
       "weight": 2
     },
     {
-      "word": "friccion social",
+      "word": "temporalidad fragil",
       "weight": 2
     },
     {
-      "word": "ritualizacion del retraso",
+      "word": "traslado de agencia",
       "weight": 2
     },
     {
-      "word": "tension cuerpo-aparato",
+      "word": "visibilizacion del dano",
       "weight": 2
     },
     {
-      "word": "transgresion pasiva",
-      "weight": 2
-    },
-    {
-      "word": "abulia",
+      "word": "abdomen",
       "weight": 1
     },
     {
-      "word": "bloqueo",
+      "word": "acantilado",
       "weight": 1
     },
     {
-      "word": "caminar contra la direccion",
+      "word": "cabeza",
       "weight": 1
     },
     {
-      "word": "cintas transportadoras",
+      "word": "cicatriz",
       "weight": 1
     },
     {
-      "word": "detenerse",
+      "word": "coche",
       "weight": 1
     },
     {
-      "word": "esperar",
+      "word": "dueno",
+      "weight": 1
+    },
+    {
+      "word": "escape",
+      "weight": 1
+    },
+    {
+      "word": "gas",
+      "weight": 1
+    },
+    {
+      "word": "muneco de nieve",
+      "weight": 1
+    },
+    {
+      "word": "pelota",
+      "weight": 1
+    },
+    {
+      "word": "pendiente",
+      "weight": 1
+    },
+    {
+      "word": "pozo",
       "weight": 1
     }
   ]
