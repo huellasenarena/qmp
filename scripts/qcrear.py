@@ -207,7 +207,14 @@ def choose_target_date(argv: list[str]) -> str:
             raise UserAbort()
         return today
 
-    ok = prompt_yn(f"[qcrear] ¿Crear entrada para {nxt}?", default_yes=True)
+    # Mensaje correcto según exista o no el build output (.txt)
+    if txt_exists_for_date(nxt):
+        msg = f"[qcrear] El archivo {txt_path_for_date(nxt)} ya existe. ¿Continuar preparación para {nxt}?"
+    else:
+        msg = f"[qcrear] ¿Crear entrada para {nxt}?"
+
+    ok = prompt_yn(msg, default_yes=True)
+
     if not ok:
         raise UserAbort()
     return nxt
@@ -257,6 +264,41 @@ def docs_fingerprint(poem: str, poem_citado: str, texto: str) -> str:
     h = hashlib.sha256(payload.encode("utf-8")).hexdigest()
     return f"sha256:{h}"
 
+def extract_section(txt: str, header: str) -> str:
+    """
+    Extrae el contenido debajo de un header exacto ('# POEMA', etc.)
+    hasta el siguiente header '# ' o EOF.
+    """
+    txt = txt.replace("\r\n", "\n").replace("\r", "\n")
+    lines = txt.split("\n")
+
+    try:
+        start = lines.index(header) + 1
+    except ValueError:
+        return ""
+
+    out = []
+    for ln in lines[start:]:
+        if ln.startswith("# "):
+            break
+        out.append(ln)
+    return "\n".join(out)
+
+def txt_fingerprint_from_file(path: Path) -> Optional[str]:
+    if not path.exists():
+        return None
+    raw = path.read_text(encoding="utf-8")
+    poema = extract_section(raw, "# POEMA")
+    citado = extract_section(raw, "# POEMA_CITADO")
+    texto = extract_section(raw, "# TEXTO")
+
+    # si falta alguna sección, no confiamos
+    if normalize_text_for_hash(poema) == "" or normalize_text_for_hash(citado) == "" or normalize_text_for_hash(texto) == "":
+        return None
+
+    return docs_fingerprint(poema, citado, texto)
+
+
 def load_pending_keywords() -> Optional[dict]:
     p = state_dir() / "pending_keywords.txt"
     if not p.exists():
@@ -299,6 +341,19 @@ def load_pending_keywords() -> Optional[dict]:
 
     return obj
 
+def write_pending_keywords(
+    target: str,
+    keywords: list[dict],
+    docs_fp: str,
+) -> None:
+    p = state_dir() / "pending_keywords.txt"
+    payload = {
+        "date": target,
+        "docs_fingerprint": docs_fp,
+        "keywords": keywords,
+        "generated_at": datetime.now().isoformat(timespec="seconds"),
+    }
+    p.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 def top_keywords_preview(obj: dict, n: int = 10) -> list[tuple[str,int]]:
     kws = obj.get("keywords") or []
@@ -363,6 +418,45 @@ def write_txt_atomic(path: Path, content: str) -> None:
     tmp.write_text(content, encoding="utf-8")
     tmp.replace(path)
 
+def generate_keywords_from_txt(txt_path: Path) -> list[dict]:
+    """
+    Llama al generador de keywords existente y devuelve la lista
+    en formato [{"word": str, "weight": int}, ...]
+    """
+    script = repo_root() / "qmp" / "gen_keywords.py"
+    if not script.exists():
+        raise RuntimeError("No encuentro qmp/gen_keywords.py para generar keywords.")
+
+    cmd = [sys.executable, str(script), str(txt_path)]
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+
+    if proc.returncode != 0:
+        raise RuntimeError(f"Falló generación de keywords:\n{proc.stderr or proc.stdout}")
+
+    try:
+        obj = json.loads(proc.stdout)
+    except json.JSONDecodeError:
+        raise RuntimeError("gen_keywords.py no devolvió JSON válido.")
+
+        # gen_keywords.py devuelve {"keywords":[...]}
+    if isinstance(obj, dict) and "keywords" in obj:
+        obj = obj["keywords"]
+
+    if not isinstance(obj, list) or len(obj) == 0:
+        raise RuntimeError("gen_keywords.py devolvió keywords vacías o inválidas.")
+
+    # Validar formato
+    for i, kw in enumerate(obj):
+        if not isinstance(kw, dict):
+            raise RuntimeError(f"Keyword #{i} inválida.")
+        if "word" not in kw or "weight" not in kw:
+            raise RuntimeError(f"Keyword #{i} mal formada.")
+        if kw["weight"] not in (1, 2, 3):
+            raise RuntimeError(f"Keyword #{i} tiene weight inválido.")
+
+    return obj
+
+
 # -----------------------------
 # Main
 # -----------------------------
@@ -370,15 +464,17 @@ def write_txt_atomic(path: Path, content: str) -> None:
 def main() -> int:
     try:
         println(SEP)
-        println(" qcrear (scaffold)")
+        println(" qcrear")
         println(SEP)
 
+        # -----------------------------
+        # Preflight
+        # -----------------------------
         pf = run_preflight()
         if not pf.ok_repo:
             eprintln("[qcrear] ERROR: No encuentro el repo root.")
             return 1
 
-        # mostrar preflight bonito
         println(f"✅ repo: {pf.repo}")
         if pf.ok_archivo_json:
             println(f"✅ archivo.json: {pf.archivo_json}")
@@ -386,6 +482,9 @@ def main() -> int:
             eprintln(f"❌ archivo.json no existe: {pf.archivo_json}")
             return 1
 
+        # -----------------------------
+        # Fecha objetivo
+        # -----------------------------
         target = choose_target_date(sys.argv)
 
         # Si ya existe en archivo.json, qcrear no hace nada.
@@ -396,27 +495,23 @@ def main() -> int:
             println("[qcrear] Usa qcambiar si quieres modificarla.")
             return 0
 
+        txt_path = txt_path_for_date(target)
         println("")
-        if txt_exists_for_date(target):
-            println(f"[qcrear] Continuar preparación: {target} (txt ya existe)")
+        if txt_path.exists():
+            println(f"[qcrear] Continuar preparación: {target} (txt existe)")
         else:
             println(f"[qcrear] Crear entrada: {target} (txt no existe)")
 
-
-        # Pull robusto (poema + análisis). No preguntamos "¿hacer pull?".
+        # -----------------------------
+        # Pull robusto Google Docs
+        # -----------------------------
         println("")
         println(SEP)
         println(f" Pull Google Docs — {target}")
         println(SEP)
 
-        poem_obj = run_py_json(
-            "scripts/gdocs_pull_poem_by_date.py",
-            ["--date", target],
-        )
-        analysis_obj = run_py_json(
-            "scripts/gdocs_pull_analysis_by_date.py",
-            ["--date", target],
-        )
+        poem_obj = run_py_json("scripts/gdocs_pull_poem_by_date.py", ["--date", target])
+        analysis_obj = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", target])
 
         my_poem_title = (poem_obj.get("title") or "").strip()   # opcional
         poem_text = (poem_obj.get("poem") or "")
@@ -436,7 +531,9 @@ def main() -> int:
 
         fp = docs_fingerprint(poem_text, poema_citado, texto)
 
-        # Resumen bonito
+        # -----------------------------
+        # Resumen
+        # -----------------------------
         println("✅ Pull OK + validación OK")
         println("")
         println("Resumen (metadatos opcionales):")
@@ -452,7 +549,9 @@ def main() -> int:
         println("")
         println(f"docs_fingerprint: {fp}")
 
-        # Preview opcional (bonito) + confirmación fuerte
+        # -----------------------------
+        # Preview (una sola vez)
+        # -----------------------------
         println("")
         want_preview = prompt_yn("[qcrear] ¿Ver preview de los 3 escritos?", default_yes=True)
         if want_preview:
@@ -464,17 +563,42 @@ def main() -> int:
             preview_block("# POEMA_CITADO", poema_citado, n=10)
             preview_block("# TEXTO", texto, n=10)
 
-        ok = prompt_yn("[qcrear] ¿Confirmas que esto se ve correcto?", default_yes=False)
-        if not ok:
-            raise UserAbort()
+        # -----------------------------
+        # Decidir si hay que generar/reescribir txt
+        # -----------------------------
+        existing_txt_fp = txt_fingerprint_from_file(txt_path) if txt_path.exists() else None
+        txt_matches_docs = (txt_path.exists() and existing_txt_fp == fp)
 
-        # Generar/reescribir <fecha>.txt ANTES de keywords (build output)
-        txt_path = txt_path_for_date(target)  # o usa tu helper único si lo fusionaste
-        println("")
-        if txt_path.exists():
-            overwrite = prompt_yn(f"[qcrear] Ya existe {txt_path}. ¿Regenerarlo desde Google Docs (sobrescribir)?", default_yes=False)
-            if not overwrite:
-                println("[qcrear] OK. No regeneré el .txt.")
+        if txt_matches_docs:
+            println(f"[qcrear] ✅ El archivo ya coincide con Google Docs: {txt_path}")
+            # No preguntamos confirmación ni regeneración.
+        else:
+            # Solo si NO coincide, pedimos confirmación y (si quieres) generamos el build output
+            ok = prompt_yn("[qcrear] ¿Confirmas que esto se ve correcto?", default_yes=False)
+            if not ok:
+                raise UserAbort()
+
+            println("")
+            if txt_path.exists():
+                overwrite = prompt_yn(
+                    f"[qcrear] El archivo existe pero NO coincide con Google Docs. ¿Regenerarlo (sobrescribir)?",
+                    default_yes=False
+                )
+                if overwrite:
+                    content = render_txt(
+                        target=target,
+                        my_poem_title=my_poem_title,
+                        poeta=poeta,
+                        poem_title=poem_title,
+                        book_title=book_title,
+                        poema=poem_text,
+                        poema_citado=poema_citado,
+                        texto=texto,
+                    )
+                    write_txt_atomic(txt_path, content)
+                    println(f"[qcrear] ✅ Generado: {txt_path}")
+                else:
+                    println("[qcrear] OK. No regeneré el .txt.")
             else:
                 content = render_txt(
                     target=target,
@@ -488,53 +612,68 @@ def main() -> int:
                 )
                 write_txt_atomic(txt_path, content)
                 println(f"[qcrear] ✅ Generado: {txt_path}")
-        else:
-            content = render_txt(
-                target=target,
-                my_poem_title=my_poem_title,
-                poeta=poeta,
-                poem_title=poem_title,
-                book_title=book_title,
-                poema=poem_text,
-                poema_citado=poema_citado,
-                texto=texto,
-            )
-            write_txt_atomic(txt_path, content)
-            println(f"[qcrear] ✅ Generado: {txt_path}")
-            
+
+        # Asegurar que hay txt (si el usuario no lo generó y no existía, no seguimos)
+        if not txt_path.exists():
+            println("[qcrear] No existe .txt local. Termino aquí (sin keywords).")
+            return 0
+
+        # -----------------------------
+        # Keywords (no automático)
+        # -----------------------------
         println("")
         println(SEP)
-        println(" Keywords (estado)")
+        println(" Keywords")
         println(SEP)
-        pending = load_pending_keywords()
 
-        if pending is None:
-            println("")
-            println("[qcrear] No hay pending_keywords.txt.")
-            println("[qcrear] (Aún no implementado) Siguiente paso: generar keywords y guardarlas.")
-        else:
-            println("")
+        pending = load_pending_keywords()
+        keywords = None
+
+        # Si hay pending vigente (ultra-robusto), ofrecer usarla
+        if pending:
             pdate = pending.get("date", "")
             pkws = pending.get("keywords") or []
-            pf = (pending.get("docs_fingerprint") or "").strip()
+            pfk = (pending.get("docs_fingerprint") or "").strip()
 
-            println(f"[qcrear] pending_keywords.txt encontrado (date={pdate}, keywords={len(pkws)}).")
-
-            # Ultra-robusto: si falta docs_fingerprint o no coincide, no es publicable.
-            if pdate != target:
-                println("[qcrear] pending_keywords NO corresponde a esta fecha.")
-            elif len(pkws) == 0:
-                println("[qcrear] pending_keywords está vacío (no se puede publicar).")
-            elif not pf:
-                println("[qcrear] pending_keywords no tiene docs_fingerprint (no publicable en modo ultra-robusto).")
-            elif pf != fp:
-                println("[qcrear] pending_keywords está desfasado: fingerprint no coincide con Google Docs.")
-            else:
-                println("[qcrear] ✅ pending_keywords válido y vigente (ultra-robusto).")
+            if pdate == target and pfk == fp and pkws:
+                println("[qcrear] Keywords pendientes válidas y vigentes.")
                 preview = top_keywords_preview(pending, n=10)
                 println("Top keywords:")
                 for w, wt in preview:
                     println(f"  - {w} ({wt})")
+
+                use_existing = prompt_yn("[qcrear] ¿Usar estas keywords?", default_yes=True)
+                if use_existing:
+                    keywords = pkws
+                    write_pending_keywords(target, keywords, fp)
+                    println("[qcrear] ✅ pending_keywords.txt confirmado.")
+
+        # Si no usamos pending, preguntar si quieres generar
+        if keywords is None:
+            gen_now = prompt_yn("[qcrear] No hay keywords vigentes. ¿Generar keywords ahora?", default_yes=False)
+            if not gen_now:
+                println("[qcrear] OK. No generé keywords. (No es posible publicar sin keywords.)")
+                return 0
+
+            println("[qcrear] Generando keywords desde el .txt…")
+            keywords = generate_keywords_from_txt(txt_path)
+
+            # Preview ordenado
+            pairs = [(k["word"], k["weight"]) for k in keywords]
+            pairs.sort(key=lambda x: (-x[1], x[0].lower()))
+            println("Top keywords (nuevas):")
+            for w, wt in pairs[:10]:
+                println(f"  - {w} ({wt})")
+
+            ok_kw = prompt_yn("[qcrear] ¿Confirmas estas keywords?", default_yes=False)
+            if not ok_kw:
+                raise UserAbort()
+
+            write_pending_keywords(target, keywords, fp)
+            println("[qcrear] ✅ pending_keywords.txt actualizado.")
+
+        println("")
+        println("[qcrear] Listo. (Aún no implementado aquí: publicar / actualizar archivo.json / push.)")
         return 0
 
     except UserAbort:
