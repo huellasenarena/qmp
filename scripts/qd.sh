@@ -1,12 +1,5 @@
 #!/usr/bin/env zsh
 # QMP — qd (zsh-only)
-# Contract:
-# - qd [YYYY-MM-DD]
-#   - 0 args: propose NEXT_DATE (max_date + 1 day) from archivo.json, ask (y/N)
-#   - 1 arg: validate date; if new and not NEXT_DATE -> ask (y/N)
-# - Always regenerates scripts/current_keywords.txt from archivo.json (snapshot)
-# - NEVER touches scripts/pending_keywords.txt
-# - Opens files with TXT focused (VS Code/Sublime supported)
 
 set -e
 set -u
@@ -16,22 +9,35 @@ setopt pipefail
 # Helpers
 # -------------------------
 die() { print -u2 -- "[qd] ERROR: $*"; exit 1; }
-
 warn() { print -u2 -- "[qd] WARN: $*"; }
 
 confirm_yn() {
-  # Default = NO (Enter -> no)
+  # Usage:
+  #   confirm_yn "Pregunta..."           # default NO  [y/N]
+  #   confirm_yn "Pregunta..." "Y"       # default YES [Y/n]
   local prompt="$1"
+  local default="${2:-N}"
   local ans
-  print -n -u2 -- "[qd] $prompt [y/N]: "
+
+  if [[ "$default" == "Y" ]]; then
+    print -n -u2 -- "[qd] $prompt [Y/n]: "
+  else
+    print -n -u2 -- "[qd] $prompt [y/N]: "
+  fi
+
   read ans || true
   ans="${${ans:-}:l}"
+
+  if [[ -z "$ans" ]]; then
+    [[ "$default" == "Y" ]] && return 0 || return 1
+  fi
+
   case "$ans" in
     y|yes|s|si|sí) return 0 ;;
-    *) return 1 ;;
+    n|no) return 1 ;;
+    *) [[ "$default" == "Y" ]] && return 0 || return 1 ;;
   esac
 }
-
 
 txt_path_for_date() {
   local d="$1"
@@ -41,7 +47,6 @@ txt_path_for_date() {
   local p_new="${QMP_TEXTOS}/${y}/${m}/${d}.txt"
   local p_old="${QMP_TEXTOS}/${d}.txt"
 
-  # Prefer new layout. Only fall back to old layout if it exists and new doesn't.
   if [[ -f "$p_old" && ! -f "$p_new" ]]; then
     print -r -- "$p_old"
   else
@@ -53,7 +58,6 @@ lint_template() {
   local tpl="$1"
   [[ -f "$tpl" ]] || die "Template no existe: $tpl"
 
-  # Essential: FECHA line and placeholder
   if ! grep -qE '^FECHA:' "$tpl"; then
     die "Template falta campo obligatorio FECHA: ($tpl)"
   fi
@@ -61,19 +65,10 @@ lint_template() {
     die "Template no tiene placeholder {{DATE}} en FECHA: ($tpl)"
   fi
 
-  # Essential: section headers
   local h
   for h in "# POEMA" "# POEMA_CITADO" "# TEXTO"; do
     if ! grep -qF "$h" "$tpl"; then
       die "Template falta header obligatorio: $h ($tpl)"
-    fi
-  done
-
-  # Optional metadata keys (warn if missing)
-  local k
-  for k in "MY_POEM_TITLE" "POETA" "POEM_TITLE" "BOOK_TITLE"; do
-    if ! grep -qE "^${k}:" "$tpl"; then
-      warn "Template no tiene el campo de metadato (puede estar vacío, pero debería existir): ${k}: ($tpl)"
     fi
   done
 }
@@ -82,7 +77,7 @@ lint_txt() {
   local txt="$1"
   local expected_date="$2"
   local archivo="$3"
-  local exists_flag="$4"  # "1" if published entry exists in archivo.json
+  local exists_flag="$4"
 
   "$PYTHON" - "$txt" "$expected_date" "$archivo" "$exists_flag" <<'PY' | while IFS=$'\t' read -r level msg; do
 import json, re, sys
@@ -99,7 +94,6 @@ lines = text.splitlines()
 def emit(level, msg):
     print(f"{level}\t{msg}")
 
-# --- parse metadata (KEY: value) until first section header
 meta = {}
 for line in lines:
     if line.startswith("# "):
@@ -108,26 +102,20 @@ for line in lines:
     if m:
         meta[m.group(1)] = m.group(2)
 
-# Required metadata keys (can be empty)
 required_keys = ["FECHA", "MY_POEM_TITLE", "POETA", "POEM_TITLE", "BOOK_TITLE"]
-
 for k in required_keys:
     if k not in meta:
         emit("WARN", f"Falta campo de metadato {k}: (puede estar vacío, pero debe existir)")
 
-# FECHA must match expected_date (if present)
 if meta.get("FECHA") and meta["FECHA"].strip() != expected_date:
     emit("WARN", f"FECHA interna no coincide: FECHA={meta['FECHA']!r} vs esperado={expected_date!r}")
 
-# Required section headers
 headers = ["# POEMA", "# POEMA_CITADO", "# TEXTO"]
 for h in headers:
     if h not in text:
         emit("WARN", f"Falta header obligatorio: {h}")
 
-# --- If published: sections should not be empty
 def section_body(hdr):
-    # capture text between hdr and next "# " header
     m = re.search(re.escape(hdr) + r"\n(.*?)(\n# [A-Z_]+|\Z)", text, flags=re.S)
     if not m:
         return ""
@@ -142,36 +130,12 @@ if published:
     for k, body in bodies.items():
         if not body:
             emit("WARN", f"Entrada ya publicada pero sección {k} está vacía")
-
-    # Compare metadata with archivo.json if present
-    try:
-        data = json.loads(archivo.read_text(encoding="utf-8"))
-        entries = data.get("entries") if isinstance(data, dict) else data
-        if isinstance(entries, list):
-            entry = next((e for e in entries if isinstance(e, dict) and e.get("date") == expected_date), None)
-        else:
-            entry = None
-
-        if isinstance(entry, dict):
-            expected = {
-                "MY_POEM_TITLE": (entry.get("my_poem_title") or ""),
-                "POETA": ((entry.get("analysis") or {}).get("poet") or ""),
-                "POEM_TITLE": ((entry.get("analysis") or {}).get("poem_title") or ""),
-                "BOOK_TITLE": ((entry.get("analysis") or {}).get("book_title") or ""),
-            }
-            for k, json_val in expected.items():
-                txt_val = meta.get(k, "")
-                if (txt_val or "").strip() != (json_val or "").strip():
-                    emit("WARN", f"Metadato {k} no coincide con archivo.json: txt={txt_val!r} vs json={json_val!r}")
-    except Exception:
-        pass
 PY
     if [[ -n "$msg" && "$level" == "WARN" ]]; then
       warn "$msg"
     fi
   done
 }
-
 
 # -------------------------
 # Repo / env
@@ -204,10 +168,7 @@ else
 fi
 
 # -------------------------
-# Read min/max/next (may be empty if archivo.json has no entries)
-# -------------------------
-# -------------------------
-# Read min/max/next (may be empty if archivo.json has no entries)
+# Read min/max/next
 # -------------------------
 local MIN_DATE="" MAX_DATE="" NEXT_DATE=""
 local HAS_PUBLISHED_ENTRIES=0
@@ -220,7 +181,6 @@ from datetime import date, timedelta
 
 archivo = sys.argv[1]
 data = json.load(open(archivo, encoding="utf-8"))
-
 entries = data["entries"] if isinstance(data, dict) and isinstance(data.get("entries"), list) else data
 if not isinstance(entries, list):
     print("", "", "")
@@ -244,31 +204,21 @@ PY
   NEXT_DATE="${out#* }"
 } || true
 
-# True iff archivo.json has at least 1 published entry
 [[ -n "$MAX_DATE" ]] && HAS_PUBLISHED_ENTRIES=1
 
-
-# If archivo.json empty and no DATE provided -> must be explicit
 if [[ -z "$MIN_DATE" || -z "$MAX_DATE" || -z "$NEXT_DATE" ]]; then
   if [[ -z "$DATE" ]]; then
     die "archivo.json no tiene entradas. Usa: qd YYYY-MM-DD"
   fi
 fi
 
-# -------------------------
-# If no DATE: propose NEXT_DATE with confirmation
-# -------------------------
 if [[ -z "$DATE" ]]; then
-  confirm_yn "¿Crear/abrir entrada para $NEXT_DATE?" || exit 0
+  confirm_yn "¿Crear/abrir entrada para $NEXT_DATE?" "Y" || exit 0
   DATE="$NEXT_DATE"
 fi
 
-# -------------------------
-# Validate date format + real date (silent)
-# -------------------------
 [[ "$DATE" == <->-<->-<-> ]] || die "Fecha inválida: $DATE (usa YYYY-MM-DD)"
 
-# Real calendar date validation (no traceback)
 if ! "$PYTHON" - "$DATE" >/dev/null 2>&1 <<'PY'
 from datetime import date
 import sys
@@ -281,7 +231,6 @@ then
   die "Fecha inválida (no existe): $DATE"
 fi
 
-# Reject dates earlier than earliest published
 if [[ -n "$MIN_DATE" && "$DATE" < "$MIN_DATE" ]]; then
   confirm_yn "Fecha $DATE es anterior a la primera fecha publicada ($MIN_DATE). ¿Continuar igual?" || exit 0
 fi
@@ -302,7 +251,6 @@ print("1" if any(isinstance(e, dict) and e.get("date")==date_str for e in entrie
 PY
 )" || EXISTS="0"
 
-# Non-strict confirmation: new date but not NEXT_DATE
 if [[ "$EXISTS" == "0" && -n "${NEXT_DATE:-}" && "$DATE" != "$NEXT_DATE" ]]; then
   confirm_yn "Fecha no esperada (siguiente: $NEXT_DATE). ¿Continuar igual?" || exit 0
 fi
@@ -314,15 +262,13 @@ local TXT="$(txt_path_for_date "$DATE")"
 local CURRENT="${CURRENT_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/current_keywords.txt}"
 local PENDING="${PENDING_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/pending_keywords.txt}"
 
-# Ensure parent dirs exist (new layout)
 mkdir -p "${TXT:h}" || die "No pude crear carpeta: ${TXT:h}"
 
-# Ensure txt exists
 if [[ ! -f "$TXT" ]]; then
+  # opcional: podrías preguntar aquí, pero por ahora asumimos YES
   cp "$TEMPLATE" "$TXT"
 fi
 
-# Si aún queda el placeholder {{DATE}}, reemplazarlo (idempotente)
 if grep -q '{{DATE}}' "$TXT"; then
   "$PYTHON" - "$DATE" "$TXT" >/dev/null 2>&1 <<'PY' || true
 import sys, pathlib
@@ -337,17 +283,292 @@ fi
 
 lint_txt "$TXT" "$DATE" "$ARCHIVO" "$EXISTS"
 
+# -------------------------
+# Google Docs pulls (silencioso) + diffs + apply + open/print
+# -------------------------
+local CHANGES_DETECTED=0
+local APPLY_CHANGES=0
 
+# --- helpers to read existing txt values
+get_meta() {
+  local key="$1"
+  "$PYTHON" - "$TXT" "$key" <<'PY' 2>/dev/null
+import re, sys
+from pathlib import Path
+t = Path(sys.argv[1]).read_text(encoding="utf-8")
+key = sys.argv[2]
+m = re.search(rf"^{re.escape(key)}:\s*(.*)$", t, flags=re.M)
+print((m.group(1) if m else "").strip())
+PY
+}
 
-# Regenerate current (snapshot). NEVER touch pending.
-# Ensure state dirs exist (so we can write CURRENT)
+get_section() {
+  local hdr="$1"  # e.g. "# POEMA"
+  "$PYTHON" - "$TXT" "$hdr" <<'PY' 2>/dev/null
+import re, sys
+from pathlib import Path
+t = Path(sys.argv[1]).read_text(encoding="utf-8")
+hdr = sys.argv[2]
+m = re.search(re.escape(hdr) + r"\n(.*?)(\n# [A-Z_]+|\Z)", t, flags=re.S)
+print((m.group(1) if m else "").strip())
+PY
+}
+
+# --- apply meta update (only if new non-empty)
+apply_meta() {
+  local key="$1"
+  local val="$2"
+  "$PYTHON" - "$TXT" "$key" "$val" <<'PY'
+import re, sys
+from pathlib import Path
+path = Path(sys.argv[1])
+key = sys.argv[2]
+val = sys.argv[3].strip()
+if not val:
+    raise SystemExit(0)
+text = path.read_text(encoding="utf-8")
+if re.search(rf"^{re.escape(key)}:.*$", text, flags=re.M):
+    text = re.sub(rf"^{re.escape(key)}:.*$", f"{key}: {val}", text, flags=re.M)
+else:
+    if re.search(r"^FECHA:.*$", text, flags=re.M):
+        text = re.sub(r"^(FECHA:.*\n)", r"\1" + f"{key}: {val}\n", text, flags=re.M)
+    else:
+        text = f"{key}: {val}\n" + text
+path.write_text(text, encoding="utf-8")
+PY
+}
+
+apply_section_replace() {
+  local hdr="$1"
+  local body="$2"
+  "$PYTHON" - "$TXT" "$hdr" "$body" <<'PY'
+import re, sys
+from pathlib import Path
+path = Path(sys.argv[1])
+hdr = sys.argv[2]
+new_body = sys.argv[3].rstrip() + "\n"
+text = path.read_text(encoding="utf-8")
+pat = re.compile(re.escape(hdr) + r"\n(.*?)(\n# [A-Z_]+|\Z)", flags=re.S)
+m = pat.search(text)
+if not m:
+    raise SystemExit(f"No encuentro sección {hdr}")
+replacement = hdr + "\n\n" + new_body + m.group(2)
+text = text[:m.start()] + replacement + text[m.end():]
+path.write_text(text, encoding="utf-8")
+PY
+}
+
+cmp_changed_meta() {
+  "$PYTHON" - "$1" "$2" <<'PY' 2>/dev/null
+import sys
+a = " ".join((sys.argv[1] or "").strip().split())
+b = " ".join((sys.argv[2] or "").strip().split())
+print("1" if a != b else "0")
+PY
+}
+
+cmp_changed_block() {
+  "$PYTHON" - "$1" "$2" <<'PY' 2>/dev/null
+import sys
+def norm(s: str) -> str:
+    lines = [ln.rstrip() for ln in (s or "").splitlines()]
+    while lines and lines[0].strip()=="":
+        lines.pop(0)
+    while lines and lines[-1].strip()=="":
+        lines.pop()
+    return "\n".join(lines)
+a = norm(sys.argv[1])
+b = norm(sys.argv[2])
+print("1" if a != b else "0")
+PY
+}
+
+local -a CHANGED_KEYS
+CHANGED_KEYS=()
+
+# Storage for pulled content and diff flags
+local PULLED_TITLE="" PULLED_POEM=""
+local DOC_POET="" DOC_POEM_TITLE="" DOC_BOOK_TITLE="" DOC_POEM_CIT="" DOC_ANALYSIS=""
+local TITLE_CHANGED=0 POEM_CHANGED=0
+local CH_POETA=0 CH_PT=0 CH_BOOK=0 CH_CIT=0 CH_TXT=0
+
+# Existing values from txt
+local EXISTING_TITLE EXISTING_POEMA
+local EX_POETA EX_POEM_TITLE EX_BOOK EX_CIT EX_TEXT
+
+EXISTING_TITLE="$(get_meta "MY_POEM_TITLE")" || EXISTING_TITLE=""
+EXISTING_POEMA="$(get_section "# POEMA")" || EXISTING_POEMA=""
+
+EX_POETA="$(get_meta "POETA")" || EX_POETA=""
+EX_POEM_TITLE="$(get_meta "POEM_TITLE")" || EX_POEM_TITLE=""
+EX_BOOK="$(get_meta "BOOK_TITLE")" || EX_BOOK=""
+EX_CIT="$(get_section "# POEMA_CITADO")" || EX_CIT=""
+EX_TEXT="$(get_section "# TEXTO")" || EX_TEXT=""
+
+# Pull POEMA (doc poemas)
+local GDOCS_POEM="$QMP_REPO/scripts/gdocs_pull_poem_by_date.py"
+if [[ -f "$GDOCS_POEM" ]]; then
+  local POEM_RAW="" POEM_STATUS=0 POEM_JSON=""
+  POEM_RAW="$("$PYTHON" "$GDOCS_POEM" --date "$DATE" 2>&1)" || POEM_STATUS=$?
+  POEM_STATUS=${POEM_STATUS:-0}
+
+  if [[ $POEM_STATUS -ne 0 ]]; then
+    warn "Pull POEMA falló (status=$POEM_STATUS)."
+    print -u2 -- "$POEM_RAW"
+    confirm_yn "¿Continuar sin el pull del poema?" "Y" || exit 1
+  else
+    POEM_JSON="$(printf "%s" "$POEM_RAW" | "$PYTHON" -c 'import sys, json
+raw=sys.stdin.read(); s=raw.lstrip()
+data={"title":"","poem":""}
+if s.startswith("{"):
+  obj=json.loads(s); data["title"]=(obj.get("title") or obj.get("TITLE") or "").strip(); data["poem"]=(obj.get("poem") or obj.get("POEM") or "")
+else:
+  lines=raw.splitlines(); mode=None; tl=[]; pl=[]
+  for ln in lines:
+    if ln.strip()=="TITLE:": mode="title"; continue
+    if ln.strip()=="POEM:": mode="poem"; continue
+    if mode=="title": tl.append(ln)
+    elif mode=="poem": pl.append(ln)
+  data["title"]="\n".join(tl).strip(); data["poem"]="\n".join(pl).rstrip()+"\n" if pl else ""
+print(json.dumps(data, ensure_ascii=False))' 2>/dev/null)" || POEM_JSON=""
+
+    if [[ -z "$POEM_JSON" ]]; then
+      warn "Pull POEMA: no pude parsear salida."
+      print -u2 -- "$POEM_RAW"
+      confirm_yn "¿Continuar sin el pull del poema?" "Y" || exit 1
+    else
+      PULLED_TITLE="$("$PYTHON" -c 'import sys,json; d=json.load(sys.stdin); print((d.get("title") or "").strip())' <<<"$POEM_JSON" 2>/dev/null)" || PULLED_TITLE=""
+      PULLED_POEM="$("$PYTHON" -c 'import sys,json; d=json.load(sys.stdin); print(d.get("poem") or "", end="")' <<<"$POEM_JSON" 2>/dev/null)" || PULLED_POEM=""
+
+      TITLE_CHANGED=0
+      POEM_CHANGED=0
+      if [[ -n "${PULLED_TITLE//[[:space:]]/}" ]]; then
+        [[ "$(cmp_changed_meta "$EXISTING_TITLE" "$PULLED_TITLE")" == "1" ]] && TITLE_CHANGED=1
+      fi
+      [[ "$(cmp_changed_block "$EXISTING_POEMA" "$PULLED_POEM")" == "1" ]] && POEM_CHANGED=1
+
+      if (( TITLE_CHANGED )); then CHANGED_KEYS+=("MY_POEM_TITLE"); fi
+      if (( POEM_CHANGED )); then CHANGED_KEYS+=("#POEMA"); fi
+    fi
+  fi
+fi
+
+# Pull ESCRITOS (doc análisis)
+local GDOCS_ANALYSIS="$QMP_REPO/scripts/gdocs_pull_analysis_by_date.py"
+if [[ -f "$GDOCS_ANALYSIS" ]]; then
+  local A_RAW="" A_STATUS=0
+  A_RAW="$("$PYTHON" "$GDOCS_ANALYSIS" --date "$DATE" 2>&1)" || A_STATUS=$?
+  A_STATUS=${A_STATUS:-0}
+
+  if [[ $A_STATUS -ne 0 ]]; then
+    warn "Pull ESCRITOS falló (status=$A_STATUS)."
+    print -u2 -- "$A_RAW"
+    confirm_yn "Pull ESCRITOS falló. ¿Continuar sin el pull de los escritos?" "Y" || exit 1
+  else
+    local AJ="$A_RAW"
+    DOC_POET="$("$PYTHON" -c 'import sys,json; d=json.loads(sys.stdin.read()); print((d.get("poet") or "").strip())' <<<"$AJ" 2>/dev/null)" || DOC_POET=""
+    DOC_POEM_TITLE="$("$PYTHON" -c 'import sys,json; d=json.loads(sys.stdin.read()); print((d.get("poem_title") or "").strip())' <<<"$AJ" 2>/dev/null)" || DOC_POEM_TITLE=""
+    DOC_BOOK_TITLE="$("$PYTHON" -c 'import sys,json; d=json.loads(sys.stdin.read()); print((d.get("book_title") or "").strip())' <<<"$AJ" 2>/dev/null)" || DOC_BOOK_TITLE=""
+    DOC_POEM_CIT="$("$PYTHON" -c 'import sys,json; d=json.loads(sys.stdin.read()); print((d.get("poem_citado") or ""))' <<<"$AJ" 2>/dev/null)" || DOC_POEM_CIT=""
+    DOC_ANALYSIS="$("$PYTHON" -c 'import sys,json; d=json.loads(sys.stdin.read()); print((d.get("analysis") or ""))' <<<"$AJ" 2>/dev/null)" || DOC_ANALYSIS=""
+
+    CH_POETA=0; CH_PT=0; CH_BOOK=0; CH_CIT=0; CH_TXT=0
+
+    if [[ -n "${DOC_POET//[[:space:]]/}" ]]; then
+      [[ "$(cmp_changed_meta "$EX_POETA" "$DOC_POET")" == "1" ]] && CH_POETA=1
+    fi
+    if [[ -n "${DOC_POEM_TITLE//[[:space:]]/}" ]]; then
+      [[ "$(cmp_changed_meta "$EX_POEM_TITLE" "$DOC_POEM_TITLE")" == "1" ]] && CH_PT=1
+    fi
+    if [[ -n "${DOC_BOOK_TITLE//[[:space:]]/}" ]]; then
+      [[ "$(cmp_changed_meta "$EX_BOOK" "$DOC_BOOK_TITLE")" == "1" ]] && CH_BOOK=1
+    fi
+    if [[ -n "${DOC_POEM_CIT//[[:space:]]/}" ]]; then
+      [[ "$(cmp_changed_block "$EX_CIT" "$DOC_POEM_CIT")" == "1" ]] && CH_CIT=1
+    fi
+    if [[ -n "${DOC_ANALYSIS//[[:space:]]/}" ]]; then
+      [[ "$(cmp_changed_block "$EX_TEXT" "$DOC_ANALYSIS")" == "1" ]] && CH_TXT=1
+    fi
+
+    if (( CH_POETA )); then CHANGED_KEYS+=("POETA"); fi
+    if (( CH_PT )); then CHANGED_KEYS+=("POEM_TITLE"); fi
+    if (( CH_BOOK )); then CHANGED_KEYS+=("BOOK_TITLE"); fi
+    if (( CH_CIT )); then CHANGED_KEYS+=("#POEMA_CITADO"); fi
+    if (( CH_TXT )); then CHANGED_KEYS+=("#TEXTO"); fi
+  fi
+fi
+
+# Report diffs
+if (( ${#CHANGED_KEYS[@]} > 0 )); then
+  CHANGES_DETECTED=1
+  print -u2 -- "[qd] Cambios detectados en Google Docs: ${CHANGED_KEYS[*]}"
+else
+  print -u2 -- "[qd] No hay cambios detectados en Google Docs."
+fi
+
+# Ask whether to apply (only if there are changes)
+if (( CHANGES_DETECTED )); then
+  if confirm_yn "¿Aplicar estos cambios al archivo local $TXT?" "N"; then
+    APPLY_CHANGES=1
+  else
+    APPLY_CHANGES=0
+  fi
+fi
+
+# Apply changes with confirmations per field/section (si APPLY_CHANGES=1)
+if (( APPLY_CHANGES )); then
+  if (( TITLE_CHANGED )); then
+    print -u2 -- "[qd] Cambio en MY_POEM_TITLE:"
+    print -u2 -- "  txt : ${EXISTING_TITLE:-<vacío>}"
+    print -u2 -- "  docs: ${PULLED_TITLE}"
+    confirm_yn "¿Actualizar MY_POEM_TITLE?" "N" && apply_meta "MY_POEM_TITLE" "$PULLED_TITLE"
+  fi
+  if (( POEM_CHANGED )); then
+    print -u2 -- "[qd] Cambio en # POEMA."
+    confirm_yn "¿Reemplazar # POEMA con lo de Google Docs?" "N" && apply_section_replace "# POEMA" "$PULLED_POEM"
+  fi
+
+  if (( CH_POETA )); then
+    print -u2 -- "[qd] Cambio en POETA:"
+    print -u2 -- "  txt : ${EX_POETA:-<vacío>}"
+    print -u2 -- "  docs: ${DOC_POET}"
+    confirm_yn "¿Actualizar POETA?" "N" && apply_meta "POETA" "$DOC_POET"
+  fi
+  if (( CH_PT )); then
+    print -u2 -- "[qd] Cambio en POEM_TITLE:"
+    print -u2 -- "  txt : ${EX_POEM_TITLE:-<vacío>}"
+    print -u2 -- "  docs: ${DOC_POEM_TITLE}"
+    confirm_yn "¿Actualizar POEM_TITLE?" "N" && apply_meta "POEM_TITLE" "$DOC_POEM_TITLE"
+  fi
+  if (( CH_BOOK )); then
+    print -u2 -- "[qd] Cambio en BOOK_TITLE:"
+    print -u2 -- "  txt : ${EX_BOOK:-<vacío>}"
+    print -u2 -- "  docs: ${DOC_BOOK_TITLE}"
+    confirm_yn "¿Actualizar BOOK_TITLE?" "N" && apply_meta "BOOK_TITLE" "$DOC_BOOK_TITLE"
+  fi
+  if (( CH_CIT )); then
+    print -u2 -- "[qd] Cambio en # POEMA_CITADO."
+    confirm_yn "¿Reemplazar # POEMA_CITADO con lo de Google Docs?" "N" && apply_section_replace "# POEMA_CITADO" "$DOC_POEM_CIT"
+  fi
+  if (( CH_TXT )); then
+    print -u2 -- "[qd] Cambio en # TEXTO."
+    confirm_yn "¿Reemplazar # TEXTO con lo de Google Docs?" "N" && apply_section_replace "# TEXTO" "$DOC_ANALYSIS"
+  fi
+fi
+
+# Decide: open editor or print TXT (default: print)
+if confirm_yn "¿Abrir editor (archivo.json + $TXT + keywords)?" "N"; then
+  :  # continue
+else
+  print -u2 -- "[qd] No abro editor. Muestro $TXT:"
+  print -- "------------------------------------------------------------"
+  cat "$TXT"
+  print -- "------------------------------------------------------------"
+  exit 0
+fi
+
 # -------------------------
-# Current keywords snapshot (single-date payload)
-# -------------------------
-# -------------------------
-# Current keywords snapshot
-# - EXISTING entry: pull keywords for that date
-# - NEW entry: current_keywords should be empty []
+# Keywords snapshot (igual que antes)
 # -------------------------
 mkdir -p "${CURRENT:h}" || die "No pude crear carpeta de state: ${CURRENT:h}"
 
@@ -357,20 +578,19 @@ if [[ "$EXISTS" == "1" ]]; then
     echo "[]" > "$CURRENT"
   fi
 else
-  # Nueva entrada (no publicada): current_keywords debe ser vacío
   echo "[]" > "$CURRENT"
 fi
 
-
-
+# -------------------------
+# Open logic (decidido arriba)
+# -------------------------
+local OPEN_TXT=1
 
 # -------------------------
 # Open files (TXT focused)
 # -------------------------
-# Determine editor
 local -a CMD
 if [[ -n "${EDITOR_CMD:-}" ]]; then
-  # NOTE: prefer EDITOR (single command); EDITOR_CMD may contain spaces.
   CMD=(${=EDITOR_CMD})
 elif [[ -n "${EDITOR:-}" ]]; then
   CMD=(${=EDITOR})
