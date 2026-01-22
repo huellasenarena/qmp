@@ -1,0 +1,33 @@
+FECHA: 2026-01-24
+MY_POEM_TITLE: test poem/thiswor
+POETA: Tania Ganitsky
+POEM_TITLE: test1/test2
+BOOK_TITLE:
+
+# POEMA
+does this| work
+
+# POEMA_CITADO
+El primer poema del año habla
+sobre lo que voy a tocar:
+las hojas no nacidas de la begonia,
+su cuerpo mientras sueña en un cuerpo distante
+con imágenes que al día de hoy
+no ha visto
+y que al día de hoy no existen,
+la lengua húmeda de un perro
+que me despertará en las mañanas,
+la madera hirviente que rozaré accidentalmente
+al acomodar leña en fuegos por venir,
+torsos de desconocidos en calles nuevamente atestadas,
+las patas de una mosca posada en mi brazo
+o, si tengo suerte, las de una mariposa,
+páginas de cuadernos y libros con combinaciones
+de palabras inesperadas y asombrosas,
+el baboso cuerpo de insectos que hoy temo y evito.
+Y tocaré la oscuridad de las personas luminosas
+y de las oscuras,
+sin discernir entre el don y el peligro.
+
+# TEXTO
+por ejempo sdfou ergonj

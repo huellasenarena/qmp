@@ -456,6 +456,106 @@ def generate_keywords_from_txt(txt_path: Path) -> list[dict]:
 
     return obj
 
+def find_script(*relpaths: str) -> Path:
+    for rp in relpaths:
+        p = repo_root() / rp
+        if p.exists():
+            return p
+    raise RuntimeError(f"No encuentro script. Probé: {', '.join(relpaths)}")
+
+def run_validate_and_normalize_txt(date_str: str, txt_path: Path) -> None:
+    """
+    Valida y normaliza metadata/headers del .txt (idempotente).
+    Si cambia formateo, reescribe el archivo.
+    """
+    script = find_script("qmp/validate_entry.py", "scripts/validate_entry.py", "validate_entry.py")
+    cmd = [sys.executable, str(script), "--mode", "normalize", date_str, str(txt_path)]
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise RuntimeError(proc.stderr.strip() or proc.stdout.strip() or "validate_entry.py falló")
+
+    try:
+        payload = json.loads(proc.stdout)
+    except Exception:
+        raise RuntimeError("validate_entry.py no devolvió JSON válido")
+
+    if payload.get("changed_formatting"):
+        txt_path.write_text(payload["normalized_text"], encoding="utf-8")
+
+def run_merge_pending(
+    txt_path: Path,
+    archivo_path: Path,
+    pending_kw_path: Path,
+    pending_entry_path: Path,
+    apply_keywords: bool = True,
+    dry_run: bool = False,
+) -> dict:
+    """
+    Ejecuta merge_pending.py y devuelve el STATUS_JSON como dict.
+    """
+    script = find_script("qmp/merge_pending.py", "scripts/merge_pending.py", "merge_pending.py")
+    cmd = [
+        sys.executable, str(script),
+        str(txt_path),
+        "--archivo", str(archivo_path),
+        "--pending-kw", str(pending_kw_path),
+        "--pending-entry", str(pending_entry_path),
+    ]
+    if apply_keywords:
+        cmd.append("--apply-keywords")
+    if dry_run:
+        cmd.append("--dry-run")
+
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    out = (proc.stdout or "") + ("\n" + proc.stderr if proc.stderr else "")
+    if proc.returncode != 0:
+        raise RuntimeError(out.strip() or "merge_pending.py falló")
+
+    status_line = None
+    for line in out.splitlines():
+        if line.startswith("STATUS_JSON="):
+            status_line = line.split("=", 1)[1].strip()
+            break
+    if not status_line:
+        raise RuntimeError("merge_pending.py no emitió STATUS_JSON=")
+
+    return json.loads(status_line)
+
+def apply_pending_entry_into_archivo(date_str: str, pending_entry_path: Path, archivo_path: Path) -> None:
+    """
+    Inserta/reemplaza entry por fecha en archivo.json y ordena desc por date.
+    """
+    pending = json.loads(pending_entry_path.read_text(encoding="utf-8"))
+    if not isinstance(pending, dict) or pending.get("date") != date_str:
+        raise RuntimeError("pending_entry.json inválido o fecha no coincide")
+
+    data = json.loads(archivo_path.read_text(encoding="utf-8"))
+    entries = data.get("entries") if isinstance(data, dict) else data
+    if not isinstance(entries, list):
+        raise RuntimeError("archivo.json inválido: raíz no es lista ni {'entries': [...]}")
+
+    entries = [e for e in entries if isinstance(e, dict) and e.get("date") != date_str]
+    entries.append(pending)
+    entries.sort(key=lambda e: e.get("date", ""), reverse=True)
+
+    # Mantener formato histórico (lista) como en qmp_publish.sh
+    archivo_path.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+def git(cmd: list[str]) -> str:
+    proc = subprocess.run(["git", *cmd], capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise RuntimeError((proc.stderr or proc.stdout or "").strip() or f"git {' '.join(cmd)} falló")
+    return (proc.stdout or "").strip()
+
+def ensure_on_branch(expected: str) -> None:
+    cur = git(["rev-parse", "--abbrev-ref", "HEAD"]).strip()
+    if cur != expected:
+        raise RuntimeError(f"Branch actual: {cur} (esperado: {expected})")
+
+def clear_pending_keywords_placeholder() -> None:
+    p = state_dir() / "pending_keywords.txt"
+    p.write_text('{\n  "date": "",\n  "keywords": []\n}\n', encoding="utf-8")
+
 
 # -----------------------------
 # Main
@@ -673,7 +773,107 @@ def main() -> int:
             println("[qcrear] ✅ pending_keywords.txt actualizado.")
 
         println("")
-        println("[qcrear] Listo. (Aún no implementado aquí: publicar / actualizar archivo.json / push.)")
+        publish_now = prompt_yn("[qcrear] Todo listo. ¿Publicar ahora (archivo.json + commit + push)?", default_yes=False)
+        if not publish_now:
+            println("[qcrear] OK. No publiqué. Puedes volver a ejecutar qcrear cuando quieras.")
+            return 0
+
+        # -----------------------------
+        # Publish gate (ultra-robusto)
+        # -----------------------------
+        archivo_path = repo_root() / "data" / "archivo.json"
+        pending_kw_path = state_dir() / "pending_keywords.txt"
+        pending_entry_path = state_dir() / "pending_entry.json"
+        # Seguridad: publicar solo desde el branch actual (sin suposiciones)
+        branch = git(["rev-parse", "--abbrev-ref", "HEAD"]).strip()
+
+        if branch != "main":
+            println("")
+            println(f"[qcrear] ⚠️  Estás en el branch '{branch}', no en 'main'.")
+            println("[qcrear] Esto publicará los cambios en ESTE branch.")
+            ok_branch = prompt_yn(
+                f"[qcrear] ¿Publicar de todos modos en '{branch}'?",
+                default_yes=False
+            )
+            if not ok_branch:
+                println("[qcrear] OK. Publicación cancelada.")
+                return 0
+
+        println(f"[qcrear] Publicando desde branch: {branch}")
+
+
+
+        # 2) Validar keywords vigentes (obligatorio para publicar)
+        pending = load_pending_keywords()
+        if not pending:
+            raise RuntimeError("No hay pending_keywords vigentes. No se puede publicar.")
+        if (pending.get("date") or "").strip() != target:
+            raise RuntimeError("pending_keywords date != target. No se puede publicar.")
+        if not (pending.get("keywords") or []):
+            raise RuntimeError("pending_keywords está vacío. No se puede publicar.")
+        if (pending.get("docs_fingerprint") or "").strip() != fp:
+            raise RuntimeError("pending_keywords fingerprint NO coincide con Google Docs. No se puede publicar.")
+
+        # 3) Validar + normalizar .txt (idempotente)
+        run_validate_and_normalize_txt(target, txt_path)
+
+        # 4) merge_pending (aplica keywords -> pending_entry.json + status)
+        status = run_merge_pending(
+            txt_path=txt_path,
+            archivo_path=archivo_path,
+            pending_kw_path=pending_kw_path,
+            pending_entry_path=pending_entry_path,
+            apply_keywords=True,
+            dry_run=False,
+        )
+
+        exists_before = bool(status.get("exists_before"))
+        content_changed = bool(status.get("content_changed"))
+        keywords_changed = bool(status.get("keywords_changed"))
+
+        # Si no hay cambios y ya existía: no hacemos commit
+        if exists_before and (not content_changed) and (not keywords_changed):
+            println("ℹ️  No cambió texto ni keywords → no hay commit.")
+            return 0
+
+        # 5) Construir commit message
+        label = (status.get("my_poem_title") or "").strip() or (status.get("my_poem_snippet") or "").strip() or target
+        if not exists_before:
+            msg_type = "entrada"
+        else:
+            if content_changed and keywords_changed:
+                msg_type = "edicion texto + keywords"
+            elif content_changed:
+                msg_type = "edicion de metadatos/escritos"
+            else:
+                msg_type = "edicion de palabras clave"
+
+        msg = f"{msg_type} {target} — {label}"
+
+        println("")
+        println(f"[qcrear] Fecha:  {target}")
+        println(f"[qcrear] Commit: {msg}")
+        confirm = prompt_yn("[qcrear] ¿Confirmar publish (commit + push)?", default_yes=False)
+        if not confirm:
+            println("[qcrear] OK. Cancelado. No se publicó nada.")
+            return 0
+
+        # 6) Aplicar pending_entry.json dentro de archivo.json
+        apply_pending_entry_into_archivo(target, pending_entry_path, archivo_path)
+
+        # 7) Git add/commit/push
+        git(["add", str(archivo_path), str(txt_path), str(pending_entry_path)])
+        git(["commit", "-m", msg])
+        git(["push"])
+
+        println(f"✅ Publicado: {msg}")
+
+        # 8) Cleanup: limpiar pending_keywords (placeholder)
+        clear_pending_keywords_placeholder()
+
+        # limpiar pending_entry.json también
+        pending_entry_path.write_text("{}", encoding="utf-8")
+
         return 0
 
     except UserAbort:
