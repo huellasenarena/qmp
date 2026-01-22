@@ -1,26 +1,34 @@
 {
-  "date": "2026-01-23",
+  "date": "2026-01-24",
   "month": "2026-01",
-  "file": "textos/2026-01-23.txt",
-  "my_poem_title": "reloj",
+  "file": "textos/2026-01-24.txt",
+  "my_poem_title": "test/test",
   "my_poem_snippet": "",
   "analysis": {
-    "poet": "Soledad Castresana",
-    "poem_title": "En el Bosque de Tlalpan",
+    "poet": "Alfonsina Storniii",
+    "poem_title": "Aspecto/fucki",
     "poem_snippet": "",
-    "book_title": "La carne se corta"
+    "book_title": ""
   },
   "keywords": [
     {
-      "word": "fracaso-como-metodo",
+      "word": "contencion",
       "weight": 3
     },
     {
-      "word": "incertidumbre-productiva",
+      "word": "fiebre como nutricion",
       "weight": 3
     },
     {
-      "word": "normatividad-metrica",
+      "word": "hibridacion",
+      "weight": 3
+    },
+    {
+      "word": "impureza como agencia",
+      "weight": 3
+    },
+    {
+      "word": "normatividad",
       "weight": 3
     },
     {
@@ -28,19 +36,11 @@
       "weight": 3
     },
     {
-      "word": "prueba",
-      "weight": 3
-    },
-    {
-      "word": "simulacro-corporeo",
-      "weight": 3
-    },
-    {
-      "word": "autoironia",
+      "word": "anclaje corporeo",
       "weight": 2
     },
     {
-      "word": "desplazamiento-identitario",
+      "word": "autoironizacion",
       "weight": 2
     },
     {
@@ -48,7 +48,15 @@
       "weight": 2
     },
     {
-      "word": "exposicion",
+      "word": "estetica de la farsa",
+      "weight": 2
+    },
+    {
+      "word": "fragmentacion",
+      "weight": 2
+    },
+    {
+      "word": "imprecision",
       "weight": 2
     },
     {
@@ -56,16 +64,12 @@
       "weight": 2
     },
     {
-      "word": "mimetismo",
+      "word": "privacidad expuesta",
       "weight": 2
     },
     {
-      "word": "verdad-y-farsa",
+      "word": "simulacion",
       "weight": 2
-    },
-    {
-      "word": "almillas",
-      "weight": 1
     },
     {
       "word": "cuervo",
@@ -76,7 +80,7 @@
       "weight": 1
     },
     {
-      "word": "flor-de-lis",
+      "word": "flor de lis",
       "weight": 1
     },
     {
@@ -84,7 +88,7 @@
       "weight": 1
     },
     {
-      "word": "metro",
+      "word": "hello",
       "weight": 1
     },
     {
@@ -96,15 +100,15 @@
       "weight": 1
     },
     {
-      "word": "piel-postiza",
+      "word": "piel postiza",
       "weight": 1
     },
     {
-      "word": "quimera",
+      "word": "slash",
       "weight": 1
     },
     {
-      "word": "risa",
+      "word": "test",
       "weight": 1
     }
   ]
