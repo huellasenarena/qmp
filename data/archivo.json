@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-01-23",
+    "month": "2026-01",
+    "file": "textos/2026-01-23.txt",
+    "my_poem_title": "test poem",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Alfonsina Storni",
+      "poem_title": "Aspecto",
+      "poem_snippet": "",
+      "book_title": ""
+    },
+    "keywords": [
+      {
+        "word": "fracaso-como-metodo",
+        "weight": 3
+      },
+      {
+        "word": "incertidumbre-productiva",
+        "weight": 3
+      },
+      {
+        "word": "normatividad-metrica",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "prueba",
+        "weight": 3
+      },
+      {
+        "word": "simulacro-corporeo",
+        "weight": 3
+      },
+      {
+        "word": "autoironia",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento-identitario",
+        "weight": 2
+      },
+      {
+        "word": "enmascaramiento",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "medicion",
+        "weight": 2
+      },
+      {
+        "word": "mimetismo",
+        "weight": 2
+      },
+      {
+        "word": "verdad-y-farsa",
+        "weight": 2
+      },
+      {
+        "word": "almillas",
+        "weight": 1
+      },
+      {
+        "word": "cuervo",
+        "weight": 1
+      },
+      {
+        "word": "fiebre",
+        "weight": 1
+      },
+      {
+        "word": "flor-de-lis",
+        "weight": 1
+      },
+      {
+        "word": "gris",
+        "weight": 1
+      },
+      {
+        "word": "metro",
+        "weight": 1
+      },
+      {
+        "word": "paredes",
+        "weight": 1
+      },
+      {
+        "word": "pico",
+        "weight": 1
+      },
+      {
+        "word": "piel-postiza",
+        "weight": 1
+      },
+      {
+        "word": "quimera",
+        "weight": 1
+      },
+      {
+        "word": "risa",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-22",
     "month": "2026-01",
     "file": "textos/2026-01-22.txt",

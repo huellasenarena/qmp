@@ -1,106 +1,110 @@
 {
-  "date": "2026-01-22",
+  "date": "2026-01-23",
   "month": "2026-01",
-  "file": "textos/2026-01-22.txt",
-  "my_poem_title": "73 observaciones sobre 73",
+  "file": "textos/2026-01-23.txt",
+  "my_poem_title": "test poem",
   "my_poem_snippet": "",
   "analysis": {
-    "poet": "Soledad Castresana",
-    "poem_title": "Mujer con marcas en el abdomen",
+    "poet": "Alfonsina Storni",
+    "poem_title": "Aspecto",
     "poem_snippet": "",
-    "book_title": "La carne se corta"
+    "book_title": ""
   },
   "keywords": [
     {
-      "word": "contaminacion",
+      "word": "fracaso-como-metodo",
       "weight": 3
     },
     {
-      "word": "desidentificacion",
+      "word": "incertidumbre-productiva",
       "weight": 3
     },
     {
-      "word": "distancia inhabilitante",
+      "word": "normatividad-metrica",
       "weight": 3
     },
     {
-      "word": "marca como prueba",
+      "word": "performatividad",
       "weight": 3
     },
     {
-      "word": "maternalidad tensionada",
+      "word": "prueba",
       "weight": 3
     },
     {
-      "word": "vacio como origen",
+      "word": "simulacro-corporeo",
       "weight": 3
     },
     {
-      "word": "erosion de limites",
+      "word": "autoironia",
       "weight": 2
     },
     {
-      "word": "simetria invertida",
+      "word": "desplazamiento-identitario",
       "weight": 2
     },
     {
-      "word": "temporalidad fragil",
+      "word": "enmascaramiento",
       "weight": 2
     },
     {
-      "word": "traslado de agencia",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "visibilizacion del dano",
+      "word": "medicion",
       "weight": 2
     },
     {
-      "word": "abdomen",
+      "word": "mimetismo",
+      "weight": 2
+    },
+    {
+      "word": "verdad-y-farsa",
+      "weight": 2
+    },
+    {
+      "word": "almillas",
       "weight": 1
     },
     {
-      "word": "acantilado",
+      "word": "cuervo",
       "weight": 1
     },
     {
-      "word": "cabeza",
+      "word": "fiebre",
       "weight": 1
     },
     {
-      "word": "cicatriz",
+      "word": "flor-de-lis",
       "weight": 1
     },
     {
-      "word": "coche",
+      "word": "gris",
       "weight": 1
     },
     {
-      "word": "dueno",
+      "word": "metro",
       "weight": 1
     },
     {
-      "word": "escape",
+      "word": "paredes",
       "weight": 1
     },
     {
-      "word": "gas",
+      "word": "pico",
       "weight": 1
     },
     {
-      "word": "muneco de nieve",
+      "word": "piel-postiza",
       "weight": 1
     },
     {
-      "word": "pelota",
+      "word": "quimera",
       "weight": 1
     },
     {
-      "word": "pendiente",
-      "weight": 1
-    },
-    {
-      "word": "pozo",
+      "word": "risa",
       "weight": 1
     }
   ]
