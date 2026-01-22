@@ -1,0 +1,21 @@
+FECHA: 2026-01-23
+MY_POEM_TITLE: teest poem/thiswor
+POETA: Alfonsina Storniii
+POEM_TITLE: Aspecto/fucki
+BOOK_TITLE:
+
+# POEMA
+does this| workidk
+
+# POEMA_CITADO
+Vivo dentro de cuatro paredes matemáticas
+Alineadas a metro. Me rodean apáticas
+Almillas que no saben ni un ápice siquiera
+De esta fiebre azulada que nutre mi quimera.
+Uso una piel postiza que me la rayo en gris.
+Cuervo que bajo el ala guarda una flor de lis.
+Me causa cierta risa mi pico fiero y torvo
+Que yo misma me creo pura farsa y estorbo.
+
+# TEXTO
+ssEste poema breve de Horacio Quiroga es una prueba más de su pobre pensamiento. Presenta una declaración general sin separar los casos válidos de los inválidos. ¿Y “inferior” cómo? Culpo al narrador por su falta de precisión; eso es todo para este escritor.

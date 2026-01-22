@@ -115,12 +115,24 @@ def pull_poem(doc_id: str, tab_title: str, yymmdd: str) -> Tuple[Optional[str], 
     def norm(s: str) -> str:
         return " ".join(s.strip().split()).lower()
 
-    # Si el poema ya empieza con el título, quítalo del POEM
-    if title and poem_lines and norm(poem_lines[0]) == norm(title):
-        poem_lines.pop(0)
-        # y limpia una línea vacía inicial extra si quedó
-        while poem_lines and poem_lines[0].strip() == "":
-            poem_lines.pop(0)
+    # Si el poema empieza con el título, quítalo del POEM.
+    # Soporta títulos multi-línea codificados como "línea1/línea2/..."
+    if title:
+        title_lines = [t.strip() for t in title.split("/") if t.strip()]
+        if title_lines and len(poem_lines) >= len(title_lines):
+            ok = True
+            for j, tl in enumerate(title_lines):
+                if norm(poem_lines[j]) != norm(tl):
+                    ok = False
+                    break
+            if ok:
+                # remover todas las líneas del título
+                for _ in range(len(title_lines)):
+                    poem_lines.pop(0)
+                # limpiar líneas vacías iniciales extra
+                while poem_lines and poem_lines[0].strip() == "":
+                    poem_lines.pop(0)
+
             
     poem = "\n".join(poem_lines).rstrip() + ("\n" if poem_lines else "")
     return (title, poem)

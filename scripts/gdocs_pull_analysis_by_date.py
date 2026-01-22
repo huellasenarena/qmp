@@ -141,6 +141,11 @@ def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
     poem_title = ""
     book_title = ""
 
+    # soporte multi-línea para Título:
+    poem_title_lines: List[str] = []
+    collecting_title = False
+
+
     poem_lines: List[str] = []
     seen_poem_body = False
 
@@ -160,12 +165,31 @@ def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
             continue
         m = META_TITULO_RE.match(s)
         if m:
-            poem_title = m.group(1).strip()
+            first = m.group(1).strip()
+            poem_title_lines = [first] if first else []
+            collecting_title = True
             continue
+
         m = META_LIBRO_RE.match(s)
         if m:
             book_title = m.group(1).strip()
             continue
+
+        # Continuación del título en líneas siguientes (multi-línea)
+        # Regla: si acabamos de ver "Título:" y aún no empezó el cuerpo del poema citado,
+        # tomamos líneas no vacías que no sean otro metadata.
+        if collecting_title and not seen_poem_body:
+            if s == "":
+                collecting_title = False
+                continue
+
+            # Si parece otro metadata, paramos
+            if META_POETA_RE.match(s) or META_LIBRO_RE.match(s) or META_TITULO_RE.match(s):
+                collecting_title = False
+                # no hacemos continue: dejamos que el loop lo procese normalmente
+            else:
+                poem_title_lines.append(s)
+                continue
 
         if s == "" and not seen_poem_body:
             continue
@@ -183,6 +207,8 @@ def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
     analysis = _clean_lines(analysis_lines)
     if not analysis:
         raise FormatError(f"Formato inválido en {yymmdd}: 'Versión final' está vacía (después de limpiar tachado).")
+
+    poem_title = "/".join([t.strip() for t in poem_title_lines if t.strip()])
 
     return {
         "poet": poet,
