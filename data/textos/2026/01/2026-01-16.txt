@@ -6,7 +6,7 @@ BOOK_TITLE: Poesía Reunida
 
 # POEMA
 solo |un tenedor
-|un cuchillo
+|un cuchillof
 |un plato
 para comer la congelada
 pizza de pepperoni,
