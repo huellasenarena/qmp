@@ -1,11 +1,10 @@
 FECHA: 2026-01-16
 MY_POEM_TITLE: 
 POETA: Ida Vitale
-POEM_TITLE: La Noche, esta morada
+POEM_TITLE: La Noche, Esta Morada
 BOOK_TITLE: Poesía Reunida
 
 # POEMA
-
 solo |un tenedor
 |un cuchillo
 |un plato
@@ -30,8 +29,7 @@ tiene un juez en
 que no cree
 
 # POEMA_CITADO
-
-*e il naufragar m’é dolce in questo mare.*
+e il naufragar m’é dolce in questo mare.
 Leopardi
 
 LA noche, esta morada.
@@ -40,7 +38,7 @@ y está solo,
 a punto de morir y comenzar
 a andar en aires otros.
 
-El mundo va a perder nubes, caballos, 
+El mundo va a perder nubes, caballos,
 vacila,
 	se asombra,
 			se deshace,
@@ -49,7 +47,7 @@ pero ya sin milagro.
 Despacio la esperanza
 viste su piel de olvido.
 No veo más allá
-de un nombre que he llamado 
+de un nombre que he llamado
 letra a beso a caricia
 a rosa abierta a vuelo ciego a llanto.
 
@@ -69,8 +67,7 @@ nube siempre,
 				eterno cielo.
 
 # TEXTO
-
-La muerte es una experiencia singular, un fin que tiene implicaciones más allá del muerto. En **La noche, esta morada** vemos a un hombre derivando hasta la muerte, su mundo desenlazándose, entrando en “aires otros”; no hay un milagro para salvarlo; el fin es una evidencia.
+La muerte es una experiencia singular: un fin que tiene implicaciones más allá del muerto. En **La noche, esta morada** vemos a un hombre derivando hasta la muerte, su mundo desenlazándose, entrando en “aires otros”; no hay un milagro para salvarlo; el fin es una evidencia.
 
 El hablante mira esta pérdida; ve cómo el tacto se reduce a la memoria (“No veo más allá / de un nombre que he llamado / letra a beso a caricia”); se siente llenarse con el “naufragar” del muerto.
 
