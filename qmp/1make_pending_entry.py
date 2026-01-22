@@ -72,14 +72,13 @@ def first_nonempty_line(s: str) -> str:
 def sanitize_snippet(s: str) -> str:
     # Solo para metadatos/snippet: elimina el marcador de espaciado '|'
     # (el poema real se mantiene intacto).
-    # Regla: BORRA TODAS las '|' (incluso en la mitad) y normaliza espacios.
-    return clean_snippet_line(s)
+    return s.replace("|", "").strip()
 
 def snippet_if_no_title(title: str, section_text: str) -> str:
     """Return snippet only when title is empty; else return empty string."""
     if (title or "").strip():
         return ""
-    return sanitize_snippet(first_nonempty_line(section_text))
+    return clean_snippet_line(sanitize_snippet(first_nonempty_line(section_text)))
 
 def month_from_date(d: str) -> str:
     return d[:7]
