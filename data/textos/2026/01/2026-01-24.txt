@@ -2,7 +2,6 @@ FECHA: 2026-01-24
 MY_POEM_TITLE: test/test
 POETA: Alfonsina Storniii
 POEM_TITLE: Aspecto/fucki
-BOOK_TITLE:
 
 # POEMA
 test/testhello
