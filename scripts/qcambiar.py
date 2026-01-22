@@ -2,570 +2,498 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 from pathlib import Path
-from typing import Optional
+from typing import Any, Dict, Tuple, List
 
-
-# Asegura que `scripts/` esté en sys.path para poder importar qcommon.py
+# Ensure scripts/ is importable
 SCRIPTS_DIR = Path(__file__).resolve().parent
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
 from qcommon import (
-    SEP,
-    UserAbort,
-    apply_pending_entry_into_archivo,
-    archivo_json_path,
-    data_dir,
-    docs_fingerprint,
-    eprintln,
-    find_entry_by_date,
-    git,
-    load_archivo_json,
-    open_in_editor,
-    parse_yyyy_mm_dd,
     println,
-    prompt_choice,
+    eprintln,
+    UserAbort,
     prompt_yn,
-    repo_root,
+    prompt_choice,
     run_preflight,
+    parse_yyyy_mm_dd,
+    load_archivo_json,
+    find_entry_by_date,
+    extract_section,
+    normalize_text_for_hash,
     run_py_json,
-    state_dir,
-    txt_fingerprint_from_file,
     write_text_atomic,
+    git,
 )
 
+SEP = "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 
 # -----------------------------
-# Repo-specific helpers (thin)
+# Local helpers (NO qcommon deps)
 # -----------------------------
 
-def txt_path_for_date(date_str: str) -> Path:
-    # usa el mismo layout que qcrear (YYYY/MM/YYYY-MM-DD.txt)
-    y, m, _ = date_str.split("-")
-    return data_dir() / "textos" / y / m / f"{date_str}.txt"
+def txt_path_for_date_local(date_str: str) -> Path:
+    # data/textos/YYYY/MM/YYYY-MM-DD.txt
+    y, m, _d = date_str.split("-")
+    return Path(__file__).resolve().parent.parent / "data" / "textos" / y / m / f"{date_str}.txt"
 
 
-def render_txt(date_str: str, pulled: dict) -> str:
-    """
-    Debe coincidir con el formato de qcrear.py, porque validate_entry.py lo exige.
-    """
-    poema = (pulled.get("poema") or "").rstrip()
-    citado = (pulled.get("poema_citado") or "").rstrip()
-    texto = (pulled.get("texto") or "").rstrip()
+def git_file_has_diff(path: Path) -> bool:
+    # True if file differs from HEAD (or is untracked)
+    if not path.exists():
+        return False
+    # untracked?
+    proc = subprocess.run(["git", "ls-files", "--error-unmatch", str(path)],
+                          capture_output=True, text=True)
+    if proc.returncode != 0:
+        # not tracked -> treat as diff
+        return True
+    proc2 = subprocess.run(["git", "diff", "--quiet", "--", str(path)])
+    return proc2.returncode != 0
 
-    my_poem_title = (pulled.get("MY_POEM_TITLE") or "").strip()
-    poeta = (pulled.get("POETA") or "").strip()
-    poem_title = (pulled.get("POEM_TITLE") or "").strip()
-    book_title = (pulled.get("BOOK_TITLE") or "").strip()
-
-    def norm(s: str) -> str:
-        # sin importar qcommon aquí: equivalente a qcrear (trim líneas, etc.)
-        s = s.replace("\r\n", "\n").replace("\r", "\n")
-        lines = [ln.rstrip() for ln in s.split("\n")]
-        while lines and lines[0].strip() == "":
-            lines.pop(0)
-        while lines and lines[-1].strip() == "":
-            lines.pop()
-        return "\n".join(lines)
-
-    parts = []
-    parts.append(f"FECHA: {date_str}")
-    parts.append(f"MY_POEM_TITLE: {my_poem_title}".rstrip())
-    parts.append(f"POETA: {poeta}".rstrip())
-    parts.append(f"POEM_TITLE: {poem_title}".rstrip())
-    parts.append(f"BOOK_TITLE: {book_title}".rstrip())
-    parts.append("")
-
-    parts.append("# POEMA")
-    parts.append(norm(poema))
-    parts.append("")
-
-    parts.append("# POEMA_CITADO")
-    parts.append(norm(citado))
-    parts.append("")
-
-    parts.append("# TEXTO")
-    parts.append(norm(texto))
-    parts.append("")
-
-    return "\n".join(parts)
-
-
-def preview_sections(pulled: dict, n_lines: int = 18) -> None:
-    def head(s: str) -> str:
-        lines = s.splitlines()
-        return "\n".join(lines[:n_lines])
-
-    # ---- NEW: metadata preview
-    meta_pairs = []
-    for k in ["MY_POEM_TITLE", "POEM_TITLE", "POET", "BOOK_TITLE"]:
-        v = (pulled.get(k) or "").strip()
-        if v:
-            meta_pairs.append((k, v))
-
-    println(SEP)
-    if meta_pairs:
-        println("[qcambiar] PREVIEW — METADATA")
-        for k, v in meta_pairs:
-            println(f"{k}: {v}")
-        println("")
-
-    println("[qcambiar] PREVIEW — POEMA")
-    println(head(pulled.get("poema", "")))
-    println("")
-    println("[qcambiar] PREVIEW — POEMA_CITADO")
-    println(head(pulled.get("poema_citado", "")))
-    println("")
-    println("[qcambiar] PREVIEW — TEXTO")
-    println(head(pulled.get("texto", "")))
-    println(SEP)
-
-
-def load_pending_keywords() -> Optional[dict]:
-    p = state_dir() / "pending_keywords.txt"
-    if not p.exists():
-        return None
-    try:
-        obj = json.loads(p.read_text(encoding="utf-8"))
-    except Exception as e:
-        raise RuntimeError(f"pending_keywords.txt inválido: {e}")
-    if not isinstance(obj, dict):
-        raise RuntimeError("pending_keywords.txt inválido: debe ser JSON objeto.")
-    if obj.get("date", "") == "" and obj.get("keywords", []) == []:
-        return None
-    return obj
-
-
-def clear_pending_keywords_placeholder() -> None:
-    p = state_dir() / "pending_keywords.txt"
-    p.write_text(json.dumps({"date": "", "docs_fingerprint": "", "keywords": []}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-
-def normalize_keywords_payload(obj: object) -> list[dict]:
-    """
-    Acepta:
-    - lista de {"keyword": str, "weight": int}
-    - dict {"keywords": [...]}
-    Devuelve lista validada.
-    """
-    if isinstance(obj, dict) and "keywords" in obj:
-        obj = obj["keywords"]
-    if not isinstance(obj, list):
-        raise RuntimeError("keywords inválidas: se esperaba lista o {'keywords': [...]}")
-    out: list[dict] = []
-    for it in obj:
-        if not isinstance(it, dict):
+def parse_metadata_from_txt(raw: str) -> Dict[str, str]:
+    out: Dict[str, str] = {}
+    for line in raw.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
             continue
-        kw = (it.get("word") or it.get("keyword") or it.get("kw") or "").strip()
-        w = it.get("weight")
-        if not kw:
-            continue
-        try:
-            w_int = int(w)
-        except Exception:
-            continue
-        out.append({"word": kw, "weight": w_int})
-    if not out:
-        raise RuntimeError("keywords inválidas: lista vacía tras validar.")
+        if ":" in line:
+            k, v = line.split(":", 1)
+            k = k.strip()
+            v = v.strip()
+            # solo las keys que nos importan
+            if k in {"MY_POEM_TITLE", "POETA", "POEM_TITLE", "BOOK_TITLE"}:
+                out[k] = v
+        # paramos cuando llegamos a secciones
+        if line in {"# POEMA", "# POEMA_CITADO", "# TEXTO"}:
+            break
     return out
 
-
-def show_keywords_top(kw_list: list[dict], top: int = 10) -> None:
-    sorted_kw = sorted(kw_list, key=lambda x: (-int(x.get("weight", 0)), x.get("keyword", "")))
-    println("[qcambiar] Keywords (top):")
-    for it in sorted_kw[:top]:
-        println(f"  - {it['keyword']} ({it['weight']})")
-    println(f"[qcambiar] Total keywords: {len(sorted_kw)}")
-
-
-def generate_keywords_from_txt(txt_path: Path) -> list[dict]:
-    # usa gen_keywords.py (ajusta el path si en tu repo vive en otro lugar)
-    # en qcrear ya tienes lógica tolerante; replicamos aquí
-    res = run_py_json("qmp/gen_keywords.py", [str(txt_path)])
-    return normalize_keywords_payload(res)
+def read_current_parts(txt_path: Path) -> Dict[str, str]:
+    if not txt_path.exists():
+        return {"poema": "", "poema_citado": "", "texto": ""}
+    raw = txt_path.read_text(encoding="utf-8")
+    return {
+        "poema": extract_section(raw, "# POEMA"),
+        "poema_citado": extract_section(raw, "# POEMA_CITADO"),
+        "texto": extract_section(raw, "# TEXTO"),
+    }
 
 
-def write_pending_keywords(date_str: str, fp: str, kw_list: list[dict]) -> None:
-    p = state_dir() / "pending_keywords.txt"
-    payload = {"date": date_str, "docs_fingerprint": fp, "keywords": kw_list}
-    p.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-
-def run_validate_and_normalize_txt(date_str: str, txt_path: Path) -> None:
-    # normaliza (idempotente) antes de merge/publicar
-    _ = run_py_json("qmp/validate_entry.py", ["--mode", "normalize", date_str, str(txt_path)])
-
-
-def run_merge_pending(
-    txt_path: Path,
-    archivo_path: Path,
-    pending_kw_path: Path,
-    pending_entry_path: Path,
-    apply_keywords: bool,
-    dry_run: bool,
-) -> dict:
-    # merge_pending.py usage:
-    #   merge_pending.py --archivo ARCHIVO --pending-kw PENDING_KW --pending-entry PENDING_ENTRY [--apply-keywords] [--dry-run] txt_path
-    args = [
-        "--archivo", str(archivo_path),
-        "--pending-kw", str(pending_kw_path),
-        "--pending-entry", str(pending_entry_path),
-    ]
-    if apply_keywords:
-        args.append("--apply-keywords")
-    if dry_run:
-        args.append("--dry-run")
-
-    # txt_path es posicional
-    args.append(str(txt_path))
-
-    return run_py_json("qmp/merge_pending.py", args)
-
-
-def normalize_pulled_payload(pulled: dict) -> dict:
+def normalize_pulled_payload_local(pulled: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Normaliza keys devueltas por gdocs_pull_* al contrato interno:
-      - poema
-      - poema_citado
-      - texto
-    y algunos metadatos opcionales.
+    Mapea payloads de gdocs_pull_* a keys internas:
+      poem -> poema
+      analysis -> texto
+      poem_citado -> poema_citado
+      title -> MY_POEM_TITLE
+      poet -> POETA
+      poem_title -> POEM_TITLE
+      book_title -> BOOK_TITLE
+    Mantiene otras keys si ya vienen normalizadas.
     """
-    out = dict(pulled)
+    out = dict(pulled or {})
 
-    # Texto principal
-    if "poema" not in out and "poem" in out:
+    # poem pull
+    if "poem" in out and "poema" not in out:
         out["poema"] = out.get("poem", "")
-    if "texto" not in out and "analysis" in out:
-        out["texto"] = out.get("analysis", "")
-
-    # Poema citado
-    # (ya viene como 'poem_citado' en tu analysis pull)
-    if "poema_citado" not in out and "poem_citado" in out:
-        out["poema_citado"] = out.get("poem_citado", "")
-
-    # Metadatos (opcional; tu render_txt los usa si existen)
-    # Título de MI poema: si viene 'title' del poem pull
-    if "MY_POEM_TITLE" not in out and "title" in out:
+    if "title" in out and "MY_POEM_TITLE" not in out:
         out["MY_POEM_TITLE"] = out.get("title", "")
 
-    # Metas de análisis
-    if "POEM_TITLE" not in out and "poem_title" in out:
-        out["POEM_TITLE"] = out.get("poem_title", "")
-    if "POETA" not in out and "poet" in out:
+    # analysis pull
+    if "analysis" in out and "texto" not in out:
+        out["texto"] = out.get("analysis", "")
+    # ya viene como poem_citado en tu script
+    if "poem_citado" in out and "poema_citado" not in out:
+        out["poema_citado"] = out.get("poem_citado", "")
+
+    # metadata
+    if "poet" in out and "POETA" not in out:
         out["POETA"] = out.get("poet", "")
-    if "BOOK_TITLE" not in out and "book_title" in out:
+    if "poem_title" in out and "POEM_TITLE" not in out:
+        out["POEM_TITLE"] = out.get("poem_title", "")
+    if "book_title" in out and "BOOK_TITLE" not in out:
         out["BOOK_TITLE"] = out.get("book_title", "")
+
+    # clean strings
+    for k, v in list(out.items()):
+        if isinstance(v, str):
+            out[k] = v.replace("\r\n", "\n").replace("\r", "\n")
 
     return out
 
 
-def main(argv: list[str]) -> int:
+def render_txt(date_str: str, payload: Dict[str, Any]) -> str:
+    # EXACT format expected by your pipeline
+    lines: List[str] = []
+    lines.append(f"FECHA: {date_str}")
+
+    # MY_POEM_TITLE can be blank; keep line for consistency if present
+    my_title = (payload.get("MY_POEM_TITLE") or "").strip()
+    if my_title:
+        lines.append(f"MY_POEM_TITLE: {my_title}")
+
+    poeta = (payload.get("POETA") or "").strip()
+    if poeta:
+        lines.append(f"POETA: {poeta}")
+    poem_title = (payload.get("POEM_TITLE") or "").strip()
+    if poem_title:
+        lines.append(f"POEM_TITLE: {poem_title}")
+    book_title = (payload.get("BOOK_TITLE") or "").strip()
+    if book_title:
+        lines.append(f"BOOK_TITLE: {book_title}")
+
+    lines.append("")  # blank line
+
+    lines.append("# POEMA")
+    lines.append((payload.get("poema") or "").rstrip())
+    lines.append("")
+
+    lines.append("# POEMA_CITADO")
+    # poem_citado can be empty; that's OK
+    lines.append((payload.get("poema_citado") or "").rstrip())
+    lines.append("")
+
+    lines.append("# TEXTO")
+    lines.append((payload.get("texto") or "").rstrip())
+    lines.append("")
+
+    # normalize trailing spaces
+    return "\n".join(lines).replace("\r\n", "\n").replace("\r", "\n")
+
+
+def preview_payload(date_str: str, payload: Dict[str, Any]) -> None:
+    println(SEP)
+    println("[qcambiar] PREVIEW — METADATA")
+    for k in ["MY_POEM_TITLE", "POETA", "POEM_TITLE", "BOOK_TITLE"]:
+        v = (payload.get(k) or "").strip()
+        if v:
+            println(f"{k}: {v}")
+    println("")
+    println("[qcambiar] PREVIEW — POEMA")
+    println((payload.get("poema") or "").strip())
+    println("")
+    println("[qcambiar] PREVIEW — POEMA_CITADO")
+    println((payload.get("poema_citado") or "").strip())
+    println("")
+    println("[qcambiar] PREVIEW — TEXTO")
+    println((payload.get("texto") or "").strip())
+    println(SEP)
+
+
+def compute_diff_flags(
+    date_str: str,
+    current_parts: Dict[str, str],
+    current_meta: Dict[str, str],
+    pulled: Dict[str, Any],
+) -> Tuple[bool, bool, List[str]]:
+
+    """
+    Returns (P_changed, A_changed, report_lines).
+    P_changed: POEMA or MY_POEM_TITLE differs
+    A_changed: any of (TEXTO, POEMA_CITADO, POETA, POEM_TITLE, BOOK_TITLE) differs
+    report_lines: UX list of section diffs.
+    """
+    report: List[str] = []
+
+    # sections
+    cur_poema = current_parts.get("poema", "")
+    cur_citado = current_parts.get("poema_citado", "")
+    cur_texto = current_parts.get("texto", "")
+
+    new_poema = pulled.get("poema", "")
+    new_citado = pulled.get("poema_citado", "")
+    new_texto = pulled.get("texto", "")
+
+    poem_changed = normalize_text_for_hash(cur_poema) != normalize_text_for_hash(new_poema)
+    citado_changed = normalize_text_for_hash(cur_citado) != normalize_text_for_hash(new_citado)
+    texto_changed = normalize_text_for_hash(cur_texto) != normalize_text_for_hash(new_texto)
+
+    report.append(f"  - POEMA: {'CAMBIÓ' if poem_changed else 'sin cambios'}")
+    report.append(f"  - POEMA_CITADO: {'CAMBIÓ' if citado_changed else 'sin cambios'}")
+    report.append(f"  - TEXTO: {'CAMBIÓ' if texto_changed else 'sin cambios'}")
+
+    # metadata comparisons: compare against archivo.json entry (published truth)
+    def meta_diff(key: str) -> bool:
+        cur = str(current_meta.get(key, "") or "")
+        new = str(pulled.get(key, "") or "")
+        return normalize_text_for_hash(cur) != normalize_text_for_hash(new)
+
+    my_title_changed = meta_diff("MY_POEM_TITLE")
+    poeta_changed = meta_diff("POETA")
+    poem_title_changed = meta_diff("POEM_TITLE")
+    book_title_changed = meta_diff("BOOK_TITLE")
+
+    report.append(f"  - MY_POEM_TITLE: {'CAMBIÓ' if my_title_changed else 'sin cambios'}")
+    report.append(f"  - POETA: {'CAMBIÓ' if poeta_changed else 'sin cambios'}")
+    report.append(f"  - POEM_TITLE: {'CAMBIÓ' if poem_title_changed else 'sin cambios'}")
+    report.append(f"  - BOOK_TITLE: {'CAMBIÓ' if book_title_changed else 'sin cambios'}")
+
+    P = poem_changed or my_title_changed
+    A = citado_changed or texto_changed or poeta_changed or poem_title_changed or book_title_changed
+    return P, A, report
+
+
+def build_commit_message(date_str: str, P: bool, A: bool, K: bool) -> str:
+    # All combinations, with spaces
+    if K and not P and not A:
+        return f"keywords {date_str}"
+
+    parts: List[str] = []
+    if P:
+        parts.append("poema")
+    if A:
+        parts.append("análisis")
+    if K:
+        parts.append("keywords")
+
+    if not parts:
+        return f"edicion {date_str}"
+    return f"cambio de {' + '.join(parts)} {date_str}"
+
+
+def main() -> int:
     try:
-        println(SEP)
+        run_preflight()
 
-        pf = run_preflight()
-        if not pf.ok_repo or not pf.ok_archivo_json:
-            raise RuntimeError("Preflight falló: no encuentro repo o data/archivo.json")
-
-        if len(argv) < 2:
-            println("Uso: qcambiar YYYY-MM-DD.")
+        if len(sys.argv) != 2:
+            eprintln("Uso: qcambiar YYYY-MM-DD")
             return 1
 
-        target = argv[1].strip()
-        _ = parse_yyyy_mm_dd(target)  # valida formato
+        date_str = sys.argv[1]
+        # validates format
+        parse_yyyy_mm_dd(date_str)
 
         archivo = load_archivo_json()
-        entry = find_entry_by_date(archivo, target)
+        entry = find_entry_by_date(archivo, date_str)
         if not entry:
-            println(f"[qcambiar] No existe una entrada publicada para {target}. Usa 'qcrear {target}'.")
-            return 0
+            eprintln(f"[qcambiar] No existe entrada publicada para {date_str}. Usa qcrear.")
+            return 1
 
-        println(f"[qcambiar] OK: entrada publicada encontrada para {target}.")
-
-        # 3) Menú
+        println(SEP)
+        println("[qcambiar] OK: entrada publicada encontrada para " + date_str + ".")
         println("")
-        change_poem = prompt_yn("[qcambiar] ¿Quieres cambiar el POEMA?", default_yes=False, prefix="[qcambiar] ")
-        change_text = prompt_yn("[qcambiar] ¿Quieres cambiar el ANÁLISIS/TEXTO?", default_yes=False, prefix="[qcambiar] ")
-        change_kw = prompt_yn("[qcambiar] ¿Quieres cambiar las KEYWORDS?", default_yes=False, prefix="[qcambiar] ")
+        println("[qcambiar] Haciendo pull desde Google Docs para comparar…")
 
-        if not (change_poem or change_text or change_kw):
-            println("[qcambiar] No hay cambios seleccionados. Saliendo.")
-            return 0
+        poem_pull = run_py_json("scripts/gdocs_pull_poem_by_date.py", ["--date", date_str])
+        analysis_pull = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", date_str])
 
-        # Si se tocó texto, forzamos pasar por keywords (aunque luego sea 'n')
-        touched_text = change_poem or change_text
+        pulled_raw: Dict[str, Any] = {}
+        pulled_raw.update(poem_pull or {})
+        pulled_raw.update(analysis_pull or {})
+        pulled = normalize_pulled_payload_local(pulled_raw)
 
-        # 4) Pull desde Google Docs (solo lo seleccionado)
-        pulled: dict = {}
-        if change_poem:
-            poem_obj = run_py_json(
-                "scripts/gdocs_pull_poem_by_date.py",
-                ["--date", target],
-            )
-            println(f"[qcambiar] poem pull keys: {sorted(poem_obj.keys())}")
+        txt_path = txt_path_for_date_local(date_str)
+        current_parts = read_current_parts(txt_path)
+        current_txt = txt_path.read_text(encoding="utf-8") if txt_path.exists() else ""
+        current_meta = parse_metadata_from_txt(current_txt)
 
-
-            # esperamos keys: poema, poema_citado, MY_POEM_TITLE...
-            pulled.update(poem_obj)
-
-        if change_text:
-            text_obj = run_py_json(
-                "scripts/gdocs_pull_analysis_by_date.py",
-                ["--date", target],
-            )
-            println(f"[qcambiar] analysis pull keys: {sorted(text_obj.keys())}")
+        P_changed, A_changed, report_lines = compute_diff_flags(date_str, current_parts, current_meta, pulled)
+        P_for_msg = P_changed
+        A_for_msg = A_changed
 
 
-            pulled.update(text_obj)
-        pulled = normalize_pulled_payload(pulled)
-
-        # Validaciones mínimas si tocamos texto
-        # Validaciones mínimas si tocamos texto
-        fp: Optional[str] = None
-        if touched_text:
-            poema = (pulled.get("poema") or "").strip()
-            citado = (pulled.get("poema_citado") or "").strip()
-            texto = (pulled.get("texto") or "").strip()
-
-            missing = []
-            if not poema:
-                missing.append("poema (key 'poema')")
-            if not citado:
-                missing.append("poema_citado (key 'poema_citado')")
-            if not texto:
-                missing.append("texto (key 'texto')")
-
-            if missing:
-                # Diagnóstico adicional: qué keys devolvió pulled
-                keys = sorted(list(pulled.keys()))
-                msg = (
-                    "Pull incompleto.\n"
-                    f"Faltan secciones: {', '.join(missing)}\n"
-                    f"Keys recibidas: {keys}\n"
-                    "Tip: revisa si gdocs_pull_* devolvió nombres distintos (p.ej. 'POEMA' vs 'poema')."
-                )
-                raise RuntimeError(msg)
-
-            fp = docs_fingerprint(poema, citado, texto)
-            println(f"[qcambiar] docs_fingerprint: {fp}")
-
-            println("")
-            if prompt_yn("[qcambiar] ¿Ver preview de los 3 escritos?", default_yes=False, prefix="[qcambiar] "):
-                preview_sections(pulled)
-
-            println("")
-            ok = prompt_yn("[qcambiar] ¿Confirmas que el contenido se ve correcto?", default_yes=False, prefix="[qcambiar] ")
-            if not ok:
-                println("[qcambiar] OK. Cancelado. No se escribió nada.")
-                return 0
-
-            # 7) regenerar txt
-            txt_path = txt_path_for_date(target)
-            txt_content = render_txt(target, pulled)
-            write_text_atomic(txt_path, txt_content)
-            println(f"[qcambiar] ✅ Escribí build output: {txt_path}")
+        # If no GDocs changes, allow publish if local txt differs (previous commit failed)
+        if not P_changed and not A_changed:
+            if git_file_has_diff(txt_path):
+                println("")
+                println("[qcambiar] Google Docs coincide, pero hay cambios locales pendientes en el .txt.")
+                if not prompt_yn("[qcambiar] ¿Quieres publicar (commit + push) estos cambios locales?", default_yes=False):
+                    println("[qcambiar] OK. No se publicó nada.")
+                    return 0
+                # no re-render; go to publish pipeline
+                txt_changed = True
+                K_changed = False
+                P_for_msg = False
+                A_for_msg = False
+            else:
+                println("")
+                println("[qcambiar] Google Docs coincide con publicado y no hay cambios locales pendientes.")
+                txt_changed = False   # importante: inicializar para el resumen/commit gate
+                # NO return: seguimos a keywords
 
         else:
-            txt_path = txt_path_for_date(target)
-            if not txt_path.exists():
-                raise RuntimeError(f"No existe el .txt local para {target}: {txt_path}. (¿Necesitas qcrear?)")
-
-        # 8) Keywords
-        did_change_keywords = False
-        if touched_text:
             println("")
-            println("[qcambiar] Keywords: como cambiaste texto, vamos a revisar keywords ahora.")
-            if prompt_yn("[qcambiar] ¿Ver keywords actuales en terminal?", default_yes=False, prefix="[qcambiar] "):
-                cur_kw = entry.get("keywords") or []
-                try:
-                    cur_kw_norm = normalize_keywords_payload({"keywords": cur_kw} if isinstance(cur_kw, list) else cur_kw)
-                    show_keywords_top(cur_kw_norm)
-                except Exception:
-                    println("[qcambiar] (No pude parsear keywords actuales del archivo.json con el schema esperado.)")
+            println("[qcambiar] ⚠️ Cambios detectados (Google Docs ≠ publicado):")
+            for ln in report_lines:
+                println(ln)
 
-            mode = prompt_choice("[qcambiar] ¿Cómo quieres cambiar keywords? (r=regenerar / e=editar / n=no cambiar)", ["r", "e", "n"], default="n")
+            if not prompt_yn("[qcambiar] ¿Aplicar estas actualizaciones?", default_yes=False):
+                println("[qcambiar] OK. No se aplicaron cambios.")
+                return 0
 
-            if mode == "n":
-                println("[qcambiar] Elegiste no cambiar keywords.")
-                # guardrail: texto cambió pero keywords no
-                println("[qcambiar] ⚠️  Cambiaste el texto pero dejaste keywords iguales.")
-                cont = prompt_yn("[qcambiar] ¿Continuar de todos modos?", default_yes=False, prefix="[qcambiar] ")
-                if not cont:
-                    println("[qcambiar] OK. Cancelado.")
-                    return 0
-
-            elif mode == "r":
-                println("[qcambiar] Generando keywords...")
-                kw_list = generate_keywords_from_txt(txt_path)
-                show_keywords_top(kw_list)
-                if prompt_yn("[qcambiar] ¿Guardar estas keywords?", default_yes=False, prefix="[qcambiar] "):
-                    assert fp is not None
-                    write_pending_keywords(target, fp, kw_list)
-                    did_change_keywords = True
-                    println("[qcambiar] ✅ pending_keywords.txt actualizado.")
+            # Build final payload: start from current (published file), then overlay pulled fully
+            # (Because you chose "apply updates", we apply everything that differs.)
+            final_payload: Dict[str, Any] = {}
+            # metadata: take pulled values (they represent GDocs truth)
+            for k in ["MY_POEM_TITLE", "POETA", "POEM_TITLE", "BOOK_TITLE"]:
+                if k in pulled:
+                    final_payload[k] = pulled.get(k, "")
                 else:
-                    println("[qcambiar] OK. No guardé keywords.")
-                    cont = prompt_yn("[qcambiar] No se puede publicar sin guardar keywords nuevas. ¿Cancelar?", default_yes=True, prefix="[qcambiar] ")
-                    if cont:
-                        return 0
+                    final_payload[k] = entry.get(k, "")
 
-            else:  # mode == "e"
-                # Editar keywords actuales (si no hay, arrancar vacío)
-                cur_kw_raw = entry.get("keywords") or []
-                try:
-                    cur_kw_list = normalize_keywords_payload({"keywords": cur_kw_raw})
-                except Exception:
-                    cur_kw_list = []
+            # sections: use pulled
+            final_payload["poema"] = pulled.get("poema", current_parts.get("poema", ""))
+            final_payload["poema_citado"] = pulled.get("poema_citado", current_parts.get("poema_citado", ""))
+            final_payload["texto"] = pulled.get("texto", current_parts.get("texto", ""))
 
-                edit_path = state_dir() / "kw_edit.json"
-                edit_payload = {"keywords": cur_kw_list}
-                edit_path.write_text(json.dumps(edit_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            if prompt_yn("[qcambiar] ¿Ver preview del contenido final?", default_yes=True):
+                preview_payload(date_str, final_payload)
 
-                open_in_editor(edit_path, prefix="[qcambiar] ")
-
-                edited_obj = json.loads(edit_path.read_text(encoding="utf-8"))
-                kw_list = normalize_keywords_payload(edited_obj)
-                show_keywords_top(kw_list)
-                if prompt_yn("[qcambiar] ¿Aplicar estas keywords editadas?", default_yes=False, prefix="[qcambiar] "):
-                    assert fp is not None
-                    write_pending_keywords(target, fp, kw_list)
-                    did_change_keywords = True
-                    println("[qcambiar] ✅ pending_keywords.txt actualizado.")
-                else:
-                    println("[qcambiar] OK. No apliqué keywords editadas.")
-                    cont = prompt_yn("[qcambiar] Como cambiaste texto, esto puede dejar incoherencia. ¿Cancelar?", default_yes=True, prefix="[qcambiar] ")
-                    if cont:
-                        return 0
-
-        elif change_kw:
-            # solo keywords, sin texto
-            println("")
-            if prompt_yn("[qcambiar] ¿Ver keywords actuales en terminal?", default_yes=False, prefix="[qcambiar] "):
-                cur_kw_raw = entry.get("keywords") or []
-                try:
-                    cur_kw_list = normalize_keywords_payload({"keywords": cur_kw_raw})
-                    show_keywords_top(cur_kw_list)
-                except Exception:
-                    println("[qcambiar] (No pude parsear keywords actuales del archivo.json con el schema esperado.)")
-
-            mode = prompt_choice("[qcambiar] ¿Cómo quieres cambiar keywords? (r=regenerar / e=editar / n=cancelar)", ["r", "e", "n"], default="n")
-            if mode == "n":
+            if not prompt_yn("[qcambiar] ¿Confirmas que el contenido se ve correcto?", default_yes=False):
                 println("[qcambiar] OK. Cancelado.")
                 return 0
 
-            if mode == "r":
-                println("[qcambiar] Generando keywords desde el .txt local...")
-                kw_list = generate_keywords_from_txt(txt_path)
-                show_keywords_top(kw_list)
-                if prompt_yn("[qcambiar] ¿Guardar estas keywords?", default_yes=False, prefix="[qcambiar] "):
-                    # sin texto tocado, fingerprint del txt local si se puede
-                    fp2 = txt_fingerprint_from_file(txt_path) or ""
-                    write_pending_keywords(target, fp2, kw_list)
-                    did_change_keywords = True
-                    println("[qcambiar] ✅ pending_keywords.txt actualizado.")
-                else:
-                    println("[qcambiar] OK. No guardé keywords.")
-                    return 0
+            # Write txt
+            txt_content = render_txt(date_str, final_payload)
+            write_text_atomic(txt_path, txt_content)
+            println(f"[qcambiar] ✅ Escribí build output: {txt_path}")
+
+            # After write: real change detection via git diff
+            txt_changed = git_file_has_diff(txt_path)
+
+            # Compute P/A for commit message based on what differed vs published
+            P_for_msg = P_changed
+            A_for_msg = A_changed
+            K_changed = False
+
+        # Keywords flow (solo preguntar si el .txt cambió)
+        # -----------------------------
+        # Keywords flow (siempre visible)
+        # -----------------------------
+        from shutil import copyfile
+
+        repo = Path(__file__).resolve().parent.parent
+        cur_kw = repo / "state" / "current_keywords.txt"
+        pend_kw = repo / "state" / "pending_keywords.txt"
+        gen_path = repo / "qmp" / "gen_keywords.py"
+
+        def show_keywords(label: str) -> None:
+            if cur_kw.exists() and cur_kw.read_text(encoding="utf-8").strip():
+                println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+                println(f"[qcambiar] KEYWORDS ({label})")
+                println(cur_kw.read_text(encoding="utf-8").strip())
+                println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
             else:
-                cur_kw_raw = entry.get("keywords") or []
-                try:
-                    cur_kw_list = normalize_keywords_payload({"keywords": cur_kw_raw})
-                except Exception:
-                    cur_kw_list = []
-                edit_path = state_dir() / "kw_edit.json"
-                edit_path.write_text(json.dumps({"keywords": cur_kw_list}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-                open_in_editor(edit_path, prefix="[qcambiar] ")
-                edited_obj = json.loads(edit_path.read_text(encoding="utf-8"))
-                kw_list = normalize_keywords_payload(edited_obj)
-                show_keywords_top(kw_list)
-                if prompt_yn("[qcambiar] ¿Aplicar estas keywords editadas?", default_yes=False, prefix="[qcambiar] "):
-                    fp2 = txt_fingerprint_from_file(txt_path) or ""
-                    write_pending_keywords(target, fp2, kw_list)
-                    did_change_keywords = True
-                    println("[qcambiar] ✅ pending_keywords.txt actualizado.")
-                else:
-                    println("[qcambiar] OK. No apliqué keywords.")
-                    return 0
+                println("[qcambiar] (No hay state/current_keywords.txt con contenido.)")
 
-        # 9) Estado
+        # 1) Opción de ver keywords actuales (siempre)
         println("")
-        println("[qcambiar] Resumen:")
-        println(f"  - poema cambiado:     {change_poem}")
-        println(f"  - texto cambiado:     {change_text}")
-        println(f"  - keywords cambiadas: {did_change_keywords}")
+        if prompt_yn("[qcambiar] ¿Ver keywords actuales?", default_yes=False):
+            show_keywords("current_keywords.txt")
 
-        # 10) Publish gate
+        # 2) Preguntar si quieres cambiarlas (aunque no haya cambios de texto)
+        K_changed = False
+        if prompt_yn("[qcambiar] ¿Quieres actualizar keywords?", default_yes=False):
+            if not gen_path.exists():
+                raise RuntimeError("No encuentro qmp/gen_keywords.py en el repo.")
+
+            # Ejecutar gen_keywords con firmas comunes (sin asumir demasiado)
+            tried = []
+            ok = False
+            last = None
+            for argv in (
+                [sys.executable, str(gen_path), date_str],
+                [sys.executable, str(gen_path), "--date", date_str],
+                [sys.executable, str(gen_path), date_str, str(txt_path)],
+                [sys.executable, str(gen_path), "--date", date_str, "--txt", str(txt_path)],
+                [sys.executable, str(gen_path), str(txt_path)],
+            ):
+                tried.append(" ".join(argv))
+                last = subprocess.run(argv, capture_output=True, text=True)
+                if last.returncode == 0:
+                    ok = True
+                    break
+
+            if not ok:
+                raise RuntimeError(
+                    "No pude ejecutar qmp/gen_keywords.py con ninguna firma conocida.\n\n"
+                    + "\n".join(tried)
+                    + "\n\nSTDERR:\n"
+                    + ((last.stderr or "").strip() if last else "")
+                    + "\n\nSTDOUT:\n"
+                    + ((last.stdout or "").strip() if last else "")
+                )
+
+            # Promover current -> pending
+            if not cur_kw.exists() or cur_kw.read_text(encoding="utf-8").strip() == "":
+                raise RuntimeError(
+                    "qmp/gen_keywords.py terminó sin error, pero state/current_keywords.txt está vacío o no existe."
+                )
+
+            copyfile(cur_kw, pend_kw)
+            K_changed = True
+            println("[qcambiar] ✅ Keywords actualizadas (current_keywords.txt → pending_keywords.txt).")
+
+            # 3) Si las cambiaste, opción de verlas otra vez
+            if prompt_yn("[qcambiar] ¿Ver keywords nuevas?", default_yes=False):
+                show_keywords("current_keywords.txt (post-update)")
+
+        # Decide commit message
+        commit_msg = build_commit_message(date_str, P_for_msg, A_for_msg, K_changed)
+
         println("")
-        if not prompt_yn("[qcambiar] ¿Hacer commit + push ahora?", default_yes=False, prefix="[qcambiar] "):
-            println("[qcambiar] OK. No publiqué. Puedes volver a ejecutar qcambiar cuando quieras.")
+        println("[qcambiar] Resumen (resultado):")
+        println(f"  - cambios detectados en texto:    {txt_changed}")
+        println(f"  - cambios detectados en keywords: {K_changed}")
+
+        if not txt_changed and not K_changed:
+            println("ℹ️  No hay nada que publicar.")
             return 0
 
-        branch = git(["rev-parse", "--abbrev-ref", "HEAD"]).strip()
+        println("")
+        if not prompt_yn("[qcambiar] ¿Hacer commit + push ahora?", default_yes=False):
+            println("[qcambiar] OK. No se publicó nada.")
+            return 0
+
+        # Guardrail: branch warning if not main
+        branch = git(["rev-parse", "--abbrev-ref", "HEAD"])
         if branch != "main":
-            println("")
-            println(f"[qcambiar] ⚠️  Estás en el branch '{branch}', no en 'main'.")
-            println("[qcambiar] Esto publicará los cambios en ESTE branch.")
-            if not prompt_yn(f"[qcambiar] ¿Publicar de todos modos en '{branch}'?", default_yes=False, prefix="[qcambiar] "):
-                println("[qcambiar] OK. Publicación cancelada.")
+            println(f"[qcambiar] ⚠️  Estás en branch '{branch}', no en main.")
+            if not prompt_yn("[qcambiar] ¿Continuar de todos modos?", default_yes=False):
+                println("[qcambiar] OK. Cancelado.")
                 return 0
 
-        archivo_path = archivo_json_path()
-        pending_kw_path = state_dir() / "pending_keywords.txt"
-        pending_entry_path = state_dir() / "pending_entry.json"
-
-        # Validación + normalización del txt
-        run_validate_and_normalize_txt(target, txt_path)
-
-        # merge_pending (aplica keywords si hay pending guardado y corresponde)
-        pending = load_pending_keywords()
-        apply_kw = bool(pending and (pending.get("date") == target) and (pending.get("keywords") or []))
-
-        status = run_merge_pending(
-            txt_path=txt_path,
-            archivo_path=archivo_path,
-            pending_kw_path=pending_kw_path,
-            pending_entry_path=pending_entry_path,
-            apply_keywords=apply_kw,
-            dry_run=False,
-        )
-
-        exists_before = bool(status.get("exists_before", True))
-        content_changed = bool(status.get("content_changed", True))
-        keywords_changed = bool(status.get("keywords_changed", apply_kw))
-
-        if exists_before and (not content_changed) and (not keywords_changed):
-            println("ℹ️  No cambió texto ni keywords → no hay commit.")
-            return 0
-
-        # Commit msg (contrato)
-        msg = f"{'keywords' if (not content_changed and keywords_changed) else 'edicion'} {target}"
-
         println("")
-        println(f"[qcambiar] Fecha:  {target}")
-        println(f"[qcambiar] Commit: {msg}")
-        if not prompt_yn("[qcambiar] ¿Confirmar publish (commit + push)?", default_yes=False, prefix="[qcambiar] "):
-            println("[qcambiar] OK. Cancelado. No se publicó nada.")
+        println(f"[qcambiar] Fecha:  {date_str}")
+        println(f"[qcambiar] Commit: {commit_msg}")
+        if not prompt_yn("[qcambiar] ¿Confirmar publish (commit + push)?", default_yes=False):
+            println("[qcambiar] OK. No se publicó nada.")
             return 0
 
-        apply_pending_entry_into_archivo(target, pending_entry_path, archivo_path)
+        # Run merge_pending to update archivo.json etc.
+        # NOTE: this relies on your repo's merge_pending.py interface.
+        # dry-run first is optional; we go straight to apply.
+        mp_args = [
+            "--archivo", str((Path(__file__).resolve().parent.parent / "data" / "archivo.json")),
+            "--pending-kw", str((Path(__file__).resolve().parent.parent / "state" / "pending_keywords.txt")),
+            "--pending-entry", str((Path(__file__).resolve().parent.parent / "state" / "pending_entry.json")),
+        ]
+        if K_changed:
+            mp_args.append("--apply-keywords")
+        mp_args.append(str(txt_path))
 
-        git(["add", str(archivo_path), str(txt_path), str(pending_entry_path)])
-        git(["commit", "-m", msg])
-        git(["push"])
+        _status = run_py_json("qmp/merge_pending.py", mp_args)
 
-        println(f"✅ Publicado: {msg}")
+        # Stage + commit + push
+        git(["add", str(txt_path)])
+        git(["add", "data/archivo.json"])
+        # stage state files too (merge_pending writes pending_entry.json)
+        git(["add", "state/pending_entry.json"])
+        git(["add", "state/pending_keywords.txt"])
 
-        # Cleanup
-        clear_pending_keywords_placeholder()
-        pending_entry_path.write_text("{}", encoding="utf-8")
+        git(["commit", "-m", commit_msg])
+        git(["push", "origin", branch])
 
+        println(f"✅ Publicado: {commit_msg}")
         return 0
 
     except UserAbort:
-        println("[qcambiar] OK. Salí sin cambios.")
+        println("[qcambiar] OK. Abortado.")
         return 0
     except Exception as e:
         eprintln(f"[qcambiar] ERROR: {e}")
@@ -573,4 +501,4 @@ def main(argv: list[str]) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main(sys.argv))
+    raise SystemExit(main())
