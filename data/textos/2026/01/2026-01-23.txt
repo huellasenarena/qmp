@@ -1,15 +1,13 @@
 FECHA: 2026-01-23
-MY_POEM_TITLE: test poem
-POETA: Alfonsina Storni
-POEM_TITLE: Aspecto
+MY_POEM_TITLE: teest poem/thiswor
+POETA: Alfonsina Storniii
+POEM_TITLE: Aspecto/fucki
 BOOK_TITLE:
 
 # POEMA
-
-does this work
+does this| workidk
 
 # POEMA_CITADO
-
 Vivo dentro de cuatro paredes matemáticas
 Alineadas a metro. Me rodean apáticas
 Almillas que no saben ni un ápice siquiera
@@ -20,5 +18,4 @@ Me causa cierta risa mi pico fiero y torvo
 Que yo misma me creo pura farsa y estorbo.
 
 # TEXTO
-
-Este poema breve de Horacio Quiroga es una prueba más de su pobre pensamiento. Presenta una declaración general sin separar los casos válidos de los inválidos. ¿Y “inferior” cómo? Culpo al narrador por su falta de precisión; eso es todo para este escritor.
+ssEste poema breve de Horacio Quiroga es una prueba más de su pobre pensamiento. Presenta una declaración general sin separar los casos válidos de los inválidos. ¿Y “inferior” cómo? Culpo al narrador por su falta de precisión; eso es todo para este escritor.
