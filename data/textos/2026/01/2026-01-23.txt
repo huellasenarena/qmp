@@ -1,21 +1,25 @@
 FECHA: 2026-01-23
-MY_POEM_TITLE: teest poem/thiswor
-POETA: Alfonsina Storniii
-POEM_TITLE: Aspecto/fucki
-BOOK_TITLE:
+MY_POEM_TITLE: reloj
+POETA: Soledad Castresana
+POEM_TITLE: En el Bosque de Tlalpan
+BOOK_TITLE: La carne se corta
 
 # POEMA
-does this| workidk
+sé que lo habré logrado cuando
+mi muñeca no lleve un relo’
+puede pasar el día desnudo
+y nunca revise el correo
 
 # POEMA_CITADO
-Vivo dentro de cuatro paredes matemáticas
-Alineadas a metro. Me rodean apáticas
-Almillas que no saben ni un ápice siquiera
-De esta fiebre azulada que nutre mi quimera.
-Uso una piel postiza que me la rayo en gris.
-Cuervo que bajo el ala guarda una flor de lis.
-Me causa cierta risa mi pico fiero y torvo
-Que yo misma me creo pura farsa y estorbo.
+*A Gastón*
+
+Alguna vez tenía que escribirte
+un poema de amor.
+Escribir, por ejemplo, que ayer
+mientras miraba a los hombres
+que corrían por el bosque,
+lobos sudados y jadeantes,
+pensé en vos como en mi casa.
 
 # TEXTO
-ssEste poema breve de Horacio Quiroga es una prueba más de su pobre pensamiento. Presenta una declaración general sin separar los casos válidos de los inválidos. ¿Y “inferior” cómo? Culpo al narrador por su falta de precisión; eso es todo para este escritor.
+func
