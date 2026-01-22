@@ -15,6 +15,16 @@ from _gdocs_auth import get_creds, load_config
 HEADING_RE = re.compile(r"^\s*(\d{6})\s*(?:\((.*?)\))?\s*$")
 HR_FALLBACK_RE = re.compile(r"^\s*[─]{10,}\s*$")  # por si el separador fuera texto
 
+def yymmdd(date_str: str) -> str:
+    y, m, d = date_str.split("-")
+    return y[2:] + m + d  # "260116"
+
+def first_six_digits(s: str) -> str:
+    s = (s or "").replace("\u00a0", " ").strip()
+    digits = re.sub(r"\D+", "", s)
+    return digits[:6]
+
+
 def get_tab_by_title(doc: dict, tab_title: str) -> dict:
     tabs = doc.get("tabs") or []
     wanted = tab_title.strip().lower()

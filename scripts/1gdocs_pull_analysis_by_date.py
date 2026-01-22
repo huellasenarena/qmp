@@ -4,7 +4,6 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import sys
 from typing import List, Optional, Tuple
 
 from googleapiclient.discovery import build
@@ -27,17 +26,6 @@ from _gdocs_auth import get_creds, load_config
 
 DATE_RE = re.compile(r"^\s*(\d{6})\s*$")
 FINAL_RE = re.compile(r"^\s*versi[oó]n\s+final\s*:?\s*$", re.IGNORECASE)
-
-def first_six_digits(s: str) -> str:
-    """Extrae los primeros 6 dígitos de un string (ignorando NBSP y signos)."""
-    s = (s or "").replace("\u00a0", " ").strip()
-    digits = re.sub(r"\D+", "", s)
-    return digits[:6]
-
-
-def is_date_title_line(text: str, target_yymmdd: str) -> bool:
-    """True si el párrafo (estilo TITLE) contiene la fecha YYMMDD, aunque tenga texto extra."""
-    return first_six_digits(text) == target_yymmdd
 
 META_POETA_RE = re.compile(r"^\s*poeta\s*:\s*(.*)\s*$", re.IGNORECASE)
 META_TITULO_RE = re.compile(r"^\s*t[íi]tulo\s*:\s*(.*)\s*$", re.IGNORECASE)
@@ -98,7 +86,8 @@ def find_date_block(content: list, yymmdd: str) -> Tuple[int, int]:
         if paragraph_style(item) != "TITLE":
             continue
         txt = paragraph_text_no_strike(item).strip()
-        if is_date_title_line(txt, yymmdd):
+        m = DATE_RE.match(txt)
+        if m and m.group(1) == yymmdd:
             start_i = i
             break
     if start_i is None:
@@ -109,7 +98,7 @@ def find_date_block(content: list, yymmdd: str) -> Tuple[int, int]:
         it = content[j]
         if paragraph_style(it) == "TITLE":
             t = paragraph_text_no_strike(it).strip()
-            if is_date_title_line(t, yymmdd) or (len(first_six_digits(t)) == 6 and first_six_digits(t) != ""):
+            if DATE_RE.match(t):
                 end_i = j
                 break
     return start_i, end_i
@@ -131,8 +120,6 @@ def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
 
     start_i, end_i = find_date_block(content, yymmdd)
     block = content[start_i:end_i]
-
-    warnings: List[str] = []
 
     # Find "Versión final" anchor (HEADING_2)
     anchors = []
@@ -229,7 +216,6 @@ def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
         "book_title": book_title,
         "poem_citado": poem_citado,
         "analysis": analysis,
-        "warnings": warnings,
     }
 
 
@@ -252,10 +238,10 @@ def main() -> int:
     try:
         obj = pull_entry(doc_id, tab_title, yymmdd)
     except FormatError as e:
-        print(f"ERROR: {e}", file=sys.stderr)
+        print(f"ERROR: {e}")
         return 3
     except KeyError as e:
-        print(f"ERROR: {e}", file=sys.stderr)
+        print(f"ERROR: {e}")
         return 4
 
     print(json.dumps(obj, ensure_ascii=False))

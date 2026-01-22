@@ -1,10 +1,13 @@
 FECHA: 2026-01-24
-MY_POEM_TITLE: test/test
+MY_POEM_TITLE: no es un haiku
 POETA: Alfonsina Storniii
 POEM_TITLE: Aspecto/fucki
+BOOK_TITLE:
 
 # POEMA
-test/testhello
+la poesía.
+¿tiene normas? no, ¡NO!
+espera. joder.
 
 # POEMA_CITADO
 Vivo dentro de cuatro paredes matemáticas

@@ -444,15 +444,8 @@ def main() -> int:
         println("")
         println("[qcambiar] Haciendo pull desde Google Docs para comparar…")
 
-        try:
-            poem_pull = run_py_json("scripts/gdocs_pull_poem_by_date.py", ["--date", date_str])
-        except Exception as e:
-            raise RuntimeError(f"Fallo pull de POEMA (Google Docs) para {date_str}: {e}") from e
-
-        try:
-            analysis_pull = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", date_str])
-        except Exception as e:
-            raise RuntimeError(f"Fallo pull de ANÁLISIS (Google Docs) para {date_str}: {e}") from e
+        poem_pull = run_py_json("scripts/gdocs_pull_poem_by_date.py", ["--date", date_str])
+        analysis_pull = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", date_str])
 
         pulled_raw: Dict[str, Any] = {}
         pulled_raw.update(poem_pull or {})
