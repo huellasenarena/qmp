@@ -1,69 +1,71 @@
 {
-  "date": "2026-01-21",
+  "date": "2026-01-23",
+  "docs_fingerprint": "sha256:846516908e32bc07f36cbb1718bf02162ff2e78194de47bb659f2c27d5e54668",
   "keywords": [
     {
-      "word": "circularidad teleologica",
+      "word": "autonomia temporal",
       "weight": 3
     },
     {
-      "word": "inversion normativa",
+      "word": "desvinculacion comunicativa",
       "weight": 3
     },
     {
-      "word": "obstruccion performativa",
+      "word": "exposicion voluntaria",
       "weight": 3
     },
     {
-      "word": "paralisis volitiva",
+      "word": "ausencia como poder",
       "weight": 3
     },
     {
-      "word": "demora intencional",
+      "word": "temporalidad discontinua",
+      "weight": 3
+    },
+    {
+      "word": "ritual de abandono",
       "weight": 2
     },
     {
-      "word": "externalizacion de culpa",
+      "word": "tension entre deseo y distancia",
       "weight": 2
     },
     {
-      "word": "friccion social",
+      "word": "suspension del habito",
       "weight": 2
     },
     {
-      "word": "ritualizacion del retraso",
+      "word": "reconocimiento corporal",
       "weight": 2
     },
     {
-      "word": "tension cuerpo-aparato",
+      "word": "economia de la atencion",
       "weight": 2
     },
     {
-      "word": "transgresion pasiva",
-      "weight": 2
-    },
-    {
-      "word": "abulia",
+      "word": "reloj",
       "weight": 1
     },
     {
-      "word": "bloqueo",
+      "word": "muneca",
       "weight": 1
     },
     {
-      "word": "caminar contra la direccion",
+      "word": "correo",
       "weight": 1
     },
     {
-      "word": "cintas transportadoras",
+      "word": "desnudo",
       "weight": 1
     },
     {
-      "word": "detenerse",
+      "word": "dia",
       "weight": 1
     },
     {
-      "word": "esperar",
+      "word": "casa",
       "weight": 1
     }
-  ]
+  ],
+  "generated_at": "2026-01-22T15:41:55"
 }
