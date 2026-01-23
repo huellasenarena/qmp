@@ -1,7 +1,7 @@
 FECHA: 2026-01-16
 MY_POEM_TITLE: 
 POETA: Ida Vitale
-POEM_TITLE: La Noche, Esta Morada
+POEM_TITLE: LA NOCHE, ESTA MORADA
 BOOK_TITLE: Poesía Reunida
 
 # POEMA
