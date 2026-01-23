@@ -29,8 +29,8 @@ tiene un juez en
 que no cree
 
 # POEMA_CITADO
-*e il naufragar m’é dolce in questo mare.*
-Leopardi
+>>*e il naufragar m’é dolce in questo mare.*
+>>Leopardi
 
 LA noche, esta morada.
 donde el hombre se encuentra
