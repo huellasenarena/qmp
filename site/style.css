@@ -88,7 +88,17 @@ h1 {
   border-left: 1px solid #ccc;
   padding-left: 18px;
   display: inline-block; /* importante: la altura sigue el texto */
+  width: 100%;
+  box-sizing: border-box;
 }
+
+/* Línea del poema alineada a la derecha (prefijo ">>") */
+.poem-right{
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
 
 .indent {
   display: inline-block;
@@ -237,3 +247,4 @@ select, input {
   margin-left: auto;
   color: #555;
 }
+

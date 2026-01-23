@@ -40,6 +40,19 @@ function renderMultilineTitleInto(el, rawTitle, { bold = false } = {}) {
   el.appendChild(container);
 }
 
+function renderPoemTextWithRightLines(poemText, { inlineFormatting = false } = {}) {
+  const lines = (poemText || '').split('\n');
+  return lines.map((line) => {
+    const rm = line.match(/^\s*>>\s?(.*)$/);
+    const content = rm ? rm[1] : line;
+
+    const safe = escapeHtml(content);
+    const formatted = inlineFormatting ? applyInlineFormatting(safe) : safe;
+
+    return rm ? `<span class="poem-right">${formatted}</span>` : formatted;
+  }).join('\n');
+}
+
 
 function textToParagraphs(text) {
   const paragraphs = (text || '')
@@ -237,8 +250,8 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
 
   let anchorPx = null;
 
-  return lines.map((line) => {
-    // 1) NUEVO: soporte para "||" (continuación con prefijo)
+  function renderNormalLine(line) {
+    // 1) soporte para "||" (continuación con prefijo)
     const dbl = line.indexOf('||');
     if (dbl !== -1) {
       const before = line.slice(0, dbl);        // texto que se conserva
@@ -257,7 +270,7 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
       return `${escapeHtml(before)}<span class="indent" style="padding-left:${pad}px">${escapeHtml(content)}</span>`;
     }
 
-    // 2) Comportamiento actual con "|" (ancla o continuación al inicio)
+    // 2) comportamiento con "|" (ancla o continuación al inicio)
     const pipePos = line.indexOf('|');
     if (pipePos === -1) return escapeHtml(line);
 
@@ -276,9 +289,22 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
     const pad = anchorPx ?? 0;
 
     return `<span class="indent" style="padding-left:${pad}px">${escapeHtml(content)}</span>`;
+  }
+
+  return lines.map((line) => {
+    // 0) NUEVO: líneas alineadas a la derecha con prefijo ">>"
+    // (solo layout: no afecta al análisis, y no toca el texto original)
+    const rm = line.match(/^\s*>>\s?(.*)$/);
+    if (rm) {
+      const saved = anchorPx;            // no queremos que una línea ">>" cambie el ancla
+      const rendered = renderNormalLine(rm[1]);
+      anchorPx = saved;
+      return `<span class="poem-right">${rendered}</span>`;
+    }
+
+    return renderNormalLine(line);
   }).join('\n');
 }
-
 
 function renderPoemWithTitleFromJson(poemText, titleFromJson) {
   const body = (poemText || '').replace(/^\s*\n+/, '').replace(/\s+$/, '');
@@ -343,7 +369,7 @@ async function loadTodayEntry() {
 
 
   // El poema citado también soporta *cursiva* y **negrita**
-  document.querySelector('.analysis-poem').innerHTML = applyInlineFormatting(escapeHtml(parsed.citedPoem));
+  document.querySelector('.analysis-poem').innerHTML = renderPoemTextWithRightLines(parsed.citedPoem, { inlineFormatting: true });
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
   // Meta del poema citado (2 líneas)
@@ -387,7 +413,7 @@ async function loadPastEntry() {
 
 
   // El poema citado también soporta *cursiva* y **negrita**
-  document.querySelector('.analysis-poem').innerHTML = applyInlineFormatting(escapeHtml(parsed.citedPoem));
+  document.querySelector('.analysis-poem').innerHTML = renderPoemTextWithRightLines(parsed.citedPoem, { inlineFormatting: true });
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
   setCitedMeta(chosen);
