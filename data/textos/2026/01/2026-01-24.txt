@@ -1,8 +1,8 @@
 FECHA: 2026-01-24
 MY_POEM_TITLE: no es un haiku
-POETA: Alfonsina Storniii
-POEM_TITLE: Aspecto/fucki
-BOOK_TITLE:
+POETA: Alfonsina Storni
+POEM_TITLE: Aspecto
+BOOK_TITLE: 
 
 # POEMA
 la poesía.
@@ -20,4 +20,6 @@ Me causa cierta risa mi pico fiero y torvo
 Que yo misma me creo pura farsa y estorbo.
 
 # TEXTO
-ssEste poema breve de Horacio Quiroga es una prueba más de su pobre pensamiento. Presenta una declaración general sin separar los casos válidos de los inválidos. ¿Y “inferior” cómo? Culpo al narrador por su falta de precisión; eso es todo para este escritor.
+El poema es deliberadamente desorientador y creo que merece lectores en lugar de análisis cerrados. Acá presento una lectura posible: leo el poema como un escape de un mundo aburrido. El mundo es “cuatro paredes matemáticas”, o sea, algo sencillo, perfecto, abstracto y predecible. También están las personas cercanas a ella en este mundo (almillas apáticas) que no la entienden. La “fiebre azulada” es la locura (a los ojos del mundo) que, quizás, la lleva a actuar así, en su quimera (quimera, también, a los ojos del mundo).
+
+En este mundo duro, el narrador tiene “una piel postiza”, que interpreto como la forma en que quiere mostrarse al mundo. Tiene que mantener esta apariencia dura, pero dentro esconde algo bonito (la flor de lis). Este “pico fiero y torvo” es la apariencia que quiere conservar. El poema termina con una nota triste —“yo misma me creo pura farsa y estorbo”—, que interpreto como una pérdida de sí misma. Considerando el título *Aspecto*, el poema me parece un tratado sobre cómo nos esforzamos por tener un cierto aire y cómo, paulatinamente, empezamos a creer en la imagen que creamos.
