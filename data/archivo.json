@@ -3,29 +3,29 @@
     "date": "2026-01-24",
     "month": "2026-01",
     "file": "textos/2026-01-24.txt",
-    "my_poem_title": "test/test",
+    "my_poem_title": "no es un haiku",
     "my_poem_snippet": "",
     "analysis": {
-      "poet": "Alfonsina Storniii",
-      "poem_title": "Aspecto/fucki",
+      "poet": "Alfonsina Storni",
+      "poem_title": "Aspecto",
       "poem_snippet": "",
       "book_title": ""
     },
     "keywords": [
       {
-        "word": "contencion",
+        "word": "antinomia poetica",
         "weight": 3
       },
       {
-        "word": "fiebre como nutricion",
+        "word": "autoalienacion",
         "weight": 3
       },
       {
-        "word": "hibridacion",
+        "word": "encierro",
         "weight": 3
       },
       {
-        "word": "impureza como agencia",
+        "word": "inversion normativa",
         "weight": 3
       },
       {
@@ -37,47 +37,47 @@
         "weight": 3
       },
       {
-        "word": "anclaje corporeo",
+        "word": "estigmatizacion",
         "weight": 2
       },
       {
-        "word": "autoironizacion",
+        "word": "gesto estetico",
         "weight": 2
       },
       {
-        "word": "enmascaramiento",
+        "word": "mascarada",
         "weight": 2
       },
       {
-        "word": "estetica de la farsa",
+        "word": "ocultamiento",
         "weight": 2
       },
       {
-        "word": "fragmentacion",
+        "word": "pose",
         "weight": 2
       },
       {
-        "word": "imprecision",
+        "word": "rayado",
         "weight": 2
       },
       {
-        "word": "medicion",
-        "weight": 2
-      },
-      {
-        "word": "privacidad expuesta",
-        "weight": 2
-      },
-      {
-        "word": "simulacion",
-        "weight": 2
+        "word": "almillas",
+        "weight": 1
       },
       {
         "word": "cuervo",
         "weight": 1
       },
       {
-        "word": "fiebre",
+        "word": "estorbo",
+        "weight": 1
+      },
+      {
+        "word": "farsa",
+        "weight": 1
+      },
+      {
+        "word": "fiebre azulada",
         "weight": 1
       },
       {
@@ -89,11 +89,11 @@
         "weight": 1
       },
       {
-        "word": "hello",
+        "word": "normas",
         "weight": 1
       },
       {
-        "word": "paredes",
+        "word": "paredes matematicas",
         "weight": 1
       },
       {
@@ -105,11 +105,11 @@
         "weight": 1
       },
       {
-        "word": "slash",
+        "word": "poesia",
         "weight": 1
       },
       {
-        "word": "test",
+        "word": "quimera",
         "weight": 1
       }
     ]
