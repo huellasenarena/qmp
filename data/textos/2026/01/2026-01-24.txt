@@ -5,7 +5,7 @@ POEM_TITLE: Aspecto
 BOOK_TITLE: 
 
 # POEMA
-la poesía.
+la poesía.
 ¿tiene normas? no, ¡NO!
 espera. joder.
 
