@@ -1,0 +1,30 @@
+FECHA: 2026-01-25
+MY_POEM_TITLE: es un haiku
+POETA: Soledad Castresana
+POEM_TITLE: Credo
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+pensamiento.
+tan libre como una
+palabra en un
+
+haiku
+
+# POEMA_CITADO
+
+¿No vamos a volver a verlo nunca? No.
+Yo quiero verlo otra vez. No podemos
+hacer nada. Ya está. Pero ¿y el alma
+y la resurrección y el día de los muertos?
+
+En esta casa no creemos en esas cosas.
+Cuando sea grande y viva en otra casa,
+voy a creer en lo que quiera.
+
+# TEXTO
+
+Es un poema que me hace sonreír; pensé en lecturas posibles como un comentario social o parental, pero creo que esas lecturas derrotan el propósito.
+
+El poema muestra la seguridad juvenil del narrador; es una seguridad encantadora. A mis ojos, el poema presenta esto primero y ante todo y, de manera secundaria, aparece una rebeldía causada —también a mis ojos— por una falta de explicaciones en el mundo del niño: ni la cultura religiosa ni el p/madre secular pueden ofrecer una razón para una creencia; estos mensajes contradictorios confunden al niño. (Este fallo cultural puede sugerir una comparación entre la religión y el ateísmo, señalando que el ateísmo no puede ofrecer una explicación a cosas importantes en la vida, como la muerte, por ejemplo.)
