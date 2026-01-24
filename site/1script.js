@@ -23,6 +23,36 @@ function applyInlineFormatting(text) {
     .replace(/\*(.+?)\*/g, '<em>$1</em>');
 }
 
+function renderMultilineTitleInto(el, rawTitle, { bold = false } = {}) {
+  // Interpreta "/" como salto de línea visual (sin usar innerHTML con datos sin escapar).
+  const title = (rawTitle || '').trim();
+  el.textContent = '';
+  if (!title) return;
+
+  const parts = title.split('/').map(p => p.trim()).filter(Boolean);
+  const container = bold ? document.createElement('strong') : document.createDocumentFragment();
+
+  parts.forEach((part, idx) => {
+    if (idx > 0) container.appendChild(document.createElement('br'));
+    container.appendChild(document.createTextNode(part));
+  });
+
+  el.appendChild(container);
+}
+
+function renderPoemTextWithRightLines(poemText, { inlineFormatting = false } = {}) {
+  const lines = (poemText || '').split('\n');
+  return lines.map((line) => {
+    const rm = line.match(/^\s*>>\s?(.*)$/);
+    const content = rm ? rm[1] : line;
+
+    const safe = escapeHtml(content);
+    const formatted = inlineFormatting ? applyInlineFormatting(safe) : safe;
+
+    return rm ? `<span class="poem-right">${formatted}</span>` : formatted;
+  }).join('\n');
+}
+
 
 function textToParagraphs(text) {
   const paragraphs = (text || '')
@@ -83,7 +113,8 @@ function renderPoemWithOptionalTitle(text) {
     const title = lines[i].trim();
     const body = lines.slice(i + 2).join('\n').replace(/\s+$/,''); // conserva formato del poema
 
-    return `<div class="poem-title">${escapeHtml(title)}</div><pre>${escapeHtml(body)}</pre>`;
+    const titleHtml = title.split('/').map(x => escapeHtml(x.trim())).filter(Boolean).join('<br>');
+    return `<div class="poem-title">${titleHtml}</div><pre>${escapeHtml(body)}</pre>`;
   }
 
   // Sin título
@@ -187,7 +218,7 @@ function setCitedMeta(chosen) {
   wrap.style.display = 'block';
 
   // Línea 1: título en negrita (sin comillas)
-  titleEl.innerHTML = title ? `<strong>${escapeHtml(title)}</strong>` : '';
+  renderMultilineTitleInto(titleEl, title, { bold: true });
   titleEl.style.display = title ? 'block' : 'none';
 
   // Línea 2: autor · poemario (solo lo que exista)
@@ -219,18 +250,8 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
 
   let anchorPx = null;
 
-  return lines.map((line) => {
-    // 0) Líneas especiales a la derecha: ">> ..."
-    // Se renderizan como un bloque flotante a la derecha (con gutter en CSS)
-    // y NO participan en la lógica de anclas "|".
-    const rightMatch = line.match(/^\s*>>\s*(.*)$/);
-    if (rightMatch) {
-      const content = (rightMatch[1] || '').trim();
-      // Nota: sin <br>; el \n del join preserva el salto de línea del poema.
-      return `<span class="poem-right">${escapeHtml(content)}</span>`;
-    }
-
-    // 1) NUEVO: soporte para "||" (continuación con prefijo)
+  function renderNormalLine(line) {
+    // 1) soporte para "||" (continuación con prefijo)
     const dbl = line.indexOf('||');
     if (dbl !== -1) {
       const before = line.slice(0, dbl);        // texto que se conserva
@@ -249,7 +270,7 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
       return `${escapeHtml(before)}<span class="indent" style="padding-left:${pad}px">${escapeHtml(content)}</span>`;
     }
 
-    // 2) Comportamiento actual con "|" (ancla o continuación al inicio)
+    // 2) comportamiento con "|" (ancla o continuación al inicio)
     const pipePos = line.indexOf('|');
     if (pipePos === -1) return escapeHtml(line);
 
@@ -268,31 +289,22 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
     const pad = anchorPx ?? 0;
 
     return `<span class="indent" style="padding-left:${pad}px">${escapeHtml(content)}</span>`;
-  }).join('\n');
-}
+  }
 
-// Formato inline mínimo para el poema citado:
-// **negrita**, *cursiva* (sin markdown completo)
-function applyInlineFormatting(s) {
-  const t = s || '';
-  // Orden importa: ** primero
-  return t
-    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
-}
-
-function renderCitedPoem(citedPoemText) {
-  const lines = (citedPoemText || '').replace(/\r/g, '').split('\n');
-  return lines.map(line => {
-    const rightMatch = line.match(/^\s*>>\s*(.*)$/);
-    if (rightMatch) {
-      const content = (rightMatch[1] || '').trim();
-      return `<span class="poem-right">${applyInlineFormatting(escapeHtml(content))}</span>`;
+  return lines.map((line) => {
+    // 0) NUEVO: líneas alineadas a la derecha con prefijo ">>"
+    // (solo layout: no afecta al análisis, y no toca el texto original)
+    const rm = line.match(/^\s*>>\s?(.*)$/);
+    if (rm) {
+      const saved = anchorPx;            // no queremos que una línea ">>" cambie el ancla
+      const rendered = renderNormalLine(rm[1]);
+      anchorPx = saved;
+      return `<span class="poem-right">${rendered}</span>`;
     }
-    return applyInlineFormatting(escapeHtml(line));
+
+    return renderNormalLine(line);
   }).join('\n');
 }
-
 
 function renderPoemWithTitleFromJson(poemText, titleFromJson) {
   const body = (poemText || '').replace(/^\s*\n+/, '').replace(/\s+$/, '');
@@ -304,7 +316,7 @@ function renderPoemWithTitleFromJson(poemText, titleFromJson) {
   if (titleFromJson) {
     const t = document.createElement('div');
     t.className = 'poem-title';
-    t.textContent = titleFromJson;
+    renderMultilineTitleInto(t, titleFromJson);
     wrapper.appendChild(t);
   }
 
@@ -356,9 +368,8 @@ async function loadTodayEntry() {
   pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
 
 
-  // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
-  const citedPre = document.querySelector('.analysis-poem');
-  if (citedPre) citedPre.innerHTML = renderCitedPoem(parsed.citedPoem);
+  // El poema citado también soporta *cursiva* y **negrita**
+  document.querySelector('.analysis-poem').innerHTML = renderPoemTextWithRightLines(parsed.citedPoem, { inlineFormatting: true });
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
   // Meta del poema citado (2 líneas)
@@ -401,9 +412,8 @@ async function loadPastEntry() {
   pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
 
 
-  // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
-  const citedPre = document.querySelector('.analysis-poem');
-  if (citedPre) citedPre.innerHTML = renderCitedPoem(parsed.citedPoem);
+  // El poema citado también soporta *cursiva* y **negrita**
+  document.querySelector('.analysis-poem').innerHTML = renderPoemTextWithRightLines(parsed.citedPoem, { inlineFormatting: true });
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
   setCitedMeta(chosen);

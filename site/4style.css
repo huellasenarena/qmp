@@ -1,3 +1,8 @@
+:root{
+  --poem-right-gutter: clamp(14px, 8vw, 64px);
+  --poem-right-max: clamp(12ch, 22vw, 26ch);
+}
+
 body {
   font-family: Georgia, serif;
   background: #fafafa;
@@ -69,18 +74,9 @@ h1 {
   font-size: 1.05rem;
   line-height: 1.7;
   white-space: pre-wrap;
-  /* Opción 2: reservar una zona a la derecha para líneas ">>" sin que el poema choque */
-  padding-right: var(--poem-right-gutter);
-  /* Contener floats (.poem-right) sin hacks */
-  display: flow-root;
   margin: 0;
-}
-
-:root{
-  /* Ajusta esto para mover TODO "más a la izquierda" o "más a la derecha" */
-  --poem-right-gutter: clamp(18px, 8vw, 72px);
-  /* Ancho máximo del bloque a la derecha antes de envolver */
-  --poem-right-max: clamp(12ch, 22vw, 26ch);
+  box-sizing: border-box;
+  padding-right: var(--poem-right-gutter);
 }
 
 .poem {
@@ -98,22 +94,31 @@ h1 {
 .poem-lines{
   border-left: 1px solid #ccc;
   padding-left: 18px;
-  display: block; /* ocupa el ancho útil del <pre> */
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Para el poema citado (ya tiene su propio borde) */
+.poem-lines--plain{
+  border-left: none;
+  padding-left: 0;
+}
+
+/* Líneas con prefijo ">>" (epígrafe a la derecha, sin pisar el poema) */
 .poem-right{
-  /* clave: todas las líneas >> comparten el mismo borde derecho */
-  display: inline-block;
-  width: 100%;
+  float: right;
+  clear: right;
   text-align: right;
+  max-width: var(--poem-right-max);
+  background: #fafafa;
+}
 
-  /* opción A: no wrap */
-  white-space: nowrap;
-
-  /* quita el float (si lo tenías) */
-  float: none;
-  clear: none;
-  margin-right: 0;
+/* Limpiar floats dentro del bloque del poema */
+.poem-lines::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .indent {
@@ -140,7 +145,7 @@ pre.analysis-poem {
   margin: 10px 0 36px 0;
   padding-left: 18px;
   padding-right: var(--poem-right-gutter);
-  display: flow-root;
+  box-sizing: border-box;
   color: #555;
 }
 

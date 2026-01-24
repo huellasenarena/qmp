@@ -220,17 +220,20 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
   let anchorPx = null;
 
   return lines.map((line) => {
-    // 0) Líneas especiales a la derecha: ">> ..."
-    // Se renderizan como un bloque flotante a la derecha (con gutter en CSS)
-    // y NO participan en la lógica de anclas "|".
-    const rightMatch = line.match(/^\s*>>\s*(.*)$/);
-    if (rightMatch) {
-      const content = (rightMatch[1] || '').trim();
-      // Nota: sin <br>; el \n del join preserva el salto de línea del poema.
+    // =========================
+    //  NUEVO: ">>" = línea a la derecha (epígrafe)
+    //  Se alinea por CSS dentro del mismo <pre>.
+    // =========================
+    if (/^\s*>>/.test(line)) {
+      const content = line.replace(/^\s*>>\s*/, '');
       return `<span class="poem-right">${escapeHtml(content)}</span>`;
     }
 
-    // 1) NUEVO: soporte para "||" (continuación con prefijo)
+    // =========================
+    //  "|" y "||" = alineación por ancla (tu sistema actual)
+    // =========================
+
+    // 1) soporte para "||" (continuación con prefijo)
     const dbl = line.indexOf('||');
     if (dbl !== -1) {
       const before = line.slice(0, dbl);        // texto que se conserva
@@ -271,27 +274,24 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
   }).join('\n');
 }
 
-// Formato inline mínimo para el poema citado:
-// **negrita**, *cursiva* (sin markdown completo)
-function applyInlineFormatting(s) {
-  const t = s || '';
-  // Orden importa: ** primero
-  return t
-    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
-}
+function renderCitedPoemHtml(citedText, preEl) {
+  // Igual que el poema, pero:
+  // - permite >> (línea a la derecha)
+  // - permite * / ** (énfasis) dentro del poema citado
+  const lines = (citedText || '').replace(/\r/g, '').split('\n');
 
-function renderCitedPoem(citedPoemText) {
-  const lines = (citedPoemText || '').replace(/\r/g, '').split('\n');
-  return lines.map(line => {
-    const rightMatch = line.match(/^\s*>>\s*(.*)$/);
-    if (rightMatch) {
-      const content = (rightMatch[1] || '').trim();
+  const html = lines.map(line => {
+    if (/^\s*>>/.test(line)) {
+      const content = line.replace(/^\s*>>\s*/, '');
       return `<span class="poem-right">${applyInlineFormatting(escapeHtml(content))}</span>`;
     }
     return applyInlineFormatting(escapeHtml(line));
   }).join('\n');
+
+  // Evitar doble borde: usamos poem-lines--plain (sin borde/padding)
+  return `<span class="poem-lines poem-lines--plain">${html}</span>`;
 }
+
 
 
 function renderPoemWithTitleFromJson(poemText, titleFromJson) {
@@ -304,7 +304,7 @@ function renderPoemWithTitleFromJson(poemText, titleFromJson) {
   if (titleFromJson) {
     const t = document.createElement('div');
     t.className = 'poem-title';
-    t.textContent = titleFromJson;
+    renderMultilineTitleInto(t, titleFromJson);
     wrapper.appendChild(t);
   }
 
@@ -356,9 +356,8 @@ async function loadTodayEntry() {
   pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
 
 
-  // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
   const citedPre = document.querySelector('.analysis-poem');
-  if (citedPre) citedPre.innerHTML = renderCitedPoem(parsed.citedPoem);
+  if (citedPre) citedPre.innerHTML = renderCitedPoemHtml(parsed.citedPoem, citedPre);
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
   // Meta del poema citado (2 líneas)
@@ -401,9 +400,8 @@ async function loadPastEntry() {
   pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
 
 
-  // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
   const citedPre = document.querySelector('.analysis-poem');
-  if (citedPre) citedPre.innerHTML = renderCitedPoem(parsed.citedPoem);
+  if (citedPre) citedPre.innerHTML = renderCitedPoemHtml(parsed.citedPoem, citedPre);
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
   setCitedMeta(chosen);

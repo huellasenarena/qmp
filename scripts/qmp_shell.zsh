@@ -50,10 +50,8 @@ _qmp_check() {
   fi
 }
 
-qd()  { _qmp_check || return 1; "$QMP_SCRIPTS/qd.sh"  "$@"; }
-qk()  { _qmp_check || return 1; "$QMP_SCRIPTS/qk.sh"  "$@"; }
-qkw() { _qmp_check || return 1; "$QMP_SCRIPTS/qkw.sh" "$@"; }
-q()   { _qmp_check || return 1; "$QMP_SCRIPTS/qmp_publish.sh" "$@"; }
+qcrear()  { _qmp_check || return 1; "$QMP_SCRIPTS/qcrear.sh"  "$@"; }
+qcambiar()  { _qmp_check || return 1; "$QMP_SCRIPTS/qcambiar.sh"  "$@"; }
 
 
 qhelp() {

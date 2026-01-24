@@ -69,18 +69,7 @@ h1 {
   font-size: 1.05rem;
   line-height: 1.7;
   white-space: pre-wrap;
-  /* Opción 2: reservar una zona a la derecha para líneas ">>" sin que el poema choque */
-  padding-right: var(--poem-right-gutter);
-  /* Contener floats (.poem-right) sin hacks */
-  display: flow-root;
   margin: 0;
-}
-
-:root{
-  /* Ajusta esto para mover TODO "más a la izquierda" o "más a la derecha" */
-  --poem-right-gutter: clamp(18px, 8vw, 72px);
-  /* Ancho máximo del bloque a la derecha antes de envolver */
-  --poem-right-max: clamp(12ch, 22vw, 26ch);
 }
 
 .poem {
@@ -95,25 +84,49 @@ h1 {
   margin-top: 0;
 }
 
+/*
 .poem-lines{
   border-left: 1px solid #ccc;
   padding-left: 18px;
-  display: block; /* ocupa el ancho útil del <pre> */
-}
-
-.poem-right{
-  /* clave: todas las líneas >> comparten el mismo borde derecho */
   display: inline-block;
   width: 100%;
+  box-sizing: border-box;
+}
+*/
+
+.poem-lines{
+  border-left: 1px solid #ccc;
+  padding-left: 18px;
+  display: inline-block;
+  width: auto;                 /* <-- clave: ya no 100% */
+  max-width: min(100%, 52ch);  /* <-- columna tipográfica */
+  box-sizing: border-box;
+}
+
+
+/* Línea del poema alineada a la derecha (prefijo ">>") */
+/*
+.poem-right{
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+*/
+
+.poem-right{
+  /* el texto se “pega” a la derecha sin crear una caja enorme */
+  float: right;
+  clear: right;                 /* cada >> en su propia línea */
   text-align: right;
 
-  /* opción A: no wrap */
-  white-space: nowrap;
+  /* “gutter” responsive: lo mete un poco hacia adentro */
+  margin-right: clamp(0px, 6vw, 44px);
+}
 
-  /* quita el float (si lo tenías) */
-  float: none;
-  clear: none;
-  margin-right: 0;
+.poem-lines::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .indent {
@@ -139,8 +152,6 @@ pre.analysis-poem {
   border-left: 2px solid #ddd;
   margin: 10px 0 36px 0;
   padding-left: 18px;
-  padding-right: var(--poem-right-gutter);
-  display: flow-root;
   color: #555;
 }
 
@@ -265,3 +276,4 @@ select, input {
   margin-left: auto;
   color: #555;
 }
+

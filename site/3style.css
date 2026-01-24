@@ -5,6 +5,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+:root{
+  /* Ajusta esto si quieres la cita más a la izquierda/derecha.
+     Menor = más pegada al poema (más a la izquierda).
+     Mayor = más “aire” a la derecha. */
+  --poem-right-gutter: clamp(18px, 10vw, 88px);
+  /* ancho máximo de la línea >> */
+  --poem-right-max: clamp(14ch, 22vw, 26ch);
+}
+
 header {
   max-width: 900px;
   margin: 40px auto 0 auto;
@@ -69,18 +79,7 @@ h1 {
   font-size: 1.05rem;
   line-height: 1.7;
   white-space: pre-wrap;
-  /* Opción 2: reservar una zona a la derecha para líneas ">>" sin que el poema choque */
-  padding-right: var(--poem-right-gutter);
-  /* Contener floats (.poem-right) sin hacks */
-  display: flow-root;
   margin: 0;
-}
-
-:root{
-  /* Ajusta esto para mover TODO "más a la izquierda" o "más a la derecha" */
-  --poem-right-gutter: clamp(18px, 8vw, 72px);
-  /* Ancho máximo del bloque a la derecha antes de envolver */
-  --poem-right-max: clamp(12ch, 22vw, 26ch);
 }
 
 .poem {
@@ -98,23 +97,30 @@ h1 {
 .poem-lines{
   border-left: 1px solid #ccc;
   padding-left: 18px;
-  display: block; /* ocupa el ancho útil del <pre> */
+  padding-right: var(--poem-right-gutter);
+  box-sizing: border-box;
+
+  /* Columna tipográfica del poema:
+     - en pantallas grandes no se va “hasta la pared”
+     - en móvil ocupa todo el ancho disponible */
+  width: min(100%, 52ch);
 }
 
-.poem-right{
-  /* clave: todas las líneas >> comparten el mismo borde derecho */
-  display: inline-block;
-  width: 100%;
+/* IMPORTANTE: el <pre> ahora vive dentro de .poem-lines (no al revés) */
+.poem-lines pre{
+  margin: 0;
+}
+
+/* Línea ">>" (epígrafe / cita a la derecha) */
+.poem-lines .poem-right{
+  display: block;          /* cada >> en su propia línea */
   text-align: right;
-
-  /* opción A: no wrap */
-  white-space: nowrap;
-
-  /* quita el float (si lo tenías) */
-  float: none;
-  clear: none;
-  margin-right: 0;
+  margin-left: auto;       /* empuja hacia la derecha */
+  max-width: var(--poem-right-max);
 }
+/* Línea del poema alineada a la derecha (prefijo ">>") */
+/* .poem-right (definido ahora dentro de .poem-lines .poem-right) */
+
 
 .indent {
   display: inline-block;
@@ -139,8 +145,6 @@ pre.analysis-poem {
   border-left: 2px solid #ddd;
   margin: 10px 0 36px 0;
   padding-left: 18px;
-  padding-right: var(--poem-right-gutter);
-  display: flow-root;
   color: #555;
 }
 
@@ -265,3 +269,4 @@ select, input {
   margin-left: auto;
   color: #555;
 }
+
