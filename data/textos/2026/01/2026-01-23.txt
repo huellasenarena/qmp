@@ -11,7 +11,7 @@ puede pasar el día desnudo
 y nunca revise el correo
 
 # POEMA_CITADO
-*A Gastón*
+>>*A Gastón*
 
 Alguna vez tenía que escribirte
 un poema de amor.
