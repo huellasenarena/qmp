@@ -316,6 +316,112 @@ function renderPoemWithTitleFromJson(poemText, titleFromJson) {
   return wrapper;
 }
 
+// ================================
+// Helper: toggle para poema citado largo
+// ================================
+function applyPoemCitedToggle(poemEl, maxVisibleLines = 10, minHiddenLines = 3) {
+  if (!poemEl) return;
+
+  // Texto original tal cual
+  const originalText = poemEl.textContent || "";
+  const lines = originalText.split(/\r?\n/);
+
+  const totalLines = lines.length;
+  const hiddenLines = totalLines - maxVisibleLines;
+
+  // Si no hay suficientes líneas ocultas, no hacemos nada
+  if (hiddenLines < minHiddenLines) {
+    return;
+  }
+
+  // Guardamos versiones en data-attributes
+  const visibleText = lines.slice(0, maxVisibleLines).join("\n");
+
+  poemEl.dataset.fullText = originalText;
+  poemEl.dataset.visibleText = visibleText;
+
+  // Mostramos solo la parte visible
+  poemEl.textContent = visibleText;
+
+  // Creamos el botoncito
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "toggle-poem-cited";
+  btn.textContent = "Mostrar poema completo ↓";
+
+  // Click: alternar entre visible/parcial y completo
+  btn.addEventListener("click", () => {
+    const expanded = poemEl.classList.toggle("is-expanded");
+
+    if (expanded) {
+      poemEl.textContent = poemEl.dataset.fullText || "";
+      btn.textContent = "Ocultar parte del poema ↑";
+    } else {
+      poemEl.textContent = poemEl.dataset.visibleText || "";
+      btn.textContent = "Mostrar poema completo ↓";
+    }
+  });
+
+  // Insertar el botón justo después del <pre class="analysis-poem">
+  poemEl.insertAdjacentElement("afterend", btn);
+}
+
+// ================================
+// Toggle para poema citado largo (usa renderCitedPoem)
+// ================================
+function setupCitedPoemToggle(poemEl, citedPoemText, maxVisibleLines = 10, minHiddenLines = 3) {
+  if (!poemEl) return;
+
+  // Texto original sin \r
+  const raw = (citedPoemText || '').replace(/\r/g, '');
+  const lines = raw.split('\n');
+
+  const totalLines = lines.length;
+  const hiddenLines = totalLines - maxVisibleLines;
+
+  // Regla: solo mostrar toggle si hay al menos 3 líneas ocultas
+  if (hiddenLines < minHiddenLines) {
+    // Nada de toggle: mostramos el poema completo
+    poemEl.innerHTML = renderCitedPoem(raw);
+    return;
+  }
+
+  // Partición: primeras N líneas visibles
+  const visibleText = lines.slice(0, maxVisibleLines).join('\n');
+
+  // Renderizamos ambas versiones con renderCitedPoem para conservar formato
+  const fullHtml = renderCitedPoem(raw);
+  const visibleHtml = renderCitedPoem(visibleText);
+
+  // Guardamos en data-attributes
+  poemEl.dataset.fullHtml = fullHtml;
+  poemEl.dataset.visibleHtml = visibleHtml;
+
+  // Mostramos solo la parte visible
+  poemEl.innerHTML = visibleHtml;
+
+  // Creamos el botoncito
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'toggle-poem-cited';
+  btn.textContent = 'Mostrar poema completo ↓';
+
+  btn.addEventListener('click', () => {
+    const expanded = poemEl.classList.toggle('is-expanded');
+
+    if (expanded) {
+      poemEl.innerHTML = poemEl.dataset.fullHtml || '';
+      btn.textContent = 'Ocultar parte del poema ↑';
+    } else {
+      poemEl.innerHTML = poemEl.dataset.visibleHtml || '';
+      btn.textContent = 'Mostrar poema completo ↓';
+    }
+  });
+
+  // Insertar el botón justo después del <pre class="analysis-poem">
+  poemEl.insertAdjacentElement('afterend', btn);
+}
+
 
 async function loadTodayEntry() {
   const index = await fetch('/data/archivo.json').then(r => r.json());
@@ -358,11 +464,16 @@ async function loadTodayEntry() {
 
   // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
   const citedPre = document.querySelector('.analysis-poem');
-  if (citedPre) citedPre.innerHTML = renderCitedPoem(parsed.citedPoem);
+  if (citedPre) {
+    // aquí aplicamos el toggle bonito
+    setupCitedPoemToggle(citedPre, parsed.citedPoem);
+  }
+
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
   // Meta del poema citado (2 líneas)
   setCitedMeta(chosen);
+
 }
 
 
@@ -400,13 +511,16 @@ async function loadPastEntry() {
   const pre = poemEl.querySelector('pre');
   pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
 
-
   // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
   const citedPre = document.querySelector('.analysis-poem');
-  if (citedPre) citedPre.innerHTML = renderCitedPoem(parsed.citedPoem);
+  if (citedPre) {
+    setupCitedPoemToggle(citedPre, parsed.citedPoem);
+  }
+
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
   setCitedMeta(chosen);
+
 }
 
 // =========================
