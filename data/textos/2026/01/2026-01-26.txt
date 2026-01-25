@@ -1,0 +1,39 @@
+FECHA: 2026-01-26
+MY_POEM_TITLE: de alguna manera logro arruinar buenas canciones
+POETA: Tania Ganitsky
+POEM_TITLE: 
+BOOK_TITLE:
+
+# POEMA
+
+escucho
+me recuerda
+no puedo
+escuchar ma’
+
+# POEMA_CITADO
+
+El primer poema del año habla
+sobre lo que voy a tocar:
+las hojas no nacidas de la begonia,
+su cuerpo mientras sueña en un cuerpo distante
+con imágenes que al día de hoy
+no ha visto
+y que al día de hoy no existen,
+la lengua húmeda de un perro
+que me despertará en las mañanas,
+la madera hirviente que rozaré accidentalmente
+al acomodar leña en fuegos por venir,
+torsos de desconocidos en calles nuevamente atestadas,
+las patas de una mosca posada en mi brazo
+o, si tengo suerte, las de una mariposa,
+páginas de cuadernos y libros con combinaciones
+de palabras inesperadas y asombrosas,
+el baboso cuerpo de insectos que hoy temo y evito.
+Y tocaré la oscuridad de las personas luminosas
+y de las oscuras,
+sin discernir entre el don y el peligro.
+
+# TEXTO
+
+Por medio de imágenes de imprevisibilidad, el narrador nos guía a través de lo que va “a tocar” este año: flores, animales, personas, libros y… la oscuridad. Esta última es una imagen misteriosa: tocar “la oscuridad de las personas luminosas y de las oscuras”. A mis ojos, el poema sugiere que la forma exacta del futuro es imprevisible, pero que lo previsible es la negrura *y la imprevisibilidad*; no sabemos exactamente la forma futura de la flor, ni las palabras que van a asombrarnos, ni qué tipo de insecto vamos a ver… pero sabemos que *habrá algo* y, considerando la última línea, habrá solemnidad inevitable.
