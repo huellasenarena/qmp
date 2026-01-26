@@ -1,0 +1,92 @@
+FECHA: 2026-01-27
+MY_POEM_TITLE: el amanecer
+POETA: Soledad Castresana
+POEM_TITLE: y el cerdo se hizo carne
+BOOK_TITLE: La carne se corta
+
+# POEMA
+el amanecer de hoy
+que quiero congelar
+antes que me voy
+un foto voy a tomar
+
+¿y eso del futuro?
+temo mirarlo
+pero con la imagen de ayer
+no tendré que ver otro
+
+# POEMA_CITADO
+hay que hervir la grasa
+durante cinco horas
+revolviendo en círculos
+
+sobre el tablón
+separar lo que se come
+del sebo
+de los nervios
+de los huesos
+
+la carne no asume
+su condición
+resiste
+todavía entibia la hoja
+
+el que corta no piensa
+siente cómo se enfría
+
+un parpadeo
+y el filo desconoce
+en la mano
+se mezclan la sangre
+del hombre y del cerdo
+
+las mujeres no piensan
+meten a la picadoraçexprimen
+empujan
+manipulan lo sólido
+no hablan
+ablandan
+
+y el mate pasa
+de mano ensagrentada
+a boca sin manchas
+de mano engrasada
+a boca sin dientes
+
+y la picadora de vértigo
+
+sí un dedo cayera
+lo blanco sería rosado
+el dedo chicharrón
+
+el chasquido de la máquina
+las vísceras se hinchan
+en las gallinas
+los chimangos y los perros
+
+el embudo encauza el instinto
+las mujeres rellenan
+
+las tripas
+recobran su erección
+
+una mano oscura
+su hunde y mezcla
+la grasa la sangre
+la carne de cabeza
+
+hay que revolver en círculos durante cinco horas
+para derretir
+
+el hombre que revuelve
+no piensa
+mira las burbujas
+y fuma
+
+en algunos lugares
+las cosas son simples
+
+la carne se corta
+
+# TEXTO
+test
