@@ -5,9 +5,10 @@ POEM_TITLE: y el cerdo se hizo carne
 BOOK_TITLE: La carne se corta
 
 # POEMA
+
 el amanecer de hoy
 que quiero congelar
-antes que me voy
+antes de irme
 un foto voy a tomar
 
 ¿y eso del futuro?
@@ -16,6 +17,7 @@ pero con la imagen de ayer
 no tendré que ver otro
 
 # POEMA_CITADO
+
 hay que hervir la grasa
 durante cinco horas
 revolviendo en círculos
@@ -31,7 +33,8 @@ su condición
 resiste
 todavía entibia la hoja
 
-el que corta no piensa
+el que corta
+no piensa
 siente cómo se enfría
 
 un parpadeo
@@ -41,21 +44,22 @@ se mezclan la sangre
 del hombre y del cerdo
 
 las mujeres no piensan
-meten a la picadoraçexprimen
+meten a la picadora
+exprimen
 empujan
 manipulan lo sólido
 no hablan
 ablandan
 
 y el mate pasa
-de mano ensagrentada
+de mano ensangrentada
 a boca sin manchas
 de mano engrasada
 a boca sin dientes
 
 y la picadora de vértigo
 
-sí un dedo cayera
+si un dedo cayera
 lo blanco sería rosado
 el dedo chicharrón
 
@@ -75,7 +79,9 @@ su hunde y mezcla
 la grasa la sangre
 la carne de cabeza
 
-hay que revolver en círculos durante cinco horas
+hay que revolver
+en círculos
+durante cinco horas
 para derretir
 
 el hombre que revuelve
@@ -89,4 +95,9 @@ las cosas son simples
 la carne se corta
 
 # TEXTO
-test
+
+La carne se corta: la grasa se revuelve, las partes se separan, la comida pasa a través de la picadora… en un nivel, el poema *sí*, presenta algo simple. En otro nivel, presenta un ritual donde se desenfoca la frontera entre los humanos y los animales, donde lo inanimado amenaza, donde la muerte excita.
+
+El poema yuxtapone estas versiones de la escena, para terminar diciendo que “en algunos lugares” todo se percibe como sencillo.
+
+Así, leo el poema como una reflexión (no diría una crítica) sobre el juicio humano. Las personas en la escena “no piensan”: siguen las normas una y otra vez, una y otra vez… repiten gestos, aceptan procedimientos. Sin embargo, incluso en esa repetición se abren capas de sentido: vemos a las mujeres que rellenan mientras el animal se vacía (estrofa 11); vemos al hombre excitado ante el interior del cuerpo (estrofa 12); vemos cómo humanos y animales pueden ser heridos tanto por el filo (estrofa 5) como por la máquina (estrofa 10); el poema está lleno de dobles sentidos y muestra que, incluso en una escena aparentemente simple (por no decir grotesco), hay una densidad de significados para el observador dispuesto.
