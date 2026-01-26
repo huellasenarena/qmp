@@ -1,0 +1,198 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid2\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid3\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid102\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid201\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid301\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid401\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid501\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid502\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid601\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid602\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid7}
+{\list\listtemplateid8\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid701\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid702\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid8}
+{\list\listtemplateid9\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid801\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid802\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid803\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid9}
+{\list\listtemplateid10\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid901\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid902\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid10}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}{\listoverride\listid8\listoverridecount0\ls8}{\listoverride\listid9\listoverridecount0\ls9}{\listoverride\listid10\listoverridecount0\ls10}}
+\margl1440\margr1440\vieww25400\viewh12100\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 Imp.
+\f1\b0\fs24 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8226 	}qcambiar: ask to change word in palabras clave, aplicar cuales cambios?, espacios en counter de lieas (primeras \'85), organizar los cambios mejor\
+\pard\tx1660\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls1\ilvl2\cf0 {\listtext	\uc0\u8259 	}ver texto original luego \'ab\'a0aplicar esos cambios\'a0\'bb\'85 cuales? Un diff ser\'eda mejor\
+{\listtext	\uc0\u8259 	}case: I pull new changes and then DON\'92T commit (choose not to commit)\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8226 	}add \'ab\'a0show more\'a0\'bb if poem is really long\'85\
+{\listtext	\uc0\u8226 	}purpose of pending_entry?\
+{\listtext	\uc0\u8226 	}\
+{\listtext	\uc0\u8226 	}codespaces\
+{\listtext	\uc0\u8226 	}\
+{\listtext	\uc0\u8226 	}consolodation\
+{\listtext	\uc0\u8226 	}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8226 	}preguntas: cuales archivos (scripts + states) son necesarios? implementar un editor en el proceso\
+{\listtext	\uc0\u8226 	}json validaci\'f3n\'85 make the site robust\
+{\listtext	\uc0\u8226 	}is creatependingentry even used anywhere? Why? I don\'92t care to see it\
+{\listtext	\uc0\u8226 	}how come it creates a file in scripts with the fucked up data?\
+{\listtext	\uc0\u8226 	}make sure archive is in chronologicaly order\
+{\listtext	\uc0\u8226 	}add to publish log the type of commit (update of change or what)\
+{\listtext	\uc0\u8226 	}purpose of keyword log?\
+{\listtext	\uc0\u8226 	}change name from qmp -> python\
+{\listtext	\uc0\u8226 	}and then use api for free (the texts are public so what do I care?)\
+{\listtext	\uc0\u8226 	}try to break upload process**********\
+{\listtext	\uc0\u8226 	}validaci\'f3n at every point for good measure\
+{\listtext	\uc0\u8226 	}\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 Big/Not pressing
+\f1\b0\fs24 \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 {\listtext	\uc0\u8259 	}Images?\
+{\listtext	\uc0\u8259 	}YouTube?\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf0 {\listtext	\uc0\u8259 	}think about the search functionality (multiple words, etc\'85)\
+{\listtext	\uc0\u8259 	}funcion to erase entry\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\f0\b\fs36 Done log\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls6\ilvl1
+\f1\b0\fs24 \cf0 \strike \strikec0 {\listtext	\uc0\u8226 	}multiline titles (01-10)\
+{\listtext	\uc0\u8226 	}want to improve: logging of tokens,\
+{\listtext	\uc0\u8226 	}have log a tokens (add to publish log)
+\f0\b\fs36 \strike0\striked0 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+
+\f1\b0\fs24 \cf0 \strike \strikec0 when all is done: Codespaces!!
+\f0\b\fs36 \strike0\striked0 \
+
+\f1\b0\fs24 \strike \strikec0 	\'95	can\'92t fucking detect GitHub shit
+\f0\b\fs36 \strike0\striked0 \
+
+\f1\b0\fs24 \strike \strikec0 	\'95	is an\'e1lisis du passe smaller?
+\f0\b\fs36 \strike0\striked0 \
+
+\f1\b0\fs24 \strike \strikec0 	\'95	text to right
+\f0\b\fs36 \strike0\striked0 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls7\ilvl1
+\f1\b0\fs24 \cf0 \strike \strikec0 {\listtext	\uc0\u8226 	}text to the right\
+{\listtext	\uc0\u8226 	}italics in poem
+\f0\b\fs36 \strike0\striked0 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+
+\f1\b0\fs24 \cf0 \strike \strikec0 	\'95	qcambiar doesn\'92t show poet
+\f0\b\fs36 \strike0\striked0 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls8\ilvl1
+\f1\b0\fs24 \cf0 \strike \strikec0 {\listtext	\uc0\u8226 	}multiline titles\
+{\listtext	\uc0\u8226 	}get rid of bars in title (|\uc0\u305 |~
+\f0\b\fs36 \strike0\striked0 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+
+\f1\b0\fs24 \cf0 \strike \strikec0 	\'95	is \'97dry-run necessary? Could just have confirmation after
+\f0\b\fs36 \strike0\striked0 \
+
+\f1\b0\fs24 \strike \strikec0 	\'95	add flag to q so that it doesn\'92t push but just makes the changes locally
+\f0\b\fs36 \strike0\striked0 \
+
+\f1\b0\fs24 \strike \strikec0 	\'95	change \'97dry-run to something faster
+\f0\b\fs36 \strike0\striked0 \
+
+\f1\b0\fs24 \strike \strikec0 	\'95	idea: variable for entry I\'92m working on to avoid having to type \'ab\'a0<fecha> en terminal
+\f0\b\fs36 \strike0\striked0 \
+
+\f1\b0\fs24 \strike \strikec0 	\'95	in js, change writers based on month
+\f0\b\fs36 \strike0\striked0 \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls9\ilvl1
+\f1\b0\fs24 \cf0 \strike \strikec0 {\listtext	\uc0\u8226 	}solo dos funcionas: crear (crear entrada) y cambiar (cambiar entrada)\
+{\listtext	\uc0\u8226 	}crear\
+\pard\tx1660\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls9\ilvl2\cf0 {\listtext	\uc0\u8259 	}hace el pull\
+{\listtext	\uc0\u8259 	}presentar la salida\
+{\listtext	\uc0\u8259 	}generar palabras clave\
+{\listtext	\uc0\u8259 	}presentar la salida\
+{\listtext	\uc0\u8259 	}hacer el push\
+{\listtext	\uc0\u8259 	}pensar en: si quito el proceso antes el fin? Ya necesito preguntar si quiero hacer todos\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls9\ilvl1\cf0 {\listtext	\uc0\u8226 	}cambiar\
+\pard\tx1660\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls9\ilvl2\cf0 {\listtext	\uc0\u8259 	}solo para datos existentes\
+{\listtext	\uc0\u8259 	}pregunta: cambiar escritos o palabras clave?\
+{\listtext	\uc0\u8259 	}si cambio escritos, hacer el pull\
+{\listtext	\uc0\u8259 	}si cambio palabras clave: preguntar si quiero regenerar o simplemente cambiar una palabra\strike0\striked0 \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls10\ilvl0\cf0 {\listtext	\uc0\u8226 	}\strike \strikec0 organize files (move index inside)\strike0\striked0 \
+{\listtext	\uc0\u8226 	}\strike \strikec0 profile pic?\
+\ls10\ilvl0\strike0\striked0 {\listtext	\uc0\u8226 	}\strike \strikec0 icon?\strike0\striked0 \
+{\listtext	\uc0\u8226 	}\strike \strikec0 don\'92t like 01-07 keywords\strike0\striked0 \
+{\listtext	\uc0\u8226 	}\strike \strikec0 remove unecessary spaces and shit\
+\ls10\ilvl0\strike0\striked0 {\listtext	\uc0\u8226 	}\strike \strikec0 change format of early entires\strike0\striked0 \
+{\listtext	\uc0\u8226 	}\strike \strikec0 qhelp\strike0\striked0 \
+{\listtext	\uc0\u8226 	}\strike \strikec0 only call api to modify keywords\strike0\striked0 \
+{\listtext	\uc0\u8226 	}\strike \strikec0 stop sublime from opening existing tabs from when app was closed\strike0\striked0 \
+{\listtext	\uc0\u8226 	}\strike \strikec0 Mobile version?\strike0\striked0 \
+{\listtext	\uc0\u8226 	}\strike \strikec0 fais-le!\strike0\striked0 \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls10\ilvl0\cf0 \strike \strikec0 {\listtext	\uc0\u8226 	}database\
+{\listtext	\uc0\u8226 	}archivo\
+{\listtext	\uc0\u8226 	}first paragraph of analysis?\
+{\listtext	\uc0\u8226 	}use json get rid of email in commits\
+{\listtext	\uc0\u8226 	}refresh thing\
+{\listtext	\uc0\u8226 	}get rid of name in first commit\
+{\listtext	\uc0\u8226 	}first paragraph formatting\
+{\listtext	\uc0\u8226 	}si el t\'edtulo est\'e1 en la an\'e1lisis\
+{\listtext	\uc0\u8226 	}title of my poem formatting\
+{\listtext	\uc0\u8226 	}no se han encotrado cambia la altura\
+{\listtext	\uc0\u8226 	}diff domain?\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls10\ilvl0\cf0 \strike0\striked0 {\listtext	\uc0\u8226 	}\strike \strikec0 \uc0\u8259 		gap for search no results messages and liste of dates\'85 like a jump or some shit\
+{\listtext	\uc0\u8226 	}when the key word is deleted from search the order is all fucked up\'85 want to go back to original order\
+{\listtext	\uc0\u8226 	}tease text of dates so user knows\
+{\listtext	\uc0\u8226 	}fuck around with gradient and shit\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls10\ilvl1\cf0 {\listtext	\uc0\u8259 	}gap in the e.g.?\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls10\ilvl1\cf0 \strike0\striked0 {\listtext	\uc0\u8259 	}\strike \strikec0 python3 shortcut\
+\ls10\ilvl1\strike0\striked0 {\listtext	\uc0\u8259 	}\strike \strikec0 \uc0\u8259 	json pretty?\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls10\ilvl0\cf0 {\listtext	\uc0\u8226 	}cambios recomendados de gpt\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls10\ilvl0
+\f2 \cf0 {\listtext	\uc0\u8226 	}
+\f1 Open in private window\
+{\listtext	\uc0\u8226 	}caso d\'f3nde la primera linea est\'e1 solo y no es el t\'edtulo\
+{\listtext	\uc0\u8226 	}cambiar el color de palabras parar esconderlas\
+{\listtext	\uc0\u8226 	}formatting of italics/bolded letters in analysis\
+{\listtext	\uc0\u8226 	}multiple indented sections\
+{\listtext	\uc0\u8226 	}gap between top of poem and end\'85 like, there is a large gap between the title and \
+{\listtext	\uc0\u8226 	}streamline daily add?\
+{\listtext	\uc0\u8226 	}add date to current poem (it\'92s nice)\
+{\listtext	\uc0\u8226 	}time zones\
+{\listtext	\uc0\u8226 	}combine all merge and push into one python script?\
+{\listtext	\uc0\u8226 	}commands, scripts, to open shit fast\
+{\listtext	\uc0\u8226 	}3 recs de gpt\
+{\listtext	\uc0\u8226 	}get random poem\
+{\listtext	\uc0\u8226 	}dos entradas mas\'85\
+{\listtext	\uc0\u8226 	}fix lines if there are words before (dec 29 writing)\
+{\listtext	\uc0\u8226 	}showing authors from all dates if if future writing?\
+{\listtext	\uc0\u8226 	}log\
+{\listtext	\uc0\u8226 	}integrate Gemini API to avoid keywords bullshit\
+{\listtext	\uc0\u8226 	}funciona el \'ab\'a0mes actual\'a0\'bb de ignorar listar el mes debajo?\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls10\ilvl0\cf0 \strike0\striked0 {\listtext	\uc0\u8226 	}\strike \strikec0 -update q for if I don\'92t want to merge with keywords\
+\ls10\ilvl0\strike0\striked0 {\listtext	\uc0\u8226 	}\strike \strikec0 different GH actions for different shit?\
+\ls10\ilvl0\strike0\striked0 {\listtext	\uc0\u8226 	}\strike \strikec0 GitHub actions automation\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+}
