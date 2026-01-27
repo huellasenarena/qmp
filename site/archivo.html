@@ -29,7 +29,6 @@
     }
 
     .meta em { font-style: italic; }
-
   </style>
 </head>
 <body>
@@ -61,13 +60,11 @@
     <p id="noEntry">No se han encontrado escritos.</p>
 
     <!-- Lista de escritos -->
-
     <ul id="entries"></ul>
 
   </main>
 
   <script>
-
     const entriesList = document.getElementById('entries');
     const monthFilter = document.getElementById('monthFilter');
     const authorFilter = document.getElementById('authorFilter');
@@ -78,22 +75,21 @@
     let archiveData = [];
     const currentMonth = getCurrentMonth();
 
-
     function escapeHtml(s) {
       return (s || '')
-      .replaceAll('&', '&amp;')
-      .replaceAll('<', '&lt;')
-      .replaceAll('>', '&gt;')
-      .replaceAll('"', '&quot;')
-      .replaceAll("'", '&#39;');
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
     }
 
     function ellipsizeWords(text, maxWords = 8) {
       const words = (text || '').trim().split(/\s+/).filter(Boolean);
       if (words.length === 0) return '';
       return (words.length > maxWords)
-      ? words.slice(0, maxWords).join(' ') + '…'
-      : words.join(' ');
+        ? words.slice(0, maxWords).join(' ') + '…'
+        : words.join(' ');
     }
 
     function ensureEllipsis(text) {
@@ -102,103 +98,129 @@
       return t.endsWith('…') ? t : (t + '…');
     }
 
+    // to normalize, avoid accents etc...
+    function normalize(s) {
+      return (s || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[-–—_]+/g, ' ')     // guiones a espacios
+        .replace(/\s+/g, ' ')        // colapsar espacios
+        .trim();
+    }
+
+    // Ajusta a tu gusto: 4 suele ser buen umbral para evitar ruido ("fo", "re", etc.)
+    const PREFIX_MIN_LEN = 4;
+
+    function tokenMatches(qTok, kwTok) {
+      if (!qTok || !kwTok) return false;
+
+      if (qTok === kwTok) return true;
+
+      // prefijo (usuario escribe abreviado: "form" -> "forma")
+      if (qTok.length >= PREFIX_MIN_LEN && kwTok.startsWith(qTok)) return true;
+
+      // opcional: si el usuario escribe más largo que el token (raro, pero útil)
+      if (kwTok.length >= PREFIX_MIN_LEN && qTok.startsWith(kwTok)) return true;
+
+      return false;
+    }
+
+    const kwWords = (kwObj) => normalize(kwObj.word).split(/\s+/).filter(Boolean);
 
     fetch('/data/archivo.json')
-    .then(res => res.json())
-    .then(data => {
+      .then(res => res.json())
+      .then(data => {
         // 1) Crear lista de escritos
-      const today = getTodayISO();
-      archiveData = data.filter(e => e.date < today); // hasta ayer
-      archiveData.forEach(entry => {
-        // Archivo muestra SOLO hasta ayer (excluye hoy y excluye futuro)
-        if (entry.date >= today) return;
+        const today = getTodayISO();
+        archiveData = data.filter(e => e.date < today); // hasta ayer
 
-        const li = document.createElement('li');
+        archiveData.forEach(entry => {
+          // Archivo muestra SOLO hasta ayer (excluye hoy y excluye futuro)
+          if (entry.date >= today) return;
 
-        li.dataset.month = entry.month || '';
-        li.dataset.author = entry.analysis?.poet || '';
-        li.dataset.date = entry.date; // para ordenar por fecha
-        const rawKeywords = Array.isArray(entry.keywords) ? entry.keywords : [];
-        const kwObjects = rawKeywords
-        .map(k => {
-          if (typeof k === 'string') return { word: normalize(k), weight: 1 };
-          if (k && typeof k === 'object') {
-            return {
-              word: normalize(String(k.word || '')),
-              weight: Number(k.weight || 1)
-            };
+          const li = document.createElement('li');
+
+          li.dataset.month = entry.month || '';
+          li.dataset.author = entry.analysis?.poet || '';
+          li.dataset.date = entry.date; // para ordenar por fecha
+
+          const rawKeywords = Array.isArray(entry.keywords) ? entry.keywords : [];
+          const kwObjects = rawKeywords
+            .map(k => {
+              if (typeof k === 'string') return { word: normalize(k), weight: 1 };
+              if (k && typeof k === 'object') {
+                return {
+                  word: normalize(String(k.word || '')),
+                  weight: Number(k.weight || 1)
+                };
+              }
+              return null;
+            })
+            .filter(k => k && k.word);
+
+          li.dataset.keywords = JSON.stringify(kwObjects);
+
+          const poet = entry.analysis?.poet || '';
+          const poemTitle = entry.analysis?.poem_title || '';
+          const bookTitle = entry.analysis?.book_title || '';
+
+          li.dataset.search = normalize([poet, poemTitle, bookTitle].filter(Boolean).join(' '));
+
+          const a = document.createElement('a');
+          a.className = 'entry';
+          a.href = `passe.html?date=${entry.date}`;
+          a.textContent = formatDate(entry.date);
+
+          li.appendChild(a);
+
+          const myTitleRaw = (entry.my_poem_title || '').trim();
+          const mySnippetRaw = (entry.my_poem_snippet || '').trim();
+
+          const analyzedTitleRaw = (entry.analysis?.poem_title || '').trim();
+          const analyzedSnippetRaw = (entry.analysis?.poem_snippet || '').trim();
+
+          const analyzedPoet = (entry.analysis?.poet || '').trim();
+
+          // Si hay título -> truncar sin elipsis forzada
+          // Si hay snippet -> truncar y forzar elipsis siempre
+          const myPoemDisplay = myTitleRaw
+            ? ellipsizeWords(myTitleRaw, 8)
+            : ensureEllipsis(ellipsizeWords(mySnippetRaw, 8));
+
+          const analyzedPoemDisplay = analyzedTitleRaw
+            ? ellipsizeWords(analyzedTitleRaw, 8)
+            : ensureEllipsis(ellipsizeWords(analyzedSnippetRaw, 8));
+
+          // Construimos: Mi título · Poema analizado · Autor
+          const parts = [];
+          if (myPoemDisplay) parts.push(`<em>${escapeHtml(myPoemDisplay)}</em>`);
+          if (analyzedPoemDisplay) parts.push(`<em>${escapeHtml(analyzedPoemDisplay)}</em>`);
+          if (analyzedPoet) parts.push(escapeHtml(analyzedPoet));
+
+          if (parts.length) {
+            const meta = document.createElement('div');
+            meta.className = 'meta';
+            meta.innerHTML = parts.join(' · ');
+            li.appendChild(meta);
           }
-          return null;
-        })
-        .filter(k => k && k.word);
 
-        li.dataset.keywords = JSON.stringify(kwObjects); // string
-
-        const poet = entry.analysis?.poet || '';
-        const poemTitle = entry.analysis?.poem_title || '';
-        const bookTitle = entry.analysis?.book_title || '';
-
-
-        li.dataset.search = normalize([poet, poemTitle, bookTitle].filter(Boolean).join(' '));
-
-        const a = document.createElement('a');
-        a.className = 'entry';
-        a.href = `passe.html?date=${entry.date}`;
-        a.textContent = formatDate(entry.date);
-
-        li.appendChild(a);
-
-        const myTitleRaw = (entry.my_poem_title || '').trim();
-        const mySnippetRaw = (entry.my_poem_snippet || '').trim();
-
-        const analyzedTitleRaw = (entry.analysis?.poem_title || '').trim();
-        const analyzedSnippetRaw = (entry.analysis?.poem_snippet || '').trim();
-
-        const analyzedPoet = (entry.analysis?.poet || '').trim();
-
-// Si hay título -> truncar sin elipsis forzada
-// Si hay snippet -> truncar y forzar elipsis siempre
-        const myPoemDisplay = myTitleRaw
-        ? ellipsizeWords(myTitleRaw, 8)
-        : ensureEllipsis(ellipsizeWords(mySnippetRaw, 8));
-
-        const analyzedPoemDisplay = analyzedTitleRaw
-        ? ellipsizeWords(analyzedTitleRaw, 8)
-        : ensureEllipsis(ellipsizeWords(analyzedSnippetRaw, 8));
-
-
-
-        // Construimos: Mi título · Poema analizado · Autor
-        const parts = [];
-        if (myPoemDisplay) parts.push(`<em>${escapeHtml(myPoemDisplay)}</em>`);
-        if (analyzedPoemDisplay) parts.push(`<em>${escapeHtml(analyzedPoemDisplay)}</em>`);
-
-        if (analyzedPoet) parts.push(escapeHtml(analyzedPoet));
-
-
-        if (parts.length) {
-          const meta = document.createElement('div');
-          meta.className = 'meta';
-          meta.innerHTML = parts.join(' · ');
-          li.appendChild(meta);
-        }
-
-        entriesList.appendChild(li);
-      });
+          entriesList.appendChild(li);
+        });
 
         // 2) Poblar filtros (meses y autores) desde JSON
-      populateMonthOptions(archiveData);
-      populateAuthorOptions(archiveData);
+        populateMonthOptions(archiveData);
+        populateAuthorOptions(archiveData);
 
         // 3) Activar filtrado
-      entries = document.querySelectorAll('#entries li[data-month]');
-      filterEntries();
-    })
-    .catch(err => {
-      console.error(err);
-      noResultsFound.style.display = 'block';
-      noResultsFound.textContent = 'Error cargando el archivo.';
-    });
+        entries = document.querySelectorAll('#entries li[data-month]');
+        filterEntries();
+      })
+      .catch(err => {
+        console.error(err);
+        noResultsFound.style.display = 'block';
+        noResultsFound.textContent = 'Error cargando el archivo.';
+      });
 
     function getCurrentMonth() {
       const now = new Date();
@@ -217,212 +239,210 @@
 
     function populateMonthOptions(data) {
       const months = Array.from(new Set(data.map(e => e.month).filter(Boolean)))
-      .sort()
+        .sort()
         .reverse(); // más reciente primero
 
-        months.forEach(ym => {
-          const opt = document.createElement('option');
-          opt.value = ym;
-          opt.textContent = monthLabel(ym);
-          monthFilter.appendChild(opt);
-        });
+      months.forEach(ym => {
+        const opt = document.createElement('option');
+        opt.value = ym;
+        opt.textContent = monthLabel(ym);
+        monthFilter.appendChild(opt);
+      });
+    }
+
+    function populateAuthorOptions(data) {
+      const authors = Array.from(new Set(
+        data.map(e => e.analysis?.poet).filter(Boolean)
+      )).sort((a, b) => a.localeCompare(b, 'es'));
+
+      authors.forEach(name => {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        authorFilter.appendChild(opt);
+      });
+    }
+
+    function dataForSelectedMonth() {
+      const month = monthFilter.value;
+
+      if (month === 'todo') return archiveData;
+      if (!month) return archiveData.filter(e => (e.month || '') === currentMonth);
+      return archiveData.filter(e => (e.month || '') === month);
+    }
+
+    function refreshAuthorOptions() {
+      const prev = authorFilter.value;
+
+      // reset (mantiene el placeholder)
+      authorFilter.innerHTML = '<option value="">Todos los autores</option>';
+
+      const subset = dataForSelectedMonth();
+      const authors = Array.from(new Set(
+        subset.map(e => e.analysis?.poet).filter(Boolean)
+      )).sort((a, b) => a.localeCompare(b, 'es'));
+
+      authors.forEach(name => {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        authorFilter.appendChild(opt);
+      });
+
+      // conservar selección si todavía es válida; si no, limpiarla
+      authorFilter.value = (prev && authors.includes(prev)) ? prev : '';
+    }
+
+    function refreshDependentFilters() {
+      refreshAuthorOptions();
+    }
+
+    function monthLabel(ym) {
+      const [y, m] = ym.split('-');
+      const months = [
+        'enero','febrero','marzo','abril','mayo','junio',
+        'julio','agosto','septiembre','octubre','noviembre','diciembre'
+      ];
+
+      const name = months[parseInt(m, 10) - 1];
+      return `${name.charAt(0).toUpperCase() + name.slice(1)} ${y}`;
+    }
+
+    function formatDate(dateStr) {
+      const [y, m, d] = dateStr.split('-');
+      const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+      return `${parseInt(d, 10)} de ${months[parseInt(m, 10) - 1]} de ${y}`;
+    }
+
+    // OR por defecto + ranking por "cobertura"
+    // Devuelve { score, matchedCount }
+    function keywordRank(entryEl, terms, fullQuery) {
+      let score = 0;
+
+      const keywordsArr = JSON.parse(entryEl.dataset.keywords || '[]');
+      const searchText = entryEl.dataset.search || '';
+
+      const covered = new Set();
+
+      // 1) Match de FRASE exacta (boost)
+      if (fullQuery && terms.length >= 2) {
+        const exact = keywordsArr.find(k => k.word === fullQuery);
+        if (exact) score += (exact.weight * 2) + 2;
+        else {
+          const partialPhrase = keywordsArr.find(k => k.word.includes(fullQuery));
+          if (partialPhrase) score += partialPhrase.weight + 1;
+        }
       }
 
-      function populateAuthorOptions(data) {
-        const authors = Array.from(new Set(
-          data.map(e => e.analysis?.poet).filter(Boolean)
-          )).sort((a, b) => a.localeCompare(b, 'es'));
+      // 2) Scoring por tokens (OR): suma si cubre al menos uno; cobertura manda en el ranking
+      for (const t of terms) {
+        let matchedThisToken = false;
 
-        authors.forEach(name => {
-          const opt = document.createElement('option');
-          opt.value = name;
-          opt.textContent = name;
-          authorFilter.appendChild(opt);
-        });
+        // (a) keyword exacta de 1 token (con prefijo)
+        const single = keywordsArr.find(k => kwWords(k).length === 1 && tokenMatches(t, k.word));
+        if (single) {
+          score += single.weight;
+          matchedThisToken = true;
+        } else {
+          // (b) token dentro de keyword multi-palabra (con prefijo)
+          for (const k of keywordsArr) {
+            const parts = kwWords(k);
+            if (parts.length >= 2 && parts.some(p => tokenMatches(t, p))) {
+              score += k.weight * 0.5;
+              matchedThisToken = true;
+              break;
+            }
+          }
+        }
+
+        // (c) metadata (poeta/títulos/libro)
+        if (searchText.includes(t)) {
+          score += 0.5;
+          matchedThisToken = true;
+        }
+
+        if (matchedThisToken) covered.add(t);
       }
 
-      function dataForSelectedMonth() {
-        const month = monthFilter.value;
+      const matchedCount = covered.size;
 
-        if (month === 'todo') return archiveData;
-        if (!month) return archiveData.filter(e => (e.month || '') === currentMonth);
-        return archiveData.filter(e => (e.month || '') === month);
-      }
+      // bonus por cobertura (2 palabras > 1)
+      score += matchedCount * 0.75;
 
-      function refreshAuthorOptions() {
-        const prev = authorFilter.value;
+      // bonus si cubre TODAS las palabras (sin ser requisito)
+      if (matchedCount > 0 && matchedCount === terms.length) score += 2;
 
-  // reset (mantiene el placeholder)
-        authorFilter.innerHTML = '<option value="">Todos los autores</option>';
+      return { score, matchedCount };
+    }
 
-        const subset = dataForSelectedMonth();
-        const authors = Array.from(new Set(
-          subset.map(e => e.analysis?.poet).filter(Boolean)
-          )).sort((a, b) => a.localeCompare(b, 'es'));
+    function filterEntries() {
+      const month = monthFilter.value;
+      const author = authorFilter.value;
+      const keyword = normalize(keywordFilter.value.trim());
+      let visibleCount = 0;
 
-        authors.forEach(name => {
-          const opt = document.createElement('option');
-          opt.value = name;
-          opt.textContent = name;
-          authorFilter.appendChild(opt);
-        });
+      const terms = keyword.split(/\s+/).filter(Boolean);
 
-  // conservar selección si todavía es válida; si no, limpiarla
-        authorFilter.value = (prev && authors.includes(prev)) ? prev : '';
-      }
-
-      function refreshDependentFilters() {
-        refreshAuthorOptions();
-      }
-
-
-      function monthLabel(ym) {
-        const [y, m] = ym.split('-');
-        const months = [
-          'enero','febrero','marzo','abril','mayo','junio',
-          'julio','agosto','septiembre','octubre','noviembre','diciembre'
-        ];
-
-        const name = months[parseInt(m, 10) - 1];
-        return `${name.charAt(0).toUpperCase() + name.slice(1)} ${y}`;
-      }
-
-
-      function formatDate(dateStr) {
-        const [y, m, d] = dateStr.split('-');
-        const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
-        return `${parseInt(d, 10)} de ${months[parseInt(m, 10) - 1]} de ${y}`;
-      }
-
-      function filterEntries() {
-        const month = monthFilter.value;
-        const author = authorFilter.value;
-        const keyword = normalize(keywordFilter.value.trim());
-        let visibleCount = 0;
-
-        const terms = keyword.split(/\s+/).filter(Boolean);
-
-        entries.forEach(entry => {
-          const matchMonth =
+      entries.forEach(entry => {
+        const matchMonth =
           month === 'todo' ||
           (!month && entry.dataset.month === currentMonth) ||
           entry.dataset.month === month;
 
-          const matchAuthor = !author || entry.dataset.author === author;
-          const score = terms.length === 0 ? 1 : keywordScore(entry, terms, keyword);
-          const matchKeyword = score > 0;
-          entry._score = score;
+        const matchAuthor = !author || entry.dataset.author === author;
 
+        const rank = terms.length === 0 ? { score: 1, matchedCount: 0 } : keywordRank(entry, terms, keyword);
+        entry._score = rank.score;
+        entry._matched = rank.matchedCount;
 
+        // OR por defecto: entra si matchea al menos 1 token (cuando hay términos)
+        const matchKeyword = (terms.length === 0) ? true : (rank.matchedCount > 0);
 
-          const visible = matchMonth && matchAuthor && matchKeyword;
-          entry.style.display = visible ? 'block' : 'none';
-          if (visible) visibleCount++;
-        });
+        const visible = matchMonth && matchAuthor && matchKeyword;
+        entry.style.display = visible ? 'block' : 'none';
+        if (visible) visibleCount++;
+      });
 
-        if (terms.length > 0) {
-          const visible = [...entries].filter(e => e.style.display !== 'none');
-          visible
-          .sort((a, b) => (b._score || 0) - (a._score || 0))
+      const visible = [...entries].filter(e => e.style.display !== 'none');
+
+      if (terms.length > 0) {
+        // ranking: 1) cobertura (matchedCount) 2) score fino 3) fecha
+        visible
+          .sort((a, b) => {
+            const am = a._matched || 0;
+            const bm = b._matched || 0;
+            if (bm !== am) return bm - am;
+
+            const as = a._score || 0;
+            const bs = b._score || 0;
+            if (bs !== as) return bs - as;
+
+            return (b.dataset.date || '').localeCompare(a.dataset.date || '');
+          })
           .forEach(li => entriesList.appendChild(li));
-        } else {
-          // restaurar orden cronológico (más reciente primero)
-          const visible = [...entries].filter(e => e.style.display !== 'none');
-          visible
+      } else {
+        // restaurar orden cronológico (más reciente primero)
+        visible
           .sort((a, b) => (b.dataset.date || '').localeCompare(a.dataset.date || ''))
           .forEach(li => entriesList.appendChild(li));
-        }
+      }
 
-
-        const hasActiveFilters =
+      const hasActiveFilters =
         monthFilter.value !== '' ||
         authorFilter.value !== '' ||
         terms.length > 0;
 
-
-        noResultsFound.style.display =
+      noResultsFound.style.display =
         (hasActiveFilters && visibleCount === 0) ? 'block' : 'none';
-      }
+    }
 
-    //to normalize, avoid accents etc...
-      function normalize(s) {
-        return (s || '')
-            .toLowerCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .replace(/[-–—_]+/g, ' ')     // <- clave: guiones a espacios
-            .replace(/\s+/g, ' ')        // <- colapsar espacios
-            .trim();
-      }
+    monthFilter.addEventListener('change', () => {
+      refreshDependentFilters();
+      filterEntries();
+    });
 
-      function keywordScore(entry, terms, fullQuery) {
-        let score = 0;
-
-        const keywordsArr = JSON.parse(entry.dataset.keywords || '[]');
-        const searchText = entry.dataset.search || '';
-
-         // --- helpers ---
-        const kwWords = (kw) => kw.word.split(/[\s\-–—_]+/).filter(Boolean);
-
-          // 1) Match de FRASE exacta (prioridad máxima)
-        if (fullQuery && terms.length >= 2) {
-          const exact = keywordsArr.find(k => k.word === fullQuery);
-          if (exact) score += (exact.weight * 2) + 2; // fuerte: exact phrase
-          else {
-            // frase como substring dentro de una keyword (p.ej. "corte deliberado" dentro de algo más largo)
-            const partialPhrase = keywordsArr.find(k => k.word.includes(fullQuery));
-            if (partialPhrase) score += partialPhrase.weight + 1;
-          }
-        }
-
-        // 2) Match por palabras (AND): si el usuario escribió 2+ palabras,
-        //    premiamos entradas que cubren TODAS las palabras, aunque sea disperso.
-        if (terms.length >= 2) {
-          const coversAll = terms.every(t => {
-            // aparece como keyword exacta de una palabra
-            if (keywordsArr.some(k => k.word === t)) return true;
-            // aparece dentro de una keyword multi-palabra
-            if (keywordsArr.some(k => kwWords(k).includes(t))) return true;
-            // aparece en metadatos search (poeta/títulos)
-            if (searchText.includes(t)) return true;
-            return false;
-          });
-
-          if (!coversAll) return 0; // AND estricto: si falta una, no hay match
-        }
-
-        // 3) Scoring fino por token:
-        //    - keyword exacta de 1 palabra suma weight completo
-        //    - token dentro de keyword multi-palabra suma fracción
-        for (const t of terms) {
-          const exactToken = keywordsArr.find(k => k.word === t);
-          if (exactToken) score += exactToken.weight;
-
-          // token dentro de keyword multi-palabra
-          for (const k of keywordsArr) {
-            const parts = kwWords(k);
-            if (parts.length >= 2 && parts.includes(t)) {
-              // fracción: keyword más específica, pero no exacta
-              score += k.weight * 0.5;
-              break;
-            }
-          }
-
-          if (searchText.includes(t)) score += 0.5;
-        }
-
-        return score;
-      }
-
-
-
-      monthFilter.addEventListener('change', () => {
-        refreshDependentFilters();
-        filterEntries();
-      });
-
-      authorFilter.addEventListener('change', filterEntries);
-      keywordFilter.addEventListener('input', filterEntries);
-    </script>
-  </body>
-  </html>
+    authorFilter.addEventListener('change', filterEntries);
+    keywordFilter.addEventListener('input', filterEntries);
+  </script>
+</body>
+</html>
