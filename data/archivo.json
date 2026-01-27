@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-01-28",
+    "month": "2026-01",
+    "file": "textos/2026-01-28.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "pan",
+    "analysis": {
+      "poet": "Ida Vitale",
+      "poem_title": "RECURSOS",
+      "poem_snippet": "",
+      "book_title": "Poesía Reunida"
+    },
+    "keywords": [
+      {
+        "word": "atencion como salvacion",
+        "weight": 3
+      },
+      {
+        "word": "delegacion de agencia",
+        "weight": 3
+      },
+      {
+        "word": "performatividad domestica",
+        "weight": 3
+      },
+      {
+        "word": "precariedad del cuidado",
+        "weight": 3
+      },
+      {
+        "word": "silencio como peso",
+        "weight": 3
+      },
+      {
+        "word": "simpleza como potencia",
+        "weight": 3
+      },
+      {
+        "word": "expectacion",
+        "weight": 2
+      },
+      {
+        "word": "intento como estrategia",
+        "weight": 2
+      },
+      {
+        "word": "reciprocidad temporal",
+        "weight": 2
+      },
+      {
+        "word": "relectura",
+        "weight": 2
+      },
+      {
+        "word": "reverberacion",
+        "weight": 2
+      },
+      {
+        "word": "ritualizacion",
+        "weight": 2
+      },
+      {
+        "word": "tension humano-tecnologica",
+        "weight": 2
+      },
+      {
+        "word": "aeropuerto",
+        "weight": 1
+      },
+      {
+        "word": "burbujeo",
+        "weight": 1
+      },
+      {
+        "word": "chef",
+        "weight": 1
+      },
+      {
+        "word": "cuatro quesos",
+        "weight": 1
+      },
+      {
+        "word": "familia",
+        "weight": 1
+      },
+      {
+        "word": "gorro",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "maquinas",
+        "weight": 1
+      },
+      {
+        "word": "microondas",
+        "weight": 1
+      },
+      {
+        "word": "pan",
+        "weight": 1
+      },
+      {
+        "word": "salsa",
+        "weight": 1
+      },
+      {
+        "word": "silbido",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-27",
     "month": "2026-01",
     "file": "textos/2026-01-27.txt",
