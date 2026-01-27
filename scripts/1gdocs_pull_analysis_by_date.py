@@ -28,10 +28,6 @@ from _gdocs_auth import get_creds, load_config
 DATE_RE = re.compile(r"^\s*(\d{6})\s*$")
 FINAL_RE = re.compile(r"^\s*versi[oó]n\s+final\s*:?\s*$", re.IGNORECASE)
 
-# Google Docs API uses namedStyleType values like 'TITLE', 'HEADING_1', 'HEADING_2', etc.
-# In the UI (Spanish), 'Encabezado 1' == HEADING_1 (NOT 'HEADER_1').
-DATE_STYLE_TYPES = {"HEADING_1", "TITLE"}  # allow TITLE for legacy docs
-
 def first_six_digits(s: str) -> str:
     """Extrae los primeros 6 dígitos de un string (ignorando NBSP y signos)."""
     s = (s or "").replace("\u00a0", " ").strip()
@@ -99,19 +95,19 @@ def yyyymmdd_to_yymmdd(date_str: str) -> str:
 def find_date_block(content: list, yymmdd: str) -> Tuple[int, int]:
     start_i = None
     for i, item in enumerate(content):
-        if (paragraph_style(item) or "") not in DATE_STYLE_TYPES:
+        if paragraph_style(item) != "HEADING_1":
             continue
         txt = paragraph_text_no_strike(item).strip()
         if is_date_title_line(txt, yymmdd):
             start_i = i
             break
     if start_i is None:
-        raise FormatError(f"No encontré la fecha {yymmdd} (estilo HEADING_1, TITLE).")
+        raise FormatError(f"No encontré la fecha {yymmdd} (estilo TITLE 1).")
 
     end_i = len(content)
     for j in range(start_i + 1, len(content)):
         it = content[j]
-        if (paragraph_style(it) or "") in DATE_STYLE_TYPES:
+        if paragraph_style(it) == "HEADING_1":
             t = paragraph_text_no_strike(it).strip()
             if is_date_title_line(t, yymmdd) or (len(first_six_digits(t)) == 6 and first_six_digits(t) != ""):
                 end_i = j

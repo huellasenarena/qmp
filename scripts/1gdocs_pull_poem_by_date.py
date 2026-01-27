@@ -15,10 +15,6 @@ from _gdocs_auth import get_creds, load_config
 HEADING_RE = re.compile(r"^\s*(\d{6})\s*(?:\((.*?)\))?\s*$")
 HR_FALLBACK_RE = re.compile(r"^\s*[─]{10,}\s*$")  # por si el separador fuera texto
 
-# Google Docs API uses namedStyleType values like 'TITLE', 'HEADING_1', 'HEADING_2', etc.
-# In the UI (Spanish), 'Encabezado 1' == HEADING_1 (NOT 'HEADER_1').
-DATE_STYLE_TYPES = {"HEADING_1", "TITLE"}  # allow TITLE for legacy docs
-
 def yymmdd(date_str: str) -> str:
     y, m, d = date_str.split("-")
     return y[2:] + m + d  # "260116"
@@ -82,7 +78,7 @@ def pull_poem(doc_id: str, tab_title: str, yymmdd: str) -> Tuple[Optional[str], 
     start_i = None
     title = None
     for i, item in enumerate(content):
-        if (paragraph_style(item) or "") not in DATE_STYLE_TYPES:
+        if paragraph_style(item) != "HEADING_1":
             continue
         h = extract_heading(item)
         m = HEADING_RE.match(h)
