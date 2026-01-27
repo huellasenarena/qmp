@@ -1,4 +1,107 @@
 {
-  "date": "",
-  "keywords": []
+  "date": "2026-01-28",
+  "docs_fingerprint": "sha256:6fcf5ba154cdaf5beb8fe2a56564bd64465e4113d72989b3ad8a664d40764e37",
+  "keywords": [
+    {
+      "word": "atencion como salvacion",
+      "weight": 3
+    },
+    {
+      "word": "simpleza como potencia",
+      "weight": 3
+    },
+    {
+      "word": "silencio como peso",
+      "weight": 3
+    },
+    {
+      "word": "delegacion de agencia",
+      "weight": 3
+    },
+    {
+      "word": "performatividad domestica",
+      "weight": 3
+    },
+    {
+      "word": "precariedad del cuidado",
+      "weight": 3
+    },
+    {
+      "word": "ritualizacion",
+      "weight": 2
+    },
+    {
+      "word": "relectura",
+      "weight": 2
+    },
+    {
+      "word": "expectacion",
+      "weight": 2
+    },
+    {
+      "word": "reciprocidad temporal",
+      "weight": 2
+    },
+    {
+      "word": "tension humano-tecnologica",
+      "weight": 2
+    },
+    {
+      "word": "intento como estrategia",
+      "weight": 2
+    },
+    {
+      "word": "reverberacion",
+      "weight": 2
+    },
+    {
+      "word": "pan",
+      "weight": 1
+    },
+    {
+      "word": "maquinas",
+      "weight": 1
+    },
+    {
+      "word": "mano",
+      "weight": 1
+    },
+    {
+      "word": "microondas",
+      "weight": 1
+    },
+    {
+      "word": "cuatro quesos",
+      "weight": 1
+    },
+    {
+      "word": "salsa",
+      "weight": 1
+    },
+    {
+      "word": "gorro",
+      "weight": 1
+    },
+    {
+      "word": "chef",
+      "weight": 1
+    },
+    {
+      "word": "familia",
+      "weight": 1
+    },
+    {
+      "word": "aeropuerto",
+      "weight": 1
+    },
+    {
+      "word": "burbujeo",
+      "weight": 1
+    },
+    {
+      "word": "silbido",
+      "weight": 1
+    }
+  ],
+  "generated_at": "2026-01-27T03:11:27"
 }
