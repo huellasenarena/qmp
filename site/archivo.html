@@ -347,9 +347,12 @@
     //to normalize, avoid accents etc...
       function normalize(s) {
         return (s || '')
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '');
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[-–—_]+/g, ' ')     // <- clave: guiones a espacios
+            .replace(/\s+/g, ' ')        // <- colapsar espacios
+            .trim();
       }
 
       function keywordScore(entry, terms, fullQuery) {
@@ -359,7 +362,7 @@
         const searchText = entry.dataset.search || '';
 
          // --- helpers ---
-        const kwWords = (kw) => kw.word.split(/\s+/).filter(Boolean);
+        const kwWords = (kw) => kw.word.split(/[\s\-–—_]+/).filter(Boolean);
 
           // 1) Match de FRASE exacta (prioridad máxima)
         if (fullQuery && terms.length >= 2) {
