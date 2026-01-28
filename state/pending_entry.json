@@ -1,114 +1,110 @@
 {
-  "date": "2026-01-28",
+  "date": "2026-01-29",
   "month": "2026-01",
-  "file": "textos/2026-01-28.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "pan",
+  "file": "textos/2026-01-29.txt",
+  "my_poem_title": "la ausencia conduciendo",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Ida Vitale",
-    "poem_title": "RECURSOS",
+    "poem_title": "LA GRAN PREGUNTA",
     "poem_snippet": "",
     "book_title": "Poesía Reunida"
   },
   "keywords": [
     {
-      "word": "atencion como salvacion",
+      "word": "ausencia como agencia",
       "weight": 3
     },
     {
-      "word": "delegacion de agencia",
+      "word": "identidad por sustraccion",
       "weight": 3
     },
     {
-      "word": "performatividad domestica",
+      "word": "liminalidad decisoria",
       "weight": 3
     },
     {
-      "word": "precariedad del cuidado",
+      "word": "muerte como topografia",
       "weight": 3
     },
     {
-      "word": "silencio como peso",
+      "word": "omision como eleccion",
       "weight": 3
     },
     {
-      "word": "simpleza como potencia",
-      "weight": 3
-    },
-    {
-      "word": "expectacion",
+      "word": "abandono como practica",
       "weight": 2
     },
     {
-      "word": "intento como estrategia",
+      "word": "anclaje c corporal",
       "weight": 2
     },
     {
-      "word": "reciprocidad temporal",
+      "word": "gesto minimo",
       "weight": 2
     },
     {
-      "word": "relectura",
+      "word": "incertidumbre formal",
       "weight": 2
     },
     {
-      "word": "reverberacion",
+      "word": "negacion activa",
       "weight": 2
     },
     {
-      "word": "ritualizacion",
+      "word": "opciones antiteticas",
       "weight": 2
     },
     {
-      "word": "tension humano-tecnologica",
+      "word": "simulacro de ausencia",
       "weight": 2
     },
     {
-      "word": "aeropuerto",
+      "word": "amonitas",
       "weight": 1
     },
     {
-      "word": "burbujeo",
+      "word": "asiento",
       "weight": 1
     },
     {
-      "word": "chef",
+      "word": "conductor",
       "weight": 1
     },
     {
-      "word": "cuatro quesos",
+      "word": "dedo",
       "weight": 1
     },
     {
-      "word": "familia",
+      "word": "enterrarse",
       "weight": 1
     },
     {
-      "word": "gorro",
+      "word": "estancia",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "flor",
       "weight": 1
     },
     {
-      "word": "maquinas",
+      "word": "mar",
       "weight": 1
     },
     {
-      "word": "microondas",
+      "word": "muerte",
       "weight": 1
     },
     {
-      "word": "pan",
+      "word": "nada",
       "weight": 1
     },
     {
-      "word": "salsa",
+      "word": "piedras",
       "weight": 1
     },
     {
-      "word": "silbido",
+      "word": "regar",
       "weight": 1
     }
   ]

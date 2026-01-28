@@ -1,0 +1,28 @@
+FECHA: 2026-01-29
+MY_POEM_TITLE: la ausencia conduciendo
+POETA: Ida Vitale
+POEM_TITLE: LA GRAN PREGUNTA
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+una nada en el asiento del conductor
+una nada que con el dedo elegí
+una nada dejando de regar la flor
+una nada que se parece a mi
+
+# POEMA_CITADO
+
+¿QUÉ hacer? ¿Abrir al mar la estancia de la muerte? ¿O enterrarse entre piedras que encierran amonitas fantasmas y prueban que fue agua este humano desierto?
+
+# TEXTO
+
+Dos opciones, sólo dos, para elegir: "Abrir al mar la estancia de la muerte" o "enterrarse entre piedras que encierran amonitas fantasmas". El narrador exhibe una incertidumbre ante la muerte, no sólo porque no sabe cómo afrontarla, sino también porque *no sabe su forma*.
+
+La primera opción ("Abrir al mar…"): El narrador puede introducir, de alguna manera, el mar a la estancia de la muerte. Aunque la relación precisa entre la estancia y la muerte no está clara, hay una relación de todos modos. Una estancia es lo seco, lo vasto, el vacío… entonces cuando dice "la estancia de la muerte" podemos asociar la muerte con eso; donde hay la estancia, hay la muerte de alguna manera.
+
+Entonces, ¿qué significa abrir al mar esta estancia? Lo que sabemos es que hay *la exposición* de lo húmedo a lo seco; la muerte se enfrenta al contrario de la estancia.
+
+La segunda opción ("O enterrarse…"): Aquí, en lugar de abrir, el narrador se cierra. Estamos en lo seco (segunda referencia a lo seco), donde está rodeado por piedras con "amonitas fantasmas" (segunda referencia a lo húmedo). Aquí, el narrador controla lo seco, a diferencia de la primera pregunta donde podía controlar lo húmedo; además, aquí hay la *desaparición* del agua porque vemos que, en el pasado, había amonitas, ya reducidas a fantasmas. Esas amonitas pueden probar que este humano desierto fue agua. Lo leo como diciendo que ya hay la ausencia del agua *en lo humano*. Antes, lo seco tuvo una exposición al agua… pero aquí solo hay la sequedad.
+
+¿Cómo comparar esas opciones? Lo leo así: podemos relacionar dos contrarios o sumergirnos completamente en uno de ellos. Es una encrucijada.
