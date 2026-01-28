@@ -24,8 +24,12 @@ jobs:
         run: |
           python -V
           python -c "print('ok from github actions')"
-          
+
       - name: Run dummy sweep
         run: |
           python scripts/sweep_dummy.py
+          
+      - name: qcrear auto (single date)
+        run: |
+          bash scripts/qcrear.sh 2026-01-29 --auto
 

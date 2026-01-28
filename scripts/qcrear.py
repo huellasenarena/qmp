@@ -10,6 +10,7 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Optional, Tuple
 
+AUTO = "--auto" in sys.argv
 
 # -----------------------------
 # UI helpers
@@ -39,6 +40,11 @@ def prompt_yn(question: str, default_yes: bool = False) -> bool:
     default_yes=False -> [y/N]
     default_yes=True  -> [Y/n]
     """
+    if AUTO:
+        # En CI / automation: jamás bloqueamos por input()
+        # Respetamos el default, así puedes controlar la lógica desde el código.
+        return default_yes
+
     suffix = "[Y/n]" if default_yes else "[y/N]"
     while True:
         ans = input(f"{question} {suffix}: ").strip()
@@ -50,7 +56,7 @@ def prompt_yn(question: str, default_yes: bool = False) -> bool:
             return True
         if ans.lower() in {"n", "no"}:
             return False
-        println("[qcrear] Responde y/n, o escribe 'salir'.")
+
 
 
 class UserAbort(Exception):
@@ -653,7 +659,7 @@ def main() -> int:
         # Preview (una sola vez)
         # -----------------------------
         println("")
-        want_preview = prompt_yn("[qcrear] ¿Ver preview de los 3 escritos?", default_yes=True)
+        want_preview = prompt_yn("[qcrear] ¿Ver preview de los 3 escritos?", default_yes=False)
         if want_preview:
             println("")
             println(SEP)
@@ -750,7 +756,7 @@ def main() -> int:
 
         # Si no usamos pending, preguntar si quieres generar
         if keywords is None:
-            gen_now = prompt_yn("[qcrear] No hay keywords vigentes. ¿Generar keywords ahora?", default_yes=False)
+            gen_now = prompt_yn("[qcrear] No hay keywords vigentes. ¿Generar keywords ahora?", default_yes=True)
             if not gen_now:
                 println("[qcrear] OK. No generé keywords. (No es posible publicar sin keywords.)")
                 return 0
@@ -765,7 +771,7 @@ def main() -> int:
             for w, wt in pairs[:10]:
                 println(f"  - {w} ({wt})")
 
-            ok_kw = prompt_yn("[qcrear] ¿Confirmas estas keywords?", default_yes=False)
+            ok_kw = prompt_yn("[qcrear] ¿Confirmas estas keywords?", default_yes=True)
             if not ok_kw:
                 raise UserAbort()
 
@@ -773,7 +779,7 @@ def main() -> int:
             println("[qcrear] ✅ pending_keywords.txt actualizado.")
 
         println("")
-        publish_now = prompt_yn("[qcrear] Todo listo. ¿Publicar ahora (archivo.json + commit + push)?", default_yes=False)
+        publish_now = prompt_yn("[qcrear] Todo listo. ¿Publicar ahora (archivo.json + commit + push)?", default_yes=True)
         if not publish_now:
             println("[qcrear] OK. No publiqué. Puedes volver a ejecutar qcrear cuando quieras.")
             return 0
@@ -853,7 +859,7 @@ def main() -> int:
         println("")
         println(f"[qcrear] Fecha:  {target}")
         println(f"[qcrear] Commit: {msg}")
-        confirm = prompt_yn("[qcrear] ¿Confirmar publish (commit + push)?", default_yes=False)
+        confirm = prompt_yn("[qcrear] ¿Confirmar publish (commit + push)?", default_yes=True)
         if not confirm:
             println("[qcrear] OK. Cancelado. No se publicó nada.")
             return 0
