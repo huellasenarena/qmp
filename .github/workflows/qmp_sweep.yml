@@ -28,8 +28,16 @@ jobs:
       - name: Run dummy sweep
         run: |
           python scripts/sweep_dummy.py
-          
-      - name: qcrear auto (single date)
+
+      - name: qcrear auto (existing date)
+        run: |
+          bash scripts/qcrear.sh 2026-01-29 --auto
+
+      - name: qcrear auto (valid date)
+        run: |
+          bash scripts/qcrear.sh 2026-01-29 --auto
+
+      - name: qcrear auto (error date)
         run: |
           bash scripts/qcrear.sh 2026-01-29 --auto
 
