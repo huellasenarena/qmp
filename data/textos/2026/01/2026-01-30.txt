@@ -1,0 +1,44 @@
+FECHA: 2026-01-30
+MY_POEM_TITLE: el tren sale
+POETA: Ida Vitale
+POEM_TITLE: VEGETAR
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+llegue a la estación de tren
+cuando la chimenea estaba tosiendo
+para despertar las ruedas
+y deslizar las puertas juntos
+
+pude imaginar mis piernas
+balanceándose y en el último
+momento posible
+interrumpir el abrazo de las puertas;
+pude visualizarlo
+por un segundo
+
+pero yo flaqué hasta el banco
+para esperar;
+fue como nunca
+lo hubiera visto el tren
+
+anocheció y la altavoz
+escupió que fue
+el último
+
+# POEMA_CITADO
+
+¿SERÁ tan malo vegetar? ¿Habrá que echar raíces, con la permanencia que eso implica? Quizás baste un poco de arena, pero entonces será un cacto lo que venga a nuevo estado. Sin duda será mejor buscar para la experiencia un poco de buena tierra negra, porque tampoco cualquier tierra se presta para la aventura que comienza. ¿Serán suficientes unos brotes? Pero por más que uno se ponga voluntarista, aquéllos no van a aparecer por ningún lado si no logra una mínima raíz. Y para esto se necesita quietud. ¿Hundimiento y quietud?
+
+# TEXTO
+
+Tesis: Me parece que el narrador juega con el verbo "vegetar": hay el sentido de un humano que se queda pasivo, pero también una planta puede vegetar; el narrador describe el proceso de plantar pero, al final, no sabe dónde empezar. Una lectura posible es que cuando no hay un objetivo claro, no hay un proceso claro tampoco, y nos quedamos en la inacción.
+
+El narrador usa mucho lenguaje evaluativo —"malo", "baste", "pero entonces", "mejor", "tampoco cualquier tierra se presta", "suficientes"— pero la pregunta sigue siendo: ¿para quién/qué? Este lenguaje deja sin aclarar la meta del narrador.
+
+Además, vacila entre opciones —el tipo de suelo, el tipo de planta, cómo tener una mínima raíz— pero finalmente se queda sin un proceso definitivo. Más bien, se pregunta, considera, rechaza, y se pregunta. Se lee como *un ciclo* donde el hablante parece preguntarse una y otra vez, incapaz de tomar una decisión.
+
+Reconoce que necesita un comienzo ("una mínima raíz"), pero cuando se trata de *cómo*... no sabe. Se pregunta y duda sobre el proceso. En lugar de intentar y ver, imagina posibilidades y, al final del poema, no hay una decisión tomada ni la sugerencia de que vaya a tomar una. Asimismo, con su última pregunta "¿Hundimiento y quietud?", retornamos al principio: "¿Habrá que echar raíces, con la permanencia que eso implica?" Puedo imaginar esas preguntas ad absurdum: ¿Se desea la permanencia? ¿En caso afirmativo, necesito la quietud para eso? ¿Pero es algo que se desea? ¿En caso afirmativo, necesito la quietud?...
+
+Pienso en un adagio de la enseñanza: "el propósito determina el proceso". Cuando tenemos un objetivo claro, podemos determinar cómo realizarlo. En el poema, por falta de un objetivo —el narrador no tiene un método para evaluar las cualidades de vegetar— no puede determinar un curso de acción, y permanece indeciso.

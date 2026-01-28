@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-01-30",
+    "month": "2026-01",
+    "file": "textos/2026-01-30.txt",
+    "my_poem_title": "el tren sale",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Ida Vitale",
+      "poem_title": "VEGETAR",
+      "poem_snippet": "",
+      "book_title": "Poesía Reunida"
+    },
+    "keywords": [
+      {
+        "word": "ausencia de anclaje",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo umbral",
+        "weight": 3
+      },
+      {
+        "word": "desfase temporal",
+        "weight": 3
+      },
+      {
+        "word": "finalidad indeterminada",
+        "weight": 3
+      },
+      {
+        "word": "inactividad como fracaso",
+        "weight": 3
+      },
+      {
+        "word": "tension imaginario-acto",
+        "weight": 3
+      },
+      {
+        "word": "anticipacion frustrada",
+        "weight": 2
+      },
+      {
+        "word": "decision pospuesta",
+        "weight": 2
+      },
+      {
+        "word": "escucha mecanica",
+        "weight": 2
+      },
+      {
+        "word": "espera",
+        "weight": 2
+      },
+      {
+        "word": "hesitacion",
+        "weight": 2
+      },
+      {
+        "word": "intervencion corporal",
+        "weight": 2
+      },
+      {
+        "word": "visualizacion",
+        "weight": 2
+      },
+      {
+        "word": "abrazo de puertas",
+        "weight": 1
+      },
+      {
+        "word": "altavoz",
+        "weight": 1
+      },
+      {
+        "word": "anochecio",
+        "weight": 1
+      },
+      {
+        "word": "banco",
+        "weight": 1
+      },
+      {
+        "word": "chimenea",
+        "weight": 1
+      },
+      {
+        "word": "estacion",
+        "weight": 1
+      },
+      {
+        "word": "piernas",
+        "weight": 1
+      },
+      {
+        "word": "puertas",
+        "weight": 1
+      },
+      {
+        "word": "ruedas",
+        "weight": 1
+      },
+      {
+        "word": "tren",
+        "weight": 1
+      },
+      {
+        "word": "ultimo tren",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-29",
     "month": "2026-01",
     "file": "textos/2026-01-29.txt",
