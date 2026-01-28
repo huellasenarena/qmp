@@ -5,34 +5,31 @@ POEM_TITLE: VEGETAR
 BOOK_TITLE: Poesía Reunida
 
 # POEMA
-
 llegue a la estación de tren
 cuando la chimenea estaba tosiendo
-para despertar las ruedas
+para despertar las ruedas 
 y deslizar las puertas juntos
 
 pude imaginar mis piernas
 balanceándose y en el último
 momento posible
-interrumpir el abrazo de las puertas;
+interrumpir el abrazo de las puertas; 
 pude visualizarlo
 por un segundo
 
 pero yo flaqué hasta el banco
-para esperar;
-fue como nunca
-lo hubiera visto el tren
+–fue como nunca 
+lo hubiera visto–
+para esperar al siguiente
 
-anocheció y la altavoz
-escupió que fue
+más tarde anocheció y la altavoz
+escupió que era
 el último
 
 # POEMA_CITADO
-
 ¿SERÁ tan malo vegetar? ¿Habrá que echar raíces, con la permanencia que eso implica? Quizás baste un poco de arena, pero entonces será un cacto lo que venga a nuevo estado. Sin duda será mejor buscar para la experiencia un poco de buena tierra negra, porque tampoco cualquier tierra se presta para la aventura que comienza. ¿Serán suficientes unos brotes? Pero por más que uno se ponga voluntarista, aquéllos no van a aparecer por ningún lado si no logra una mínima raíz. Y para esto se necesita quietud. ¿Hundimiento y quietud?
 
 # TEXTO
-
 Tesis: Me parece que el narrador juega con el verbo "vegetar": hay el sentido de un humano que se queda pasivo, pero también una planta puede vegetar; el narrador describe el proceso de plantar pero, al final, no sabe dónde empezar. Una lectura posible es que cuando no hay un objetivo claro, no hay un proceso claro tampoco, y nos quedamos en la inacción.
 
 El narrador usa mucho lenguaje evaluativo —"malo", "baste", "pero entonces", "mejor", "tampoco cualquier tierra se presta", "suficientes"— pero la pregunta sigue siendo: ¿para quién/qué? Este lenguaje deja sin aclarar la meta del narrador.
