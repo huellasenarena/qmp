@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-ARCHIVO = Path("archivo.json")
+ARCHIVO = Path("data/archivo.json")
 
 def main():
     data = json.loads(ARCHIVO.read_text(encoding="utf-8"))
