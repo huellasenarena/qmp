@@ -1,5 +1,4 @@
 {
   "date": "",
-  "docs_fingerprint": "",
   "keywords": []
 }
