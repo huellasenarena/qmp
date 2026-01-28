@@ -35,9 +35,9 @@ jobs:
 
       - name: qcrear auto (valid date)
         run: |
-          bash scripts/qcrear.sh 2026-01-29 --auto
+          bash scripts/qcrear.sh 2026-01-31 --auto
 
       - name: qcrear auto (error date)
         run: |
-          bash scripts/qcrear.sh 2026-01-29 --auto
+          bash scripts/qcrear.sh 2026-02-01 --auto
 
