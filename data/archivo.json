@@ -124,67 +124,63 @@
     },
     "keywords": [
       {
-        "word": "atencion como salvacion",
+        "word": "autenticidad",
         "weight": 3
       },
       {
-        "word": "delegacion de agencia",
+        "word": "industrializacion",
         "weight": 3
       },
       {
-        "word": "performatividad domestica",
+        "word": "ritualizacion domestica",
         "weight": 3
       },
       {
-        "word": "precariedad del cuidado",
+        "word": "sencillez como potencia",
         "weight": 3
       },
       {
-        "word": "silencio como peso",
+        "word": "vulnerabilidad salvadora",
         "weight": 3
       },
       {
-        "word": "simpleza como potencia",
-        "weight": 3
-      },
-      {
-        "word": "expectacion",
+        "word": "atencion repetida",
         "weight": 2
       },
       {
-        "word": "intento como estrategia",
+        "word": "contradiccion",
         "weight": 2
       },
       {
-        "word": "reciprocidad temporal",
+        "word": "intento vs seguro",
         "weight": 2
       },
       {
-        "word": "relectura",
+        "word": "performatividad del gusto",
         "weight": 2
       },
       {
-        "word": "reverberacion",
+        "word": "ritual social de espera",
         "weight": 2
       },
       {
-        "word": "ritualizacion",
+        "word": "sobresalto",
         "weight": 2
       },
       {
-        "word": "tension humano-tecnologica",
+        "word": "temporalidad comprimida",
         "weight": 2
       },
       {
-        "word": "aeropuerto",
+        "word": "baila",
         "weight": 1
       },
       {
-        "word": "burbujeo",
+        "word": "burbujea",
         "weight": 1
       },
       {
-        "word": "chef",
+        "word": "cien por ciento reales",
         "weight": 1
       },
       {
@@ -196,15 +192,19 @@
         "weight": 1
       },
       {
-        "word": "gorro",
+        "word": "gorro de chef",
         "weight": 1
       },
       {
-        "word": "mano",
+        "word": "hechas a mano",
         "weight": 1
       },
       {
-        "word": "maquinas",
+        "word": "hecho a maquinas",
+        "weight": 1
+      },
+      {
+        "word": "hijo",
         "weight": 1
       },
       {
@@ -220,7 +220,7 @@
         "weight": 1
       },
       {
-        "word": "silbido",
+        "word": "silba",
         "weight": 1
       }
     ]
