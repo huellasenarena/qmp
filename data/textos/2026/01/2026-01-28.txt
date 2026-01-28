@@ -5,13 +5,13 @@ POEM_TITLE: RECURSOS
 BOOK_TITLE: Poesía Reunida
 
 # POEMA
-pan 
+pan
 hecho a máquinas
 hechas a mano
 
 salsa 
-inspirada por un grande
-gorro de chef
+inspirada por un 
+gorro de chef grande
 blanco pálido
 
 cuatro quesos
