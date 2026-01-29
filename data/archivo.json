@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-01-31",
+    "month": "2026-01",
+    "file": "textos/2026-01-31.txt",
+    "my_poem_title": "quitar las malas hierbas",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Ida Vitale",
+      "poem_title": "DEMASIADO TARDE",
+      "poem_snippet": "",
+      "book_title": "Poesía Reunida"
+    },
+    "keywords": [
+      {
+        "word": "borrado por proteccion",
+        "weight": 3
+      },
+      {
+        "word": "control de limites",
+        "weight": 3
+      },
+      {
+        "word": "cuidado como violencia",
+        "weight": 3
+      },
+      {
+        "word": "imperativo de limpieza",
+        "weight": 3
+      },
+      {
+        "word": "intolerancia a la desolacion",
+        "weight": 3
+      },
+      {
+        "word": "transitoriedad como condicion",
+        "weight": 3
+      },
+      {
+        "word": "agente atmosferico",
+        "weight": 2
+      },
+      {
+        "word": "autoeliminacion",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "gesto manual",
+        "weight": 2
+      },
+      {
+        "word": "intervencion vecinal",
+        "weight": 2
+      },
+      {
+        "word": "migracion",
+        "weight": 2
+      },
+      {
+        "word": "norma estetica",
+        "weight": 2
+      },
+      {
+        "word": "tension cuidado-violencia",
+        "weight": 2
+      },
+      {
+        "word": "vaciamiento",
+        "weight": 2
+      },
+      {
+        "word": "arrancar",
+        "weight": 1
+      },
+      {
+        "word": "buenas hierbas",
+        "weight": 1
+      },
+      {
+        "word": "cerca",
+        "weight": 1
+      },
+      {
+        "word": "estornino",
+        "weight": 1
+      },
+      {
+        "word": "flor",
+        "weight": 1
+      },
+      {
+        "word": "jardin",
+        "weight": 1
+      },
+      {
+        "word": "limpiar",
+        "weight": 1
+      },
+      {
+        "word": "malas hierbas",
+        "weight": 1
+      },
+      {
+        "word": "vecino",
+        "weight": 1
+      },
+      {
+        "word": "verano",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-30",
     "month": "2026-01",
     "file": "textos/2026-01-30.txt",
