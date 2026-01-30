@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-02-01",
+    "month": "2026-02",
+    "file": "textos/2026-02-01.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "para la carrera",
+    "analysis": {
+      "poet": "Ida Vitale",
+      "poem_title": "INVERNADERO",
+      "poem_snippet": "",
+      "book_title": "Poesía Reunida"
+    },
+    "keywords": [
+      {
+        "word": "ajuste",
+        "weight": 3
+      },
+      {
+        "word": "clasificacion",
+        "weight": 3
+      },
+      {
+        "word": "comodidad como riesgo",
+        "weight": 3
+      },
+      {
+        "word": "fiabilidad",
+        "weight": 3
+      },
+      {
+        "word": "identidad performativa",
+        "weight": 3
+      },
+      {
+        "word": "preparacion",
+        "weight": 3
+      },
+      {
+        "word": "duda",
+        "weight": 2
+      },
+      {
+        "word": "economia de valor",
+        "weight": 2
+      },
+      {
+        "word": "materialidad",
+        "weight": 2
+      },
+      {
+        "word": "normatividad",
+        "weight": 2
+      },
+      {
+        "word": "procedimiento corporal",
+        "weight": 2
+      },
+      {
+        "word": "seleccion",
+        "weight": 2
+      },
+      {
+        "word": "tension comodidad seguridad",
+        "weight": 2
+      },
+      {
+        "word": "asfalto",
+        "weight": 1
+      },
+      {
+        "word": "baratos",
+        "weight": 1
+      },
+      {
+        "word": "carrera",
+        "weight": 1
+      },
+      {
+        "word": "cordones",
+        "weight": 1
+      },
+      {
+        "word": "cordones elasticos",
+        "weight": 1
+      },
+      {
+        "word": "cordones redondos",
+        "weight": 1
+      },
+      {
+        "word": "delgados",
+        "weight": 1
+      },
+      {
+        "word": "gruesos",
+        "weight": 1
+      },
+      {
+        "word": "hibridos",
+        "weight": 1
+      },
+      {
+        "word": "montana",
+        "weight": 1
+      },
+      {
+        "word": "tallas",
+        "weight": 1
+      },
+      {
+        "word": "zapatos",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-31",
     "month": "2026-01",
     "file": "textos/2026-01-31.txt",

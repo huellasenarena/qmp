@@ -1,0 +1,69 @@
+FECHA: 2026-02-01
+MY_POEM_TITLE: 
+POETA: Ida Vitale
+POEM_TITLE: INVERNADERO
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+para la carrera
+necesito zapatos
+
+se divisan en unos categorías:
+zapatos para asfalto
+zapatos para montaña
+zapatos híbridos
+
+quizás para entrenar
+necesito los zapatos híbridos
+también
+
+pero no me gustan
+los cordones de ellos
+entonces voy a cambiarlos
+
+hay cordones elásticos
+y cordones redondos
+
+de un lado, los redondos
+son más cómodos.
+pero son fiables?
+
+ah, hay tamaños diferentes.
+quizás los cordones redondos
+y gruesos son lo que busco
+
+pues los delgados son más
+baratos
+
+¿cómo?
+¿terminó la carrera?
+
+# POEMA_CITADO
+
+LA primer emoción
+fue el olor de la tierra
+mojada, oscura y fría
+en un mundo vidriado.
+
+En sus tiestos, las plantas
+desconocidas, nuevas,
+me miraron de pronto
+como seres benignos
+que pedían respeto
+dándome su cariño.
+
+Voy por un nuevo reino
+donde un zarcillo avanza
+y se prende en mi mano,
+y todo es muy distinto
+y es fragante el helecho.
+Pero es hosco este abuelo.
+
+# TEXTO
+
+*Huyendo de su familia, un niño encuentra un invernadero. Al entrar en él, el olor abrumador de la tierra, "mojada, oscura y fría", penetra en su psique. Es un mundo nuevo, extraño, aciago... pero de pronto el ambiente cambia. El invernadero, antes poco acogedor, se hace "benigno" y lleno de "cariño".
+
+Se transforma en su propio reino, un lugar donde puede conectarse, donde los zarcillos vienen para juntarse a él. El olor que echó para atrás ya es fragante.
+
+Es una escapada breve; debe enfrentarse a la realidad de la casa, al hosco abuelo; la armonía del invernadero no permanece.*
