@@ -1,114 +1,114 @@
 {
-  "date": "2026-02-01",
+  "date": "2026-02-02",
   "month": "2026-02",
-  "file": "textos/2026-02-01.txt",
+  "file": "textos/2026-02-02.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "para la carrera",
+  "my_poem_snippet": "abrir con una pregunta",
   "analysis": {
     "poet": "Ida Vitale",
-    "poem_title": "INVERNADERO",
+    "poem_title": "ISLANDIA, 2000",
     "poem_snippet": "",
     "book_title": "Poesía Reunida"
   },
   "keywords": [
     {
-      "word": "ajuste",
+      "word": "apertura interrogativa",
       "weight": 3
     },
     {
-      "word": "clasificacion",
+      "word": "freno como cuidado",
       "weight": 3
     },
     {
-      "word": "comodidad como riesgo",
+      "word": "renuncia al derecho",
       "weight": 3
     },
     {
-      "word": "fiabilidad",
+      "word": "respeto ritualizado",
       "weight": 3
     },
     {
-      "word": "identidad performativa",
+      "word": "silencio activo",
       "weight": 3
     },
     {
-      "word": "preparacion",
-      "weight": 3
-    },
-    {
-      "word": "duda",
+      "word": "ausencia de juicio",
       "weight": 2
     },
     {
-      "word": "economia de valor",
+      "word": "contraste geocultural",
       "weight": 2
     },
     {
-      "word": "materialidad",
+      "word": "cuidado territorial",
       "weight": 2
     },
     {
-      "word": "normatividad",
+      "word": "desplazamiento comparativo",
       "weight": 2
     },
     {
-      "word": "procedimiento corporal",
+      "word": "detencion del intercambio",
       "weight": 2
     },
     {
-      "word": "seleccion",
+      "word": "mediacion manual",
       "weight": 2
     },
     {
-      "word": "tension comodidad seguridad",
+      "word": "normatividad implicita",
       "weight": 2
     },
     {
-      "word": "asfalto",
+      "word": "tutela de lo pequeno",
+      "weight": 2
+    },
+    {
+      "word": "aves marinas",
       "weight": 1
     },
     {
-      "word": "baratos",
+      "word": "casas de elfos",
       "weight": 1
     },
     {
-      "word": "carrera",
+      "word": "ceibos",
       "weight": 1
     },
     {
-      "word": "cordones",
+      "word": "colores",
       "weight": 1
     },
     {
-      "word": "cordones elasticos",
+      "word": "contrato",
       "weight": 1
     },
     {
-      "word": "cordones redondos",
+      "word": "derecho",
       "weight": 1
     },
     {
-      "word": "delgados",
+      "word": "intercambio",
       "weight": 1
     },
     {
-      "word": "gruesos",
+      "word": "islandia",
       "weight": 1
     },
     {
-      "word": "hibridos",
+      "word": "manos",
       "weight": 1
     },
     {
-      "word": "montana",
+      "word": "musgo",
       "weight": 1
     },
     {
-      "word": "tallas",
+      "word": "piedras",
       "weight": 1
     },
     {
-      "word": "zapatos",
+      "word": "pregunta",
       "weight": 1
     }
   ]

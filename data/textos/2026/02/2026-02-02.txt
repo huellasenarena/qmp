@@ -1,0 +1,41 @@
+FECHA: 2026-02-02
+MY_POEM_TITLE: 
+POETA: Ida Vitale
+POEM_TITLE: ISLANDIA, 2000
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+abrir con una pregunta
+un contrato implícito
+frenar el intercambio?
+derecho que no tengo ya
+
+# POEMA_CITADO
+
+CEIBOS, ceibas, solamente una letra
+marca la clara diferencia.
+Rojos ceibos y verdes ceibas reinan,
+como saúcos, sauces y cipreses,
+en la dichosa incandescencia usual
+de un sur lleno de cantos y colores.
+En Islandia, la isla azul y blanca,
+no hay pájaros, tan sólo aves marinas,
+ningún canto, pero sólo el de las manos,
+manos que mueven no todas las piedras*
+para que el musgo nazca y el verde
+empiece a cantar, entonces suave.
+
+*No todas, porque las que pueden ser casa de un elfo, en los que muchos creen, se respetan.
+
+# TEXTO
+
+Una descripción combinada con un simple e implícito tema, **ISLANDIA, 2000** compara el entorno familiar del narrador (Sudamérica) con Islandia. Nota algunas diferencias: la naturaleza, los animales, lo colorido, el canto y, más discretamente, diferencias de mitos y la relación humano-naturaleza. Aunque el tono es más ilustrativo, vemos una ausencia de juicio así como un respeto por las costumbres de la cultura desconocida del narrador.
+
+Las primeras diferencias se notan fácilmente. Las últimas necesitan un poco más de trabajo.
+
+La nota al pie, como la leo, tiene un significado a pesar de su brevedad: introduce un mito islandés, los elfos. "Se respetan" las casas de los elfos, dice el narrador. Esta breve nota sugiere un conocimiento del folclore islandés *y un respeto por él*. El narrador, asumo, viene de otra cultura con sus propios mitos... pero en Islandia elige cumplir con las normas diferentes.
+
+Al describir los árboles, el narrador los caracteriza como reinando; es un verbo de poder, de importancia, de influencia, de grandeza. Por el contrario, en Islandia son "las manos... que mueven... las piedras"; el poder de la naturaleza en Sudamérica contrasta con su cultivo en Islandia... "Lo usual" tiene connotaciones diferentes.
+
+El tono del poema, observacional en lugar de crítico, implica la curiosidad del narrador. Para mí, esa es la conclusión del poema: en nuevos lugares, debemos dar un paso atrás y ser conscientes de diferentes normas de vida; diferencias sí existen, pero no merecen nuestro juicio.
