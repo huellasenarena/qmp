@@ -5,20 +5,19 @@ POEM_TITLE: INVERNADERO
 BOOK_TITLE: Poesía Reunida
 
 # POEMA
-
 para la carrera
 necesito zapatos
 
-se divisan en unos categorías:
+se divisan en unas categorías:
 zapatos para asfalto
 zapatos para montaña
 zapatos híbridos
 
-quizás para entrenar
+quizás para entrenar 
 necesito los zapatos híbridos
 también
 
-pero no me gustan
+pero no me gustan 
 los cordones de ellos
 entonces voy a cambiarlos
 
@@ -26,8 +25,8 @@ hay cordones elásticos
 y cordones redondos
 
 de un lado, los redondos
-son más cómodos.
-pero son fiables?
+son más cómodos. 
+¿pero son fiables?
 
 ah, hay tamaños diferentes.
 quizás los cordones redondos
@@ -40,7 +39,6 @@ baratos
 ¿terminó la carrera?
 
 # POEMA_CITADO
-
 LA primer emoción
 fue el olor de la tierra
 mojada, oscura y fría
@@ -61,7 +59,6 @@ y es fragante el helecho.
 Pero es hosco este abuelo.
 
 # TEXTO
-
 *Huyendo de su familia, un niño encuentra un invernadero. Al entrar en él, el olor abrumador de la tierra, "mojada, oscura y fría", penetra en su psique. Es un mundo nuevo, extraño, aciago... pero de pronto el ambiente cambia. El invernadero, antes poco acogedor, se hace "benigno" y lleno de "cariño".
 
 Se transforma en su propio reino, un lugar donde puede conectarse, donde los zarcillos vienen para juntarse a él. El olor que echó para atrás ya es fragante.
