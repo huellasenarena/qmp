@@ -1,0 +1,49 @@
+FECHA: 2026-02-03
+MY_POEM_TITLE: 
+POETA: Ida Vitale
+POEM_TITLE: A TORO PASADO
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+y todo estuvo claro
+se fueron las nubes
+fue solo por un momento,
+antes de que bajes
+
+# POEMA_CITADO
+
+AHORA es ayer, cuando te imaginabas
+contra la gala real del cielo abierto,
+en calma. Ahora sí, ya has llegado
+al mercado del inútil saber.
+Inesperados ámbares rezagan
+un fósil de otro tiempo, llegan sueños,
+recuerdo analgésicos, sensatos,
+pero sólo algo como algas queda
+escurriendo de manos que ignoraron
+siempre el arte de asir el bien que huye.
+Abrumado lo que se creyó a salvo,
+sin fe ya esperas lo poco que resta.
+
+# TEXTO
+
+En términos sencillos, hay dos cosas ciertas: lo bien y lo mal. El narrador habla a alguien que esperaba "la gala real del cielo abierto, en calma" y, por un momento, recibe "sueños, recuerdos analgésicos, sensatos". Es decir, esperaba algo bueno ("la gala real" es una imagen positiva) y recibe algo bueno ("sueños...").
+
+Pero es una farsa: La persona llegó no a este cielo abierto... sino al mercado del inútil saber. A mis ojos, "el mercado del inútil saber" es una evaluación del narrador. *Sí*, la persona en cuestión llegó al lugar, pero su visión del lugar es diferente de la del narrador.
+
+Leo "el mercado del inútil saber" e "Inesperados ámbares rezagan un fósil de otro tiempo" como partes de la misma idea: *aquí, la persona tiene poco valor*. Un mercado es el intercambio y en este mercado, lo que sabe es "inútil"... el mercado no lo valora.
+
+Los ámbares representan su extinción social también: él, el "fósil de otro tiempo", se queda atrás; además, no anticipaba su abandono ("Inesperados ámbares"). Tenía una visión calma y acogedora... pero saludó un desplazamiento y devaluación.
+
+Los sueños inter alia no quedan; "sólo algo como algas queda". Es decir, lo que queda (y que no puede conservar) no es una expectativa (sueño), y no es reconfortante tampoco (recuerdos analgésicos, sensatos); todo lo bueno se fue; lo que queda y que está yéndose tiene poco valor.
+
+*Ve* lo que perdió, lo siente ("Abrumado lo que se creyó a salvo"). Pensó que lo bueno podía durar, pero se da cuenta de lo que ya no existe, y se siente abrumado por eso.
+
+Al final, acepta la decepción (está "sin fe"), todavía esperando algo más ("ya esperas lo poco que resta").
+
+Noto el uso de lenguaje que implica una pasividad en la persona en cuestión: "rezagan", "llegan sueños...", "queda", "esperar"... esos verbos sugieren que a esta persona las cosas le *pasan* sin su decisión. No decidió ser abandonado; fue rezagado. No intentó preservar los sueños; llegan. No va a buscar lo poco que resta; espera. A su vez, se nota su incapacidad en "el arte de *asir* el bien que huye". ¿Quizás el texto muestra las consecuencias de un comportamiento pasivo?
+
+En conjunto, el poema presenta una causa perdida; la persona se veía un futuro idílico pero se encuentra donde el saber carece de valor. Desaparecen esperanzas, consolación y sensibilidad. Todavía tiende la mano... pero es con incredulidad; conectando esto con el título, es en vano también (a toro pasado).
+
+Una lectura posible es que el sujeto del poema es la muerte. La persona imaginó una muerte calma y placentera, pero su visión no coincidió con la realidad. Todo lo bueno pasó y se agarra del poco valor que queda. Pensando en otros poemas de Vitale ("LA GRAN PREGUNTA", "LA NOCHE, ESTA MORADA"), tengo la impresión de que la muerte es un tema implícito en sus poemas y puede ser el caso aquí.

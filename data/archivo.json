@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-02-03",
+    "month": "2026-02",
+    "file": "textos/2026-02-03.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "y todo estuvo claro",
+    "analysis": {
+      "poet": "Ida Vitale",
+      "poem_title": "A TORO PASADO",
+      "poem_snippet": "",
+      "book_title": "Poesía Reunida"
+    },
+    "keywords": [
+      {
+        "word": "claridad-anticipo-de-caida",
+        "weight": 3
+      },
+      {
+        "word": "epifania-fugaz",
+        "weight": 3
+      },
+      {
+        "word": "expectativa-frustrada",
+        "weight": 3
+      },
+      {
+        "word": "finitud",
+        "weight": 3
+      },
+      {
+        "word": "fuga-del-bien",
+        "weight": 3
+      },
+      {
+        "word": "umbral",
+        "weight": 3
+      },
+      {
+        "word": "descenso-inminente",
+        "weight": 2
+      },
+      {
+        "word": "desposesion",
+        "weight": 2
+      },
+      {
+        "word": "devaluacion-del-saber",
+        "weight": 2
+      },
+      {
+        "word": "dislocacion-temporal",
+        "weight": 2
+      },
+      {
+        "word": "erosion-del-asir",
+        "weight": 2
+      },
+      {
+        "word": "vaciamiento",
+        "weight": 2
+      },
+      {
+        "word": "algas",
+        "weight": 1
+      },
+      {
+        "word": "analgesicos",
+        "weight": 1
+      },
+      {
+        "word": "cielo",
+        "weight": 1
+      },
+      {
+        "word": "fe",
+        "weight": 1
+      },
+      {
+        "word": "gala",
+        "weight": 1
+      },
+      {
+        "word": "manos",
+        "weight": 1
+      },
+      {
+        "word": "mercado",
+        "weight": 1
+      },
+      {
+        "word": "momento",
+        "weight": 1
+      },
+      {
+        "word": "nubes",
+        "weight": 1
+      },
+      {
+        "word": "recuerdo",
+        "weight": 1
+      },
+      {
+        "word": "suenos",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-02",
     "month": "2026-02",
     "file": "textos/2026-02-02.txt",
