@@ -1,5 +1,84 @@
 [
   {
+    "date": "2026-02-04",
+    "month": "2026-02",
+    "file": "textos/2026-02-04.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "me llamaste por mi nombre",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "VAPOR, HÁLITO, NEBLINA,/NIEBLA, EFLUVIO, EMANACIÓN",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
+    },
+    "keywords": [
+      {
+        "word": "anticipacion corporal",
+        "weight": 3
+      },
+      {
+        "word": "ausencia activa",
+        "weight": 3
+      },
+      {
+        "word": "nombramiento",
+        "weight": 3
+      },
+      {
+        "word": "performatividad afectiva",
+        "weight": 3
+      },
+      {
+        "word": "brecha perceptiva",
+        "weight": 2
+      },
+      {
+        "word": "contacto fallido",
+        "weight": 2
+      },
+      {
+        "word": "contencion emotiva",
+        "weight": 2
+      },
+      {
+        "word": "decepcion",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento",
+        "weight": 2
+      },
+      {
+        "word": "eco",
+        "weight": 2
+      },
+      {
+        "word": "correr",
+        "weight": 1
+      },
+      {
+        "word": "llorar",
+        "weight": 1
+      },
+      {
+        "word": "nombre",
+        "weight": 1
+      },
+      {
+        "word": "silbido",
+        "weight": 1
+      },
+      {
+        "word": "viento",
+        "weight": 1
+      },
+      {
+        "word": "voz",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-03",
     "month": "2026-02",
     "file": "textos/2026-02-03.txt",
