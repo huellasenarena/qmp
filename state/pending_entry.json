@@ -1,78 +1,110 @@
 {
-  "date": "2026-02-04",
+  "date": "2026-02-05",
   "month": "2026-02",
-  "file": "textos/2026-02-04.txt",
+  "file": "textos/2026-02-05.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "me llamaste por mi nombre",
+  "my_poem_snippet": "cuando la corriente",
   "analysis": {
     "poet": "Luna Miguel",
-    "poem_title": "VAPOR, HÁLITO, NEBLINA,/NIEBLA, EFLUVIO, EMANACIÓN",
+    "poem_title": "MAMÁ HA INVITADO A UNAS AMIGAS",
     "poem_snippet": "",
     "book_title": "Poesía Masculina"
   },
   "keywords": [
     {
-      "word": "anticipacion corporal",
+      "word": "animacion de lo inanimado",
       "weight": 3
     },
     {
-      "word": "ausencia activa",
+      "word": "domesticacion del impulso",
       "weight": 3
     },
     {
-      "word": "nombramiento",
+      "word": "ira productiva",
       "weight": 3
     },
     {
-      "word": "performatividad afectiva",
+      "word": "potencialidad en la espera",
       "weight": 3
     },
     {
-      "word": "brecha perceptiva",
+      "word": "reposo indeciso",
+      "weight": 3
+    },
+    {
+      "word": "transduccion",
+      "weight": 3
+    },
+    {
+      "word": "conversion energetica",
       "weight": 2
     },
     {
-      "word": "contacto fallido",
+      "word": "desplazamiento afectivo",
       "weight": 2
     },
     {
-      "word": "contencion emotiva",
+      "word": "economia del calor",
       "weight": 2
     },
     {
-      "word": "decepcion",
+      "word": "intermitencia",
       "weight": 2
     },
     {
-      "word": "desplazamiento",
+      "word": "materialidad del afecto",
       "weight": 2
     },
     {
-      "word": "eco",
+      "word": "personificacion como estrategia",
       "weight": 2
     },
     {
-      "word": "correr",
+      "word": "tension entre dormir y actuar",
+      "weight": 2
+    },
+    {
+      "word": "vigilancia",
+      "weight": 2
+    },
+    {
+      "word": "bombilla",
       "weight": 1
     },
     {
-      "word": "llorar",
+      "word": "calor",
       "weight": 1
     },
     {
-      "word": "nombre",
+      "word": "cama",
       "weight": 1
     },
     {
-      "word": "silbido",
+      "word": "corriente",
       "weight": 1
     },
     {
-      "word": "viento",
+      "word": "descanso",
       "weight": 1
     },
     {
-      "word": "voz",
+      "word": "espera",
+      "weight": 1
+    },
+    {
+      "word": "luz",
+      "weight": 1
+    },
+    {
+      "word": "olor",
+      "weight": 1
+    },
+    {
+      "word": "soledad",
+      "weight": 1
+    },
+    {
+      "word": "sueno",
       "weight": 1
     }
   ]
