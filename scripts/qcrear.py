@@ -11,6 +11,8 @@ from pathlib import Path
 from typing import Optional, Tuple
 
 AUTO = "--auto" in sys.argv
+DRY_RUN = "--dry-run" in sys.argv
+
 
 # -----------------------------
 # UI helpers
@@ -778,11 +780,16 @@ def main() -> int:
             write_pending_keywords(target, keywords, fp)
             println("[qcrear] ✅ pending_keywords.txt actualizado.")
 
-        println("")
-        publish_now = prompt_yn("[qcrear] Todo listo. ¿Publicar ahora (archivo.json + commit + push)?", default_yes=True)
-        if not publish_now:
-            println("[qcrear] OK. No publiqué. Puedes volver a ejecutar qcrear cuando quieras.")
-            return 0
+            print("")
+            if DRY_RUN:
+                println("[qcrear] DRY RUN: Todo listo, pero NO publicaré (sin archivo.json, sin commit, sin push).")
+                return 0
+
+            publish_now = prompt_yn("[qcrear] Todo listo. ¿Publicar ahora (archivo.json + commit + push)?", default_yes=True)
+            if not publish_now:
+                println("[qcrear] OK. No publiqué. Puedes volver a ejecutar qcrear cuando quieras.")
+                return 0
+
 
         # -----------------------------
         # Publish gate (ultra-robusto)
@@ -859,6 +866,10 @@ def main() -> int:
         println("")
         println(f"[qcrear] Fecha:  {target}")
         println(f"[qcrear] Commit: {msg}")
+        if DRY_RUN:
+            println("[qcrear] DRY RUN: llegué al gate final, pero NO haré commit/push.")
+            return 0
+
         confirm = prompt_yn("[qcrear] ¿Confirmar publish (commit + push)?", default_yes=True)
         if not confirm:
             println("[qcrear] OK. Cancelado. No se publicó nada.")
