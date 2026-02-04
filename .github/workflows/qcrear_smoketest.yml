@@ -1,0 +1,65 @@
+name: qcrear smoke test (already published date)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Fecha ya publicada (YYYY-MM-DD) — debe existir en data/archivo.json"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  qcrear-smoketest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Write service account keyfile
+        env:
+          QMP_GDOCS_SA_KEY_JSON: ${{ secrets.QMP_GDOCS_SA_KEY_JSON }}
+        run: |
+          mkdir -p .secrets
+          python - <<'PY'
+          import os, pathlib
+          key = os.environ["QMP_GDOCS_SA_KEY_JSON"]
+          p = pathlib.Path(".secrets/sa.json")
+          p.write_text(key, encoding="utf-8")
+          print("Wrote", p)
+          PY
+          chmod 600 .secrets/sa.json
+
+      - name: Assert date is already in data/archivo.json
+        env:
+          DATE: ${{ inputs.date }}
+        run: |
+          python - <<'PY'
+          import json, os
+          date = os.environ["DATE"]
+          with open("data/archivo.json", "r", encoding="utf-8") as f:
+            archivo = json.load(f)
+          dates = [e.get("date") for e in archivo]
+          if date not in dates:
+            raise SystemExit(f"ERROR: {date} NO está en data/archivo.json (elige una fecha ya publicada).")
+          print("OK: fecha publicada encontrada en archivo.json:", date)
+          PY
+
+      - name: Run qcrear (should fast-exit)
+        env:
+          QMP_GDOCS_SA_KEYFILE: ${{ github.workspace }}/.secrets/sa.json
+          PYTHONPATH: ${{ github.workspace }}/scripts:${{ github.workspace }}
+        working-directory: scripts
+        run: |
+          python qcrear.py "${{ inputs.date }}" --auto
