@@ -45,6 +45,7 @@ jobs:
         env:
           QMP_GDOCS_SA_KEYFILE: ${{ github.workspace }}/.secrets/sa.json
           QMP_DOC_ID: "1s_n58zfRhYd1caq6QldCF99Kke3QEbPvLfl-57Q-1j0"
+          PYTHONPATH: ${{ github.workspace }}/scripts
         run: |
           python -c "from _gdocs_auth import get_creds; c=get_creds(); print('CREDS_TYPE=', type(c).__module__ + '.' + type(c).__name__)"
           python - <<'PY'
@@ -61,3 +62,4 @@ jobs:
           for t in d.get("tabs", []):
               print("-", (t.get("tabProperties", {}) or {}).get("title"))
           PY
+
