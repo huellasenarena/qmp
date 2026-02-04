@@ -1,0 +1,66 @@
+FECHA: 2026-02-06
+MY_POEM_TITLE: 
+POETA: Luna Miguel
+POEM_TITLE: LUNA HA BESADO A ERNESTO
+BOOK_TITLE: Poesía Masculina
+
+# POEMA
+
+ves la luna
+dices
+en mi camino
+
+yo la veo
+también
+veo tu luna
+
+voy a encontrarla
+tu vos no será nada más
+que un susurro
+
+que casi me puede hacer
+dar la vuelta
+
+# POEMA_CITADO
+
+dice que no siente nada por él
+que en todo caso lo siente hacia su boca
+dice que su boca se parece a un río
+en el que nunca se atrevería a nadar
+pero al que tocaría con los dedos de los pies
+para comprobar la temperatura del agua
+a ella le gusta saber el lugar exacto de las cosas
+experimenta con sus manos
+quiere tocarlo todo porque es tocándolo
+como por fin entiende
+de qué está hecho el mundo
+dice que los labios de ernesto están hechos
+de una suave brisa que sus ojos la miraron
+con paciencia aquella noche en madrid
+dice que el agua estaba templada
+que en su fondo había peces robustos
+y que en sus márgenes las piedras brillaban
+como esas monedas que la gente lanza
+cuando quiere pedir un deseo egoísta
+yo no sé qué desea luna
+nunca me lo cuenta solo me susurra posibilidades
+infinitas en las que unas veces
+nos damos la mano y en las que otras veces
+con esa misma mano
+rozamos el sexo de los otros
+pero solo después de que ella haya comprobado
+la variable temperatura del océano
+preocupada por que nadie tirite de frío
+orgullosa de velar por todos
+
+# TEXTO
+
+El río está cálido y acogedor; es tentador cruzar la frontera y nadar; es tentador tomar este riesgo... pero Luna sólo lo tantea al rozar el agua con su pie, jamás sumergirse en el río de la infidelidad.
+
+Aunque presenta una no monogamia consensuada ("rozamos el sexo de los otros"), **LUNA HA BESADO A ERNESTO** sugiere que todavía hay un deseo de probar otras formas de vida. Por un lado, Luna tiene curiosidad por explorar físicamente el mundo (como un bebé) al probar las aguas de infidelidad con un beso... pero por el otro lado sus motivaciones quedan poco claras al narrador ("no sé qué desea").
+
+Lo que se dice sobre Luna es que "le gusta saber el lugar exacto de las cosas". En el "río" —la boca de Ernesto, es decir— encuentra algo atractivo (la suavidad, la paciencia, el agua templada), pero quizás algo más fuerte de lo que parece superficialmente (así interpreto los "peces robustos" en el fondo). Este río de tentación se contrapone con el "océano" visto al final; interpreto el río (un beso) como un pequeño gusto de la infidelidad... pero el océano representa la infidelidad completa. Después de tantear esas aguas de infidelidad, parece que llega a la conclusión de que la infidelidad es de hecho poco acogedora ("preocupada por que nadie tirite de frío") y continúa con la no monogamia consensuada ("rozamos el sexo de los otros pero solo después"), antes de probar de nuevo y, parece, confirmar que no está bien.
+
+En el contexto de esta yuxtaposición entre el río y el océano hay una tensión epistemológica en la base del poema: por un lado el narrador no puede determinar si Luna quiere engañarle (es decir, las "posibilidades infinitas" son algo incognoscible) y por el otro lado Luna *sabe* cómo comprender el mundo. El método de Luna de explorar sus deseos al tocarlos crea en el narrador la duda de conocer lo que quiere; es decir, el saber de Luna *causa* la ignorancia del narrador.
+
+Para terminar, me pregunto por la motivación de Luna. Dice que en la boca de Ernesto ve piedras brillantes como monedas que representan deseos egoístas, pero al final dice que Luna es "orgullosa de velar por todos". Cuando besó a Ernesto, ¿fue uno de esos deseos egoístas? ¿O fue, como el final sugiere, altruista? Una idea es que, realmente, Luna tiene este deseo egoísta pero quiere racionalizar sus acciones al decir que su motivación era de hecho "velar por todos".

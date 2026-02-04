@@ -1,1 +1,115 @@
-{}
+{
+  "date": "2026-02-06",
+  "month": "2026-02",
+  "file": "textos/2026-02-06.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "ves la luna",
+  "analysis": {
+    "poet": "Luna Miguel",
+    "poem_title": "LUNA HA BESADO A ERNESTO",
+    "poem_snippet": "",
+    "book_title": "Poesía Masculina"
+  },
+  "keywords": [
+    {
+      "word": "cuidado como coartada",
+      "weight": 3
+    },
+    {
+      "word": "deseo como exploracion del mundo",
+      "weight": 3
+    },
+    {
+      "word": "incertidumbre como metodo",
+      "weight": 3
+    },
+    {
+      "word": "norma como limite erotico",
+      "weight": 3
+    },
+    {
+      "word": "otredad en lo compartido",
+      "weight": 3
+    },
+    {
+      "word": "silencio activo",
+      "weight": 3
+    },
+    {
+      "word": "ambivalencia moral",
+      "weight": 2
+    },
+    {
+      "word": "cartografia del deseo",
+      "weight": 2
+    },
+    {
+      "word": "percepcion desdoblada",
+      "weight": 2
+    },
+    {
+      "word": "racionalizacion",
+      "weight": 2
+    },
+    {
+      "word": "tanteo tactil",
+      "weight": 2
+    },
+    {
+      "word": "tension entre avance y retroceso",
+      "weight": 2
+    },
+    {
+      "word": "umbral",
+      "weight": 2
+    },
+    {
+      "word": "voz que desvia",
+      "weight": 2
+    },
+    {
+      "word": "agua",
+      "weight": 1
+    },
+    {
+      "word": "boca",
+      "weight": 1
+    },
+    {
+      "word": "camino",
+      "weight": 1
+    },
+    {
+      "word": "dedo",
+      "weight": 1
+    },
+    {
+      "word": "labios",
+      "weight": 1
+    },
+    {
+      "word": "luna",
+      "weight": 1
+    },
+    {
+      "word": "mano",
+      "weight": 1
+    },
+    {
+      "word": "mirada",
+      "weight": 1
+    },
+    {
+      "word": "pie",
+      "weight": 1
+    },
+    {
+      "word": "rio",
+      "weight": 1
+    },
+    {
+      "word": "susurro",
+      "weight": 1
+    }
+  ]
+}
