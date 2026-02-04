@@ -25,20 +25,31 @@ function applyInlineFormatting(text) {
 
 
 function textToParagraphs(text) {
-  const paragraphs = (text || '')
-  .trim()
-  .split(/\n\s*\n/)
-  .map(p => p.trim())
-  .filter(Boolean);
+  let raw = (text || '').trim();
 
-  return paragraphs
-  .map((p, i) =>
-    i === 0
-    ? `<p class="analysis-lead">${applyInlineFormatting(escapeHtml(p))}</p>`
-    : `<p>${applyInlineFormatting(escapeHtml(p))}</p>`
-    )
-  .join('');
+  // Modo “bloque en cursiva”:
+  // si el texto entero está envuelto en * ... *
+  let blockItalic = false;
+  if (raw.startsWith('*') && raw.endsWith('*') && raw.length >= 2) {
+    blockItalic = true;
+    raw = raw.slice(1, -1).trim();
+  }
+
+  const paragraphs = raw
+    .split(/\n\s*\n/)
+    .map(p => p.trim())
+    .filter(Boolean);
+
+  return paragraphs.map((p, i) => {
+    const classes = [];
+    if (i === 0) classes.push('analysis-lead');
+    if (blockItalic) classes.push('analysis-italic');
+
+    const cls = classes.length ? ` class="${classes.join(' ')}"` : '';
+    return `<p${cls}>${applyInlineFormatting(escapeHtml(p))}</p>`;
+  }).join('');
 }
+
 
 // Parser que SOLO reconoce encabezados de sección exactos
 function parseEntry(text) {

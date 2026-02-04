@@ -11,6 +11,11 @@ header {
   padding: 0 20px;
 }
 
+.analysis-text p.analysis-italic {
+  font-style: italic;
+}
+
+
 .analysis-text em {
   font-style: italic;
 }
