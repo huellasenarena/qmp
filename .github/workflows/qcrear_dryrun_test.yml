@@ -62,6 +62,13 @@ jobs:
             raise SystemExit(f"ERROR: {date} ya está en archivo.json (elige una NO publicada).")
           print("OK: fecha NO publicada:", date)
           PY
+          
+      - name: Install gdocs.json config
+        run: |
+          mkdir -p ~/.config/qmp
+          cp gdocs.json ~/.config/qmp/gdocs.json
+          echo "Installed ~/.config/qmp/gdocs.json"
+          ls -l ~/.config/qmp/gdocs.json
 
       - name: Run qcrear (dry-run)
         env:
