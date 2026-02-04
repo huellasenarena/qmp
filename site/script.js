@@ -198,7 +198,14 @@ function setCitedMeta(chosen) {
   wrap.style.display = 'block';
 
   // Línea 1: título en negrita (sin comillas)
-  titleEl.innerHTML = title ? `<strong>${escapeHtml(title)}</strong>` : '';
+  // Línea 1: título en negrita, y "/" = salto de línea
+  if (title) {
+    const parts = title.split('/').map(s => s.trim()).filter(Boolean);
+    titleEl.innerHTML = `<strong>${parts.map(p => escapeHtml(p)).join('<br>')}</strong>`;
+  } else {
+    titleEl.innerHTML = '';
+  }
+
   titleEl.style.display = title ? 'block' : 'none';
 
   // Línea 2: autor · poemario (solo lo que exista)
@@ -282,27 +289,84 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
   }).join('\n');
 }
 
-// Formato inline mínimo para el poema citado:
-// **negrita**, *cursiva* (sin markdown completo)
-function applyInlineFormatting(s) {
-  const t = s || '';
-  // Orden importa: ** primero
-  return t
-    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+
+
+// =========================
+//  Inline parser con estado (para POEMA_CITADO)
+//  - *cursiva* puede cruzar líneas
+//  - **negrita** también
+//  - \* = asterisco literal
+// =========================
+function renderCitedInlineWithState(text, state) {
+  let out = '';
+  const s = text || '';
+  let i = 0;
+
+  while (i < s.length) {
+    const ch = s[i];
+
+    // escape: \* (o \\)
+    if (ch === '\\') {
+      const next = s[i + 1];
+      if (next === '*' || next === '\\') {
+        out += escapeHtml(next);
+        i += 2;
+        continue;
+      }
+      // si es "\" suelta, la mostramos literal
+      out += '\\';
+      i += 1;
+      continue;
+    }
+
+    // ** toggle
+    if (ch === '*' && s[i + 1] === '*') {
+      state.strong = !state.strong;
+      out += state.strong ? '<strong>' : '</strong>';
+      i += 2;
+      continue;
+    }
+
+    // * toggle
+    if (ch === '*') {
+      state.em = !state.em;
+      out += state.em ? '<em>' : '</em>';
+      i += 1;
+      continue;
+    }
+
+    // normal char
+    out += escapeHtml(ch);
+    i += 1;
+  }
+
+  return out;
 }
 
 function renderCitedPoem(citedPoemText) {
-  const lines = (citedPoemText || '').replace(/\r/g, '').split('\n');
-  return lines.map(line => {
+  const raw = (citedPoemText || '').replace(/\r/g, '');
+  const lines = raw.split('\n');
+
+  const state = { em: false, strong: false };
+  const htmlLines = lines.map((line) => {
     const rightMatch = line.match(/^\s*>>\s*(.*)$/);
     if (rightMatch) {
       const content = (rightMatch[1] || '').trim();
-      return `<span class="poem-right">${applyInlineFormatting(escapeHtml(content))}</span>`;
+      // importante: usamos el MISMO estado para que *...* pueda cruzar esta línea si quieres
+      return `<span class="poem-right">${renderCitedInlineWithState(content, state)}</span>`;
     }
-    return applyInlineFormatting(escapeHtml(line));
-  }).join('\n');
+    return renderCitedInlineWithState(line, state);
+  });
+
+  // por seguridad, cerramos tags si quedaron abiertos
+  let tail = '';
+  if (state.em) tail += '</em>';
+  if (state.strong) tail += '</strong>';
+
+  return htmlLines.join('\n') + tail;
 }
+
+
 
 
 function renderPoemWithTitleFromJson(poemText, titleFromJson) {
@@ -315,9 +379,15 @@ function renderPoemWithTitleFromJson(poemText, titleFromJson) {
   if (titleFromJson) {
     const t = document.createElement('div');
     t.className = 'poem-title';
-    t.textContent = titleFromJson;
+
+    // Soporte: "/" significa nueva línea en el título
+    // (pero sin permitir HTML; escapamos cada parte)
+    const parts = titleFromJson.split('/').map(s => s.trim()).filter(Boolean);
+    t.innerHTML = parts.map(p => escapeHtml(p)).join('<br>');
+
     wrapper.appendChild(t);
   }
+
 
   const pre = document.createElement('pre');
   pre.dataset.raw = body;          // guardamos el texto original (con |)

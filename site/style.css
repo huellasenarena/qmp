@@ -83,7 +83,7 @@ h1 {
 
 :root{
   /* Ajusta esto para mover TODO "más a la izquierda" o "más a la derecha" */
-  --poem-right-gutter: clamp(18px, 8vw, 100px);
+  --poem-right-gutter: clamp(30px, 20vw, 200px);
   /* Ancho máximo del bloque a la derecha antes de envolver */
   --poem-right-max: clamp(12ch, 22vw, 26ch);
 }
@@ -148,6 +148,15 @@ pre.analysis-poem {
   display: flow-root;
   color: #555;
 }
+
+pre.analysis-poem em {
+  font-style: italic;
+}
+
+pre.analysis-poem strong {
+  font-weight: 600;
+}
+
 
 /* Botón para mostrar/ocultar poema citado largo */
 .toggle-poem-cited {
