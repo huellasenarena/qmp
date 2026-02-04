@@ -1,12 +1,14 @@
 from __future__ import annotations
-
 import json
+import os
 from pathlib import Path
 from typing import Any, Dict
 
-from google.oauth2.credentials import Credentials
+from google.auth.credentials import Credentials
+from google.oauth2 import service_account
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+
 
 SCOPES = ["https://www.googleapis.com/auth/documents.readonly"]
 
@@ -20,10 +22,21 @@ def load_config() -> Dict[str, Any]:
     return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
 
 def get_creds() -> Credentials:
+    sa_keyfile = os.environ.get("QMP_GDOCS_SA_KEYFILE")
+    if sa_keyfile:
+        key_path = Path(sa_keyfile).expanduser()
+        if not key_path.exists():
+            raise FileNotFoundError(f"No encuentro service account keyfile: {key_path}")
+        return service_account.Credentials.from_service_account_file(
+            str(key_path),
+            scopes=SCOPES,
+        )
+
     if not CLIENT_SECRETS.exists():
         raise FileNotFoundError(f"No encuentro OAuth client JSON: {CLIENT_SECRETS}")
 
     creds = None
+
     if TOKEN_PATH.exists():
         creds = Credentials.from_authorized_user_file(str(TOKEN_PATH), SCOPES)
 
