@@ -3,8 +3,8 @@
 #  QMP — shortcuts & flow
 # =========================
 
-export OPENAI_MODEL="${OPENAI_MODEL:-gpt-5-mini}"
-export OPENAI_REASONING="${OPENAI_REASONING:-medium}"
+export OPENAI_MODEL="${OPENAI_MODEL:-gpt-5.2-2025-12-11}" 
+export OPENAI_REASONING="${OPENAI_REASONING:-high}"
 
 
 # --- QMP repo path (Mac vs Codespaces) ---
