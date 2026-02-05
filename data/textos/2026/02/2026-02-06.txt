@@ -5,24 +5,22 @@ POEM_TITLE: LUNA HA BESADO A ERNESTO
 BOOK_TITLE: Poesía Masculina
 
 # POEMA
-
 ves la luna
 dices
 en mi camino
 
-yo la veo
+yo la veo 
 también
 veo tu luna
 
 voy a encontrarla
-tu vos no será nada más
+tu voz no será nada más
 que un susurro
 
 que casi me puede hacer
 dar la vuelta
 
 # POEMA_CITADO
-
 dice que no siente nada por él
 que en todo caso lo siente hacia su boca
 dice que su boca se parece a un río
@@ -54,7 +52,6 @@ preocupada por que nadie tirite de frío
 orgullosa de velar por todos
 
 # TEXTO
-
 El río está cálido y acogedor; es tentador cruzar la frontera y nadar; es tentador tomar este riesgo... pero Luna sólo lo tantea al rozar el agua con su pie, jamás sumergirse en el río de la infidelidad.
 
 Aunque presenta una no monogamia consensuada ("rozamos el sexo de los otros"), **LUNA HA BESADO A ERNESTO** sugiere que todavía hay un deseo de probar otras formas de vida. Por un lado, Luna tiene curiosidad por explorar físicamente el mundo (como un bebé) al probar las aguas de infidelidad con un beso... pero por el otro lado sus motivaciones quedan poco claras al narrador ("no sé qué desea").
