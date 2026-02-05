@@ -63,6 +63,19 @@ jobs:
           print("OK: fecha NO publicada:", date)
           PY
           
+      - name: Write gdocs.json config
+        env:
+          QMP_GDOCS_CONFIG_JSON: ${{ secrets.QMP_GDOCS_CONFIG_JSON }}
+        run: |
+          mkdir -p ~/.config/qmp
+          python - <<'PY'
+          import os, pathlib
+          p = pathlib.Path.home() / ".config" / "qmp" / "gdocs.json"
+          p.write_text(os.environ["QMP_GDOCS_CONFIG_JSON"], encoding="utf-8")
+          print("Wrote", p)
+          PY
+          ls -l ~/.config/qmp/gdocs.json
+
       - name: Install gdocs.json config
         run: |
           mkdir -p ~/.config/qmp
