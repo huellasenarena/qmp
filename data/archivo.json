@@ -3,8 +3,8 @@
     "date": "2026-02-07",
     "month": "2026-02",
     "file": "textos/2026-02-07.txt",
-    "my_poem_title": "",
-    "my_poem_snippet": "test poem",
+    "my_poem_title": "permanecer en medio",
+    "my_poem_snippet": "",
     "analysis": {
       "poet": "Luna Miguel",
       "poem_title": "LA JOYA QUE PERDIÓ ERA AZUL",
@@ -13,64 +13,64 @@
     },
     "keywords": [
       {
-        "word": "circulacion corporal",
+        "word": "anti-jerarquia del sentido",
         "weight": 3
       },
       {
-        "word": "erosion temporal",
+        "word": "circularidad memorial",
         "weight": 3
       },
       {
-        "word": "memoria como valor",
+        "word": "politica de la posesion",
         "weight": 3
       },
       {
-        "word": "perdida como conservacion",
+        "word": "productivizacion del intermedio",
         "weight": 3
       },
       {
-        "word": "propiedad subjetiva",
+        "word": "umbralidad",
         "weight": 3
       },
       {
-        "word": "supersticion ritual",
+        "word": "valor por perdida",
         "weight": 3
       },
       {
-        "word": "circulacion de objetos",
+        "word": "desencuentro",
         "weight": 2
       },
       {
-        "word": "conflicto de agencia",
+        "word": "desposesion",
         "weight": 2
       },
       {
-        "word": "economia afectiva",
+        "word": "fetichizacion del objeto",
         "weight": 2
       },
       {
-        "word": "negociacion de pertenencia",
+        "word": "interpelacion del tu",
         "weight": 2
       },
       {
-        "word": "prueba textual",
+        "word": "lectura como ejercicio",
         "weight": 2
       },
       {
-        "word": "resonancia sonora",
+        "word": "norma de propiedad",
         "weight": 2
       },
       {
-        "word": "tension por devolucion",
+        "word": "supersticion corporal",
         "weight": 2
       },
       {
-        "word": "visibilidad y ocultacion",
+        "word": "suspenso entre vigilia y sueno",
         "weight": 2
       },
       {
-        "word": "anos",
-        "weight": 1
+        "word": "trabajo como practica poetica",
+        "weight": 2
       },
       {
         "word": "aros",
@@ -81,11 +81,11 @@
         "weight": 1
       },
       {
-        "word": "japon",
+        "word": "casa",
         "weight": 1
       },
       {
-        "word": "joyas",
+        "word": "japon",
         "weight": 1
       },
       {
@@ -101,15 +101,15 @@
         "weight": 1
       },
       {
-        "word": "oxidado",
+        "word": "oxido",
+        "weight": 1
+      },
+      {
+        "word": "pendientes",
         "weight": 1
       },
       {
         "word": "telefono",
-        "weight": 1
-      },
-      {
-        "word": "ulises",
         "weight": 1
       }
     ]

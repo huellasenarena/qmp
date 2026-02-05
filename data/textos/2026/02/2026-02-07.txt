@@ -1,15 +1,21 @@
 FECHA: 2026-02-07
-MY_POEM_TITLE: 
+MY_POEM_TITLE: permanecer en medio
 POETA: Luna Miguel
 POEM_TITLE: LA JOYA QUE PERDIÓ ERA AZUL
 BOOK_TITLE: Poesía Masculina
 
 # POEMA
+no del todo despierto
+no del todo dormido
+justo en el medio
 
-test poem
+poemas justo en el medio
+trabajo
+ejercicio
+lectura
+just en el medio
 
 # POEMA_CITADO
-
 no me gusta hablar de jerarquías
 pero te explicaré algo
 sobre esos pendientes redondos
@@ -45,7 +51,6 @@ cómo la mirarás si algún día te suplica
 que se las devuelvas
 
 # TEXTO
-
 El inicio implica que se trata el poema de "jerarquías" pero luego no aparece esta palabra otra vez y no está claro cuáles son las jerarquías de las que habla el narrador. Asimismo, queda poco claro antes del final quién es el "tú" a quien se dirige.
 
 Creo que, para entender el poema, hay que explicar estos misterios y luego presentar los temas.
