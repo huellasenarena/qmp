@@ -94,4 +94,5 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}/scripts:${{ github.workspace }}
         working-directory: scripts
         run: |
-          python qcrear.py "${{ inputs.date }}" --auto
+          python qcrear.py "${{ inputs.date }}" --auto --yes
+

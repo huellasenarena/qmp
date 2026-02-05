@@ -12,6 +12,8 @@ from typing import Optional, Tuple
 
 AUTO = "--auto" in sys.argv
 DRY_RUN = "--dry-run" in sys.argv
+ASSUME_YES = "--yes" in sys.argv
+
 
 
 # -----------------------------
@@ -45,6 +47,8 @@ def prompt_yn(question: str, default_yes: bool = False) -> bool:
     if AUTO:
         # En CI / automation: jamás bloqueamos por input()
         # Respetamos el default, así puedes controlar la lógica desde el código.
+        if ASSUME_YES:
+            return True
         return default_yes
 
     suffix = "[Y/n]" if default_yes else "[y/N]"
