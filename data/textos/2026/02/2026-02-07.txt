@@ -1,0 +1,78 @@
+FECHA: 2026-02-07
+MY_POEM_TITLE: 
+POETA: Luna Miguel
+POEM_TITLE: LA JOYA QUE PERDIÓ ERA AZUL
+BOOK_TITLE: Poesía Masculina
+
+# POEMA
+
+test poem
+
+# POEMA_CITADO
+
+no me gusta hablar de jerarquías
+pero te explicaré algo
+sobre esos pendientes redondos
+sobre esos aros de óxido enrojecido
+hacia las bordes
+o falsa plata que unas veces
+se enredaba en su melena
+y otras veces resonaba
+al chocar contra el teléfono
+cuando llamaba para contarme
+algo banal
+o algo hermoso o algo
+altivo en mitad de un desencuentro
+esas joyas circulares
+roídas ya por el paso de nuestros años
+te explicaré que las compró en japón
+durante el viaje en el que ulises
+fue engendrado con un guiño
+de sus caderas también redondas
+también círculos concéntricos
+como sabes húmedas
+luego nunca se despojó del adorno
+supersticiosa ella y supersticiosos
+sus lóbulos perforados
+que hoy regresan a casa desprovistos
+del tesoro
+y yo me pregunto si acaso entiendes
+el valor de guardar en tu mesilla
+las joyas que perdió
+
+o si acaso temo descubrir
+cómo la mirarás si algún día te suplica
+que se las devuelvas
+
+# TEXTO
+
+El inicio implica que se trata el poema de "jerarquías" pero luego no aparece esta palabra otra vez y no está claro cuáles son las jerarquías de las que habla el narrador. Asimismo, queda poco claro antes del final quién es el "tú" a quien se dirige.
+
+Creo que, para entender el poema, hay que explicar estos misterios y luego presentar los temas.
+
+Como el título insinúa, la mujer del narrador perdió una joya. Al final, dice "el valor de guardar en *tu* mesilla" (énfasis mío). Este momento revela que habla al nuevo dueño de la joya que se perdió.
+
+Para explicar dónde vemos jerarquías (o su ausencia) necesitamos ver unas escenas.
+
+1. Hay la ausencia de jerarquía en el uso de los aretes
+Vemos que se llevan cuando su mujer habla sobre lo común y lo bonito y cuando se pelea la pareja. O sea, los aretes son una presencia constante, independientemente del momento.
+
+2. La jerarquía de guardar o llevarlas
+La primera de las preguntas que se hacen al final sugiere que hay valor en almacenar las joyas. Implica que es mejor no arriesgarse a perderlas con el uso. Interpreto este momento como un consejo del narrador.
+
+3. La jerarquía de suplicar y devolver
+El hecho de que suplique la mujer representa una jerarquía de importancia porque muestra que es mejor intentar recuperarlas apasionadamente en lugar de dejar que el nuevo dueño las guarde.
+
+Igualmente, hay, como lo leo, un debate interno del descubridor. Cuando se dice "cómo la mirarás" lo leo como una consideración de si debo devolverlas o no; hay la jerarquía de elegir entre quedárselas o darlas.
+
+Entonces, ¿qué pensar de todo eso?
+
+Al inicio el narrador dice que "no [le] gusta hablar de jerarquías" pero continúa haciéndolo. Un pensamiento que tengo es que es imposible evitar las jerarquías.
+
+Otro pensamiento es que el valor de un objeto se determina "en el ojo del espectador". Vemos que las joyas están desgastadas ("óxido enrojecido", "roídas"), son materialmente insignificantes ("falsa plata"), potencialmente molestas ("se enredaba", "resonaba al chocar").
+
+Al mismo tiempo hay un valor emocional para su mujer ("nunca se despojó") y el narrador ("tesoro").
+
+*A pesar de su falta de valor material hay un valor histórico y supersticioso.*
+
+Pero las joyas se encuentran en las manos de alguien que *no tiene esta valorización.* Lo que sigue es: ¿quién debe ser el dueño? ¿La pareja, con su apego emocional, o el poseedor actual?
