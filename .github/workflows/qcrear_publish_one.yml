@@ -1,0 +1,97 @@
+name: qcrear publish (one date)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Fecha NO publicada (YYYY-MM-DD) — debe existir en Google Docs"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qcrear-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name "qmp-bot"
+          git config user.email "qmp-bot@users.noreply.github.com"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Write service account keyfile
+        env:
+          QMP_GDOCS_SA_KEY_JSON: ${{ secrets.QMP_GDOCS_SA_KEY_JSON }}
+        run: |
+          mkdir -p .secrets
+          python - <<'PY'
+          import os, pathlib
+          p = pathlib.Path(".secrets/sa.json")
+          p.write_text(os.environ["QMP_GDOCS_SA_KEY_JSON"], encoding="utf-8")
+          print("Wrote", p)
+          PY
+          chmod 600 .secrets/sa.json
+
+      - name: Write gdocs.json config
+        env:
+          QMP_GDOCS_CONFIG_JSON: ${{ secrets.QMP_GDOCS_CONFIG_JSON }}
+        run: |
+          mkdir -p ~/.config/qmp
+          python - <<'PY'
+          import os, pathlib
+          p = pathlib.Path.home() / ".config" / "qmp" / "gdocs.json"
+          p.write_text(os.environ["QMP_GDOCS_CONFIG_JSON"], encoding="utf-8")
+          print("Wrote", p)
+          PY
+
+      - name: Assert date is NOT in data/archivo.json
+        env:
+          DATE: ${{ inputs.date }}
+        run: |
+          python - <<'PY'
+          import json, os
+          date = os.environ["DATE"]
+          with open("data/archivo.json", "r", encoding="utf-8") as f:
+            archivo = json.load(f)
+
+          def walk(obj):
+            if isinstance(obj, dict):
+              if obj.get("date") == date:
+                return True
+              return any(walk(v) for v in obj.values())
+            if isinstance(obj, list):
+              return any(walk(x) for x in obj)
+            return False
+
+          if walk(archivo):
+            raise SystemExit(f"ERROR: {date} ya está en archivo.json (ya publicada).")
+          print("OK: fecha NO publicada:", date)
+          PY
+
+      - name: Run qcrear (publish)
+        env:
+          QMP_GDOCS_SA_KEYFILE: ${{ github.workspace }}/.secrets/sa.json
+          PYTHONPATH: ${{ github.workspace }}/scripts:${{ github.workspace }}
+        working-directory: scripts
+        run: |
+          python qcrear.py "${{ inputs.date }}" --auto
