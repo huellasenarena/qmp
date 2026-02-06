@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-02-08",
+    "month": "2026-02",
+    "file": "textos/2026-02-08.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "planté una rosa",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "EL PENSAMIENTO HETEROSEXUAL",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
+    },
+    "keywords": [
+      {
+        "word": "desvio del deseo",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje como legitimacion",
+        "weight": 3
+      },
+      {
+        "word": "normatividad sexual y verguenza",
+        "weight": 3
+      },
+      {
+        "word": "ocultamiento como agencia",
+        "weight": 3
+      },
+      {
+        "word": "potencia de lo imprevisto",
+        "weight": 3
+      },
+      {
+        "word": "transmutacion miedo-goce",
+        "weight": 3
+      },
+      {
+        "word": "control de la imagen",
+        "weight": 2
+      },
+      {
+        "word": "identidades emergentes",
+        "weight": 2
+      },
+      {
+        "word": "intertexto canonico",
+        "weight": 2
+      },
+      {
+        "word": "memoria de infancia",
+        "weight": 2
+      },
+      {
+        "word": "naturalizacion animal",
+        "weight": 2
+      },
+      {
+        "word": "nombramiento del cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "pedagogia erotica",
+        "weight": 2
+      },
+      {
+        "word": "secreto",
+        "weight": 2
+      },
+      {
+        "word": "sustitucion simbolica",
+        "weight": 2
+      },
+      {
+        "word": "umbral corporal",
+        "weight": 2
+      },
+      {
+        "word": "ano",
+        "weight": 1
+      },
+      {
+        "word": "crecer",
+        "weight": 1
+      },
+      {
+        "word": "esconder",
+        "weight": 1
+      },
+      {
+        "word": "iris",
+        "weight": 1
+      },
+      {
+        "word": "lengua",
+        "weight": 1
+      },
+      {
+        "word": "perros",
+        "weight": 1
+      },
+      {
+        "word": "rosa",
+        "weight": 1
+      },
+      {
+        "word": "sembrar",
+        "weight": 1
+      },
+      {
+        "word": "sinonimos",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-07",
     "month": "2026-02",
     "file": "textos/2026-02-07.txt",
