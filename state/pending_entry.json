@@ -1,114 +1,114 @@
 {
-  "date": "2026-02-09",
+  "date": "2026-02-10",
   "month": "2026-02",
-  "file": "textos/2026-02-09.txt",
-  "my_poem_title": "teatro",
-  "my_poem_snippet": "",
+  "file": "textos/2026-02-10.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "la tierra",
   "analysis": {
     "poet": "Luna Miguel",
-    "poem_title": "RELECTURA DEL POEMA/“A MI AMANTE REGRESANDO JUNTO A SU ESPOSA”",
+    "poem_title": "SE LLAMA SISTEMA SOLAR",
     "poem_snippet": "",
     "book_title": "Poesía Masculina"
   },
   "keywords": [
     {
-      "word": "alteridad constitutiva",
+      "word": "caducidad-inevitable",
       "weight": 3
     },
     {
-      "word": "autoborrado del yo",
+      "word": "exposicion-por-mantenimiento",
       "weight": 3
     },
     {
-      "word": "cautiverio como pertenencia",
+      "word": "igualacion-como-silencio",
       "weight": 3
     },
     {
-      "word": "identidad como performance",
+      "word": "limpieza-como-gobernanza",
       "weight": 3
     },
     {
-      "word": "legitimidad poetica como norma",
+      "word": "memoria-como-inventario",
       "weight": 3
     },
     {
-      "word": "violencia clasificatoria",
+      "word": "velo-epistemico",
       "weight": 3
     },
     {
-      "word": "deseo abrasivo",
+      "word": "anclaje-sensorial",
       "weight": 2
     },
     {
-      "word": "excarcelacion compartida",
+      "word": "dialectica-del-velo",
       "weight": 2
     },
     {
-      "word": "metapoetica",
+      "word": "economia-de-la-apariencia",
       "weight": 2
     },
     {
-      "word": "mirada especular",
+      "word": "memoria-como-tejido",
       "weight": 2
     },
     {
-      "word": "nombramiento relacional",
+      "word": "ritualidad-del-orden",
       "weight": 2
     },
     {
-      "word": "prescindibilidad del sujeto",
-      "weight": 2
-    },
-    {
-      "word": "redefinicion del otro",
-      "weight": 2
-    },
-    {
-      "word": "relectura como reescritura",
-      "weight": 2
-    },
-    {
-      "word": "tension union-identidad",
-      "weight": 2
-    },
-    {
-      "word": "transposicion de genero",
-      "weight": 2
-    },
-    {
-      "word": "acuarela",
+      "word": "amigos",
       "weight": 1
     },
     {
-      "word": "carcel",
+      "word": "botellas",
       "weight": 1
     },
     {
-      "word": "carcelero",
+      "word": "calle",
       "weight": 1
     },
     {
-      "word": "celador",
+      "word": "casa",
       "weight": 1
     },
     {
-      "word": "espejo",
+      "word": "cuerpos",
       "weight": 1
     },
     {
-      "word": "luz",
+      "word": "fiesta",
       "weight": 1
     },
     {
-      "word": "poema",
+      "word": "libreta",
       "weight": 1
     },
     {
-      "word": "presa",
+      "word": "mundo",
       "weight": 1
     },
     {
-      "word": "teatro",
+      "word": "nieve",
+      "weight": 1
+    },
+    {
+      "word": "oficina",
+      "weight": 1
+    },
+    {
+      "word": "quitanieves",
+      "weight": 1
+    },
+    {
+      "word": "regalos",
+      "weight": 1
+    },
+    {
+      "word": "suciedad",
+      "weight": 1
+    },
+    {
+      "word": "tierra",
       "weight": 1
     }
   ]

@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-02-10",
+    "month": "2026-02",
+    "file": "textos/2026-02-10.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "la tierra",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "SE LLAMA SISTEMA SOLAR",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
+    },
+    "keywords": [
+      {
+        "word": "caducidad-inevitable",
+        "weight": 3
+      },
+      {
+        "word": "exposicion-por-mantenimiento",
+        "weight": 3
+      },
+      {
+        "word": "igualacion-como-silencio",
+        "weight": 3
+      },
+      {
+        "word": "limpieza-como-gobernanza",
+        "weight": 3
+      },
+      {
+        "word": "memoria-como-inventario",
+        "weight": 3
+      },
+      {
+        "word": "velo-epistemico",
+        "weight": 3
+      },
+      {
+        "word": "anclaje-sensorial",
+        "weight": 2
+      },
+      {
+        "word": "dialectica-del-velo",
+        "weight": 2
+      },
+      {
+        "word": "economia-de-la-apariencia",
+        "weight": 2
+      },
+      {
+        "word": "memoria-como-tejido",
+        "weight": 2
+      },
+      {
+        "word": "ritualidad-del-orden",
+        "weight": 2
+      },
+      {
+        "word": "amigos",
+        "weight": 1
+      },
+      {
+        "word": "botellas",
+        "weight": 1
+      },
+      {
+        "word": "calle",
+        "weight": 1
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "cuerpos",
+        "weight": 1
+      },
+      {
+        "word": "fiesta",
+        "weight": 1
+      },
+      {
+        "word": "libreta",
+        "weight": 1
+      },
+      {
+        "word": "mundo",
+        "weight": 1
+      },
+      {
+        "word": "nieve",
+        "weight": 1
+      },
+      {
+        "word": "oficina",
+        "weight": 1
+      },
+      {
+        "word": "quitanieves",
+        "weight": 1
+      },
+      {
+        "word": "regalos",
+        "weight": 1
+      },
+      {
+        "word": "suciedad",
+        "weight": 1
+      },
+      {
+        "word": "tierra",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-09",
     "month": "2026-02",
     "file": "textos/2026-02-09.txt",
