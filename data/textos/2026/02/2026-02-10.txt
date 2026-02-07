@@ -1,0 +1,70 @@
+FECHA: 2026-02-10
+MY_POEM_TITLE: 
+POETA: Luna Miguel
+POEM_TITLE: SE LLAMA SISTEMA SOLAR
+BOOK_TITLE: Poesía Masculina
+
+# POEMA
+
+la tierra
+la calle
+el mundo
+todos iguales
+por la nieve
+se callan
+
+¿por qué vienen
+los quitanieves?
+
+¿por qué van a quitarla
+y ver la suciedad
+de nuevo?
+
+porque la nieve se derrite
+en cualquier caso
+
+# POEMA_CITADO
+
+había una luz de neón con forma de rayo
+que ella me regaló cuando cumplí los veintinueve
+había unas velas aromáticas que nos dieron
+en la despedida de solteros pero que nunca usamos
+porque siempre preferimos el olor de nuestros
+cuerpos
+había un concierto de metronomy en el que tomé
+speed
+y ella bailaba con un escritor británico al que nunca
+besó
+aunque en cierto modo lo quería
+había tantas tantas tantas botellas de vino *blanc*
+*pescador* y las abríamos con tanta tanta tanta
+agilidad cuando la casa de veinticinco metros
+cuadrados
+se llenaba de amigos
+había amigos
+y había amigas
+y durante algún tiempo no hubo amigos ni tampoco
+amigas pero sí mucho trabajo y la misma cantidad de
+botellas cuyo precio se elevaba al compás
+de nuestros sueldos tanta tanta tanta felicidad había
+era una felicidad incalculable y de un color
+chasqueante
+había una taberna de quesos
+en la que querríamos haber hibernado
+una oficina en la que perdimos nuestros mejores años
+y también una pelea cada ciento veinte horas
+
+había una libreta donde anoté
+todas las veces en las que su rostro gozaba
+todas las veces en las que mi pecho reía
+todas las veces en las que dije *esto siempre debería ser así*
+
+# TEXTO
+
+La progresión de los años, con regalos, fiestas, trabajo, goce, la risa... el poema presenta esta lista descriptiva, acertadamente llamado "SE LLAMA SISTEMA SOLAR" para mostrar las transiciones y los cambios naturales que vienen con el tiempo.
+
+El poema termina bien el poemario, mostrando temas mencionados anteriormente como la pasión por la literatura, la no monogamia consensuada, la sexualidad, y las peleas. Me parece una reflexión y por eso se usa el imperfecto repetidamente.
+
+Lo leo más como un resumen descriptivo, haciendo eco del primer poema del libro, que encapsula su pequeña vida, su pequeña parte del cosmos.
+
+El narrador me parece que tiene una nostalgia por esos años, usando las frases "mejores años" y "siempre debería ser así". ¿Todo cambió con el niño? ¿O es que la vida ya carece de esta variedad y espontaneidad?
