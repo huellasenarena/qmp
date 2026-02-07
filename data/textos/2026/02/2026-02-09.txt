@@ -1,0 +1,48 @@
+FECHA: 2026-02-09
+MY_POEM_TITLE: teatro
+POETA: Luna Miguel
+POEM_TITLE: RELECTURA DEL POEMA/“A MI AMANTE REGRESANDO JUNTO A SU ESPOSA”
+BOOK_TITLE: Poesía Masculina
+
+# POEMA
+
+una obra de teatro
+es, de hecho,
+un mal poema
+
+# POEMA_CITADO
+
+en un poema muy bonito de anne sexton
+la poeta se llama a sí misma «acuarela» porque
+su condición de «otra» la convierte en algo
+«prescindible» en eso que se olvida algo «lavable»
+en otro poema muy bonit de amalia bautista
+la peta denomina «carcelero» a «su otro»
+o lo que es lo mismo se asume como presa
+de una cárcel en la que mientras su esposo
+da de comer a otras mujeres ella solo puede
+agarrarse al «celador» en un acto de «desespero»
+son poemas verdaderamente hermosos
+los de esas mujeres a las que luna relee
+durante unas vacaciones en almería
+en las que hacemos el amor a plena luz
+aunque preocupados cada uno por encontrar
+palabras mejores para esos «nuestros otros»
+que no son lavables ni prescindibles
+que no son trabajadores precarios
+de ninguna prisión sino tal vez y sobre todo
+las razones que iluminan este espejo frente
+al que nos calcinamos deseándonos tanto
+como los deseamos a ellos queriéndonos tanto
+como queremos lo mejor para ellos ensayando
+palabras tan tiernas como ternura precisamos
+para nombrarlos «amigos» «confidentes»
+«compañeros durante la excarcelación»
+
+# TEXTO
+
+De un lado, una desaparición de identidad (ser acuarela, ser presa) en los poemas que leen; del otro lado, el amor y la conexión, donde intentan redefinir la idea de "otro".
+
+Me parece que el "otro" del que hablan Sexton y Bautista son versiones diferentes de sí mismas en una pareja; los lados que se presentan y que se aman ("da de comer a otras mujeres") crean el sentimiento de insignificancia (o sentirse como una vaga forma en una acuarela o sentirse como alguien dependiente de otro). En el título del poema citado en el título me parece que el "amante" es una parte diferente de la misma persona.
+
+En la pareja del narrador, se preguntan, como lo leo, cómo unirse sin perder identidad; en lugar de describirse como prisioneros, quieren describirse con excitación y pasión ("las razones que iluminan este espejo"); abordan la pareja con fe, con la creencia de que es posible ser "compañeros durante la excarcelación".

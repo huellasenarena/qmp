@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-02-09",
+    "month": "2026-02",
+    "file": "textos/2026-02-09.txt",
+    "my_poem_title": "teatro",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "RELECTURA DEL POEMA/“A MI AMANTE REGRESANDO JUNTO A SU ESPOSA”",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
+    },
+    "keywords": [
+      {
+        "word": "alteridad constitutiva",
+        "weight": 3
+      },
+      {
+        "word": "autoborrado del yo",
+        "weight": 3
+      },
+      {
+        "word": "cautiverio como pertenencia",
+        "weight": 3
+      },
+      {
+        "word": "identidad como performance",
+        "weight": 3
+      },
+      {
+        "word": "legitimidad poetica como norma",
+        "weight": 3
+      },
+      {
+        "word": "violencia clasificatoria",
+        "weight": 3
+      },
+      {
+        "word": "deseo abrasivo",
+        "weight": 2
+      },
+      {
+        "word": "excarcelacion compartida",
+        "weight": 2
+      },
+      {
+        "word": "metapoetica",
+        "weight": 2
+      },
+      {
+        "word": "mirada especular",
+        "weight": 2
+      },
+      {
+        "word": "nombramiento relacional",
+        "weight": 2
+      },
+      {
+        "word": "prescindibilidad del sujeto",
+        "weight": 2
+      },
+      {
+        "word": "redefinicion del otro",
+        "weight": 2
+      },
+      {
+        "word": "relectura como reescritura",
+        "weight": 2
+      },
+      {
+        "word": "tension union-identidad",
+        "weight": 2
+      },
+      {
+        "word": "transposicion de genero",
+        "weight": 2
+      },
+      {
+        "word": "acuarela",
+        "weight": 1
+      },
+      {
+        "word": "carcel",
+        "weight": 1
+      },
+      {
+        "word": "carcelero",
+        "weight": 1
+      },
+      {
+        "word": "celador",
+        "weight": 1
+      },
+      {
+        "word": "espejo",
+        "weight": 1
+      },
+      {
+        "word": "luz",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      },
+      {
+        "word": "presa",
+        "weight": 1
+      },
+      {
+        "word": "teatro",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-08",
     "month": "2026-02",
     "file": "textos/2026-02-08.txt",

@@ -1,114 +1,114 @@
 {
-  "date": "2026-02-08",
+  "date": "2026-02-09",
   "month": "2026-02",
-  "file": "textos/2026-02-08.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "planté una rosa",
+  "file": "textos/2026-02-09.txt",
+  "my_poem_title": "teatro",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Luna Miguel",
-    "poem_title": "EL PENSAMIENTO HETEROSEXUAL",
+    "poem_title": "RELECTURA DEL POEMA/“A MI AMANTE REGRESANDO JUNTO A SU ESPOSA”",
     "poem_snippet": "",
     "book_title": "Poesía Masculina"
   },
   "keywords": [
     {
-      "word": "desvio del deseo",
+      "word": "alteridad constitutiva",
       "weight": 3
     },
     {
-      "word": "lenguaje como legitimacion",
+      "word": "autoborrado del yo",
       "weight": 3
     },
     {
-      "word": "normatividad sexual y verguenza",
+      "word": "cautiverio como pertenencia",
       "weight": 3
     },
     {
-      "word": "ocultamiento como agencia",
+      "word": "identidad como performance",
       "weight": 3
     },
     {
-      "word": "potencia de lo imprevisto",
+      "word": "legitimidad poetica como norma",
       "weight": 3
     },
     {
-      "word": "transmutacion miedo-goce",
+      "word": "violencia clasificatoria",
       "weight": 3
     },
     {
-      "word": "control de la imagen",
+      "word": "deseo abrasivo",
       "weight": 2
     },
     {
-      "word": "identidades emergentes",
+      "word": "excarcelacion compartida",
       "weight": 2
     },
     {
-      "word": "intertexto canonico",
+      "word": "metapoetica",
       "weight": 2
     },
     {
-      "word": "memoria de infancia",
+      "word": "mirada especular",
       "weight": 2
     },
     {
-      "word": "naturalizacion animal",
+      "word": "nombramiento relacional",
       "weight": 2
     },
     {
-      "word": "nombramiento del cuerpo",
+      "word": "prescindibilidad del sujeto",
       "weight": 2
     },
     {
-      "word": "pedagogia erotica",
+      "word": "redefinicion del otro",
       "weight": 2
     },
     {
-      "word": "secreto",
+      "word": "relectura como reescritura",
       "weight": 2
     },
     {
-      "word": "sustitucion simbolica",
+      "word": "tension union-identidad",
       "weight": 2
     },
     {
-      "word": "umbral corporal",
+      "word": "transposicion de genero",
       "weight": 2
     },
     {
-      "word": "ano",
+      "word": "acuarela",
       "weight": 1
     },
     {
-      "word": "crecer",
+      "word": "carcel",
       "weight": 1
     },
     {
-      "word": "esconder",
+      "word": "carcelero",
       "weight": 1
     },
     {
-      "word": "iris",
+      "word": "celador",
       "weight": 1
     },
     {
-      "word": "lengua",
+      "word": "espejo",
       "weight": 1
     },
     {
-      "word": "perros",
+      "word": "luz",
       "weight": 1
     },
     {
-      "word": "rosa",
+      "word": "poema",
       "weight": 1
     },
     {
-      "word": "sembrar",
+      "word": "presa",
       "weight": 1
     },
     {
-      "word": "sinonimos",
+      "word": "teatro",
       "weight": 1
     }
   ]
