@@ -13,7 +13,7 @@ poemas justo en el medio
 trabajo
 ejercicio
 lectura
-just en el medio
+justo en el medio
 
 # POEMA_CITADO
 no me gusta hablar de jerarquías
