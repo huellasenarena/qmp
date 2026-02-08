@@ -227,6 +227,34 @@ function removeNextToggleButton_(anchorEl) {
   }
 }
 
+function renderCitedPdfWithPdfJs_(containerEl, pdfPathRaw) {
+  if (!containerEl) return;
+
+  // normaliza ruta
+  const pdfPath = (pdfPathRaw || "").trim();
+  if (!pdfPath) return;
+
+  // limpia el <pre>
+  containerEl.innerHTML = "";
+  containerEl.style.whiteSpace = "normal";
+
+  // arma URL del viewer
+  const viewerBase = "site/pdfjs/web/viewer.html";
+  const fileParam = encodeURIComponent(pdfPath);
+  const viewerUrl = `${viewerBase}?file=${fileParam}`;
+
+  const iframe = document.createElement("iframe");
+  iframe.src = viewerUrl;
+  iframe.style.width = "100%";
+  iframe.style.height = "420px";
+  iframe.style.border = "1px solid #ddd";
+  iframe.style.borderRadius = "10px";
+  iframe.setAttribute("loading", "lazy");
+
+  containerEl.appendChild(iframe);
+}
+
+
 function renderScenePdfInAnalysis_(citedEl, pdfPath) {
   if (!citedEl) return;
 
@@ -593,7 +621,7 @@ async function loadTodayEntry() {
 
     if (pdfPath) {
       // Teatro: PDF embebido (la obra va arriba del análisis)
-      renderScenePdfInAnalysis_(citedPre, pdfPath);
+      renderCitedPdfWithPdfJs_(citedPre, pdfPath);
     } else {
       // Poema citado normal
       citedPre.classList.remove('analysis-pdf');
