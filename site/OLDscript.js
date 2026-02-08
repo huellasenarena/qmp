@@ -214,49 +214,6 @@ function setCitedMeta(chosen) {
   sourceEl.style.display = parts.length ? 'block' : 'none';
 }
 
-// =========================
-//  Teatro: PDF embebido en el bloque "poema citado"
-//  Regla: si chosen.analysis.pdf existe => render PDF; si no => poema citado normal
-// =========================
-
-function removeNextToggleButton_(anchorEl) {
-  // El toggle del poema citado se inserta justo "afterend" del .analysis-poem
-  const maybeBtn = anchorEl?.nextElementSibling;
-  if (maybeBtn && maybeBtn.classList?.contains('toggle-poem-cited')) {
-    maybeBtn.remove();
-  }
-}
-
-function renderScenePdfInAnalysis_(citedEl, pdfPath) {
-  if (!citedEl) return;
-
-  // Limpia un toggle previo (p.ej. si navegas entre fechas/vistas)
-  removeNextToggleButton_(citedEl);
-
-  // Importante: NO reemplazamos el elemento.
-  // Mantener <pre class="analysis-poem"> asegura que el modo poema citado
-  // siga funcionando (white-space, toggle, etc.).
-  citedEl.classList.add('analysis-pdf');
-  citedEl.style.whiteSpace = 'normal';
-  citedEl.textContent = '';
-  delete citedEl.dataset.fullHtml;
-  delete citedEl.dataset.visibleHtml;
-
-  const iframe = document.createElement('iframe');
-  iframe.src = pdfPath;
-  iframe.loading = 'lazy';
-  iframe.title = 'Escena (PDF)';
-  iframe.style.width = '100%';
-  iframe.style.height = '360px';
-  iframe.style.border = '0';
-  iframe.style.display = 'block';
-
-  // Visor del navegador (abrir/descargar) sin referer
-  iframe.setAttribute('referrerpolicy', 'no-referrer');
-
-  citedEl.appendChild(iframe);
-}
-
 function measureTextPx(text, referenceEl) {
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
@@ -589,18 +546,8 @@ async function loadTodayEntry() {
   // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
   const citedPre = document.querySelector('.analysis-poem');
   if (citedPre) {
-    const pdfPath = chosen?.analysis?.pdf;
-
-    if (pdfPath) {
-      // Teatro: PDF embebido (la obra va arriba del análisis)
-      renderScenePdfInAnalysis_(citedPre, pdfPath);
-    } else {
-      // Poema citado normal
-      citedPre.classList.remove('analysis-pdf');
-      citedPre.style.whiteSpace = 'pre-wrap';
-      // aquí aplicamos el toggle bonito
-      setupCitedPoemToggle(citedPre, parsed.citedPoem);
-    }
+    // aquí aplicamos el toggle bonito
+    setupCitedPoemToggle(citedPre, parsed.citedPoem);
   }
 
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
@@ -648,15 +595,7 @@ async function loadPastEntry() {
   // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
   const citedPre = document.querySelector('.analysis-poem');
   if (citedPre) {
-    const pdfPath = chosen?.analysis?.pdf;
-
-    if (pdfPath) {
-      renderScenePdfInAnalysis_(citedPre, pdfPath);
-    } else {
-      citedPre.classList.remove('analysis-pdf');
-      citedPre.style.whiteSpace = 'pre-wrap';
-      setupCitedPoemToggle(citedPre, parsed.citedPoem);
-    }
+    setupCitedPoemToggle(citedPre, parsed.citedPoem);
   }
 
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
