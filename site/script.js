@@ -239,7 +239,7 @@ function renderCitedPdfWithPdfJs_(containerEl, pdfPathRaw) {
   containerEl.style.whiteSpace = "normal";
 
   // arma URL del viewer
-  const viewerBase = "site/pdfjs/web/viewer.html";
+  const viewerBase = "/site/pdfjs/web/viewer.html";
   const fileParam = encodeURIComponent(pdfPath);
   const viewerUrl = `${viewerBase}?file=${fileParam}`;
 
@@ -254,36 +254,6 @@ function renderCitedPdfWithPdfJs_(containerEl, pdfPathRaw) {
   containerEl.appendChild(iframe);
 }
 
-
-function renderScenePdfInAnalysis_(citedEl, pdfPath) {
-  if (!citedEl) return;
-
-  // Limpia un toggle previo (p.ej. si navegas entre fechas/vistas)
-  removeNextToggleButton_(citedEl);
-
-  // Importante: NO reemplazamos el elemento.
-  // Mantener <pre class="analysis-poem"> asegura que el modo poema citado
-  // siga funcionando (white-space, toggle, etc.).
-  citedEl.classList.add('analysis-pdf');
-  citedEl.style.whiteSpace = 'normal';
-  citedEl.textContent = '';
-  delete citedEl.dataset.fullHtml;
-  delete citedEl.dataset.visibleHtml;
-
-  const iframe = document.createElement('iframe');
-  iframe.src = pdfPath;
-  iframe.loading = 'lazy';
-  iframe.title = 'Escena (PDF)';
-  iframe.style.width = '100%';
-  iframe.style.height = '360px';
-  iframe.style.border = '0';
-  iframe.style.display = 'block';
-
-  // Visor del navegador (abrir/descargar) sin referer
-  iframe.setAttribute('referrerpolicy', 'no-referrer');
-
-  citedEl.appendChild(iframe);
-}
 
 function measureTextPx(text, referenceEl) {
   const canvas = document.createElement('canvas');
@@ -679,12 +649,13 @@ async function loadPastEntry() {
     const pdfPath = chosen?.analysis?.pdf;
 
     if (pdfPath) {
-      renderScenePdfInAnalysis_(citedPre, pdfPath);
+      renderCitedPdfWithPdfJs_(citedPre, pdfPath);
     } else {
       citedPre.classList.remove('analysis-pdf');
       citedPre.style.whiteSpace = 'pre-wrap';
       setupCitedPoemToggle(citedPre, parsed.citedPoem);
     }
+
   }
 
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
