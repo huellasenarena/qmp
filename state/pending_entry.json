@@ -1,1 +1,107 @@
-{}
+{
+  "date": "2026-02-11",
+  "month": "2026-02",
+  "file": "textos/2026-02-11.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "no tienes una cerca",
+  "analysis": {
+    "poet": "Federico García Lorca",
+    "poem_title": "Cuadro Primero",
+    "poem_snippet": "",
+    "book_title": "Bodas de Sangre"
+  },
+  "keywords": [
+    {
+      "word": "apropiacion del espacio intimo",
+      "weight": 3
+    },
+    {
+      "word": "deseo de clausura",
+      "weight": 3
+    },
+    {
+      "word": "hospitalidad ambivalente",
+      "weight": 3
+    },
+    {
+      "word": "liminalidad",
+      "weight": 3
+    },
+    {
+      "word": "reciprocidad mimetica",
+      "weight": 3
+    },
+    {
+      "word": "vulnerabilidad compartida",
+      "weight": 3
+    },
+    {
+      "word": "asimetria del querer",
+      "weight": 2
+    },
+    {
+      "word": "consentimiento tacito",
+      "weight": 2
+    },
+    {
+      "word": "desplazamiento",
+      "weight": 2
+    },
+    {
+      "word": "exposicion",
+      "weight": 2
+    },
+    {
+      "word": "intrusion",
+      "weight": 2
+    },
+    {
+      "word": "negociacion de limites",
+      "weight": 2
+    },
+    {
+      "word": "permeabilidad",
+      "weight": 2
+    },
+    {
+      "word": "retirada",
+      "weight": 2
+    },
+    {
+      "word": "vigilancia",
+      "weight": 2
+    },
+    {
+      "word": "abrir",
+      "weight": 1
+    },
+    {
+      "word": "andar",
+      "weight": 1
+    },
+    {
+      "word": "cerca",
+      "weight": 1
+    },
+    {
+      "word": "flores",
+      "weight": 1
+    },
+    {
+      "word": "irte",
+      "weight": 1
+    },
+    {
+      "word": "jardin",
+      "weight": 1
+    },
+    {
+      "word": "mirar",
+      "weight": 1
+    },
+    {
+      "word": "oler",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+FECHA: 2026-02-11
+MY_POEM_TITLE: 
+POETA: Federico García Lorca
+POEM_TITLE: Cuadro Primero
+BOOK_TITLE: Bodas de Sangre
+
+# POEMA
+
+no tienes una cerca
+entonces yo tampoco
+no tienes una cerca
+pero una la quiero
+
+abres mi jardín
+y andas
+te miro
+oler las flores
+y irte
+
+no tienes una cerca
+entonces yo tampoco
+
+# POEMA_CITADO
+
+[Insertar pdf]
+
+# TEXTO
+
+Los conflictos ya se perciben desde el primer cuadro: hay el conflicto entre una madre ansiosa y su hijo y el conflicto entre las familias.
+
+A la madre le preocupa la salud de su, ya único, hijo, teniendo una reacción de shock al escuchar "navaja". ¿Puede ser por su pérdida violenta de su otro hijo y esposo? De todos modos, todo se enfoca en su hijo superviviente.
+
+Vemos también la asociación de la madre entre los hombres y la violencia, con ella diciendo que preferiría hijas en lugar de hijos. Claramente, la madre tiene miedo de perder trágicamente a otro hijo y quedarse sola.
+
+Cuando viene la vecina aprendemos que la novia del hijo tuvo una relación con un hijo de la familia que mató a su esposo y otro hijo, los Félix.
+
+La semilla ha sido plantada... vamos a ver qué pasará entre las familias con su pasado de derramamiento de sangre. El título no me da optimismo.
