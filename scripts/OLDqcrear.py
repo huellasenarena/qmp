@@ -257,16 +257,7 @@ def run_py_json(script_relpath: str, args: list[str]) -> dict:
     except json.JSONDecodeError:
         raise RuntimeError(f"{script_relpath} no devolvió JSON válido. Stdout:\n{out}")
 def normalize_text_for_hash(s: str) -> str:
-    # Normalización estable:
-    # - newlines
-    # - quitar invisibles comunes de Google Docs (NBSP, ZWSP, BOM)
-    # - rstrip por línea + trimming de vacíos extremos
-    if s is None:
-        s = ""
-    s = s.replace("\u00a0", " ")  # NBSP
-    # invisibles que suelen aparecer como "línea vacía" en la consola/preview
-    for ch in ("\u200b", "\ufeff", "\u2060"):
-        s = s.replace(ch, "")
+    # Normalización estable: newlines + espacios finales + trimming
     s = s.replace("\r\n", "\n").replace("\r", "\n")
     lines = [ln.rstrip() for ln in s.split("\n")]
     # quitar vacíos extremos
@@ -484,32 +475,16 @@ def find_script(*relpaths: str) -> Path:
             return p
     raise RuntimeError(f"No encuentro script. Probé: {', '.join(relpaths)}")
 
-def run_validate_and_normalize_txt(date_str: str, txt_path: Path, pdf_mode: bool = False) -> None:
+def run_validate_and_normalize_txt(date_str: str, txt_path: Path) -> None:
     """
     Valida y normaliza metadata/headers del .txt (idempotente).
-    En modo PDF, permitimos que validate_entry.py falle SOLO por secciones vacías
-    (# POEMA_CITADO y/o # TEXTO), porque esa es precisamente la señal del PDF.
+    Si cambia formateo, reescribe el archivo.
     """
     script = find_script("qmp/validate_entry.py", "scripts/validate_entry.py", "validate_entry.py")
     cmd = [sys.executable, str(script), "--mode", "normalize", date_str, str(txt_path)]
     proc = subprocess.run(cmd, capture_output=True, text=True)
-
     if proc.returncode != 0:
-        msg = (proc.stderr or proc.stdout or "").strip()
-
-        if pdf_mode:
-            # Mensajes típicos del validador
-            allow = (
-                "Sección vacía: # POEMA_CITADO" in msg
-                or "Sección vacía: # TEXTO" in msg
-                or "# POEMA_CITADO" in msg and "vacía" in msg
-                or "# TEXTO" in msg and "vacía" in msg
-            )
-            if allow:
-                println("[qcrear] ⚠️ validate_entry.py marcó secciones vacías, pero estás en modo PDF → OK")
-                return
-
-        raise RuntimeError(msg or "validate_entry.py falló")
+        raise RuntimeError(proc.stderr.strip() or proc.stdout.strip() or "validate_entry.py falló")
 
     try:
         payload = json.loads(proc.stdout)
@@ -518,7 +493,6 @@ def run_validate_and_normalize_txt(date_str: str, txt_path: Path, pdf_mode: bool
 
     if payload.get("changed_formatting"):
         txt_path.write_text(payload["normalized_text"], encoding="utf-8")
-
 
 def run_merge_pending(
     txt_path: Path,
@@ -659,44 +633,13 @@ def main() -> int:
         poema_citado = (analysis_obj.get("poem_citado") or "")
         texto = (analysis_obj.get("analysis") or "")
 
-        # -----------------------------
-        # Modo PDF (nuevo contrato)
-        # - POEMA_CITADO vacío => modo PDF
-        # - En modo PDF: requiere Libro + Título, y que el PDF exista
-        # - En modo NO-PDF: POEMA_CITADO y TEXTO son obligatorios
-        # -----------------------------
-        pdf_mode = (normalize_text_for_hash(poema_citado) == "")
-        pdf_path = ""
-        if pdf_mode:
-            println("[qcrear] poema citado vacío → entrando en modo PDF")
-
-            if not poem_title:
-                raise RuntimeError(
-                    "Modo PDF activado (poema citado vacío), pero falta metadato obligatorio: Título:"
-                )
-            if not book_title:
-                raise RuntimeError(
-                    "Modo PDF activado (poema citado vacío), pero falta metadato obligatorio: Libro:"
-                )
-
-            def _slug(s: str) -> str:
-                return "-".join(s.strip().split())
-
-            pdf_path = f"/data/pdfs/{_slug(book_title)}/{_slug(poem_title)}.pdf"
-            println(f"[qcrear] verificando PDF: {pdf_path}")
-            full_pdf = repo_root() / pdf_path.lstrip("/")
-            if not full_pdf.exists():
-                raise RuntimeError(f"Modo PDF activado pero el archivo no existe: {pdf_path}")
-            println("[qcrear] PDF encontrado ✔")
-
-        # Validación
+        # Validación fuerte: 3 escritos obligatorios
         if normalize_text_for_hash(poem_text) == "":
             raise RuntimeError("ERROR: # POEMA está vacío (Google Docs). Corrige en el doc de POEMAS.")
-        if not pdf_mode:
-            if normalize_text_for_hash(poema_citado) == "":
-                raise RuntimeError("ERROR: # POEMA_CITADO está vacío (Google Docs). Corrige en el doc de ESCRITOS.")
-            if normalize_text_for_hash(texto) == "":
-                raise RuntimeError("ERROR: # TEXTO está vacío (Google Docs). Corrige en el doc de ESCRITOS (Versión final).")
+        if normalize_text_for_hash(poema_citado) == "":
+            raise RuntimeError("ERROR: # POEMA_CITADO está vacío (Google Docs). Corrige en el doc de ESCRITOS.")
+        if normalize_text_for_hash(texto) == "":
+            raise RuntimeError("ERROR: # TEXTO está vacío (Google Docs). Corrige en el doc de ESCRITOS (Versión final).")
 
         fp = docs_fingerprint(poem_text, poema_citado, texto)
 
@@ -889,7 +832,7 @@ def main() -> int:
             raise RuntimeError("pending_keywords fingerprint NO coincide con Google Docs. No se puede publicar.")
 
         # 3) Validar + normalizar .txt (idempotente)
-        run_validate_and_normalize_txt(target, txt_path, pdf_mode=pdf_mode)
+        run_validate_and_normalize_txt(target, txt_path)
 
         # 4) merge_pending (aplica keywords -> pending_entry.json + status)
         status = run_merge_pending(
@@ -900,29 +843,6 @@ def main() -> int:
             apply_keywords=True,
             dry_run=False,
         )
-
-        # Si estamos en modo PDF, inyectar la ruta en pending_entry.json
-        # para que termine en archivo.json (llave analysis.pdf).
-        # Esto no depende de merge_pending (lo hacemos aquí de forma explícita).
-        if pdf_mode:
-            try:
-                pending_obj = json.loads(pending_entry_path.read_text(encoding="utf-8"))
-            except Exception:
-                raise RuntimeError("pending_entry.json no es JSON válido (después de merge_pending)")
-
-            if not isinstance(pending_obj, dict):
-                raise RuntimeError("pending_entry.json inválido (no es dict)")
-
-            pending_obj.setdefault("analysis", {})
-            if not isinstance(pending_obj["analysis"], dict):
-                raise RuntimeError("pending_entry.json inválido: analysis no es dict")
-
-            pending_obj["analysis"]["pdf"] = pdf_path
-            pending_entry_path.write_text(
-                json.dumps(pending_obj, ensure_ascii=False, indent=2) + "\n",
-                encoding="utf-8",
-            )
-            println(f"[qcrear] analysis.pdf = {pdf_path}")
 
         exists_before = bool(status.get("exists_before"))
         content_changed = bool(status.get("content_changed"))

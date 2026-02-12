@@ -11,48 +11,54 @@ from googleapiclient.discovery import build
 
 from _gdocs_auth import get_creds, load_config
 
-# Analyses doc contract (per-entry):
-# - Date line is a paragraph with style HEADER_1, exactly YYMMDD (e.g. 260121)
-# - Optional metadata lines (order-independent), usually near the top:
-#     Poeta: <...>
-#     Título: <...>
-#     Libro: <...>
-# - Poema citado = text after metadata until the first of:
-#     - a paragraph starting with "Mi análisis" / "Mi ensayo" (case-insensitive)
-#     - the "Versión final" heading (HEADING_2)
-#     - end of entry block
-# - Versión final = text after "Versión final" (HEADING_2) until end of entry block
-#
-# IMPORTANT: NO horizontal-line dependency.
+# Nuevo contrato (Escritos / análisis):
+# - La fecha está en HEADING_1 (o TITLE legacy) y comienza con YYMMDD
+#   (puede tener texto extra: "260214 - BdS AIICl").
+# - Debajo de la fecha hay metadatos (Poeta, Libro, Título) en cualquier orden.
+# - SIEMPRE existe un "Versión final" en HEADING_2.
+# - El bloque ENTRE metadatos y "Versión final" es el "poema citado".
+#   Si ese bloque está vacío => significa "modo PDF" (lo decide qcrear).
+# - El bloque DESPUÉS de "Versión final" es el texto de análisis.
+#   Puede estar vacío si quieres usar PDF.
 
-DATE_RE = re.compile(r"^\s*(\d{6})\s*$")
-FINAL_RE = re.compile(r"^\s*versi[oó]n\s+final\s*:?\s*$", re.IGNORECASE)
+DATE_STYLE_TYPES = {"HEADING_1", "TITLE"}
 
-# Google Docs API uses namedStyleType values like 'TITLE', 'HEADING_1', 'HEADING_2', etc.
-# In the UI (Spanish), 'Encabezado 1' == HEADING_1 (NOT 'HEADER_1').
-DATE_STYLE_TYPES = {"HEADING_1", "TITLE"}  # allow TITLE for legacy docs
-
-def first_six_digits(s: str) -> str:
-    """Extrae los primeros 6 dígitos de un string (ignorando NBSP y signos)."""
-    s = (s or "").replace("\u00a0", " ").strip()
-    digits = re.sub(r"\D+", "", s)
-    return digits[:6]
-
-
-def is_date_title_line(text: str, target_yymmdd: str) -> bool:
-    """True si el párrafo (estilo HEADER_1) contiene la fecha YYMMDD, aunque tenga texto extra."""
-    return first_six_digits(text) == target_yymmdd
-
+FINAL_RE = re.compile(r"^\s*versi[oó]n\s+final\s*:?.*$", re.IGNORECASE)
 META_POETA_RE = re.compile(r"^\s*poeta\s*:\s*(.*)\s*$", re.IGNORECASE)
-META_TITULO_RE = re.compile(r"^\s*t[íi]tulo\s*:\s*(.*)\s*$", re.IGNORECASE)
 META_LIBRO_RE = re.compile(r"^\s*libro\s*:\s*(.*)\s*$", re.IGNORECASE)
-
-STOP_ANALISIS_RE = re.compile(r"^\s*mi\s+an[áa]lisis\s*:?.*$", re.IGNORECASE)
-STOP_ENSAYO_RE = re.compile(r"^\s*mi\s+ensayo\s*:?.*$", re.IGNORECASE)
+META_TITULO_RE = re.compile(r"^\s*t[íi]tulo\s*:\s*(.*)\s*$", re.IGNORECASE)
 
 
 class FormatError(RuntimeError):
     pass
+
+
+def yyyymmdd_to_yymmdd(date_str: str) -> str:
+    return date_str[2:4] + date_str[5:7] + date_str[8:10]
+
+
+def strip_invisibles(s: str) -> str:
+    if s is None:
+        return ""
+    s = s.replace("\u00a0", " ")
+    for ch in ("\u200b", "\ufeff", "\u2060"):
+        s = s.replace(ch, "")
+    return s
+
+
+def first_six_digits(s: str) -> str:
+    s = strip_invisibles(s)
+    digits = re.sub(r"\D+", "", s)
+    return digits[:6]
+
+
+def split_logical_lines(text: str) -> List[str]:
+    """Divide un texto en 'líneas' aunque el párrafo tenga Shift+Enter."""
+    text = strip_invisibles(text)
+    # Google Docs puede devolver \n o \u000b (vertical tab) dependiendo del caso
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = text.replace("\u000b", "\n").replace("\v", "\n")
+    return text.split("\n")
 
 
 def get_tab_by_title(doc: dict, tab_title: str) -> dict:
@@ -74,7 +80,6 @@ def paragraph_style(item: dict) -> Optional[str]:
 
 
 def paragraph_text_no_strike(item: dict) -> str:
-    """Concatena textRuns excluyendo los tachados."""
     para = item.get("paragraph")
     if not para:
         return ""
@@ -83,48 +88,49 @@ def paragraph_text_no_strike(item: dict) -> str:
         tr = elem.get("textRun")
         if not tr:
             continue
-        content = tr.get("content", "")
         style = tr.get("textStyle") or {}
         if style.get("strikethrough") is True:
             continue
-        parts.append(content)
+        parts.append(tr.get("content", ""))
     return "".join(parts).rstrip("\n")
 
 
-def yyyymmdd_to_yymmdd(date_str: str) -> str:
-    # YYYY-MM-DD -> YYMMDD
-    return date_str[2:4] + date_str[5:7] + date_str[8:10]
-
-
 def find_date_block(content: list, yymmdd: str) -> Tuple[int, int]:
+    """Encuentra el bloque de la entrada: desde el Heading 1 de la fecha hasta el próximo Heading 1."""
     start_i = None
-    for i, item in enumerate(content):
-        if (paragraph_style(item) or "") not in DATE_STYLE_TYPES:
+    # buscamos desde el final porque las entradas nuevas están al final
+    for i in range(len(content) - 1, -1, -1):
+        it = content[i]
+        if (paragraph_style(it) or "") not in DATE_STYLE_TYPES:
             continue
-        txt = paragraph_text_no_strike(item).strip()
-        if is_date_title_line(txt, yymmdd):
+        txt = strip_invisibles(paragraph_text_no_strike(it)).strip()
+        if first_six_digits(txt) == yymmdd:
             start_i = i
             break
+
     if start_i is None:
-        raise FormatError(f"No encontré la fecha {yymmdd} (estilo HEADING_1, TITLE).")
+        raise FormatError(f"No encontré la fecha {yymmdd} (HEADING_1).")
 
     end_i = len(content)
     for j in range(start_i + 1, len(content)):
         it = content[j]
         if (paragraph_style(it) or "") in DATE_STYLE_TYPES:
-            t = paragraph_text_no_strike(it).strip()
-            if is_date_title_line(t, yymmdd) or (len(first_six_digits(t)) == 6 and first_six_digits(t) != ""):
+            txt = strip_invisibles(paragraph_text_no_strike(it)).strip()
+            if len(first_six_digits(txt)) == 6:
                 end_i = j
                 break
+
     return start_i, end_i
 
 
-def _clean_lines(lines: List[str]) -> str:
+def clean_block_text(lines: List[str]) -> str:
+    # rstrip + remove empty extremes
+    lines = [strip_invisibles(ln).rstrip() for ln in lines]
     while lines and lines[0].strip() == "":
         lines.pop(0)
     while lines and lines[-1].strip() == "":
         lines.pop()
-    return "\n".join(lines).strip()
+    return "\n".join(lines)
 
 
 def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
@@ -136,14 +142,12 @@ def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
     start_i, end_i = find_date_block(content, yymmdd)
     block = content[start_i:end_i]
 
-    warnings: List[str] = []
-
-    # Find "Versión final" anchor (HEADING_2)
+    # localizar "Versión final" (HEADING_2) - obligatorio
     anchors = []
-    for k, item in enumerate(block):
-        if paragraph_style(item) != "HEADING_2":
+    for k, it in enumerate(block):
+        if paragraph_style(it) != "HEADING_2":
             continue
-        txt = paragraph_text_no_strike(item).strip()
+        txt = strip_invisibles(paragraph_text_no_strike(it)).strip()
         if FINAL_RE.match(txt):
             anchors.append(k)
 
@@ -151,81 +155,50 @@ def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
         raise FormatError(
             f"Formato inválido en {yymmdd}: esperaba exactamente 1 'Versión final' (HEADING_2), encontré {len(anchors)}."
         )
+
     a = anchors[0]
 
-    # --- metadata + poem_citado from block[1:a]
+    # parsear metadatos + poema citado (todo lo que NO sea metadato) antes del anchor
     poet = ""
     poem_title = ""
     book_title = ""
 
-    # soporte multi-línea para Título:
-    poem_title_lines: List[str] = []
-    collecting_title = False
+    cited_lines: List[str] = []
 
-
-    poem_lines: List[str] = []
-    seen_poem_body = False
-
-    for item in block[1:a]:  # skip date line
-        if not item.get("paragraph"):
+    for it in block[1:a]:  # saltar Heading 1
+        if not it.get("paragraph"):
             continue
-
-        txt = paragraph_text_no_strike(item)
-        s = txt.strip()
-
-        if STOP_ANALISIS_RE.match(s) or STOP_ENSAYO_RE.match(s):
-            break
-
-        m = META_POETA_RE.match(s)
-        if m:
-            poet = m.group(1).strip()
-            continue
-        m = META_TITULO_RE.match(s)
-        if m:
-            first = m.group(1).strip()
-            poem_title_lines = [first] if first else []
-            collecting_title = True
-            continue
-
-        m = META_LIBRO_RE.match(s)
-        if m:
-            book_title = m.group(1).strip()
-            continue
-
-        # Continuación del título en líneas siguientes (multi-línea)
-        # Regla: si acabamos de ver "Título:" y aún no empezó el cuerpo del poema citado,
-        # tomamos líneas no vacías que no sean otro metadata.
-        if collecting_title and not seen_poem_body:
-            if s == "":
-                collecting_title = False
+        raw = paragraph_text_no_strike(it)
+        # un mismo párrafo puede tener varias líneas (Shift+Enter)
+        for ln in split_logical_lines(raw):
+            s = ln.strip()
+            m = META_POETA_RE.match(s)
+            if m:
+                poet = m.group(1).strip()
                 continue
-
-            # Si parece otro metadata, paramos
-            if META_POETA_RE.match(s) or META_LIBRO_RE.match(s) or META_TITULO_RE.match(s):
-                collecting_title = False
-                # no hacemos continue: dejamos que el loop lo procese normalmente
-            else:
-                poem_title_lines.append(s)
+            m = META_LIBRO_RE.match(s)
+            if m:
+                book_title = m.group(1).strip()
                 continue
+            m = META_TITULO_RE.match(s)
+            if m:
+                poem_title = m.group(1).strip()
+                continue
+            # no es metadato => parte del poema citado
+            cited_lines.append(ln)
 
-        if s == "" and not seen_poem_body:
-            continue
+    poem_citado = clean_block_text(cited_lines)
 
-        seen_poem_body = True
-        poem_lines.append(txt.rstrip())
-
-    poem_citado = _clean_lines(poem_lines)
-
-    # --- analysis after anchor until end of block
+    # texto después de "Versión final" (puede estar vacío para PDF)
     analysis_lines: List[str] = []
-    for item in block[a + 1 :]:
-        if item.get("paragraph"):
-            analysis_lines.append(paragraph_text_no_strike(item).rstrip())
-    analysis = _clean_lines(analysis_lines)
-    if not analysis:
-        raise FormatError(f"Formato inválido en {yymmdd}: 'Versión final' está vacía (después de limpiar tachado).")
+    for it in block[a + 1 :]:
+        if not it.get("paragraph"):
+            continue
+        raw = paragraph_text_no_strike(it)
+        for ln in split_logical_lines(raw):
+            analysis_lines.append(ln)
 
-    poem_title = "/".join([t.strip() for t in poem_title_lines if t.strip()])
+    analysis = clean_block_text(analysis_lines)
 
     return {
         "poet": poet,
@@ -233,7 +206,7 @@ def pull_entry(doc_id: str, tab_title: str, yymmdd: str) -> dict:
         "book_title": book_title,
         "poem_citado": poem_citado,
         "analysis": analysis,
-        "warnings": warnings,
+        "warnings": [],
     }
 
 
@@ -248,7 +221,7 @@ def main() -> int:
     doc_id = args.doc or cfg.get("analyses_doc_id")
     tab_title = args.tab or cfg.get("analyses_tab_title") or "Escritos"
     if not doc_id:
-        print("ERROR: missing analyses_doc_id in config")
+        print("ERROR: missing analyses_doc_id in config", file=sys.stderr)
         return 2
 
     yymmdd = yyyymmdd_to_yymmdd(args.date)
@@ -264,10 +237,6 @@ def main() -> int:
 
     print(json.dumps(obj, ensure_ascii=False))
     return 0
-
-
-def yyyymmdd_to_yymmdd(date_str: str) -> str:
-    return date_str[2:4] + date_str[5:7] + date_str[8:10]
 
 
 if __name__ == "__main__":
