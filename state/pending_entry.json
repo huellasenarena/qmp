@@ -1,1 +1,87 @@
-{}
+{
+  "date": "2026-02-12",
+  "month": "2026-02",
+  "file": "textos/2026-02-12.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "​",
+  "analysis": {
+    "poet": "Federico García Lorca",
+    "poem_title": "Acto I Cuadro II",
+    "poem_snippet": "",
+    "book_title": "Bodas de Sangre"
+  },
+  "keywords": [
+    {
+      "word": "autoenunciacion del valor",
+      "weight": 3
+    },
+    {
+      "word": "dano como medida de valor",
+      "weight": 3
+    },
+    {
+      "word": "dignidad subalterna",
+      "weight": 3
+    },
+    {
+      "word": "humillacion como afirmacion",
+      "weight": 3
+    },
+    {
+      "word": "poder disciplinario",
+      "weight": 3
+    },
+    {
+      "word": "vulnerabilidad activa",
+      "weight": 3
+    },
+    {
+      "word": "contravaloracion",
+      "weight": 2
+    },
+    {
+      "word": "desprecio",
+      "weight": 2
+    },
+    {
+      "word": "dominacion",
+      "weight": 2
+    },
+    {
+      "word": "performatividad",
+      "weight": 2
+    },
+    {
+      "word": "resistencia minima",
+      "weight": 2
+    },
+    {
+      "word": "silencio impuesto",
+      "weight": 2
+    },
+    {
+      "word": "sometimiento",
+      "weight": 2
+    },
+    {
+      "word": "dalia",
+      "weight": 1
+    },
+    {
+      "word": "flor pequena",
+      "weight": 1
+    },
+    {
+      "word": "pie",
+      "weight": 1
+    },
+    {
+      "word": "pisoteo",
+      "weight": 1
+    },
+    {
+      "word": "suelo",
+      "weight": 1
+    }
+  ]
+}

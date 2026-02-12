@@ -1,0 +1,31 @@
+FECHA: 2026-02-12
+MY_POEM_TITLE: 
+POETA: Federico García Lorca
+POEM_TITLE: Acto I Cuadro II
+BOOK_TITLE: Bodas de Sangre
+
+# POEMA
+
+​
+el pequeño dalia
+que se dice su valor
+al ser pisoteado
+
+​
+
+# POEMA_CITADO
+
+​
+
+​
+
+# TEXTO
+
+​
+Nos presenta al simpático ex novio de la novia de la primera escena, Leonardo, que le dice a su suegra que se calle, es desdeñoso, y se comporta con agresión durante toda la escena.
+
+Tiene secretos, de los cuales no quiere hablar con su mujer, yendo a los llanos (donde vive la novia). Además, aprendemos que tiene dinero esta novia... entonces... ¿qué va a pasar durante la próxima boda? ¿Se va a poner a llorar el caballo?
+
+
+
+​
