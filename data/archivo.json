@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-02-13",
+    "month": "2026-02",
+    "file": "textos/2026-02-13.txt",
+    "my_poem_title": "la cantuta",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Federico García Lorca",
+      "poem_title": "Acto I Cuadro III",
+      "poem_snippet": "",
+      "book_title": "Bodas de Sangre",
+      "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-I-Cuadro-III.pdf"
+    },
+    "keywords": [
+      {
+        "word": "apertura como afirmacion",
+        "weight": 3
+      },
+      {
+        "word": "contra linealidad",
+        "weight": 3
+      },
+      {
+        "word": "gestacion invisible",
+        "weight": 3
+      },
+      {
+        "word": "potencia del parar",
+        "weight": 3
+      },
+      {
+        "word": "revalorizacion del estancamiento",
+        "weight": 3
+      },
+      {
+        "word": "temporalidad latente",
+        "weight": 3
+      },
+      {
+        "word": "acumulacion silente",
+        "weight": 2
+      },
+      {
+        "word": "culminacion previa a caida",
+        "weight": 2
+      },
+      {
+        "word": "floracion sorpresiva",
+        "weight": 2
+      },
+      {
+        "word": "opacidad del progreso",
+        "weight": 2
+      },
+      {
+        "word": "suspension",
+        "weight": 2
+      },
+      {
+        "word": "tension dialectica",
+        "weight": 2
+      },
+      {
+        "word": "verificacion",
+        "weight": 2
+      },
+      {
+        "word": "abre",
+        "weight": 1
+      },
+      {
+        "word": "anda",
+        "weight": 1
+      },
+      {
+        "word": "antes de caer",
+        "weight": 1
+      },
+      {
+        "word": "antes de parar",
+        "weight": 1
+      },
+      {
+        "word": "dia",
+        "weight": 1
+      },
+      {
+        "word": "florece",
+        "weight": 1
+      },
+      {
+        "word": "no crece",
+        "weight": 1
+      },
+      {
+        "word": "piensa",
+        "weight": 1
+      },
+      {
+        "word": "sin avances",
+        "weight": 1
+      },
+      {
+        "word": "tiene razon",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-12",
     "month": "2026-02",
     "file": "textos/2026-02-12.txt",

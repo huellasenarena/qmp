@@ -1,0 +1,36 @@
+FECHA: 2026-02-13
+MY_POEM_TITLE: la cantuta
+POETA: Federico García Lorca
+POEM_TITLE: Acto I Cuadro III
+BOOK_TITLE: Bodas de Sangre
+
+# POEMA
+piensa
+que es sin avances
+que anda
+
+que no crece
+
+luego un día
+abre
+florece
+
+antes de parar
+antes de caer.
+
+tiene razón
+sin avances
+
+# POEMA_CITADO
+
+
+# TEXTO
+El cuadro se divide en dos partes: la conversación entre las dos familias sobre la boda y una conversación privada entre la novia y la criada.
+
+La madre no se muestra totalmente de acuerdo con la familia y la boda, quejándose por la distancia, el ambiente, y la novia, examinándola minuciosamente y preguntándole si sabe ser mujer. En la primera escena, aprendemos que la madre sospecha una relación pasada entre la novia y Leonardo y leí esta escena a través de la lente de esta corazonada.
+
+Al final, las familias están de acuerdo.
+
+Pero la criada sospecha el secreto de la novia, insinuando que fue Leonardo quien vino a caballo antes. La novia actúa a la defensiva pero, al final, confiesa la verdad.
+
+No es un gran placer para mí leer la obra; las normas de la época no me dicen mucho y hay un vocabulario muy específico (nombres de flores, árboles, animales, actividades...) que me resulta difícil. De todos modos, voy a terminarlo.
