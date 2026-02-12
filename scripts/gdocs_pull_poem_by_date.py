@@ -131,21 +131,17 @@ def pull_poem(doc_id: str, tab_title: str, yymmdd: str) -> Tuple[str, str]:
 
         # Si todavía no hemos encontrado título, intentamos solo en el primer contenido real
         # (cualquier línea lógica que empiece con "Título:")
-        found_title_here = False
         for line in logical:
             m = META_TITLE_RE.match(line)
             if (not consumed_first_title_line) and m:
                 title = (m.group(1) or "").strip()
                 consumed_first_title_line = True
-                found_title_here = True
-                # Si había más texto en ese párrafo después de "Título:", lo ignoramos.
-                continue
-            if found_title_here:
-                # Si este párrafo era la línea del título, ignoramos el resto de líneas lógicas
-                # para evitar que el título se meta en el poema.
+                # Importante: solo ignoramos ESTA línea (la del título),
+                # pero NO ignoramos el resto del párrafo.
                 continue
 
             poem_lines.append(line)
+
 
     # limpieza suave (sin depender de qcrear)
     # quitar NBSP / invisibles
