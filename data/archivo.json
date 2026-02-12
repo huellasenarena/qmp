@@ -4,64 +4,69 @@
     "month": "2026-02",
     "file": "textos/2026-02-12.txt",
     "my_poem_title": "",
-    "my_poem_snippet": "​",
+    "my_poem_snippet": "el pequeño dalia",
     "analysis": {
       "poet": "Federico García Lorca",
       "poem_title": "Acto I Cuadro II",
       "poem_snippet": "",
-      "book_title": "Bodas de Sangre"
+      "book_title": "Bodas de Sangre",
+      "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-I-Cuadro-II.pdf"
     },
     "keywords": [
       {
-        "word": "autoenunciacion del valor",
+        "word": "autovaloracion coercitiva",
         "weight": 3
       },
       {
-        "word": "dano como medida de valor",
+        "word": "dignidad en la degradacion",
         "weight": 3
       },
       {
-        "word": "dignidad subalterna",
+        "word": "lenguaje performativo",
         "weight": 3
       },
       {
-        "word": "humillacion como afirmacion",
+        "word": "poder aplastante",
         "weight": 3
       },
       {
-        "word": "poder disciplinario",
+        "word": "subjetivacion bajo violencia",
         "weight": 3
       },
       {
-        "word": "vulnerabilidad activa",
+        "word": "ultraje como revelacion",
         "weight": 3
       },
       {
-        "word": "contravaloracion",
+        "word": "asimetria de poder",
         "weight": 2
       },
       {
-        "word": "desprecio",
+        "word": "autoafirmacion",
         "weight": 2
       },
       {
-        "word": "dominacion",
+        "word": "cuerpo como evidencia",
         "weight": 2
       },
       {
-        "word": "performatividad",
+        "word": "humillacion",
         "weight": 2
       },
       {
-        "word": "resistencia minima",
+        "word": "interiorizacion de la norma",
         "weight": 2
       },
       {
-        "word": "silencio impuesto",
+        "word": "resistencia material",
         "weight": 2
       },
       {
-        "word": "sometimiento",
+        "word": "violencia cotidiana",
+        "weight": 2
+      },
+      {
+        "word": "vulnerabilidad",
         "weight": 2
       },
       {
@@ -69,7 +74,11 @@
         "weight": 1
       },
       {
-        "word": "flor pequena",
+        "word": "flor",
+        "weight": 1
+      },
+      {
+        "word": "pequeno",
         "weight": 1
       },
       {
@@ -77,7 +86,7 @@
         "weight": 1
       },
       {
-        "word": "pisoteo",
+        "word": "pisoteado",
         "weight": 1
       },
       {
