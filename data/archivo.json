@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-02-14",
+    "month": "2026-02",
+    "file": "textos/2026-02-14.txt",
+    "my_poem_title": "cattleya maxima",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Federico García Lorca",
+      "poem_title": "Acto II Cuadro I",
+      "poem_snippet": "",
+      "book_title": "Bodas de Sangre",
+      "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-II-Cuadro-I.pdf"
+    },
+    "keywords": [
+      {
+        "word": "asimetria",
+        "weight": 3
+      },
+      {
+        "word": "caducidad-como-criterio",
+        "weight": 3
+      },
+      {
+        "word": "normatividad",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "temporalidad",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "discrepancia",
+        "weight": 2
+      },
+      {
+        "word": "enunciacion",
+        "weight": 2
+      },
+      {
+        "word": "exclusion",
+        "weight": 2
+      },
+      {
+        "word": "jerarquia",
+        "weight": 2
+      },
+      {
+        "word": "negacion",
+        "weight": 2
+      },
+      {
+        "word": "tension-identitaria",
+        "weight": 2
+      },
+      {
+        "word": "dices",
+        "weight": 1
+      },
+      {
+        "word": "diferencia",
+        "weight": 1
+      },
+      {
+        "word": "digo",
+        "weight": 1
+      },
+      {
+        "word": "distancia",
+        "weight": 1
+      },
+      {
+        "word": "mangas",
+        "weight": 1
+      },
+      {
+        "word": "moda",
+        "weight": 1
+      },
+      {
+        "word": "pasadas-de-moda",
+        "weight": 1
+      },
+      {
+        "word": "voz",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-13",
     "month": "2026-02",
     "file": "textos/2026-02-13.txt",

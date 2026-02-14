@@ -1,0 +1,26 @@
+FECHA: 2026-02-14
+MY_POEM_TITLE: cattleya maxima
+POETA: Federico García Lorca
+POEM_TITLE: Acto II Cuadro I
+BOOK_TITLE: Bodas de Sangre
+
+# POEMA
+mangas como esas
+están pasadas de moda
+digo
+
+tu moda sí
+mi moda no
+dices
+
+# POEMA_CITADO
+
+
+# TEXTO
+La novia tiene dudas sobre la próxima boda y se muestra seria con la Criada... me parece que hay una tensión entre ellas porque la Criada sabe que está teniendo una relación secreta con Leonardo.
+
+Leonardo viene, y con él viene su arrogancia ("Abre y refresca tu recuerdo") y su desprecio por la vida ("¡Cuando se muera, muerto está!"). Está claro que está buscando problemas.
+
+Hay una celebración con música y mucha gente y deciden ir a la iglesia para casarse.
+
+Pienso que Leonardo será la causa de los problemas que, creo, van a producirse. Tiene mal genio con la novia y con su mujer; su carácter desagradable, predigo, creará conflictos durante la boda.

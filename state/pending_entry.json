@@ -1,107 +1,95 @@
 {
-  "date": "2026-02-13",
+  "date": "2026-02-14",
   "month": "2026-02",
-  "file": "textos/2026-02-13.txt",
-  "my_poem_title": "la cantuta",
+  "file": "textos/2026-02-14.txt",
+  "my_poem_title": "cattleya maxima",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Federico García Lorca",
-    "poem_title": "Acto I Cuadro III",
+    "poem_title": "Acto II Cuadro I",
     "poem_snippet": "",
     "book_title": "Bodas de Sangre",
-    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-I-Cuadro-III.pdf"
+    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-II-Cuadro-I.pdf"
   },
   "keywords": [
     {
-      "word": "apertura como afirmacion",
+      "word": "asimetria",
       "weight": 3
     },
     {
-      "word": "contra linealidad",
+      "word": "caducidad-como-criterio",
       "weight": 3
     },
     {
-      "word": "gestacion invisible",
+      "word": "normatividad",
       "weight": 3
     },
     {
-      "word": "potencia del parar",
+      "word": "performatividad",
       "weight": 3
     },
     {
-      "word": "revalorizacion del estancamiento",
+      "word": "temporalidad",
       "weight": 3
     },
     {
-      "word": "temporalidad latente",
-      "weight": 3
-    },
-    {
-      "word": "acumulacion silente",
+      "word": "cuerpo",
       "weight": 2
     },
     {
-      "word": "culminacion previa a caida",
+      "word": "discrepancia",
       "weight": 2
     },
     {
-      "word": "floracion sorpresiva",
+      "word": "enunciacion",
       "weight": 2
     },
     {
-      "word": "opacidad del progreso",
+      "word": "exclusion",
       "weight": 2
     },
     {
-      "word": "suspension",
+      "word": "jerarquia",
       "weight": 2
     },
     {
-      "word": "tension dialectica",
+      "word": "negacion",
       "weight": 2
     },
     {
-      "word": "verificacion",
+      "word": "tension-identitaria",
       "weight": 2
     },
     {
-      "word": "abre",
+      "word": "dices",
       "weight": 1
     },
     {
-      "word": "anda",
+      "word": "diferencia",
       "weight": 1
     },
     {
-      "word": "antes de caer",
+      "word": "digo",
       "weight": 1
     },
     {
-      "word": "antes de parar",
+      "word": "distancia",
       "weight": 1
     },
     {
-      "word": "dia",
+      "word": "mangas",
       "weight": 1
     },
     {
-      "word": "florece",
+      "word": "moda",
       "weight": 1
     },
     {
-      "word": "no crece",
+      "word": "pasadas-de-moda",
       "weight": 1
     },
     {
-      "word": "piensa",
-      "weight": 1
-    },
-    {
-      "word": "sin avances",
-      "weight": 1
-    },
-    {
-      "word": "tiene razon",
+      "word": "voz",
       "weight": 1
     }
   ]
