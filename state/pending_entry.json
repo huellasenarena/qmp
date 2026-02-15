@@ -1,95 +1,87 @@
 {
-  "date": "2026-02-14",
+  "date": "2026-02-15",
   "month": "2026-02",
-  "file": "textos/2026-02-14.txt",
-  "my_poem_title": "cattleya maxima",
+  "file": "textos/2026-02-15.txt",
+  "my_poem_title": "amancae",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Federico García Lorca",
-    "poem_title": "Acto II Cuadro I",
+    "poem_title": "Acto II Cuadro II",
     "poem_snippet": "",
     "book_title": "Bodas de Sangre",
-    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-II-Cuadro-I.pdf"
+    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-II-Cuadro-II.pdf"
   },
   "keywords": [
     {
-      "word": "asimetria",
+      "word": "anormalidad como indice",
       "weight": 3
     },
     {
-      "word": "caducidad-como-criterio",
+      "word": "atencion por perdida",
       "weight": 3
     },
     {
-      "word": "normatividad",
+      "word": "exceso corporal",
       "weight": 3
     },
     {
-      "word": "performatividad",
+      "word": "generosidad como inestabilidad",
       "weight": 3
     },
     {
-      "word": "temporalidad",
+      "word": "visibilidad condicionada por falta",
       "weight": 3
     },
     {
-      "word": "cuerpo",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "discrepancia",
+      "word": "focalizacion atencional",
       "weight": 2
     },
     {
-      "word": "enunciacion",
+      "word": "gesto abierto",
       "weight": 2
     },
     {
-      "word": "exclusion",
+      "word": "performatividad manual",
       "weight": 2
     },
     {
-      "word": "jerarquia",
+      "word": "precariedad",
       "weight": 2
     },
     {
-      "word": "negacion",
+      "word": "revelacion por fallo",
       "weight": 2
     },
     {
-      "word": "tension-identitaria",
+      "word": "tension entrega",
       "weight": 2
     },
     {
-      "word": "dices",
+      "word": "abiertos",
       "weight": 1
     },
     {
-      "word": "diferencia",
+      "word": "caida",
       "weight": 1
     },
     {
-      "word": "digo",
+      "word": "dedos",
       "weight": 1
     },
     {
-      "word": "distancia",
+      "word": "ofrecer",
       "weight": 1
     },
     {
-      "word": "mangas",
+      "word": "persona",
       "weight": 1
     },
     {
-      "word": "moda",
-      "weight": 1
-    },
-    {
-      "word": "pasadas-de-moda",
-      "weight": 1
-    },
-    {
-      "word": "voz",
+      "word": "regalo",
       "weight": 1
     }
   ]

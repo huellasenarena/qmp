@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-02-15",
+    "month": "2026-02",
+    "file": "textos/2026-02-15.txt",
+    "my_poem_title": "amancae",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Federico García Lorca",
+      "poem_title": "Acto II Cuadro II",
+      "poem_snippet": "",
+      "book_title": "Bodas de Sangre",
+      "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-II-Cuadro-II.pdf"
+    },
+    "keywords": [
+      {
+        "word": "anormalidad como indice",
+        "weight": 3
+      },
+      {
+        "word": "atencion por perdida",
+        "weight": 3
+      },
+      {
+        "word": "exceso corporal",
+        "weight": 3
+      },
+      {
+        "word": "generosidad como inestabilidad",
+        "weight": 3
+      },
+      {
+        "word": "visibilidad condicionada por falta",
+        "weight": 3
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "focalizacion atencional",
+        "weight": 2
+      },
+      {
+        "word": "gesto abierto",
+        "weight": 2
+      },
+      {
+        "word": "performatividad manual",
+        "weight": 2
+      },
+      {
+        "word": "precariedad",
+        "weight": 2
+      },
+      {
+        "word": "revelacion por fallo",
+        "weight": 2
+      },
+      {
+        "word": "tension entrega",
+        "weight": 2
+      },
+      {
+        "word": "abiertos",
+        "weight": 1
+      },
+      {
+        "word": "caida",
+        "weight": 1
+      },
+      {
+        "word": "dedos",
+        "weight": 1
+      },
+      {
+        "word": "ofrecer",
+        "weight": 1
+      },
+      {
+        "word": "persona",
+        "weight": 1
+      },
+      {
+        "word": "regalo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-14",
     "month": "2026-02",
     "file": "textos/2026-02-14.txt",

@@ -1,0 +1,26 @@
+FECHA: 2026-02-15
+MY_POEM_TITLE: amancae
+POETA: Federico García Lorca
+POEM_TITLE: Acto II Cuadro II
+BOOK_TITLE: Bodas de Sangre
+
+# POEMA
+cuanto más los seis dedos
+ofrecen un regalo
+más se vuelve inestable
+
+y cuando se cae el regalo
+persona presta atención
+a los dedos abiertos
+
+# POEMA_CITADO
+
+
+# TEXTO
+El día de la boda ha llegado, casi todo el mundo está emocionado... aparte de la novia, que se muestra apática ("no pienso en nada") y reacia con el novio.
+
+Antes de casarse, la novia huye con Leonardo. La madre del novio se vuelve acusatoria hacia la familia de la novia y la escena termina con el caos de no saber dónde están la novia y Leonardo. Buscan un caballo (pienso en las nanas que mencionan caballos).
+
+Me parece que hay un doble sentido en la palabra "sangre". Hay la idea de derramar la sangre, como matar, pero también la connotación de la sangre como "la familia". Vemos al final de la escena la madre diciendo "Dos bandos... mi familia y la tuya". Vemos que la sangre es algo que divide.
+
+¿Qué va a pasar? Alguien va a morir... ¿el novio? ¿Leonardo? ¿Todo el mundo?... veremos.
