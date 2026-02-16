@@ -1,103 +1,103 @@
 {
-  "date": "2026-02-16",
+  "date": "2026-02-17",
   "month": "2026-02",
-  "file": "textos/2026-02-16.txt",
-  "my_poem_title": "flor de retama",
+  "file": "textos/2026-02-17.txt",
+  "my_poem_title": "heliconia",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Federico García Lorca",
-    "poem_title": "Acto III Cuadro I",
+    "poem_title": "Acto III Cuadro II",
     "poem_snippet": "",
     "book_title": "Bodas de Sangre",
-    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-III-Cuadro-I.pdf"
+    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-III-Cuadro-II.pdf"
   },
   "keywords": [
     {
-      "word": "dependencia corporal",
+      "word": "incertidumbre como motor",
       "weight": 3
     },
     {
-      "word": "espera como poder",
+      "word": "instrumentalizacion del cuerpo",
       "weight": 3
     },
     {
-      "word": "repeticion performativa",
+      "word": "pregunta como prueba",
       "weight": 3
     },
     {
-      "word": "soporte como carga",
+      "word": "responsabilidad transferida",
       "weight": 3
     },
     {
-      "word": "temporalizacion del cuerpo",
+      "word": "silencio como imposicion",
       "weight": 3
     },
     {
-      "word": "ambiguedad de consentimiento",
+      "word": "violencia como cuidado",
+      "weight": 3
+    },
+    {
+      "word": "ambiguedad de intencion",
       "weight": 2
     },
     {
-      "word": "demora normativa",
+      "word": "engano performativo",
       "weight": 2
     },
     {
-      "word": "dialectica de alivio y exposicion",
+      "word": "escalada impulsiva",
       "weight": 2
     },
     {
-      "word": "insistencia linguistica",
+      "word": "exposicion ritual",
       "weight": 2
     },
     {
-      "word": "interdependencia",
+      "word": "microacciones de poder",
       "weight": 2
     },
     {
-      "word": "ritual de peticion",
+      "word": "transferencia de dano",
       "weight": 2
     },
     {
-      "word": "tension entre cuidado y peso",
-      "weight": 2
-    },
-    {
-      "word": "adoloramiento",
+      "word": "boda",
       "weight": 1
     },
     {
-      "word": "aguardar",
+      "word": "calla",
       "weight": 1
     },
     {
-      "word": "asiento",
+      "word": "hombre",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "muerte",
       "weight": 1
     },
     {
-      "word": "descansar",
+      "word": "mujer",
       "weight": 1
     },
     {
-      "word": "momento",
+      "word": "novia",
       "weight": 1
     },
     {
-      "word": "pregunta",
+      "word": "proteger",
       "weight": 1
     },
     {
-      "word": "repeticion",
+      "word": "puntas",
       "weight": 1
     },
     {
-      "word": "soportar",
+      "word": "respuesta",
       "weight": 1
     },
     {
-      "word": "tiempo",
+      "word": "truco",
       "weight": 1
     }
   ]

@@ -1,0 +1,23 @@
+FECHA: 2026-02-17
+MY_POEM_TITLE: heliconia
+POETA: Federico García Lorca
+POEM_TITLE: Acto III Cuadro II
+BOOK_TITLE: Bodas de Sangre
+
+# POEMA
+con tus puntas afiladas
+¿me vas a proteger?
+¿o es un truco?
+
+¿voy a conocer la
+respuesta?
+
+# POEMA_CITADO
+
+
+# TEXTO
+En este cuadro, si bebiera un trago de pisco cada vez que dicen "calla"...
+
+El cuadro está lleno de duelo, negación, y acusaciones. Ya solo quedan las mujeres (la suegra, la madre, la novia, la mujer de Leonardo). Un tema de la obra es la impulsividad masculina: Leonardo vino a la boda con una idea poco clara de huir con la novia y ambos pelearon hasta la muerte. Otro tema puede ser la fragilidad percibida femenina del autor... aunque estén vivas, se presentan deshechas, pagando las consecuencias de las decisiones de los hombres.
+
+Me alegro de que se acabó. Me imagino que me gustaría más leer una obra más actual pero fue interesante (no diría agradable) leer esta obra.
