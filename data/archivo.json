@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-02-16",
+    "month": "2026-02",
+    "file": "textos/2026-02-16.txt",
+    "my_poem_title": "flor de retama",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Federico García Lorca",
+      "poem_title": "Acto III Cuadro I",
+      "poem_snippet": "",
+      "book_title": "Bodas de Sangre",
+      "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-III-Cuadro-I.pdf"
+    },
+    "keywords": [
+      {
+        "word": "dependencia corporal",
+        "weight": 3
+      },
+      {
+        "word": "espera como poder",
+        "weight": 3
+      },
+      {
+        "word": "repeticion performativa",
+        "weight": 3
+      },
+      {
+        "word": "soporte como carga",
+        "weight": 3
+      },
+      {
+        "word": "temporalizacion del cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "ambiguedad de consentimiento",
+        "weight": 2
+      },
+      {
+        "word": "demora normativa",
+        "weight": 2
+      },
+      {
+        "word": "dialectica de alivio y exposicion",
+        "weight": 2
+      },
+      {
+        "word": "insistencia linguistica",
+        "weight": 2
+      },
+      {
+        "word": "interdependencia",
+        "weight": 2
+      },
+      {
+        "word": "ritual de peticion",
+        "weight": 2
+      },
+      {
+        "word": "tension entre cuidado y peso",
+        "weight": 2
+      },
+      {
+        "word": "adoloramiento",
+        "weight": 1
+      },
+      {
+        "word": "aguardar",
+        "weight": 1
+      },
+      {
+        "word": "asiento",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "descansar",
+        "weight": 1
+      },
+      {
+        "word": "momento",
+        "weight": 1
+      },
+      {
+        "word": "pregunta",
+        "weight": 1
+      },
+      {
+        "word": "repeticion",
+        "weight": 1
+      },
+      {
+        "word": "soportar",
+        "weight": 1
+      },
+      {
+        "word": "tiempo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-15",
     "month": "2026-02",
     "file": "textos/2026-02-15.txt",

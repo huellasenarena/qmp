@@ -1,87 +1,103 @@
 {
-  "date": "2026-02-15",
+  "date": "2026-02-16",
   "month": "2026-02",
-  "file": "textos/2026-02-15.txt",
-  "my_poem_title": "amancae",
+  "file": "textos/2026-02-16.txt",
+  "my_poem_title": "flor de retama",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Federico García Lorca",
-    "poem_title": "Acto II Cuadro II",
+    "poem_title": "Acto III Cuadro I",
     "poem_snippet": "",
     "book_title": "Bodas de Sangre",
-    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-II-Cuadro-II.pdf"
+    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-III-Cuadro-I.pdf"
   },
   "keywords": [
     {
-      "word": "anormalidad como indice",
+      "word": "dependencia corporal",
       "weight": 3
     },
     {
-      "word": "atencion por perdida",
+      "word": "espera como poder",
       "weight": 3
     },
     {
-      "word": "exceso corporal",
+      "word": "repeticion performativa",
       "weight": 3
     },
     {
-      "word": "generosidad como inestabilidad",
+      "word": "soporte como carga",
       "weight": 3
     },
     {
-      "word": "visibilidad condicionada por falta",
+      "word": "temporalizacion del cuerpo",
       "weight": 3
     },
     {
-      "word": "exposicion",
+      "word": "ambiguedad de consentimiento",
       "weight": 2
     },
     {
-      "word": "focalizacion atencional",
+      "word": "demora normativa",
       "weight": 2
     },
     {
-      "word": "gesto abierto",
+      "word": "dialectica de alivio y exposicion",
       "weight": 2
     },
     {
-      "word": "performatividad manual",
+      "word": "insistencia linguistica",
       "weight": 2
     },
     {
-      "word": "precariedad",
+      "word": "interdependencia",
       "weight": 2
     },
     {
-      "word": "revelacion por fallo",
+      "word": "ritual de peticion",
       "weight": 2
     },
     {
-      "word": "tension entrega",
+      "word": "tension entre cuidado y peso",
       "weight": 2
     },
     {
-      "word": "abiertos",
+      "word": "adoloramiento",
       "weight": 1
     },
     {
-      "word": "caida",
+      "word": "aguardar",
       "weight": 1
     },
     {
-      "word": "dedos",
+      "word": "asiento",
       "weight": 1
     },
     {
-      "word": "ofrecer",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "persona",
+      "word": "descansar",
       "weight": 1
     },
     {
-      "word": "regalo",
+      "word": "momento",
+      "weight": 1
+    },
+    {
+      "word": "pregunta",
+      "weight": 1
+    },
+    {
+      "word": "repeticion",
+      "weight": 1
+    },
+    {
+      "word": "soportar",
+      "weight": 1
+    },
+    {
+      "word": "tiempo",
       "weight": 1
     }
   ]

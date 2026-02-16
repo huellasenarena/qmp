@@ -1,0 +1,34 @@
+FECHA: 2026-02-16
+MY_POEM_TITLE: flor de retama
+POETA: Federico García Lorca
+POEM_TITLE: Acto III Cuadro I
+BOOK_TITLE: Bodas de Sangre
+
+# POEMA
+¿puedo descansar
+en tu asiento
+un momento?
+
+¿me puede soportar?
+adoloramiento
+adoloramiento
+
+¿o tengo que aguardar?
+el tiempo
+el tiempo
+
+# POEMA_CITADO
+
+
+# TEXTO
+Hay dos escenas surrealistas que dividen interacciones entre el novio y un mozo y el novio y Leonardo.
+
+No me dicen mucho estas escenas surrealistas; me imagino que hay un significado pero no lo veo.
+
+En las escenas reales, vemos de ambos lados el deseo determinado de matar.
+
+Una crítica que tengo es que, en mi opinión, el desarrollo de la obra fue claro desde la primera escena: vimos un amor secreto combinado con una tendencia de resolver problemas con violencia. Desde el principio supe el resto de la obra.
+
+Este cuadro también me recuerda la escena en *The Big Lebowski* donde se ve la obra del propietario; el pequeño público la miraba con desconcierto, no sabiendo qué pensar. Fue con un sentimiento parecido que vi este cuadro; no supe qué pensar de la luna, la mendiga...
+
+Me alegro de que me queda solo un otro cuadro.
