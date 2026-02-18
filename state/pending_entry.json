@@ -1,103 +1,114 @@
 {
-  "date": "2026-02-17",
+  "date": "2026-02-18",
   "month": "2026-02",
-  "file": "textos/2026-02-17.txt",
-  "my_poem_title": "heliconia",
+  "file": "textos/2026-02-18.txt",
+  "my_poem_title": "jacarandá",
   "my_poem_snippet": "",
   "analysis": {
-    "poet": "Federico García Lorca",
-    "poem_title": "Acto III Cuadro II",
+    "poet": "Soledad Castresana",
+    "poem_title": "el juego",
     "poem_snippet": "",
-    "book_title": "Bodas de Sangre",
-    "pdf": "/data/pdfs/Bodas-de-Sangre/Acto-III-Cuadro-II.pdf"
+    "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "incertidumbre como motor",
+      "word": "ambiguedad de la pertenencia",
       "weight": 3
     },
     {
-      "word": "instrumentalizacion del cuerpo",
+      "word": "inversion del valor estetico",
       "weight": 3
     },
     {
-      "word": "pregunta como prueba",
+      "word": "materialidad del color",
       "weight": 3
     },
     {
-      "word": "responsabilidad transferida",
+      "word": "prioridad de lo sensorial",
       "weight": 3
     },
     {
-      "word": "silencio como imposicion",
+      "word": "visibilizacion de la herida",
       "weight": 3
     },
     {
-      "word": "violencia como cuidado",
+      "word": "vulnerabilizacion del sujeto",
       "weight": 3
     },
     {
-      "word": "ambiguedad de intencion",
+      "word": "caida jerarquica",
       "weight": 2
     },
     {
-      "word": "engano performativo",
+      "word": "consumicion",
       "weight": 2
     },
     {
-      "word": "escalada impulsiva",
+      "word": "erotizacion de la violencia",
       "weight": 2
     },
     {
-      "word": "exposicion ritual",
+      "word": "fragmentacion corporal",
       "weight": 2
     },
     {
-      "word": "microacciones de poder",
+      "word": "observacion coaccionada",
       "weight": 2
     },
     {
-      "word": "transferencia de dano",
+      "word": "silencio impuesto",
       "weight": 2
     },
     {
-      "word": "boda",
+      "word": "testimonio interrumpido",
+      "weight": 2
+    },
+    {
+      "word": "cabeza",
       "weight": 1
     },
     {
-      "word": "calla",
+      "word": "charco",
       "weight": 1
     },
     {
-      "word": "hombre",
+      "word": "huesos",
       "weight": 1
     },
     {
-      "word": "muerte",
+      "word": "juego",
       "weight": 1
     },
     {
-      "word": "mujer",
+      "word": "labios",
       "weight": 1
     },
     {
-      "word": "novia",
+      "word": "mirada",
       "weight": 1
     },
     {
-      "word": "proteger",
+      "word": "morado",
       "weight": 1
     },
     {
-      "word": "puntas",
+      "word": "oreja",
       "weight": 1
     },
     {
-      "word": "respuesta",
+      "word": "paladar",
       "weight": 1
     },
     {
-      "word": "truco",
+      "word": "pelo",
+      "weight": 1
+    },
+    {
+      "word": "perro",
+      "weight": 1
+    },
+    {
+      "word": "sangre",
       "weight": 1
     }
   ]

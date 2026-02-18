@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-02-18",
+    "month": "2026-02",
+    "file": "textos/2026-02-18.txt",
+    "my_poem_title": "jacarandá",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "el juego",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "ambiguedad de la pertenencia",
+        "weight": 3
+      },
+      {
+        "word": "inversion del valor estetico",
+        "weight": 3
+      },
+      {
+        "word": "materialidad del color",
+        "weight": 3
+      },
+      {
+        "word": "prioridad de lo sensorial",
+        "weight": 3
+      },
+      {
+        "word": "visibilizacion de la herida",
+        "weight": 3
+      },
+      {
+        "word": "vulnerabilizacion del sujeto",
+        "weight": 3
+      },
+      {
+        "word": "caida jerarquica",
+        "weight": 2
+      },
+      {
+        "word": "consumicion",
+        "weight": 2
+      },
+      {
+        "word": "erotizacion de la violencia",
+        "weight": 2
+      },
+      {
+        "word": "fragmentacion corporal",
+        "weight": 2
+      },
+      {
+        "word": "observacion coaccionada",
+        "weight": 2
+      },
+      {
+        "word": "silencio impuesto",
+        "weight": 2
+      },
+      {
+        "word": "testimonio interrumpido",
+        "weight": 2
+      },
+      {
+        "word": "cabeza",
+        "weight": 1
+      },
+      {
+        "word": "charco",
+        "weight": 1
+      },
+      {
+        "word": "huesos",
+        "weight": 1
+      },
+      {
+        "word": "juego",
+        "weight": 1
+      },
+      {
+        "word": "labios",
+        "weight": 1
+      },
+      {
+        "word": "mirada",
+        "weight": 1
+      },
+      {
+        "word": "morado",
+        "weight": 1
+      },
+      {
+        "word": "oreja",
+        "weight": 1
+      },
+      {
+        "word": "paladar",
+        "weight": 1
+      },
+      {
+        "word": "pelo",
+        "weight": 1
+      },
+      {
+        "word": "perro",
+        "weight": 1
+      },
+      {
+        "word": "sangre",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-17",
     "month": "2026-02",
     "file": "textos/2026-02-17.txt",

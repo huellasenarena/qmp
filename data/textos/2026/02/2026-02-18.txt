@@ -1,0 +1,54 @@
+FECHA: 2026-02-18
+MY_POEM_TITLE: jacarandá
+POETA: Soledad Castresana
+POEM_TITLE: el juego
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+en medio del verte
+hay morado.
+
+todo se cae
+pero el morado se cae
+primero.
+
+# POEMA_CITADO
+
+no saques los ojos
+de la sangre que brota
+del costado abierto de tu cabeza
+
+no dejes de mirar
+la oreja que te cuelga
+una tira de piel
+en la maraña de tu pelo
+
+si no hubieras estado sola
+alguien habría escuchado
+el ruido de tus huesos
+si tus labios no hubieran estado
+pegados a su paladar
+hubieras gritado
+si no hubieras sentido
+sus dientes en el cuello
+
+mirá
+el perro te espera
+lamiendo tu charco
+para que sigan el juego
+
+# TEXTO
+
+No entiendo mucho, casi nada, en **el juego**.
+
+No sé a quién pertenecen los ojos.
+No sé cómo la oreja puede colgar una tira de piel.
+No sé a quién pertenece la oreja.
+No sé cómo puede estar sola y al mismo tiempo hay una oreja de otro ser.
+No sé si "huesos" tiene un doble sentido —uno literal y otro sexual.
+No sé cómo labios pueden tocar un paladar, a menos que sea una escena de comer.
+No sé a quién pertenece el paladar (¿un animal?)
+No sé por qué el escritor no quiere estar claro.
+
+No entiendo; no quiero entender.
