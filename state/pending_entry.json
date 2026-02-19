@@ -1,114 +1,86 @@
 {
-  "date": "2026-02-18",
+  "date": "2026-02-19",
   "month": "2026-02",
-  "file": "textos/2026-02-18.txt",
-  "my_poem_title": "jacarandá",
+  "file": "textos/2026-02-19.txt",
+  "my_poem_title": "flor de la papa junín",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "el juego",
+    "poem_title": "Los seres que vuelan",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "ambiguedad de la pertenencia",
+      "word": "comparacion cuantitativa",
       "weight": 3
     },
     {
-      "word": "inversion del valor estetico",
+      "word": "identidad fraccionada",
       "weight": 3
     },
     {
-      "word": "materialidad del color",
+      "word": "ocultamiento como potencia",
       "weight": 3
     },
     {
-      "word": "prioridad de lo sensorial",
+      "word": "pertenencia instrumental",
       "weight": 3
     },
     {
-      "word": "visibilizacion de la herida",
+      "word": "valor relacional",
       "weight": 3
     },
     {
-      "word": "vulnerabilizacion del sujeto",
-      "weight": 3
-    },
-    {
-      "word": "caida jerarquica",
+      "word": "cuenta como medida",
       "weight": 2
     },
     {
-      "word": "consumicion",
+      "word": "deseo de pertenencia",
       "weight": 2
     },
     {
-      "word": "erotizacion de la violencia",
+      "word": "interpretacion del narrador",
       "weight": 2
     },
     {
-      "word": "fragmentacion corporal",
+      "word": "medicion social",
       "weight": 2
     },
     {
-      "word": "observacion coaccionada",
+      "word": "tension visibilidad ocultacion",
       "weight": 2
     },
     {
-      "word": "silencio impuesto",
-      "weight": 2
-    },
-    {
-      "word": "testimonio interrumpido",
-      "weight": 2
-    },
-    {
-      "word": "cabeza",
+      "word": "cinco",
       "weight": 1
     },
     {
-      "word": "charco",
+      "word": "grupo",
       "weight": 1
     },
     {
-      "word": "huesos",
+      "word": "juntos",
       "weight": 1
     },
     {
-      "word": "juego",
+      "word": "mezclarse",
       "weight": 1
     },
     {
-      "word": "labios",
+      "word": "querer",
       "weight": 1
     },
     {
-      "word": "mirada",
+      "word": "sola",
       "weight": 1
     },
     {
-      "word": "morado",
+      "word": "valor",
       "weight": 1
     },
     {
-      "word": "oreja",
-      "weight": 1
-    },
-    {
-      "word": "paladar",
-      "weight": 1
-    },
-    {
-      "word": "pelo",
-      "weight": 1
-    },
-    {
-      "word": "perro",
-      "weight": 1
-    },
-    {
-      "word": "sangre",
+      "word": "verde",
       "weight": 1
     }
   ]

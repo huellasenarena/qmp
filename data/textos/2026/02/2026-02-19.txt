@@ -1,0 +1,49 @@
+FECHA: 2026-02-19
+MY_POEM_TITLE: flor de la papa junín
+POETA: Soledad Castresana
+POEM_TITLE: Los seres que vuelan
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+si fuera sola
+se mezclaría
+en el verde
+
+entonces yo entiendo
+por qué quiere estar
+en un grupo
+
+¿pero cuánto valor
+tiene junto a
+otros cinco?
+
+# POEMA_CITADO
+
+A mi perra le fascinan los seres que vuelan:
+mariposas, pájaros, mosquitos. Los persigue,
+los observa, los hostiga. Si atrapa un bucho,
+después de haberlo mordido un poco,
+lo lanza al aire y lo mira caer.
+No sé qué haría si alcanzara a una paloma.
+Pero no puedo dejarla. ¿Qué diría la gente
+si me quedara viendo tan tranquila
+cómo Nina despluma un pato
+a la orilla de un lago en Chapultepec?
+Me toca especular, entonces, y propongo
+dos hipótesis: o bien quiere comerlos
+para incorporar su esencia, eso
+que los eleva del suelo sin esfuerzo, o bien
+desea eliminarlo porque ellos saben
+hacer algo que ella nunca podrá. Desconozco
+los vericuetos del pensamiento canino.
+Sospecho que las dos teorías
+hablan más de mí que de mi perra.
+
+# TEXTO
+
+¿Qué motiva la destrucción animal? ¿Es por un esfuerzo en vano de transformarse? ¿O es por envidia? El poema sugiere que la respuesta es incognoscible pero que la pregunta revela algo en el narrador, aunque lo que revela no es dicho.
+
+Una idea posible es que esta pregunta muestra el deseo del narrador de ver positivamente a su perra, aunque el resultado es la muerte; así propone la hipótesis de que la perra tiene una intención positiva, la intención de "incorporar su esencia".
+
+Al mismo tiempo, considera la posibilidad de que su intención sea malévola: destrucción como método de eliminar rasgos únicos.
