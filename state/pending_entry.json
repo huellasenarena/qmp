@@ -1,86 +1,114 @@
 {
-  "date": "2026-02-19",
+  "date": "2026-02-20",
   "month": "2026-02",
-  "file": "textos/2026-02-19.txt",
-  "my_poem_title": "flor de la papa junín",
+  "file": "textos/2026-02-20.txt",
+  "my_poem_title": "flor de mashua",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Los seres que vuelan",
+    "poem_title": "Si no podés dormir",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "comparacion cuantitativa",
+      "word": "anulacion del testimonio",
       "weight": 3
     },
     {
-      "word": "identidad fraccionada",
+      "word": "consumo del observador",
       "weight": 3
     },
     {
-      "word": "ocultamiento como potencia",
+      "word": "conteo como deshumanizacion",
       "weight": 3
     },
     {
-      "word": "pertenencia instrumental",
+      "word": "ritualizacion de la violencia",
       "weight": 3
     },
     {
-      "word": "valor relacional",
+      "word": "silencio como fuerza",
       "weight": 3
     },
     {
-      "word": "cuenta como medida",
+      "word": "contabilidad de cuerpos",
       "weight": 2
     },
     {
-      "word": "deseo de pertenencia",
+      "word": "desposesion corporal",
       "weight": 2
     },
     {
-      "word": "interpretacion del narrador",
+      "word": "economia del horror",
       "weight": 2
     },
     {
-      "word": "medicion social",
+      "word": "materialidad del silencio",
       "weight": 2
     },
     {
-      "word": "tension visibilidad ocultacion",
+      "word": "objetivacion",
       "weight": 2
     },
     {
-      "word": "cinco",
+      "word": "parodia",
+      "weight": 2
+    },
+    {
+      "word": "performatividad corporal",
+      "weight": 2
+    },
+    {
+      "word": "vigilancia",
+      "weight": 2
+    },
+    {
+      "word": "bruja",
       "weight": 1
     },
     {
-      "word": "grupo",
+      "word": "cabeza",
       "weight": 1
     },
     {
-      "word": "juntos",
+      "word": "comer",
       "weight": 1
     },
     {
-      "word": "mezclarse",
+      "word": "contar",
       "weight": 1
     },
     {
-      "word": "querer",
+      "word": "corte",
       "weight": 1
     },
     {
-      "word": "sola",
+      "word": "gritar",
       "weight": 1
     },
     {
-      "word": "valor",
+      "word": "huesos temporales",
       "weight": 1
     },
     {
-      "word": "verde",
+      "word": "mujeres",
+      "weight": 1
+    },
+    {
+      "word": "ovejas",
+      "weight": 1
+    },
+    {
+      "word": "poste",
+      "weight": 1
+    },
+    {
+      "word": "sombrero",
+      "weight": 1
+    },
+    {
+      "word": "tzompantli",
       "weight": 1
     }
   ]

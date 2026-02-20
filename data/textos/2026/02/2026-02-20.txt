@@ -1,0 +1,40 @@
+FECHA: 2026-02-20
+MY_POEM_TITLE: flor de mashua
+POETA: Soledad Castresana
+POEM_TITLE: Si no podés dormir
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+de cabeza
+come sus observadores
+la bruja
+con su sombrero
+
+al comer la cabeza
+primero
+elimina la posibilidad
+de gritar por ayuda
+
+un silencio cargado
+espesa el aire;
+no me acerco
+
+# POEMA_CITADO
+
+Lo que podés hacer es un tzompantli:
+poné en el piso los cuerpos de las mujeres
+a las que mataste últimamente, cortales
+la cabeza. Abrile a cada una un agujero
+en los huesos temporales
+de veinticinco centímetros de diámetro
+y enhebrala en un poste de madera.
+Así con todas.
+Dejalas a un metro de distancia,
+más o menos. Podés poner en línea
+cuantas quieras. Después,
+igual que a las ovejas, contalas.
+
+# TEXTO
+
+Leo el poema como una parodia del método común de contar ovejas para dormir.
