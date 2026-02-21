@@ -1,114 +1,102 @@
 {
-  "date": "2026-02-20",
+  "date": "2026-02-21",
   "month": "2026-02",
-  "file": "textos/2026-02-20.txt",
-  "my_poem_title": "flor de mashua",
+  "file": "textos/2026-02-21.txt",
+  "my_poem_title": "la azucena",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Si no podés dormir",
+    "poem_title": "Sobre la mesa",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "anulacion del testimonio",
+      "word": "borramiento linguistico",
       "weight": 3
     },
     {
-      "word": "consumo del observador",
+      "word": "ceguera performativa",
       "weight": 3
     },
     {
-      "word": "conteo como deshumanizacion",
+      "word": "despersonalizacion institucional",
       "weight": 3
     },
     {
-      "word": "ritualizacion de la violencia",
+      "word": "espectaculo que oculta",
       "weight": 3
     },
     {
-      "word": "silencio como fuerza",
+      "word": "silencio como potencia",
       "weight": 3
     },
     {
-      "word": "contabilidad de cuerpos",
+      "word": "violencia medica",
+      "weight": 3
+    },
+    {
+      "word": "mascaramiento ritual",
       "weight": 2
     },
     {
-      "word": "desposesion corporal",
+      "word": "negacion de identidad",
       "weight": 2
     },
     {
-      "word": "economia del horror",
+      "word": "objetualizacion del cuerpo",
       "weight": 2
     },
     {
-      "word": "materialidad del silencio",
+      "word": "silenciar mediante dano corporal",
       "weight": 2
     },
     {
-      "word": "objetivacion",
+      "word": "sustraccion de agencia",
       "weight": 2
     },
     {
-      "word": "parodia",
+      "word": "sutileza del artificio",
       "weight": 2
     },
     {
-      "word": "performatividad corporal",
-      "weight": 2
-    },
-    {
-      "word": "vigilancia",
-      "weight": 2
-    },
-    {
-      "word": "bruja",
+      "word": "brazos atados",
       "weight": 1
     },
     {
-      "word": "cabeza",
+      "word": "camilla",
       "weight": 1
     },
     {
-      "word": "comer",
+      "word": "cegadores",
       "weight": 1
     },
     {
-      "word": "contar",
+      "word": "cofia",
       "weight": 1
     },
     {
-      "word": "corte",
+      "word": "fuegos artificiales",
       "weight": 1
     },
     {
-      "word": "gritar",
+      "word": "mesa de operaciones",
       "weight": 1
     },
     {
-      "word": "huesos temporales",
+      "word": "regreso a casa",
       "weight": 1
     },
     {
-      "word": "mujeres",
+      "word": "seis lenguas",
       "weight": 1
     },
     {
-      "word": "ovejas",
+      "word": "sin anillos ni perfumes",
       "weight": 1
     },
     {
-      "word": "poste",
-      "weight": 1
-    },
-    {
-      "word": "sombrero",
-      "weight": 1
-    },
-    {
-      "word": "tzompantli",
+      "word": "suenos",
       "weight": 1
     }
   ]

@@ -1,5 +1,108 @@
 [
   {
+    "date": "2026-02-21",
+    "month": "2026-02",
+    "file": "textos/2026-02-21.txt",
+    "my_poem_title": "la azucena",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Sobre la mesa",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "borramiento linguistico",
+        "weight": 3
+      },
+      {
+        "word": "ceguera performativa",
+        "weight": 3
+      },
+      {
+        "word": "despersonalizacion institucional",
+        "weight": 3
+      },
+      {
+        "word": "espectaculo que oculta",
+        "weight": 3
+      },
+      {
+        "word": "silencio como potencia",
+        "weight": 3
+      },
+      {
+        "word": "violencia medica",
+        "weight": 3
+      },
+      {
+        "word": "mascaramiento ritual",
+        "weight": 2
+      },
+      {
+        "word": "negacion de identidad",
+        "weight": 2
+      },
+      {
+        "word": "objetualizacion del cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "silenciar mediante dano corporal",
+        "weight": 2
+      },
+      {
+        "word": "sustraccion de agencia",
+        "weight": 2
+      },
+      {
+        "word": "sutileza del artificio",
+        "weight": 2
+      },
+      {
+        "word": "brazos atados",
+        "weight": 1
+      },
+      {
+        "word": "camilla",
+        "weight": 1
+      },
+      {
+        "word": "cegadores",
+        "weight": 1
+      },
+      {
+        "word": "cofia",
+        "weight": 1
+      },
+      {
+        "word": "fuegos artificiales",
+        "weight": 1
+      },
+      {
+        "word": "mesa de operaciones",
+        "weight": 1
+      },
+      {
+        "word": "regreso a casa",
+        "weight": 1
+      },
+      {
+        "word": "seis lenguas",
+        "weight": 1
+      },
+      {
+        "word": "sin anillos ni perfumes",
+        "weight": 1
+      },
+      {
+        "word": "suenos",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-20",
     "month": "2026-02",
     "file": "textos/2026-02-20.txt",

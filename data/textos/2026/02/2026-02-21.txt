@@ -1,0 +1,41 @@
+FECHA: 2026-02-21
+MY_POEM_TITLE: la azucena
+POETA: Soledad Castresana
+POEM_TITLE: Sobre la mesa
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+quizás cae porque
+sus seis lenguas
+están quemadas
+por los fuegos
+artificiales
+
+y quizás crece porque
+son cegadores
+los fuegos artificiales
+entonces no pueden
+decirlo las lenguas
+
+# POEMA_CITADO
+
+No es el cuerpo de una mujer en edad fértil
+lo que está tumbado sobre la camilla
+con los brazos atados, sin anillos ni perfumes,
+todo el pelo adentro de la cofia
+y sueña que lee, que nada, que camina,
+que vuelva a casa
+
+No es un cuerpo de mujer en edad fértil
+lo que está en juego sobre esta mesa.
+
+# TEXTO
+
+Estamos en un hospital, me imagino. Hay una camilla y, luego, una mesa de operaciones.
+
+En la primera estrofa, vemos a una mujer despojada de control (los brazos atados) y belleza que tiene ganas de actuar. Sin embargo, están las palabras interesantes "No es el cuerpo de una mujer..." A mis ojos, eso representa la perspectiva clínica de deshumanizar a los pacientes.
+
+Creo que vemos la misma cosa en la segunda estrofa: hay una vida "en juego" pero hay una percepción —quizás la de los doctores pero no está claro— de que no se trata de un ser humano.
+
+¿Sugiere que, para tratar a los pacientes, los profesionales de salud necesitan verlos sin identidad?
