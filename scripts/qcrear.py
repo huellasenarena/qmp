@@ -13,6 +13,7 @@ from typing import Optional, Tuple
 AUTO = "--auto" in sys.argv
 DRY_RUN = "--dry-run" in sys.argv
 ASSUME_YES = "--yes" in sys.argv
+SWEEP = "--sweep" in sys.argv
 
 
 
@@ -189,6 +190,31 @@ def get_next_date_from_archivo(archivo: dict) -> Optional[str]:
     nxt = last.toordinal() + 1
     return date.fromordinal(nxt).isoformat()
 
+
+def latest_date_in_archivo(archivo: dict) -> Optional[date]:
+    """
+    Devuelve la fecha máxima encontrada en archivo.json (campo "date").
+    Soporta raíz lista o {"entries":[...]}.
+    """
+    # Re-usa tu walk tolerante
+    dates: list[date] = []
+
+    def walk(obj):
+        if isinstance(obj, dict):
+            if isinstance(obj.get("date"), str) and DATE_RE.match(obj["date"]):
+                try:
+                    dates.append(parse_yyyy_mm_dd(obj["date"]))
+                except Exception:
+                    pass
+            for v in obj.values():
+                walk(v)
+        elif isinstance(obj, list):
+            for it in obj:
+                walk(it)
+
+    walk(archivo)
+    return max(dates) if dates else None
+    
 def txt_path_for_date(target: str) -> Path:
     y, m, _ = target.split("-")
     return data_dir() / "textos" / y / m / f"{target}.txt"
