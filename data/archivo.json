@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-02-23",
+    "month": "2026-02",
+    "file": "textos/2026-02-23.txt",
+    "my_poem_title": "la corriente peruana",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Extracción de fibroadenoma",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "anclaje sensorial",
+        "weight": 3
+      },
+      {
+        "word": "microvictoria",
+        "weight": 3
+      },
+      {
+        "word": "soberania corporal",
+        "weight": 3
+      },
+      {
+        "word": "suciedad como resistencia",
+        "weight": 3
+      },
+      {
+        "word": "tactilidad contradictoria",
+        "weight": 3
+      },
+      {
+        "word": "violencia institucional",
+        "weight": 3
+      },
+      {
+        "word": "choque de valores",
+        "weight": 2
+      },
+      {
+        "word": "despojo ritual",
+        "weight": 2
+      },
+      {
+        "word": "dislocamiento afectivo",
+        "weight": 2
+      },
+      {
+        "word": "economia simbolica",
+        "weight": 2
+      },
+      {
+        "word": "jerarquia hospitalaria",
+        "weight": 2
+      },
+      {
+        "word": "negociacion corporal",
+        "weight": 2
+      },
+      {
+        "word": "renuncia estetica",
+        "weight": 2
+      },
+      {
+        "word": "tactica de retencion",
+        "weight": 2
+      },
+      {
+        "word": "visibilidad y ocultamiento",
+        "weight": 2
+      },
+      {
+        "word": "anillos",
+        "weight": 1
+      },
+      {
+        "word": "biopsia",
+        "weight": 1
+      },
+      {
+        "word": "collares",
+        "weight": 1
+      },
+      {
+        "word": "costura",
+        "weight": 1
+      },
+      {
+        "word": "elastico",
+        "weight": 1
+      },
+      {
+        "word": "esmalte",
+        "weight": 1
+      },
+      {
+        "word": "pelo",
+        "weight": 1
+      },
+      {
+        "word": "pezon",
+        "weight": 1
+      },
+      {
+        "word": "quirofano",
+        "weight": 1
+      },
+      {
+        "word": "tobillera",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-22",
     "month": "2026-02",
     "file": "textos/2026-02-22.txt",

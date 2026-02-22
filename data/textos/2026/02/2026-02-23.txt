@@ -1,0 +1,36 @@
+FECHA: 2026-02-23
+MY_POEM_TITLE: la corriente peruana
+POETA: Soledad Castresana
+POEM_TITLE: Extracción de fibroadenoma
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+que empuja los peces
+y me trae el aroma de sal
+
+como para ella,
+la costa para mí
+se toca y se aleja
+
+# POEMA_CITADO
+
+Me habían obligado a quitarme
+el esmalte negro de las uñas
+los diez anillos, los cinco aros,
+la tobillera, los dos collares,
+pero logré meter al quirófano
+el elástico mugriento
+que apretaba mi trencita, ese pelo
+que no había cortado cuando me rapé.
+Desperté triunfante. No me importaba
+el resultado de la biopsia,
+ni la costura en el pezón.
+
+# TEXTO
+
+La escena: el narrador se ve despojado de su joyería pero "logró" guardar una parte de su pelo, una parte estrechada por algo sucio (el elástico mugriento); vemos acá un contraste entre lo que pudo guardar y lo que se eliminó: la belleza se va pero lo mugriento se queda. Esta parte muestra que la jerarquía en el hospital es diferente de la jerarquía fuera. Fuera, la joyería tiene importancia, pero acá en el hospital, incluso lo sucio se puede quedar si no interfiere con el procedimiento médico.
+
+La pregunta es: ¿de dónde viene el sentimiento de triunfo y su descuido sobre su situación médica o su apariencia?
+
+Leo el mantenimiento de su pelo como una "pequeña victoria" que tiene un gran impacto. ¿Le da un sentido de soberanía inalienable esa acción? Una interpretación es que su capacidad de guardar el pelo es un ejemplo de control; la biopsia y la costura están fuera de su control... lo que importa al narrador es lo que puede controlar.

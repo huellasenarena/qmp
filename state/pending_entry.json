@@ -1,98 +1,102 @@
 {
-  "date": "2026-02-22",
+  "date": "2026-02-23",
   "month": "2026-02",
-  "file": "textos/2026-02-22.txt",
-  "my_poem_title": "la achira",
+  "file": "textos/2026-02-23.txt",
+  "my_poem_title": "la corriente peruana",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Madre e hija frente al espejo",
+    "poem_title": "Extracción de fibroadenoma",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "borrado-como-presencia",
+      "word": "anclaje sensorial",
       "weight": 3
     },
     {
-      "word": "eliminacion-intencional",
+      "word": "microvictoria",
       "weight": 3
     },
     {
-      "word": "juramento-como-acto",
+      "word": "soberania corporal",
       "weight": 3
     },
     {
-      "word": "materialidad-del-lenguaje",
+      "word": "suciedad como resistencia",
       "weight": 3
     },
     {
-      "word": "parte-es-todo",
+      "word": "tactilidad contradictoria",
       "weight": 3
     },
     {
-      "word": "traza-residual",
+      "word": "violencia institucional",
       "weight": 3
     },
     {
-      "word": "conflicto-parte-todo",
+      "word": "choque de valores",
       "weight": 2
     },
     {
-      "word": "corporizacion-del-lenguaje",
+      "word": "despojo ritual",
       "weight": 2
     },
     {
-      "word": "cuidado-autoinfligido",
+      "word": "dislocamiento afectivo",
       "weight": 2
     },
     {
-      "word": "memoria-material",
+      "word": "economia simbolica",
       "weight": 2
     },
     {
-      "word": "ocultamiento-intencional",
+      "word": "jerarquia hospitalaria",
       "weight": 2
     },
     {
-      "word": "performatividad",
+      "word": "negociacion corporal",
       "weight": 2
     },
     {
-      "word": "tactilidad-linguistica",
+      "word": "renuncia estetica",
       "weight": 2
     },
     {
-      "word": "transmision",
+      "word": "tactica de retencion",
       "weight": 2
     },
     {
-      "word": "voz-testimonial",
+      "word": "visibilidad y ocultamiento",
       "weight": 2
     },
     {
-      "word": "apague",
+      "word": "anillos",
       "weight": 1
     },
     {
-      "word": "blanco",
+      "word": "biopsia",
       "weight": 1
     },
     {
-      "word": "dedos",
+      "word": "collares",
       "weight": 1
     },
     {
-      "word": "palabras",
+      "word": "costura",
       "weight": 1
     },
     {
-      "word": "papel",
+      "word": "elastico",
       "weight": 1
     },
     {
-      "word": "parte",
+      "word": "esmalte",
+      "weight": 1
+    },
+    {
+      "word": "pelo",
       "weight": 1
     },
     {
@@ -100,15 +104,11 @@
       "weight": 1
     },
     {
-      "word": "quemado",
+      "word": "quirofano",
       "weight": 1
     },
     {
-      "word": "quemarse",
-      "weight": 1
-    },
-    {
-      "word": "tenaza",
+      "word": "tobillera",
       "weight": 1
     }
   ]
