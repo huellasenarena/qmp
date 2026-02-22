@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-02-22",
+    "month": "2026-02",
+    "file": "textos/2026-02-22.txt",
+    "my_poem_title": "la achira",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Madre e hija frente al espejo",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "borrado-como-presencia",
+        "weight": 3
+      },
+      {
+        "word": "eliminacion-intencional",
+        "weight": 3
+      },
+      {
+        "word": "juramento-como-acto",
+        "weight": 3
+      },
+      {
+        "word": "materialidad-del-lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "parte-es-todo",
+        "weight": 3
+      },
+      {
+        "word": "traza-residual",
+        "weight": 3
+      },
+      {
+        "word": "conflicto-parte-todo",
+        "weight": 2
+      },
+      {
+        "word": "corporizacion-del-lenguaje",
+        "weight": 2
+      },
+      {
+        "word": "cuidado-autoinfligido",
+        "weight": 2
+      },
+      {
+        "word": "memoria-material",
+        "weight": 2
+      },
+      {
+        "word": "ocultamiento-intencional",
+        "weight": 2
+      },
+      {
+        "word": "performatividad",
+        "weight": 2
+      },
+      {
+        "word": "tactilidad-linguistica",
+        "weight": 2
+      },
+      {
+        "word": "transmision",
+        "weight": 2
+      },
+      {
+        "word": "voz-testimonial",
+        "weight": 2
+      },
+      {
+        "word": "apague",
+        "weight": 1
+      },
+      {
+        "word": "blanco",
+        "weight": 1
+      },
+      {
+        "word": "dedos",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "papel",
+        "weight": 1
+      },
+      {
+        "word": "parte",
+        "weight": 1
+      },
+      {
+        "word": "pezon",
+        "weight": 1
+      },
+      {
+        "word": "quemado",
+        "weight": 1
+      },
+      {
+        "word": "quemarse",
+        "weight": 1
+      },
+      {
+        "word": "tenaza",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-21",
     "month": "2026-02",
     "file": "textos/2026-02-21.txt",

@@ -1,0 +1,46 @@
+FECHA: 2026-02-22
+MY_POEM_TITLE: la achira
+POETA: Soledad Castresana
+POEM_TITLE: Madre e hija frente al espejo
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+cuando empezó a
+quemarse el papel,
+una descascarada
+de palabras,
+lo apagué
+tan pronto como
+me di cuenta.
+
+ya está en blanco,
+pero te lo juro
+que la parte quemada
+tuvo palabras.
+te lo juro.
+
+# POEMA_CITADO
+
+Me quiero sacar la teta, dice,
+mientras se estira el pezón con la tenaza
+de sus dedos tan pequeños todavía.
+
+No se puede. ¿Por qué? ¿Podés sacarte
+jalando una pierna o un brazo?
+No. ¿Por qué? Porque cada parte
+de tu cuerpo es todo el cuerpo.
+
+# TEXTO
+
+Veo tres cosas en el poema: una intimidad entre la madre y su hija –se sienten lo suficientemente cómodas como para discutir temas íntimos–, la transmisión familial de conocimiento –la madre explica a su hija un fenómeno–, y el aforismo del final: "cada parte de tu cuerpo es todo el cuerpo". El aforismo es el tema principal de mis cogitaciones.
+
+¿Qué quiere decir? En la superficie presenta una contradicción, pero creo que hay interpretaciones más profundas.
+
+Hay la interpretación que las partes del cuerpo, en conjunto, son el cuerpo; que el cuerpo representa la unidad de las partes.
+
+Pero hay también la interpretación que cada parte del cuerpo es un mundo aparte (que "el" acá quiere decir el cuerpo de la parte).
+
+Es una declaración bastante filosófica y me hace pensar en la idea de tamaño: si cada parte del cuerpo es un cuerpo, entonces cada parte de la parte es un cuerpo, entonces cada parte de cada parte de la parte es un cuerpo...
+
+¿Qué quiere decir cuerpo si una parte es un cuerpo? Me parece que el poema quiere jugar con el desenfoque entre la parte y el todo.

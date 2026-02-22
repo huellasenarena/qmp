@@ -1,102 +1,114 @@
 {
-  "date": "2026-02-21",
+  "date": "2026-02-22",
   "month": "2026-02",
-  "file": "textos/2026-02-21.txt",
-  "my_poem_title": "la azucena",
+  "file": "textos/2026-02-22.txt",
+  "my_poem_title": "la achira",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Sobre la mesa",
+    "poem_title": "Madre e hija frente al espejo",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "borramiento linguistico",
+      "word": "borrado-como-presencia",
       "weight": 3
     },
     {
-      "word": "ceguera performativa",
+      "word": "eliminacion-intencional",
       "weight": 3
     },
     {
-      "word": "despersonalizacion institucional",
+      "word": "juramento-como-acto",
       "weight": 3
     },
     {
-      "word": "espectaculo que oculta",
+      "word": "materialidad-del-lenguaje",
       "weight": 3
     },
     {
-      "word": "silencio como potencia",
+      "word": "parte-es-todo",
       "weight": 3
     },
     {
-      "word": "violencia medica",
+      "word": "traza-residual",
       "weight": 3
     },
     {
-      "word": "mascaramiento ritual",
+      "word": "conflicto-parte-todo",
       "weight": 2
     },
     {
-      "word": "negacion de identidad",
+      "word": "corporizacion-del-lenguaje",
       "weight": 2
     },
     {
-      "word": "objetualizacion del cuerpo",
+      "word": "cuidado-autoinfligido",
       "weight": 2
     },
     {
-      "word": "silenciar mediante dano corporal",
+      "word": "memoria-material",
       "weight": 2
     },
     {
-      "word": "sustraccion de agencia",
+      "word": "ocultamiento-intencional",
       "weight": 2
     },
     {
-      "word": "sutileza del artificio",
+      "word": "performatividad",
       "weight": 2
     },
     {
-      "word": "brazos atados",
+      "word": "tactilidad-linguistica",
+      "weight": 2
+    },
+    {
+      "word": "transmision",
+      "weight": 2
+    },
+    {
+      "word": "voz-testimonial",
+      "weight": 2
+    },
+    {
+      "word": "apague",
       "weight": 1
     },
     {
-      "word": "camilla",
+      "word": "blanco",
       "weight": 1
     },
     {
-      "word": "cegadores",
+      "word": "dedos",
       "weight": 1
     },
     {
-      "word": "cofia",
+      "word": "palabras",
       "weight": 1
     },
     {
-      "word": "fuegos artificiales",
+      "word": "papel",
       "weight": 1
     },
     {
-      "word": "mesa de operaciones",
+      "word": "parte",
       "weight": 1
     },
     {
-      "word": "regreso a casa",
+      "word": "pezon",
       "weight": 1
     },
     {
-      "word": "seis lenguas",
+      "word": "quemado",
       "weight": 1
     },
     {
-      "word": "sin anillos ni perfumes",
+      "word": "quemarse",
       "weight": 1
     },
     {
-      "word": "suenos",
+      "word": "tenaza",
       "weight": 1
     }
   ]
