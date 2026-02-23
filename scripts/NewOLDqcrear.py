@@ -99,14 +99,6 @@ class Preflight:
     ok_archivo_json: bool
 
 
-@dataclass
-class PublishResult:
-    target: str
-    txt_path: Path
-    pending_entry_path: Path
-    commit_msg: str
-
-
 def run_preflight() -> Preflight:
     r = repo_root()
     aj = archivo_json_path()
@@ -630,132 +622,113 @@ def clear_pending_keywords_placeholder() -> None:
 
 
 # -----------------------------
-# get_gdocs_limit_date
+# Main
 # -----------------------------
 
-def get_gdocs_limit_date() -> date:
-    """
-    Llama a scripts/gdocs_get_limit_date.py y parsea la línea
-    DOC_LIMIT_DATE=YYYY-MM-DD que emite.
-    """
-    script_path = repo_root() / "scripts" / "gdocs_get_limit_date.py"
-    if not script_path.exists():
-        raise RuntimeError("No encuentro scripts/gdocs_get_limit_date.py")
+def main() -> int:
+    try:
+        println(SEP)
+        println(" qcrear")
+        println(SEP)
 
-    proc = subprocess.run(
-        [sys.executable, str(script_path)],
-        capture_output=True,
-        text=True,
-    )
-    if proc.returncode != 0:
-        msg = (proc.stderr or proc.stdout or "").strip()
-        raise RuntimeError(f"gdocs_get_limit_date.py falló: {msg}")
+        # -----------------------------
+        # Preflight
+        # -----------------------------
+        pf = run_preflight()
+        if not pf.ok_repo:
+            eprintln("[qcrear] ERROR: No encuentro el repo root.")
+            return 1
 
-    for line in proc.stdout.splitlines():
-        if line.startswith("DOC_LIMIT_DATE="):
-            d_str = line.split("=", 1)[1].strip()
-            return parse_yyyy_mm_dd(d_str)
+        println(f"✅ repo: {pf.repo}")
+        if pf.ok_archivo_json:
+            println(f"✅ archivo.json: {pf.archivo_json}")
+        else:
+            eprintln(f"❌ archivo.json no existe: {pf.archivo_json}")
+            return 1
 
-    raise RuntimeError("gdocs_get_limit_date.py no emitió DOC_LIMIT_DATE=YYYY-MM-DD")
+        # -----------------------------
+        # Fecha objetivo
+        # -----------------------------
+        target = choose_target_date(sys.argv)
 
-
-# -----------------------------
-# publish_one_date
-# -----------------------------
-
-def publish_one_date(target: str, defer_commit: bool = False) -> Optional[PublishResult]:
-    """
-    Procesa y publica una única fecha.
-
-    defer_commit=False (modo single):
-        Hace todo: pull, generar .txt, keywords, archivo.json, git add/commit/push.
-        Devuelve PublishResult si publicó, None si saltó (ya publicada, sin cambios, etc.).
-
-    defer_commit=True (modo sweep):
-        Hace todo hasta aplicar pending_entry en archivo.json, pero NO hace git commit.
-        Devuelve PublishResult con los paths a stagear y el commit message.
-        Devuelve None si la fecha debe saltarse silenciosamente
-        (ya publicada o poema no encontrado en Google Docs).
-        Lanza RuntimeError en errores duros (PDF no existe, análisis mal formado, etc.).
-    """
-    # --- ¿Ya publicada? ---
-    archivo = load_archivo_json()
-    if date_exists_in_archivo(archivo, target):
-        if not defer_commit:
+        # Si ya existe en archivo.json, qcrear no hace nada.
+        archivo = load_archivo_json()
+        if date_exists_in_archivo(archivo, target):
             println("")
             println(f"[qcrear] Ya existe una entrada publicada para {target}.")
             println("[qcrear] Usa qcambiar si quieres modificarla.")
-        return None
+            return 0
 
-    txt_path = txt_path_for_date(target)
-    if not defer_commit:
+        txt_path = txt_path_for_date(target)
         println("")
         if txt_path.exists():
             println(f"[qcrear] Continuar preparación: {target} (txt existe)")
         else:
             println(f"[qcrear] Crear entrada: {target} (txt no existe)")
 
-    # --- Pull Google Docs ---
-    println("")
-    println(SEP)
-    println(f" Pull Google Docs — {target}")
-    println(SEP)
+        # -----------------------------
+        # Pull robusto Google Docs
+        # -----------------------------
+        println("")
+        println(SEP)
+        println(f" Pull Google Docs — {target}")
+        println(SEP)
 
-    poem_obj = run_py_json("scripts/gdocs_pull_poem_by_date.py", ["--date", target])
-    analysis_obj = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", target])
+        poem_obj = run_py_json("scripts/gdocs_pull_poem_by_date.py", ["--date", target])
+        analysis_obj = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", target])
 
-    my_poem_title = (poem_obj.get("title") or "").strip()
-    poem_text = (poem_obj.get("poem") or "")
-    poeta = (analysis_obj.get("poet") or "").strip()
-    poem_title = (analysis_obj.get("poem_title") or "").strip()
-    book_title = (analysis_obj.get("book_title") or "").strip()
-    poema_citado = (analysis_obj.get("poem_citado") or "")
-    texto = (analysis_obj.get("analysis") or "")
+        my_poem_title = (poem_obj.get("title") or "").strip()   # opcional
+        poem_text = (poem_obj.get("poem") or "")
+        poeta = (analysis_obj.get("poet") or "").strip()        # opcional
+        poem_title = (analysis_obj.get("poem_title") or "").strip()  # opcional
+        book_title = (analysis_obj.get("book_title") or "").strip()  # opcional
+        poema_citado = (analysis_obj.get("poem_citado") or "")
+        texto = (analysis_obj.get("analysis") or "")
 
-    # --- Modo PDF ---
-    pdf_mode = (normalize_text_for_hash(poema_citado) == "")
-    pdf_path = ""
-    if pdf_mode:
-        println("[qcrear] poema citado vacío → entrando en modo PDF")
-        if not poem_title:
-            raise RuntimeError(
-                "Modo PDF activado (poema citado vacío), pero falta metadato obligatorio: Título:"
-            )
-        if not book_title:
-            raise RuntimeError(
-                "Modo PDF activado (poema citado vacío), pero falta metadato obligatorio: Libro:"
-            )
+        # -----------------------------
+        # Modo PDF (nuevo contrato)
+        # - POEMA_CITADO vacío => modo PDF
+        # - En modo PDF: requiere Libro + Título, y que el PDF exista
+        # - En modo NO-PDF: POEMA_CITADO y TEXTO son obligatorios
+        # -----------------------------
+        pdf_mode = (normalize_text_for_hash(poema_citado) == "")
+        pdf_path = ""
+        if pdf_mode:
+            println("[qcrear] poema citado vacío → entrando en modo PDF")
 
-        def _slug(s: str) -> str:
-            return "-".join(s.strip().split())
+            if not poem_title:
+                raise RuntimeError(
+                    "Modo PDF activado (poema citado vacío), pero falta metadato obligatorio: Título:"
+                )
+            if not book_title:
+                raise RuntimeError(
+                    "Modo PDF activado (poema citado vacío), pero falta metadato obligatorio: Libro:"
+                )
 
-        pdf_path = f"/data/pdfs/{_slug(book_title)}/{_slug(poem_title)}.pdf"
-        println(f"[qcrear] verificando PDF: {pdf_path}")
-        full_pdf = repo_root() / pdf_path.lstrip("/")
-        if not full_pdf.exists():
-            raise RuntimeError(f"Modo PDF activado pero el archivo no existe: {pdf_path}")
-        println("[qcrear] PDF encontrado ✔")
+            def _slug(s: str) -> str:
+                return "-".join(s.strip().split())
 
-    # --- Validación ---
-    if normalize_text_for_hash(poem_text) == "":
-        # En sweep: poema no encontrado = entrada incompleta en GDocs = skip silencioso
-        if defer_commit:
-            return None
-        raise RuntimeError("ERROR: # POEMA está vacío (Google Docs). Corrige en el doc de POEMAS.")
-    if not pdf_mode:
-        if normalize_text_for_hash(poema_citado) == "":
-            raise RuntimeError(
-                "ERROR: # POEMA_CITADO está vacío (Google Docs). Corrige en el doc de ESCRITOS."
-            )
-        if normalize_text_for_hash(texto) == "":
-            raise RuntimeError(
-                "ERROR: # TEXTO está vacío (Google Docs). Corrige en el doc de ESCRITOS (Versión final)."
-            )
+            pdf_path = f"/data/pdfs/{_slug(book_title)}/{_slug(poem_title)}.pdf"
+            println(f"[qcrear] verificando PDF: {pdf_path}")
+            full_pdf = repo_root() / pdf_path.lstrip("/")
+            if not full_pdf.exists():
+                raise RuntimeError(f"Modo PDF activado pero el archivo no existe: {pdf_path}")
+            println("[qcrear] PDF encontrado ✔")
 
-    fp = docs_fingerprint(poem_text, poema_citado, texto)
+        # Validación
+        if normalize_text_for_hash(poem_text) == "":
+            raise RuntimeError("ERROR: # POEMA está vacío (Google Docs). Corrige en el doc de POEMAS.")
+        if not pdf_mode:
+            if normalize_text_for_hash(poema_citado) == "":
+                raise RuntimeError("ERROR: # POEMA_CITADO está vacío (Google Docs). Corrige en el doc de ESCRITOS.")
+            if normalize_text_for_hash(texto) == "":
+                raise RuntimeError("ERROR: # TEXTO está vacío (Google Docs). Corrige en el doc de ESCRITOS (Versión final).")
 
-    # --- Resumen (solo en modo single) ---
-    if not defer_commit:
+        fp = docs_fingerprint(poem_text, poema_citado, texto)
+
+        # -----------------------------
+        # Resumen
+        # -----------------------------
         println("✅ Pull OK + validación OK")
         println("")
         println("Resumen (metadatos opcionales):")
@@ -771,6 +744,9 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
         println("")
         println(f"docs_fingerprint: {fp}")
 
+        # -----------------------------
+        # Preview (una sola vez)
+        # -----------------------------
         println("")
         want_preview = prompt_yn("[qcrear] ¿Ver preview de los 3 escritos?", default_yes=False)
         if want_preview:
@@ -781,31 +757,38 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
             preview_block("# POEMA", poem_text, n=10)
             preview_block("# POEMA_CITADO", poema_citado, n=10)
             preview_block("# TEXTO", texto, n=10)
-    else:
-        println(f"[sweep] ✅ {target} — pull OK")
 
-    # --- Generar .txt ---
-    existing_txt_fp = txt_fingerprint_from_file(txt_path) if txt_path.exists() else None
-    txt_matches_docs = (txt_path.exists() and existing_txt_fp == fp)
+        # -----------------------------
+        # Decidir si hay que generar/reescribir txt
+        # -----------------------------
+        existing_txt_fp = txt_fingerprint_from_file(txt_path) if txt_path.exists() else None
+        txt_matches_docs = (txt_path.exists() and existing_txt_fp == fp)
 
-    if txt_matches_docs:
-        println(f"[qcrear] ✅ El archivo ya coincide con Google Docs: {txt_path}")
-    else:
-        if not defer_commit:
+        if txt_matches_docs:
+            println(f"[qcrear] ✅ El archivo ya coincide con Google Docs: {txt_path}")
+            # No preguntamos confirmación ni regeneración.
+        else:
+            # Solo si NO coincide, pedimos confirmación y (si quieres) generamos el build output
             ok = prompt_yn("[qcrear] ¿Confirmas que esto se ve correcto?", default_yes=False)
             if not ok:
                 raise UserAbort()
+
             println("")
             if txt_path.exists():
                 overwrite = prompt_yn(
-                    "[qcrear] El archivo existe pero NO coincide con Google Docs. ¿Regenerarlo (sobrescribir)?",
-                    default_yes=False,
+                    f"[qcrear] El archivo existe pero NO coincide con Google Docs. ¿Regenerarlo (sobrescribir)?",
+                    default_yes=False
                 )
                 if overwrite:
                     content = render_txt(
-                        target=target, my_poem_title=my_poem_title, poeta=poeta,
-                        poem_title=poem_title, book_title=book_title,
-                        poema=poem_text, poema_citado=poema_citado, texto=texto,
+                        target=target,
+                        my_poem_title=my_poem_title,
+                        poeta=poeta,
+                        poem_title=poem_title,
+                        book_title=book_title,
+                        poema=poem_text,
+                        poema_citado=poema_citado,
+                        texto=texto,
                     )
                     write_txt_atomic(txt_path, content)
                     println(f"[qcrear] ✅ Generado: {txt_path}")
@@ -813,344 +796,211 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
                     println("[qcrear] OK. No regeneré el .txt.")
             else:
                 content = render_txt(
-                    target=target, my_poem_title=my_poem_title, poeta=poeta,
-                    poem_title=poem_title, book_title=book_title,
-                    poema=poem_text, poema_citado=poema_citado, texto=texto,
+                    target=target,
+                    my_poem_title=my_poem_title,
+                    poeta=poeta,
+                    poem_title=poem_title,
+                    book_title=book_title,
+                    poema=poem_text,
+                    poema_citado=poema_citado,
+                    texto=texto,
                 )
                 write_txt_atomic(txt_path, content)
                 println(f"[qcrear] ✅ Generado: {txt_path}")
-        else:
-            # Sweep: siempre generar/sobrescribir sin preguntar
-            content = render_txt(
-                target=target, my_poem_title=my_poem_title, poeta=poeta,
-                poem_title=poem_title, book_title=book_title,
-                poema=poem_text, poema_citado=poema_citado, texto=texto,
-            )
-            write_txt_atomic(txt_path, content)
-            println(f"[qcrear] ✅ {target} — txt generado")
 
-    if not txt_path.exists():
-        println("[qcrear] No existe .txt local. Termino aquí (sin keywords).")
-        return None
+        # Asegurar que hay txt (si el usuario no lo generó y no existía, no seguimos)
+        if not txt_path.exists():
+            println("[qcrear] No existe .txt local. Termino aquí (sin keywords).")
+            return 0
 
-    # --- Keywords ---
-    if not defer_commit:
+        # -----------------------------
+        # Keywords (no automático)
+        # -----------------------------
         println("")
         println(SEP)
         println(" Keywords")
         println(SEP)
 
-    pending = load_pending_keywords()
-    keywords = None
+        pending = load_pending_keywords()
+        keywords = None
 
-    if pending:
-        pdate = pending.get("date", "")
-        pkws = pending.get("keywords") or []
-        pfk = (pending.get("docs_fingerprint") or "").strip()
+        # Si hay pending vigente (ultra-robusto), ofrecer usarla
+        if pending:
+            pdate = pending.get("date", "")
+            pkws = pending.get("keywords") or []
+            pfk = (pending.get("docs_fingerprint") or "").strip()
 
-        if pdate == target and pfk == fp and pkws:
-            if not defer_commit:
+            if pdate == target and pfk == fp and pkws:
                 println("[qcrear] Keywords pendientes válidas y vigentes.")
                 preview = top_keywords_preview(pending, n=10)
                 println("Top keywords:")
                 for w, wt in preview:
                     println(f"  - {w} ({wt})")
+
                 use_existing = prompt_yn("[qcrear] ¿Usar estas keywords?", default_yes=True)
                 if use_existing:
                     keywords = pkws
                     write_pending_keywords(target, keywords, fp)
                     println("[qcrear] ✅ pending_keywords.txt confirmado.")
-            else:
-                # Sweep: reutilizar silenciosamente si coincide
-                keywords = pkws
 
-    if keywords is None:
-        if not defer_commit:
-            gen_now = prompt_yn(
-                "[qcrear] No hay keywords vigentes. ¿Generar keywords ahora?", default_yes=True
-            )
+        # Si no usamos pending, preguntar si quieres generar
+        if keywords is None:
+            gen_now = prompt_yn("[qcrear] No hay keywords vigentes. ¿Generar keywords ahora?", default_yes=True)
             if not gen_now:
                 println("[qcrear] OK. No generé keywords. (No es posible publicar sin keywords.)")
-                return None
+                return 0
 
-        println(f"[qcrear] Generando keywords desde el .txt…")
-        keywords = generate_keywords_from_txt(txt_path)
+            println("[qcrear] Generando keywords desde el .txt…")
+            keywords = generate_keywords_from_txt(txt_path)
 
-        pairs = [(k["word"], k["weight"]) for k in keywords]
-        pairs.sort(key=lambda x: (-x[1], x[0].lower()))
-
-        if not defer_commit:
+            # Preview ordenado
+            pairs = [(k["word"], k["weight"]) for k in keywords]
+            pairs.sort(key=lambda x: (-x[1], x[0].lower()))
             println("Top keywords (nuevas):")
             for w, wt in pairs[:10]:
                 println(f"  - {w} ({wt})")
+
             ok_kw = prompt_yn("[qcrear] ¿Confirmas estas keywords?", default_yes=True)
             if not ok_kw:
                 raise UserAbort()
 
-        write_pending_keywords(target, keywords, fp)
-
-        if not defer_commit:
+            write_pending_keywords(target, keywords, fp)
             println("[qcrear] ✅ pending_keywords.txt actualizado.")
+
             print("")
             if DRY_RUN:
                 println("[qcrear] DRY RUN: Todo listo, pero NO publicaré (sin archivo.json, sin commit, sin push).")
-                return None
-            publish_now = prompt_yn(
-                "[qcrear] Todo listo. ¿Publicar ahora (archivo.json + commit + push)?", default_yes=True
-            )
+                return 0
+
+            publish_now = prompt_yn("[qcrear] Todo listo. ¿Publicar ahora (archivo.json + commit + push)?", default_yes=True)
             if not publish_now:
                 println("[qcrear] OK. No publiqué. Puedes volver a ejecutar qcrear cuando quieras.")
-                return None
+                return 0
 
-    # --- Publish gate ---
-    archivo_path = repo_root() / "data" / "archivo.json"
-    pending_kw_path = state_dir() / "pending_keywords.txt"
-    pending_entry_path = state_dir() / "pending_entry.json"
 
-    if not defer_commit:
+        # -----------------------------
+        # Publish gate (ultra-robusto)
+        # -----------------------------
+        archivo_path = repo_root() / "data" / "archivo.json"
+        pending_kw_path = state_dir() / "pending_keywords.txt"
+        pending_entry_path = state_dir() / "pending_entry.json"
+        # Seguridad: publicar solo desde el branch actual (sin suposiciones)
         branch = git(["rev-parse", "--abbrev-ref", "HEAD"]).strip()
+
         if branch != "main":
             println("")
             println(f"[qcrear] ⚠️  Estás en el branch '{branch}', no en 'main'.")
             println("[qcrear] Esto publicará los cambios en ESTE branch.")
             ok_branch = prompt_yn(
-                f"[qcrear] ¿Publicar de todos modos en '{branch}'?", default_yes=False
+                f"[qcrear] ¿Publicar de todos modos en '{branch}'?",
+                default_yes=False
             )
             if not ok_branch:
                 println("[qcrear] OK. Publicación cancelada.")
-                return None
+                return 0
+
         println(f"[qcrear] Publicando desde branch: {branch}")
 
-    # Validar keywords vigentes
-    pending = load_pending_keywords()
-    if not pending:
-        raise RuntimeError("No hay pending_keywords vigentes. No se puede publicar.")
-    if (pending.get("date") or "").strip() != target:
-        raise RuntimeError("pending_keywords date != target. No se puede publicar.")
-    if not (pending.get("keywords") or []):
-        raise RuntimeError("pending_keywords está vacío. No se puede publicar.")
-    if (pending.get("docs_fingerprint") or "").strip() != fp:
-        raise RuntimeError("pending_keywords fingerprint NO coincide con Google Docs. No se puede publicar.")
 
-    # Validar + normalizar .txt (idempotente)
-    run_validate_and_normalize_txt(target, txt_path, pdf_mode=pdf_mode)
 
-    # merge_pending (aplica keywords → pending_entry.json + status)
-    status = run_merge_pending(
-        txt_path=txt_path,
-        archivo_path=archivo_path,
-        pending_kw_path=pending_kw_path,
-        pending_entry_path=pending_entry_path,
-        apply_keywords=True,
-        dry_run=False,
-    )
+        # 2) Validar keywords vigentes (obligatorio para publicar)
+        pending = load_pending_keywords()
+        if not pending:
+            raise RuntimeError("No hay pending_keywords vigentes. No se puede publicar.")
+        if (pending.get("date") or "").strip() != target:
+            raise RuntimeError("pending_keywords date != target. No se puede publicar.")
+        if not (pending.get("keywords") or []):
+            raise RuntimeError("pending_keywords está vacío. No se puede publicar.")
+        if (pending.get("docs_fingerprint") or "").strip() != fp:
+            raise RuntimeError("pending_keywords fingerprint NO coincide con Google Docs. No se puede publicar.")
 
-    # PDF: inyectar ruta en pending_entry.json
-    if pdf_mode:
-        try:
-            pending_obj = json.loads(pending_entry_path.read_text(encoding="utf-8"))
-        except Exception:
-            raise RuntimeError("pending_entry.json no es JSON válido (después de merge_pending)")
-        if not isinstance(pending_obj, dict):
-            raise RuntimeError("pending_entry.json inválido (no es dict)")
-        pending_obj.setdefault("analysis", {})
-        if not isinstance(pending_obj["analysis"], dict):
-            raise RuntimeError("pending_entry.json inválido: analysis no es dict")
-        pending_obj["analysis"]["pdf"] = pdf_path
-        pending_entry_path.write_text(
-            json.dumps(pending_obj, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
+        # 3) Validar + normalizar .txt (idempotente)
+        run_validate_and_normalize_txt(target, txt_path, pdf_mode=pdf_mode)
+
+        # 4) merge_pending (aplica keywords -> pending_entry.json + status)
+        status = run_merge_pending(
+            txt_path=txt_path,
+            archivo_path=archivo_path,
+            pending_kw_path=pending_kw_path,
+            pending_entry_path=pending_entry_path,
+            apply_keywords=True,
+            dry_run=False,
         )
-        println(f"[qcrear] analysis.pdf = {pdf_path}")
 
-    exists_before = bool(status.get("exists_before"))
-    content_changed = bool(status.get("content_changed"))
-    keywords_changed = bool(status.get("keywords_changed"))
+        # Si estamos en modo PDF, inyectar la ruta en pending_entry.json
+        # para que termine en archivo.json (llave analysis.pdf).
+        # Esto no depende de merge_pending (lo hacemos aquí de forma explícita).
+        if pdf_mode:
+            try:
+                pending_obj = json.loads(pending_entry_path.read_text(encoding="utf-8"))
+            except Exception:
+                raise RuntimeError("pending_entry.json no es JSON válido (después de merge_pending)")
 
-    if exists_before and (not content_changed) and (not keywords_changed):
-        println(f"ℹ️  {target}: No cambió texto ni keywords → sin commit.")
-        return None
+            if not isinstance(pending_obj, dict):
+                raise RuntimeError("pending_entry.json inválido (no es dict)")
 
-    # Commit message
-    label = (
-        (status.get("my_poem_title") or "").strip()
-        or (status.get("my_poem_snippet") or "").strip()
-        or target
-    )
-    if not exists_before:
-        msg_type = "entrada"
-    else:
-        if content_changed and keywords_changed:
-            msg_type = "edicion texto + keywords"
-        elif content_changed:
-            msg_type = "edicion de metadatos/escritos"
+            pending_obj.setdefault("analysis", {})
+            if not isinstance(pending_obj["analysis"], dict):
+                raise RuntimeError("pending_entry.json inválido: analysis no es dict")
+
+            pending_obj["analysis"]["pdf"] = pdf_path
+            pending_entry_path.write_text(
+                json.dumps(pending_obj, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            println(f"[qcrear] analysis.pdf = {pdf_path}")
+
+        exists_before = bool(status.get("exists_before"))
+        content_changed = bool(status.get("content_changed"))
+        keywords_changed = bool(status.get("keywords_changed"))
+
+        # Si no hay cambios y ya existía: no hacemos commit
+        if exists_before and (not content_changed) and (not keywords_changed):
+            println("ℹ️  No cambió texto ni keywords → no hay commit.")
+            return 0
+
+        # 5) Construir commit message
+        label = (status.get("my_poem_title") or "").strip() or (status.get("my_poem_snippet") or "").strip() or target
+        if not exists_before:
+            msg_type = "entrada"
         else:
-            msg_type = "edicion de palabras clave"
-    msg = f"{msg_type} {target} — {label}"
+            if content_changed and keywords_changed:
+                msg_type = "edicion texto + keywords"
+            elif content_changed:
+                msg_type = "edicion de metadatos/escritos"
+            else:
+                msg_type = "edicion de palabras clave"
 
-    if not defer_commit:
+        msg = f"{msg_type} {target} — {label}"
+
         println("")
         println(f"[qcrear] Fecha:  {target}")
         println(f"[qcrear] Commit: {msg}")
         if DRY_RUN:
             println("[qcrear] DRY RUN: llegué al gate final, pero NO haré commit/push.")
-            return None
+            return 0
+
         confirm = prompt_yn("[qcrear] ¿Confirmar publish (commit + push)?", default_yes=True)
         if not confirm:
             println("[qcrear] OK. Cancelado. No se publicó nada.")
-            return None
+            return 0
 
-    # Aplicar pending_entry en archivo.json (siempre, incluso en sweep)
-    apply_pending_entry_into_archivo(target, pending_entry_path, archivo_path)
+        # 6) Aplicar pending_entry.json dentro de archivo.json
+        apply_pending_entry_into_archivo(target, pending_entry_path, archivo_path)
 
-    if not defer_commit:
-        # Modo single: commit inmediato
+        # 7) Git add/commit/push
         git(["add", str(archivo_path), str(txt_path), str(pending_entry_path)])
         git(["commit", "-m", msg])
         git(["push"])
+
         println(f"✅ Publicado: {msg}")
+
+        # 8) Cleanup: limpiar pending_keywords (placeholder)
         clear_pending_keywords_placeholder()
+
+        # limpiar pending_entry.json también
         pending_entry_path.write_text("{}", encoding="utf-8")
 
-    return PublishResult(
-        target=target,
-        txt_path=txt_path,
-        pending_entry_path=pending_entry_path,
-        commit_msg=msg,
-    )
-
-
-# -----------------------------
-# run_sweep
-# -----------------------------
-
-def run_sweep() -> int:
-    """
-    Detecta todas las fechas no publicadas entre la última en archivo.json
-    y la última entrada en Google Docs, y las publica en un solo commit.
-    """
-    from datetime import timedelta
-
-    println("")
-    println(SEP)
-    println(" Sweep — detectando entradas no publicadas")
-    println(SEP)
-
-    archivo = load_archivo_json()
-    piso = latest_date_in_archivo(archivo)
-    if piso is None:
-        eprintln("[sweep] ERROR: No hay fechas en archivo.json. No sé desde dónde empezar.")
-        return 1
-
-    println(f"[sweep] Última fecha en archivo.json : {piso.isoformat()}")
-
-    techo = get_gdocs_limit_date()
-    println(f"[sweep] Última fecha en Google Docs  : {techo.isoformat()}")
-
-    if techo <= piso:
-        println("[sweep] No hay entradas nuevas en Google Docs. Nada que publicar.")
-        return 0
-
-    # Iterar fechas candidatas
-    results: list[PublishResult] = []
-    skipped: list[tuple[str, str]] = []
-
-    current = piso + timedelta(days=1)
-    while current <= techo:
-        target = current.isoformat()
-        println(f"\n[sweep] → {target}")
-        try:
-            result = publish_one_date(target, defer_commit=True)
-            if result is not None:
-                results.append(result)
-                println(f"[sweep] ✔ {target} — listo para commit")
-            else:
-                println(f"[sweep] — {target} skip (ya publicada o incompleta)")
-        except Exception as e:
-            println(f"[sweep] ⚠ {target} — error, se saltó: {e}")
-            skipped.append((target, str(e)))
-        current += timedelta(days=1)
-
-    if not results:
-        println("\n[sweep] No hay entradas nuevas que publicar.")
-        if skipped:
-            println(f"[sweep] {len(skipped)} fecha(s) con errores:")
-            for d, reason in skipped:
-                println(f"  - {d}: {reason}")
-        return 0
-
-    # Commit único
-    archivo_path = repo_root() / "data" / "archivo.json"
-    pending_entry_path = state_dir() / "pending_entry.json"
-
-    paths_to_stage = [str(archivo_path)]
-    for r in results:
-        paths_to_stage.append(str(r.txt_path))
-    paths_to_stage.append(str(pending_entry_path))
-
-    dates_published = [r.target for r in results]
-    n = len(dates_published)
-    if n == 1:
-        commit_msg = results[0].commit_msg.replace("entrada ", "sweep entrada ", 1)
-    else:
-        commit_msg = f"sweep {dates_published[0]} … {dates_published[-1]} — {n} entradas"
-
-    println("")
-    println(f"[sweep] Fechas a publicar ({n}): {', '.join(dates_published)}")
-    println(f"[sweep] Commit: {commit_msg}")
-
-    if DRY_RUN:
-        println("[sweep] DRY RUN: todo listo, pero NO haré commit/push.")
-        return 0
-
-    git(["add"] + paths_to_stage)
-    git(["commit", "-m", commit_msg])
-    git(["push"])
-
-    println(f"\n✅ Sweep publicado: {commit_msg}")
-
-    # Cleanup
-    clear_pending_keywords_placeholder()
-    pending_entry_path.write_text("{}", encoding="utf-8")
-
-    if skipped:
-        println(f"\n[sweep] {len(skipped)} fecha(s) saltadas por error:")
-        for d, reason in skipped:
-            println(f"  ⚠ {d}: {reason}")
-
-    return 0
-
-
-# -----------------------------
-# Main
-# -----------------------------
-
-def main() -> int:
-    try:
-        println(SEP)
-        println(" qcrear")
-        println(SEP)
-
-        # Preflight
-        pf = run_preflight()
-        if not pf.ok_repo:
-            eprintln("[qcrear] ERROR: No encuentro el repo root.")
-            return 1
-
-        println(f"✅ repo: {pf.repo}")
-        if pf.ok_archivo_json:
-            println(f"✅ archivo.json: {pf.archivo_json}")
-        else:
-            eprintln(f"❌ archivo.json no existe: {pf.archivo_json}")
-            return 1
-
-        # Modo sweep
-        if SWEEP:
-            return run_sweep()
-
-        # Modo single-date (comportamiento original)
-        target = choose_target_date(sys.argv)
-        publish_one_date(target, defer_commit=False)
         return 0
 
     except UserAbort:

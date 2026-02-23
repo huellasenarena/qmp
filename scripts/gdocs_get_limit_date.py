@@ -14,6 +14,19 @@ from _gdocs_auth import get_creds, load_config
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
+def first_six_digits(s: str) -> str:
+    s = (s or "").replace("\u00a0", " ")
+    for ch in ("\u200b", "\ufeff", "\u2060"):
+        s = s.replace(ch, "")
+    import re as _re
+    digits = _re.sub(r"\D+", "", s)
+    return digits[:6]
+
+def yymmdd_to_date(yymmdd: str) -> date:
+    # "260226" → date(2026, 2, 26)
+    yy, mm, dd = int(yymmdd[0:2]), int(yymmdd[2:4]), int(yymmdd[4:6])
+    return date(2000 + yy, mm, dd)
+
 def extract_text(el: Dict[str, Any]) -> str:
     # Extract plain text from a paragraph element (textRun)
     tr = el.get("textRun")
@@ -29,7 +42,6 @@ def normalize_heading_text(paragraph: Dict[str, Any]) -> str:
 
 
 def find_limit_date(doc: Dict[str, Any]) -> date:
-    # Walk all paragraphs in document body content; track last HEADING_1 that parses as YYYY-MM-DD.
     content = (doc.get("body", {}) or {}).get("content", []) or []
     last_heading_raw: Optional[str] = None
     last_heading_date: Optional[date] = None
@@ -38,31 +50,26 @@ def find_limit_date(doc: Dict[str, Any]) -> date:
         para = block.get("paragraph")
         if not para:
             continue
-
         pstyle = (para.get("paragraphStyle", {}) or {})
-        named = pstyle.get("namedStyleType")
-        if named != "HEADING_1":
+        if pstyle.get("namedStyleType") != "HEADING_1":
             continue
 
         heading_text = normalize_heading_text(para)
         last_heading_raw = heading_text
 
-        if DATE_RE.match(heading_text):
-            y, m, d = map(int, heading_text.split("-"))
-            last_heading_date = date(y, m, d)
+        digits = first_six_digits(heading_text)
+        if len(digits) == 6:
+            try:
+                last_heading_date = yymmdd_to_date(digits)
+            except Exception:
+                pass
 
     if last_heading_raw is None:
         raise SystemExit("[limit-date] ERROR: no encontré ningún HEADING_1 en el documento/tab.")
 
     if last_heading_date is None:
         raise SystemExit(
-            f"[limit-date] ERROR: el ÚLTIMO HEADING_1 no es una fecha YYYY-MM-DD: {last_heading_raw!r}"
-        )
-
-    # Also enforce: the last HEADING_1 must itself be a date (your rule).
-    if not DATE_RE.match(last_heading_raw):
-        raise SystemExit(
-            f"[limit-date] ERROR: el ÚLTIMO HEADING_1 no es una fecha YYYY-MM-DD: {last_heading_raw!r}"
+            f"[limit-date] ERROR: el ÚLTIMO HEADING_1 no tiene fecha YYMMDD válida: {last_heading_raw!r}"
         )
 
     return last_heading_date
