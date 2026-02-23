@@ -1,5 +1,227 @@
 [
   {
+    "date": "2026-02-25",
+    "month": "2026-02",
+    "file": "textos/2026-02-25.txt",
+    "my_poem_title": "vinicunca",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Las aguas revueltas",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "agotamiento por saturacion",
+        "weight": 3
+      },
+      {
+        "word": "comunion respiratoria",
+        "weight": 3
+      },
+      {
+        "word": "deseo distributivo",
+        "weight": 3
+      },
+      {
+        "word": "eleccion como performance",
+        "weight": 3
+      },
+      {
+        "word": "exceso como equivalencia",
+        "weight": 3
+      },
+      {
+        "word": "naturaleza como destilacion",
+        "weight": 3
+      },
+      {
+        "word": "consumo de esencia",
+        "weight": 2
+      },
+      {
+        "word": "economia del numero",
+        "weight": 2
+      },
+      {
+        "word": "humor defensivo",
+        "weight": 2
+      },
+      {
+        "word": "indecision",
+        "weight": 2
+      },
+      {
+        "word": "intimidad interrumpida",
+        "weight": 2
+      },
+      {
+        "word": "limite corporal",
+        "weight": 2
+      },
+      {
+        "word": "medicalizacion de la excusa",
+        "weight": 2
+      },
+      {
+        "word": "multiplicidad",
+        "weight": 2
+      },
+      {
+        "word": "ritual de fuga",
+        "weight": 2
+      },
+      {
+        "word": "transitoriedad",
+        "weight": 2
+      },
+      {
+        "word": "canso",
+        "weight": 1
+      },
+      {
+        "word": "destilada",
+        "weight": 1
+      },
+      {
+        "word": "lachay",
+        "weight": 1
+      },
+      {
+        "word": "momento",
+        "weight": 1
+      },
+      {
+        "word": "personas",
+        "weight": 1
+      },
+      {
+        "word": "respirar",
+        "weight": 1
+      },
+      {
+        "word": "reunion",
+        "weight": 1
+      },
+      {
+        "word": "todas",
+        "weight": 1
+      },
+      {
+        "word": "verde",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-02-24",
+    "month": "2026-02",
+    "file": "textos/2026-02-24.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "como cerrar los ojos",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Conización",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "escasez de tiempo",
+        "weight": 3
+      },
+      {
+        "word": "inaccesibilidad estructural",
+        "weight": 3
+      },
+      {
+        "word": "indistincion temporal",
+        "weight": 3
+      },
+      {
+        "word": "opacidad del origen",
+        "weight": 3
+      },
+      {
+        "word": "oscuridad como fertilidad",
+        "weight": 3
+      },
+      {
+        "word": "sustitucion perceptiva",
+        "weight": 3
+      },
+      {
+        "word": "clausura sensorial",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento",
+        "weight": 2
+      },
+      {
+        "word": "orientacion sin horizonte",
+        "weight": 2
+      },
+      {
+        "word": "proximidad inalcanzable",
+        "weight": 2
+      },
+      {
+        "word": "saturacion cromatica",
+        "weight": 2
+      },
+      {
+        "word": "suspension",
+        "weight": 2
+      },
+      {
+        "word": "tiempo aplanado",
+        "weight": 2
+      },
+      {
+        "word": "umbral",
+        "weight": 2
+      },
+      {
+        "word": "cerrar",
+        "weight": 1
+      },
+      {
+        "word": "dos de distancia",
+        "weight": 1
+      },
+      {
+        "word": "manana",
+        "weight": 1
+      },
+      {
+        "word": "negro",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "sol",
+        "weight": 1
+      },
+      {
+        "word": "tarde",
+        "weight": 1
+      },
+      {
+        "word": "veinte minutos",
+        "weight": 1
+      },
+      {
+        "word": "verde",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-23",
     "month": "2026-02",
     "file": "textos/2026-02-23.txt",

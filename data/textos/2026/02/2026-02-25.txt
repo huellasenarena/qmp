@@ -1,0 +1,45 @@
+FECHA: 2026-02-25
+MY_POEM_TITLE: vinicunca
+POETA: Soledad Castresana
+POEM_TITLE: Las aguas revueltas
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+si no puedes elegir solo una
+¿por qué no hacerlo con todas?
+
+sí, puedo hacerlo con todas
+por solo un momento
+luego me canso
+
+y de todos modos
+es el mísmo número de personas
+que vienen a respirar la destilada
+y suave verde en lachay
+
+# POEMA_CITADO
+
+>>A G.G.
+En aquel tiempo, si había una reunión
+que imaginaba pesada y no sabía
+cómo hacer para no ir, me desafiabas:
+decí que tuviste un aborto espontáneo
+y no vayas. Nos reíamos las dos
+de tu ocurrencia.
+
+Y hoy, que volvíamos a vernos después
+de tantos años, tanta agua revuelta,
+sí, tenía ganas de charlar, de escuchar
+sobre tus viajes, los cursos y los libros.
+Tuve un problema médico, te escribí
+para excusarme. Quise seguir,
+hacer el chiste y ya no pude.
+
+# TEXTO
+
+De una broma íntima hasta un arrepentimiento por una separación, **Las aguas revueltas** presenta una amistad alegre que, con el tiempo, se volvió más distante. Antes, usaban emergencias médicas para evitar eventos desagradables, pero ya el narrador tiene que evitar una reunión con su antigua cómplice por un problema, como yo lo interpreto en el contexto del libro, real.
+
+Puede ser que le duele al narrador usar esta razón para cancelar planes porque le recuerda la intimidad de antes: vemos que hace años que no se ven y, además, hay una distancia física sugerida ("viajes"), mientras que estaban cercanas en el pasado. ¿Hay nostalgia en usar la misma excusa que, antes, era una fuente de alegría?
+
+Además, hay un cambio entre los procedimientos médicos imaginarios y los que ya se le presentan al narrador. Esos procedimientos eran el sujeto de bromas antes… pero ya están acá e influyen. Puede ser que el narrador tenga nostalgia de un tiempo también donde la salud era un hecho y los problemas médicos no se presentaban.

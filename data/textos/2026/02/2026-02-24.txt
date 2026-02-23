@@ -1,0 +1,40 @@
+FECHA: 2026-02-24
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: Conización
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+como cerrar los ojos
+y en lugar de negro
+verde
+en todas las direcciones
+
+donde el sol no se ve
+y la mañana es
+como la tarde
+
+sólo veinte minutos dos de distancia
+veinte minutos que no tengo
+
+# POEMA_CITADO
+
+Esta vez, todo estaba acordado de antemano:
+una siesta en mitad de una mañana lluviosa.
+Sin sorpresas.
+
+Después vieron, lo pusieron por escrito,
+me llamaron. Que había células enfermas,
+que el cáncer puede ser tan chiquito,
+invisible a los ojos. Lo esencial
+está en el borde y los bordes están limpios.
+Podemos ir en paz. Demos gracias al doctor.
+
+# TEXTO
+
+Me gusta que muchos de los poemas en este libro se traten de procedimientos médicos: es fácil identificarse, abordan temas profundos, y, sobre todo, me parece único.
+
+Sin decirlo, **Conización** nos presenta implícitamente un procedimiento planificado que resultó ser positivo para el narrador. Dice, a posteriori, que "todo estaba acordado de antemano". Me pregunto: ¿hubo eventos imprevistos antes pero ya puede abordarlo con calma? Me parece que el poema demuestra un desarrollo posible de una visita al hospital, sugiriendo que la previsibilidad elimina el caos.
+
+En particular el lenguaje de la segunda estrofa me hace pensar eso. Frases cortas, pocos detalles (no siquiera se dice quiénes vieron o llamaron, pero supongo que son los médicos), solo acciones sin introspección; no accedemos a los pensamientos o sentimientos del hablante; el evento se procedió con orden.
