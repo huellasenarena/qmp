@@ -1,114 +1,106 @@
 {
-  "date": "2026-02-25",
+  "date": "2026-02-26",
   "month": "2026-02",
-  "file": "textos/2026-02-25.txt",
-  "my_poem_title": "vinicunca",
+  "file": "textos/2026-02-26.txt",
+  "my_poem_title": "mono choro de cola amarilla",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Las aguas revueltas",
-    "poem_snippet": "",
+    "poem_title": "",
+    "poem_snippet": "Título; Interrupción involuntaria",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "agotamiento por saturacion",
+      "word": "imposibilidad de clausura",
       "weight": 3
     },
     {
-      "word": "comunion respiratoria",
+      "word": "inversion del orden afectivo",
       "weight": 3
     },
     {
-      "word": "deseo distributivo",
+      "word": "liminalidad",
       "weight": 3
     },
     {
-      "word": "eleccion como performance",
+      "word": "oscilacion",
       "weight": 3
     },
     {
-      "word": "exceso como equivalencia",
+      "word": "priorizacion del dano",
       "weight": 3
     },
     {
-      "word": "naturaleza como destilacion",
+      "word": "provisionalidad",
       "weight": 3
     },
     {
-      "word": "consumo de esencia",
+      "word": "balanceo",
       "weight": 2
     },
     {
-      "word": "economia del numero",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "humor defensivo",
+      "word": "inminencia",
       "weight": 2
     },
     {
-      "word": "indecision",
+      "word": "secuenciacion afectiva",
       "weight": 2
     },
     {
-      "word": "intimidad interrumpida",
+      "word": "tension apertura abandono",
       "weight": 2
     },
     {
-      "word": "limite corporal",
+      "word": "traslado",
       "weight": 2
     },
     {
-      "word": "medicalizacion de la excusa",
-      "weight": 2
-    },
-    {
-      "word": "multiplicidad",
-      "weight": 2
-    },
-    {
-      "word": "ritual de fuga",
-      "weight": 2
-    },
-    {
-      "word": "transitoriedad",
-      "weight": 2
-    },
-    {
-      "word": "canso",
+      "word": "antes",
       "weight": 1
     },
     {
-      "word": "destilada",
+      "word": "arrepentimiento",
       "weight": 1
     },
     {
-      "word": "lachay",
+      "word": "condena",
       "weight": 1
     },
     {
-      "word": "momento",
+      "word": "conexion",
       "weight": 1
     },
     {
-      "word": "personas",
+      "word": "furia",
       "weight": 1
     },
     {
-      "word": "respirar",
+      "word": "gozo",
       "weight": 1
     },
     {
-      "word": "reunion",
+      "word": "hogar",
       "weight": 1
     },
     {
-      "word": "todas",
+      "word": "mudanza",
       "weight": 1
     },
     {
-      "word": "verde",
+      "word": "puertas",
+      "weight": 1
+    },
+    {
+      "word": "rama",
+      "weight": 1
+    },
+    {
+      "word": "risa",
       "weight": 1
     }
   ]

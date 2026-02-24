@@ -1,0 +1,41 @@
+FECHA: 2026-02-26
+MY_POEM_TITLE: mono choro de cola amarilla
+POETA: Soledad Castresana
+POEM_TITLE: 
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+conocí la furia
+antes el gozo
+el arrepentimiento
+antes la conexión
+la risa
+antes la condena
+
+se balancea
+de una rama
+a la otra
+considerándola
+su hogar sin puertas
+antes de mudarse
+
+# POEMA_CITADO
+
+Título; Interrupción involuntaria
+
+He expulsado casi todos tus tejidos y tu sangre.
+Expulsar
+es la palabra que se usa en estos casos.
+Aunque yo prefiero decir que te ibas yendo.
+Tendría que haber juntado esos restos tuyos,
+haberlos puesto en la tierra. En el jardín,
+con los huesos de los perros. Pero no:
+abrí la ducha y me quedé mirando
+los dibujos que hacías con el agua.
+No hay manera, te dije, de estar en este mundo
+sin algunas partes duras.
+
+# TEXTO
+
+En lugar de ritualizar la pérdida de su feto, se limpió al desaparecerlo, porque considera la fortaleza una necesidad. En esta pequeña historia veo tres cosas: 1. la separación física corresponde con la separación emocional (expulsar literalmente luego se borra en la memoria); 2. la ausencia como una fuerza activa ("los dibujos que hacías con el agua"); 3. la visión pesimista de que tal vez el duelo no se permite ("No hay manera... de estar en este mundo sin algunas partes duras").

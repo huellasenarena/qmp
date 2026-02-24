@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-02-26",
+    "month": "2026-02",
+    "file": "textos/2026-02-26.txt",
+    "my_poem_title": "mono choro de cola amarilla",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "",
+      "poem_snippet": "Título; Interrupción involuntaria",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "imposibilidad de clausura",
+        "weight": 3
+      },
+      {
+        "word": "inversion del orden afectivo",
+        "weight": 3
+      },
+      {
+        "word": "liminalidad",
+        "weight": 3
+      },
+      {
+        "word": "oscilacion",
+        "weight": 3
+      },
+      {
+        "word": "priorizacion del dano",
+        "weight": 3
+      },
+      {
+        "word": "provisionalidad",
+        "weight": 3
+      },
+      {
+        "word": "balanceo",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "inminencia",
+        "weight": 2
+      },
+      {
+        "word": "secuenciacion afectiva",
+        "weight": 2
+      },
+      {
+        "word": "tension apertura abandono",
+        "weight": 2
+      },
+      {
+        "word": "traslado",
+        "weight": 2
+      },
+      {
+        "word": "antes",
+        "weight": 1
+      },
+      {
+        "word": "arrepentimiento",
+        "weight": 1
+      },
+      {
+        "word": "condena",
+        "weight": 1
+      },
+      {
+        "word": "conexion",
+        "weight": 1
+      },
+      {
+        "word": "furia",
+        "weight": 1
+      },
+      {
+        "word": "gozo",
+        "weight": 1
+      },
+      {
+        "word": "hogar",
+        "weight": 1
+      },
+      {
+        "word": "mudanza",
+        "weight": 1
+      },
+      {
+        "word": "puertas",
+        "weight": 1
+      },
+      {
+        "word": "rama",
+        "weight": 1
+      },
+      {
+        "word": "risa",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-25",
     "month": "2026-02",
     "file": "textos/2026-02-25.txt",
