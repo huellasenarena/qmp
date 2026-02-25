@@ -1,106 +1,94 @@
 {
-  "date": "2026-02-26",
+  "date": "2026-02-28",
   "month": "2026-02",
-  "file": "textos/2026-02-26.txt",
-  "my_poem_title": "mono choro de cola amarilla",
+  "file": "textos/2026-02-28.txt",
+  "my_poem_title": "gallito de las rocas",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "",
-    "poem_snippet": "Título; Interrupción involuntaria",
+    "poem_title": "Que te saquen algo muerto es bueno",
+    "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "imposibilidad de clausura",
+      "word": "asimetria epistemica del cuidado",
       "weight": 3
     },
     {
-      "word": "inversion del orden afectivo",
+      "word": "desposesion corporal",
       "weight": 3
     },
     {
-      "word": "liminalidad",
+      "word": "distraccion como liberacion",
       "weight": 3
     },
     {
-      "word": "oscilacion",
+      "word": "indecision convertida en agencia",
       "weight": 3
     },
     {
-      "word": "priorizacion del dano",
+      "word": "instrumentalizacion erotico-medica del cuerpo",
       "weight": 3
     },
     {
-      "word": "provisionalidad",
+      "word": "silencio como desplazamiento de responsabilidad",
       "weight": 3
     },
     {
-      "word": "balanceo",
+      "word": "ambiguedad del tono",
       "weight": 2
     },
     {
-      "word": "exposicion",
+      "word": "camuflaje social",
       "weight": 2
     },
     {
-      "word": "inminencia",
+      "word": "empuje corporal",
       "weight": 2
     },
     {
-      "word": "secuenciacion afectiva",
+      "word": "objetualizacion corporal",
       "weight": 2
     },
     {
-      "word": "tension apertura abandono",
+      "word": "remocion quirurgica",
       "weight": 2
     },
     {
-      "word": "traslado",
+      "word": "transferencia de atencion",
       "weight": 2
     },
     {
-      "word": "antes",
+      "word": "camilla",
       "weight": 1
     },
     {
-      "word": "arrepentimiento",
+      "word": "charlas sobre viajes",
       "weight": 1
     },
     {
-      "word": "condena",
+      "word": "corte de pelo",
       "weight": 1
     },
     {
-      "word": "conexion",
+      "word": "desnudez",
       "weight": 1
     },
     {
-      "word": "furia",
+      "word": "enfermero",
       "weight": 1
     },
     {
-      "word": "gozo",
+      "word": "manchas de humedad",
       "weight": 1
     },
     {
-      "word": "hogar",
+      "word": "pedido de no tocar",
       "weight": 1
     },
     {
-      "word": "mudanza",
-      "weight": 1
-    },
-    {
-      "word": "puertas",
-      "weight": 1
-    },
-    {
-      "word": "rama",
-      "weight": 1
-    },
-    {
-      "word": "risa",
+      "word": "sabana azul",
       "weight": 1
     }
   ]

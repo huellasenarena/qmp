@@ -1,0 +1,39 @@
+FECHA: 2026-02-28
+MY_POEM_TITLE: gallito de las rocas
+POETA: Soledad Castresana
+POEM_TITLE: Que te saquen algo muerto es bueno
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+no decidí este corte de pelo
+y no me pareció distinto
+hasta que te pude
+distraer un instante
+y volar lejos
+
+# POEMA_CITADO
+
+El otro día estaba yo desnuda y rodeada de hombres.
+Como hacía frío me habían tapado con una sábana azul.
+Charlábamos de mis viajes, de las ciudades donde he vivido,
+de la gente del pueblo a la que conocíamos todos.
+
+No me toquen todavía, les pedí. Siento mucho.
+Terminaron hace rato, respondió el enfermero.
+Y no supe distinguir si el tono era burlón
+o paternal. Igual me dio vergüenza. El resto
+de los hombres se había ido. Miré el techo:
+lamparones de humedad, la pintura inflada.
+Tranquila. Te sacaron todo, dijo. Suavemente
+iba empujando la camilla hacía la puerta.
+
+# TEXTO
+
+La yuxtaposición del procedimiento médico con el lenguaje de una orgía sirve para comparar lo clínico y lo vulnerable. Se presenta el narrador en una situación sin control donde es el centro de atención ("desnuda y rodeada de hombres") y es solo después de la mitad que aprendemos que no se trata de relaciones sexuales sino de cirugía. El hablante ni siquiera es capaz de taparse con una sábana —era la acción de los hombres— y al final vemos que no es capaz de moverse tampoco ("empujando la camilla hacia la puerta"). Y cuando se duele y pide a los médicos que no la toquen, es un pedido en vano ("Terminaron hace rato").
+
+Hay dos conversaciones: la charla en la primera estrofa y la respuesta ambigua del enfermero en la segunda. Al principio, hubo un interés en el narrador pero la conversación se queda unidireccional, lo que representa otro instante de su falta de poder. Luego, después del procedimiento, este interés se disipa y el tono va de charlar a burlón o paternal. Tienen contenidos diferentes, pero las dos reflejan su posición subordinada en la escena: la una porque ella es el centro de atención sin voz, y la otra porque al enfermero le da igual ser amable.
+
+¿Entonces qué pensar? ¿Quiere que sean diferentes los procedimientos y usa el poema como llamado a la acción? Me parece que el poema hace la comparación sin ofrecer una posibilidad mejor. Hay similitudes en la vulnerabilidad y la falta de poder… pero el poema para allí. ¿Sugiere que no hay otra posibilidad? Puede ser.
+
+Pensando en el título, ¿puede ser que "es bueno" se diga con ironía? Puede leerse así por el duelo y la vergüenza que experimenta, pero creo que hay dos niveles más. Hay el nivel literal: que someterse a una operación puede tener efectos positivos. Y también el nivel sexual, donde sus parejas "sacan" un sentido de muerte de ella porque las relaciones no son alegrías.

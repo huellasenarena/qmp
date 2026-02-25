@@ -1,5 +1,195 @@
 [
   {
+    "date": "2026-02-28",
+    "month": "2026-02",
+    "file": "textos/2026-02-28.txt",
+    "my_poem_title": "gallito de las rocas",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Que te saquen algo muerto es bueno",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "asimetria epistemica del cuidado",
+        "weight": 3
+      },
+      {
+        "word": "desposesion corporal",
+        "weight": 3
+      },
+      {
+        "word": "distraccion como liberacion",
+        "weight": 3
+      },
+      {
+        "word": "indecision convertida en agencia",
+        "weight": 3
+      },
+      {
+        "word": "instrumentalizacion erotico-medica del cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "silencio como desplazamiento de responsabilidad",
+        "weight": 3
+      },
+      {
+        "word": "ambiguedad del tono",
+        "weight": 2
+      },
+      {
+        "word": "camuflaje social",
+        "weight": 2
+      },
+      {
+        "word": "empuje corporal",
+        "weight": 2
+      },
+      {
+        "word": "objetualizacion corporal",
+        "weight": 2
+      },
+      {
+        "word": "remocion quirurgica",
+        "weight": 2
+      },
+      {
+        "word": "transferencia de atencion",
+        "weight": 2
+      },
+      {
+        "word": "camilla",
+        "weight": 1
+      },
+      {
+        "word": "charlas sobre viajes",
+        "weight": 1
+      },
+      {
+        "word": "corte de pelo",
+        "weight": 1
+      },
+      {
+        "word": "desnudez",
+        "weight": 1
+      },
+      {
+        "word": "enfermero",
+        "weight": 1
+      },
+      {
+        "word": "manchas de humedad",
+        "weight": 1
+      },
+      {
+        "word": "pedido de no tocar",
+        "weight": 1
+      },
+      {
+        "word": "sabana azul",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-02-27",
+    "month": "2026-02",
+    "file": "textos/2026-02-27.txt",
+    "my_poem_title": "rana gigante de titicaca",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Autoayuda",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "cicatriz-invisible",
+        "weight": 3
+      },
+      {
+        "word": "desprendimiento encarnado",
+        "weight": 3
+      },
+      {
+        "word": "entrega estrategica",
+        "weight": 3
+      },
+      {
+        "word": "incertidumbre agencial",
+        "weight": 3
+      },
+      {
+        "word": "pequenez como potencia",
+        "weight": 3
+      },
+      {
+        "word": "voz performativa",
+        "weight": 3
+      },
+      {
+        "word": "ambivalencia",
+        "weight": 2
+      },
+      {
+        "word": "desidentificacion",
+        "weight": 2
+      },
+      {
+        "word": "gradualidad",
+        "weight": 2
+      },
+      {
+        "word": "performatividad del gesto",
+        "weight": 2
+      },
+      {
+        "word": "ritualizacion de la perdida",
+        "weight": 2
+      },
+      {
+        "word": "tension cuerpo-lenguaje",
+        "weight": 2
+      },
+      {
+        "word": "amar",
+        "weight": 1
+      },
+      {
+        "word": "aplastamiento",
+        "weight": 1
+      },
+      {
+        "word": "atrapamiento",
+        "weight": 1
+      },
+      {
+        "word": "brindis",
+        "weight": 1
+      },
+      {
+        "word": "canciones",
+        "weight": 1
+      },
+      {
+        "word": "cantar",
+        "weight": 1
+      },
+      {
+        "word": "expulsion",
+        "weight": 1
+      },
+      {
+        "word": "lengua",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-02-26",
     "month": "2026-02",
     "file": "textos/2026-02-26.txt",
