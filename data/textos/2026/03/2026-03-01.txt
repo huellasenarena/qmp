@@ -1,0 +1,50 @@
+FECHA: 2026-03-01
+MY_POEM_TITLE: es desierto de atacama
+POETA: Soledad Castresana
+POEM_TITLE: Para identificar mi cuerpo
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+mi pie se hunde en la arena
+al impulsándome no dar un paso más
+no cruzar y tocar aquello grano de arena
+eso grano sí
+eso grano es permitido
+aquello no
+
+eso es de mi país
+aquello del otro
+
+pero los dos capaces de hundirme
+
+# POEMA_CITADO
+
+¿Señas particulares?, me pregunta la mujer
+del Instituto Nacional de Migración,
+¿tatuajes, manchas, cicatrices? Nada
+que se vea a simple vista, digo. Y ella,
+impúdica, insisten.
+Una cesárea, ¿le sirve? Subo la voz
+para que escuchen todos en la sala.
+¿Un corte en el pezón derecho,
+otro en la ingle, uno en el cuello del útero?
+Y su hija, ¿tiene alguna marca?
+Un lunar en la palma de la mano izquierda
+como si hubiera matado una mosca.
+La mujer del Instituto Nacional de Migración
+completa el formulario. No me mira.
+
+# TEXTO
+
+Lo burocrático encuentra lo íntimo, y en esta reunión lo íntimo logró silenciar lo burocrático; logró transformar su forma impúdica en vergüenza.
+
+Vemos una irritación expresada en el hablante, preguntando al funcionario de migración si "le sirve" saber detalles íntimos, luego preguntando si otros detalles son suficientes también, todo a voz alta. El subtexto, a mis ojos, es que no es asunto suyo si tiene cicatrices y, además, tiene una utilidad cuestionable, porque las cicatrices son casi invisibles ("Nada que se vea a simple vista", "uno en el cuello del útero", "Un lunar en la palma")... hay una violación de privacidad en una meta sin valor que el narrador quiere enfrentar.
+
+El símil curioso del lunar como si la hija "hubiera matado una mosca" puede ser otra forma de rebelión porque en este contexto burocrático lo poético es lo inútil; al añadir este símil el narrador combate las normas institucionales.
+
+Lo burocrático es una frente imperturbable, obsesionada con la formalidad. El poema sugiere que los funcionarios llevan a cabo su tarea sabiendo su forma invasiva pero eso no les impide; lo leo como crítica a esas formalidades que se hacen sin objetivo sustantivo sino porque son las reglas.
+
+"No me mira" puede significar que la escena de confrontación no le importa al funcionario y continúa su trabajo sin expresión. En esta interpretación, el combate no influyó en el proceso, a diferencia de si se interpreta, como lo hago yo, como una pequeña victoria del narrador.
+
+En cualquier caso, las formalidades continúan: los formularios se siguen completando y la burocracia sigue adelante. Por eso, el combate —incluso si tuvo esta victoria al avergonzar al funcionario— es en vano; esas pequeñas interacciones no sirven para cambiar instituciones.

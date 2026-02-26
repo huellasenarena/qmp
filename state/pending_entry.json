@@ -1,94 +1,114 @@
 {
-  "date": "2026-02-28",
-  "month": "2026-02",
-  "file": "textos/2026-02-28.txt",
-  "my_poem_title": "gallito de las rocas",
+  "date": "2026-03-01",
+  "month": "2026-03",
+  "file": "textos/2026-03-01.txt",
+  "my_poem_title": "es desierto de atacama",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Que te saquen algo muerto es bueno",
+    "poem_title": "Para identificar mi cuerpo",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "asimetria epistemica del cuidado",
+      "word": "autorizacion",
       "weight": 3
     },
     {
-      "word": "desposesion corporal",
+      "word": "corporeidad",
       "weight": 3
     },
     {
-      "word": "distraccion como liberacion",
+      "word": "exclusion",
       "weight": 3
     },
     {
-      "word": "indecision convertida en agencia",
+      "word": "frontera",
       "weight": 3
     },
     {
-      "word": "instrumentalizacion erotico-medica del cuerpo",
+      "word": "inmovilidad como resistencia",
       "weight": 3
     },
     {
-      "word": "silencio como desplazamiento de responsabilidad",
+      "word": "pertenencia",
       "weight": 3
     },
     {
-      "word": "ambiguedad del tono",
+      "word": "burocracia",
       "weight": 2
     },
     {
-      "word": "camuflaje social",
+      "word": "clasificacion",
       "weight": 2
     },
     {
-      "word": "empuje corporal",
+      "word": "delimitacion",
       "weight": 2
     },
     {
-      "word": "objetualizacion corporal",
+      "word": "inspeccion",
       "weight": 2
     },
     {
-      "word": "remocion quirurgica",
+      "word": "poder",
       "weight": 2
     },
     {
-      "word": "transferencia de atencion",
+      "word": "registro",
       "weight": 2
     },
     {
-      "word": "camilla",
+      "word": "silencio",
+      "weight": 2
+    },
+    {
+      "word": "verguenza",
+      "weight": 2
+    },
+    {
+      "word": "vigilancia",
+      "weight": 2
+    },
+    {
+      "word": "arena",
       "weight": 1
     },
     {
-      "word": "charlas sobre viajes",
+      "word": "cesarea",
       "weight": 1
     },
     {
-      "word": "corte de pelo",
+      "word": "cicatriz",
       "weight": 1
     },
     {
-      "word": "desnudez",
+      "word": "formulario",
       "weight": 1
     },
     {
-      "word": "enfermero",
+      "word": "grano",
       "weight": 1
     },
     {
-      "word": "manchas de humedad",
+      "word": "mano",
       "weight": 1
     },
     {
-      "word": "pedido de no tocar",
+      "word": "marca",
       "weight": 1
     },
     {
-      "word": "sabana azul",
+      "word": "mujer",
+      "weight": 1
+    },
+    {
+      "word": "pie",
+      "weight": 1
+    },
+    {
+      "word": "sala",
       "weight": 1
     }
   ]
