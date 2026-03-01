@@ -1,114 +1,107 @@
 {
-  "date": "2026-03-01",
+  "date": "2026-03-04",
   "month": "2026-03",
-  "file": "textos/2026-03-01.txt",
-  "my_poem_title": "es desierto de atacama",
+  "file": "textos/2026-03-04.txt",
+  "my_poem_title": "el año 2026",
   "my_poem_snippet": "",
   "analysis": {
-    "poet": "Soledad Castresana",
-    "poem_title": "Para identificar mi cuerpo",
+    "poet": "Phillip K. Dick",
+    "poem_title": "Capítulo 3",
     "poem_snippet": "",
-    "book_title": "La carne se corta"
+    "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-3.pdf"
   },
   "keywords": [
     {
-      "word": "autorizacion",
+      "word": "certificacion performativa",
       "weight": 3
     },
     {
-      "word": "corporeidad",
+      "word": "cuantificacion",
       "weight": 3
     },
     {
-      "word": "exclusion",
+      "word": "eros como pregunta",
       "weight": 3
     },
     {
-      "word": "frontera",
+      "word": "pixelacion del cuerpo",
       "weight": 3
     },
     {
-      "word": "inmovilidad como resistencia",
+      "word": "totalizacion como silenciamiento",
       "weight": 3
     },
     {
-      "word": "pertenencia",
-      "weight": 3
-    },
-    {
-      "word": "burocracia",
+      "word": "control burocratico",
       "weight": 2
     },
     {
-      "word": "clasificacion",
+      "word": "incredulidad performatica",
       "weight": 2
     },
     {
-      "word": "delimitacion",
+      "word": "negacion de la intimidad",
       "weight": 2
     },
     {
-      "word": "inspeccion",
+      "word": "pregunta como ritual",
       "weight": 2
     },
     {
-      "word": "poder",
+      "word": "reduccion tecnologica",
       "weight": 2
     },
     {
-      "word": "registro",
+      "word": "saturacion informativa",
       "weight": 2
     },
     {
-      "word": "silencio",
+      "word": "tension identitaria",
       "weight": 2
     },
     {
-      "word": "verguenza",
-      "weight": 2
-    },
-    {
-      "word": "vigilancia",
-      "weight": 2
-    },
-    {
-      "word": "arena",
+      "word": "andrillos",
       "weight": 1
     },
     {
-      "word": "cesarea",
+      "word": "animal",
       "weight": 1
     },
     {
-      "word": "cicatriz",
+      "word": "asesinar",
       "weight": 1
     },
     {
-      "word": "formulario",
+      "word": "ave",
       "weight": 1
     },
     {
-      "word": "grano",
+      "word": "chupada",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "funcionario",
       "weight": 1
     },
     {
-      "word": "marca",
+      "word": "gobierno",
       "weight": 1
     },
     {
-      "word": "mujer",
+      "word": "pixeles",
       "weight": 1
     },
     {
-      "word": "pie",
+      "word": "probada",
       "weight": 1
     },
     {
-      "word": "sala",
+      "word": "respuestas",
+      "weight": 1
+    },
+    {
+      "word": "tienda",
       "weight": 1
     }
   ]

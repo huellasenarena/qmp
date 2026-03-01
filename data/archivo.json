@@ -1,5 +1,209 @@
 [
   {
+    "date": "2026-03-04",
+    "month": "2026-03",
+    "file": "textos/2026-03-04.txt",
+    "my_poem_title": "el año 2026",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 3",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-3.pdf"
+    },
+    "keywords": [
+      {
+        "word": "certificacion performativa",
+        "weight": 3
+      },
+      {
+        "word": "cuantificacion",
+        "weight": 3
+      },
+      {
+        "word": "eros como pregunta",
+        "weight": 3
+      },
+      {
+        "word": "pixelacion del cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "totalizacion como silenciamiento",
+        "weight": 3
+      },
+      {
+        "word": "control burocratico",
+        "weight": 2
+      },
+      {
+        "word": "incredulidad performatica",
+        "weight": 2
+      },
+      {
+        "word": "negacion de la intimidad",
+        "weight": 2
+      },
+      {
+        "word": "pregunta como ritual",
+        "weight": 2
+      },
+      {
+        "word": "reduccion tecnologica",
+        "weight": 2
+      },
+      {
+        "word": "saturacion informativa",
+        "weight": 2
+      },
+      {
+        "word": "tension identitaria",
+        "weight": 2
+      },
+      {
+        "word": "andrillos",
+        "weight": 1
+      },
+      {
+        "word": "animal",
+        "weight": 1
+      },
+      {
+        "word": "asesinar",
+        "weight": 1
+      },
+      {
+        "word": "ave",
+        "weight": 1
+      },
+      {
+        "word": "chupada",
+        "weight": 1
+      },
+      {
+        "word": "funcionario",
+        "weight": 1
+      },
+      {
+        "word": "gobierno",
+        "weight": 1
+      },
+      {
+        "word": "pixeles",
+        "weight": 1
+      },
+      {
+        "word": "probada",
+        "weight": 1
+      },
+      {
+        "word": "respuestas",
+        "weight": 1
+      },
+      {
+        "word": "tienda",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-02",
+    "month": "2026-03",
+    "file": "textos/2026-03-02.txt",
+    "my_poem_title": "ventilador",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 1",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-1.pdf"
+    },
+    "keywords": [
+      {
+        "word": "desecacion vital",
+        "weight": 3
+      },
+      {
+        "word": "desplazamiento afectivo",
+        "weight": 3
+      },
+      {
+        "word": "instrumentalizacion del cuidado",
+        "weight": 3
+      },
+      {
+        "word": "mediacion tecnica del cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "objetualizacion del deseo",
+        "weight": 3
+      },
+      {
+        "word": "distancia corporal",
+        "weight": 2
+      },
+      {
+        "word": "enajenacion cotidiana",
+        "weight": 2
+      },
+      {
+        "word": "erosion lenta",
+        "weight": 2
+      },
+      {
+        "word": "ritual domestico",
+        "weight": 2
+      },
+      {
+        "word": "separacion atmosferica",
+        "weight": 2
+      },
+      {
+        "word": "tension entre funcion y deseo",
+        "weight": 2
+      },
+      {
+        "word": "aire caliente",
+        "weight": 1
+      },
+      {
+        "word": "cama",
+        "weight": 1
+      },
+      {
+        "word": "girar",
+        "weight": 1
+      },
+      {
+        "word": "humedad",
+        "weight": 1
+      },
+      {
+        "word": "maquina",
+        "weight": 1
+      },
+      {
+        "word": "ropa",
+        "weight": 1
+      },
+      {
+        "word": "secar",
+        "weight": 1
+      },
+      {
+        "word": "toque",
+        "weight": 1
+      },
+      {
+        "word": "ventilador",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-01",
     "month": "2026-03",
     "file": "textos/2026-03-01.txt",
