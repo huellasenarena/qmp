@@ -1,0 +1,26 @@
+FECHA: 2026-03-05
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 4
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+mi erección
+la acaricio ya
+por lo futuro
+
+y cuando viene
+la voy a acariciar
+por lo pasado
+
+tu cuerpo
+en mi mente siempre
+nunca en mi boca
+
+# POEMA_CITADO
+
+
+# TEXTO
+Continuamos viendo el trabajo de Rick yuxtapuesto con su deseo de tener un animal real. Aprende que un colega está en el hospital por un ataque de un androide muy realista. Su jefe se preocupa por la autenticidad de este andrillo y envía a Rick para encontrar la empresa que lo crea.
+
+Durante su visita, Rick ve un búho que pertenece a la empresa y está lleno de deseo de comprarlo. Desafortunadamente, no puede.

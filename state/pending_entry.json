@@ -1,107 +1,87 @@
 {
-  "date": "2026-03-04",
+  "date": "2026-03-05",
   "month": "2026-03",
-  "file": "textos/2026-03-04.txt",
-  "my_poem_title": "el año 2026",
-  "my_poem_snippet": "",
+  "file": "textos/2026-03-05.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "mi erección",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 3",
+    "poem_title": "Capítulo 4",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-3.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-4.pdf"
   },
   "keywords": [
     {
-      "word": "certificacion performativa",
+      "word": "abstinencia performativa",
       "weight": 3
     },
     {
-      "word": "cuantificacion",
+      "word": "ausencia como presencia",
       "weight": 3
     },
     {
-      "word": "eros como pregunta",
+      "word": "autenticidad performativa",
       "weight": 3
     },
     {
-      "word": "pixelacion del cuerpo",
+      "word": "erotizacion representacional",
       "weight": 3
     },
     {
-      "word": "totalizacion como silenciamiento",
+      "word": "objetualizacion del otro",
       "weight": 3
     },
     {
-      "word": "control burocratico",
+      "word": "plegamiento temporal",
+      "weight": 3
+    },
+    {
+      "word": "desplazamiento del deseo",
       "weight": 2
     },
     {
-      "word": "incredulidad performatica",
+      "word": "economia del objeto",
       "weight": 2
     },
     {
-      "word": "negacion de la intimidad",
+      "word": "ficcionamiento corporal",
       "weight": 2
     },
     {
-      "word": "pregunta como ritual",
+      "word": "inhibicion verbal",
       "weight": 2
     },
     {
-      "word": "reduccion tecnologica",
+      "word": "mediacion imaginaria",
       "weight": 2
     },
     {
-      "word": "saturacion informativa",
+      "word": "tension pasado-futuro",
       "weight": 2
     },
     {
-      "word": "tension identitaria",
-      "weight": 2
-    },
-    {
-      "word": "andrillos",
+      "word": "acariciar",
       "weight": 1
     },
     {
-      "word": "animal",
+      "word": "boca",
       "weight": 1
     },
     {
-      "word": "asesinar",
+      "word": "buho",
       "weight": 1
     },
     {
-      "word": "ave",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "chupada",
+      "word": "ereccion",
       "weight": 1
     },
     {
-      "word": "funcionario",
-      "weight": 1
-    },
-    {
-      "word": "gobierno",
-      "weight": 1
-    },
-    {
-      "word": "pixeles",
-      "weight": 1
-    },
-    {
-      "word": "probada",
-      "weight": 1
-    },
-    {
-      "word": "respuestas",
-      "weight": 1
-    },
-    {
-      "word": "tienda",
+      "word": "mente",
       "weight": 1
     }
   ]
