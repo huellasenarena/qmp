@@ -1,5 +1,121 @@
 [
   {
+    "date": "2026-03-06",
+    "month": "2026-03",
+    "file": "textos/2026-03-06.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "tan excitado",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 4",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-4.pdf"
+    },
+    "keywords": [
+      {
+        "word": "autoestigma",
+        "weight": 3
+      },
+      {
+        "word": "incertidumbre identitaria",
+        "weight": 3
+      },
+      {
+        "word": "intimidad vigilada",
+        "weight": 3
+      },
+      {
+        "word": "liberacion como condena",
+        "weight": 3
+      },
+      {
+        "word": "normatividad",
+        "weight": 3
+      },
+      {
+        "word": "performatividad corporal",
+        "weight": 3
+      },
+      {
+        "word": "autoobservacion",
+        "weight": 2
+      },
+      {
+        "word": "culpabilizacion",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento de sentido",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "juicio por conducta",
+        "weight": 2
+      },
+      {
+        "word": "ocultamiento",
+        "weight": 2
+      },
+      {
+        "word": "tension placer sancion",
+        "weight": 2
+      },
+      {
+        "word": "andrillo",
+        "weight": 1
+      },
+      {
+        "word": "autoerotismo",
+        "weight": 1
+      },
+      {
+        "word": "buho",
+        "weight": 1
+      },
+      {
+        "word": "comportamiento",
+        "weight": 1
+      },
+      {
+        "word": "condena",
+        "weight": 1
+      },
+      {
+        "word": "decepcion",
+        "weight": 1
+      },
+      {
+        "word": "excitacion",
+        "weight": 1
+      },
+      {
+        "word": "interrogacion",
+        "weight": 1
+      },
+      {
+        "word": "jardin",
+        "weight": 1
+      },
+      {
+        "word": "prueba de turing",
+        "weight": 1
+      },
+      {
+        "word": "solo",
+        "weight": 1
+      },
+      {
+        "word": "tocarme",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-05",
     "month": "2026-03",
     "file": "textos/2026-03-05.txt",

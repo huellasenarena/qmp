@@ -1,9 +1,9 @@
 {
-  "date": "2026-03-05",
+  "date": "2026-03-06",
   "month": "2026-03",
-  "file": "textos/2026-03-05.txt",
+  "file": "textos/2026-03-06.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "mi erección",
+  "my_poem_snippet": "tan excitado",
   "analysis": {
     "poet": "Phillip K. Dick",
     "poem_title": "Capítulo 4",
@@ -13,59 +13,63 @@
   },
   "keywords": [
     {
-      "word": "abstinencia performativa",
+      "word": "autoestigma",
       "weight": 3
     },
     {
-      "word": "ausencia como presencia",
+      "word": "incertidumbre identitaria",
       "weight": 3
     },
     {
-      "word": "autenticidad performativa",
+      "word": "intimidad vigilada",
       "weight": 3
     },
     {
-      "word": "erotizacion representacional",
+      "word": "liberacion como condena",
       "weight": 3
     },
     {
-      "word": "objetualizacion del otro",
+      "word": "normatividad",
       "weight": 3
     },
     {
-      "word": "plegamiento temporal",
+      "word": "performatividad corporal",
       "weight": 3
     },
     {
-      "word": "desplazamiento del deseo",
+      "word": "autoobservacion",
       "weight": 2
     },
     {
-      "word": "economia del objeto",
+      "word": "culpabilizacion",
       "weight": 2
     },
     {
-      "word": "ficcionamiento corporal",
+      "word": "desplazamiento de sentido",
       "weight": 2
     },
     {
-      "word": "inhibicion verbal",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "mediacion imaginaria",
+      "word": "juicio por conducta",
       "weight": 2
     },
     {
-      "word": "tension pasado-futuro",
+      "word": "ocultamiento",
       "weight": 2
     },
     {
-      "word": "acariciar",
+      "word": "tension placer sancion",
+      "weight": 2
+    },
+    {
+      "word": "andrillo",
       "weight": 1
     },
     {
-      "word": "boca",
+      "word": "autoerotismo",
       "weight": 1
     },
     {
@@ -73,15 +77,39 @@
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "comportamiento",
       "weight": 1
     },
     {
-      "word": "ereccion",
+      "word": "condena",
       "weight": 1
     },
     {
-      "word": "mente",
+      "word": "decepcion",
+      "weight": 1
+    },
+    {
+      "word": "excitacion",
+      "weight": 1
+    },
+    {
+      "word": "interrogacion",
+      "weight": 1
+    },
+    {
+      "word": "jardin",
+      "weight": 1
+    },
+    {
+      "word": "prueba de turing",
+      "weight": 1
+    },
+    {
+      "word": "solo",
+      "weight": 1
+    },
+    {
+      "word": "tocarme",
       "weight": 1
     }
   ]

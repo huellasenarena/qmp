@@ -1,0 +1,25 @@
+FECHA: 2026-03-06
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 4
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+tan excitado
+tocarme solo,
+solo un poquito,
+y se libera
+
+se libera
+y me condena
+al jardín de decepción
+
+# POEMA_CITADO
+
+
+# TEXTO
+La interrogación con Rachael continúa con Rick haciéndole preguntas diseñadas para provocar emociones. Al final, decidió que era un andrillo… pero estuvo indeciso cuando le dijeron que era de hecho un humano.
+
+Intentaron sobornarlo con el búho, diciéndole que era suyo… y, con una nueva pregunta, Rick cambió de opinión. Pero de hecho Rachael era un andrillo y el búho era artificial.
+
+Este capítulo muestra el borrado de la línea entre lo que somos y lo que podemos observar. Finalmente, no podemos acceder a la mente de alguien, entonces debemos juzgar su comportamiento; el libro hasta ahora me parece que aborda la prueba de Turing.
