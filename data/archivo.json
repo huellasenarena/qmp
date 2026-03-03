@@ -312,6 +312,122 @@
     ]
   },
   {
+    "date": "2026-03-03",
+    "month": "2026-03",
+    "file": "textos/2026-03-03.txt",
+    "my_poem_title": "guitarra",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 2",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-2.pdf"
+    },
+    "keywords": [
+      {
+        "word": "conservacion como acto",
+        "weight": 3
+      },
+      {
+        "word": "desplazamiento de la mirada",
+        "weight": 3
+      },
+      {
+        "word": "inversion del uso",
+        "weight": 3
+      },
+      {
+        "word": "potencialidad retenida",
+        "weight": 3
+      },
+      {
+        "word": "retencion gestual",
+        "weight": 3
+      },
+      {
+        "word": "silencio como presencia",
+        "weight": 3
+      },
+      {
+        "word": "contencion material",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento de valor",
+        "weight": 2
+      },
+      {
+        "word": "ruptura por la marea",
+        "weight": 2
+      },
+      {
+        "word": "suspension del gesto",
+        "weight": 2
+      },
+      {
+        "word": "tension uso/produccion",
+        "weight": 2
+      },
+      {
+        "word": "agua",
+        "weight": 1
+      },
+      {
+        "word": "boligrafo",
+        "weight": 1
+      },
+      {
+        "word": "cuerdas",
+        "weight": 1
+      },
+      {
+        "word": "embotellar",
+        "weight": 1
+      },
+      {
+        "word": "enfocar",
+        "weight": 1
+      },
+      {
+        "word": "fabricar",
+        "weight": 1
+      },
+      {
+        "word": "fotos",
+        "weight": 1
+      },
+      {
+        "word": "lentes",
+        "weight": 1
+      },
+      {
+        "word": "libros",
+        "weight": 1
+      },
+      {
+        "word": "marea",
+        "weight": 1
+      },
+      {
+        "word": "musica",
+        "weight": 1
+      },
+      {
+        "word": "paginas",
+        "weight": 1
+      },
+      {
+        "word": "tinta",
+        "weight": 1
+      },
+      {
+        "word": "tocar",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-02",
     "month": "2026-03",
     "file": "textos/2026-03-02.txt",

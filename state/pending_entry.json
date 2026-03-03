@@ -1,115 +1,115 @@
 {
-  "date": "2026-03-06",
+  "date": "2026-03-03",
   "month": "2026-03",
-  "file": "textos/2026-03-06.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "tan excitado",
+  "file": "textos/2026-03-03.txt",
+  "my_poem_title": "guitarra",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 4",
+    "poem_title": "Capítulo 2",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-4.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-2.pdf"
   },
   "keywords": [
     {
-      "word": "autoestigma",
+      "word": "conservacion como acto",
       "weight": 3
     },
     {
-      "word": "incertidumbre identitaria",
+      "word": "desplazamiento de la mirada",
       "weight": 3
     },
     {
-      "word": "intimidad vigilada",
+      "word": "inversion del uso",
       "weight": 3
     },
     {
-      "word": "liberacion como condena",
+      "word": "potencialidad retenida",
       "weight": 3
     },
     {
-      "word": "normatividad",
+      "word": "retencion gestual",
       "weight": 3
     },
     {
-      "word": "performatividad corporal",
+      "word": "silencio como presencia",
       "weight": 3
     },
     {
-      "word": "autoobservacion",
+      "word": "contencion material",
       "weight": 2
     },
     {
-      "word": "culpabilizacion",
+      "word": "desplazamiento de valor",
       "weight": 2
     },
     {
-      "word": "desplazamiento de sentido",
+      "word": "ruptura por la marea",
       "weight": 2
     },
     {
-      "word": "exposicion",
+      "word": "suspension del gesto",
       "weight": 2
     },
     {
-      "word": "juicio por conducta",
+      "word": "tension uso/produccion",
       "weight": 2
     },
     {
-      "word": "ocultamiento",
-      "weight": 2
-    },
-    {
-      "word": "tension placer sancion",
-      "weight": 2
-    },
-    {
-      "word": "andrillo",
+      "word": "agua",
       "weight": 1
     },
     {
-      "word": "autoerotismo",
+      "word": "boligrafo",
       "weight": 1
     },
     {
-      "word": "buho",
+      "word": "cuerdas",
       "weight": 1
     },
     {
-      "word": "comportamiento",
+      "word": "embotellar",
       "weight": 1
     },
     {
-      "word": "condena",
+      "word": "enfocar",
       "weight": 1
     },
     {
-      "word": "decepcion",
+      "word": "fabricar",
       "weight": 1
     },
     {
-      "word": "excitacion",
+      "word": "fotos",
       "weight": 1
     },
     {
-      "word": "interrogacion",
+      "word": "lentes",
       "weight": 1
     },
     {
-      "word": "jardin",
+      "word": "libros",
       "weight": 1
     },
     {
-      "word": "prueba de turing",
+      "word": "marea",
       "weight": 1
     },
     {
-      "word": "solo",
+      "word": "musica",
       "weight": 1
     },
     {
-      "word": "tocarme",
+      "word": "paginas",
+      "weight": 1
+    },
+    {
+      "word": "tinta",
+      "weight": 1
+    },
+    {
+      "word": "tocar",
       "weight": 1
     }
   ]

@@ -1,0 +1,37 @@
+FECHA: 2026-03-03
+MY_POEM_TITLE: guitarra
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 2
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+esas cuerdas
+que sería mejor fabricar
+en lugar de tocar
+
+esas páginas
+cuya tinta
+sería mejor embotellarse
+en lugar de bañar
+un bolígrafo
+
+esas lentes
+que sería mejor diseñar
+en lugar de enfocar
+
+música, libros, fotos
+el agua que se rompe
+por la marea del mundo
+mío y tuyo
+
+# POEMA_CITADO
+
+
+# TEXTO
+De las peleas en una pareja vamos a la soledad completa. El capítulo se enfoca en John Isidore, uno de los que no se movieron —que no *pudieron* moverse— en medio de la crisis ambiental.
+
+Isidore se nos presenta como un rechazado social por una falta percibida de inteligencia; por eso no pudo emigrar y se quedó en la Tierra, desesperadamente solo.
+
+Esta soledad parece tener una salvación posible al final, cuando Isidore oye otra televisión en su edificio de apartamentos dilapidado, dándole la esperanza de una conexión con otra persona.
+
+El mundo, tras guerras y emigración masiva, es una distopía. Reina el silencio; la ausencia de sonido es una fuerte presencia que contribuye al aislamiento de Isidore y, como vimos antes, al de Irán.
