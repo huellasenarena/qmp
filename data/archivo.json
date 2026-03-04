@@ -1,5 +1,117 @@
 [
   {
+    "date": "2026-03-07",
+    "month": "2026-03",
+    "file": "textos/2026-03-07.txt",
+    "my_poem_title": "el asiento de la ventana",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 5",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-5.pdf"
+    },
+    "keywords": [
+      {
+        "word": "autodeterminacion",
+        "weight": 3
+      },
+      {
+        "word": "enmarcamiento",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "soberania",
+        "weight": 3
+      },
+      {
+        "word": "sujecion",
+        "weight": 3
+      },
+      {
+        "word": "vacio-como-potencia",
+        "weight": 3
+      },
+      {
+        "word": "control-intimo",
+        "weight": 2
+      },
+      {
+        "word": "identidad",
+        "weight": 2
+      },
+      {
+        "word": "limite",
+        "weight": 2
+      },
+      {
+        "word": "obediencia",
+        "weight": 2
+      },
+      {
+        "word": "percepcion",
+        "weight": 2
+      },
+      {
+        "word": "ritual-corporal",
+        "weight": 2
+      },
+      {
+        "word": "suspension",
+        "weight": 2
+      },
+      {
+        "word": "vigilancia",
+        "weight": 2
+      },
+      {
+        "word": "asiento",
+        "weight": 1
+      },
+      {
+        "word": "cinturon",
+        "weight": 1
+      },
+      {
+        "word": "luz",
+        "weight": 1
+      },
+      {
+        "word": "nada",
+        "weight": 1
+      },
+      {
+        "word": "nubes",
+        "weight": 1
+      },
+      {
+        "word": "orden",
+        "weight": 1
+      },
+      {
+        "word": "reino",
+        "weight": 1
+      },
+      {
+        "word": "ventana",
+        "weight": 1
+      },
+      {
+        "word": "ver",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-06",
     "month": "2026-03",
     "file": "textos/2026-03-06.txt",

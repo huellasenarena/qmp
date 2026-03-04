@@ -1,115 +1,111 @@
 {
-  "date": "2026-03-03",
+  "date": "2026-03-07",
   "month": "2026-03",
-  "file": "textos/2026-03-03.txt",
-  "my_poem_title": "guitarra",
+  "file": "textos/2026-03-07.txt",
+  "my_poem_title": "el asiento de la ventana",
   "my_poem_snippet": "",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 2",
+    "poem_title": "Capítulo 5",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-2.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-5.pdf"
   },
   "keywords": [
     {
-      "word": "conservacion como acto",
+      "word": "autodeterminacion",
       "weight": 3
     },
     {
-      "word": "desplazamiento de la mirada",
+      "word": "enmarcamiento",
       "weight": 3
     },
     {
-      "word": "inversion del uso",
+      "word": "performatividad",
       "weight": 3
     },
     {
-      "word": "potencialidad retenida",
+      "word": "soberania",
       "weight": 3
     },
     {
-      "word": "retencion gestual",
+      "word": "sujecion",
       "weight": 3
     },
     {
-      "word": "silencio como presencia",
+      "word": "vacio-como-potencia",
       "weight": 3
     },
     {
-      "word": "contencion material",
+      "word": "control-intimo",
       "weight": 2
     },
     {
-      "word": "desplazamiento de valor",
+      "word": "identidad",
       "weight": 2
     },
     {
-      "word": "ruptura por la marea",
+      "word": "limite",
       "weight": 2
     },
     {
-      "word": "suspension del gesto",
+      "word": "obediencia",
       "weight": 2
     },
     {
-      "word": "tension uso/produccion",
+      "word": "percepcion",
       "weight": 2
     },
     {
-      "word": "agua",
+      "word": "ritual-corporal",
+      "weight": 2
+    },
+    {
+      "word": "suspension",
+      "weight": 2
+    },
+    {
+      "word": "vigilancia",
+      "weight": 2
+    },
+    {
+      "word": "asiento",
       "weight": 1
     },
     {
-      "word": "boligrafo",
+      "word": "cinturon",
       "weight": 1
     },
     {
-      "word": "cuerdas",
+      "word": "luz",
       "weight": 1
     },
     {
-      "word": "embotellar",
+      "word": "nada",
       "weight": 1
     },
     {
-      "word": "enfocar",
+      "word": "nubes",
       "weight": 1
     },
     {
-      "word": "fabricar",
+      "word": "orden",
       "weight": 1
     },
     {
-      "word": "fotos",
+      "word": "reino",
       "weight": 1
     },
     {
-      "word": "lentes",
+      "word": "ventana",
       "weight": 1
     },
     {
-      "word": "libros",
+      "word": "ver",
       "weight": 1
     },
     {
-      "word": "marea",
-      "weight": 1
-    },
-    {
-      "word": "musica",
-      "weight": 1
-    },
-    {
-      "word": "paginas",
-      "weight": 1
-    },
-    {
-      "word": "tinta",
-      "weight": 1
-    },
-    {
-      "word": "tocar",
+      "word": "yo",
       "weight": 1
     }
   ]
