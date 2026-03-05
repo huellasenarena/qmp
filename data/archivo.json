@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-03-08",
+    "month": "2026-03",
+    "file": "textos/2026-03-08.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "mi pene",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 7",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-7.pdf"
+    },
+    "keywords": [
+      {
+        "word": "cuerpo como soporte",
+        "weight": 3
+      },
+      {
+        "word": "destruccion como creacion",
+        "weight": 3
+      },
+      {
+        "word": "indeterminacion ontologica",
+        "weight": 3
+      },
+      {
+        "word": "materialidad del signo",
+        "weight": 3
+      },
+      {
+        "word": "performatividad genital",
+        "weight": 3
+      },
+      {
+        "word": "plegamiento identitario",
+        "weight": 3
+      },
+      {
+        "word": "ambivalencia erotica",
+        "weight": 2
+      },
+      {
+        "word": "fallo de clasificacion",
+        "weight": 2
+      },
+      {
+        "word": "hibridacion corporal",
+        "weight": 2
+      },
+      {
+        "word": "iteracion performativa",
+        "weight": 2
+      },
+      {
+        "word": "suspension del sentido",
+        "weight": 2
+      },
+      {
+        "word": "tension del gesto",
+        "weight": 2
+      },
+      {
+        "word": "desplegar",
+        "weight": 1
+      },
+      {
+        "word": "destruir",
+        "weight": 1
+      },
+      {
+        "word": "detenerse",
+        "weight": 1
+      },
+      {
+        "word": "gato",
+        "weight": 1
+      },
+      {
+        "word": "humano",
+        "weight": 1
+      },
+      {
+        "word": "origami",
+        "weight": 1
+      },
+      {
+        "word": "papel arrugado",
+        "weight": 1
+      },
+      {
+        "word": "pene",
+        "weight": 1
+      },
+      {
+        "word": "reinventar",
+        "weight": 1
+      },
+      {
+        "word": "robotico",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-07",
     "month": "2026-03",
     "file": "textos/2026-03-07.txt",

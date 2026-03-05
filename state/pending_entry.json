@@ -1,111 +1,103 @@
 {
-  "date": "2026-03-07",
+  "date": "2026-03-08",
   "month": "2026-03",
-  "file": "textos/2026-03-07.txt",
-  "my_poem_title": "el asiento de la ventana",
-  "my_poem_snippet": "",
+  "file": "textos/2026-03-08.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "mi pene",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 5",
+    "poem_title": "Capítulo 7",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-5.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-7.pdf"
   },
   "keywords": [
     {
-      "word": "autodeterminacion",
+      "word": "cuerpo como soporte",
       "weight": 3
     },
     {
-      "word": "enmarcamiento",
+      "word": "destruccion como creacion",
       "weight": 3
     },
     {
-      "word": "performatividad",
+      "word": "indeterminacion ontologica",
       "weight": 3
     },
     {
-      "word": "soberania",
+      "word": "materialidad del signo",
       "weight": 3
     },
     {
-      "word": "sujecion",
+      "word": "performatividad genital",
       "weight": 3
     },
     {
-      "word": "vacio-como-potencia",
+      "word": "plegamiento identitario",
       "weight": 3
     },
     {
-      "word": "control-intimo",
+      "word": "ambivalencia erotica",
       "weight": 2
     },
     {
-      "word": "identidad",
+      "word": "fallo de clasificacion",
       "weight": 2
     },
     {
-      "word": "limite",
+      "word": "hibridacion corporal",
       "weight": 2
     },
     {
-      "word": "obediencia",
+      "word": "iteracion performativa",
       "weight": 2
     },
     {
-      "word": "percepcion",
+      "word": "suspension del sentido",
       "weight": 2
     },
     {
-      "word": "ritual-corporal",
+      "word": "tension del gesto",
       "weight": 2
     },
     {
-      "word": "suspension",
-      "weight": 2
-    },
-    {
-      "word": "vigilancia",
-      "weight": 2
-    },
-    {
-      "word": "asiento",
+      "word": "desplegar",
       "weight": 1
     },
     {
-      "word": "cinturon",
+      "word": "destruir",
       "weight": 1
     },
     {
-      "word": "luz",
+      "word": "detenerse",
       "weight": 1
     },
     {
-      "word": "nada",
+      "word": "gato",
       "weight": 1
     },
     {
-      "word": "nubes",
+      "word": "humano",
       "weight": 1
     },
     {
-      "word": "orden",
+      "word": "origami",
       "weight": 1
     },
     {
-      "word": "reino",
+      "word": "papel arrugado",
       "weight": 1
     },
     {
-      "word": "ventana",
+      "word": "pene",
       "weight": 1
     },
     {
-      "word": "ver",
+      "word": "reinventar",
       "weight": 1
     },
     {
-      "word": "yo",
+      "word": "robotico",
       "weight": 1
     }
   ]

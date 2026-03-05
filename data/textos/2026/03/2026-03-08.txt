@@ -1,0 +1,23 @@
+FECHA: 2026-03-08
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 7
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+mi pene
+el origami que
+se despliega
+y se despliega
+
+se detiene en medio
+el papel arrugado
+dejándome preguntar
+si se destruye
+o si se reinventa
+
+# POEMA_CITADO
+
+
+# TEXTO
+El borrado entre lo humano, lo robótico, y lo animal continúa al seguir Isidore en su trabajo. Hay dos momentos interesantes: 1. cuando recoge el gato porque piensa que es falso, pero no lo es, y 2. cuando se pregunta sobre el Amigo Buster porque su jefe dice que no puede ser un humano.
