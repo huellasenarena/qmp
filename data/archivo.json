@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-03-09",
+    "month": "2026-03",
+    "file": "textos/2026-03-09.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "ya tuve lo que quiero",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 8",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-8.pdf"
+    },
+    "keywords": [
+      {
+        "word": "cesion del limite",
+        "weight": 3
+      },
+      {
+        "word": "mercantilizacion",
+        "weight": 3
+      },
+      {
+        "word": "renuncia performativa",
+        "weight": 3
+      },
+      {
+        "word": "silencio performativo",
+        "weight": 3
+      },
+      {
+        "word": "transferencia de soberania",
+        "weight": 3
+      },
+      {
+        "word": "actuacion",
+        "weight": 2
+      },
+      {
+        "word": "despedida ritualizada",
+        "weight": 2
+      },
+      {
+        "word": "intercambio",
+        "weight": 2
+      },
+      {
+        "word": "subordinacion",
+        "weight": 2
+      },
+      {
+        "word": "teatralizacion del cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "usurpacion de voz",
+        "weight": 2
+      },
+      {
+        "word": "vigilancia",
+        "weight": 2
+      },
+      {
+        "word": "ciao",
+        "weight": 1
+      },
+      {
+        "word": "dinero",
+        "weight": 1
+      },
+      {
+        "word": "empleo",
+        "weight": 1
+      },
+      {
+        "word": "jefe",
+        "weight": 1
+      },
+      {
+        "word": "paso",
+        "weight": 1
+      },
+      {
+        "word": "rastreo",
+        "weight": 1
+      },
+      {
+        "word": "risa",
+        "weight": 1
+      },
+      {
+        "word": "ruso",
+        "weight": 1
+      },
+      {
+        "word": "suplantacion",
+        "weight": 1
+      },
+      {
+        "word": "umbral",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-08",
     "month": "2026-03",
     "file": "textos/2026-03-08.txt",

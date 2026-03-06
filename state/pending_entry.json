@@ -1,103 +1,103 @@
 {
-  "date": "2026-03-08",
+  "date": "2026-03-09",
   "month": "2026-03",
-  "file": "textos/2026-03-08.txt",
+  "file": "textos/2026-03-09.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "mi pene",
+  "my_poem_snippet": "ya tuve lo que quiero",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 7",
+    "poem_title": "Capítulo 8",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-7.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-8.pdf"
   },
   "keywords": [
     {
-      "word": "cuerpo como soporte",
+      "word": "cesion del limite",
       "weight": 3
     },
     {
-      "word": "destruccion como creacion",
+      "word": "mercantilizacion",
       "weight": 3
     },
     {
-      "word": "indeterminacion ontologica",
+      "word": "renuncia performativa",
       "weight": 3
     },
     {
-      "word": "materialidad del signo",
+      "word": "silencio performativo",
       "weight": 3
     },
     {
-      "word": "performatividad genital",
+      "word": "transferencia de soberania",
       "weight": 3
     },
     {
-      "word": "plegamiento identitario",
-      "weight": 3
-    },
-    {
-      "word": "ambivalencia erotica",
+      "word": "actuacion",
       "weight": 2
     },
     {
-      "word": "fallo de clasificacion",
+      "word": "despedida ritualizada",
       "weight": 2
     },
     {
-      "word": "hibridacion corporal",
+      "word": "intercambio",
       "weight": 2
     },
     {
-      "word": "iteracion performativa",
+      "word": "subordinacion",
       "weight": 2
     },
     {
-      "word": "suspension del sentido",
+      "word": "teatralizacion del cuerpo",
       "weight": 2
     },
     {
-      "word": "tension del gesto",
+      "word": "usurpacion de voz",
       "weight": 2
     },
     {
-      "word": "desplegar",
+      "word": "vigilancia",
+      "weight": 2
+    },
+    {
+      "word": "ciao",
       "weight": 1
     },
     {
-      "word": "destruir",
+      "word": "dinero",
       "weight": 1
     },
     {
-      "word": "detenerse",
+      "word": "empleo",
       "weight": 1
     },
     {
-      "word": "gato",
+      "word": "jefe",
       "weight": 1
     },
     {
-      "word": "humano",
+      "word": "paso",
       "weight": 1
     },
     {
-      "word": "origami",
+      "word": "rastreo",
       "weight": 1
     },
     {
-      "word": "papel arrugado",
+      "word": "risa",
       "weight": 1
     },
     {
-      "word": "pene",
+      "word": "ruso",
       "weight": 1
     },
     {
-      "word": "reinventar",
+      "word": "suplantacion",
       "weight": 1
     },
     {
-      "word": "robotico",
+      "word": "umbral",
       "weight": 1
     }
   ]

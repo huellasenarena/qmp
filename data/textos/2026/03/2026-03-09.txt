@@ -1,0 +1,19 @@
+FECHA: 2026-03-09
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 8
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+ya tuve lo que quiero
+ya recibí tu dinero
+ciao ciao ciao ya no me río
+el umbral allí es tuyo
+
+# POEMA_CITADO
+
+
+# TEXTO
+La novela ya está alternando entre el mundo profesional de Isidore y de Rick, esta vez enfocándose en Rick. Tiene un problema de inseguridad sobre su impotencia profesional, siendo sin ambigüedad subordinado a su jefe.
+
+Su jefe quiere que Rick vaya a rastrear a Polokov, un ruso que se sospecha ser un andrillo. Fue a su trabajo pero no estaba. Por casualidad, lo encontró haciéndose pasar por un policía soviético al final.
