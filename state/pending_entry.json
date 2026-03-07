@@ -1,103 +1,83 @@
 {
-  "date": "2026-03-09",
+  "date": "2026-03-10",
   "month": "2026-03",
-  "file": "textos/2026-03-09.txt",
+  "file": "textos/2026-03-10.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "ya tuve lo que quiero",
+  "my_poem_snippet": "algunos no están destinados",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 8",
+    "poem_title": "Capítulo 9",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-8.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-9.pdf"
   },
   "keywords": [
     {
-      "word": "cesion del limite",
+      "word": "asignacion normativa",
       "weight": 3
     },
     {
-      "word": "mercantilizacion",
+      "word": "evasion del conflicto",
       "weight": 3
     },
     {
-      "word": "renuncia performativa",
+      "word": "instrumentalizacion del cuerpo",
       "weight": 3
     },
     {
-      "word": "silencio performativo",
+      "word": "inversion de valores",
       "weight": 3
     },
     {
-      "word": "transferencia de soberania",
+      "word": "ritualizacion",
       "weight": 3
     },
     {
-      "word": "actuacion",
+      "word": "erotizacion del trabajo",
       "weight": 2
     },
     {
-      "word": "despedida ritualizada",
+      "word": "exencion normativa",
       "weight": 2
     },
     {
-      "word": "intercambio",
+      "word": "mercantilizacion de la intimidad",
       "weight": 2
     },
     {
-      "word": "subordinacion",
+      "word": "performatividad del rol",
       "weight": 2
     },
     {
-      "word": "teatralizacion del cuerpo",
+      "word": "redistribucion del riesgo",
       "weight": 2
     },
     {
-      "word": "usurpacion de voz",
+      "word": "tension deber deseo",
       "weight": 2
     },
     {
-      "word": "vigilancia",
-      "weight": 2
-    },
-    {
-      "word": "ciao",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "dinero",
+      "word": "destinado",
       "weight": 1
     },
     {
-      "word": "empleo",
+      "word": "guerra",
       "weight": 1
     },
     {
-      "word": "jefe",
+      "word": "guerreros",
       "weight": 1
     },
     {
-      "word": "paso",
+      "word": "sexo",
       "weight": 1
     },
     {
-      "word": "rastreo",
-      "weight": 1
-    },
-    {
-      "word": "risa",
-      "weight": 1
-    },
-    {
-      "word": "ruso",
-      "weight": 1
-    },
-    {
-      "word": "suplantacion",
-      "weight": 1
-    },
-    {
-      "word": "umbral",
+      "word": "tres veces al dia",
       "weight": 1
     }
   ]

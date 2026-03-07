@@ -1,5 +1,89 @@
 [
   {
+    "date": "2026-03-10",
+    "month": "2026-03",
+    "file": "textos/2026-03-10.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "algunos no están destinados",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 9",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-9.pdf"
+    },
+    "keywords": [
+      {
+        "word": "asignacion normativa",
+        "weight": 3
+      },
+      {
+        "word": "evasion del conflicto",
+        "weight": 3
+      },
+      {
+        "word": "instrumentalizacion del cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "inversion de valores",
+        "weight": 3
+      },
+      {
+        "word": "ritualizacion",
+        "weight": 3
+      },
+      {
+        "word": "erotizacion del trabajo",
+        "weight": 2
+      },
+      {
+        "word": "exencion normativa",
+        "weight": 2
+      },
+      {
+        "word": "mercantilizacion de la intimidad",
+        "weight": 2
+      },
+      {
+        "word": "performatividad del rol",
+        "weight": 2
+      },
+      {
+        "word": "redistribucion del riesgo",
+        "weight": 2
+      },
+      {
+        "word": "tension deber deseo",
+        "weight": 2
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "destinado",
+        "weight": 1
+      },
+      {
+        "word": "guerra",
+        "weight": 1
+      },
+      {
+        "word": "guerreros",
+        "weight": 1
+      },
+      {
+        "word": "sexo",
+        "weight": 1
+      },
+      {
+        "word": "tres veces al dia",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-09",
     "month": "2026-03",
     "file": "textos/2026-03-09.txt",
