@@ -1,83 +1,103 @@
 {
-  "date": "2026-03-10",
+  "date": "2026-03-11",
   "month": "2026-03",
-  "file": "textos/2026-03-10.txt",
+  "file": "textos/2026-03-11.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "algunos no están destinados",
+  "my_poem_snippet": "es una pregunta retórica",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 9",
+    "poem_title": "Capítulo 10",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-9.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-10.pdf"
   },
   "keywords": [
     {
-      "word": "asignacion normativa",
+      "word": "economia-del-deseo",
       "weight": 3
     },
     {
-      "word": "evasion del conflicto",
+      "word": "inversion-del-valor",
       "weight": 3
     },
     {
-      "word": "instrumentalizacion del cuerpo",
+      "word": "memorializacion-erotica",
       "weight": 3
     },
     {
-      "word": "inversion de valores",
+      "word": "objetivacion-como-legado",
       "weight": 3
     },
     {
-      "word": "ritualizacion",
+      "word": "sustitucion-linguistica-por-corporea",
       "weight": 3
     },
     {
-      "word": "erotizacion del trabajo",
+      "word": "humor-negro",
       "weight": 2
     },
     {
-      "word": "exencion normativa",
+      "word": "identidad-fragmentada",
       "weight": 2
     },
     {
-      "word": "mercantilizacion de la intimidad",
+      "word": "ironizacion",
       "weight": 2
     },
     {
-      "word": "performatividad del rol",
+      "word": "juego-linguistico",
       "weight": 2
     },
     {
-      "word": "redistribucion del riesgo",
+      "word": "mercantilizacion-del-cuerpo",
       "weight": 2
     },
     {
-      "word": "tension deber deseo",
-      "weight": 2
-    },
-    {
-      "word": "cuerpo",
+      "word": "boca",
       "weight": 1
     },
     {
-      "word": "destinado",
+      "word": "borrador",
       "weight": 1
     },
     {
-      "word": "guerra",
+      "word": "culo",
       "weight": 1
     },
     {
-      "word": "guerreros",
+      "word": "foto",
       "weight": 1
     },
     {
-      "word": "sexo",
+      "word": "lapida",
       "weight": 1
     },
     {
-      "word": "tres veces al dia",
+      "word": "pene",
+      "weight": 1
+    },
+    {
+      "word": "piernas",
+      "weight": 1
+    },
+    {
+      "word": "poema",
+      "weight": 1
+    },
+    {
+      "word": "pregunta-retorica",
+      "weight": 1
+    },
+    {
+      "word": "senos",
+      "weight": 1
+    },
+    {
+      "word": "siesta",
+      "weight": 1
+    },
+    {
+      "word": "trabajo",
       "weight": 1
     }
   ]

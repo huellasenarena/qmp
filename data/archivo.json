@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-03-11",
+    "month": "2026-03",
+    "file": "textos/2026-03-11.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "es una pregunta retórica",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 10",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-10.pdf"
+    },
+    "keywords": [
+      {
+        "word": "economia-del-deseo",
+        "weight": 3
+      },
+      {
+        "word": "inversion-del-valor",
+        "weight": 3
+      },
+      {
+        "word": "memorializacion-erotica",
+        "weight": 3
+      },
+      {
+        "word": "objetivacion-como-legado",
+        "weight": 3
+      },
+      {
+        "word": "sustitucion-linguistica-por-corporea",
+        "weight": 3
+      },
+      {
+        "word": "humor-negro",
+        "weight": 2
+      },
+      {
+        "word": "identidad-fragmentada",
+        "weight": 2
+      },
+      {
+        "word": "ironizacion",
+        "weight": 2
+      },
+      {
+        "word": "juego-linguistico",
+        "weight": 2
+      },
+      {
+        "word": "mercantilizacion-del-cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "boca",
+        "weight": 1
+      },
+      {
+        "word": "borrador",
+        "weight": 1
+      },
+      {
+        "word": "culo",
+        "weight": 1
+      },
+      {
+        "word": "foto",
+        "weight": 1
+      },
+      {
+        "word": "lapida",
+        "weight": 1
+      },
+      {
+        "word": "pene",
+        "weight": 1
+      },
+      {
+        "word": "piernas",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      },
+      {
+        "word": "pregunta-retorica",
+        "weight": 1
+      },
+      {
+        "word": "senos",
+        "weight": 1
+      },
+      {
+        "word": "siesta",
+        "weight": 1
+      },
+      {
+        "word": "trabajo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-10",
     "month": "2026-03",
     "file": "textos/2026-03-10.txt",
