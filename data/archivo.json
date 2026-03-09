@@ -1,5 +1,121 @@
 [
   {
+    "date": "2026-03-12",
+    "month": "2026-03",
+    "file": "textos/2026-03-12.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "la lista se alarga",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 11",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-11.pdf"
+    },
+    "keywords": [
+      {
+        "word": "biopolitica",
+        "weight": 3
+      },
+      {
+        "word": "captura de la libertad",
+        "weight": 3
+      },
+      {
+        "word": "inversion temporal",
+        "weight": 3
+      },
+      {
+        "word": "inversion valoral",
+        "weight": 3
+      },
+      {
+        "word": "normalizacion",
+        "weight": 3
+      },
+      {
+        "word": "performatividad de lo humano",
+        "weight": 3
+      },
+      {
+        "word": "autenticidad",
+        "weight": 2
+      },
+      {
+        "word": "brutalidad",
+        "weight": 2
+      },
+      {
+        "word": "constriccion",
+        "weight": 2
+      },
+      {
+        "word": "empatia",
+        "weight": 2
+      },
+      {
+        "word": "enumeracion burocratica",
+        "weight": 2
+      },
+      {
+        "word": "norma",
+        "weight": 2
+      },
+      {
+        "word": "reduccion vital",
+        "weight": 2
+      },
+      {
+        "word": "sospecha",
+        "weight": 2
+      },
+      {
+        "word": "tension semantica",
+        "weight": 2
+      },
+      {
+        "word": "verificacion",
+        "weight": 2
+      },
+      {
+        "word": "alargamiento",
+        "weight": 1
+      },
+      {
+        "word": "libertad",
+        "weight": 1
+      },
+      {
+        "word": "lista",
+        "weight": 1
+      },
+      {
+        "word": "manana",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "pequenez",
+        "weight": 1
+      },
+      {
+        "word": "prisionera",
+        "weight": 1
+      },
+      {
+        "word": "registro",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-11",
     "month": "2026-03",
     "file": "textos/2026-03-11.txt",

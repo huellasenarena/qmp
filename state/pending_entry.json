@@ -1,103 +1,115 @@
 {
-  "date": "2026-03-11",
+  "date": "2026-03-12",
   "month": "2026-03",
-  "file": "textos/2026-03-11.txt",
+  "file": "textos/2026-03-12.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "es una pregunta retórica",
+  "my_poem_snippet": "la lista se alarga",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 10",
+    "poem_title": "Capítulo 11",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-10.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-11.pdf"
   },
   "keywords": [
     {
-      "word": "economia-del-deseo",
+      "word": "biopolitica",
       "weight": 3
     },
     {
-      "word": "inversion-del-valor",
+      "word": "captura de la libertad",
       "weight": 3
     },
     {
-      "word": "memorializacion-erotica",
+      "word": "inversion temporal",
       "weight": 3
     },
     {
-      "word": "objetivacion-como-legado",
+      "word": "inversion valoral",
       "weight": 3
     },
     {
-      "word": "sustitucion-linguistica-por-corporea",
+      "word": "normalizacion",
       "weight": 3
     },
     {
-      "word": "humor-negro",
+      "word": "performatividad de lo humano",
+      "weight": 3
+    },
+    {
+      "word": "autenticidad",
       "weight": 2
     },
     {
-      "word": "identidad-fragmentada",
+      "word": "brutalidad",
       "weight": 2
     },
     {
-      "word": "ironizacion",
+      "word": "constriccion",
       "weight": 2
     },
     {
-      "word": "juego-linguistico",
+      "word": "empatia",
       "weight": 2
     },
     {
-      "word": "mercantilizacion-del-cuerpo",
+      "word": "enumeracion burocratica",
       "weight": 2
     },
     {
-      "word": "boca",
+      "word": "norma",
+      "weight": 2
+    },
+    {
+      "word": "reduccion vital",
+      "weight": 2
+    },
+    {
+      "word": "sospecha",
+      "weight": 2
+    },
+    {
+      "word": "tension semantica",
+      "weight": 2
+    },
+    {
+      "word": "verificacion",
+      "weight": 2
+    },
+    {
+      "word": "alargamiento",
       "weight": 1
     },
     {
-      "word": "borrador",
+      "word": "libertad",
       "weight": 1
     },
     {
-      "word": "culo",
+      "word": "lista",
       "weight": 1
     },
     {
-      "word": "foto",
+      "word": "manana",
       "weight": 1
     },
     {
-      "word": "lapida",
+      "word": "noche",
       "weight": 1
     },
     {
-      "word": "pene",
+      "word": "pequenez",
       "weight": 1
     },
     {
-      "word": "piernas",
+      "word": "prisionera",
       "weight": 1
     },
     {
-      "word": "poema",
+      "word": "registro",
       "weight": 1
     },
     {
-      "word": "pregunta-retorica",
-      "weight": 1
-    },
-    {
-      "word": "senos",
-      "weight": 1
-    },
-    {
-      "word": "siesta",
-      "weight": 1
-    },
-    {
-      "word": "trabajo",
+      "word": "vida",
       "weight": 1
     }
   ]
