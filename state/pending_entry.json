@@ -1,115 +1,95 @@
 {
-  "date": "2026-03-12",
+  "date": "2026-03-13",
   "month": "2026-03",
-  "file": "textos/2026-03-12.txt",
+  "file": "textos/2026-03-13.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "la lista se alarga",
+  "my_poem_snippet": "esta palabra",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 11",
+    "poem_title": "Capítulo 12",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-11.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-12.pdf"
   },
   "keywords": [
     {
-      "word": "biopolitica",
+      "word": "encapsulamiento del sentido",
       "weight": 3
     },
     {
-      "word": "captura de la libertad",
+      "word": "gravedad semantica",
       "weight": 3
     },
     {
-      "word": "inversion temporal",
+      "word": "inversion del valor del signo",
       "weight": 3
     },
     {
-      "word": "inversion valoral",
+      "word": "materialidad del signo",
       "weight": 3
     },
     {
-      "word": "normalizacion",
+      "word": "opacidad comunicativa",
       "weight": 3
     },
     {
-      "word": "performatividad de lo humano",
+      "word": "toxicidad semantica",
       "weight": 3
     },
     {
-      "word": "autenticidad",
+      "word": "autocensura",
       "weight": 2
     },
     {
-      "word": "brutalidad",
+      "word": "contencion",
       "weight": 2
     },
     {
-      "word": "constriccion",
+      "word": "norma de prohibicion",
       "weight": 2
     },
     {
-      "word": "empatia",
+      "word": "ritual de llenado",
       "weight": 2
     },
     {
-      "word": "enumeracion burocratica",
+      "word": "tension visibilidad ocultamiento",
       "weight": 2
     },
     {
-      "word": "norma",
+      "word": "transferencia de materia",
       "weight": 2
     },
     {
-      "word": "reduccion vital",
-      "weight": 2
-    },
-    {
-      "word": "sospecha",
-      "weight": 2
-    },
-    {
-      "word": "tension semantica",
-      "weight": 2
-    },
-    {
-      "word": "verificacion",
-      "weight": 2
-    },
-    {
-      "word": "alargamiento",
+      "word": "arena",
       "weight": 1
     },
     {
-      "word": "libertad",
+      "word": "botella",
       "weight": 1
     },
     {
-      "word": "lista",
+      "word": "consumo",
       "weight": 1
     },
     {
-      "word": "manana",
+      "word": "llenar",
       "weight": 1
     },
     {
-      "word": "noche",
+      "word": "oscura",
       "weight": 1
     },
     {
-      "word": "pequenez",
+      "word": "palabra",
       "weight": 1
     },
     {
-      "word": "prisionera",
+      "word": "papel",
       "weight": 1
     },
     {
-      "word": "registro",
-      "weight": 1
-    },
-    {
-      "word": "vida",
+      "word": "pesada",
       "weight": 1
     }
   ]
