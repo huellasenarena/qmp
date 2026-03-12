@@ -1,95 +1,103 @@
 {
-  "date": "2026-03-13",
+  "date": "2026-03-15",
   "month": "2026-03",
-  "file": "textos/2026-03-13.txt",
+  "file": "textos/2026-03-15.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "esta palabra",
+  "my_poem_snippet": "las sábanas",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 12",
+    "poem_title": "Capítulo 14",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-12.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-14.pdf"
   },
   "keywords": [
     {
-      "word": "encapsulamiento del sentido",
+      "word": "alteridad",
       "weight": 3
     },
     {
-      "word": "gravedad semantica",
+      "word": "anestesia",
       "weight": 3
     },
     {
-      "word": "inversion del valor del signo",
+      "word": "encubrimiento",
       "weight": 3
     },
     {
-      "word": "materialidad del signo",
+      "word": "negacion",
       "weight": 3
     },
     {
-      "word": "opacidad comunicativa",
+      "word": "performatividad",
       "weight": 3
     },
     {
-      "word": "toxicidad semantica",
+      "word": "simulacion",
       "weight": 3
     },
     {
-      "word": "autocensura",
+      "word": "coartada",
       "weight": 2
     },
     {
-      "word": "contencion",
+      "word": "disociacion",
       "weight": 2
     },
     {
-      "word": "norma de prohibicion",
+      "word": "mimetismo",
       "weight": 2
     },
     {
-      "word": "ritual de llenado",
+      "word": "ocultamiento",
       "weight": 2
     },
     {
-      "word": "tension visibilidad ocultamiento",
+      "word": "suspension",
       "weight": 2
     },
     {
-      "word": "transferencia de materia",
+      "word": "tension identitaria",
       "weight": 2
     },
     {
-      "word": "arena",
+      "word": "androides",
       "weight": 1
     },
     {
-      "word": "botella",
+      "word": "dormir",
       "weight": 1
     },
     {
-      "word": "consumo",
+      "word": "empatia",
       "weight": 1
     },
     {
-      "word": "llenar",
+      "word": "humano",
       "weight": 1
     },
     {
-      "word": "oscura",
+      "word": "insomnio",
       "weight": 1
     },
     {
-      "word": "palabra",
+      "word": "inteligencia",
       "weight": 1
     },
     {
-      "word": "papel",
+      "word": "olvidar",
       "weight": 1
     },
     {
-      "word": "pesada",
+      "word": "sabanas",
+      "weight": 1
+    },
+    {
+      "word": "sadismo",
+      "weight": 1
+    },
+    {
+      "word": "suave",
       "weight": 1
     }
   ]

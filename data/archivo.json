@@ -1,5 +1,205 @@
 [
   {
+    "date": "2026-03-15",
+    "month": "2026-03",
+    "file": "textos/2026-03-15.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "las sábanas",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 14",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-14.pdf"
+    },
+    "keywords": [
+      {
+        "word": "alteridad",
+        "weight": 3
+      },
+      {
+        "word": "anestesia",
+        "weight": 3
+      },
+      {
+        "word": "encubrimiento",
+        "weight": 3
+      },
+      {
+        "word": "negacion",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "simulacion",
+        "weight": 3
+      },
+      {
+        "word": "coartada",
+        "weight": 2
+      },
+      {
+        "word": "disociacion",
+        "weight": 2
+      },
+      {
+        "word": "mimetismo",
+        "weight": 2
+      },
+      {
+        "word": "ocultamiento",
+        "weight": 2
+      },
+      {
+        "word": "suspension",
+        "weight": 2
+      },
+      {
+        "word": "tension identitaria",
+        "weight": 2
+      },
+      {
+        "word": "androides",
+        "weight": 1
+      },
+      {
+        "word": "dormir",
+        "weight": 1
+      },
+      {
+        "word": "empatia",
+        "weight": 1
+      },
+      {
+        "word": "humano",
+        "weight": 1
+      },
+      {
+        "word": "insomnio",
+        "weight": 1
+      },
+      {
+        "word": "inteligencia",
+        "weight": 1
+      },
+      {
+        "word": "olvidar",
+        "weight": 1
+      },
+      {
+        "word": "sabanas",
+        "weight": 1
+      },
+      {
+        "word": "sadismo",
+        "weight": 1
+      },
+      {
+        "word": "suave",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-14",
+    "month": "2026-03",
+    "file": "textos/2026-03-14.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "las sabanas no son la capa",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 13",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-13.pdf"
+    },
+    "keywords": [
+      {
+        "word": "centralidad somatica",
+        "weight": 3
+      },
+      {
+        "word": "desvinculacion trabajo-afecto",
+        "weight": 3
+      },
+      {
+        "word": "fragilidad del refugio",
+        "weight": 3
+      },
+      {
+        "word": "inversion perceptiva",
+        "weight": 3
+      },
+      {
+        "word": "materialidad del consuelo",
+        "weight": 3
+      },
+      {
+        "word": "temporalidad normativa",
+        "weight": 3
+      },
+      {
+        "word": "dialectica luz-oscuridad",
+        "weight": 2
+      },
+      {
+        "word": "incertidumbre normativa",
+        "weight": 2
+      },
+      {
+        "word": "performatividad del descanso",
+        "weight": 2
+      },
+      {
+        "word": "sustitucion afectiva por objetos",
+        "weight": 2
+      },
+      {
+        "word": "tension ocio-productividad",
+        "weight": 2
+      },
+      {
+        "word": "vigilancia disciplinaria",
+        "weight": 2
+      },
+      {
+        "word": "amor",
+        "weight": 1
+      },
+      {
+        "word": "culo",
+        "weight": 1
+      },
+      {
+        "word": "luz",
+        "weight": 1
+      },
+      {
+        "word": "oscuridad",
+        "weight": 1
+      },
+      {
+        "word": "reloj despertador",
+        "weight": 1
+      },
+      {
+        "word": "sabanas",
+        "weight": 1
+      },
+      {
+        "word": "sofa",
+        "weight": 1
+      },
+      {
+        "word": "trabajar",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-13",
     "month": "2026-03",
     "file": "textos/2026-03-13.txt",
