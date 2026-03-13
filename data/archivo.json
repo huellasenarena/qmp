@@ -1,5 +1,105 @@
 [
   {
+    "date": "2026-03-16",
+    "month": "2026-03",
+    "file": "textos/2026-03-16.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "¿escuchas mi guitarra?",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 15",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-15.pdf"
+    },
+    "keywords": [
+      {
+        "word": "distribucion identitaria",
+        "weight": 3
+      },
+      {
+        "word": "enunciacion",
+        "weight": 3
+      },
+      {
+        "word": "mutualidad",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "posesion invertida",
+        "weight": 3
+      },
+      {
+        "word": "voz instrumental",
+        "weight": 3
+      },
+      {
+        "word": "difusion de limites",
+        "weight": 2
+      },
+      {
+        "word": "direccion comunicativa",
+        "weight": 2
+      },
+      {
+        "word": "intimidad performativa",
+        "weight": 2
+      },
+      {
+        "word": "reciprocidad",
+        "weight": 2
+      },
+      {
+        "word": "tension sujeto-otro",
+        "weight": 2
+      },
+      {
+        "word": "acto",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "escuchar",
+        "weight": 1
+      },
+      {
+        "word": "gesto",
+        "weight": 1
+      },
+      {
+        "word": "guitarra",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "regalo",
+        "weight": 1
+      },
+      {
+        "word": "sonido",
+        "weight": 1
+      },
+      {
+        "word": "tu",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-15",
     "month": "2026-03",
     "file": "textos/2026-03-15.txt",

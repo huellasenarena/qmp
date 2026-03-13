@@ -1,31 +1,27 @@
 {
-  "date": "2026-03-15",
+  "date": "2026-03-16",
   "month": "2026-03",
-  "file": "textos/2026-03-15.txt",
+  "file": "textos/2026-03-16.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "las sábanas",
+  "my_poem_snippet": "¿escuchas mi guitarra?",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 14",
+    "poem_title": "Capítulo 15",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-14.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-15.pdf"
   },
   "keywords": [
     {
-      "word": "alteridad",
+      "word": "distribucion identitaria",
       "weight": 3
     },
     {
-      "word": "anestesia",
+      "word": "enunciacion",
       "weight": 3
     },
     {
-      "word": "encubrimiento",
-      "weight": 3
-    },
-    {
-      "word": "negacion",
+      "word": "mutualidad",
       "weight": 3
     },
     {
@@ -33,71 +29,71 @@
       "weight": 3
     },
     {
-      "word": "simulacion",
+      "word": "posesion invertida",
       "weight": 3
     },
     {
-      "word": "coartada",
+      "word": "voz instrumental",
+      "weight": 3
+    },
+    {
+      "word": "difusion de limites",
       "weight": 2
     },
     {
-      "word": "disociacion",
+      "word": "direccion comunicativa",
       "weight": 2
     },
     {
-      "word": "mimetismo",
+      "word": "intimidad performativa",
       "weight": 2
     },
     {
-      "word": "ocultamiento",
+      "word": "reciprocidad",
       "weight": 2
     },
     {
-      "word": "suspension",
+      "word": "tension sujeto-otro",
       "weight": 2
     },
     {
-      "word": "tension identitaria",
-      "weight": 2
-    },
-    {
-      "word": "androides",
+      "word": "acto",
       "weight": 1
     },
     {
-      "word": "dormir",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "empatia",
+      "word": "escuchar",
       "weight": 1
     },
     {
-      "word": "humano",
+      "word": "gesto",
       "weight": 1
     },
     {
-      "word": "insomnio",
+      "word": "guitarra",
       "weight": 1
     },
     {
-      "word": "inteligencia",
+      "word": "mano",
       "weight": 1
     },
     {
-      "word": "olvidar",
+      "word": "regalo",
       "weight": 1
     },
     {
-      "word": "sabanas",
+      "word": "sonido",
       "weight": 1
     },
     {
-      "word": "sadismo",
+      "word": "tu",
       "weight": 1
     },
     {
-      "word": "suave",
+      "word": "yo",
       "weight": 1
     }
   ]
