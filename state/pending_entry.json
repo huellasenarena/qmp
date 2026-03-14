@@ -1,27 +1,27 @@
 {
-  "date": "2026-03-16",
+  "date": "2026-03-17",
   "month": "2026-03",
-  "file": "textos/2026-03-16.txt",
+  "file": "textos/2026-03-17.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "¿escuchas mi guitarra?",
+  "my_poem_snippet": "acá está mi mano",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 15",
+    "poem_title": "Capítulo 16",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-15.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-16.pdf"
   },
   "keywords": [
     {
-      "word": "distribucion identitaria",
+      "word": "ausencia performativa",
       "weight": 3
     },
     {
-      "word": "enunciacion",
+      "word": "dependencia ontologica",
       "weight": 3
     },
     {
-      "word": "mutualidad",
+      "word": "inversion realidad lenguaje",
       "weight": 3
     },
     {
@@ -29,51 +29,43 @@
       "weight": 3
     },
     {
-      "word": "posesion invertida",
+      "word": "soberania del discurso",
       "weight": 3
     },
     {
-      "word": "voz instrumental",
-      "weight": 3
-    },
-    {
-      "word": "difusion de limites",
+      "word": "enunciacion",
       "weight": 2
     },
     {
-      "word": "direccion comunicativa",
+      "word": "materializacion",
       "weight": 2
     },
     {
-      "word": "intimidad performativa",
+      "word": "relacion",
       "weight": 2
     },
     {
-      "word": "reciprocidad",
+      "word": "renuncia",
       "weight": 2
     },
     {
-      "word": "tension sujeto-otro",
+      "word": "tacto",
       "weight": 2
     },
     {
-      "word": "acto",
+      "word": "trayectoria",
+      "weight": 2
+    },
+    {
+      "word": "andar",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "camino",
       "weight": 1
     },
     {
-      "word": "escuchar",
-      "weight": 1
-    },
-    {
-      "word": "gesto",
-      "weight": 1
-    },
-    {
-      "word": "guitarra",
+      "word": "decir",
       "weight": 1
     },
     {
@@ -81,19 +73,11 @@
       "weight": 1
     },
     {
-      "word": "regalo",
+      "word": "palabra",
       "weight": 1
     },
     {
-      "word": "sonido",
-      "weight": 1
-    },
-    {
-      "word": "tu",
-      "weight": 1
-    },
-    {
-      "word": "yo",
+      "word": "real",
       "weight": 1
     }
   ]

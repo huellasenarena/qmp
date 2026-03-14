@@ -1,5 +1,89 @@
 [
   {
+    "date": "2026-03-17",
+    "month": "2026-03",
+    "file": "textos/2026-03-17.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "acá está mi mano",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 16",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-16.pdf"
+    },
+    "keywords": [
+      {
+        "word": "ausencia performativa",
+        "weight": 3
+      },
+      {
+        "word": "dependencia ontologica",
+        "weight": 3
+      },
+      {
+        "word": "inversion realidad lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "soberania del discurso",
+        "weight": 3
+      },
+      {
+        "word": "enunciacion",
+        "weight": 2
+      },
+      {
+        "word": "materializacion",
+        "weight": 2
+      },
+      {
+        "word": "relacion",
+        "weight": 2
+      },
+      {
+        "word": "renuncia",
+        "weight": 2
+      },
+      {
+        "word": "tacto",
+        "weight": 2
+      },
+      {
+        "word": "trayectoria",
+        "weight": 2
+      },
+      {
+        "word": "andar",
+        "weight": 1
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      },
+      {
+        "word": "decir",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "real",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-16",
     "month": "2026-03",
     "file": "textos/2026-03-16.txt",
