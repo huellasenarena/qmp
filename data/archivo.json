@@ -1,5 +1,105 @@
 [
   {
+    "date": "2026-03-18",
+    "month": "2026-03",
+    "file": "textos/2026-03-18.txt",
+    "my_poem_title": "torpe",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 22",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-22.pdf"
+    },
+    "keywords": [
+      {
+        "word": "delegacion de responsabilidad",
+        "weight": 3
+      },
+      {
+        "word": "economia de la obsolescencia",
+        "weight": 3
+      },
+      {
+        "word": "industrializacion del cuidado",
+        "weight": 3
+      },
+      {
+        "word": "inercia performativa",
+        "weight": 3
+      },
+      {
+        "word": "ritual de expiacion",
+        "weight": 3
+      },
+      {
+        "word": "subversion del valor de integridad",
+        "weight": 3
+      },
+      {
+        "word": "automatizacion del habito",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento simbolico",
+        "weight": 2
+      },
+      {
+        "word": "economia afectiva",
+        "weight": 2
+      },
+      {
+        "word": "falla comunicativa",
+        "weight": 2
+      },
+      {
+        "word": "fragmentacion de la atencion",
+        "weight": 2
+      },
+      {
+        "word": "habitualizacion del error",
+        "weight": 2
+      },
+      {
+        "word": "ritualizacion",
+        "weight": 2
+      },
+      {
+        "word": "tension apariencia compromiso",
+        "weight": 2
+      },
+      {
+        "word": "arreglarlo",
+        "weight": 1
+      },
+      {
+        "word": "comprar reemplazo",
+        "weight": 1
+      },
+      {
+        "word": "dejar caer",
+        "weight": 1
+      },
+      {
+        "word": "intentar",
+        "weight": 1
+      },
+      {
+        "word": "pedir comida para llevar",
+        "weight": 1
+      },
+      {
+        "word": "pedir disculpas",
+        "weight": 1
+      },
+      {
+        "word": "romper",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-17",
     "month": "2026-03",
     "file": "textos/2026-03-17.txt",

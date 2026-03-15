@@ -1,83 +1,99 @@
 {
-  "date": "2026-03-17",
+  "date": "2026-03-18",
   "month": "2026-03",
-  "file": "textos/2026-03-17.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "acá está mi mano",
+  "file": "textos/2026-03-18.txt",
+  "my_poem_title": "torpe",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 16",
+    "poem_title": "Capítulo 22",
     "poem_snippet": "",
     "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-16.pdf"
+    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-22.pdf"
   },
   "keywords": [
     {
-      "word": "ausencia performativa",
+      "word": "delegacion de responsabilidad",
       "weight": 3
     },
     {
-      "word": "dependencia ontologica",
+      "word": "economia de la obsolescencia",
       "weight": 3
     },
     {
-      "word": "inversion realidad lenguaje",
+      "word": "industrializacion del cuidado",
       "weight": 3
     },
     {
-      "word": "performatividad",
+      "word": "inercia performativa",
       "weight": 3
     },
     {
-      "word": "soberania del discurso",
+      "word": "ritual de expiacion",
       "weight": 3
     },
     {
-      "word": "enunciacion",
+      "word": "subversion del valor de integridad",
+      "weight": 3
+    },
+    {
+      "word": "automatizacion del habito",
       "weight": 2
     },
     {
-      "word": "materializacion",
+      "word": "desplazamiento simbolico",
       "weight": 2
     },
     {
-      "word": "relacion",
+      "word": "economia afectiva",
       "weight": 2
     },
     {
-      "word": "renuncia",
+      "word": "falla comunicativa",
       "weight": 2
     },
     {
-      "word": "tacto",
+      "word": "fragmentacion de la atencion",
       "weight": 2
     },
     {
-      "word": "trayectoria",
+      "word": "habitualizacion del error",
       "weight": 2
     },
     {
-      "word": "andar",
+      "word": "ritualizacion",
+      "weight": 2
+    },
+    {
+      "word": "tension apariencia compromiso",
+      "weight": 2
+    },
+    {
+      "word": "arreglarlo",
       "weight": 1
     },
     {
-      "word": "camino",
+      "word": "comprar reemplazo",
       "weight": 1
     },
     {
-      "word": "decir",
+      "word": "dejar caer",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "intentar",
       "weight": 1
     },
     {
-      "word": "palabra",
+      "word": "pedir comida para llevar",
       "weight": 1
     },
     {
-      "word": "real",
+      "word": "pedir disculpas",
+      "weight": 1
+    },
+    {
+      "word": "romper",
       "weight": 1
     }
   ]
