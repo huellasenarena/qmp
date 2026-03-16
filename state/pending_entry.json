@@ -1,99 +1,102 @@
 {
-  "date": "2026-03-18",
+  "date": "2026-03-19",
   "month": "2026-03",
-  "file": "textos/2026-03-18.txt",
-  "my_poem_title": "torpe",
-  "my_poem_snippet": "",
+  "file": "textos/2026-03-19.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "¿cómo estás?",
   "analysis": {
-    "poet": "Phillip K. Dick",
-    "poem_title": "Capítulo 22",
+    "poet": "Soledad Castresana",
+    "poem_title": "De cuando visité por primera vez el Templo Mayor",
     "poem_snippet": "",
-    "book_title": "¿Sueñan los androides con ovejas eléctricas?",
-    "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-22.pdf"
+    "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "delegacion de responsabilidad",
+      "word": "autopercepcion comparativa",
       "weight": 3
     },
     {
-      "word": "economia de la obsolescencia",
+      "word": "interpelacion",
       "weight": 3
     },
     {
-      "word": "industrializacion del cuidado",
+      "word": "lenguaje autorreflexivo",
       "weight": 3
     },
     {
-      "word": "inercia performativa",
+      "word": "reapropiacion del poder",
       "weight": 3
     },
     {
-      "word": "ritual de expiacion",
+      "word": "transmision violenta",
       "weight": 3
     },
     {
-      "word": "subversion del valor de integridad",
+      "word": "vision como conocimiento",
       "weight": 3
     },
     {
-      "word": "automatizacion del habito",
+      "word": "aprendizaje autonomo",
       "weight": 2
     },
     {
-      "word": "desplazamiento simbolico",
+      "word": "confrontacion filial",
       "weight": 2
     },
     {
-      "word": "economia afectiva",
+      "word": "desidentificacion",
       "weight": 2
     },
     {
-      "word": "falla comunicativa",
+      "word": "performatividad pregunta",
       "weight": 2
     },
     {
-      "word": "fragmentacion de la atencion",
+      "word": "simbolismo corporeo",
       "weight": 2
     },
     {
-      "word": "habitualizacion del error",
+      "word": "violencia simbolica",
       "weight": 2
     },
     {
-      "word": "ritualizacion",
-      "weight": 2
-    },
-    {
-      "word": "tension apariencia compromiso",
-      "weight": 2
-    },
-    {
-      "word": "arreglarlo",
+      "word": "craneos",
       "weight": 1
     },
     {
-      "word": "comprar reemplazo",
+      "word": "dios",
       "weight": 1
     },
     {
-      "word": "dejar caer",
+      "word": "diosa",
       "weight": 1
     },
     {
-      "word": "intentar",
+      "word": "hija",
       "weight": 1
     },
     {
-      "word": "pedir comida para llevar",
+      "word": "madre",
       "weight": 1
     },
     {
-      "word": "pedir disculpas",
+      "word": "martillo",
       "weight": 1
     },
     {
-      "word": "romper",
+      "word": "orejas",
+      "weight": 1
+    },
+    {
+      "word": "sangrar",
+      "weight": 1
+    },
+    {
+      "word": "serpientes",
+      "weight": 1
+    },
+    {
+      "word": "virgen",
       "weight": 1
     }
   ]

@@ -1,5 +1,108 @@
 [
   {
+    "date": "2026-03-19",
+    "month": "2026-03",
+    "file": "textos/2026-03-19.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "¿cómo estás?",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "De cuando visité por primera vez el Templo Mayor",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "autopercepcion comparativa",
+        "weight": 3
+      },
+      {
+        "word": "interpelacion",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje autorreflexivo",
+        "weight": 3
+      },
+      {
+        "word": "reapropiacion del poder",
+        "weight": 3
+      },
+      {
+        "word": "transmision violenta",
+        "weight": 3
+      },
+      {
+        "word": "vision como conocimiento",
+        "weight": 3
+      },
+      {
+        "word": "aprendizaje autonomo",
+        "weight": 2
+      },
+      {
+        "word": "confrontacion filial",
+        "weight": 2
+      },
+      {
+        "word": "desidentificacion",
+        "weight": 2
+      },
+      {
+        "word": "performatividad pregunta",
+        "weight": 2
+      },
+      {
+        "word": "simbolismo corporeo",
+        "weight": 2
+      },
+      {
+        "word": "violencia simbolica",
+        "weight": 2
+      },
+      {
+        "word": "craneos",
+        "weight": 1
+      },
+      {
+        "word": "dios",
+        "weight": 1
+      },
+      {
+        "word": "diosa",
+        "weight": 1
+      },
+      {
+        "word": "hija",
+        "weight": 1
+      },
+      {
+        "word": "madre",
+        "weight": 1
+      },
+      {
+        "word": "martillo",
+        "weight": 1
+      },
+      {
+        "word": "orejas",
+        "weight": 1
+      },
+      {
+        "word": "sangrar",
+        "weight": 1
+      },
+      {
+        "word": "serpientes",
+        "weight": 1
+      },
+      {
+        "word": "virgen",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-18",
     "month": "2026-03",
     "file": "textos/2026-03-18.txt",
