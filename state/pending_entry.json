@@ -1,102 +1,114 @@
 {
-  "date": "2026-03-19",
+  "date": "2026-03-20",
   "month": "2026-03",
-  "file": "textos/2026-03-19.txt",
+  "file": "textos/2026-03-20.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "¿cómo estás?",
+  "my_poem_snippet": "espero que no veas eso",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "De cuando visité por primera vez el Templo Mayor",
+    "poem_title": "La Virgen en el mercado",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "autopercepcion comparativa",
+      "word": "encubrimiento por exceso",
       "weight": 3
     },
     {
-      "word": "interpelacion",
+      "word": "invisibilidad",
       "weight": 3
     },
     {
-      "word": "lenguaje autorreflexivo",
+      "word": "negacion como revelacion",
       "weight": 3
     },
     {
-      "word": "reapropiacion del poder",
+      "word": "performatividad de la modestia",
       "weight": 3
     },
     {
-      "word": "transmision violenta",
+      "word": "silencio agente",
       "weight": 3
     },
     {
-      "word": "vision como conocimiento",
+      "word": "vacio como potencia",
       "weight": 3
     },
     {
-      "word": "aprendizaje autonomo",
+      "word": "acumulacion performativa",
       "weight": 2
     },
     {
-      "word": "confrontacion filial",
+      "word": "confesion reticente",
       "weight": 2
     },
     {
-      "word": "desidentificacion",
+      "word": "disimulo corporal",
       "weight": 2
     },
     {
-      "word": "performatividad pregunta",
+      "word": "enunciacion contradictoria",
       "weight": 2
     },
     {
-      "word": "simbolismo corporeo",
+      "word": "inmovilidad significativa",
       "weight": 2
     },
     {
-      "word": "violencia simbolica",
+      "word": "reflejo como testigo",
       "weight": 2
     },
     {
-      "word": "craneos",
+      "word": "tension publico-privado",
+      "weight": 2
+    },
+    {
+      "word": "digo",
       "weight": 1
     },
     {
-      "word": "dios",
+      "word": "nada",
       "weight": 1
     },
     {
-      "word": "diosa",
+      "word": "nadie",
       "weight": 1
     },
     {
-      "word": "hija",
+      "word": "no senti",
       "weight": 1
     },
     {
-      "word": "madre",
+      "word": "perdi",
       "weight": 1
     },
     {
-      "word": "martillo",
+      "word": "pinatas",
       "weight": 1
     },
     {
-      "word": "orejas",
+      "word": "puestito",
       "weight": 1
     },
     {
-      "word": "sangrar",
+      "word": "purpurina",
       "weight": 1
     },
     {
-      "word": "serpientes",
+      "word": "rosas",
+      "weight": 1
+    },
+    {
+      "word": "soledad",
       "weight": 1
     },
     {
       "word": "virgen",
+      "weight": 1
+    },
+    {
+      "word": "vitrina",
       "weight": 1
     }
   ]

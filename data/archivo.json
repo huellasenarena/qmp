@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-03-20",
+    "month": "2026-03",
+    "file": "textos/2026-03-20.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "espero que no veas eso",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "La Virgen en el mercado",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "encubrimiento por exceso",
+        "weight": 3
+      },
+      {
+        "word": "invisibilidad",
+        "weight": 3
+      },
+      {
+        "word": "negacion como revelacion",
+        "weight": 3
+      },
+      {
+        "word": "performatividad de la modestia",
+        "weight": 3
+      },
+      {
+        "word": "silencio agente",
+        "weight": 3
+      },
+      {
+        "word": "vacio como potencia",
+        "weight": 3
+      },
+      {
+        "word": "acumulacion performativa",
+        "weight": 2
+      },
+      {
+        "word": "confesion reticente",
+        "weight": 2
+      },
+      {
+        "word": "disimulo corporal",
+        "weight": 2
+      },
+      {
+        "word": "enunciacion contradictoria",
+        "weight": 2
+      },
+      {
+        "word": "inmovilidad significativa",
+        "weight": 2
+      },
+      {
+        "word": "reflejo como testigo",
+        "weight": 2
+      },
+      {
+        "word": "tension publico-privado",
+        "weight": 2
+      },
+      {
+        "word": "digo",
+        "weight": 1
+      },
+      {
+        "word": "nada",
+        "weight": 1
+      },
+      {
+        "word": "nadie",
+        "weight": 1
+      },
+      {
+        "word": "no senti",
+        "weight": 1
+      },
+      {
+        "word": "perdi",
+        "weight": 1
+      },
+      {
+        "word": "pinatas",
+        "weight": 1
+      },
+      {
+        "word": "puestito",
+        "weight": 1
+      },
+      {
+        "word": "purpurina",
+        "weight": 1
+      },
+      {
+        "word": "rosas",
+        "weight": 1
+      },
+      {
+        "word": "soledad",
+        "weight": 1
+      },
+      {
+        "word": "virgen",
+        "weight": 1
+      },
+      {
+        "word": "vitrina",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-19",
     "month": "2026-03",
     "file": "textos/2026-03-19.txt",
