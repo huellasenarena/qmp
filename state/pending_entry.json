@@ -1,106 +1,106 @@
 {
-  "date": "2026-03-20",
+  "date": "2026-03-21",
   "month": "2026-03",
-  "file": "textos/2026-03-20.txt",
+  "file": "textos/2026-03-21.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "espero que no veas eso",
+  "my_poem_snippet": "toco",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "La Virgen en el mercado",
+    "poem_title": "Una escultura hecha por un hombre",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "encubrimiento por exceso",
+      "word": "autoridad simbolica masculina",
       "weight": 3
     },
     {
-      "word": "invisibilidad",
+      "word": "estasis reproductiva",
       "weight": 3
     },
     {
-      "word": "negacion como revelacion",
+      "word": "identidad por ausencia",
       "weight": 3
     },
     {
-      "word": "performatividad de la modestia",
+      "word": "imposibilidad de encuentro",
       "weight": 3
     },
     {
-      "word": "silencio agente",
+      "word": "reduccion a objeto",
       "weight": 3
     },
     {
-      "word": "vacio como potencia",
-      "weight": 3
-    },
-    {
-      "word": "acumulacion performativa",
+      "word": "aislamiento relacional",
       "weight": 2
     },
     {
-      "word": "confesion reticente",
+      "word": "definicion por negacion",
       "weight": 2
     },
     {
-      "word": "disimulo corporal",
+      "word": "enunciacion fragmentada",
       "weight": 2
     },
     {
-      "word": "enunciacion contradictoria",
+      "word": "estetica estereotipada",
       "weight": 2
     },
     {
-      "word": "inmovilidad significativa",
+      "word": "rechazo performativo",
       "weight": 2
     },
     {
-      "word": "reflejo como testigo",
+      "word": "torpeza tactil",
       "weight": 2
     },
     {
-      "word": "tension publico-privado",
-      "weight": 2
-    },
-    {
-      "word": "digo",
+      "word": "ausencia",
       "weight": 1
     },
     {
-      "word": "nada",
+      "word": "flores",
       "weight": 1
     },
     {
-      "word": "nadie",
+      "word": "lazo",
       "weight": 1
     },
     {
-      "word": "no senti",
+      "word": "mano",
       "weight": 1
     },
     {
-      "word": "perdi",
+      "word": "paloma",
       "weight": 1
     },
     {
-      "word": "pinatas",
+      "word": "prenez de piedra",
       "weight": 1
     },
     {
-      "word": "puestito",
+      "word": "rapidamente",
       "weight": 1
     },
     {
-      "word": "purpurina",
+      "word": "rechazas",
       "weight": 1
     },
     {
-      "word": "rosas",
+      "word": "sin yo",
       "weight": 1
     },
     {
-      "word": "soledad",
+      "word": "solitario",
+      "weight": 1
+    },
+    {
+      "word": "toco",
+      "weight": 1
+    },
+    {
+      "word": "torpemente",
       "weight": 1
     },
     {
@@ -108,7 +108,7 @@
       "weight": 1
     },
     {
-      "word": "vitrina",
+      "word": "yo",
       "weight": 1
     }
   ]

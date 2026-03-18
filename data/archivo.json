@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-03-21",
+    "month": "2026-03",
+    "file": "textos/2026-03-21.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "toco",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Una escultura hecha por un hombre",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "autoridad simbolica masculina",
+        "weight": 3
+      },
+      {
+        "word": "estasis reproductiva",
+        "weight": 3
+      },
+      {
+        "word": "identidad por ausencia",
+        "weight": 3
+      },
+      {
+        "word": "imposibilidad de encuentro",
+        "weight": 3
+      },
+      {
+        "word": "reduccion a objeto",
+        "weight": 3
+      },
+      {
+        "word": "aislamiento relacional",
+        "weight": 2
+      },
+      {
+        "word": "definicion por negacion",
+        "weight": 2
+      },
+      {
+        "word": "enunciacion fragmentada",
+        "weight": 2
+      },
+      {
+        "word": "estetica estereotipada",
+        "weight": 2
+      },
+      {
+        "word": "rechazo performativo",
+        "weight": 2
+      },
+      {
+        "word": "torpeza tactil",
+        "weight": 2
+      },
+      {
+        "word": "ausencia",
+        "weight": 1
+      },
+      {
+        "word": "flores",
+        "weight": 1
+      },
+      {
+        "word": "lazo",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "paloma",
+        "weight": 1
+      },
+      {
+        "word": "prenez de piedra",
+        "weight": 1
+      },
+      {
+        "word": "rapidamente",
+        "weight": 1
+      },
+      {
+        "word": "rechazas",
+        "weight": 1
+      },
+      {
+        "word": "sin yo",
+        "weight": 1
+      },
+      {
+        "word": "solitario",
+        "weight": 1
+      },
+      {
+        "word": "toco",
+        "weight": 1
+      },
+      {
+        "word": "torpemente",
+        "weight": 1
+      },
+      {
+        "word": "virgen",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-20",
     "month": "2026-03",
     "file": "textos/2026-03-20.txt",

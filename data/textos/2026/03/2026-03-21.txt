@@ -1,0 +1,40 @@
+FECHA: 2026-03-21
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: Una escultura hecha por un hombre
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+toco
+torpemente
+
+rechazas
+rápidamente
+
+solitario
+solitariamente
+
+yo
+definido por
+la ausencia
+de ti
+
+un yo
+que es un
+sin yo
+
+# POEMA_CITADO
+
+Dicen que esa Virgen está embarazada
+que por eso el lazo bajo los pechos
+y la mano en la barriga. Yo imagino
+una preñez de piedra, un hijo
+eterno adentro, que crece quieto
+y nunca sale. No me molestan
+las flores, la bendita paloma.
+Lo que no entiendo es la sonrisa.
+
+# TEXTO
+
+Los estereotipos femeninos (las flores, la bendita paloma) no delatan la ignorancia del escultor, sino su presentación de un embarazo eterno como una alegría; estar embarazada vale la pena solo para ver el resultado de un hijo… el hecho de que sea el feto en sí mismo el que da la felicidad muestra, a los ojos del hablante, la mentalidad masculina del creador.
