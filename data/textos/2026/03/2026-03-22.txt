@@ -1,0 +1,54 @@
+FECHA: 2026-03-22
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: las mamás
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+se está llenado
+el balde
+todo el día
+
+cuándo viene la noche
+está a punto de volcarse
+
+con dos manos
+intento mantenerlo quieto
+
+pero un poco de agua todavía se derrama
+
+el agua
+cada palabra del día
+que no se dice en la noche
+
+# POEMA_CITADO
+
+>>*A Paz*
+
+¿te acordás
+de esa vez que bañamos
+a los pollitos con champú?
+
+les fregábamos las alas
+y los hundíamos en el balde
+para enjugarles la espuma
+
+¿te acordás?
+los pusimos a secar al sol
+sobre las lajas
+piaban bajito
+olían a algas marinas
+
+uno a uno
+despacio
+empezaron a morir
+
+¿te acordás?
+pasamos el día
+llorando a esos hijos
+que no habían soportado tanto amor
+
+# TEXTO
+
+no me acuerdo

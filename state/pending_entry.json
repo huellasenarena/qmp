@@ -1,114 +1,94 @@
 {
-  "date": "2026-03-21",
+  "date": "2026-03-22",
   "month": "2026-03",
-  "file": "textos/2026-03-21.txt",
+  "file": "textos/2026-03-22.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "toco",
+  "my_poem_snippet": "se está llenado",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Una escultura hecha por un hombre",
+    "poem_title": "las mamás",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "autoridad simbolica masculina",
+      "word": "acumulacion",
       "weight": 3
     },
     {
-      "word": "estasis reproductiva",
+      "word": "autocensura",
       "weight": 3
     },
     {
-      "word": "identidad por ausencia",
+      "word": "contencion precaria",
       "weight": 3
     },
     {
-      "word": "imposibilidad de encuentro",
+      "word": "fuga del significado",
       "weight": 3
     },
     {
-      "word": "reduccion a objeto",
+      "word": "silencio operativo",
       "weight": 3
     },
     {
-      "word": "aislamiento relacional",
+      "word": "umbral nocturno",
+      "weight": 3
+    },
+    {
+      "word": "acumulacion diurna",
       "weight": 2
     },
     {
-      "word": "definicion por negacion",
+      "word": "equilibrio precario",
       "weight": 2
     },
     {
-      "word": "enunciacion fragmentada",
+      "word": "esfuerzo manual",
       "weight": 2
     },
     {
-      "word": "estetica estereotipada",
+      "word": "fuga gradual",
       "weight": 2
     },
     {
-      "word": "rechazo performativo",
+      "word": "retencion",
       "weight": 2
     },
     {
-      "word": "torpeza tactil",
+      "word": "tension",
       "weight": 2
     },
     {
-      "word": "ausencia",
+      "word": "agua",
       "weight": 1
     },
     {
-      "word": "flores",
+      "word": "balde",
       "weight": 1
     },
     {
-      "word": "lazo",
+      "word": "derrame",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "dia",
       "weight": 1
     },
     {
-      "word": "paloma",
+      "word": "manos",
       "weight": 1
     },
     {
-      "word": "prenez de piedra",
+      "word": "noche",
       "weight": 1
     },
     {
-      "word": "rapidamente",
+      "word": "palabras",
       "weight": 1
     },
     {
-      "word": "rechazas",
-      "weight": 1
-    },
-    {
-      "word": "sin yo",
-      "weight": 1
-    },
-    {
-      "word": "solitario",
-      "weight": 1
-    },
-    {
-      "word": "toco",
-      "weight": 1
-    },
-    {
-      "word": "torpemente",
-      "weight": 1
-    },
-    {
-      "word": "virgen",
-      "weight": 1
-    },
-    {
-      "word": "yo",
+      "word": "voz",
       "weight": 1
     }
   ]

@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-03-22",
+    "month": "2026-03",
+    "file": "textos/2026-03-22.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "se está llenado",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "las mamás",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "acumulacion",
+        "weight": 3
+      },
+      {
+        "word": "autocensura",
+        "weight": 3
+      },
+      {
+        "word": "contencion precaria",
+        "weight": 3
+      },
+      {
+        "word": "fuga del significado",
+        "weight": 3
+      },
+      {
+        "word": "silencio operativo",
+        "weight": 3
+      },
+      {
+        "word": "umbral nocturno",
+        "weight": 3
+      },
+      {
+        "word": "acumulacion diurna",
+        "weight": 2
+      },
+      {
+        "word": "equilibrio precario",
+        "weight": 2
+      },
+      {
+        "word": "esfuerzo manual",
+        "weight": 2
+      },
+      {
+        "word": "fuga gradual",
+        "weight": 2
+      },
+      {
+        "word": "retencion",
+        "weight": 2
+      },
+      {
+        "word": "tension",
+        "weight": 2
+      },
+      {
+        "word": "agua",
+        "weight": 1
+      },
+      {
+        "word": "balde",
+        "weight": 1
+      },
+      {
+        "word": "derrame",
+        "weight": 1
+      },
+      {
+        "word": "dia",
+        "weight": 1
+      },
+      {
+        "word": "manos",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "voz",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-21",
     "month": "2026-03",
     "file": "textos/2026-03-21.txt",
