@@ -1,94 +1,114 @@
 {
-  "date": "2026-03-22",
+  "date": "2026-03-23",
   "month": "2026-03",
-  "file": "textos/2026-03-22.txt",
+  "file": "textos/2026-03-23.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "se está llenado",
+  "my_poem_snippet": "la marea",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "las mamás",
+    "poem_title": "Mi madre de visita",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "acumulacion",
+      "word": "anclaje corporal del lenguaje",
       "weight": 3
     },
     {
-      "word": "autocensura",
+      "word": "desubjetivacion",
       "weight": 3
     },
     {
-      "word": "contencion precaria",
+      "word": "encarnacion textual",
       "weight": 3
     },
     {
-      "word": "fuga del significado",
+      "word": "escala no antropocentrica",
       "weight": 3
     },
     {
-      "word": "silencio operativo",
+      "word": "indiferencia como potencia",
       "weight": 3
     },
     {
-      "word": "umbral nocturno",
-      "weight": 3
-    },
-    {
-      "word": "acumulacion diurna",
+      "word": "absorcion simbolica",
       "weight": 2
     },
     {
-      "word": "equilibrio precario",
+      "word": "desplazamiento de agencia",
       "weight": 2
     },
     {
-      "word": "esfuerzo manual",
+      "word": "marginalizacion de lo vivido",
       "weight": 2
     },
     {
-      "word": "fuga gradual",
+      "word": "materialidad del verso",
       "weight": 2
     },
     {
-      "word": "retencion",
+      "word": "metamorfosis de enunciado",
       "weight": 2
     },
     {
-      "word": "tension",
+      "word": "repeticion como ancla",
       "weight": 2
     },
     {
-      "word": "agua",
+      "word": "basura",
       "weight": 1
     },
     {
-      "word": "balde",
+      "word": "bicho",
       "weight": 1
     },
     {
-      "word": "derrame",
+      "word": "casa",
       "weight": 1
     },
     {
-      "word": "dia",
+      "word": "fatiga",
       "weight": 1
     },
     {
-      "word": "manos",
+      "word": "grillo",
       "weight": 1
     },
     {
-      "word": "noche",
+      "word": "insecto",
       "weight": 1
     },
     {
-      "word": "palabras",
+      "word": "madre",
       "weight": 1
     },
     {
-      "word": "voz",
+      "word": "marea",
+      "weight": 1
+    },
+    {
+      "word": "mito",
+      "weight": 1
+    },
+    {
+      "word": "ojos",
+      "weight": 1
+    },
+    {
+      "word": "peces",
+      "weight": 1
+    },
+    {
+      "word": "pez",
+      "weight": 1
+    },
+    {
+      "word": "poema",
+      "weight": 1
+    },
+    {
+      "word": "veneno",
       "weight": 1
     }
   ]

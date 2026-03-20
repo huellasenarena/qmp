@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-03-23",
+    "month": "2026-03",
+    "file": "textos/2026-03-23.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "la marea",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Mi madre de visita",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "anclaje corporal del lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "desubjetivacion",
+        "weight": 3
+      },
+      {
+        "word": "encarnacion textual",
+        "weight": 3
+      },
+      {
+        "word": "escala no antropocentrica",
+        "weight": 3
+      },
+      {
+        "word": "indiferencia como potencia",
+        "weight": 3
+      },
+      {
+        "word": "absorcion simbolica",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento de agencia",
+        "weight": 2
+      },
+      {
+        "word": "marginalizacion de lo vivido",
+        "weight": 2
+      },
+      {
+        "word": "materialidad del verso",
+        "weight": 2
+      },
+      {
+        "word": "metamorfosis de enunciado",
+        "weight": 2
+      },
+      {
+        "word": "repeticion como ancla",
+        "weight": 2
+      },
+      {
+        "word": "basura",
+        "weight": 1
+      },
+      {
+        "word": "bicho",
+        "weight": 1
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "fatiga",
+        "weight": 1
+      },
+      {
+        "word": "grillo",
+        "weight": 1
+      },
+      {
+        "word": "insecto",
+        "weight": 1
+      },
+      {
+        "word": "madre",
+        "weight": 1
+      },
+      {
+        "word": "marea",
+        "weight": 1
+      },
+      {
+        "word": "mito",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "peces",
+        "weight": 1
+      },
+      {
+        "word": "pez",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      },
+      {
+        "word": "veneno",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-22",
     "month": "2026-03",
     "file": "textos/2026-03-22.txt",
