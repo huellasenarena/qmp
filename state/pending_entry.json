@@ -1,114 +1,106 @@
 {
-  "date": "2026-03-23",
+  "date": "2026-03-24",
   "month": "2026-03",
-  "file": "textos/2026-03-23.txt",
+  "file": "textos/2026-03-24.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "la marea",
+  "my_poem_snippet": "hablo",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Mi madre de visita",
+    "poem_title": "escena familiar",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "anclaje corporal del lenguaje",
+      "word": "encarnacion",
       "weight": 3
     },
     {
-      "word": "desubjetivacion",
+      "word": "oralidad",
       "weight": 3
     },
     {
-      "word": "encarnacion textual",
+      "word": "performatividad",
       "weight": 3
     },
     {
-      "word": "escala no antropocentrica",
+      "word": "separacion",
       "weight": 3
     },
     {
-      "word": "indiferencia como potencia",
+      "word": "subjetivacion",
       "weight": 3
     },
     {
-      "word": "absorcion simbolica",
+      "word": "aislamiento",
       "weight": 2
     },
     {
-      "word": "desplazamiento de agencia",
+      "word": "brecha expresion",
       "weight": 2
     },
     {
-      "word": "marginalizacion de lo vivido",
+      "word": "domesticidad",
       "weight": 2
     },
     {
-      "word": "materialidad del verso",
+      "word": "exclusion",
       "weight": 2
     },
     {
-      "word": "metamorfosis de enunciado",
+      "word": "fingimiento",
       "weight": 2
     },
     {
-      "word": "repeticion como ancla",
+      "word": "legitimacion",
       "weight": 2
     },
     {
-      "word": "basura",
+      "word": "silencio",
+      "weight": 2
+    },
+    {
+      "word": "socializacion",
+      "weight": 2
+    },
+    {
+      "word": "barro",
       "weight": 1
     },
     {
-      "word": "bicho",
+      "word": "bosque",
       "weight": 1
     },
     {
-      "word": "casa",
+      "word": "casita",
       "weight": 1
     },
     {
-      "word": "fatiga",
+      "word": "chicas",
       "weight": 1
     },
     {
-      "word": "grillo",
+      "word": "hablar",
       "weight": 1
     },
     {
-      "word": "insecto",
+      "word": "jugar",
       "weight": 1
     },
     {
-      "word": "madre",
+      "word": "leer",
       "weight": 1
     },
     {
-      "word": "marea",
+      "word": "moras",
       "weight": 1
     },
     {
-      "word": "mito",
+      "word": "trenzas",
       "weight": 1
     },
     {
-      "word": "ojos",
-      "weight": 1
-    },
-    {
-      "word": "peces",
-      "weight": 1
-    },
-    {
-      "word": "pez",
-      "weight": 1
-    },
-    {
-      "word": "poema",
-      "weight": 1
-    },
-    {
-      "word": "veneno",
+      "word": "varones",
       "weight": 1
     }
   ]

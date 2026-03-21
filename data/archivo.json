@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-03-24",
+    "month": "2026-03",
+    "file": "textos/2026-03-24.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "hablo",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "escena familiar",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "encarnacion",
+        "weight": 3
+      },
+      {
+        "word": "oralidad",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "separacion",
+        "weight": 3
+      },
+      {
+        "word": "subjetivacion",
+        "weight": 3
+      },
+      {
+        "word": "aislamiento",
+        "weight": 2
+      },
+      {
+        "word": "brecha expresion",
+        "weight": 2
+      },
+      {
+        "word": "domesticidad",
+        "weight": 2
+      },
+      {
+        "word": "exclusion",
+        "weight": 2
+      },
+      {
+        "word": "fingimiento",
+        "weight": 2
+      },
+      {
+        "word": "legitimacion",
+        "weight": 2
+      },
+      {
+        "word": "silencio",
+        "weight": 2
+      },
+      {
+        "word": "socializacion",
+        "weight": 2
+      },
+      {
+        "word": "barro",
+        "weight": 1
+      },
+      {
+        "word": "bosque",
+        "weight": 1
+      },
+      {
+        "word": "casita",
+        "weight": 1
+      },
+      {
+        "word": "chicas",
+        "weight": 1
+      },
+      {
+        "word": "hablar",
+        "weight": 1
+      },
+      {
+        "word": "jugar",
+        "weight": 1
+      },
+      {
+        "word": "leer",
+        "weight": 1
+      },
+      {
+        "word": "moras",
+        "weight": 1
+      },
+      {
+        "word": "trenzas",
+        "weight": 1
+      },
+      {
+        "word": "varones",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-23",
     "month": "2026-03",
     "file": "textos/2026-03-23.txt",
