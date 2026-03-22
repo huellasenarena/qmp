@@ -1,0 +1,77 @@
+FECHA: 2026-03-25
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: La noche en que se nos inundó la casa
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+lo que mereces
+una lectura atenta
+
+lo que te ofrezco
+un vistazo
+
+dónde cada palabra
+se mantiene
+separada
+
+como
+trozos de madera
+en el suelo
+que miro
+
+imagino que
+haya una cerca
+en esos trozos
+pero no lo veo
+
+# POEMA_CITADO
+
+Decorando la casa que yo no quería que fuera nuestra casa
+pinchamos con el taladro un tubo de agua. El chorro
+nos golpeó con la fuerza de una yegua. Era de noche,
+sábado y afuera también llovía.
+
+Hasta que encontramos la llave, se inundaron
+los cuartos, los placares, el pasillo.
+Hacía frío. Empezábamos a hundirnos. La pintura
+de los muros se rajaba. Se curvaban las tablas en el piso.
+
+Enseguida, el marido empuñó la escoba:
+era una especia de caballero con su lanza.
+Quién sbe cuáles monstruos despiadados
+enfrentaba en el cuerpo de esas aguas.
+
+También estaba la hija. Seria. Empapada.
+Iba de un lado al otro llevando lápices
+y hojas y muñecas hasta arriba de las camas.
+Parecía un gigante tratando de salvar el mundo.
+
+Yo me hubiera dejado ahogar ahí mismo.
+Habrían quedado tres libros, unas pocas fotos
+y un montón de notas sueltas. Suficiente
+para alimentar el mito de la poeta joven que se fue
+justo antes de empezar a escribir sobre sus muertos.
+
+# TEXTO
+
+lo que mereces
+una lectura atenta
+
+lo que te ofrezco
+un vistazo
+
+dónde cada palabra
+se mantiene
+separada
+
+como
+trozos de madera
+en el suelo
+que miro
+
+imagino que
+haya una cerca
+en esos trozos
+pero no lo veo

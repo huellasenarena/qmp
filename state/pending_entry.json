@@ -1,106 +1,90 @@
 {
-  "date": "2026-03-24",
+  "date": "2026-03-25",
   "month": "2026-03",
-  "file": "textos/2026-03-24.txt",
+  "file": "textos/2026-03-25.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "hablo",
+  "my_poem_snippet": "lo que mereces",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "escena familiar",
+    "poem_title": "La noche en que se nos inundó la casa",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "encarnacion",
+      "word": "autonomia-lexica",
       "weight": 3
     },
     {
-      "word": "oralidad",
+      "word": "fragmentacion-material",
       "weight": 3
     },
     {
-      "word": "performatividad",
+      "word": "frontera-imaginaria",
       "weight": 3
+    },
+    {
+      "word": "merecimiento",
+      "weight": 3
+    },
+    {
+      "word": "privacion-de-atencion",
+      "weight": 3
+    },
+    {
+      "word": "distancia-entre-palabras",
+      "weight": 2
+    },
+    {
+      "word": "expectativa-incumplida",
+      "weight": 2
+    },
+    {
+      "word": "materializacion-del-lenguaje",
+      "weight": 2
+    },
+    {
+      "word": "ofrenda-minima",
+      "weight": 2
+    },
+    {
+      "word": "cerca",
+      "weight": 1
+    },
+    {
+      "word": "imaginacion",
+      "weight": 1
+    },
+    {
+      "word": "lectura-atenta",
+      "weight": 1
+    },
+    {
+      "word": "madera",
+      "weight": 1
+    },
+    {
+      "word": "mirada",
+      "weight": 1
+    },
+    {
+      "word": "palabra",
+      "weight": 1
     },
     {
       "word": "separacion",
-      "weight": 3
-    },
-    {
-      "word": "subjetivacion",
-      "weight": 3
-    },
-    {
-      "word": "aislamiento",
-      "weight": 2
-    },
-    {
-      "word": "brecha expresion",
-      "weight": 2
-    },
-    {
-      "word": "domesticidad",
-      "weight": 2
-    },
-    {
-      "word": "exclusion",
-      "weight": 2
-    },
-    {
-      "word": "fingimiento",
-      "weight": 2
-    },
-    {
-      "word": "legitimacion",
-      "weight": 2
-    },
-    {
-      "word": "silencio",
-      "weight": 2
-    },
-    {
-      "word": "socializacion",
-      "weight": 2
-    },
-    {
-      "word": "barro",
       "weight": 1
     },
     {
-      "word": "bosque",
+      "word": "suelo",
       "weight": 1
     },
     {
-      "word": "casita",
+      "word": "trozos",
       "weight": 1
     },
     {
-      "word": "chicas",
-      "weight": 1
-    },
-    {
-      "word": "hablar",
-      "weight": 1
-    },
-    {
-      "word": "jugar",
-      "weight": 1
-    },
-    {
-      "word": "leer",
-      "weight": 1
-    },
-    {
-      "word": "moras",
-      "weight": 1
-    },
-    {
-      "word": "trenzas",
-      "weight": 1
-    },
-    {
-      "word": "varones",
+      "word": "vistazo",
       "weight": 1
     }
   ]
