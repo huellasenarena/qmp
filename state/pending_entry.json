@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-25",
+  "date": "2026-03-26",
   "month": "2026-03",
-  "file": "textos/2026-03-25.txt",
+  "file": "textos/2026-03-26.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "lo que mereces",
+  "my_poem_snippet": "una de las cruces",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "La noche en que se nos inundó la casa",
+    "poem_title": "Hija única",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "autonomia-lexica",
+      "word": "agencia del signo funerario",
       "weight": 3
     },
     {
-      "word": "fragmentacion-material",
+      "word": "anclaje en lo alto",
       "weight": 3
     },
     {
-      "word": "frontera-imaginaria",
+      "word": "epistemologia del rastro",
       "weight": 3
     },
     {
-      "word": "merecimiento",
+      "word": "inversion de sujeto",
       "weight": 3
     },
     {
-      "word": "privacion-de-atencion",
+      "word": "singularizacion frente al conjunto",
       "weight": 3
     },
     {
-      "word": "distancia-entre-palabras",
+      "word": "conservacion por contacto",
       "weight": 2
     },
     {
-      "word": "expectativa-incumplida",
+      "word": "incertidumbre de pertenencia",
       "weight": 2
     },
     {
-      "word": "materializacion-del-lenguaje",
+      "word": "materializacion de la memoria",
       "weight": 2
     },
     {
-      "word": "ofrenda-minima",
+      "word": "seleccion performativa",
       "weight": 2
     },
     {
-      "word": "cerca",
+      "word": "tension cumbre/falda",
+      "weight": 2
+    },
+    {
+      "word": "traza como testimonio",
+      "weight": 2
+    },
+    {
+      "word": "conservar",
       "weight": 1
     },
     {
-      "word": "imaginacion",
+      "word": "cruces",
       "weight": 1
     },
     {
-      "word": "lectura-atenta",
+      "word": "cumbre",
       "weight": 1
     },
     {
-      "word": "madera",
+      "word": "falda",
       "weight": 1
     },
     {
-      "word": "mirada",
+      "word": "huella",
       "weight": 1
     },
     {
-      "word": "palabra",
+      "word": "reconocer",
       "weight": 1
     },
     {
-      "word": "separacion",
+      "word": "tocar",
       "weight": 1
     },
     {
-      "word": "suelo",
-      "weight": 1
-    },
-    {
-      "word": "trozos",
-      "weight": 1
-    },
-    {
-      "word": "vistazo",
+      "word": "tres",
       "weight": 1
     }
   ]

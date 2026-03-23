@@ -1,5 +1,96 @@
 [
   {
+    "date": "2026-03-26",
+    "month": "2026-03",
+    "file": "textos/2026-03-26.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "una de las cruces",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Hija única",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "agencia del signo funerario",
+        "weight": 3
+      },
+      {
+        "word": "anclaje en lo alto",
+        "weight": 3
+      },
+      {
+        "word": "epistemologia del rastro",
+        "weight": 3
+      },
+      {
+        "word": "inversion de sujeto",
+        "weight": 3
+      },
+      {
+        "word": "singularizacion frente al conjunto",
+        "weight": 3
+      },
+      {
+        "word": "conservacion por contacto",
+        "weight": 2
+      },
+      {
+        "word": "incertidumbre de pertenencia",
+        "weight": 2
+      },
+      {
+        "word": "materializacion de la memoria",
+        "weight": 2
+      },
+      {
+        "word": "seleccion performativa",
+        "weight": 2
+      },
+      {
+        "word": "tension cumbre/falda",
+        "weight": 2
+      },
+      {
+        "word": "traza como testimonio",
+        "weight": 2
+      },
+      {
+        "word": "conservar",
+        "weight": 1
+      },
+      {
+        "word": "cruces",
+        "weight": 1
+      },
+      {
+        "word": "cumbre",
+        "weight": 1
+      },
+      {
+        "word": "falda",
+        "weight": 1
+      },
+      {
+        "word": "huella",
+        "weight": 1
+      },
+      {
+        "word": "reconocer",
+        "weight": 1
+      },
+      {
+        "word": "tocar",
+        "weight": 1
+      },
+      {
+        "word": "tres",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-25",
     "month": "2026-03",
     "file": "textos/2026-03-25.txt",
