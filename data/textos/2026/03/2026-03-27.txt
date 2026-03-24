@@ -1,0 +1,39 @@
+FECHA: 2026-03-27
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: La calma de las cosas
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+estaba buscando proteína
+solo viene con un aderezo muy dulce
+
+comí todo
+
+y no me encuentro bien
+
+# POEMA_CITADO
+
+El corazón de la tormenta no siente qué pasa alrededor
+cuando se abre la espiral de agua y viento.
+
+Así, una mujer con los labios pegados descansa sola
+en la cama conyugal y de los bordes las hijas,
+las nueras, los nietos, en progresión geométrica
+se alejan bañados de rezos, arrastrados
+por un coro de lágrimas y la certeza
+de que algo cambió
+
+Más afuera, los hombres extienden el círculo al café,
+al tabaco, a las cenizas, al futuro de las cosas
+que nadie quiere tocar.
+
+# TEXTO
+
+estaba buscando proteína
+solo viene con un aderezo muy dulce
+
+comí todo
+
+y no me encuentro bien

@@ -1,5 +1,104 @@
 [
   {
+    "date": "2026-03-27",
+    "month": "2026-03",
+    "file": "textos/2026-03-27.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "estaba buscando proteína",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "La calma de las cosas",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "alienacion del deseo y la necesidad",
+        "weight": 3
+      },
+      {
+        "word": "consumo como sometimiento corporal",
+        "weight": 3
+      },
+      {
+        "word": "disconcordancia somatica",
+        "weight": 3
+      },
+      {
+        "word": "dulzura como condicion de acceso",
+        "weight": 3
+      },
+      {
+        "word": "nutricion mediada por seduccion",
+        "weight": 3
+      },
+      {
+        "word": "violencia simbolica",
+        "weight": 3
+      },
+      {
+        "word": "atraccion enmascarante",
+        "weight": 2
+      },
+      {
+        "word": "intercambio afecto-alimento",
+        "weight": 2
+      },
+      {
+        "word": "intoxicacion metabolica",
+        "weight": 2
+      },
+      {
+        "word": "normalizacion del enmascaramiento",
+        "weight": 2
+      },
+      {
+        "word": "sobrealimentacion",
+        "weight": 2
+      },
+      {
+        "word": "aderezo",
+        "weight": 1
+      },
+      {
+        "word": "boca",
+        "weight": 1
+      },
+      {
+        "word": "comer",
+        "weight": 1
+      },
+      {
+        "word": "dulce",
+        "weight": 1
+      },
+      {
+        "word": "estomago",
+        "weight": 1
+      },
+      {
+        "word": "gusto",
+        "weight": 1
+      },
+      {
+        "word": "ingesta",
+        "weight": 1
+      },
+      {
+        "word": "malestar",
+        "weight": 1
+      },
+      {
+        "word": "proteina",
+        "weight": 1
+      },
+      {
+        "word": "sabor",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-26",
     "month": "2026-03",
     "file": "textos/2026-03-26.txt",

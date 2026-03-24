@@ -1,90 +1,98 @@
 {
-  "date": "2026-03-26",
+  "date": "2026-03-27",
   "month": "2026-03",
-  "file": "textos/2026-03-26.txt",
+  "file": "textos/2026-03-27.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "una de las cruces",
+  "my_poem_snippet": "estaba buscando proteína",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Hija única",
+    "poem_title": "La calma de las cosas",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "agencia del signo funerario",
+      "word": "alienacion del deseo y la necesidad",
       "weight": 3
     },
     {
-      "word": "anclaje en lo alto",
+      "word": "consumo como sometimiento corporal",
       "weight": 3
     },
     {
-      "word": "epistemologia del rastro",
+      "word": "disconcordancia somatica",
       "weight": 3
     },
     {
-      "word": "inversion de sujeto",
+      "word": "dulzura como condicion de acceso",
       "weight": 3
     },
     {
-      "word": "singularizacion frente al conjunto",
+      "word": "nutricion mediada por seduccion",
       "weight": 3
     },
     {
-      "word": "conservacion por contacto",
+      "word": "violencia simbolica",
+      "weight": 3
+    },
+    {
+      "word": "atraccion enmascarante",
       "weight": 2
     },
     {
-      "word": "incertidumbre de pertenencia",
+      "word": "intercambio afecto-alimento",
       "weight": 2
     },
     {
-      "word": "materializacion de la memoria",
+      "word": "intoxicacion metabolica",
       "weight": 2
     },
     {
-      "word": "seleccion performativa",
+      "word": "normalizacion del enmascaramiento",
       "weight": 2
     },
     {
-      "word": "tension cumbre/falda",
+      "word": "sobrealimentacion",
       "weight": 2
     },
     {
-      "word": "traza como testimonio",
-      "weight": 2
-    },
-    {
-      "word": "conservar",
+      "word": "aderezo",
       "weight": 1
     },
     {
-      "word": "cruces",
+      "word": "boca",
       "weight": 1
     },
     {
-      "word": "cumbre",
+      "word": "comer",
       "weight": 1
     },
     {
-      "word": "falda",
+      "word": "dulce",
       "weight": 1
     },
     {
-      "word": "huella",
+      "word": "estomago",
       "weight": 1
     },
     {
-      "word": "reconocer",
+      "word": "gusto",
       "weight": 1
     },
     {
-      "word": "tocar",
+      "word": "ingesta",
       "weight": 1
     },
     {
-      "word": "tres",
+      "word": "malestar",
+      "weight": 1
+    },
+    {
+      "word": "proteina",
+      "weight": 1
+    },
+    {
+      "word": "sabor",
       "weight": 1
     }
   ]
