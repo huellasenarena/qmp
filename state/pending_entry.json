@@ -1,98 +1,102 @@
 {
-  "date": "2026-03-27",
+  "date": "2026-03-28",
   "month": "2026-03",
-  "file": "textos/2026-03-27.txt",
+  "file": "textos/2026-03-28.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "estaba buscando proteína",
+  "my_poem_snippet": "un poquito más",
   "analysis": {
-    "poet": "Soledad Castresana",
-    "poem_title": "La calma de las cosas",
+    "poet": "Soldead Castresana",
+    "poem_title": "Lo normal",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "alienacion del deseo y la necesidad",
+      "word": "acumulacion",
       "weight": 3
     },
     {
-      "word": "consumo como sometimiento corporal",
+      "word": "desgaste",
       "weight": 3
     },
     {
-      "word": "disconcordancia somatica",
+      "word": "perdida de agencia",
       "weight": 3
     },
     {
-      "word": "dulzura como condicion de acceso",
+      "word": "potencia de lo minimo",
       "weight": 3
     },
     {
-      "word": "nutricion mediada por seduccion",
+      "word": "umbralizacion",
       "weight": 3
     },
     {
-      "word": "violencia simbolica",
-      "weight": 3
-    },
-    {
-      "word": "atraccion enmascarante",
+      "word": "contrapunto",
       "weight": 2
     },
     {
-      "word": "intercambio afecto-alimento",
+      "word": "dilucion",
       "weight": 2
     },
     {
-      "word": "intoxicacion metabolica",
+      "word": "economia del gesto",
       "weight": 2
     },
     {
-      "word": "normalizacion del enmascaramiento",
+      "word": "gradualidad",
       "weight": 2
     },
     {
-      "word": "sobrealimentacion",
+      "word": "repeticion",
       "weight": 2
     },
     {
-      "word": "aderezo",
+      "word": "tension lectura-cuerpo",
+      "weight": 2
+    },
+    {
+      "word": "abuelo",
       "weight": 1
     },
     {
-      "word": "boca",
+      "word": "cansancio",
       "weight": 1
     },
     {
-      "word": "comer",
+      "word": "dormir",
       "weight": 1
     },
     {
-      "word": "dulce",
+      "word": "edad",
       "weight": 1
     },
     {
-      "word": "estomago",
+      "word": "libros",
       "weight": 1
     },
     {
-      "word": "gusto",
+      "word": "muerte",
       "weight": 1
     },
     {
-      "word": "ingesta",
+      "word": "neumonia",
       "weight": 1
     },
     {
-      "word": "malestar",
+      "word": "olvido",
       "weight": 1
     },
     {
-      "word": "proteina",
+      "word": "pequeno",
       "weight": 1
     },
     {
-      "word": "sabor",
+      "word": "poquito",
+      "weight": 1
+    },
+    {
+      "word": "sueno",
       "weight": 1
     }
   ]

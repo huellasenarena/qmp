@@ -1,5 +1,108 @@
 [
   {
+    "date": "2026-03-28",
+    "month": "2026-03",
+    "file": "textos/2026-03-28.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "un poquito más",
+    "analysis": {
+      "poet": "Soldead Castresana",
+      "poem_title": "Lo normal",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "acumulacion",
+        "weight": 3
+      },
+      {
+        "word": "desgaste",
+        "weight": 3
+      },
+      {
+        "word": "perdida de agencia",
+        "weight": 3
+      },
+      {
+        "word": "potencia de lo minimo",
+        "weight": 3
+      },
+      {
+        "word": "umbralizacion",
+        "weight": 3
+      },
+      {
+        "word": "contrapunto",
+        "weight": 2
+      },
+      {
+        "word": "dilucion",
+        "weight": 2
+      },
+      {
+        "word": "economia del gesto",
+        "weight": 2
+      },
+      {
+        "word": "gradualidad",
+        "weight": 2
+      },
+      {
+        "word": "repeticion",
+        "weight": 2
+      },
+      {
+        "word": "tension lectura-cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "abuelo",
+        "weight": 1
+      },
+      {
+        "word": "cansancio",
+        "weight": 1
+      },
+      {
+        "word": "dormir",
+        "weight": 1
+      },
+      {
+        "word": "edad",
+        "weight": 1
+      },
+      {
+        "word": "libros",
+        "weight": 1
+      },
+      {
+        "word": "muerte",
+        "weight": 1
+      },
+      {
+        "word": "neumonia",
+        "weight": 1
+      },
+      {
+        "word": "olvido",
+        "weight": 1
+      },
+      {
+        "word": "pequeno",
+        "weight": 1
+      },
+      {
+        "word": "poquito",
+        "weight": 1
+      },
+      {
+        "word": "sueno",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-27",
     "month": "2026-03",
     "file": "textos/2026-03-27.txt",
