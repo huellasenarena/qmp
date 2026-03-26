@@ -1,102 +1,110 @@
 {
-  "date": "2026-03-28",
+  "date": "2026-03-29",
   "month": "2026-03",
-  "file": "textos/2026-03-28.txt",
+  "file": "textos/2026-03-29.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "un poquito más",
+  "my_poem_snippet": "empiezo con bien pie",
   "analysis": {
-    "poet": "Soldead Castresana",
-    "poem_title": "Lo normal",
+    "poet": "Soledad",
+    "poem_title": "Memento",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "acumulacion",
+      "word": "cierre epistemico",
       "weight": 3
     },
     {
-      "word": "desgaste",
+      "word": "economia de la atencion",
       "weight": 3
     },
     {
-      "word": "perdida de agencia",
+      "word": "inercia del conocimiento",
       "weight": 3
     },
     {
-      "word": "potencia de lo minimo",
+      "word": "inversion del inicio",
       "weight": 3
     },
     {
-      "word": "umbralizacion",
+      "word": "saturacion de sentido",
       "weight": 3
     },
     {
-      "word": "contrapunto",
+      "word": "simulacro de diferencia",
+      "weight": 3
+    },
+    {
+      "word": "ciclo apertura clausura",
       "weight": 2
     },
     {
-      "word": "dilucion",
+      "word": "desgaste prospectivo",
       "weight": 2
     },
     {
-      "word": "economia del gesto",
+      "word": "paralisis por familiaridad",
       "weight": 2
     },
     {
-      "word": "gradualidad",
+      "word": "reduccion de curiosidad",
       "weight": 2
     },
     {
-      "word": "repeticion",
+      "word": "repeticion performativa",
       "weight": 2
     },
     {
-      "word": "tension lectura-cuerpo",
+      "word": "ritual de reconocimiento",
       "weight": 2
     },
     {
-      "word": "abuelo",
+      "word": "suspension del deseo",
+      "weight": 2
+    },
+    {
+      "word": "tension ver-saber",
+      "weight": 2
+    },
+    {
+      "word": "alrededor",
       "weight": 1
     },
     {
-      "word": "cansancio",
+      "word": "conocer",
       "weight": 1
     },
     {
-      "word": "dormir",
+      "word": "debilidad",
       "weight": 1
     },
     {
-      "word": "edad",
+      "word": "estudiarlo",
       "weight": 1
     },
     {
-      "word": "libros",
+      "word": "igual",
       "weight": 1
     },
     {
-      "word": "muerte",
+      "word": "mirar",
       "weight": 1
     },
     {
-      "word": "neumonia",
+      "word": "orientarse",
       "weight": 1
     },
     {
-      "word": "olvido",
+      "word": "pie",
       "weight": 1
     },
     {
-      "word": "pequeno",
+      "word": "pregunta",
       "weight": 1
     },
     {
-      "word": "poquito",
-      "weight": 1
-    },
-    {
-      "word": "sueno",
+      "word": "terminar",
       "weight": 1
     }
   ]

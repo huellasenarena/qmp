@@ -1,0 +1,39 @@
+FECHA: 2026-03-29
+MY_POEM_TITLE: 
+POETA: Soledad
+POEM_TITLE: Memento
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+empiezo con bien pie
+me oriento
+miro alrededor
+
+cuando lo conozco
+¿por qué estudiarlo más?
+¿qué más me puede ofrecer?
+
+empiezo con bien pie
+termino con debilidad
+nunca sabré lo que
+me puede ofrecer
+
+# POEMA_CITADO
+
+Pero mirarlo, si está igual.
+
+# TEXTO
+
+empiezo con bien pie
+me oriento
+miro alrededor
+
+cuando lo conozco
+¿por qué estudiarlo más?
+¿qué más me puede ofrecer?
+
+empiezo con bien pie
+termino con debilidad
+nunca sabré lo que
+me puede ofrecer
