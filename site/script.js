@@ -25,10 +25,9 @@ function applyInlineFormatting(text) {
 
 
 function textToParagraphs(text) {
-  let raw = (text || '').trim();
+  // Normalizar saltos de línea Windows/Mac antes de todo
+  let raw = (text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
 
-  // Modo “bloque en cursiva”:
-  // si el texto entero está envuelto en * ... *
   let blockItalic = false;
   if (raw.startsWith('*') && raw.endsWith('*') && raw.length >= 2) {
     blockItalic = true;
@@ -46,7 +45,9 @@ function textToParagraphs(text) {
     if (blockItalic) classes.push('analysis-italic');
 
     const cls = classes.length ? ` class="${classes.join(' ')}"` : '';
-    return `<p${cls}>${applyInlineFormatting(escapeHtml(p)).replace(/\n/g, '<br>')}</p>`;
+    // Orden importante: escape → formatting → saltos de línea
+    const html = applyInlineFormatting(escapeHtml(p)).replace(/\n/g, '<br>');
+    return `<p${cls}>${html}</p>`;
   }).join('');
 }
 

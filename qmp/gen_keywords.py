@@ -9,7 +9,7 @@ import unicodedata
 from openai import OpenAI
 
 DEFAULT_INPUT_FILE = "test_file.txt"
-DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-5-mini")
+DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.4-mini")
 MAX_KEYWORDS = 25
 REASONING = os.getenv("OPENAI_REASONING", "medium")
 MAX_TEXTO_CHARS = int(os.getenv("QMP_TEXTO_MAX_CHARS", "1800"))
