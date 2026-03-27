@@ -1,5 +1,96 @@
 [
   {
+    "date": "2026-03-30",
+    "month": "2026-03",
+    "file": "textos/2026-03-30.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "yo soy solo el araña",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Víctima y verdugo",
+      "poem_snippet": "",
+      "book_title": "Fragmentos"
+    },
+    "keywords": [
+      {
+        "word": "apropiacion",
+        "weight": 3
+      },
+      {
+        "word": "autoeleccion",
+        "weight": 3
+      },
+      {
+        "word": "autopoiesis",
+        "weight": 3
+      },
+      {
+        "word": "destruccion creadora",
+        "weight": 3
+      },
+      {
+        "word": "marginalidad",
+        "weight": 3
+      },
+      {
+        "word": "reflexividad",
+        "weight": 3
+      },
+      {
+        "word": "ambivalencia",
+        "weight": 2
+      },
+      {
+        "word": "depredacion",
+        "weight": 2
+      },
+      {
+        "word": "escritura",
+        "weight": 2
+      },
+      {
+        "word": "lectura",
+        "weight": 2
+      },
+      {
+        "word": "tejido",
+        "weight": 2
+      },
+      {
+        "word": "violencia",
+        "weight": 2
+      },
+      {
+        "word": "arana",
+        "weight": 1
+      },
+      {
+        "word": "esquina",
+        "weight": 1
+      },
+      {
+        "word": "habitacion",
+        "weight": 1
+      },
+      {
+        "word": "insecto",
+        "weight": 1
+      },
+      {
+        "word": "mente",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      },
+      {
+        "word": "telarana",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-29",
     "month": "2026-03",
     "file": "textos/2026-03-29.txt",
