@@ -46,7 +46,7 @@ function textToParagraphs(text) {
     if (blockItalic) classes.push('analysis-italic');
 
     const cls = classes.length ? ` class="${classes.join(' ')}"` : '';
-    return `<p${cls}>${applyInlineFormatting(escapeHtml(p))}</p>`;
+    return `<p${cls}>${applyInlineFormatting(escapeHtml(p)).replace(/\n/g, '<br>')}</p>`;
   }).join('');
 }
 
