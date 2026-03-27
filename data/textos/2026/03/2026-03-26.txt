@@ -1,0 +1,52 @@
+FECHA: 2026-03-26
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: Hija única
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+una de las cruces
+me va a reconocer
+
+pero no sé nada
+de los tres
+
+la voy a tocar
+la una
+y intentar conservarla
+
+en la cumbre
+no en la falda
+ahí quedará mi huella
+
+# POEMA_CITADO
+
+Cuando era jóvenes mi abuela y las hermanas
+visitaban a sus muertos los domingos.
+Junto a la madre, limpiaban el panteón como la casa.
+Afuera el padre, fumando en el Ford
+y por la radio, las carreras de caballos.
+
+Mamá no tuvo hermana. Yo tampoco.
+Ahora, los bronces no brillan y el viento
+que se cuela por los vidrios rotos, confunde
+la tierra del campo y las cenizas.
+Una mariposa de noche descansa sobre el mármol.
+Ahí quedará su huella.
+
+# TEXTO
+
+una de las cruces
+me va a reconocer
+
+pero no sé nada
+de los tres
+
+la voy a tocar
+la una
+y intentar conservarla
+
+en la cumbre
+no en la falda
+ahí quedará mi huella

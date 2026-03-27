@@ -1,0 +1,36 @@
+FECHA: 2026-03-28
+MY_POEM_TITLE: 
+POETA: Soldead Castresana
+POEM_TITLE: Lo normal
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+un poquito más
+que afecta mi sueño
+
+un poquito más
+que me hace olvidar
+los libros
+
+un poquito más
+que pelea mi
+cansancio
+
+# POEMA_CITADO
+
+Ayer murió mi abuelo. Es normal
+que a los 97 te dé una neumonia
+
+# TEXTO
+
+un poquito más
+que afecta mi sueño
+
+un poquito más
+que me hace olvidar
+los libros
+
+un poquito más
+que pelea mi
+cansancio

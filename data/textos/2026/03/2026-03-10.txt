@@ -1,0 +1,26 @@
+FECHA: 2026-03-10
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 9
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+algunos no están destinados
+a ser guerreros
+
+como yo
+
+pero no me preocupo más
+
+estoy destinado
+a tener sexo tres
+veces al día
+
+y no tengo que ir
+a la guerra
+
+# POEMA_CITADO
+
+
+# TEXTO
+La confusión entre lo humano y lo robótico continúa, con Rick realizando su interrogación de unos andrillos sospechosos. Pero cambian las tornas cuando un andrillo presunto le dice a Rick que no lo conoce a él ni a su jefe. Y Rick no conoce los detalles del caso. Al final, vemos que es Rick quien termina arrestado.

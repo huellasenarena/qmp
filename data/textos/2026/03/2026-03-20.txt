@@ -1,0 +1,60 @@
+FECHA: 2026-03-20
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: La Virgen en el mercado
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+espero que no veas eso
+Soledad
+lo que perdí
+lo que no sentí
+
+espero que nadie lea eso
+ver que no tengo nada
+pero
+digo
+de todos modos
+
+# POEMA_CITADO
+
+Adherida a la comuna, una lámina
+en papel satinado de la Virgen
+con su raro disfraz de Guadalupe.
+Quien imprimió esta imagen le agregó
+un poco de su fe, de su alegría.
+Los colores se alejan del gris santo,
+alzan vuelo y se encienden y compiten
+con las piñatas que cuelgan rabiosas
+del techo del mercado
+en Coyoacán.
+Y porque tal vez la acumulación
+funciona en ciertos casos, le pusieron
+un marco de un millón de rosas rojas
+y un diluvio universal de purpurina.
+Pero es curioso observar que nada
+le ha cambiado en el gesto a la señora:
+sigue quieta, los ojos hacia abajo
+y las manos unidas sobre el pecho.
+¡Qué poca vanidad!, me digo y miro
+mi perfil de reojo en la vitrina
+sucia de un puestito de tostadas.
+Cualquier diosa, yo misma, si tuviera
+tales brillos y flores, alzaría
+la vista sonriendo. Aunque en el fondo
+supiera que no soy más que otras mosca
+sobre la carne cruda y las guayabas.
+
+# TEXTO
+
+espero que no veas eso
+Soledad
+lo que perdí
+lo que no sentí
+
+espero que nadie lea eso
+ver que no tengo nada
+pero
+digo
+de todos modos

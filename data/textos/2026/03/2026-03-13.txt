@@ -1,0 +1,23 @@
+FECHA: 2026-03-13
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 12
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+esta palabra
+para llenar el papel
+como arena negra
+llenando una botella
+
+esta palabra
+pesada
+oscura
+no apta para
+el consumo
+
+# POEMA_CITADO
+
+
+# TEXTO
+La historia de Rick y Resch continúa. Rastrean a Luba en un museo y la matan, pero Rick todavía duda sobre Resch. Finalmente, las preguntas del test de empatía se centraron en el coito, planteando la cuestión de la privacidad en este tipo de preguntas y también si la sexualidad es un interés universal.

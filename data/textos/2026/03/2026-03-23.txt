@@ -1,0 +1,48 @@
+FECHA: 2026-03-23
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: Mi madre de visita
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+la marea
+ya alta
+no le importan
+los peces
+es tan poderosa
+
+este poema
+un pez
+mi fatiga
+la marea
+
+# POEMA_CITADO
+
+Aparece un insecto en la casa, una especie de grillo
+salido de un mal sueño del Creador.
+«Cara de niño» lo llaman. No hay metáfora.
+Investigo y todo es mito: los poderes terribles
+de sus ojos, el veneno mortal, el mismísimo
+rostro del maligno tatuado en el abdomen.
+No es que yo no sea valiente,
+pero tiendo a procrastinar. Pasa el día y otro día
+y queda el bicho muerto en el rincón.
+Hasta que llega mi madre de visita. Desde lejos,
+se lo muestro, lo señalo, se lo explico. Ella,
+nada de escoba ni de escudo, lo agarra de una pata.
+Parece un bebé recién nacido, dice. No es tan feo.
+Y lo mete en la basura.
+
+# TEXTO
+
+la marea
+ya alta
+no le importan
+los peces
+es tan poderosa
+
+este poema
+un pez
+mi fatiga
+la marea

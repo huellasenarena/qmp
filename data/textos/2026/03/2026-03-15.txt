@@ -1,0 +1,18 @@
+FECHA: 2026-03-15
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 14
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+las sábanas
+tan suaves
+casi se me olvida
+que no duermo
+bastante
+
+# POEMA_CITADO
+
+
+# TEXTO
+Resultaron ser dos androides más; ya hay tres andrillos e Isidore, que expresa su sentimiento de alteridad como humano "especial". El libro continúa planteando la pregunta: ¿qué es lo humano? ¿La inteligencia? ¿La empatía? ¿El sadismo?

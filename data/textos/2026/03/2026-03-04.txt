@@ -1,0 +1,23 @@
+FECHA: 2026-03-04
+MY_POEM_TITLE: el año 2026
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 3
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+¿de riemann?
+	probada.
+¿cuántos píxeles?
+	cinco mil.
+¿cuántas respuestas?
+	todas.
+¿chupada?
+	¿qué?
+
+# POEMA_CITADO
+
+
+# TEXTO
+La historia se vuelve aún más clara: ya hay gente que existe para localizar y "asesinar" andrillos, que el gobierno percibe como una amenaza por su falta de empatía. El capítulo regresó a enfocarse en Rick, esta vez presentando su trabajo como funcionario.
+
+Vemos su todavía presente deseo de tener un animal real, acá un ave, y su intento de comprarla en una tienda; desafortunadamente no pudo.

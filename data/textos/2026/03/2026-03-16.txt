@@ -1,0 +1,19 @@
+FECHA: 2026-03-16
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 15
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+¿escuchas mi guitarra?
+es para tí
+porque es
+para mí
+
+# POEMA_CITADO
+
+
+# TEXTO
+Alternamos entre Rick e Isidore, creando suspenso hacia su reunión eventual. Del lado de Rick, se encuentra enamorado de Rachael, un gran contraste con su relación con su esposa en la primera escena. Rick sabe que es un andrillo, pero no se puede contener para amarla. A pesar de su interés en Rachael, se decidió a matarla para ser capaz de matar a los otros, pero no pudo.
+
+Isidore encuentra un propósito al ayudar a los androides, pero resulta que todavía ocupa una posición baja en esta jerarquía. Vemos una curiosidad en Pris, que quiere explorar el mundo de los insectos, mostrando que ser humano es más que la curiosidad.

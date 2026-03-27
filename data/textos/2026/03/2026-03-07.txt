@@ -1,0 +1,26 @@
+FECHA: 2026-03-07
+MY_POEM_TITLE: el asiento de la ventana
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 6
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+ver la luz
+ver las nubes
+o ver la nada
+es yo que lo determina
+
+gobierno este reino
+desde mi asiento
+de la ventana
+
+hasta que me ordene
+abrocharme el cinturón
+
+# POEMA_CITADO
+
+
+# TEXTO
+Nos presenta a John Isidore aquí, donde conoce a su vecina de edificio, una chica que parece estar totalmente desconectada del mundo: no conoce al Amigo Buster, no tiene caja de empatía, y muestra una frialdad extraña hacia Isidore.
+
+Isidore tiene curiosidad por la chica, imaginando cómo pueden convivir… pero el capítulo termina con un giro inquietante: la chica se presenta primero como "Rachael Rosen" antes de corregirse y dar su nombre real, Pris Stratton. El peligro se vislumbra en el horizonte.

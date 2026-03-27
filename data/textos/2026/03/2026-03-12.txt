@@ -1,0 +1,17 @@
+FECHA: 2026-03-12
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 11
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+la lista se alarga
+la vida se hace más pequeña
+la noche es la mañana
+la libertad una prisionera
+
+# POEMA_CITADO
+
+
+# TEXTO
+Continuamos siguiendo a Rick y Resch, esta vez rastreando a Luba. Vemos sospechas de parte de Rick sobre la autenticidad de Resch, pero tras un examen de empatía, queda convencido de que es humano. La brutalidad con que Resch se comporta pone en tela de juicio si la empatía es el rasgo definitivo del ser humano.

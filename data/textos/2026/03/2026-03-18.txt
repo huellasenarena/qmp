@@ -1,0 +1,33 @@
+FECHA: 2026-03-18
+MY_POEM_TITLE: torpe
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 22
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+intentar, dejar caer, romper
+intentar, dejar caer, romper, comprar reemplazo
+intentar, dejar caer, romper, pedir disculpas
+intentar, dejar caer, romper, arreglarlo
+intentar, dejar caer, romper, pedir comida para llevar
+
+# POEMA_CITADO
+
+
+# TEXTO
+*Mi reseña del libro*
+
+Ya leí el libro y quiero hablar ahora sobre el libro entero –lo que opino y los puntos clave.
+
+Fue el primer libro que leí en español de manera original (o sea, he leído libros en español pero eran libros que ya había leído en otros idiomas, lo que facilitaba el proceso). Por eso creo que perdí detalles importantes y, sin la capacidad de hablar con un chatbot, me habría costado aún más.
+
+Tengo estas observaciones:
+
+**1: El borrado entre lo real y lo imaginario me resultó confuso.**
+Pienso en el momento donde Rick llama a su mujer y luego al final cuando Isidore y Rick encuentran a Mercer. Dejar al lector sin certidumbre puede tener una conclusión filosófica –que el ser humano no puede entender el cosmos– pero para mi lectura fue, sobre todo, desorientador.
+
+**2: El libro hace muchas preguntas, pero no da muchas respuestas.**
+¿Qué es la empatía? ¿Qué es el ser humano? ¿Somos especiales? Me parece que el libro hace esas preguntas pero nos deja sin respuestas. Como antes, esa falta de respuestas puede sugerir algo sombrío: que esas preguntas no importan. Vemos a personajes, en particular Rick e Irán, que se preguntan sobre esos temas antes de continuar viviendo. Rick reflexiona antes de matar por dinero. Irán cuestiona el órgano de ánimos antes de usarlo y, al final, incluso lo recomienda a su esposo. Parece que el ser humano *puede* hacer preguntas, pero la respuesta no afecta el desarrollo de su vida.
+
+**3: La ironía y el defecto humano**
+Del mismo modo, el libro rebosa de ironía: el ser humano se considera superior pero está fascinado con los animales reales; valoriza la empatía y aliena a sus semejantes; se piensa una criatura social pero la ciudad es tan solitaria; se opina especial pero se siente amenazado por los androides y sus capacidades superiores; destruye la tecnología porque es diferente, pero la usa cuando le sirve. Me parece que sugiere que el ser humano es una especie defectuosa, que camina por el mundo sin reflexionar demasiado sobre su condición y sus contradicciones.

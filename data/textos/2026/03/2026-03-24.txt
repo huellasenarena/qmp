@@ -1,0 +1,77 @@
+FECHA: 2026-03-24
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: escena familiar
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+hablo
+no leo
+
+leer
+tiene
+lo malo y lo bueno
+
+hablar
+tiene
+lo expresado y lo no expresado
+
+leer
+tiene
+lo social
+
+hablar
+lo seperado
+
+por eso
+hablo
+
+# POEMA_CITADO
+
+construimos una casita
+en el bosque
+debajo del paraíso
+sobre el tronco quebrado
+de un eucalipto
+
+la decoramos con girasoles
+espigas de trigo
+margaritas silvestres
+
+juntábamos moras y quinotos
+hacíamos tortitas de barro
+y trenzas con flores y hojas
+para adornarnos el pelo
+
+a los varones y a los perros
+los mandaban al campo
+entonces las chicas
+jugábamos solas
+a la mamá y al papá
+
+las violetas sobre el musgo
+nos servían de cama
+
+# TEXTO
+
+hablo
+no leo
+
+leer
+tiene
+lo malo y lo bueno
+
+hablar
+tiene
+lo expresado y lo no expresado
+
+leer
+tiene
+lo social
+
+hablar
+lo seperado
+
+por eso
+hablo

@@ -1,0 +1,27 @@
+FECHA: 2026-03-11
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 10
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+es una pregunta retórica
+una siesta o tus senos
+un borrador o tu boca
+un poema o tus piernas
+
+en lugar de mis palabras
+quiero un foto de tu culo en mi lápida
+así descansaré
+muy cómodamente
+
+el trabajo de mi vida
+
+vale la pena
+vale el pene
+
+# POEMA_CITADO
+
+
+# TEXTO
+La confusión de Rick continúa al transportarse a la oficina de policía desconocida, rodeado de gente desconocida; el acusador se vuelve el acusado.

@@ -1,0 +1,28 @@
+FECHA: 2026-03-14
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 13
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+las sabanas no son la capa
+bajo el cual
+me puedo refugiar
+del reloj despertador
+
+el sofá que me abraza el culo
+no me da el amor
+de trabajar
+
+la luz es la oscuridad
+la oscuridad la luz
+
+# POEMA_CITADO
+
+
+# TEXTO
+Vemos de nuevo a Isidore mientras va a encontrar a Pris, la joven que conoció antes. Trajo comida para que puedan comer juntos, pero Pris se mostró reacia porque se revela que se trata de un robot.
+
+Aprendemos que, para Pris, los otros andrillos son compañeros, casi amigos, y que sigue el estatus de los andrillos que Rick mata en los otros capítulos.
+
+Al final, alguien llama a la puerta, creando suspenso. ¿La policía? Podemos imaginar el peligro que representa estar con un android.

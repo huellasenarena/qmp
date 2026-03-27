@@ -1,0 +1,25 @@
+FECHA: 2026-03-17
+MY_POEM_TITLE:
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 16
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+acá está mi mano
+vamos por tu camino
+
+se hizo real
+en cuanto lo creaste
+con tu palabra
+
+el mío no es real
+no dije nada
+
+no quería
+andar solo
+
+# POEMA_CITADO
+
+
+# TEXTO
+Isidore encuentra a Merce, la figura religiosa del libro. Rick vino y mató a los andrillos, para tristeza de Isidore. Luego Rick encuentra a Mercer, creo, y vuelve a su casa orgulloso del dinero que ha ganado.

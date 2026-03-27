@@ -1,0 +1,31 @@
+FECHA: 2026-03-02
+MY_POEM_TITLE: ventilador
+POETA: Phillip K. Dick
+POEM_TITLE: Capítulo 1
+BOOK_TITLE: ¿Sueñan los androides con ovejas eléctricas?
+
+# POEMA
+lo veo girar
+para secar mi ropa
+la toco
+todavía un poco húmeda
+
+lo veo dividir
+el aire caliente
+refrescándome
+en la cama
+
+lo veo
+me seca la vida
+
+# POEMA_CITADO
+
+
+# TEXTO
+Leí el capítulo uno sin mucho entusiasmo. ¿De dónde vino esta insatisfacción? ¿La elegí? Y si una pareja se pelea, ¿de dónde viene esta animosidad? El capítulo se enfoca en este mismo tema: ¿qué es lo real y cómo sabemos?
+
+El año es 1992. La Tierra está en una crisis ambiental y el gobierno opresivo está intentando convencer a la gente de emigrar. En este contexto se presenta una pareja: los Deckard. La falta de comprensión azota sus interacciones. Rick, con su comportamiento dominante y despectivo, no puede entender por qué Irán quiere sentir "realmente" emociones como la tristeza. Tiene órganos de ánimos que pueden dirigir sus comportamientos y sentimientos… entonces ¿por qué no usarlos? La actitud controladora de Rick prevalece en este capítulo cuando cambia la máquina de su esposa para que ella sea sumisa, pero me imagino que esta tensión se va a explorar.
+
+Rick también tiene un deseo propio: su oveja artificial, aunque aparentemente real, no lo satisface. En un diálogo con su vecino Bill, expresa este deseo de tener un animal real. ¿Por qué no disca su órgano de ánimos para eliminar este anhelo?
+
+El tema principal, a mis ojos, es que el libro sugiere que el ser humano no se reduce a acciones fijadas; tiene sentimientos profundos que no se pueden ignorar. Irán, por ejemplo, no quiere ser dirigida por su máquina: quiere "reaccionar" a una tristeza en lugar de seguir un proceso previsible; no suprime este deseo. Rick también tiene un deseo profundo —el deseo de un animal— que no se puede suprimir. Me parece que este conflicto interno —lo que realmente sentimos y lo que decidimos artificialmente sentir— es el eje principal del capítulo y, me imagino, un tema central del libro.

@@ -1,5 +1,2878 @@
 [
   {
+    "date": "2026-03-29",
+    "month": "2026-03",
+    "file": "textos/2026-03-29.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "empiezo con bien pie",
+    "analysis": {
+      "poet": "Soledad",
+      "poem_title": "Memento",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "cierre epistemico",
+        "weight": 3
+      },
+      {
+        "word": "economia de la atencion",
+        "weight": 3
+      },
+      {
+        "word": "inercia del conocimiento",
+        "weight": 3
+      },
+      {
+        "word": "inversion del inicio",
+        "weight": 3
+      },
+      {
+        "word": "saturacion de sentido",
+        "weight": 3
+      },
+      {
+        "word": "simulacro de diferencia",
+        "weight": 3
+      },
+      {
+        "word": "ciclo apertura clausura",
+        "weight": 2
+      },
+      {
+        "word": "desgaste prospectivo",
+        "weight": 2
+      },
+      {
+        "word": "paralisis por familiaridad",
+        "weight": 2
+      },
+      {
+        "word": "reduccion de curiosidad",
+        "weight": 2
+      },
+      {
+        "word": "repeticion performativa",
+        "weight": 2
+      },
+      {
+        "word": "ritual de reconocimiento",
+        "weight": 2
+      },
+      {
+        "word": "suspension del deseo",
+        "weight": 2
+      },
+      {
+        "word": "tension ver-saber",
+        "weight": 2
+      },
+      {
+        "word": "alrededor",
+        "weight": 1
+      },
+      {
+        "word": "conocer",
+        "weight": 1
+      },
+      {
+        "word": "debilidad",
+        "weight": 1
+      },
+      {
+        "word": "estudiarlo",
+        "weight": 1
+      },
+      {
+        "word": "igual",
+        "weight": 1
+      },
+      {
+        "word": "mirar",
+        "weight": 1
+      },
+      {
+        "word": "orientarse",
+        "weight": 1
+      },
+      {
+        "word": "pie",
+        "weight": 1
+      },
+      {
+        "word": "pregunta",
+        "weight": 1
+      },
+      {
+        "word": "terminar",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-28",
+    "month": "2026-03",
+    "file": "textos/2026-03-28.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "un poquito más",
+    "analysis": {
+      "poet": "Soldead Castresana",
+      "poem_title": "Lo normal",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "acumulacion",
+        "weight": 3
+      },
+      {
+        "word": "desgaste",
+        "weight": 3
+      },
+      {
+        "word": "perdida de agencia",
+        "weight": 3
+      },
+      {
+        "word": "potencia de lo minimo",
+        "weight": 3
+      },
+      {
+        "word": "umbralizacion",
+        "weight": 3
+      },
+      {
+        "word": "contrapunto",
+        "weight": 2
+      },
+      {
+        "word": "dilucion",
+        "weight": 2
+      },
+      {
+        "word": "economia del gesto",
+        "weight": 2
+      },
+      {
+        "word": "gradualidad",
+        "weight": 2
+      },
+      {
+        "word": "repeticion",
+        "weight": 2
+      },
+      {
+        "word": "tension lectura-cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "abuelo",
+        "weight": 1
+      },
+      {
+        "word": "cansancio",
+        "weight": 1
+      },
+      {
+        "word": "dormir",
+        "weight": 1
+      },
+      {
+        "word": "edad",
+        "weight": 1
+      },
+      {
+        "word": "libros",
+        "weight": 1
+      },
+      {
+        "word": "muerte",
+        "weight": 1
+      },
+      {
+        "word": "neumonia",
+        "weight": 1
+      },
+      {
+        "word": "olvido",
+        "weight": 1
+      },
+      {
+        "word": "pequeno",
+        "weight": 1
+      },
+      {
+        "word": "poquito",
+        "weight": 1
+      },
+      {
+        "word": "sueno",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-27",
+    "month": "2026-03",
+    "file": "textos/2026-03-27.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "estaba buscando proteína",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "La calma de las cosas",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "alienacion del deseo y la necesidad",
+        "weight": 3
+      },
+      {
+        "word": "consumo como sometimiento corporal",
+        "weight": 3
+      },
+      {
+        "word": "disconcordancia somatica",
+        "weight": 3
+      },
+      {
+        "word": "dulzura como condicion de acceso",
+        "weight": 3
+      },
+      {
+        "word": "nutricion mediada por seduccion",
+        "weight": 3
+      },
+      {
+        "word": "violencia simbolica",
+        "weight": 3
+      },
+      {
+        "word": "atraccion enmascarante",
+        "weight": 2
+      },
+      {
+        "word": "intercambio afecto-alimento",
+        "weight": 2
+      },
+      {
+        "word": "intoxicacion metabolica",
+        "weight": 2
+      },
+      {
+        "word": "normalizacion del enmascaramiento",
+        "weight": 2
+      },
+      {
+        "word": "sobrealimentacion",
+        "weight": 2
+      },
+      {
+        "word": "aderezo",
+        "weight": 1
+      },
+      {
+        "word": "boca",
+        "weight": 1
+      },
+      {
+        "word": "comer",
+        "weight": 1
+      },
+      {
+        "word": "dulce",
+        "weight": 1
+      },
+      {
+        "word": "estomago",
+        "weight": 1
+      },
+      {
+        "word": "gusto",
+        "weight": 1
+      },
+      {
+        "word": "ingesta",
+        "weight": 1
+      },
+      {
+        "word": "malestar",
+        "weight": 1
+      },
+      {
+        "word": "proteina",
+        "weight": 1
+      },
+      {
+        "word": "sabor",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-26",
+    "month": "2026-03",
+    "file": "textos/2026-03-26.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "una de las cruces",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Hija única",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "agencia del signo funerario",
+        "weight": 3
+      },
+      {
+        "word": "anclaje en lo alto",
+        "weight": 3
+      },
+      {
+        "word": "epistemologia del rastro",
+        "weight": 3
+      },
+      {
+        "word": "inversion de sujeto",
+        "weight": 3
+      },
+      {
+        "word": "singularizacion frente al conjunto",
+        "weight": 3
+      },
+      {
+        "word": "conservacion por contacto",
+        "weight": 2
+      },
+      {
+        "word": "incertidumbre de pertenencia",
+        "weight": 2
+      },
+      {
+        "word": "materializacion de la memoria",
+        "weight": 2
+      },
+      {
+        "word": "seleccion performativa",
+        "weight": 2
+      },
+      {
+        "word": "tension cumbre/falda",
+        "weight": 2
+      },
+      {
+        "word": "traza como testimonio",
+        "weight": 2
+      },
+      {
+        "word": "conservar",
+        "weight": 1
+      },
+      {
+        "word": "cruces",
+        "weight": 1
+      },
+      {
+        "word": "cumbre",
+        "weight": 1
+      },
+      {
+        "word": "falda",
+        "weight": 1
+      },
+      {
+        "word": "huella",
+        "weight": 1
+      },
+      {
+        "word": "reconocer",
+        "weight": 1
+      },
+      {
+        "word": "tocar",
+        "weight": 1
+      },
+      {
+        "word": "tres",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-25",
+    "month": "2026-03",
+    "file": "textos/2026-03-25.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "lo que mereces",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "La noche en que se nos inundó la casa",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "autonomia-lexica",
+        "weight": 3
+      },
+      {
+        "word": "fragmentacion-material",
+        "weight": 3
+      },
+      {
+        "word": "frontera-imaginaria",
+        "weight": 3
+      },
+      {
+        "word": "merecimiento",
+        "weight": 3
+      },
+      {
+        "word": "privacion-de-atencion",
+        "weight": 3
+      },
+      {
+        "word": "distancia-entre-palabras",
+        "weight": 2
+      },
+      {
+        "word": "expectativa-incumplida",
+        "weight": 2
+      },
+      {
+        "word": "materializacion-del-lenguaje",
+        "weight": 2
+      },
+      {
+        "word": "ofrenda-minima",
+        "weight": 2
+      },
+      {
+        "word": "cerca",
+        "weight": 1
+      },
+      {
+        "word": "imaginacion",
+        "weight": 1
+      },
+      {
+        "word": "lectura-atenta",
+        "weight": 1
+      },
+      {
+        "word": "madera",
+        "weight": 1
+      },
+      {
+        "word": "mirada",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "separacion",
+        "weight": 1
+      },
+      {
+        "word": "suelo",
+        "weight": 1
+      },
+      {
+        "word": "trozos",
+        "weight": 1
+      },
+      {
+        "word": "vistazo",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-24",
+    "month": "2026-03",
+    "file": "textos/2026-03-24.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "hablo",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "escena familiar",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "encarnacion",
+        "weight": 3
+      },
+      {
+        "word": "oralidad",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "separacion",
+        "weight": 3
+      },
+      {
+        "word": "subjetivacion",
+        "weight": 3
+      },
+      {
+        "word": "aislamiento",
+        "weight": 2
+      },
+      {
+        "word": "brecha expresion",
+        "weight": 2
+      },
+      {
+        "word": "domesticidad",
+        "weight": 2
+      },
+      {
+        "word": "exclusion",
+        "weight": 2
+      },
+      {
+        "word": "fingimiento",
+        "weight": 2
+      },
+      {
+        "word": "legitimacion",
+        "weight": 2
+      },
+      {
+        "word": "silencio",
+        "weight": 2
+      },
+      {
+        "word": "socializacion",
+        "weight": 2
+      },
+      {
+        "word": "barro",
+        "weight": 1
+      },
+      {
+        "word": "bosque",
+        "weight": 1
+      },
+      {
+        "word": "casita",
+        "weight": 1
+      },
+      {
+        "word": "chicas",
+        "weight": 1
+      },
+      {
+        "word": "hablar",
+        "weight": 1
+      },
+      {
+        "word": "jugar",
+        "weight": 1
+      },
+      {
+        "word": "leer",
+        "weight": 1
+      },
+      {
+        "word": "moras",
+        "weight": 1
+      },
+      {
+        "word": "trenzas",
+        "weight": 1
+      },
+      {
+        "word": "varones",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-23",
+    "month": "2026-03",
+    "file": "textos/2026-03-23.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "la marea",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Mi madre de visita",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "anclaje corporal del lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "desubjetivacion",
+        "weight": 3
+      },
+      {
+        "word": "encarnacion textual",
+        "weight": 3
+      },
+      {
+        "word": "escala no antropocentrica",
+        "weight": 3
+      },
+      {
+        "word": "indiferencia como potencia",
+        "weight": 3
+      },
+      {
+        "word": "absorcion simbolica",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento de agencia",
+        "weight": 2
+      },
+      {
+        "word": "marginalizacion de lo vivido",
+        "weight": 2
+      },
+      {
+        "word": "materialidad del verso",
+        "weight": 2
+      },
+      {
+        "word": "metamorfosis de enunciado",
+        "weight": 2
+      },
+      {
+        "word": "repeticion como ancla",
+        "weight": 2
+      },
+      {
+        "word": "basura",
+        "weight": 1
+      },
+      {
+        "word": "bicho",
+        "weight": 1
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "fatiga",
+        "weight": 1
+      },
+      {
+        "word": "grillo",
+        "weight": 1
+      },
+      {
+        "word": "insecto",
+        "weight": 1
+      },
+      {
+        "word": "madre",
+        "weight": 1
+      },
+      {
+        "word": "marea",
+        "weight": 1
+      },
+      {
+        "word": "mito",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "peces",
+        "weight": 1
+      },
+      {
+        "word": "pez",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      },
+      {
+        "word": "veneno",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-22",
+    "month": "2026-03",
+    "file": "textos/2026-03-22.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "se está llenado",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "las mamás",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "acumulacion",
+        "weight": 3
+      },
+      {
+        "word": "autocensura",
+        "weight": 3
+      },
+      {
+        "word": "contencion precaria",
+        "weight": 3
+      },
+      {
+        "word": "fuga del significado",
+        "weight": 3
+      },
+      {
+        "word": "silencio operativo",
+        "weight": 3
+      },
+      {
+        "word": "umbral nocturno",
+        "weight": 3
+      },
+      {
+        "word": "acumulacion diurna",
+        "weight": 2
+      },
+      {
+        "word": "equilibrio precario",
+        "weight": 2
+      },
+      {
+        "word": "esfuerzo manual",
+        "weight": 2
+      },
+      {
+        "word": "fuga gradual",
+        "weight": 2
+      },
+      {
+        "word": "retencion",
+        "weight": 2
+      },
+      {
+        "word": "tension",
+        "weight": 2
+      },
+      {
+        "word": "agua",
+        "weight": 1
+      },
+      {
+        "word": "balde",
+        "weight": 1
+      },
+      {
+        "word": "derrame",
+        "weight": 1
+      },
+      {
+        "word": "dia",
+        "weight": 1
+      },
+      {
+        "word": "manos",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "voz",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-21",
+    "month": "2026-03",
+    "file": "textos/2026-03-21.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "toco",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Una escultura hecha por un hombre",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "autoridad simbolica masculina",
+        "weight": 3
+      },
+      {
+        "word": "estasis reproductiva",
+        "weight": 3
+      },
+      {
+        "word": "identidad por ausencia",
+        "weight": 3
+      },
+      {
+        "word": "imposibilidad de encuentro",
+        "weight": 3
+      },
+      {
+        "word": "reduccion a objeto",
+        "weight": 3
+      },
+      {
+        "word": "aislamiento relacional",
+        "weight": 2
+      },
+      {
+        "word": "definicion por negacion",
+        "weight": 2
+      },
+      {
+        "word": "enunciacion fragmentada",
+        "weight": 2
+      },
+      {
+        "word": "estetica estereotipada",
+        "weight": 2
+      },
+      {
+        "word": "rechazo performativo",
+        "weight": 2
+      },
+      {
+        "word": "torpeza tactil",
+        "weight": 2
+      },
+      {
+        "word": "ausencia",
+        "weight": 1
+      },
+      {
+        "word": "flores",
+        "weight": 1
+      },
+      {
+        "word": "lazo",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "paloma",
+        "weight": 1
+      },
+      {
+        "word": "prenez de piedra",
+        "weight": 1
+      },
+      {
+        "word": "rapidamente",
+        "weight": 1
+      },
+      {
+        "word": "rechazas",
+        "weight": 1
+      },
+      {
+        "word": "sin yo",
+        "weight": 1
+      },
+      {
+        "word": "solitario",
+        "weight": 1
+      },
+      {
+        "word": "toco",
+        "weight": 1
+      },
+      {
+        "word": "torpemente",
+        "weight": 1
+      },
+      {
+        "word": "virgen",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-20",
+    "month": "2026-03",
+    "file": "textos/2026-03-20.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "espero que no veas eso",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "La Virgen en el mercado",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "encubrimiento por exceso",
+        "weight": 3
+      },
+      {
+        "word": "invisibilidad",
+        "weight": 3
+      },
+      {
+        "word": "negacion como revelacion",
+        "weight": 3
+      },
+      {
+        "word": "performatividad de la modestia",
+        "weight": 3
+      },
+      {
+        "word": "silencio agente",
+        "weight": 3
+      },
+      {
+        "word": "vacio como potencia",
+        "weight": 3
+      },
+      {
+        "word": "acumulacion performativa",
+        "weight": 2
+      },
+      {
+        "word": "confesion reticente",
+        "weight": 2
+      },
+      {
+        "word": "disimulo corporal",
+        "weight": 2
+      },
+      {
+        "word": "enunciacion contradictoria",
+        "weight": 2
+      },
+      {
+        "word": "inmovilidad significativa",
+        "weight": 2
+      },
+      {
+        "word": "reflejo como testigo",
+        "weight": 2
+      },
+      {
+        "word": "tension publico-privado",
+        "weight": 2
+      },
+      {
+        "word": "digo",
+        "weight": 1
+      },
+      {
+        "word": "nada",
+        "weight": 1
+      },
+      {
+        "word": "nadie",
+        "weight": 1
+      },
+      {
+        "word": "no senti",
+        "weight": 1
+      },
+      {
+        "word": "perdi",
+        "weight": 1
+      },
+      {
+        "word": "pinatas",
+        "weight": 1
+      },
+      {
+        "word": "puestito",
+        "weight": 1
+      },
+      {
+        "word": "purpurina",
+        "weight": 1
+      },
+      {
+        "word": "rosas",
+        "weight": 1
+      },
+      {
+        "word": "soledad",
+        "weight": 1
+      },
+      {
+        "word": "virgen",
+        "weight": 1
+      },
+      {
+        "word": "vitrina",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-19",
+    "month": "2026-03",
+    "file": "textos/2026-03-19.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "¿cómo estás?",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "De cuando visité por primera vez el Templo Mayor",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "autopercepcion comparativa",
+        "weight": 3
+      },
+      {
+        "word": "interpelacion",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje autorreflexivo",
+        "weight": 3
+      },
+      {
+        "word": "reapropiacion del poder",
+        "weight": 3
+      },
+      {
+        "word": "transmision violenta",
+        "weight": 3
+      },
+      {
+        "word": "vision como conocimiento",
+        "weight": 3
+      },
+      {
+        "word": "aprendizaje autonomo",
+        "weight": 2
+      },
+      {
+        "word": "confrontacion filial",
+        "weight": 2
+      },
+      {
+        "word": "desidentificacion",
+        "weight": 2
+      },
+      {
+        "word": "performatividad pregunta",
+        "weight": 2
+      },
+      {
+        "word": "simbolismo corporeo",
+        "weight": 2
+      },
+      {
+        "word": "violencia simbolica",
+        "weight": 2
+      },
+      {
+        "word": "craneos",
+        "weight": 1
+      },
+      {
+        "word": "dios",
+        "weight": 1
+      },
+      {
+        "word": "diosa",
+        "weight": 1
+      },
+      {
+        "word": "hija",
+        "weight": 1
+      },
+      {
+        "word": "madre",
+        "weight": 1
+      },
+      {
+        "word": "martillo",
+        "weight": 1
+      },
+      {
+        "word": "orejas",
+        "weight": 1
+      },
+      {
+        "word": "sangrar",
+        "weight": 1
+      },
+      {
+        "word": "serpientes",
+        "weight": 1
+      },
+      {
+        "word": "virgen",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-18",
+    "month": "2026-03",
+    "file": "textos/2026-03-18.txt",
+    "my_poem_title": "torpe",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 22",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-22.pdf"
+    },
+    "keywords": [
+      {
+        "word": "delegacion de responsabilidad",
+        "weight": 3
+      },
+      {
+        "word": "economia de la obsolescencia",
+        "weight": 3
+      },
+      {
+        "word": "industrializacion del cuidado",
+        "weight": 3
+      },
+      {
+        "word": "inercia performativa",
+        "weight": 3
+      },
+      {
+        "word": "ritual de expiacion",
+        "weight": 3
+      },
+      {
+        "word": "subversion del valor de integridad",
+        "weight": 3
+      },
+      {
+        "word": "automatizacion del habito",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento simbolico",
+        "weight": 2
+      },
+      {
+        "word": "economia afectiva",
+        "weight": 2
+      },
+      {
+        "word": "falla comunicativa",
+        "weight": 2
+      },
+      {
+        "word": "fragmentacion de la atencion",
+        "weight": 2
+      },
+      {
+        "word": "habitualizacion del error",
+        "weight": 2
+      },
+      {
+        "word": "ritualizacion",
+        "weight": 2
+      },
+      {
+        "word": "tension apariencia compromiso",
+        "weight": 2
+      },
+      {
+        "word": "arreglarlo",
+        "weight": 1
+      },
+      {
+        "word": "comprar reemplazo",
+        "weight": 1
+      },
+      {
+        "word": "dejar caer",
+        "weight": 1
+      },
+      {
+        "word": "intentar",
+        "weight": 1
+      },
+      {
+        "word": "pedir comida para llevar",
+        "weight": 1
+      },
+      {
+        "word": "pedir disculpas",
+        "weight": 1
+      },
+      {
+        "word": "romper",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-17",
+    "month": "2026-03",
+    "file": "textos/2026-03-17.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "acá está mi mano",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 16",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-16.pdf"
+    },
+    "keywords": [
+      {
+        "word": "ausencia performativa",
+        "weight": 3
+      },
+      {
+        "word": "dependencia ontologica",
+        "weight": 3
+      },
+      {
+        "word": "inversion realidad lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "soberania del discurso",
+        "weight": 3
+      },
+      {
+        "word": "enunciacion",
+        "weight": 2
+      },
+      {
+        "word": "materializacion",
+        "weight": 2
+      },
+      {
+        "word": "relacion",
+        "weight": 2
+      },
+      {
+        "word": "renuncia",
+        "weight": 2
+      },
+      {
+        "word": "tacto",
+        "weight": 2
+      },
+      {
+        "word": "trayectoria",
+        "weight": 2
+      },
+      {
+        "word": "andar",
+        "weight": 1
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      },
+      {
+        "word": "decir",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "real",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-16",
+    "month": "2026-03",
+    "file": "textos/2026-03-16.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "¿escuchas mi guitarra?",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 15",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-15.pdf"
+    },
+    "keywords": [
+      {
+        "word": "distribucion identitaria",
+        "weight": 3
+      },
+      {
+        "word": "enunciacion",
+        "weight": 3
+      },
+      {
+        "word": "mutualidad",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "posesion invertida",
+        "weight": 3
+      },
+      {
+        "word": "voz instrumental",
+        "weight": 3
+      },
+      {
+        "word": "difusion de limites",
+        "weight": 2
+      },
+      {
+        "word": "direccion comunicativa",
+        "weight": 2
+      },
+      {
+        "word": "intimidad performativa",
+        "weight": 2
+      },
+      {
+        "word": "reciprocidad",
+        "weight": 2
+      },
+      {
+        "word": "tension sujeto-otro",
+        "weight": 2
+      },
+      {
+        "word": "acto",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "escuchar",
+        "weight": 1
+      },
+      {
+        "word": "gesto",
+        "weight": 1
+      },
+      {
+        "word": "guitarra",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "regalo",
+        "weight": 1
+      },
+      {
+        "word": "sonido",
+        "weight": 1
+      },
+      {
+        "word": "tu",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-15",
+    "month": "2026-03",
+    "file": "textos/2026-03-15.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "las sábanas",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 14",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-14.pdf"
+    },
+    "keywords": [
+      {
+        "word": "alteridad",
+        "weight": 3
+      },
+      {
+        "word": "anestesia",
+        "weight": 3
+      },
+      {
+        "word": "encubrimiento",
+        "weight": 3
+      },
+      {
+        "word": "negacion",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "simulacion",
+        "weight": 3
+      },
+      {
+        "word": "coartada",
+        "weight": 2
+      },
+      {
+        "word": "disociacion",
+        "weight": 2
+      },
+      {
+        "word": "mimetismo",
+        "weight": 2
+      },
+      {
+        "word": "ocultamiento",
+        "weight": 2
+      },
+      {
+        "word": "suspension",
+        "weight": 2
+      },
+      {
+        "word": "tension identitaria",
+        "weight": 2
+      },
+      {
+        "word": "androides",
+        "weight": 1
+      },
+      {
+        "word": "dormir",
+        "weight": 1
+      },
+      {
+        "word": "empatia",
+        "weight": 1
+      },
+      {
+        "word": "humano",
+        "weight": 1
+      },
+      {
+        "word": "insomnio",
+        "weight": 1
+      },
+      {
+        "word": "inteligencia",
+        "weight": 1
+      },
+      {
+        "word": "olvidar",
+        "weight": 1
+      },
+      {
+        "word": "sabanas",
+        "weight": 1
+      },
+      {
+        "word": "sadismo",
+        "weight": 1
+      },
+      {
+        "word": "suave",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-14",
+    "month": "2026-03",
+    "file": "textos/2026-03-14.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "las sabanas no son la capa",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 13",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-13.pdf"
+    },
+    "keywords": [
+      {
+        "word": "centralidad somatica",
+        "weight": 3
+      },
+      {
+        "word": "desvinculacion trabajo-afecto",
+        "weight": 3
+      },
+      {
+        "word": "fragilidad del refugio",
+        "weight": 3
+      },
+      {
+        "word": "inversion perceptiva",
+        "weight": 3
+      },
+      {
+        "word": "materialidad del consuelo",
+        "weight": 3
+      },
+      {
+        "word": "temporalidad normativa",
+        "weight": 3
+      },
+      {
+        "word": "dialectica luz-oscuridad",
+        "weight": 2
+      },
+      {
+        "word": "incertidumbre normativa",
+        "weight": 2
+      },
+      {
+        "word": "performatividad del descanso",
+        "weight": 2
+      },
+      {
+        "word": "sustitucion afectiva por objetos",
+        "weight": 2
+      },
+      {
+        "word": "tension ocio-productividad",
+        "weight": 2
+      },
+      {
+        "word": "vigilancia disciplinaria",
+        "weight": 2
+      },
+      {
+        "word": "amor",
+        "weight": 1
+      },
+      {
+        "word": "culo",
+        "weight": 1
+      },
+      {
+        "word": "luz",
+        "weight": 1
+      },
+      {
+        "word": "oscuridad",
+        "weight": 1
+      },
+      {
+        "word": "reloj despertador",
+        "weight": 1
+      },
+      {
+        "word": "sabanas",
+        "weight": 1
+      },
+      {
+        "word": "sofa",
+        "weight": 1
+      },
+      {
+        "word": "trabajar",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-13",
+    "month": "2026-03",
+    "file": "textos/2026-03-13.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "esta palabra",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 12",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-12.pdf"
+    },
+    "keywords": [
+      {
+        "word": "encapsulamiento del sentido",
+        "weight": 3
+      },
+      {
+        "word": "gravedad semantica",
+        "weight": 3
+      },
+      {
+        "word": "inversion del valor del signo",
+        "weight": 3
+      },
+      {
+        "word": "materialidad del signo",
+        "weight": 3
+      },
+      {
+        "word": "opacidad comunicativa",
+        "weight": 3
+      },
+      {
+        "word": "toxicidad semantica",
+        "weight": 3
+      },
+      {
+        "word": "autocensura",
+        "weight": 2
+      },
+      {
+        "word": "contencion",
+        "weight": 2
+      },
+      {
+        "word": "norma de prohibicion",
+        "weight": 2
+      },
+      {
+        "word": "ritual de llenado",
+        "weight": 2
+      },
+      {
+        "word": "tension visibilidad ocultamiento",
+        "weight": 2
+      },
+      {
+        "word": "transferencia de materia",
+        "weight": 2
+      },
+      {
+        "word": "arena",
+        "weight": 1
+      },
+      {
+        "word": "botella",
+        "weight": 1
+      },
+      {
+        "word": "consumo",
+        "weight": 1
+      },
+      {
+        "word": "llenar",
+        "weight": 1
+      },
+      {
+        "word": "oscura",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "papel",
+        "weight": 1
+      },
+      {
+        "word": "pesada",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-12",
+    "month": "2026-03",
+    "file": "textos/2026-03-12.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "la lista se alarga",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 11",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-11.pdf"
+    },
+    "keywords": [
+      {
+        "word": "biopolitica",
+        "weight": 3
+      },
+      {
+        "word": "captura de la libertad",
+        "weight": 3
+      },
+      {
+        "word": "inversion temporal",
+        "weight": 3
+      },
+      {
+        "word": "inversion valoral",
+        "weight": 3
+      },
+      {
+        "word": "normalizacion",
+        "weight": 3
+      },
+      {
+        "word": "performatividad de lo humano",
+        "weight": 3
+      },
+      {
+        "word": "autenticidad",
+        "weight": 2
+      },
+      {
+        "word": "brutalidad",
+        "weight": 2
+      },
+      {
+        "word": "constriccion",
+        "weight": 2
+      },
+      {
+        "word": "empatia",
+        "weight": 2
+      },
+      {
+        "word": "enumeracion burocratica",
+        "weight": 2
+      },
+      {
+        "word": "norma",
+        "weight": 2
+      },
+      {
+        "word": "reduccion vital",
+        "weight": 2
+      },
+      {
+        "word": "sospecha",
+        "weight": 2
+      },
+      {
+        "word": "tension semantica",
+        "weight": 2
+      },
+      {
+        "word": "verificacion",
+        "weight": 2
+      },
+      {
+        "word": "alargamiento",
+        "weight": 1
+      },
+      {
+        "word": "libertad",
+        "weight": 1
+      },
+      {
+        "word": "lista",
+        "weight": 1
+      },
+      {
+        "word": "manana",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "pequenez",
+        "weight": 1
+      },
+      {
+        "word": "prisionera",
+        "weight": 1
+      },
+      {
+        "word": "registro",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-11",
+    "month": "2026-03",
+    "file": "textos/2026-03-11.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "es una pregunta retórica",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 10",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-10.pdf"
+    },
+    "keywords": [
+      {
+        "word": "economia-del-deseo",
+        "weight": 3
+      },
+      {
+        "word": "inversion-del-valor",
+        "weight": 3
+      },
+      {
+        "word": "memorializacion-erotica",
+        "weight": 3
+      },
+      {
+        "word": "objetivacion-como-legado",
+        "weight": 3
+      },
+      {
+        "word": "sustitucion-linguistica-por-corporea",
+        "weight": 3
+      },
+      {
+        "word": "humor-negro",
+        "weight": 2
+      },
+      {
+        "word": "identidad-fragmentada",
+        "weight": 2
+      },
+      {
+        "word": "ironizacion",
+        "weight": 2
+      },
+      {
+        "word": "juego-linguistico",
+        "weight": 2
+      },
+      {
+        "word": "mercantilizacion-del-cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "boca",
+        "weight": 1
+      },
+      {
+        "word": "borrador",
+        "weight": 1
+      },
+      {
+        "word": "culo",
+        "weight": 1
+      },
+      {
+        "word": "foto",
+        "weight": 1
+      },
+      {
+        "word": "lapida",
+        "weight": 1
+      },
+      {
+        "word": "pene",
+        "weight": 1
+      },
+      {
+        "word": "piernas",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      },
+      {
+        "word": "pregunta-retorica",
+        "weight": 1
+      },
+      {
+        "word": "senos",
+        "weight": 1
+      },
+      {
+        "word": "siesta",
+        "weight": 1
+      },
+      {
+        "word": "trabajo",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-10",
+    "month": "2026-03",
+    "file": "textos/2026-03-10.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "algunos no están destinados",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 9",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-9.pdf"
+    },
+    "keywords": [
+      {
+        "word": "asignacion normativa",
+        "weight": 3
+      },
+      {
+        "word": "evasion del conflicto",
+        "weight": 3
+      },
+      {
+        "word": "instrumentalizacion del cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "inversion de valores",
+        "weight": 3
+      },
+      {
+        "word": "ritualizacion",
+        "weight": 3
+      },
+      {
+        "word": "erotizacion del trabajo",
+        "weight": 2
+      },
+      {
+        "word": "exencion normativa",
+        "weight": 2
+      },
+      {
+        "word": "mercantilizacion de la intimidad",
+        "weight": 2
+      },
+      {
+        "word": "performatividad del rol",
+        "weight": 2
+      },
+      {
+        "word": "redistribucion del riesgo",
+        "weight": 2
+      },
+      {
+        "word": "tension deber deseo",
+        "weight": 2
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "destinado",
+        "weight": 1
+      },
+      {
+        "word": "guerra",
+        "weight": 1
+      },
+      {
+        "word": "guerreros",
+        "weight": 1
+      },
+      {
+        "word": "sexo",
+        "weight": 1
+      },
+      {
+        "word": "tres veces al dia",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-09",
+    "month": "2026-03",
+    "file": "textos/2026-03-09.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "ya tuve lo que quiero",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 8",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-8.pdf"
+    },
+    "keywords": [
+      {
+        "word": "cesion del limite",
+        "weight": 3
+      },
+      {
+        "word": "mercantilizacion",
+        "weight": 3
+      },
+      {
+        "word": "renuncia performativa",
+        "weight": 3
+      },
+      {
+        "word": "silencio performativo",
+        "weight": 3
+      },
+      {
+        "word": "transferencia de soberania",
+        "weight": 3
+      },
+      {
+        "word": "actuacion",
+        "weight": 2
+      },
+      {
+        "word": "despedida ritualizada",
+        "weight": 2
+      },
+      {
+        "word": "intercambio",
+        "weight": 2
+      },
+      {
+        "word": "subordinacion",
+        "weight": 2
+      },
+      {
+        "word": "teatralizacion del cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "usurpacion de voz",
+        "weight": 2
+      },
+      {
+        "word": "vigilancia",
+        "weight": 2
+      },
+      {
+        "word": "ciao",
+        "weight": 1
+      },
+      {
+        "word": "dinero",
+        "weight": 1
+      },
+      {
+        "word": "empleo",
+        "weight": 1
+      },
+      {
+        "word": "jefe",
+        "weight": 1
+      },
+      {
+        "word": "paso",
+        "weight": 1
+      },
+      {
+        "word": "rastreo",
+        "weight": 1
+      },
+      {
+        "word": "risa",
+        "weight": 1
+      },
+      {
+        "word": "ruso",
+        "weight": 1
+      },
+      {
+        "word": "suplantacion",
+        "weight": 1
+      },
+      {
+        "word": "umbral",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-08",
+    "month": "2026-03",
+    "file": "textos/2026-03-08.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "mi pene",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 7",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-7.pdf"
+    },
+    "keywords": [
+      {
+        "word": "cuerpo como soporte",
+        "weight": 3
+      },
+      {
+        "word": "destruccion como creacion",
+        "weight": 3
+      },
+      {
+        "word": "indeterminacion ontologica",
+        "weight": 3
+      },
+      {
+        "word": "materialidad del signo",
+        "weight": 3
+      },
+      {
+        "word": "performatividad genital",
+        "weight": 3
+      },
+      {
+        "word": "plegamiento identitario",
+        "weight": 3
+      },
+      {
+        "word": "ambivalencia erotica",
+        "weight": 2
+      },
+      {
+        "word": "fallo de clasificacion",
+        "weight": 2
+      },
+      {
+        "word": "hibridacion corporal",
+        "weight": 2
+      },
+      {
+        "word": "iteracion performativa",
+        "weight": 2
+      },
+      {
+        "word": "suspension del sentido",
+        "weight": 2
+      },
+      {
+        "word": "tension del gesto",
+        "weight": 2
+      },
+      {
+        "word": "desplegar",
+        "weight": 1
+      },
+      {
+        "word": "destruir",
+        "weight": 1
+      },
+      {
+        "word": "detenerse",
+        "weight": 1
+      },
+      {
+        "word": "gato",
+        "weight": 1
+      },
+      {
+        "word": "humano",
+        "weight": 1
+      },
+      {
+        "word": "origami",
+        "weight": 1
+      },
+      {
+        "word": "papel arrugado",
+        "weight": 1
+      },
+      {
+        "word": "pene",
+        "weight": 1
+      },
+      {
+        "word": "reinventar",
+        "weight": 1
+      },
+      {
+        "word": "robotico",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-07",
+    "month": "2026-03",
+    "file": "textos/2026-03-07.txt",
+    "my_poem_title": "el asiento de la ventana",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 6",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-6.pdf"
+    },
+    "keywords": [
+      {
+        "word": "autodeterminacion",
+        "weight": 3
+      },
+      {
+        "word": "enmarcamiento",
+        "weight": 3
+      },
+      {
+        "word": "performatividad",
+        "weight": 3
+      },
+      {
+        "word": "soberania",
+        "weight": 3
+      },
+      {
+        "word": "sujecion",
+        "weight": 3
+      },
+      {
+        "word": "vacio-como-potencia",
+        "weight": 3
+      },
+      {
+        "word": "control-intimo",
+        "weight": 2
+      },
+      {
+        "word": "identidad",
+        "weight": 2
+      },
+      {
+        "word": "limite",
+        "weight": 2
+      },
+      {
+        "word": "obediencia",
+        "weight": 2
+      },
+      {
+        "word": "percepcion",
+        "weight": 2
+      },
+      {
+        "word": "ritual-corporal",
+        "weight": 2
+      },
+      {
+        "word": "suspension",
+        "weight": 2
+      },
+      {
+        "word": "vigilancia",
+        "weight": 2
+      },
+      {
+        "word": "asiento",
+        "weight": 1
+      },
+      {
+        "word": "cinturon",
+        "weight": 1
+      },
+      {
+        "word": "luz",
+        "weight": 1
+      },
+      {
+        "word": "nada",
+        "weight": 1
+      },
+      {
+        "word": "nubes",
+        "weight": 1
+      },
+      {
+        "word": "orden",
+        "weight": 1
+      },
+      {
+        "word": "reino",
+        "weight": 1
+      },
+      {
+        "word": "ventana",
+        "weight": 1
+      },
+      {
+        "word": "ver",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-06",
+    "month": "2026-03",
+    "file": "textos/2026-03-06.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "tan excitado",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 5",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-5.pdf"
+    },
+    "keywords": [
+      {
+        "word": "autoestigma",
+        "weight": 3
+      },
+      {
+        "word": "incertidumbre identitaria",
+        "weight": 3
+      },
+      {
+        "word": "intimidad vigilada",
+        "weight": 3
+      },
+      {
+        "word": "liberacion como condena",
+        "weight": 3
+      },
+      {
+        "word": "normatividad",
+        "weight": 3
+      },
+      {
+        "word": "performatividad corporal",
+        "weight": 3
+      },
+      {
+        "word": "autoobservacion",
+        "weight": 2
+      },
+      {
+        "word": "culpabilizacion",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento de sentido",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "juicio por conducta",
+        "weight": 2
+      },
+      {
+        "word": "ocultamiento",
+        "weight": 2
+      },
+      {
+        "word": "tension placer sancion",
+        "weight": 2
+      },
+      {
+        "word": "andrillo",
+        "weight": 1
+      },
+      {
+        "word": "autoerotismo",
+        "weight": 1
+      },
+      {
+        "word": "buho",
+        "weight": 1
+      },
+      {
+        "word": "comportamiento",
+        "weight": 1
+      },
+      {
+        "word": "condena",
+        "weight": 1
+      },
+      {
+        "word": "decepcion",
+        "weight": 1
+      },
+      {
+        "word": "excitacion",
+        "weight": 1
+      },
+      {
+        "word": "interrogacion",
+        "weight": 1
+      },
+      {
+        "word": "jardin",
+        "weight": 1
+      },
+      {
+        "word": "prueba de turing",
+        "weight": 1
+      },
+      {
+        "word": "solo",
+        "weight": 1
+      },
+      {
+        "word": "tocarme",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-05",
+    "month": "2026-03",
+    "file": "textos/2026-03-05.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "mi erección",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 4",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-4.pdf"
+    },
+    "keywords": [
+      {
+        "word": "abstinencia performativa",
+        "weight": 3
+      },
+      {
+        "word": "ausencia como presencia",
+        "weight": 3
+      },
+      {
+        "word": "autenticidad performativa",
+        "weight": 3
+      },
+      {
+        "word": "erotizacion representacional",
+        "weight": 3
+      },
+      {
+        "word": "objetualizacion del otro",
+        "weight": 3
+      },
+      {
+        "word": "plegamiento temporal",
+        "weight": 3
+      },
+      {
+        "word": "desplazamiento del deseo",
+        "weight": 2
+      },
+      {
+        "word": "economia del objeto",
+        "weight": 2
+      },
+      {
+        "word": "ficcionamiento corporal",
+        "weight": 2
+      },
+      {
+        "word": "inhibicion verbal",
+        "weight": 2
+      },
+      {
+        "word": "mediacion imaginaria",
+        "weight": 2
+      },
+      {
+        "word": "tension pasado-futuro",
+        "weight": 2
+      },
+      {
+        "word": "acariciar",
+        "weight": 1
+      },
+      {
+        "word": "boca",
+        "weight": 1
+      },
+      {
+        "word": "buho",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "ereccion",
+        "weight": 1
+      },
+      {
+        "word": "mente",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-04",
+    "month": "2026-03",
+    "file": "textos/2026-03-04.txt",
+    "my_poem_title": "el año 2026",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 3",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-3.pdf"
+    },
+    "keywords": [
+      {
+        "word": "certificacion performativa",
+        "weight": 3
+      },
+      {
+        "word": "cuantificacion",
+        "weight": 3
+      },
+      {
+        "word": "eros como pregunta",
+        "weight": 3
+      },
+      {
+        "word": "pixelacion del cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "totalizacion como silenciamiento",
+        "weight": 3
+      },
+      {
+        "word": "control burocratico",
+        "weight": 2
+      },
+      {
+        "word": "incredulidad performatica",
+        "weight": 2
+      },
+      {
+        "word": "negacion de la intimidad",
+        "weight": 2
+      },
+      {
+        "word": "pregunta como ritual",
+        "weight": 2
+      },
+      {
+        "word": "reduccion tecnologica",
+        "weight": 2
+      },
+      {
+        "word": "saturacion informativa",
+        "weight": 2
+      },
+      {
+        "word": "tension identitaria",
+        "weight": 2
+      },
+      {
+        "word": "andrillos",
+        "weight": 1
+      },
+      {
+        "word": "animal",
+        "weight": 1
+      },
+      {
+        "word": "asesinar",
+        "weight": 1
+      },
+      {
+        "word": "ave",
+        "weight": 1
+      },
+      {
+        "word": "chupada",
+        "weight": 1
+      },
+      {
+        "word": "funcionario",
+        "weight": 1
+      },
+      {
+        "word": "gobierno",
+        "weight": 1
+      },
+      {
+        "word": "pixeles",
+        "weight": 1
+      },
+      {
+        "word": "probada",
+        "weight": 1
+      },
+      {
+        "word": "respuestas",
+        "weight": 1
+      },
+      {
+        "word": "tienda",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-03",
+    "month": "2026-03",
+    "file": "textos/2026-03-03.txt",
+    "my_poem_title": "guitarra",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 2",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-2.pdf"
+    },
+    "keywords": [
+      {
+        "word": "conservacion como acto",
+        "weight": 3
+      },
+      {
+        "word": "desplazamiento de la mirada",
+        "weight": 3
+      },
+      {
+        "word": "inversion del uso",
+        "weight": 3
+      },
+      {
+        "word": "potencialidad retenida",
+        "weight": 3
+      },
+      {
+        "word": "retencion gestual",
+        "weight": 3
+      },
+      {
+        "word": "silencio como presencia",
+        "weight": 3
+      },
+      {
+        "word": "contencion material",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento de valor",
+        "weight": 2
+      },
+      {
+        "word": "ruptura por la marea",
+        "weight": 2
+      },
+      {
+        "word": "suspension del gesto",
+        "weight": 2
+      },
+      {
+        "word": "tension uso/produccion",
+        "weight": 2
+      },
+      {
+        "word": "agua",
+        "weight": 1
+      },
+      {
+        "word": "boligrafo",
+        "weight": 1
+      },
+      {
+        "word": "cuerdas",
+        "weight": 1
+      },
+      {
+        "word": "embotellar",
+        "weight": 1
+      },
+      {
+        "word": "enfocar",
+        "weight": 1
+      },
+      {
+        "word": "fabricar",
+        "weight": 1
+      },
+      {
+        "word": "fotos",
+        "weight": 1
+      },
+      {
+        "word": "lentes",
+        "weight": 1
+      },
+      {
+        "word": "libros",
+        "weight": 1
+      },
+      {
+        "word": "marea",
+        "weight": 1
+      },
+      {
+        "word": "musica",
+        "weight": 1
+      },
+      {
+        "word": "paginas",
+        "weight": 1
+      },
+      {
+        "word": "tinta",
+        "weight": 1
+      },
+      {
+        "word": "tocar",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-03-02",
+    "month": "2026-03",
+    "file": "textos/2026-03-02.txt",
+    "my_poem_title": "ventilador",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Phillip K. Dick",
+      "poem_title": "Capítulo 1",
+      "poem_snippet": "",
+      "book_title": "¿Sueñan los androides con ovejas eléctricas?",
+      "pdf": "/data/pdfs/¿Sueñan-los-androides-con-ovejas-eléctricas?/Capítulo-1.pdf"
+    },
+    "keywords": [
+      {
+        "word": "desecacion vital",
+        "weight": 3
+      },
+      {
+        "word": "desplazamiento afectivo",
+        "weight": 3
+      },
+      {
+        "word": "instrumentalizacion del cuidado",
+        "weight": 3
+      },
+      {
+        "word": "mediacion tecnica del cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "objetualizacion del deseo",
+        "weight": 3
+      },
+      {
+        "word": "distancia corporal",
+        "weight": 2
+      },
+      {
+        "word": "enajenacion cotidiana",
+        "weight": 2
+      },
+      {
+        "word": "erosion lenta",
+        "weight": 2
+      },
+      {
+        "word": "ritual domestico",
+        "weight": 2
+      },
+      {
+        "word": "separacion atmosferica",
+        "weight": 2
+      },
+      {
+        "word": "tension entre funcion y deseo",
+        "weight": 2
+      },
+      {
+        "word": "aire caliente",
+        "weight": 1
+      },
+      {
+        "word": "cama",
+        "weight": 1
+      },
+      {
+        "word": "girar",
+        "weight": 1
+      },
+      {
+        "word": "humedad",
+        "weight": 1
+      },
+      {
+        "word": "maquina",
+        "weight": 1
+      },
+      {
+        "word": "ropa",
+        "weight": 1
+      },
+      {
+        "word": "secar",
+        "weight": 1
+      },
+      {
+        "word": "toque",
+        "weight": 1
+      },
+      {
+        "word": "ventilador",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-01",
     "month": "2026-03",
     "file": "textos/2026-03-01.txt",

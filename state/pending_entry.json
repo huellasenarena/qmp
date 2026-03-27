@@ -1,106 +1,98 @@
 {
-  "date": "2026-03-01",
+  "date": "2026-03-29",
   "month": "2026-03",
-  "file": "textos/2026-03-01.txt",
-  "my_poem_title": "es desierto de atacama",
-  "my_poem_snippet": "",
+  "file": "textos/2026-03-29.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "empiezo con bien pie",
   "analysis": {
-    "poet": "Soledad Castresana",
-    "poem_title": "Para identificar mi cuerpo",
+    "poet": "Soledad",
+    "poem_title": "Memento",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "autorizacion",
+      "word": "cierre epistemico",
       "weight": 3
     },
     {
-      "word": "corporeidad",
+      "word": "economia de la atencion",
       "weight": 3
     },
     {
-      "word": "exclusion",
+      "word": "inercia del conocimiento",
       "weight": 3
     },
     {
-      "word": "frontera",
+      "word": "inversion del inicio",
       "weight": 3
     },
     {
-      "word": "inmovilidad como resistencia",
+      "word": "saturacion de sentido",
       "weight": 3
     },
     {
-      "word": "pertenencia",
+      "word": "simulacro de diferencia",
       "weight": 3
     },
     {
-      "word": "burocracia",
+      "word": "ciclo apertura clausura",
       "weight": 2
     },
     {
-      "word": "clasificacion",
+      "word": "desgaste prospectivo",
       "weight": 2
     },
     {
-      "word": "delimitacion",
+      "word": "paralisis por familiaridad",
       "weight": 2
     },
     {
-      "word": "inspeccion",
+      "word": "reduccion de curiosidad",
       "weight": 2
     },
     {
-      "word": "poder",
+      "word": "repeticion performativa",
       "weight": 2
     },
     {
-      "word": "registro",
+      "word": "ritual de reconocimiento",
       "weight": 2
     },
     {
-      "word": "silencio",
+      "word": "suspension del deseo",
       "weight": 2
     },
     {
-      "word": "verguenza",
+      "word": "tension ver-saber",
       "weight": 2
     },
     {
-      "word": "vigilancia",
-      "weight": 2
-    },
-    {
-      "word": "arena",
+      "word": "alrededor",
       "weight": 1
     },
     {
-      "word": "cesarea",
+      "word": "conocer",
       "weight": 1
     },
     {
-      "word": "cicatriz",
+      "word": "debilidad",
       "weight": 1
     },
     {
-      "word": "formulario",
+      "word": "estudiarlo",
       "weight": 1
     },
     {
-      "word": "grano",
+      "word": "igual",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "mirar",
       "weight": 1
     },
     {
-      "word": "marca",
-      "weight": 1
-    },
-    {
-      "word": "mujer",
+      "word": "orientarse",
       "weight": 1
     },
     {
@@ -108,7 +100,11 @@
       "weight": 1
     },
     {
-      "word": "sala",
+      "word": "pregunta",
+      "weight": 1
+    },
+    {
+      "word": "terminar",
       "weight": 1
     }
   ]
