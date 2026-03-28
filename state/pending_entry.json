@@ -1,90 +1,106 @@
 {
-  "date": "2026-03-30",
+  "date": "2026-03-31",
   "month": "2026-03",
-  "file": "textos/2026-03-30.txt",
+  "file": "textos/2026-03-31.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "yo soy solo el araña",
+  "my_poem_snippet": "como la puesta de sol",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Víctima y verdugo",
+    "poem_title": "Tejedora",
     "poem_snippet": "",
-    "book_title": "Fragmentos"
+    "book_title": "Fragmentaria"
   },
   "keywords": [
     {
-      "word": "apropiacion",
+      "word": "ciclo",
       "weight": 3
     },
     {
-      "word": "autoeleccion",
+      "word": "latencia",
       "weight": 3
     },
     {
-      "word": "autopoiesis",
+      "word": "omision",
       "weight": 3
     },
     {
-      "word": "destruccion creadora",
+      "word": "silencio",
       "weight": 3
     },
     {
-      "word": "marginalidad",
+      "word": "temporalidad",
       "weight": 3
     },
     {
-      "word": "reflexividad",
+      "word": "umbral",
       "weight": 3
-    },
-    {
-      "word": "ambivalencia",
-      "weight": 2
-    },
-    {
-      "word": "depredacion",
-      "weight": 2
     },
     {
       "word": "escritura",
       "weight": 2
     },
     {
-      "word": "lectura",
+      "word": "fragmentacion",
       "weight": 2
     },
     {
-      "word": "tejido",
+      "word": "proximidad",
       "weight": 2
     },
     {
-      "word": "violencia",
+      "word": "reparacion",
       "weight": 2
     },
     {
-      "word": "arana",
+      "word": "retorno",
+      "weight": 2
+    },
+    {
+      "word": "separacion",
+      "weight": 2
+    },
+    {
+      "word": "sutura",
+      "weight": 2
+    },
+    {
+      "word": "aguja",
       "weight": 1
     },
     {
-      "word": "esquina",
+      "word": "amanecer",
       "weight": 1
     },
     {
-      "word": "habitacion",
+      "word": "atardecer",
       "weight": 1
     },
     {
-      "word": "insecto",
+      "word": "heridas",
       "weight": 1
     },
     {
-      "word": "mente",
+      "word": "hilo",
       "weight": 1
     },
     {
-      "word": "poema",
+      "word": "manana",
       "weight": 1
     },
     {
-      "word": "telarana",
+      "word": "palabras",
+      "weight": 1
+    },
+    {
+      "word": "papel",
+      "weight": 1
+    },
+    {
+      "word": "piel",
+      "weight": 1
+    },
+    {
+      "word": "sol",
       "weight": 1
     }
   ]
