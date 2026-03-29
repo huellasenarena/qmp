@@ -1,0 +1,73 @@
+name: Update Entry
+
+# ──────────────────────────────────────────────────────────
+# Uso: Actions → Update Entry → Run workflow
+#   date            : YYYY-MM-DD de la entrada a actualizar
+#   regen_keywords  : true  → regenera keywords con OpenAI
+#                     false → conserva las keywords existentes (default)
+# ──────────────────────────────────────────────────────────
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Fecha a actualizar (YYYY-MM-DD)'
+        required: true
+        type: string
+      regen_keywords:
+        description: 'Regenerar keywords (por defecto: conservar)'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: bash scripts/bootstrap.sh
+
+      - name: Configure Google credentials
+        run: |
+          mkdir -p ~/.config/qmp
+          chmod 700 ~/.config/qmp
+          echo "$QMP_GDOCS_CONFIG_JSON" > ~/.config/qmp/gdocs.json
+          echo "$QMP_GDOCS_SA_KEY_JSON" > ~/.config/qmp/sa_keyfile.json
+          chmod 600 ~/.config/qmp/*.json
+        env:
+          QMP_GDOCS_CONFIG_JSON: ${{ secrets.QMP_GDOCS_CONFIG_JSON }}
+          QMP_GDOCS_SA_KEY_JSON: ${{ secrets.QMP_GDOCS_SA_KEY_JSON }}
+
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Validate date input
+        run: |
+          if ! echo "${{ inputs.date }}" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+            echo "ERROR: fecha inválida: '${{ inputs.date }}' — usa YYYY-MM-DD"
+            exit 1
+          fi
+
+      - name: Update entry
+        run: |
+          ARGS="--date ${{ inputs.date }}"
+          if [ "${{ inputs.regen_keywords }}" = "true" ]; then
+            ARGS="$ARGS --regen-keywords"
+          fi
+          .venv/bin/python scripts/update_entry.py $ARGS
+        env:
+          QMP_GDOCS_SA_KEYFILE: ${{ env.HOME }}/.config/qmp/sa_keyfile.json
+          OPENAI_API_KEY:       ${{ secrets.OPENAI_API_KEY }}
