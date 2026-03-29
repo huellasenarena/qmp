@@ -67,7 +67,7 @@ jobs:
           if [ "${{ inputs.regen_keywords }}" = "true" ]; then
             ARGS="$ARGS --regen-keywords"
           fi
+          export QMP_GDOCS_SA_KEYFILE="$HOME/.config/qmp/sa_keyfile.json"
           .venv/bin/python scripts/update_entry.py $ARGS
         env:
-          QMP_GDOCS_SA_KEYFILE: ${{ env.HOME }}/.config/qmp/sa_keyfile.json
-          OPENAI_API_KEY:       ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
