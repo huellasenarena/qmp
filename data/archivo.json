@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-04-01",
+    "month": "2026-04",
+    "file": "textos/2026-04-01.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "ya no tengo las ganas de escribir hoy",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "",
+      "poem_snippet": "Ya no tengo la piel de ayer",
+      "book_title": "Fragmentaria"
+    },
+    "keywords": [
+      {
+        "word": "ausencia productiva",
+        "weight": 3
+      },
+      {
+        "word": "deseo diferido",
+        "weight": 3
+      },
+      {
+        "word": "desfase temporal",
+        "weight": 3
+      },
+      {
+        "word": "identidad mutable",
+        "weight": 3
+      },
+      {
+        "word": "inversion cronologica",
+        "weight": 3
+      },
+      {
+        "word": "sujeto escindido",
+        "weight": 3
+      },
+      {
+        "word": "ciclo",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento",
+        "weight": 2
+      },
+      {
+        "word": "postergacion",
+        "weight": 2
+      },
+      {
+        "word": "repeticion",
+        "weight": 2
+      },
+      {
+        "word": "ayer",
+        "weight": 1
+      },
+      {
+        "word": "despojado",
+        "weight": 1
+      },
+      {
+        "word": "escribir",
+        "weight": 1
+      },
+      {
+        "word": "ganas",
+        "weight": 1
+      },
+      {
+        "word": "hoy",
+        "weight": 1
+      },
+      {
+        "word": "manana",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "sueno",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-03-31",
     "month": "2026-03",
     "file": "textos/2026-03-31.txt",

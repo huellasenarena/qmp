@@ -1,86 +1,74 @@
 {
-  "date": "2026-03-31",
-  "month": "2026-03",
-  "file": "textos/2026-03-31.txt",
+  "date": "2026-04-01",
+  "month": "2026-04",
+  "file": "textos/2026-04-01.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "como la puesta de sol",
+  "my_poem_snippet": "ya no tengo las ganas de escribir hoy",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Tejedora",
-    "poem_snippet": "",
+    "poem_title": "",
+    "poem_snippet": "Ya no tengo la piel de ayer",
     "book_title": "Fragmentaria"
   },
   "keywords": [
     {
+      "word": "ausencia productiva",
+      "weight": 3
+    },
+    {
+      "word": "deseo diferido",
+      "weight": 3
+    },
+    {
+      "word": "desfase temporal",
+      "weight": 3
+    },
+    {
+      "word": "identidad mutable",
+      "weight": 3
+    },
+    {
+      "word": "inversion cronologica",
+      "weight": 3
+    },
+    {
+      "word": "sujeto escindido",
+      "weight": 3
+    },
+    {
       "word": "ciclo",
-      "weight": 3
-    },
-    {
-      "word": "latencia",
-      "weight": 3
-    },
-    {
-      "word": "omision",
-      "weight": 3
-    },
-    {
-      "word": "silencio",
-      "weight": 3
-    },
-    {
-      "word": "temporalidad",
-      "weight": 3
-    },
-    {
-      "word": "umbral",
-      "weight": 3
-    },
-    {
-      "word": "escritura",
       "weight": 2
     },
     {
-      "word": "fragmentacion",
+      "word": "desplazamiento",
       "weight": 2
     },
     {
-      "word": "proximidad",
+      "word": "postergacion",
       "weight": 2
     },
     {
-      "word": "reparacion",
+      "word": "repeticion",
       "weight": 2
     },
     {
-      "word": "retorno",
-      "weight": 2
-    },
-    {
-      "word": "separacion",
-      "weight": 2
-    },
-    {
-      "word": "sutura",
-      "weight": 2
-    },
-    {
-      "word": "aguja",
+      "word": "ayer",
       "weight": 1
     },
     {
-      "word": "amanecer",
+      "word": "despojado",
       "weight": 1
     },
     {
-      "word": "atardecer",
+      "word": "escribir",
       "weight": 1
     },
     {
-      "word": "heridas",
+      "word": "ganas",
       "weight": 1
     },
     {
-      "word": "hilo",
+      "word": "hoy",
       "weight": 1
     },
     {
@@ -88,19 +76,11 @@
       "weight": 1
     },
     {
-      "word": "palabras",
-      "weight": 1
-    },
-    {
-      "word": "papel",
-      "weight": 1
-    },
-    {
       "word": "piel",
       "weight": 1
     },
     {
-      "word": "sol",
+      "word": "sueno",
       "weight": 1
     }
   ]
