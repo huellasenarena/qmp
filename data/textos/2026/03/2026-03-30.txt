@@ -1,11 +1,10 @@
 FECHA: 2026-03-30
-MY_POEM_TITLE: 
+MY_POEM_TITLE:
 POETA: Violeta Villalba
 POEM_TITLE: Víctima y verdugo
-BOOK_TITLE: Fragmentos
+BOOK_TITLE: Fragmentaria
 
 # POEMA
-
 yo soy solo el araña
 que lee
 y destruye
@@ -17,7 +16,6 @@ en la esquina de una habitación
 intentando escogerse
 
 # POEMA_CITADO
-
 Un pensamiento cae como insecto
 en la telaraña de mi mente.
 Me lanzo sobre él,
@@ -28,7 +26,6 @@ y tirarlo después.
 El problema es que también soy el insecto.
 
 # TEXTO
-
 yo soy solo el araña
 que lee
 y destruye

@@ -1,86 +1,90 @@
 {
-  "date": "2026-04-01",
-  "month": "2026-04",
-  "file": "textos/2026-04-01.txt",
+  "date": "2026-03-30",
+  "month": "2026-03",
+  "file": "textos/2026-03-30.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "ya no tengo las ganas de escribir hoy",
+  "my_poem_snippet": "yo soy solo el araña",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": "Ya no tengo la piel de ayer",
+    "poem_title": "Víctima y verdugo",
+    "poem_snippet": "",
     "book_title": "Fragmentaria"
   },
   "keywords": [
     {
-      "word": "ausencia productiva",
+      "word": "apropiacion",
       "weight": 3
     },
     {
-      "word": "deseo diferido",
+      "word": "autoeleccion",
       "weight": 3
     },
     {
-      "word": "desfase temporal",
+      "word": "autopoiesis",
       "weight": 3
     },
     {
-      "word": "identidad mutable",
+      "word": "destruccion creadora",
       "weight": 3
     },
     {
-      "word": "inversion cronologica",
+      "word": "marginalidad",
       "weight": 3
     },
     {
-      "word": "sujeto escindido",
+      "word": "reflexividad",
       "weight": 3
     },
     {
-      "word": "ciclo",
+      "word": "ambivalencia",
       "weight": 2
     },
     {
-      "word": "desplazamiento",
+      "word": "depredacion",
       "weight": 2
     },
     {
-      "word": "postergacion",
+      "word": "escritura",
       "weight": 2
     },
     {
-      "word": "repeticion",
+      "word": "lectura",
       "weight": 2
     },
     {
-      "word": "ayer",
+      "word": "tejido",
+      "weight": 2
+    },
+    {
+      "word": "violencia",
+      "weight": 2
+    },
+    {
+      "word": "arana",
       "weight": 1
     },
     {
-      "word": "despojado",
+      "word": "esquina",
       "weight": 1
     },
     {
-      "word": "escribir",
+      "word": "habitacion",
       "weight": 1
     },
     {
-      "word": "ganas",
+      "word": "insecto",
       "weight": 1
     },
     {
-      "word": "hoy",
+      "word": "mente",
       "weight": 1
     },
     {
-      "word": "manana",
+      "word": "poema",
       "weight": 1
     },
     {
-      "word": "piel",
-      "weight": 1
-    },
-    {
-      "word": "sueno",
+      "word": "telarana",
       "weight": 1
     }
   ]
