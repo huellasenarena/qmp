@@ -1,90 +1,106 @@
 {
-  "date": "2026-03-30",
-  "month": "2026-03",
-  "file": "textos/2026-03-30.txt",
+  "date": "2026-04-02",
+  "month": "2026-04",
+  "file": "textos/2026-04-02.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "yo soy solo el araña",
+  "my_poem_snippet": "la noche",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Víctima y verdugo",
-    "poem_snippet": "",
+    "poem_title": "",
+    "poem_snippet": "Ya no tengo la piel de ayer",
     "book_title": "Fragmentaria"
   },
   "keywords": [
     {
-      "word": "apropiacion",
+      "word": "conocimiento oblicuo",
       "weight": 3
     },
     {
-      "word": "autoeleccion",
+      "word": "despojamiento identitario",
       "weight": 3
     },
     {
-      "word": "autopoiesis",
+      "word": "evidencia cegadora",
       "weight": 3
     },
     {
-      "word": "destruccion creadora",
+      "word": "ilegibilidad del devenir",
       "weight": 3
     },
     {
-      "word": "marginalidad",
+      "word": "inversion de la visibilidad",
       "weight": 3
     },
     {
-      "word": "reflexividad",
-      "weight": 3
-    },
-    {
-      "word": "ambivalencia",
+      "word": "autolectura",
       "weight": 2
     },
     {
-      "word": "depredacion",
+      "word": "desajuste perceptivo",
       "weight": 2
     },
     {
-      "word": "escritura",
+      "word": "desprendimiento",
       "weight": 2
     },
     {
-      "word": "lectura",
+      "word": "discontinuidad temporal",
       "weight": 2
     },
     {
-      "word": "tejido",
+      "word": "extranamiento de si",
       "weight": 2
     },
     {
-      "word": "violencia",
+      "word": "mutacion subjetiva",
       "weight": 2
     },
     {
-      "word": "arana",
+      "word": "ocultamiento revelador",
+      "weight": 2
+    },
+    {
+      "word": "ayer",
       "weight": 1
     },
     {
-      "word": "esquina",
+      "word": "ceguera",
       "weight": 1
     },
     {
-      "word": "habitacion",
+      "word": "claridad",
       "weight": 1
     },
     {
-      "word": "insecto",
+      "word": "desarrollo",
       "weight": 1
     },
     {
-      "word": "mente",
+      "word": "dia",
       "weight": 1
     },
     {
-      "word": "poema",
+      "word": "luz",
       "weight": 1
     },
     {
-      "word": "telarana",
+      "word": "noche",
+      "weight": 1
+    },
+    {
+      "word": "piel",
+      "weight": 1
+    },
+    {
+      "word": "sueno",
+      "weight": 1
+    },
+    {
+      "word": "ver",
+      "weight": 1
+    },
+    {
+      "word": "vida",
       "weight": 1
     }
   ]
