@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-02",
+  "date": "2026-04-03",
   "month": "2026-04",
-  "file": "textos/2026-04-02.txt",
+  "file": "textos/2026-04-03.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "la noche",
+  "my_poem_snippet": "había escrito",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "",
@@ -12,79 +12,63 @@
   },
   "keywords": [
     {
-      "word": "conocimiento oblicuo",
+      "word": "inercia",
       "weight": 3
     },
     {
-      "word": "despojamiento identitario",
+      "word": "inevitabilidad",
       "weight": 3
     },
     {
-      "word": "evidencia cegadora",
+      "word": "reconocimiento impotente",
       "weight": 3
     },
     {
-      "word": "ilegibilidad del devenir",
+      "word": "umbral",
       "weight": 3
     },
     {
-      "word": "inversion de la visibilidad",
-      "weight": 3
-    },
-    {
-      "word": "autolectura",
+      "word": "desfase temporal",
       "weight": 2
     },
     {
-      "word": "desajuste perceptivo",
+      "word": "despojo",
       "weight": 2
     },
     {
-      "word": "desprendimiento",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "discontinuidad temporal",
+      "word": "inaccion",
       "weight": 2
     },
     {
-      "word": "extranamiento de si",
+      "word": "iteracion",
       "weight": 2
     },
     {
-      "word": "mutacion subjetiva",
-      "weight": 2
-    },
-    {
-      "word": "ocultamiento revelador",
-      "weight": 2
-    },
-    {
-      "word": "ayer",
+      "word": "anoche",
       "weight": 1
     },
     {
-      "word": "ceguera",
+      "word": "escritura",
       "weight": 1
     },
     {
-      "word": "claridad",
+      "word": "lectura",
       "weight": 1
     },
     {
-      "word": "desarrollo",
+      "word": "marea",
       "weight": 1
     },
     {
-      "word": "dia",
+      "word": "orilla",
       "weight": 1
     },
     {
-      "word": "luz",
-      "weight": 1
-    },
-    {
-      "word": "noche",
+      "word": "palabras",
       "weight": 1
     },
     {
@@ -93,14 +77,6 @@
     },
     {
       "word": "sueno",
-      "weight": 1
-    },
-    {
-      "word": "ver",
-      "weight": 1
-    },
-    {
-      "word": "vida",
       "weight": 1
     }
   ]
