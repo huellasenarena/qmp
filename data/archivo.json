@@ -1,5 +1,96 @@
 [
   {
+    "date": "2026-04-04",
+    "month": "2026-04",
+    "file": "textos/2026-04-04.txt",
+    "my_poem_title": "cristo rey",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "",
+      "poem_snippet": "Ya no tengo la piel de ayer",
+      "book_title": "Fragmentaria"
+    },
+    "keywords": [
+      {
+        "word": "agencia de lo inerte",
+        "weight": 3
+      },
+      {
+        "word": "desborde de la norma",
+        "weight": 3
+      },
+      {
+        "word": "inversion funcional",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje material",
+        "weight": 3
+      },
+      {
+        "word": "silencio como accion",
+        "weight": 3
+      },
+      {
+        "word": "desplazamiento",
+        "weight": 2
+      },
+      {
+        "word": "despojo",
+        "weight": 2
+      },
+      {
+        "word": "extranamiento",
+        "weight": 2
+      },
+      {
+        "word": "movilidad",
+        "weight": 2
+      },
+      {
+        "word": "transfiguracion",
+        "weight": 2
+      },
+      {
+        "word": "canto",
+        "weight": 1
+      },
+      {
+        "word": "estatua",
+        "weight": 1
+      },
+      {
+        "word": "ladrillos",
+        "weight": 1
+      },
+      {
+        "word": "marcha",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "rio",
+        "weight": 1
+      },
+      {
+        "word": "sueno",
+        "weight": 1
+      },
+      {
+        "word": "techos",
+        "weight": 1
+      },
+      {
+        "word": "vuelo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-03",
     "month": "2026-04",
     "file": "textos/2026-04-03.txt",

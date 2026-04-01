@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-03",
+  "date": "2026-04-04",
   "month": "2026-04",
-  "file": "textos/2026-04-03.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "había escrito",
+  "file": "textos/2026-04-04.txt",
+  "my_poem_title": "cristo rey",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "",
@@ -12,23 +12,27 @@
   },
   "keywords": [
     {
-      "word": "inercia",
+      "word": "agencia de lo inerte",
       "weight": 3
     },
     {
-      "word": "inevitabilidad",
+      "word": "desborde de la norma",
       "weight": 3
     },
     {
-      "word": "reconocimiento impotente",
+      "word": "inversion funcional",
       "weight": 3
     },
     {
-      "word": "umbral",
+      "word": "lenguaje material",
       "weight": 3
     },
     {
-      "word": "desfase temporal",
+      "word": "silencio como accion",
+      "weight": 3
+    },
+    {
+      "word": "desplazamiento",
       "weight": 2
     },
     {
@@ -36,39 +40,31 @@
       "weight": 2
     },
     {
-      "word": "exposicion",
+      "word": "extranamiento",
       "weight": 2
     },
     {
-      "word": "inaccion",
+      "word": "movilidad",
       "weight": 2
     },
     {
-      "word": "iteracion",
+      "word": "transfiguracion",
       "weight": 2
     },
     {
-      "word": "anoche",
+      "word": "canto",
       "weight": 1
     },
     {
-      "word": "escritura",
+      "word": "estatua",
       "weight": 1
     },
     {
-      "word": "lectura",
+      "word": "ladrillos",
       "weight": 1
     },
     {
-      "word": "marea",
-      "weight": 1
-    },
-    {
-      "word": "orilla",
-      "weight": 1
-    },
-    {
-      "word": "palabras",
+      "word": "marcha",
       "weight": 1
     },
     {
@@ -76,7 +72,19 @@
       "weight": 1
     },
     {
+      "word": "rio",
+      "weight": 1
+    },
+    {
       "word": "sueno",
+      "weight": 1
+    },
+    {
+      "word": "techos",
+      "weight": 1
+    },
+    {
+      "word": "vuelo",
       "weight": 1
     }
   ]
