@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-04",
+  "date": "2026-04-05",
   "month": "2026-04",
-  "file": "textos/2026-04-04.txt",
-  "my_poem_title": "cristo rey",
-  "my_poem_snippet": "",
+  "file": "textos/2026-04-05.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "esta noche mi piel habrá terminar de pelar",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "",
@@ -12,59 +12,67 @@
   },
   "keywords": [
     {
-      "word": "agencia de lo inerte",
+      "word": "autopoiesis",
       "weight": 3
     },
     {
-      "word": "desborde de la norma",
+      "word": "despojo creador",
       "weight": 3
     },
     {
-      "word": "inversion funcional",
+      "word": "permanencia en la mudanza",
       "weight": 3
     },
     {
-      "word": "lenguaje material",
+      "word": "persistencia del yo",
       "weight": 3
     },
     {
-      "word": "silencio como accion",
-      "weight": 3
-    },
-    {
-      "word": "desplazamiento",
+      "word": "desprendimiento",
       "weight": 2
     },
     {
-      "word": "despojo",
+      "word": "estratificacion",
       "weight": 2
     },
     {
-      "word": "extranamiento",
+      "word": "muda",
       "weight": 2
     },
     {
-      "word": "movilidad",
+      "word": "reemplazo",
       "weight": 2
     },
     {
-      "word": "transfiguracion",
+      "word": "reiteracion",
       "weight": 2
     },
     {
-      "word": "canto",
+      "word": "renovacion",
+      "weight": 2
+    },
+    {
+      "word": "temporalidad",
+      "weight": 2
+    },
+    {
+      "word": "transicion invisible",
+      "weight": 2
+    },
+    {
+      "word": "ayer",
       "weight": 1
     },
     {
-      "word": "estatua",
+      "word": "debajo",
       "weight": 1
     },
     {
-      "word": "ladrillos",
+      "word": "noche",
       "weight": 1
     },
     {
-      "word": "marcha",
+      "word": "pelar",
       "weight": 1
     },
     {
@@ -72,19 +80,7 @@
       "weight": 1
     },
     {
-      "word": "rio",
-      "weight": 1
-    },
-    {
       "word": "sueno",
-      "weight": 1
-    },
-    {
-      "word": "techos",
-      "weight": 1
-    },
-    {
-      "word": "vuelo",
       "weight": 1
     }
   ]

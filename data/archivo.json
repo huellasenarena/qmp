@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-04-05",
+    "month": "2026-04",
+    "file": "textos/2026-04-05.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "esta noche mi piel habrá terminar de pelar",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "",
+      "poem_snippet": "Ya no tengo la piel de ayer",
+      "book_title": "Fragmentaria"
+    },
+    "keywords": [
+      {
+        "word": "autopoiesis",
+        "weight": 3
+      },
+      {
+        "word": "despojo creador",
+        "weight": 3
+      },
+      {
+        "word": "permanencia en la mudanza",
+        "weight": 3
+      },
+      {
+        "word": "persistencia del yo",
+        "weight": 3
+      },
+      {
+        "word": "desprendimiento",
+        "weight": 2
+      },
+      {
+        "word": "estratificacion",
+        "weight": 2
+      },
+      {
+        "word": "muda",
+        "weight": 2
+      },
+      {
+        "word": "reemplazo",
+        "weight": 2
+      },
+      {
+        "word": "reiteracion",
+        "weight": 2
+      },
+      {
+        "word": "renovacion",
+        "weight": 2
+      },
+      {
+        "word": "temporalidad",
+        "weight": 2
+      },
+      {
+        "word": "transicion invisible",
+        "weight": 2
+      },
+      {
+        "word": "ayer",
+        "weight": 1
+      },
+      {
+        "word": "debajo",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "pelar",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "sueno",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-04",
     "month": "2026-04",
     "file": "textos/2026-04-04.txt",
