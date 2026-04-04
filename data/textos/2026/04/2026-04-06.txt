@@ -1,0 +1,44 @@
+FECHA: 2026-04-06
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Víctima y verdugo
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+un libro que empecé
+y quiero cerrar
+para leer otros
+
+un libro que
+no me dice nada
+pero piensa
+que sí
+
+un libro que
+no lee otros
+
+un libro como tú
+
+# POEMA_CITADO
+
+Un pensamiento cae como insecto
+en la telaraña de mi mente.
+Me lanzo sobre él,
+lo envuelvo para comérmelo,
+agotar sus jugos
+y tirarlo después.
+
+El problema es que también soy el insecto.
+
+# TEXTO
+
+De un lado el hablante se anima al atrapar y descartar su pensamiento. Del otro lado, el pensamiento es el suyo, resultando en una forma de auto-canibalización que parece repetir y repetir...
+
+Veo una pasividad en el pensamiento al principio, cuando describe el pensamiento cayendo en una telaraña. Da la impresión de que está fuera de su control; da la impresión de que observa el interior de su mente. Esta distancia da lugar a la oportunidad de agarrar este objeto extraño, su propio pensamiento.
+
+Es un ciclo destructivo, donde el narrador necesita comer, pero se come a sí mismo, destruyéndose en el proceso.
+
+Mi interpretación es que crear –ya sea un poema, una pintura, o un ensayo– necesita tomar distancia para observar nuestras ideas y, con rabia, consumirlas. Solo es después que nos damos cuenta de que nos estamos consumiendo. Pero el ciclo recomienza...
+
+Es un relato íntimo, donde el escritor presenta su sombría visión de pensar.

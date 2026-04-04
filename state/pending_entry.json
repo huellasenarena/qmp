@@ -1,78 +1,94 @@
 {
-  "date": "2026-04-05",
+  "date": "2026-04-07",
   "month": "2026-04",
-  "file": "textos/2026-04-05.txt",
+  "file": "textos/2026-04-07.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "esta noche mi piel habrá terminar de pelar",
+  "my_poem_snippet": "con esta aguja",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": "Ya no tengo la piel de ayer",
-    "book_title": "Fragmentaria"
+    "poem_title": "Tejedora",
+    "poem_snippet": "",
+    "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "autopoiesis",
+      "word": "aislamiento del pensamiento",
       "weight": 3
     },
     {
-      "word": "despojo creador",
+      "word": "fragmentacion del sentido",
       "weight": 3
     },
     {
-      "word": "permanencia en la mudanza",
+      "word": "lenguaje como herida",
       "weight": 3
     },
     {
-      "word": "persistencia del yo",
+      "word": "sutura que divide",
       "weight": 3
     },
     {
-      "word": "desprendimiento",
+      "word": "unidad vulnerada",
+      "weight": 3
+    },
+    {
+      "word": "cicatrizacion negada",
       "weight": 2
     },
     {
-      "word": "estratificacion",
+      "word": "disociacion",
       "weight": 2
     },
     {
-      "word": "muda",
+      "word": "intemperie",
       "weight": 2
     },
     {
-      "word": "reemplazo",
+      "word": "recomposicion fallida",
       "weight": 2
     },
     {
-      "word": "reiteracion",
+      "word": "separacion interna",
       "weight": 2
     },
     {
-      "word": "renovacion",
+      "word": "vulneracion",
       "weight": 2
     },
     {
-      "word": "temporalidad",
-      "weight": 2
-    },
-    {
-      "word": "transicion invisible",
-      "weight": 2
-    },
-    {
-      "word": "ayer",
+      "word": "aguja",
       "weight": 1
     },
     {
-      "word": "debajo",
+      "word": "agujeros",
       "weight": 1
     },
     {
-      "word": "noche",
+      "word": "heridas",
       "weight": 1
     },
     {
-      "word": "pelar",
+      "word": "hilo",
+      "weight": 1
+    },
+    {
+      "word": "ideas",
+      "weight": 1
+    },
+    {
+      "word": "manto",
+      "weight": 1
+    },
+    {
+      "word": "palabras",
+      "weight": 1
+    },
+    {
+      "word": "papel",
+      "weight": 1
+    },
+    {
+      "word": "pedazos",
       "weight": 1
     },
     {
@@ -80,7 +96,11 @@
       "weight": 1
     },
     {
-      "word": "sueno",
+      "word": "tejer",
+      "weight": 1
+    },
+    {
+      "word": "zurcir",
       "weight": 1
     }
   ]

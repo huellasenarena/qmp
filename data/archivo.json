@@ -1,5 +1,203 @@
 [
   {
+    "date": "2026-04-07",
+    "month": "2026-04",
+    "file": "textos/2026-04-07.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "con esta aguja",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Tejedora",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "aislamiento del pensamiento",
+        "weight": 3
+      },
+      {
+        "word": "fragmentacion del sentido",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje como herida",
+        "weight": 3
+      },
+      {
+        "word": "sutura que divide",
+        "weight": 3
+      },
+      {
+        "word": "unidad vulnerada",
+        "weight": 3
+      },
+      {
+        "word": "cicatrizacion negada",
+        "weight": 2
+      },
+      {
+        "word": "disociacion",
+        "weight": 2
+      },
+      {
+        "word": "intemperie",
+        "weight": 2
+      },
+      {
+        "word": "recomposicion fallida",
+        "weight": 2
+      },
+      {
+        "word": "separacion interna",
+        "weight": 2
+      },
+      {
+        "word": "vulneracion",
+        "weight": 2
+      },
+      {
+        "word": "aguja",
+        "weight": 1
+      },
+      {
+        "word": "agujeros",
+        "weight": 1
+      },
+      {
+        "word": "heridas",
+        "weight": 1
+      },
+      {
+        "word": "hilo",
+        "weight": 1
+      },
+      {
+        "word": "ideas",
+        "weight": 1
+      },
+      {
+        "word": "manto",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "papel",
+        "weight": 1
+      },
+      {
+        "word": "pedazos",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "tejer",
+        "weight": 1
+      },
+      {
+        "word": "zurcir",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "month": "2026-04",
+    "file": "textos/2026-04-06.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "un libro que empecé",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Víctima y verdugo",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "alteridad negada",
+        "weight": 3
+      },
+      {
+        "word": "autorreferencialidad",
+        "weight": 3
+      },
+      {
+        "word": "clausura como apertura",
+        "weight": 3
+      },
+      {
+        "word": "esterilidad del discurso",
+        "weight": 3
+      },
+      {
+        "word": "suficiencia ilusoria",
+        "weight": 3
+      },
+      {
+        "word": "apertura plural",
+        "weight": 2
+      },
+      {
+        "word": "descarte",
+        "weight": 2
+      },
+      {
+        "word": "desencuentro",
+        "weight": 2
+      },
+      {
+        "word": "desvinculacion",
+        "weight": 2
+      },
+      {
+        "word": "ensimismamiento",
+        "weight": 2
+      },
+      {
+        "word": "cerrar",
+        "weight": 1
+      },
+      {
+        "word": "decir",
+        "weight": 1
+      },
+      {
+        "word": "empece",
+        "weight": 1
+      },
+      {
+        "word": "leer",
+        "weight": 1
+      },
+      {
+        "word": "libro",
+        "weight": 1
+      },
+      {
+        "word": "nada",
+        "weight": 1
+      },
+      {
+        "word": "otros",
+        "weight": 1
+      },
+      {
+        "word": "pensar",
+        "weight": 1
+      },
+      {
+        "word": "tu",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-05",
     "month": "2026-04",
     "file": "textos/2026-04-05.txt",
