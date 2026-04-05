@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-07",
+  "date": "2026-04-08",
   "month": "2026-04",
-  "file": "textos/2026-04-07.txt",
+  "file": "textos/2026-04-08.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "con esta aguja",
+  "my_poem_snippet": "en mi maleta",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Tejedora",
@@ -12,59 +12,71 @@
   },
   "keywords": [
     {
-      "word": "aislamiento del pensamiento",
+      "word": "abundancia esteril",
       "weight": 3
     },
     {
-      "word": "fragmentacion del sentido",
+      "word": "cuidado lesivo",
       "weight": 3
     },
     {
-      "word": "lenguaje como herida",
+      "word": "falta de mediacion",
       "weight": 3
     },
     {
-      "word": "sutura que divide",
+      "word": "imposibilidad de reparacion",
       "weight": 3
     },
     {
-      "word": "unidad vulnerada",
+      "word": "portabilidad del dano",
       "weight": 3
     },
     {
-      "word": "cicatrizacion negada",
+      "word": "acumulacion",
       "weight": 2
     },
     {
-      "word": "disociacion",
+      "word": "aislamiento",
       "weight": 2
     },
     {
-      "word": "intemperie",
+      "word": "carencia",
       "weight": 2
     },
     {
-      "word": "recomposicion fallida",
+      "word": "desajuste",
       "weight": 2
     },
     {
-      "word": "separacion interna",
+      "word": "ensamblaje fallido",
       "weight": 2
     },
     {
-      "word": "vulneracion",
+      "word": "incomodidad",
       "weight": 2
     },
     {
-      "word": "aguja",
+      "word": "ofrecimiento",
+      "weight": 2
+    },
+    {
+      "word": "precariedad",
+      "weight": 2
+    },
+    {
+      "word": "agujas",
       "weight": 1
     },
     {
-      "word": "agujeros",
+      "word": "arrastrar",
       "weight": 1
     },
     {
-      "word": "heridas",
+      "word": "camiseta",
+      "weight": 1
+    },
+    {
+      "word": "contar",
       "weight": 1
     },
     {
@@ -72,35 +84,11 @@
       "weight": 1
     },
     {
-      "word": "ideas",
+      "word": "maleta",
       "weight": 1
     },
     {
-      "word": "manto",
-      "weight": 1
-    },
-    {
-      "word": "palabras",
-      "weight": 1
-    },
-    {
-      "word": "papel",
-      "weight": 1
-    },
-    {
-      "word": "pedazos",
-      "weight": 1
-    },
-    {
-      "word": "piel",
-      "weight": 1
-    },
-    {
-      "word": "tejer",
-      "weight": 1
-    },
-    {
-      "word": "zurcir",
+      "word": "metal",
       "weight": 1
     }
   ]

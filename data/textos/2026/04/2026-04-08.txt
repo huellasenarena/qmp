@@ -1,0 +1,62 @@
+FECHA: 2026-04-08
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Tejedora
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+en mi maleta
+que arrastro
+allá donde voy
+cabe más
+agujas que puedo
+contar
+
+agujas que tengo
+acaso
+alguien necesita
+una camiseta
+
+pero no tengo
+hilo
+
+sería una camiseta
+metálica
+no muy cómoda
+
+# POEMA_CITADO
+
+Escribir es zurcir.
+Recojo pedazos rotos.
+los uno.
+
+Aguja e hilo,
+palabras y papel
+para volver a tejer el manto.
+
+Las heridas invisibles
+que cubren mi piel
+poco a poco
+se cierran.
+
+# TEXTO
+
+en mi maleta
+que arrastro
+allá donde voy
+cabe más
+agujas que puedo
+contar
+
+agujas que tengo
+acaso
+alguien necesita
+una camiseta
+
+pero no tengo
+hilo
+
+sería una camiseta
+metálica
+no muy cómoda

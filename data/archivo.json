@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-04-08",
+    "month": "2026-04",
+    "file": "textos/2026-04-08.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "en mi maleta",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Tejedora",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "abundancia esteril",
+        "weight": 3
+      },
+      {
+        "word": "cuidado lesivo",
+        "weight": 3
+      },
+      {
+        "word": "falta de mediacion",
+        "weight": 3
+      },
+      {
+        "word": "imposibilidad de reparacion",
+        "weight": 3
+      },
+      {
+        "word": "portabilidad del dano",
+        "weight": 3
+      },
+      {
+        "word": "acumulacion",
+        "weight": 2
+      },
+      {
+        "word": "aislamiento",
+        "weight": 2
+      },
+      {
+        "word": "carencia",
+        "weight": 2
+      },
+      {
+        "word": "desajuste",
+        "weight": 2
+      },
+      {
+        "word": "ensamblaje fallido",
+        "weight": 2
+      },
+      {
+        "word": "incomodidad",
+        "weight": 2
+      },
+      {
+        "word": "ofrecimiento",
+        "weight": 2
+      },
+      {
+        "word": "precariedad",
+        "weight": 2
+      },
+      {
+        "word": "agujas",
+        "weight": 1
+      },
+      {
+        "word": "arrastrar",
+        "weight": 1
+      },
+      {
+        "word": "camiseta",
+        "weight": 1
+      },
+      {
+        "word": "contar",
+        "weight": 1
+      },
+      {
+        "word": "hilo",
+        "weight": 1
+      },
+      {
+        "word": "maleta",
+        "weight": 1
+      },
+      {
+        "word": "metal",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-07",
     "month": "2026-04",
     "file": "textos/2026-04-07.txt",
