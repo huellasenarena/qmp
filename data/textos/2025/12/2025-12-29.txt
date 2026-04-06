@@ -1,6 +1,6 @@
 FECHA: 2025-12-29
 MY_POEM_TITLE: dibujar
-POETA: Soldead Castresana
+POETA: Soldad Castresana
 POEM_TITLE: de lejos
 BOOK_TITLE: La carne se corta
 
