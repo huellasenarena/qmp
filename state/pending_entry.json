@@ -1,106 +1,110 @@
 {
-  "date": "2026-04-09",
-  "month": "2026-04",
-  "file": "textos/2026-04-09.txt",
+  "date": "2026-03-29",
+  "month": "2026-03",
+  "file": "textos/2026-03-29.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "cada momento",
+  "my_poem_snippet": "empiezo con bien pie",
   "analysis": {
-    "poet": "Violeta Villalba",
-    "poem_title": "Tejedora",
+    "poet": "Soledad Castresana",
+    "poem_title": "Memento",
     "poem_snippet": "",
-    "book_title": "Fragmentario"
+    "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "ceguera creadora",
+      "word": "cierre epistemico",
       "weight": 3
     },
     {
-      "word": "clausura reparadora",
+      "word": "economia de la atencion",
       "weight": 3
     },
     {
-      "word": "equivalencia entre imagen y lenguaje",
+      "word": "inercia del conocimiento",
       "weight": 3
     },
     {
-      "word": "inscripcion del instante",
+      "word": "inversion del inicio",
       "weight": 3
     },
     {
-      "word": "repliegue interior",
+      "word": "saturacion de sentido",
       "weight": 3
     },
     {
-      "word": "fijacion temporal",
+      "word": "simulacro de diferencia",
+      "weight": 3
+    },
+    {
+      "word": "ciclo apertura clausura",
       "weight": 2
     },
     {
-      "word": "interiorizacion de la mirada",
+      "word": "desgaste prospectivo",
       "weight": 2
     },
     {
-      "word": "invisibilidad",
+      "word": "paralisis por familiaridad",
       "weight": 2
     },
     {
-      "word": "mediacion simbolica",
+      "word": "reduccion de curiosidad",
       "weight": 2
     },
     {
-      "word": "recomposicion",
+      "word": "repeticion performativa",
       "weight": 2
     },
     {
-      "word": "resguardo subjetivo",
+      "word": "ritual de reconocimiento",
       "weight": 2
     },
     {
-      "word": "transmutacion",
+      "word": "suspension del deseo",
       "weight": 2
     },
     {
-      "word": "aguja",
+      "word": "tension ver-saber",
+      "weight": 2
+    },
+    {
+      "word": "alrededor",
       "weight": 1
     },
     {
-      "word": "alma",
+      "word": "conocer",
       "weight": 1
     },
     {
-      "word": "escribir",
+      "word": "debilidad",
       "weight": 1
     },
     {
-      "word": "foto",
+      "word": "estudiarlo",
       "weight": 1
     },
     {
-      "word": "heridas",
+      "word": "igual",
       "weight": 1
     },
     {
-      "word": "hilo",
+      "word": "mirar",
       "weight": 1
     },
     {
-      "word": "momento",
+      "word": "orientarse",
       "weight": 1
     },
     {
-      "word": "ojos",
+      "word": "pie",
       "weight": 1
     },
     {
-      "word": "papel",
+      "word": "pregunta",
       "weight": 1
     },
     {
-      "word": "piel",
-      "weight": 1
-    },
-    {
-      "word": "poema",
+      "word": "terminar",
       "weight": 1
     }
   ]
