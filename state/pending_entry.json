@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-08",
+  "date": "2026-04-09",
   "month": "2026-04",
-  "file": "textos/2026-04-08.txt",
+  "file": "textos/2026-04-09.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "en mi maleta",
+  "my_poem_snippet": "cada momento",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Tejedora",
@@ -12,71 +12,71 @@
   },
   "keywords": [
     {
-      "word": "abundancia esteril",
+      "word": "ceguera creadora",
       "weight": 3
     },
     {
-      "word": "cuidado lesivo",
+      "word": "clausura reparadora",
       "weight": 3
     },
     {
-      "word": "falta de mediacion",
+      "word": "equivalencia entre imagen y lenguaje",
       "weight": 3
     },
     {
-      "word": "imposibilidad de reparacion",
+      "word": "inscripcion del instante",
       "weight": 3
     },
     {
-      "word": "portabilidad del dano",
+      "word": "repliegue interior",
       "weight": 3
     },
     {
-      "word": "acumulacion",
+      "word": "fijacion temporal",
       "weight": 2
     },
     {
-      "word": "aislamiento",
+      "word": "interiorizacion de la mirada",
       "weight": 2
     },
     {
-      "word": "carencia",
+      "word": "invisibilidad",
       "weight": 2
     },
     {
-      "word": "desajuste",
+      "word": "mediacion simbolica",
       "weight": 2
     },
     {
-      "word": "ensamblaje fallido",
+      "word": "recomposicion",
       "weight": 2
     },
     {
-      "word": "incomodidad",
+      "word": "resguardo subjetivo",
       "weight": 2
     },
     {
-      "word": "ofrecimiento",
+      "word": "transmutacion",
       "weight": 2
     },
     {
-      "word": "precariedad",
-      "weight": 2
-    },
-    {
-      "word": "agujas",
+      "word": "aguja",
       "weight": 1
     },
     {
-      "word": "arrastrar",
+      "word": "alma",
       "weight": 1
     },
     {
-      "word": "camiseta",
+      "word": "escribir",
       "weight": 1
     },
     {
-      "word": "contar",
+      "word": "foto",
+      "weight": 1
+    },
+    {
+      "word": "heridas",
       "weight": 1
     },
     {
@@ -84,11 +84,23 @@
       "weight": 1
     },
     {
-      "word": "maleta",
+      "word": "momento",
       "weight": 1
     },
     {
-      "word": "metal",
+      "word": "ojos",
+      "weight": 1
+    },
+    {
+      "word": "papel",
+      "weight": 1
+    },
+    {
+      "word": "piel",
+      "weight": 1
+    },
+    {
+      "word": "poema",
       "weight": 1
     }
   ]

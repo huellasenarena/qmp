@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-04-09",
+    "month": "2026-04",
+    "file": "textos/2026-04-09.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "cada momento",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Tejedora",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "ceguera creadora",
+        "weight": 3
+      },
+      {
+        "word": "clausura reparadora",
+        "weight": 3
+      },
+      {
+        "word": "equivalencia entre imagen y lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "inscripcion del instante",
+        "weight": 3
+      },
+      {
+        "word": "repliegue interior",
+        "weight": 3
+      },
+      {
+        "word": "fijacion temporal",
+        "weight": 2
+      },
+      {
+        "word": "interiorizacion de la mirada",
+        "weight": 2
+      },
+      {
+        "word": "invisibilidad",
+        "weight": 2
+      },
+      {
+        "word": "mediacion simbolica",
+        "weight": 2
+      },
+      {
+        "word": "recomposicion",
+        "weight": 2
+      },
+      {
+        "word": "resguardo subjetivo",
+        "weight": 2
+      },
+      {
+        "word": "transmutacion",
+        "weight": 2
+      },
+      {
+        "word": "aguja",
+        "weight": 1
+      },
+      {
+        "word": "alma",
+        "weight": 1
+      },
+      {
+        "word": "escribir",
+        "weight": 1
+      },
+      {
+        "word": "foto",
+        "weight": 1
+      },
+      {
+        "word": "heridas",
+        "weight": 1
+      },
+      {
+        "word": "hilo",
+        "weight": 1
+      },
+      {
+        "word": "momento",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "papel",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-08",
     "month": "2026-04",
     "file": "textos/2026-04-08.txt",
