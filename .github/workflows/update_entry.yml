@@ -36,18 +36,34 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: bash scripts/bootstrap.sh
-
-      - name: Configure Google credentials
         run: |
-          mkdir -p ~/.config/qmp
-          chmod 700 ~/.config/qmp
-          echo "$QMP_GDOCS_CONFIG_JSON" > ~/.config/qmp/gdocs.json
-          echo "$QMP_GDOCS_SA_KEY_JSON" > ~/.config/qmp/sa_keyfile.json
-          chmod 600 ~/.config/qmp/*.json
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Write service account keyfile
+        env:
+          QMP_GDOCS_SA_KEY_JSON: ${{ secrets.QMP_GDOCS_SA_KEY_JSON }}
+        run: |
+          mkdir -p .secrets
+          python - <<'PY'
+          import os, pathlib
+          p = pathlib.Path(".secrets/sa.json")
+          p.write_text(os.environ["QMP_GDOCS_SA_KEY_JSON"], encoding="utf-8")
+          print("Wrote", p)
+          PY
+          chmod 600 .secrets/sa.json
+
+      - name: Write gdocs.json config
         env:
           QMP_GDOCS_CONFIG_JSON: ${{ secrets.QMP_GDOCS_CONFIG_JSON }}
-          QMP_GDOCS_SA_KEY_JSON: ${{ secrets.QMP_GDOCS_SA_KEY_JSON }}
+        run: |
+          mkdir -p ~/.config/qmp
+          python - <<'PY'
+          import os, pathlib
+          p = pathlib.Path.home() / ".config" / "qmp" / "gdocs.json"
+          p.write_text(os.environ["QMP_GDOCS_CONFIG_JSON"], encoding="utf-8")
+          print("Wrote", p)
+          PY
 
       - name: Configure git
         run: |
@@ -62,12 +78,12 @@ jobs:
           fi
 
       - name: Update entry
+        env:
+          QMP_GDOCS_SA_KEYFILE: ${{ github.workspace }}/.secrets/sa.json
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           ARGS="--date ${{ inputs.date }}"
           if [ "${{ inputs.regen_keywords }}" = "true" ]; then
             ARGS="$ARGS --regen-keywords"
           fi
-          export QMP_GDOCS_SA_KEYFILE="$HOME/.config/qmp/sa_keyfile.json"
-          .venv/bin/python scripts/update_entry.py $ARGS
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          python scripts/update_entry.py $ARGS
