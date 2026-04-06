@@ -261,6 +261,8 @@ def main() -> int:
     txt_path = txt_path_for_date(date)
     content  = render_txt(date, my_poem_title, poeta, poem_title, book_title,
                           poem_text, poema_citado, texto)
+    old_txt = txt_path.read_text(encoding="utf-8") if txt_path.exists() else None
+    txt_changed = old_txt != content
     if not args.dry_run:
         write_txt_atomic(txt_path, content)
     print(f"[update] .txt {'(dry-run, no escrito)' if args.dry_run else f'escrito: {txt_path}'}")
@@ -286,9 +288,9 @@ def main() -> int:
     status = run_merge_pending(txt_path, apply_keywords=True, dry_run=args.dry_run)
     content_changed  = bool(status.get("content_changed"))
     keywords_changed = bool(status.get("keywords_changed"))
-    print(f"[update] content_changed={content_changed}  keywords_changed={keywords_changed}")
+    print(f"[update] content_changed={content_changed}  keywords_changed={keywords_changed}  txt_changed={txt_changed}")
 
-    if not content_changed and not keywords_changed:
+    if not content_changed and not keywords_changed and not txt_changed:
         print("[update] Sin cambios detectados. Nada que commitear.")
         return 0
 
