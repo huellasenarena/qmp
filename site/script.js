@@ -385,18 +385,40 @@ function renderCitedInlineWithState(text, state) {
   return out;
 }
 
-function renderCitedPoem(citedPoemText) {
+function renderCitedPoem(citedPoemText, ctx = null) {
   const raw = (citedPoemText || '').replace(/\r/g, '');
   const lines = raw.split('\n');
 
   const state = { em: false, strong: false };
+  let anchorPx = null;
+
   const htmlLines = lines.map((line) => {
+    // >> right-aligned
     const rightMatch = line.match(/^\s*>>\s*(.*)$/);
     if (rightMatch) {
       const content = (rightMatch[1] || '').trim();
-      // importante: usamos el MISMO estado para que *...* pueda cruzar esta línea si quieres
       return `<span class="poem-right">${renderCitedInlineWithState(content, state)}</span>`;
     }
+
+    // | anchor / continuation (requires ctx for pixel measurement)
+    if (ctx) {
+      const pipePos = line.indexOf('|');
+      if (pipePos !== -1) {
+        const isContinuation = /^\s*\|/.test(line);
+        const before = line.slice(0, pipePos);
+        const after  = line.slice(pipePos + 1);
+
+        if (!isContinuation) {
+          anchorPx = ctx.measureText(before).width;
+          return renderCitedInlineWithState(before + after, state);
+        } else {
+          const content = after.replace(/^\s+/, '');
+          const pad = anchorPx ?? 0;
+          return `<span class="indent" style="padding-left:${pad}px">${renderCitedInlineWithState(content, state)}</span>`;
+        }
+      }
+    }
+
     return renderCitedInlineWithState(line, state);
   });
 
@@ -495,6 +517,12 @@ function applyPoemCitedToggle(poemEl, maxVisibleLines = 10, minHiddenLines = 3) 
 function setupCitedPoemToggle(poemEl, citedPoemText, maxVisibleLines = 10, minHiddenLines = 3) {
   if (!poemEl) return;
 
+  // Canvas ctx for | anchor measurement (same font as the <pre>)
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const cs = window.getComputedStyle(poemEl);
+  ctx.font = `${cs.fontStyle} ${cs.fontVariant} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+
   // Texto original sin \r
   const raw = (citedPoemText || '').replace(/\r/g, '');
   const lines = raw.split('\n');
@@ -505,7 +533,7 @@ function setupCitedPoemToggle(poemEl, citedPoemText, maxVisibleLines = 10, minHi
   // Regla: solo mostrar toggle si hay al menos 3 líneas ocultas
   if (hiddenLines < minHiddenLines) {
     // Nada de toggle: mostramos el poema completo
-    poemEl.innerHTML = renderCitedPoem(raw);
+    poemEl.innerHTML = renderCitedPoem(raw, ctx);
     return;
   }
 
@@ -513,8 +541,8 @@ function setupCitedPoemToggle(poemEl, citedPoemText, maxVisibleLines = 10, minHi
   const visibleText = lines.slice(0, maxVisibleLines).join('\n');
 
   // Renderizamos ambas versiones con renderCitedPoem para conservar formato
-  const fullHtml = renderCitedPoem(raw);
-  const visibleHtml = renderCitedPoem(visibleText);
+  const fullHtml = renderCitedPoem(raw, ctx);
+  const visibleHtml = renderCitedPoem(visibleText, ctx);
 
   // Guardamos en data-attributes
   poemEl.dataset.fullHtml = fullHtml;
