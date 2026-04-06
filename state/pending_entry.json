@@ -1,90 +1,110 @@
 {
-  "date": "2026-03-30",
+  "date": "2026-03-29",
   "month": "2026-03",
-  "file": "textos/2026-03-30.txt",
+  "file": "textos/2026-03-29.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "yo soy solo el araña",
+  "my_poem_snippet": "empiezo con bien pie",
   "analysis": {
-    "poet": "Violeta Villalba",
-    "poem_title": "Víctima y verdugo",
+    "poet": "Soledad Castresana",
+    "poem_title": "Memento",
     "poem_snippet": "",
-    "book_title": "Fragmentaria"
+    "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "apropiacion",
+      "word": "cierre epistemico",
       "weight": 3
     },
     {
-      "word": "autoeleccion",
+      "word": "economia de la atencion",
       "weight": 3
     },
     {
-      "word": "autopoiesis",
+      "word": "inercia del conocimiento",
       "weight": 3
     },
     {
-      "word": "destruccion creadora",
+      "word": "inversion del inicio",
       "weight": 3
     },
     {
-      "word": "marginalidad",
+      "word": "saturacion de sentido",
       "weight": 3
     },
     {
-      "word": "reflexividad",
+      "word": "simulacro de diferencia",
       "weight": 3
     },
     {
-      "word": "ambivalencia",
+      "word": "ciclo apertura clausura",
       "weight": 2
     },
     {
-      "word": "depredacion",
+      "word": "desgaste prospectivo",
       "weight": 2
     },
     {
-      "word": "escritura",
+      "word": "paralisis por familiaridad",
       "weight": 2
     },
     {
-      "word": "lectura",
+      "word": "reduccion de curiosidad",
       "weight": 2
     },
     {
-      "word": "tejido",
+      "word": "repeticion performativa",
       "weight": 2
     },
     {
-      "word": "violencia",
+      "word": "ritual de reconocimiento",
       "weight": 2
     },
     {
-      "word": "arana",
+      "word": "suspension del deseo",
+      "weight": 2
+    },
+    {
+      "word": "tension ver-saber",
+      "weight": 2
+    },
+    {
+      "word": "alrededor",
       "weight": 1
     },
     {
-      "word": "esquina",
+      "word": "conocer",
       "weight": 1
     },
     {
-      "word": "habitacion",
+      "word": "debilidad",
       "weight": 1
     },
     {
-      "word": "insecto",
+      "word": "estudiarlo",
       "weight": 1
     },
     {
-      "word": "mente",
+      "word": "igual",
       "weight": 1
     },
     {
-      "word": "poema",
+      "word": "mirar",
       "weight": 1
     },
     {
-      "word": "telarana",
+      "word": "orientarse",
+      "weight": 1
+    },
+    {
+      "word": "pie",
+      "weight": 1
+    },
+    {
+      "word": "pregunta",
+      "weight": 1
+    },
+    {
+      "word": "terminar",
       "weight": 1
     }
   ]
