@@ -1,11 +1,10 @@
 FECHA: 2026-03-29
-MY_POEM_TITLE: 
-POETA: Soledad
+MY_POEM_TITLE:
+POETA: Soledad Castresana
 POEM_TITLE: Memento
 BOOK_TITLE: La carne se corta
 
 # POEMA
-
 empiezo con bien pie
 me oriento
 miro alrededor
@@ -20,11 +19,9 @@ nunca sabré lo que
 me puede ofrecer
 
 # POEMA_CITADO
-
 Pero mirarlo, si está igual.
 
 # TEXTO
-
 empiezo con bien pie
 me oriento
 miro alrededor

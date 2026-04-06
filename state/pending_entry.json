@@ -1,86 +1,110 @@
 {
-  "date": "2026-04-05",
-  "month": "2026-04",
-  "file": "textos/2026-04-05.txt",
+  "date": "2026-03-29",
+  "month": "2026-03",
+  "file": "textos/2026-03-29.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "esta noche mi piel habrá terminar de pelar",
+  "my_poem_snippet": "empiezo con bien pie",
   "analysis": {
-    "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": "Ya no tengo la piel de ayer",
-    "book_title": "Fragmentaria"
+    "poet": "Soledad Castresana",
+    "poem_title": "Memento",
+    "poem_snippet": "",
+    "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "autopoiesis",
+      "word": "cierre epistemico",
       "weight": 3
     },
     {
-      "word": "despojo creador",
+      "word": "economia de la atencion",
       "weight": 3
     },
     {
-      "word": "permanencia en la mudanza",
+      "word": "inercia del conocimiento",
       "weight": 3
     },
     {
-      "word": "persistencia del yo",
+      "word": "inversion del inicio",
       "weight": 3
     },
     {
-      "word": "desprendimiento",
+      "word": "saturacion de sentido",
+      "weight": 3
+    },
+    {
+      "word": "simulacro de diferencia",
+      "weight": 3
+    },
+    {
+      "word": "ciclo apertura clausura",
       "weight": 2
     },
     {
-      "word": "estratificacion",
+      "word": "desgaste prospectivo",
       "weight": 2
     },
     {
-      "word": "muda",
+      "word": "paralisis por familiaridad",
       "weight": 2
     },
     {
-      "word": "reemplazo",
+      "word": "reduccion de curiosidad",
       "weight": 2
     },
     {
-      "word": "reiteracion",
+      "word": "repeticion performativa",
       "weight": 2
     },
     {
-      "word": "renovacion",
+      "word": "ritual de reconocimiento",
       "weight": 2
     },
     {
-      "word": "temporalidad",
+      "word": "suspension del deseo",
       "weight": 2
     },
     {
-      "word": "transicion invisible",
+      "word": "tension ver-saber",
       "weight": 2
     },
     {
-      "word": "ayer",
+      "word": "alrededor",
       "weight": 1
     },
     {
-      "word": "debajo",
+      "word": "conocer",
       "weight": 1
     },
     {
-      "word": "noche",
+      "word": "debilidad",
       "weight": 1
     },
     {
-      "word": "pelar",
+      "word": "estudiarlo",
       "weight": 1
     },
     {
-      "word": "piel",
+      "word": "igual",
       "weight": 1
     },
     {
-      "word": "sueno",
+      "word": "mirar",
+      "weight": 1
+    },
+    {
+      "word": "orientarse",
+      "weight": 1
+    },
+    {
+      "word": "pie",
+      "weight": 1
+    },
+    {
+      "word": "pregunta",
+      "weight": 1
+    },
+    {
+      "word": "terminar",
       "weight": 1
     }
   ]
