@@ -1,23 +1,20 @@
 FECHA: 2026-04-05
-MY_POEM_TITLE: 
+MY_POEM_TITLE:
 POETA: Violeta Villalba
-POEM_TITLE: 
+POEM_TITLE:
 BOOK_TITLE: Fragmentaria
 
 # POEMA
-
 esta noche mi piel habrá terminar de pelar
-una nueva la reemplazara
+una nueva la reemplazará
 siempre será yo por debajo
 siempre será yo que la crea
 
 # POEMA_CITADO
-
 Ya no tengo la piel de ayer
 Me he despojado de ella durante el sueño
 
 # TEXTO
-
 Cuando reflexiono sobre la versión de mí mismo de hace un año o incluso la versión de hace un mes, noto una diferencia. Aprendí más palabras; fui a rutas de senderismo nuevas; encontré nuevas personas. Pero esta transición es casi invisible, y solo se ve con suficiente tiempo. Asimismo, percibo un cambio interno más que un cambio físico.
 
 Por eso me resultan interesantes esas dos líneas breves: el poema muestra una transición completa, activa, con pérdida, y física *de la noche a la mañana* (literalmente).

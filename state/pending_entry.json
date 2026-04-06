@@ -1,98 +1,78 @@
 {
-  "date": "2026-04-09",
+  "date": "2026-04-05",
   "month": "2026-04",
-  "file": "textos/2026-04-09.txt",
+  "file": "textos/2026-04-05.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "cada momento",
+  "my_poem_snippet": "esta noche mi piel habrá terminar de pelar",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Tejedora",
-    "poem_snippet": "",
-    "book_title": "Fragmentario"
+    "poem_title": "",
+    "poem_snippet": "Ya no tengo la piel de ayer",
+    "book_title": "Fragmentaria"
   },
   "keywords": [
     {
-      "word": "ceguera creadora",
+      "word": "autopoiesis",
       "weight": 3
     },
     {
-      "word": "clausura reparadora",
+      "word": "despojo creador",
       "weight": 3
     },
     {
-      "word": "equivalencia entre imagen y lenguaje",
+      "word": "permanencia en la mudanza",
       "weight": 3
     },
     {
-      "word": "inscripcion del instante",
+      "word": "persistencia del yo",
       "weight": 3
     },
     {
-      "word": "repliegue interior",
-      "weight": 3
-    },
-    {
-      "word": "fijacion temporal",
+      "word": "desprendimiento",
       "weight": 2
     },
     {
-      "word": "interiorizacion de la mirada",
+      "word": "estratificacion",
       "weight": 2
     },
     {
-      "word": "invisibilidad",
+      "word": "muda",
       "weight": 2
     },
     {
-      "word": "mediacion simbolica",
+      "word": "reemplazo",
       "weight": 2
     },
     {
-      "word": "recomposicion",
+      "word": "reiteracion",
       "weight": 2
     },
     {
-      "word": "resguardo subjetivo",
+      "word": "renovacion",
       "weight": 2
     },
     {
-      "word": "transmutacion",
+      "word": "temporalidad",
       "weight": 2
     },
     {
-      "word": "aguja",
+      "word": "transicion invisible",
+      "weight": 2
+    },
+    {
+      "word": "ayer",
       "weight": 1
     },
     {
-      "word": "alma",
+      "word": "debajo",
       "weight": 1
     },
     {
-      "word": "escribir",
+      "word": "noche",
       "weight": 1
     },
     {
-      "word": "foto",
-      "weight": 1
-    },
-    {
-      "word": "heridas",
-      "weight": 1
-    },
-    {
-      "word": "hilo",
-      "weight": 1
-    },
-    {
-      "word": "momento",
-      "weight": 1
-    },
-    {
-      "word": "ojos",
-      "weight": 1
-    },
-    {
-      "word": "papel",
+      "word": "pelar",
       "weight": 1
     },
     {
@@ -100,7 +80,7 @@
       "weight": 1
     },
     {
-      "word": "poema",
+      "word": "sueno",
       "weight": 1
     }
   ]
