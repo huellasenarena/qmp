@@ -261,9 +261,9 @@ def print_keywords_preview(title: str, pairs: List[Tuple[str, int]], n: int = 20
 
 
 def generate_keywords_from_txt(txt_path: Path) -> list[dict]:
-    script = repo_root() / "qmp" / "gen_keywords.py"
+    script = repo_root() / "core" / "gen_keywords.py"
     if not script.exists():
-        raise RuntimeError("No encuentro qmp/gen_keywords.py para generar keywords.")
+        raise RuntimeError("No encuentro core/gen_keywords.py para generar keywords.")
 
     # IMPORTANT: usamos el txt_path (no date) para evitar “fecha equivocada”
     cmd = [sys.executable, str(script), str(txt_path)]
@@ -445,12 +445,12 @@ def main() -> int:
         println("[qcambiar] Haciendo pull desde Google Docs para comparar…")
 
         try:
-            poem_pull = run_py_json("scripts/gdocs_pull_poem_by_date.py", ["--date", date_str])
+            poem_pull = run_py_json("scripts/gdocs/gdocs_pull_poem_by_date.py", ["--date", date_str])
         except Exception as e:
             raise RuntimeError(f"Fallo pull de POEMA (Google Docs) para {date_str}: {e}") from e
 
         try:
-            analysis_pull = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", date_str])
+            analysis_pull = run_py_json("scripts/gdocs/gdocs_pull_analysis_by_date.py", ["--date", date_str])
         except Exception as e:
             raise RuntimeError(f"Fallo pull de ANÁLISIS (Google Docs) para {date_str}: {e}") from e
 
@@ -613,7 +613,7 @@ def main() -> int:
             mp_args.append("--apply-keywords")
         mp_args.append(str(txt_path))
 
-        _status = run_py_json("qmp/merge_pending.py", mp_args)
+        _status = run_py_json("core/merge_pending.py", mp_args)
 
         # Cleanup staging files ANTES del commit (como qcrear)
         reset_pending_files()

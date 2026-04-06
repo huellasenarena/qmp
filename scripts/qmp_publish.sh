@@ -31,8 +31,8 @@ PYTHON="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
 [[ -x "$PYTHON" ]] || die "No existe Python del proyecto: $PYTHON"
 
 ARCHIVO="$ARCHIVO_JSON"
-MERGE="$QMP_REPO/qmp/merge_pending.py"
-VALID="$QMP_REPO/qmp/validate_entry.py"
+MERGE="$QMP_REPO/core/merge_pending.py"
+VALID="$QMP_REPO/core/validate_entry.py"
 
 [[ -f "$ARCHIVO" ]] || die "Falta $ARCHIVO"
 [[ -f "$MERGE"   ]] || die "Falta $MERGE"

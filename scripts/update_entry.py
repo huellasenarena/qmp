@@ -156,7 +156,7 @@ def load_existing_keywords(date: str) -> list[dict]:
 
 def generate_keywords(txt_path: Path) -> list[dict]:
     """Llama a gen_keywords.py y devuelve la lista de keywords."""
-    script = _find_script("scripts/gen_keywords.py", "qmp/gen_keywords.py")
+    script = _find_script("core/gen_keywords.py")
     proc = subprocess.run(
         [sys.executable, str(script), str(txt_path)],
         capture_output=True, text=True,
@@ -186,7 +186,7 @@ def write_pending_keywords(date: str, keywords: list[dict], fp: str) -> None:
 # ──────────────────────────────────────────
 
 def run_merge_pending(txt_path: Path, apply_keywords: bool = True, dry_run: bool = False) -> dict:
-    script = _find_script("scripts/merge_pending.py", "qmp/merge_pending.py")
+    script = _find_script("core/merge_pending.py")
     cmd = [
         sys.executable, str(script),
         str(txt_path),
@@ -233,8 +233,8 @@ def main() -> int:
 
     # 1. Pull desde Google Docs
     print("[update] Descargando desde Google Docs...")
-    poem_obj     = run_py_json("scripts/gdocs_pull_poem_by_date.py",     ["--date", date])
-    analysis_obj = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", date])
+    poem_obj     = run_py_json("scripts/gdocs/gdocs_pull_poem_by_date.py",     ["--date", date])
+    analysis_obj = run_py_json("scripts/gdocs/gdocs_pull_analysis_by_date.py", ["--date", date])
 
     my_poem_title = (poem_obj.get("title")           or "").strip()
     poem_text     = (poem_obj.get("poem")            or "")

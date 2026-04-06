@@ -478,9 +478,9 @@ def generate_keywords_from_txt(txt_path: Path) -> list[dict]:
     Llama al generador de keywords existente y devuelve la lista
     en formato [{"word": str, "weight": int}, ...]
     """
-    script = repo_root() / "qmp" / "gen_keywords.py"
+    script = repo_root() / "core" / "gen_keywords.py"
     if not script.exists():
-        raise RuntimeError("No encuentro qmp/gen_keywords.py para generar keywords.")
+        raise RuntimeError("No encuentro core/gen_keywords.py para generar keywords.")
 
     cmd = [sys.executable, str(script), str(txt_path)]
     proc = subprocess.run(cmd, capture_output=True, text=True)
@@ -524,7 +524,7 @@ def run_validate_and_normalize_txt(date_str: str, txt_path: Path, pdf_mode: bool
     En modo PDF, permitimos que validate_entry.py falle SOLO por secciones vacías
     (# POEMA_CITADO y/o # TEXTO), porque esa es precisamente la señal del PDF.
     """
-    script = find_script("qmp/validate_entry.py", "scripts/validate_entry.py", "validate_entry.py")
+    script = find_script("core/validate_entry.py", "scripts/validate_entry.py", "validate_entry.py")
     cmd = [sys.executable, str(script), "--mode", "normalize", date_str, str(txt_path)]
     proc = subprocess.run(cmd, capture_output=True, text=True)
 
@@ -565,7 +565,7 @@ def run_merge_pending(
     """
     Ejecuta merge_pending.py y devuelve el STATUS_JSON como dict.
     """
-    script = find_script("qmp/merge_pending.py", "scripts/merge_pending.py", "merge_pending.py")
+    script = find_script("core/merge_pending.py", "scripts/merge_pending.py", "merge_pending.py")
     cmd = [
         sys.executable, str(script),
         str(txt_path),
@@ -638,9 +638,9 @@ def get_gdocs_limit_date() -> date:
     Llama a scripts/gdocs_get_limit_date.py y parsea la línea
     DOC_LIMIT_DATE=YYYY-MM-DD que emite.
     """
-    script_path = repo_root() / "scripts" / "gdocs_get_limit_date.py"
+    script_path = repo_root() / "scripts" / "gdocs" / "gdocs_get_limit_date.py"
     if not script_path.exists():
-        raise RuntimeError("No encuentro scripts/gdocs_get_limit_date.py")
+        raise RuntimeError("No encuentro scripts/gdocs/gdocs_get_limit_date.py")
 
     proc = subprocess.run(
         [sys.executable, str(script_path)],
@@ -701,8 +701,8 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
     println(f" Pull Google Docs — {target}")
     println(SEP)
 
-    poem_obj = run_py_json("scripts/gdocs_pull_poem_by_date.py", ["--date", target])
-    analysis_obj = run_py_json("scripts/gdocs_pull_analysis_by_date.py", ["--date", target])
+    poem_obj = run_py_json("scripts/gdocs/gdocs_pull_poem_by_date.py", ["--date", target])
+    analysis_obj = run_py_json("scripts/gdocs/gdocs_pull_analysis_by_date.py", ["--date", target])
 
     my_poem_title = (poem_obj.get("title") or "").strip()
     poem_text = (poem_obj.get("poem") or "")

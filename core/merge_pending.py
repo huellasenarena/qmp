@@ -101,7 +101,7 @@ def keywords_equal(a: Any, b: Any) -> bool:
 def build_entry_from_txt(txt_path: Path, pending_entry_out: Path) -> Dict[str, Any]:
     script = Path(__file__).resolve().parent / "make_pending_entry.py"
     if not script.exists():
-        raise SystemExit("No existe qmp/make_pending_entry.py (necesario para parsear el .txt).")
+        raise SystemExit("No existe core/make_pending_entry.py (necesario para parsear el .txt).")
 
     pending_entry_out.parent.mkdir(parents=True, exist_ok=True)
 
