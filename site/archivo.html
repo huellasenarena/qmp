@@ -57,7 +57,7 @@
       <input type="text" id="keywordFilter" placeholder="Palabras clave" />
     </div>
 
-    <p id="noEntry">No se han encontrado escritos.</p>
+    <p id="noEntry" style="display:none"></p>
 
     <!-- Lista de escritos -->
     <ul id="entries"></ul>
@@ -210,7 +210,7 @@
 
         // 2) Poblar filtros (meses y autores) desde JSON
         populateMonthOptions(archiveData);
-        populateAuthorOptions(archiveData);
+        refreshAuthorOptions();
 
         // 3) Activar filtrado
         entries = document.querySelectorAll('#entries li[data-month]');
@@ -247,19 +247,6 @@
         opt.value = ym;
         opt.textContent = monthLabel(ym);
         monthFilter.appendChild(opt);
-      });
-    }
-
-    function populateAuthorOptions(data) {
-      const authors = Array.from(new Set(
-        data.map(e => e.analysis?.poet).filter(Boolean)
-      )).sort((a, b) => a.localeCompare(b, 'es'));
-
-      authors.forEach(name => {
-        const opt = document.createElement('option');
-        opt.value = name;
-        opt.textContent = name;
-        authorFilter.appendChild(opt);
       });
     }
 
@@ -432,8 +419,14 @@
         authorFilter.value !== '' ||
         terms.length > 0;
 
-      noResultsFound.style.display =
-        (hasActiveFilters && visibleCount === 0) ? 'block' : 'none';
+      if (visibleCount === 0) {
+        noResultsFound.textContent = hasActiveFilters
+          ? 'No se han encontrado escritos.'
+          : 'Todavía no hay entradas este mes.';
+        noResultsFound.style.display = 'block';
+      } else {
+        noResultsFound.style.display = 'none';
+      }
     }
 
     monthFilter.addEventListener('change', () => {
