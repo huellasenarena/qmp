@@ -611,6 +611,7 @@ async function loadTodayEntry() {
 // Ahora que el <pre> ya está en el DOM, medimos con la fuente real:
   const pre = poemEl.querySelector('pre');
   pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
+  if (!pre.querySelector('.poem-right')) pre.style.paddingRight = '0';
 
 
   // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
@@ -671,6 +672,7 @@ async function loadPastEntry() {
 // Ahora que el <pre> ya está en el DOM, medimos con la fuente real:
   const pre = poemEl.querySelector('pre');
   pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
+  if (!pre.querySelector('.poem-right')) pre.style.paddingRight = '0';
 
   // Poema citado: soporta >> (derecha) y * / ** (cursiva / negrita)
   const citedPre = document.querySelector('.analysis-poem');

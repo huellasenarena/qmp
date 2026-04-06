@@ -59,7 +59,7 @@ h1 {
 
 #poem {
   margin-top: 48px;
-  max-width: 480px;
+  max-width: 600px;
   padding: 24px 0;         /* <- nuevo: arriba/abajo */
   padding-left: 28px;      /* mantienes tu “cuaderno” a la derecha */
   background: linear-gradient(
