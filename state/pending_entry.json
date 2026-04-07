@@ -1,110 +1,98 @@
 {
-  "date": "2026-03-29",
-  "month": "2026-03",
-  "file": "textos/2026-03-29.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "empiezo con bien pie",
+  "date": "2026-04-10",
+  "month": "2026-04",
+  "file": "textos/2026-04-10.txt",
+  "my_poem_title": "xy",
+  "my_poem_snippet": "",
   "analysis": {
-    "poet": "Soledad Castresana",
-    "poem_title": "Memento",
+    "poet": "Violeta Villalba",
+    "poem_title": "Matutina",
     "poem_snippet": "",
-    "book_title": "La carne se corta"
+    "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "cierre epistemico",
+      "word": "ausencia que activa",
       "weight": 3
     },
     {
-      "word": "economia de la atencion",
+      "word": "cierre que abre",
       "weight": 3
     },
     {
-      "word": "inercia del conocimiento",
+      "word": "condicion vaciada",
       "weight": 3
     },
     {
-      "word": "inversion del inicio",
+      "word": "invisibilidad productiva",
       "weight": 3
     },
     {
-      "word": "saturacion de sentido",
+      "word": "umbral imaginativo",
       "weight": 3
     },
     {
-      "word": "simulacro de diferencia",
-      "weight": 3
-    },
-    {
-      "word": "ciclo apertura clausura",
+      "word": "desmaterializacion",
       "weight": 2
     },
     {
-      "word": "desgaste prospectivo",
+      "word": "desplazamiento perceptivo",
       "weight": 2
     },
     {
-      "word": "paralisis por familiaridad",
+      "word": "indeterminacion",
       "weight": 2
     },
     {
-      "word": "reduccion de curiosidad",
+      "word": "proyeccion",
       "weight": 2
     },
     {
-      "word": "repeticion performativa",
+      "word": "repeticion",
       "weight": 2
     },
     {
-      "word": "ritual de reconocimiento",
+      "word": "transito",
       "weight": 2
     },
     {
-      "word": "suspension del deseo",
-      "weight": 2
-    },
-    {
-      "word": "tension ver-saber",
-      "weight": 2
-    },
-    {
-      "word": "alrededor",
+      "word": "azotea",
       "weight": 1
     },
     {
-      "word": "conocer",
+      "word": "camisa",
       "weight": 1
     },
     {
-      "word": "debilidad",
+      "word": "carros",
       "weight": 1
     },
     {
-      "word": "estudiarlo",
+      "word": "cerca",
       "weight": 1
     },
     {
-      "word": "igual",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "mirar",
+      "word": "hombre",
       "weight": 1
     },
     {
-      "word": "orientarse",
+      "word": "mente",
       "weight": 1
     },
     {
-      "word": "pie",
+      "word": "pantalones",
       "weight": 1
     },
     {
-      "word": "pregunta",
+      "word": "puente",
       "weight": 1
     },
     {
-      "word": "terminar",
+      "word": "viento",
       "weight": 1
     }
   ]

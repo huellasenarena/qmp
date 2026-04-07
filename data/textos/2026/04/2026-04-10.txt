@@ -1,0 +1,43 @@
+FECHA: 2026-04-10
+MY_POEM_TITLE: xy
+POETA: Violeta Villalba
+POEM_TITLE: Matutina
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+el puente con la cerca
+si dos carros van
+la cerca se abre
+si ningún va
+la cerca se abre
+
+la cerca que me permite
+pensar más allá de los carros
+la cerca invisible
+los carros invisibles
+que me abren la mente
+
+# POEMA_CITADO
+
+Ayer se balanceaban unos pantalones al viento en la azotea de una casa.
+
+Tuve que concentrar toda mi atención en aquel punto:
+para mí se trataba de un hombre que colgaba.
+
+
+			Hoy se mece una camisa sobre un cuerpo invisible
+
+# TEXTO
+
+el puente con la cerca
+si dos carros van
+la cerca se abre
+si ningún va
+la cerca se abre
+
+la cerca que me permite
+pensar más allá de los carros
+la cerca invisible
+los carros invisibles
+que me abren la mente
