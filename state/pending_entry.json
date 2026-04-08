@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-10",
+  "date": "2026-04-11",
   "month": "2026-04",
-  "file": "textos/2026-04-10.txt",
-  "my_poem_title": "xy",
-  "my_poem_snippet": "",
+  "file": "textos/2026-04-11.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "ayer un libro se puso a dieta",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,87 +12,67 @@
   },
   "keywords": [
     {
-      "word": "ausencia que activa",
+      "word": "autoborrado",
       "weight": 3
     },
     {
-      "word": "cierre que abre",
+      "word": "disciplina normativa",
       "weight": 3
     },
     {
-      "word": "condicion vaciada",
+      "word": "fracaso de la adecuacion",
       "weight": 3
     },
     {
-      "word": "invisibilidad productiva",
+      "word": "invisibilizacion",
       "weight": 3
     },
     {
-      "word": "umbral imaginativo",
+      "word": "simplificacion como borramiento",
       "weight": 3
     },
     {
-      "word": "desmaterializacion",
+      "word": "adelgazamiento",
       "weight": 2
     },
     {
-      "word": "desplazamiento perceptivo",
+      "word": "autoajuste",
       "weight": 2
     },
     {
-      "word": "indeterminacion",
+      "word": "autoignoracion",
       "weight": 2
     },
     {
-      "word": "proyeccion",
+      "word": "corporalizacion del lenguaje",
       "weight": 2
     },
     {
-      "word": "repeticion",
+      "word": "reduccion",
       "weight": 2
     },
     {
-      "word": "transito",
+      "word": "sustraccion",
       "weight": 2
     },
     {
-      "word": "azotea",
+      "word": "ayer",
       "weight": 1
     },
     {
-      "word": "camisa",
+      "word": "dieta",
       "weight": 1
     },
     {
-      "word": "carros",
+      "word": "hoy",
       "weight": 1
     },
     {
-      "word": "cerca",
+      "word": "libro",
       "weight": 1
     },
     {
-      "word": "cuerpo",
-      "weight": 1
-    },
-    {
-      "word": "hombre",
-      "weight": 1
-    },
-    {
-      "word": "mente",
-      "weight": 1
-    },
-    {
-      "word": "pantalones",
-      "weight": 1
-    },
-    {
-      "word": "puente",
-      "weight": 1
-    },
-    {
-      "word": "viento",
+      "word": "paginas",
       "weight": 1
     }
   ]
