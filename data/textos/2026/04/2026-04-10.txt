@@ -5,7 +5,6 @@ POEM_TITLE: Matutina
 BOOK_TITLE: Fragmentario
 
 # POEMA
-
 el puente con la cerca
 si dos carros van
 la cerca se abre
@@ -19,17 +18,15 @@ los carros invisibles
 que me abren la mente
 
 # POEMA_CITADO
-
 Ayer se balanceaban unos pantalones al viento en la azotea de una casa.
 
 Tuve que concentrar toda mi atención en aquel punto:
 para mí se trataba de un hombre que colgaba.
 
 
-			Hoy se mece una camisa sobre un cuerpo invisible
+			Hoy se mece una camisa sobre un cuerpo invisible.
 
 # TEXTO
-
 el puente con la cerca
 si dos carros van
 la cerca se abre
