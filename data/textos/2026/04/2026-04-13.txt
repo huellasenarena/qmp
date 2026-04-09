@@ -1,0 +1,43 @@
+FECHA: 2026-04-13
+MY_POEM_TITLE: por la noche
+POETA: Violeta Villalba
+POEM_TITLE: Matutina
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+por la noche
+leo sobre la mañana
+
+por la mañana
+pienso en la noche
+
+mañana
+pienso en ayer
+
+ayer
+pensé en ayer
+
+# POEMA_CITADO
+
+Ayer se balanceaban unos pantalons al viento en la azotea de una casa.
+
+Tuve que concentrar toda mi atención en aquel punto:
+para mí se trataba de un hombre que colgaba.
+
+
+			Hoy se mece una camisa sobre un cuerpo invisible.
+
+# TEXTO
+
+por la noche
+leo sobre la mañana
+
+por la mañana
+pienso en la noche
+
+mañana
+pienso en ayer
+
+ayer
+pensé en ayer

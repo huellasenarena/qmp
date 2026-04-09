@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-11",
+  "date": "2026-04-13",
   "month": "2026-04",
-  "file": "textos/2026-04-11.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "ayer un libro se puso a dieta",
+  "file": "textos/2026-04-13.txt",
+  "my_poem_title": "por la noche",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,47 +12,47 @@
   },
   "keywords": [
     {
-      "word": "autoborrado",
+      "word": "autorreferencia temporal",
       "weight": 3
     },
     {
-      "word": "disciplina normativa",
+      "word": "circularidad de la memoria",
       "weight": 3
     },
     {
-      "word": "fracaso de la adecuacion",
+      "word": "conciencia desincronizada",
       "weight": 3
     },
     {
-      "word": "invisibilizacion",
+      "word": "futuro como retorno",
       "weight": 3
     },
     {
-      "word": "simplificacion como borramiento",
+      "word": "sustraccion del presente",
       "weight": 3
     },
     {
-      "word": "adelgazamiento",
+      "word": "anacronia",
       "weight": 2
     },
     {
-      "word": "autoajuste",
+      "word": "anticipacion",
       "weight": 2
     },
     {
-      "word": "autoignoracion",
+      "word": "desplazamiento",
       "weight": 2
     },
     {
-      "word": "corporalizacion del lenguaje",
+      "word": "repeticion",
       "weight": 2
     },
     {
-      "word": "reduccion",
+      "word": "retroaccion",
       "weight": 2
     },
     {
-      "word": "sustraccion",
+      "word": "rumiacion",
       "weight": 2
     },
     {
@@ -60,19 +60,19 @@
       "weight": 1
     },
     {
-      "word": "dieta",
+      "word": "leer",
       "weight": 1
     },
     {
-      "word": "hoy",
+      "word": "manana",
       "weight": 1
     },
     {
-      "word": "libro",
+      "word": "noche",
       "weight": 1
     },
     {
-      "word": "paginas",
+      "word": "pensar",
       "weight": 1
     }
   ]

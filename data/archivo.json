@@ -1,5 +1,163 @@
 [
   {
+    "date": "2026-04-13",
+    "month": "2026-04",
+    "file": "textos/2026-04-13.txt",
+    "my_poem_title": "por la noche",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autorreferencia temporal",
+        "weight": 3
+      },
+      {
+        "word": "circularidad de la memoria",
+        "weight": 3
+      },
+      {
+        "word": "conciencia desincronizada",
+        "weight": 3
+      },
+      {
+        "word": "futuro como retorno",
+        "weight": 3
+      },
+      {
+        "word": "sustraccion del presente",
+        "weight": 3
+      },
+      {
+        "word": "anacronia",
+        "weight": 2
+      },
+      {
+        "word": "anticipacion",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento",
+        "weight": 2
+      },
+      {
+        "word": "repeticion",
+        "weight": 2
+      },
+      {
+        "word": "retroaccion",
+        "weight": 2
+      },
+      {
+        "word": "rumiacion",
+        "weight": 2
+      },
+      {
+        "word": "ayer",
+        "weight": 1
+      },
+      {
+        "word": "leer",
+        "weight": 1
+      },
+      {
+        "word": "manana",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "pensar",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-04-12",
+    "month": "2026-04",
+    "file": "textos/2026-04-12.txt",
+    "my_poem_title": "por la noche",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autorreferencia",
+        "weight": 3
+      },
+      {
+        "word": "circularidad temporal",
+        "weight": 3
+      },
+      {
+        "word": "destiempo",
+        "weight": 3
+      },
+      {
+        "word": "futuro retroactivo",
+        "weight": 3
+      },
+      {
+        "word": "presente cancelado",
+        "weight": 3
+      },
+      {
+        "word": "anticipacion",
+        "weight": 2
+      },
+      {
+        "word": "desfase",
+        "weight": 2
+      },
+      {
+        "word": "fijacion",
+        "weight": 2
+      },
+      {
+        "word": "insistencia",
+        "weight": 2
+      },
+      {
+        "word": "permutacion",
+        "weight": 2
+      },
+      {
+        "word": "retrospeccion",
+        "weight": 2
+      },
+      {
+        "word": "ayer",
+        "weight": 1
+      },
+      {
+        "word": "leer",
+        "weight": 1
+      },
+      {
+        "word": "manana",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "pensar",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-11",
     "month": "2026-04",
     "file": "textos/2026-04-11.txt",
