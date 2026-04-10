@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-04-14",
+    "month": "2026-04",
+    "file": "textos/2026-04-14.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "cada palabra leída",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "ausencia productiva",
+        "weight": 3
+      },
+      {
+        "word": "descreimiento",
+        "weight": 3
+      },
+      {
+        "word": "incomparecencia",
+        "weight": 3
+      },
+      {
+        "word": "mediacion",
+        "weight": 3
+      },
+      {
+        "word": "sustraccion",
+        "weight": 3
+      },
+      {
+        "word": "virtualidad",
+        "weight": 3
+      },
+      {
+        "word": "desdoblamiento",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento",
+        "weight": 2
+      },
+      {
+        "word": "distancia",
+        "weight": 2
+      },
+      {
+        "word": "equivalencia negativa",
+        "weight": 2
+      },
+      {
+        "word": "invisibilidad",
+        "weight": 2
+      },
+      {
+        "word": "proyeccion",
+        "weight": 2
+      },
+      {
+        "word": "camisa",
+        "weight": 1
+      },
+      {
+        "word": "creencia",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "escritura",
+        "weight": 1
+      },
+      {
+        "word": "lectura",
+        "weight": 1
+      },
+      {
+        "word": "mundo",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "visita",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-13",
     "month": "2026-04",
     "file": "textos/2026-04-13.txt",
