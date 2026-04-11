@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-04-15",
+    "month": "2026-04",
+    "file": "textos/2026-04-15.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "un joder",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autocensura",
+        "weight": 3
+      },
+      {
+        "word": "cortesia como negacion",
+        "weight": 3
+      },
+      {
+        "word": "imposibilidad",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje como mascara",
+        "weight": 3
+      },
+      {
+        "word": "violencia domesticada",
+        "weight": 3
+      },
+      {
+        "word": "bloqueo enunciativo",
+        "weight": 2
+      },
+      {
+        "word": "desdoblamiento del sentido",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento semantico",
+        "weight": 2
+      },
+      {
+        "word": "disimulo",
+        "weight": 2
+      },
+      {
+        "word": "represion",
+        "weight": 2
+      },
+      {
+        "word": "sofocacion",
+        "weight": 2
+      },
+      {
+        "word": "decir",
+        "weight": 1
+      },
+      {
+        "word": "garganta",
+        "weight": 1
+      },
+      {
+        "word": "hola",
+        "weight": 1
+      },
+      {
+        "word": "joder",
+        "weight": 1
+      },
+      {
+        "word": "nunca podre",
+        "weight": 1
+      },
+      {
+        "word": "salir",
+        "weight": 1
+      },
+      {
+        "word": "voz",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-14",
     "month": "2026-04",
     "file": "textos/2026-04-14.txt",

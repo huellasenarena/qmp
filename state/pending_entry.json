@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-14",
+  "date": "2026-04-15",
   "month": "2026-04",
-  "file": "textos/2026-04-14.txt",
+  "file": "textos/2026-04-15.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "cada palabra leída",
+  "my_poem_snippet": "un joder",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,83 +12,75 @@
   },
   "keywords": [
     {
-      "word": "ausencia productiva",
+      "word": "autocensura",
       "weight": 3
     },
     {
-      "word": "descreimiento",
+      "word": "cortesia como negacion",
       "weight": 3
     },
     {
-      "word": "incomparecencia",
+      "word": "imposibilidad",
       "weight": 3
     },
     {
-      "word": "mediacion",
+      "word": "lenguaje como mascara",
       "weight": 3
     },
     {
-      "word": "sustraccion",
+      "word": "violencia domesticada",
       "weight": 3
     },
     {
-      "word": "virtualidad",
-      "weight": 3
-    },
-    {
-      "word": "desdoblamiento",
+      "word": "bloqueo enunciativo",
       "weight": 2
     },
     {
-      "word": "desplazamiento",
+      "word": "desdoblamiento del sentido",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "desplazamiento semantico",
       "weight": 2
     },
     {
-      "word": "equivalencia negativa",
+      "word": "disimulo",
       "weight": 2
     },
     {
-      "word": "invisibilidad",
+      "word": "represion",
       "weight": 2
     },
     {
-      "word": "proyeccion",
+      "word": "sofocacion",
       "weight": 2
     },
     {
-      "word": "camisa",
+      "word": "decir",
       "weight": 1
     },
     {
-      "word": "creencia",
+      "word": "garganta",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "hola",
       "weight": 1
     },
     {
-      "word": "escritura",
+      "word": "joder",
       "weight": 1
     },
     {
-      "word": "lectura",
+      "word": "nunca podre",
       "weight": 1
     },
     {
-      "word": "mundo",
+      "word": "salir",
       "weight": 1
     },
     {
-      "word": "palabra",
-      "weight": 1
-    },
-    {
-      "word": "visita",
+      "word": "voz",
       "weight": 1
     }
   ]
