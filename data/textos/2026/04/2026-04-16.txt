@@ -1,0 +1,35 @@
+FECHA: 2026-04-16
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Matutina
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+el desarrollo
+un paso tras otro
+
+cuando lo que
+me hace falta
+es parar
+y imaginar andar
+
+# POEMA_CITADO
+
+Ayer se balanceaban unos pantalones al viento en la azotea de una casa.
+
+Tuve que concentrar toda mi atención en aquel punto:
+para mí se trataba de un hombre que colgaba.
+
+
+			Hoy se mece una camisa sobre un cuerpo invisible.
+
+# TEXTO
+
+el desarrollo
+un paso tras otro
+
+cuando lo que
+me hace falta
+es parar
+y imaginar andar

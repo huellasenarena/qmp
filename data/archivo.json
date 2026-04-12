@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-04-16",
+    "month": "2026-04",
+    "file": "textos/2026-04-16.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "el desarrollo",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autodeterminacion del ritmo",
+        "weight": 3
+      },
+      {
+        "word": "critica del progreso lineal",
+        "weight": 3
+      },
+      {
+        "word": "inmovilidad fecunda",
+        "weight": 3
+      },
+      {
+        "word": "movimiento virtual",
+        "weight": 3
+      },
+      {
+        "word": "temporalidad no lineal",
+        "weight": 3
+      },
+      {
+        "word": "demora",
+        "weight": 2
+      },
+      {
+        "word": "desfase",
+        "weight": 2
+      },
+      {
+        "word": "interiorizacion",
+        "weight": 2
+      },
+      {
+        "word": "interrupcion",
+        "weight": 2
+      },
+      {
+        "word": "mandato de avance",
+        "weight": 2
+      },
+      {
+        "word": "secuencialidad",
+        "weight": 2
+      },
+      {
+        "word": "andar",
+        "weight": 1
+      },
+      {
+        "word": "desarrollo",
+        "weight": 1
+      },
+      {
+        "word": "falta",
+        "weight": 1
+      },
+      {
+        "word": "imaginar",
+        "weight": 1
+      },
+      {
+        "word": "parar",
+        "weight": 1
+      },
+      {
+        "word": "paso",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-15",
     "month": "2026-04",
     "file": "textos/2026-04-15.txt",

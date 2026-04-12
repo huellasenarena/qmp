@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-15",
+  "date": "2026-04-16",
   "month": "2026-04",
-  "file": "textos/2026-04-15.txt",
+  "file": "textos/2026-04-16.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "un joder",
+  "my_poem_snippet": "el desarrollo",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,75 +12,71 @@
   },
   "keywords": [
     {
-      "word": "autocensura",
+      "word": "autodeterminacion del ritmo",
       "weight": 3
     },
     {
-      "word": "cortesia como negacion",
+      "word": "critica del progreso lineal",
       "weight": 3
     },
     {
-      "word": "imposibilidad",
+      "word": "inmovilidad fecunda",
       "weight": 3
     },
     {
-      "word": "lenguaje como mascara",
+      "word": "movimiento virtual",
       "weight": 3
     },
     {
-      "word": "violencia domesticada",
+      "word": "temporalidad no lineal",
       "weight": 3
     },
     {
-      "word": "bloqueo enunciativo",
+      "word": "demora",
       "weight": 2
     },
     {
-      "word": "desdoblamiento del sentido",
+      "word": "desfase",
       "weight": 2
     },
     {
-      "word": "desplazamiento semantico",
+      "word": "interiorizacion",
       "weight": 2
     },
     {
-      "word": "disimulo",
+      "word": "interrupcion",
       "weight": 2
     },
     {
-      "word": "represion",
+      "word": "mandato de avance",
       "weight": 2
     },
     {
-      "word": "sofocacion",
+      "word": "secuencialidad",
       "weight": 2
     },
     {
-      "word": "decir",
+      "word": "andar",
       "weight": 1
     },
     {
-      "word": "garganta",
+      "word": "desarrollo",
       "weight": 1
     },
     {
-      "word": "hola",
+      "word": "falta",
       "weight": 1
     },
     {
-      "word": "joder",
+      "word": "imaginar",
       "weight": 1
     },
     {
-      "word": "nunca podre",
+      "word": "parar",
       "weight": 1
     },
     {
-      "word": "salir",
-      "weight": 1
-    },
-    {
-      "word": "voz",
+      "word": "paso",
       "weight": 1
     }
   ]
