@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-16",
+  "date": "2026-04-17",
   "month": "2026-04",
-  "file": "textos/2026-04-16.txt",
+  "file": "textos/2026-04-17.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "el desarrollo",
+  "my_poem_snippet": "poemito mío",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,71 +12,71 @@
   },
   "keywords": [
     {
-      "word": "autodeterminacion del ritmo",
+      "word": "autoinscripcion afectiva",
       "weight": 3
     },
     {
-      "word": "critica del progreso lineal",
+      "word": "materialidad del lenguaje",
       "weight": 3
     },
     {
-      "word": "inmovilidad fecunda",
+      "word": "miniaturizacion afectiva",
       "weight": 3
     },
     {
-      "word": "movimiento virtual",
+      "word": "silencio como escritura",
       "weight": 3
     },
     {
-      "word": "temporalidad no lineal",
+      "word": "vacio como potencia",
       "weight": 3
     },
     {
-      "word": "demora",
+      "word": "autorreferencia",
       "weight": 2
     },
     {
-      "word": "desfase",
+      "word": "balbuceo",
       "weight": 2
     },
     {
-      "word": "interiorizacion",
+      "word": "condensacion",
       "weight": 2
     },
     {
-      "word": "interrupcion",
+      "word": "intimidad",
       "weight": 2
     },
     {
-      "word": "mandato de avance",
+      "word": "sustraccion",
       "weight": 2
     },
     {
-      "word": "secuencialidad",
+      "word": "ternura verbal",
       "weight": 2
     },
     {
-      "word": "andar",
+      "word": "diminutivo",
       "weight": 1
     },
     {
-      "word": "desarrollo",
+      "word": "dulzura",
       "weight": 1
     },
     {
-      "word": "falta",
+      "word": "escrito",
       "weight": 1
     },
     {
-      "word": "imaginar",
+      "word": "letra",
       "weight": 1
     },
     {
-      "word": "parar",
+      "word": "palabra",
       "weight": 1
     },
     {
-      "word": "paso",
+      "word": "poema",
       "weight": 1
     }
   ]

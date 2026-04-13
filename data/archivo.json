@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-04-17",
+    "month": "2026-04",
+    "file": "textos/2026-04-17.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "poemito mío",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autoinscripcion afectiva",
+        "weight": 3
+      },
+      {
+        "word": "materialidad del lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "miniaturizacion afectiva",
+        "weight": 3
+      },
+      {
+        "word": "silencio como escritura",
+        "weight": 3
+      },
+      {
+        "word": "vacio como potencia",
+        "weight": 3
+      },
+      {
+        "word": "autorreferencia",
+        "weight": 2
+      },
+      {
+        "word": "balbuceo",
+        "weight": 2
+      },
+      {
+        "word": "condensacion",
+        "weight": 2
+      },
+      {
+        "word": "intimidad",
+        "weight": 2
+      },
+      {
+        "word": "sustraccion",
+        "weight": 2
+      },
+      {
+        "word": "ternura verbal",
+        "weight": 2
+      },
+      {
+        "word": "diminutivo",
+        "weight": 1
+      },
+      {
+        "word": "dulzura",
+        "weight": 1
+      },
+      {
+        "word": "escrito",
+        "weight": 1
+      },
+      {
+        "word": "letra",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-16",
     "month": "2026-04",
     "file": "textos/2026-04-16.txt",
