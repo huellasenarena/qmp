@@ -1,7 +1,7 @@
 {
-  "date": "2026-04-12",
+  "date": "2026-04-13",
   "month": "2026-04",
-  "file": "textos/2026-04-12.txt",
+  "file": "textos/2026-04-13.txt",
   "my_poem_title": "por la noche",
   "my_poem_snippet": "",
   "analysis": {
@@ -12,47 +12,47 @@
   },
   "keywords": [
     {
-      "word": "autorreferencia",
+      "word": "autorreferencia temporal",
       "weight": 3
     },
     {
-      "word": "circularidad temporal",
+      "word": "circularidad de la memoria",
       "weight": 3
     },
     {
-      "word": "destiempo",
+      "word": "conciencia desincronizada",
       "weight": 3
     },
     {
-      "word": "futuro retroactivo",
+      "word": "futuro como retorno",
       "weight": 3
     },
     {
-      "word": "presente cancelado",
+      "word": "sustraccion del presente",
       "weight": 3
+    },
+    {
+      "word": "anacronia",
+      "weight": 2
     },
     {
       "word": "anticipacion",
       "weight": 2
     },
     {
-      "word": "desfase",
+      "word": "desplazamiento",
       "weight": 2
     },
     {
-      "word": "fijacion",
+      "word": "repeticion",
       "weight": 2
     },
     {
-      "word": "insistencia",
+      "word": "retroaccion",
       "weight": 2
     },
     {
-      "word": "permutacion",
-      "weight": 2
-    },
-    {
-      "word": "retrospeccion",
+      "word": "rumiacion",
       "weight": 2
     },
     {
