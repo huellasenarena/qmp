@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-17",
+  "date": "2026-04-18",
   "month": "2026-04",
-  "file": "textos/2026-04-17.txt",
+  "file": "textos/2026-04-18.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "poemito mío",
+  "my_poem_snippet": "eres la montaña",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,71 +12,75 @@
   },
   "keywords": [
     {
-      "word": "autoinscripcion afectiva",
+      "word": "asimetria vincular",
       "weight": 3
     },
     {
-      "word": "materialidad del lenguaje",
+      "word": "distancia como condicion del vinculo",
       "weight": 3
     },
     {
-      "word": "miniaturizacion afectiva",
+      "word": "orientacion relacional",
       "weight": 3
     },
     {
-      "word": "silencio como escritura",
+      "word": "proximidad como apartamiento",
       "weight": 3
     },
     {
-      "word": "vacio como potencia",
+      "word": "topografizacion del otro",
       "weight": 3
     },
     {
-      "word": "autorreferencia",
+      "word": "verticalidad",
+      "weight": 3
+    },
+    {
+      "word": "aproximacion",
       "weight": 2
     },
     {
-      "word": "balbuceo",
+      "word": "contemplacion",
       "weight": 2
     },
     {
-      "word": "condensacion",
+      "word": "desencuentro",
       "weight": 2
     },
     {
-      "word": "intimidad",
+      "word": "pasaje",
       "weight": 2
     },
     {
-      "word": "sustraccion",
+      "word": "reorientacion",
       "weight": 2
     },
     {
-      "word": "ternura verbal",
+      "word": "retirada",
       "weight": 2
     },
     {
-      "word": "diminutivo",
+      "word": "altura",
       "weight": 1
     },
     {
-      "word": "dulzura",
+      "word": "bajar",
       "weight": 1
     },
     {
-      "word": "escrito",
+      "word": "espalda",
       "weight": 1
     },
     {
-      "word": "letra",
+      "word": "mirar",
       "weight": 1
     },
     {
-      "word": "palabra",
+      "word": "montana",
       "weight": 1
     },
     {
-      "word": "poema",
+      "word": "subir",
       "weight": 1
     }
   ]

@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-04-18",
+    "month": "2026-04",
+    "file": "textos/2026-04-18.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "eres la montaña",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "asimetria vincular",
+        "weight": 3
+      },
+      {
+        "word": "distancia como condicion del vinculo",
+        "weight": 3
+      },
+      {
+        "word": "orientacion relacional",
+        "weight": 3
+      },
+      {
+        "word": "proximidad como apartamiento",
+        "weight": 3
+      },
+      {
+        "word": "topografizacion del otro",
+        "weight": 3
+      },
+      {
+        "word": "verticalidad",
+        "weight": 3
+      },
+      {
+        "word": "aproximacion",
+        "weight": 2
+      },
+      {
+        "word": "contemplacion",
+        "weight": 2
+      },
+      {
+        "word": "desencuentro",
+        "weight": 2
+      },
+      {
+        "word": "pasaje",
+        "weight": 2
+      },
+      {
+        "word": "reorientacion",
+        "weight": 2
+      },
+      {
+        "word": "retirada",
+        "weight": 2
+      },
+      {
+        "word": "altura",
+        "weight": 1
+      },
+      {
+        "word": "bajar",
+        "weight": 1
+      },
+      {
+        "word": "espalda",
+        "weight": 1
+      },
+      {
+        "word": "mirar",
+        "weight": 1
+      },
+      {
+        "word": "montana",
+        "weight": 1
+      },
+      {
+        "word": "subir",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-17",
     "month": "2026-04",
     "file": "textos/2026-04-17.txt",
