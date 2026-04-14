@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-14",
+  "date": "2026-04-12",
   "month": "2026-04",
-  "file": "textos/2026-04-14.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "cada palabra leída",
+  "file": "textos/2026-04-12.txt",
+  "my_poem_title": "por la noche",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,83 +12,67 @@
   },
   "keywords": [
     {
-      "word": "ausencia productiva",
+      "word": "autorreferencia",
       "weight": 3
     },
     {
-      "word": "descreimiento",
+      "word": "circularidad temporal",
       "weight": 3
     },
     {
-      "word": "incomparecencia",
+      "word": "destiempo",
       "weight": 3
     },
     {
-      "word": "mediacion",
+      "word": "futuro retroactivo",
       "weight": 3
     },
     {
-      "word": "sustraccion",
+      "word": "presente cancelado",
       "weight": 3
     },
     {
-      "word": "virtualidad",
-      "weight": 3
-    },
-    {
-      "word": "desdoblamiento",
+      "word": "anticipacion",
       "weight": 2
     },
     {
-      "word": "desplazamiento",
+      "word": "desfase",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "fijacion",
       "weight": 2
     },
     {
-      "word": "equivalencia negativa",
+      "word": "insistencia",
       "weight": 2
     },
     {
-      "word": "invisibilidad",
+      "word": "permutacion",
       "weight": 2
     },
     {
-      "word": "proyeccion",
+      "word": "retrospeccion",
       "weight": 2
     },
     {
-      "word": "camisa",
+      "word": "ayer",
       "weight": 1
     },
     {
-      "word": "creencia",
+      "word": "leer",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "manana",
       "weight": 1
     },
     {
-      "word": "escritura",
+      "word": "noche",
       "weight": 1
     },
     {
-      "word": "lectura",
-      "weight": 1
-    },
-    {
-      "word": "mundo",
-      "weight": 1
-    },
-    {
-      "word": "palabra",
-      "weight": 1
-    },
-    {
-      "word": "visita",
+      "word": "pensar",
       "weight": 1
     }
   ]
