@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-18",
+  "date": "2026-04-14",
   "month": "2026-04",
-  "file": "textos/2026-04-18.txt",
+  "file": "textos/2026-04-14.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "eres la montaña",
+  "my_poem_snippet": "cada palabra leída",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,75 +12,83 @@
   },
   "keywords": [
     {
-      "word": "asimetria vincular",
+      "word": "ausencia productiva",
       "weight": 3
     },
     {
-      "word": "distancia como condicion del vinculo",
+      "word": "descreimiento",
       "weight": 3
     },
     {
-      "word": "orientacion relacional",
+      "word": "incomparecencia",
       "weight": 3
     },
     {
-      "word": "proximidad como apartamiento",
+      "word": "mediacion",
       "weight": 3
     },
     {
-      "word": "topografizacion del otro",
+      "word": "sustraccion",
       "weight": 3
     },
     {
-      "word": "verticalidad",
+      "word": "virtualidad",
       "weight": 3
     },
     {
-      "word": "aproximacion",
+      "word": "desdoblamiento",
       "weight": 2
     },
     {
-      "word": "contemplacion",
+      "word": "desplazamiento",
       "weight": 2
     },
     {
-      "word": "desencuentro",
+      "word": "distancia",
       "weight": 2
     },
     {
-      "word": "pasaje",
+      "word": "equivalencia negativa",
       "weight": 2
     },
     {
-      "word": "reorientacion",
+      "word": "invisibilidad",
       "weight": 2
     },
     {
-      "word": "retirada",
+      "word": "proyeccion",
       "weight": 2
     },
     {
-      "word": "altura",
+      "word": "camisa",
       "weight": 1
     },
     {
-      "word": "bajar",
+      "word": "creencia",
       "weight": 1
     },
     {
-      "word": "espalda",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "mirar",
+      "word": "escritura",
       "weight": 1
     },
     {
-      "word": "montana",
+      "word": "lectura",
       "weight": 1
     },
     {
-      "word": "subir",
+      "word": "mundo",
+      "weight": 1
+    },
+    {
+      "word": "palabra",
+      "weight": 1
+    },
+    {
+      "word": "visita",
       "weight": 1
     }
   ]
