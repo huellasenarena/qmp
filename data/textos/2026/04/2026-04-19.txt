@@ -1,0 +1,29 @@
+FECHA: 2026-04-19
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Matutina
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+¿se romperá
+el enlace?
+no
+jamás se formió
+
+# POEMA_CITADO
+
+Ayer se balanceaban unos pantalones al viento en la azotea de una casa.
+
+Tuve que concentrar toda mi atención en aquel punto:
+para mí se trataba de un hombre que colgaba.
+
+
+			Hoy se mece una camisa sobre un cuerpo invisible.
+
+# TEXTO
+
+¿se romperá
+el enlace?
+no
+jamás se formió

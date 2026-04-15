@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-13",
+  "date": "2026-04-19",
   "month": "2026-04",
-  "file": "textos/2026-04-13.txt",
-  "my_poem_title": "por la noche",
-  "my_poem_snippet": "",
+  "file": "textos/2026-04-19.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "¿se romperá",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,67 +12,87 @@
   },
   "keywords": [
     {
-      "word": "autorreferencia temporal",
+      "word": "desvinculacion anterior a toda ruptura",
       "weight": 3
     },
     {
-      "word": "circularidad de la memoria",
+      "word": "falla constitutiva",
       "weight": 3
     },
     {
-      "word": "conciencia desincronizada",
+      "word": "fractura del lenguaje",
       "weight": 3
     },
     {
-      "word": "futuro como retorno",
+      "word": "inexistencia del vinculo",
       "weight": 3
     },
     {
-      "word": "sustraccion del presente",
+      "word": "vacio originario",
       "weight": 3
     },
     {
-      "word": "anacronia",
+      "word": "ausencia corporizada",
       "weight": 2
     },
     {
-      "word": "anticipacion",
+      "word": "desmentida",
       "weight": 2
     },
     {
-      "word": "desplazamiento",
+      "word": "equivoco del signo",
       "weight": 2
     },
     {
-      "word": "repeticion",
+      "word": "indeterminacion",
       "weight": 2
     },
     {
-      "word": "retroaccion",
+      "word": "invisibilidad",
       "weight": 2
     },
     {
-      "word": "rumiacion",
+      "word": "proyeccion",
       "weight": 2
     },
     {
-      "word": "ayer",
+      "word": "suspension",
+      "weight": 2
+    },
+    {
+      "word": "azotea",
       "weight": 1
     },
     {
-      "word": "leer",
+      "word": "camisa",
       "weight": 1
     },
     {
-      "word": "manana",
+      "word": "colgar",
       "weight": 1
     },
     {
-      "word": "noche",
+      "word": "cuerpo invisible",
       "weight": 1
     },
     {
-      "word": "pensar",
+      "word": "enlace",
+      "weight": 1
+    },
+    {
+      "word": "hombre",
+      "weight": 1
+    },
+    {
+      "word": "pantalones",
+      "weight": 1
+    },
+    {
+      "word": "romper",
+      "weight": 1
+    },
+    {
+      "word": "viento",
       "weight": 1
     }
   ]
