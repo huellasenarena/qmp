@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-19",
+  "date": "2026-04-20",
   "month": "2026-04",
-  "file": "textos/2026-04-19.txt",
+  "file": "textos/2026-04-20.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "¿se romperá",
+  "my_poem_snippet": "esto es la última gota",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,87 +12,67 @@
   },
   "keywords": [
     {
-      "word": "desvinculacion anterior a toda ruptura",
+      "word": "finitud",
       "weight": 3
     },
     {
-      "word": "falla constitutiva",
+      "word": "intemperie",
       "weight": 3
     },
     {
-      "word": "fractura del lenguaje",
+      "word": "la luz como despojo",
       "weight": 3
     },
     {
-      "word": "inexistencia del vinculo",
+      "word": "lo minimo como carga",
       "weight": 3
     },
     {
-      "word": "vacio originario",
+      "word": "saturacion",
       "weight": 3
     },
     {
-      "word": "ausencia corporizada",
+      "word": "umbral",
+      "weight": 3
+    },
+    {
+      "word": "acumulacion",
       "weight": 2
     },
     {
-      "word": "desmentida",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "equivoco del signo",
+      "word": "precariedad",
       "weight": 2
     },
     {
-      "word": "indeterminacion",
+      "word": "transicion",
       "weight": 2
     },
     {
-      "word": "invisibilidad",
-      "weight": 2
-    },
-    {
-      "word": "proyeccion",
-      "weight": 2
-    },
-    {
-      "word": "suspension",
-      "weight": 2
-    },
-    {
-      "word": "azotea",
+      "word": "chanquete",
       "weight": 1
     },
     {
-      "word": "camisa",
+      "word": "desvestir",
       "weight": 1
     },
     {
-      "word": "colgar",
+      "word": "gota",
       "weight": 1
     },
     {
-      "word": "cuerpo invisible",
+      "word": "lluvia",
       "weight": 1
     },
     {
-      "word": "enlace",
+      "word": "peso",
       "weight": 1
     },
     {
-      "word": "hombre",
-      "weight": 1
-    },
-    {
-      "word": "pantalones",
-      "weight": 1
-    },
-    {
-      "word": "romper",
-      "weight": 1
-    },
-    {
-      "word": "viento",
+      "word": "sol",
       "weight": 1
     }
   ]
