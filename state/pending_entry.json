@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-20",
+  "date": "2026-04-21",
   "month": "2026-04",
-  "file": "textos/2026-04-20.txt",
+  "file": "textos/2026-04-21.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "esto es la última gota",
+  "my_poem_snippet": "tantos blancos",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,67 +12,91 @@
   },
   "keywords": [
     {
-      "word": "finitud",
+      "word": "ausencia encarnada",
       "weight": 3
     },
     {
-      "word": "intemperie",
+      "word": "eleccion como perdida",
       "weight": 3
     },
     {
-      "word": "la luz como despojo",
+      "word": "indeterminacion perceptiva",
       "weight": 3
     },
     {
-      "word": "lo minimo como carga",
+      "word": "potencia de lo no elegido",
       "weight": 3
     },
     {
-      "word": "saturacion",
+      "word": "presion de lo multiple",
       "weight": 3
     },
     {
-      "word": "umbral",
+      "word": "suspension del contacto",
       "weight": 3
     },
     {
-      "word": "acumulacion",
+      "word": "concentracion",
       "weight": 2
     },
     {
-      "word": "exposicion",
+      "word": "conciencia del resto",
       "weight": 2
     },
     {
-      "word": "precariedad",
+      "word": "exclusion",
       "weight": 2
     },
     {
-      "word": "transicion",
+      "word": "invisibilidad",
       "weight": 2
     },
     {
-      "word": "chanquete",
+      "word": "proyeccion",
+      "weight": 2
+    },
+    {
+      "word": "vacilacion",
+      "weight": 2
+    },
+    {
+      "word": "azotea",
       "weight": 1
     },
     {
-      "word": "desvestir",
+      "word": "blancos",
       "weight": 1
     },
     {
-      "word": "gota",
+      "word": "camisa",
       "weight": 1
     },
     {
-      "word": "lluvia",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "peso",
+      "word": "elegir",
       "weight": 1
     },
     {
-      "word": "sol",
+      "word": "hombre",
+      "weight": 1
+    },
+    {
+      "word": "otros",
+      "weight": 1
+    },
+    {
+      "word": "pantalones",
+      "weight": 1
+    },
+    {
+      "word": "tocar",
+      "weight": 1
+    },
+    {
+      "word": "viento",
       "weight": 1
     }
   ]
