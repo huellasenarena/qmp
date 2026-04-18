@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-21",
+  "date": "2026-04-22",
   "month": "2026-04",
-  "file": "textos/2026-04-21.txt",
+  "file": "textos/2026-04-22.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "tantos blancos",
+  "my_poem_snippet": "la última vez",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,91 +12,75 @@
   },
   "keywords": [
     {
-      "word": "ausencia encarnada",
+      "word": "ausencia",
       "weight": 3
     },
     {
-      "word": "eleccion como perdida",
+      "word": "el final como persistencia",
       "weight": 3
     },
     {
-      "word": "indeterminacion perceptiva",
+      "word": "finitud",
       "weight": 3
     },
     {
-      "word": "potencia de lo no elegido",
+      "word": "imposibilidad del cierre",
       "weight": 3
     },
     {
-      "word": "presion de lo multiple",
+      "word": "insistencia",
       "weight": 3
     },
     {
-      "word": "suspension del contacto",
-      "weight": 3
-    },
-    {
-      "word": "concentracion",
+      "word": "aplazamiento",
       "weight": 2
     },
     {
-      "word": "conciencia del resto",
+      "word": "autorreferencia",
       "weight": 2
     },
     {
-      "word": "exclusion",
+      "word": "borradura",
       "weight": 2
     },
     {
-      "word": "invisibilidad",
+      "word": "repeticion",
       "weight": 2
     },
     {
-      "word": "proyeccion",
+      "word": "suspension",
       "weight": 2
     },
     {
-      "word": "vacilacion",
+      "word": "umbral",
       "weight": 2
-    },
-    {
-      "word": "azotea",
-      "weight": 1
-    },
-    {
-      "word": "blancos",
-      "weight": 1
     },
     {
       "word": "camisa",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "cuerpo invisible",
       "weight": 1
     },
     {
-      "word": "elegir",
+      "word": "escribiendo",
       "weight": 1
     },
     {
-      "word": "hombre",
+      "word": "gerundio",
       "weight": 1
     },
     {
-      "word": "otros",
+      "word": "palabra",
       "weight": 1
     },
     {
-      "word": "pantalones",
+      "word": "ultima",
       "weight": 1
     },
     {
-      "word": "tocar",
-      "weight": 1
-    },
-    {
-      "word": "viento",
+      "word": "vez",
       "weight": 1
     }
   ]
