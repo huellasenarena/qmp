@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-22",
+  "date": "2026-04-23",
   "month": "2026-04",
-  "file": "textos/2026-04-22.txt",
+  "file": "textos/2026-04-23.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "la última vez",
+  "my_poem_snippet": "¿y dónde fue el día y la tarde",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Matutina",
@@ -12,48 +12,52 @@
   },
   "keywords": [
     {
-      "word": "ausencia",
+      "word": "cancelacion del porvenir",
       "weight": 3
     },
     {
-      "word": "el final como persistencia",
+      "word": "ceguera voluntaria",
       "weight": 3
     },
     {
-      "word": "finitud",
+      "word": "evasion de la responsabilidad",
       "weight": 3
     },
     {
-      "word": "imposibilidad del cierre",
+      "word": "explicacion como coartada",
       "weight": 3
     },
     {
-      "word": "insistencia",
+      "word": "sustraccion del tiempo",
       "weight": 3
     },
     {
-      "word": "aplazamiento",
+      "word": "cobardia",
       "weight": 2
     },
     {
-      "word": "autorreferencia",
+      "word": "demora de la conciencia",
       "weight": 2
     },
     {
-      "word": "borradura",
+      "word": "desatencion",
       "weight": 2
     },
     {
-      "word": "repeticion",
+      "word": "incumplimiento",
       "weight": 2
     },
     {
-      "word": "suspension",
+      "word": "invisibilizacion",
       "weight": 2
     },
     {
-      "word": "umbral",
+      "word": "proyeccion",
       "weight": 2
+    },
+    {
+      "word": "azotea",
+      "weight": 1
     },
     {
       "word": "camisa",
@@ -64,23 +68,27 @@
       "weight": 1
     },
     {
-      "word": "escribiendo",
+      "word": "dia",
       "weight": 1
     },
     {
-      "word": "gerundio",
+      "word": "entierro",
       "weight": 1
     },
     {
-      "word": "palabra",
+      "word": "pantalones",
       "weight": 1
     },
     {
-      "word": "ultima",
+      "word": "promesas",
       "weight": 1
     },
     {
-      "word": "vez",
+      "word": "tarde",
+      "weight": 1
+    },
+    {
+      "word": "viento",
       "weight": 1
     }
   ]

@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-04-23",
+    "month": "2026-04",
+    "file": "textos/2026-04-23.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "¿y dónde fue el día y la tarde",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "cancelacion del porvenir",
+        "weight": 3
+      },
+      {
+        "word": "ceguera voluntaria",
+        "weight": 3
+      },
+      {
+        "word": "evasion de la responsabilidad",
+        "weight": 3
+      },
+      {
+        "word": "explicacion como coartada",
+        "weight": 3
+      },
+      {
+        "word": "sustraccion del tiempo",
+        "weight": 3
+      },
+      {
+        "word": "cobardia",
+        "weight": 2
+      },
+      {
+        "word": "demora de la conciencia",
+        "weight": 2
+      },
+      {
+        "word": "desatencion",
+        "weight": 2
+      },
+      {
+        "word": "incumplimiento",
+        "weight": 2
+      },
+      {
+        "word": "invisibilizacion",
+        "weight": 2
+      },
+      {
+        "word": "proyeccion",
+        "weight": 2
+      },
+      {
+        "word": "azotea",
+        "weight": 1
+      },
+      {
+        "word": "camisa",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo invisible",
+        "weight": 1
+      },
+      {
+        "word": "dia",
+        "weight": 1
+      },
+      {
+        "word": "entierro",
+        "weight": 1
+      },
+      {
+        "word": "pantalones",
+        "weight": 1
+      },
+      {
+        "word": "promesas",
+        "weight": 1
+      },
+      {
+        "word": "tarde",
+        "weight": 1
+      },
+      {
+        "word": "viento",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-22",
     "month": "2026-04",
     "file": "textos/2026-04-22.txt",
