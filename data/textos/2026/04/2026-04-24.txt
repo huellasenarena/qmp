@@ -1,0 +1,49 @@
+FECHA: 2026-04-24
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Matutina
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+cuando leo este poema
+me pregunto si vale la pena
+si el escritor tenía
+una idea buena
+cuando leo este poema
+
+cuando leo este poema
+puedo casi conectar la
+primera parte con la
+segunda
+cuando leo este poema
+
+cuando leí este poema
+voy a pensar en él
+cuando veo pantalones
+sin ir al nivel más profundo
+cuando leí este poema
+
+# POEMA_CITADO
+
+Ayer se balanceaban unos pantalones al viento en la azotea de una casa.
+
+Tuve que concentrar toda mi atención en aquel punto:
+para mí se trataba de un hombre que colgaba.
+
+
+			Hoy se mece una camisa sobre un cuerpo invisible.
+
+# TEXTO
+
+Durante muchos días he mirado este poema, sin escribir nada. Hoy me puse a escribir sobre él... no porque ya tenga ideas, sino porque las ideas vienen cuando intento.
+
+De alguna manera, estoy harto de escribir sobre tales poemas; escribir mis propios escritos me parece más interesante; a la vez nunca sé cuándo voy a leer algo impresionante, revelador. Entonces yo leo; yo intento; yo expongo mi mente y muestro la arena que se acumula dentro, esperando formarse en algo que va a ser destruido por un pie pesado...
+
+Se divide el poema en dos partes: lo pasado y lo actual. Ayer, hubo una escena banal: pantalones moviéndose por el aire (¿se secan? ¿alguien los lleva? ¿están allí sin querer?...). Esta escena marcó al hablante, invitándolo a mirar atentamente, haciéndolo pensar en alguien colgando (¿la ropa, por el aire, ya está hinchada y parece una persona? ¿o es una referencia a una ejecución? ¿o el hombre cuelga un objeto?)
+
+Al día siguiente, otra ropa, la camisa, la lleva alguien invisible.
+
+En conjunto, vemos la ausencia de una persona que se percibe como una presencia, y la presencia de una persona que se percibe como una presencia.
+
+Una interpretación que tengo es que el humano no forma su propio mundo; incluso sin él, el mundo se mueve. Por eso, en su ausencia, la ropa todavía se mueve por el esfuerzo de la naturaleza. Para el narrador, es una realización que cambia su perspectiva del mundo; ya no percibe al humano como una fuerza potente.
