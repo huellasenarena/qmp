@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-04-25",
+    "month": "2026-04",
+    "file": "textos/2026-04-25.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "tras pasar el comienzo de la montaña",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Vago por fuera de las cosas",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "fracaso como resguardo",
+        "weight": 3
+      },
+      {
+        "word": "progreso como riesgo",
+        "weight": 3
+      },
+      {
+        "word": "rechazo de la culminacion",
+        "weight": 3
+      },
+      {
+        "word": "retorno al origen",
+        "weight": 3
+      },
+      {
+        "word": "desasimiento",
+        "weight": 2
+      },
+      {
+        "word": "desorientacion",
+        "weight": 2
+      },
+      {
+        "word": "exterioridad",
+        "weight": 2
+      },
+      {
+        "word": "interrupcion",
+        "weight": 2
+      },
+      {
+        "word": "prevencion",
+        "weight": 2
+      },
+      {
+        "word": "umbral",
+        "weight": 2
+      },
+      {
+        "word": "caer",
+        "weight": 1
+      },
+      {
+        "word": "cima",
+        "weight": 1
+      },
+      {
+        "word": "comienzo",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "cuerpos",
+        "weight": 1
+      },
+      {
+        "word": "deslizarse",
+        "weight": 1
+      },
+      {
+        "word": "montana",
+        "weight": 1
+      },
+      {
+        "word": "principio",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-24",
     "month": "2026-04",
     "file": "textos/2026-04-24.txt",

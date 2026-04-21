@@ -1,114 +1,86 @@
 {
-  "date": "2026-04-24",
+  "date": "2026-04-25",
   "month": "2026-04",
-  "file": "textos/2026-04-24.txt",
+  "file": "textos/2026-04-25.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "cuando leo este poema",
+  "my_poem_snippet": "tras pasar el comienzo de la montaña",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Matutina",
+    "poem_title": "Vago por fuera de las cosas",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "asociacion contingente",
+      "word": "fracaso como resguardo",
       "weight": 3
     },
     {
-      "word": "autorreferencialidad",
+      "word": "progreso como riesgo",
       "weight": 3
     },
     {
-      "word": "crisis de la intencion autoral",
+      "word": "rechazo de la culminacion",
       "weight": 3
     },
     {
-      "word": "opacidad",
+      "word": "retorno al origen",
       "weight": 3
     },
     {
-      "word": "proyeccion",
-      "weight": 3
-    },
-    {
-      "word": "superficie como sentido",
-      "weight": 3
-    },
-    {
-      "word": "ausencia corporal",
+      "word": "desasimiento",
       "weight": 2
     },
     {
-      "word": "conexion parcial",
+      "word": "desorientacion",
       "weight": 2
     },
     {
-      "word": "cuestionamiento del valor",
+      "word": "exterioridad",
       "weight": 2
     },
     {
-      "word": "desplazamiento perceptivo",
+      "word": "interrupcion",
       "weight": 2
     },
     {
-      "word": "memoria involuntaria",
+      "word": "prevencion",
       "weight": 2
     },
     {
-      "word": "repeticion",
+      "word": "umbral",
       "weight": 2
     },
     {
-      "word": "vacilacion interpretativa",
-      "weight": 2
-    },
-    {
-      "word": "violencia latente",
-      "weight": 2
-    },
-    {
-      "word": "azotea",
+      "word": "caer",
       "weight": 1
     },
     {
-      "word": "camisa",
+      "word": "cima",
       "weight": 1
     },
     {
-      "word": "cuerpo invisible",
+      "word": "comienzo",
       "weight": 1
     },
     {
-      "word": "escritor",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "hombre",
+      "word": "cuerpos",
       "weight": 1
     },
     {
-      "word": "idea",
+      "word": "deslizarse",
       "weight": 1
     },
     {
-      "word": "pantalones",
+      "word": "montana",
       "weight": 1
     },
     {
-      "word": "poema",
-      "weight": 1
-    },
-    {
-      "word": "primera parte",
-      "weight": 1
-    },
-    {
-      "word": "segunda",
-      "weight": 1
-    },
-    {
-      "word": "viento",
+      "word": "principio",
       "weight": 1
     }
   ]

@@ -1,0 +1,33 @@
+FECHA: 2026-04-25
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Vago por fuera de las cosas
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+tras pasar el comienzo de la montaña
+me deslice
+y caí hasta el principio
+
+mejor caer aqui
+que en la cima
+
+# POEMA_CITADO
+
+Vago por fuera de las cosas
+	Salgo de la vida aunque me encuentre allí
+En un momento cualquiera
+	Con la gente
+Sin premeditarlo
+	Me ausento del cuerpo
+Entre los cuerpos
+
+# TEXTO
+
+tras pasar el comienzo de la montaña
+me deslice
+y caí hasta el principio
+
+mejor caer aqui
+que en la cima
