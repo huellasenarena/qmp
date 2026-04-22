@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-04-26",
+    "month": "2026-04",
+    "file": "textos/2026-04-26.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "lo nuevo",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Vago por fuera de las cosas",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "novedad como ficcion",
+        "weight": 3
+      },
+      {
+        "word": "obsolescencia anticipada",
+        "weight": 3
+      },
+      {
+        "word": "presencia ausente",
+        "weight": 3
+      },
+      {
+        "word": "presente abolido",
+        "weight": 3
+      },
+      {
+        "word": "sustitucion como norma",
+        "weight": 3
+      },
+      {
+        "word": "caducidad",
+        "weight": 2
+      },
+      {
+        "word": "desfase",
+        "weight": 2
+      },
+      {
+        "word": "desincorporacion",
+        "weight": 2
+      },
+      {
+        "word": "exterioridad",
+        "weight": 2
+      },
+      {
+        "word": "reemplazo",
+        "weight": 2
+      },
+      {
+        "word": "transitoriedad",
+        "weight": 2
+      },
+      {
+        "word": "afuera",
+        "weight": 1
+      },
+      {
+        "word": "cosas",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "cuerpos",
+        "weight": 1
+      },
+      {
+        "word": "gente",
+        "weight": 1
+      },
+      {
+        "word": "momento",
+        "weight": 1
+      },
+      {
+        "word": "nuevo",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      },
+      {
+        "word": "viejo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-25",
     "month": "2026-04",
     "file": "textos/2026-04-25.txt",

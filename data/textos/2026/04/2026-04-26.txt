@@ -1,0 +1,33 @@
+FECHA: 2026-04-26
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Vago por fuera de las cosas
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+lo nuevo
+remplaza lo viejo
+antes que se vuelve
+en lo viejo
+
+nunca existió
+
+# POEMA_CITADO
+
+Vago por fuera de las cosas
+	Salgo de la vida aunque me encuentre allí
+En un momento cualquiera
+	Con la gente
+Sin premeditarlo
+	Me ausento del cuerpo
+Entre los cuerpos
+
+# TEXTO
+
+lo nuevo
+remplaza lo viejo
+antes que se vuelve
+en lo viejo
+
+nunca existió
