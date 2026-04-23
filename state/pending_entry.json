@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-26",
+  "date": "2026-04-27",
   "month": "2026-04",
-  "file": "textos/2026-04-26.txt",
+  "file": "textos/2026-04-27.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "lo nuevo",
+  "my_poem_snippet": "es entre las líneas",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Vago por fuera de las cosas",
@@ -12,83 +12,83 @@
   },
   "keywords": [
     {
-      "word": "novedad como ficcion",
+      "word": "desapropiacion del decir",
       "weight": 3
     },
     {
-      "word": "obsolescencia anticipada",
+      "word": "deseo de ingreso",
       "weight": 3
     },
     {
-      "word": "presencia ausente",
+      "word": "el entre como morada",
       "weight": 3
     },
     {
-      "word": "presente abolido",
+      "word": "exterioridad del lenguaje",
       "weight": 3
     },
     {
-      "word": "sustitucion como norma",
+      "word": "inaccesibilidad",
       "weight": 3
     },
     {
-      "word": "caducidad",
+      "word": "la distancia como vinculo",
+      "weight": 3
+    },
+    {
+      "word": "aproximacion imposible",
       "weight": 2
     },
     {
-      "word": "desfase",
+      "word": "borde",
       "weight": 2
     },
     {
-      "word": "desincorporacion",
+      "word": "contemplacion externa",
       "weight": 2
     },
     {
-      "word": "exterioridad",
+      "word": "errancia",
       "weight": 2
     },
     {
-      "word": "reemplazo",
+      "word": "imaginacion",
       "weight": 2
     },
     {
-      "word": "transitoriedad",
+      "word": "orientacion",
       "weight": 2
     },
     {
-      "word": "afuera",
+      "word": "separacion",
+      "weight": 2
+    },
+    {
+      "word": "camino",
       "weight": 1
     },
     {
-      "word": "cosas",
+      "word": "fuera",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "lineas",
       "weight": 1
     },
     {
-      "word": "cuerpos",
+      "word": "palabras",
       "weight": 1
     },
     {
-      "word": "gente",
+      "word": "tocar",
       "weight": 1
     },
     {
-      "word": "momento",
+      "word": "vagar",
       "weight": 1
     },
     {
-      "word": "nuevo",
-      "weight": 1
-    },
-    {
-      "word": "vida",
-      "weight": 1
-    },
-    {
-      "word": "viejo",
+      "word": "ver",
       "weight": 1
     }
   ]

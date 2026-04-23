@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-04-27",
+    "month": "2026-04",
+    "file": "textos/2026-04-27.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "es entre las líneas",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Vago por fuera de las cosas",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "desapropiacion del decir",
+        "weight": 3
+      },
+      {
+        "word": "deseo de ingreso",
+        "weight": 3
+      },
+      {
+        "word": "el entre como morada",
+        "weight": 3
+      },
+      {
+        "word": "exterioridad del lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "inaccesibilidad",
+        "weight": 3
+      },
+      {
+        "word": "la distancia como vinculo",
+        "weight": 3
+      },
+      {
+        "word": "aproximacion imposible",
+        "weight": 2
+      },
+      {
+        "word": "borde",
+        "weight": 2
+      },
+      {
+        "word": "contemplacion externa",
+        "weight": 2
+      },
+      {
+        "word": "errancia",
+        "weight": 2
+      },
+      {
+        "word": "imaginacion",
+        "weight": 2
+      },
+      {
+        "word": "orientacion",
+        "weight": 2
+      },
+      {
+        "word": "separacion",
+        "weight": 2
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      },
+      {
+        "word": "fuera",
+        "weight": 1
+      },
+      {
+        "word": "lineas",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "tocar",
+        "weight": 1
+      },
+      {
+        "word": "vagar",
+        "weight": 1
+      },
+      {
+        "word": "ver",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-26",
     "month": "2026-04",
     "file": "textos/2026-04-26.txt",
