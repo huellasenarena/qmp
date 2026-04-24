@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-04-28",
+    "month": "2026-04",
+    "file": "textos/2026-04-28.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "como al principio de una carrera",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Vago por fuera de las cosas",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autointerpelacion",
+        "weight": 3
+      },
+      {
+        "word": "comienzo como anticipacion del limite",
+        "weight": 3
+      },
+      {
+        "word": "escision corporal",
+        "weight": 3
+      },
+      {
+        "word": "finitud corporal",
+        "weight": 3
+      },
+      {
+        "word": "incertidumbre",
+        "weight": 3
+      },
+      {
+        "word": "agotamiento",
+        "weight": 2
+      },
+      {
+        "word": "anticipacion",
+        "weight": 2
+      },
+      {
+        "word": "ausencia corporal",
+        "weight": 2
+      },
+      {
+        "word": "desajuste",
+        "weight": 2
+      },
+      {
+        "word": "gobierno del aliento",
+        "weight": 2
+      },
+      {
+        "word": "resistencia",
+        "weight": 2
+      },
+      {
+        "word": "carrera",
+        "weight": 1
+      },
+      {
+        "word": "correr",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "mover",
+        "weight": 1
+      },
+      {
+        "word": "piernas",
+        "weight": 1
+      },
+      {
+        "word": "principio",
+        "weight": 1
+      },
+      {
+        "word": "respira",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-27",
     "month": "2026-04",
     "file": "textos/2026-04-27.txt",

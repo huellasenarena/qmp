@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-27",
+  "date": "2026-04-28",
   "month": "2026-04",
-  "file": "textos/2026-04-27.txt",
+  "file": "textos/2026-04-28.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "es entre las líneas",
+  "my_poem_snippet": "como al principio de una carrera",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Vago por fuera de las cosas",
@@ -12,83 +12,75 @@
   },
   "keywords": [
     {
-      "word": "desapropiacion del decir",
+      "word": "autointerpelacion",
       "weight": 3
     },
     {
-      "word": "deseo de ingreso",
+      "word": "comienzo como anticipacion del limite",
       "weight": 3
     },
     {
-      "word": "el entre como morada",
+      "word": "escision corporal",
       "weight": 3
     },
     {
-      "word": "exterioridad del lenguaje",
+      "word": "finitud corporal",
       "weight": 3
     },
     {
-      "word": "inaccesibilidad",
+      "word": "incertidumbre",
       "weight": 3
     },
     {
-      "word": "la distancia como vinculo",
-      "weight": 3
-    },
-    {
-      "word": "aproximacion imposible",
+      "word": "agotamiento",
       "weight": 2
     },
     {
-      "word": "borde",
+      "word": "anticipacion",
       "weight": 2
     },
     {
-      "word": "contemplacion externa",
+      "word": "ausencia corporal",
       "weight": 2
     },
     {
-      "word": "errancia",
+      "word": "desajuste",
       "weight": 2
     },
     {
-      "word": "imaginacion",
+      "word": "gobierno del aliento",
       "weight": 2
     },
     {
-      "word": "orientacion",
+      "word": "resistencia",
       "weight": 2
     },
     {
-      "word": "separacion",
-      "weight": 2
-    },
-    {
-      "word": "camino",
+      "word": "carrera",
       "weight": 1
     },
     {
-      "word": "fuera",
+      "word": "correr",
       "weight": 1
     },
     {
-      "word": "lineas",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "palabras",
+      "word": "mover",
       "weight": 1
     },
     {
-      "word": "tocar",
+      "word": "piernas",
       "weight": 1
     },
     {
-      "word": "vagar",
+      "word": "principio",
       "weight": 1
     },
     {
-      "word": "ver",
+      "word": "respira",
       "weight": 1
     }
   ]
