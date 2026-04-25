@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-28",
+  "date": "2026-04-29",
   "month": "2026-04",
-  "file": "textos/2026-04-28.txt",
+  "file": "textos/2026-04-29.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "como al principio de una carrera",
+  "my_poem_snippet": "el cuerpo no puede mentir",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Vago por fuera de las cosas",
@@ -12,55 +12,59 @@
   },
   "keywords": [
     {
-      "word": "autointerpelacion",
+      "word": "anterioridad prediscursiva",
       "weight": 3
     },
     {
-      "word": "comienzo como anticipacion del limite",
+      "word": "desautorizacion del lenguaje",
       "weight": 3
     },
     {
-      "word": "escision corporal",
+      "word": "extranamiento encarnado",
       "weight": 3
     },
     {
-      "word": "finitud corporal",
+      "word": "presencia ausente",
       "weight": 3
     },
     {
-      "word": "incertidumbre",
+      "word": "silencio como testimonio",
       "weight": 3
     },
     {
-      "word": "agotamiento",
-      "weight": 2
-    },
-    {
-      "word": "anticipacion",
-      "weight": 2
-    },
-    {
-      "word": "ausencia corporal",
-      "weight": 2
+      "word": "verdad involuntaria",
+      "weight": 3
     },
     {
       "word": "desajuste",
       "weight": 2
     },
     {
-      "word": "gobierno del aliento",
+      "word": "desposesion",
       "weight": 2
     },
     {
-      "word": "resistencia",
+      "word": "disociacion",
       "weight": 2
     },
     {
-      "word": "carrera",
+      "word": "involuntariedad",
+      "weight": 2
+    },
+    {
+      "word": "mutismo",
+      "weight": 2
+    },
+    {
+      "word": "retirada",
+      "weight": 2
+    },
+    {
+      "word": "cerrar",
       "weight": 1
     },
     {
-      "word": "correr",
+      "word": "cosas",
       "weight": 1
     },
     {
@@ -68,19 +72,35 @@
       "weight": 1
     },
     {
-      "word": "mover",
+      "word": "fingir",
       "weight": 1
     },
     {
-      "word": "piernas",
+      "word": "fuera",
       "weight": 1
     },
     {
-      "word": "principio",
+      "word": "gente",
       "weight": 1
     },
     {
-      "word": "respira",
+      "word": "mentir",
+      "weight": 1
+    },
+    {
+      "word": "ojos",
+      "weight": 1
+    },
+    {
+      "word": "palabras",
+      "weight": 1
+    },
+    {
+      "word": "vagar",
+      "weight": 1
+    },
+    {
+      "word": "vida",
       "weight": 1
     }
   ]

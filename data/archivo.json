@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-04-29",
+    "month": "2026-04",
+    "file": "textos/2026-04-29.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "el cuerpo no puede mentir",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Vago por fuera de las cosas",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "anterioridad prediscursiva",
+        "weight": 3
+      },
+      {
+        "word": "desautorizacion del lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "extranamiento encarnado",
+        "weight": 3
+      },
+      {
+        "word": "presencia ausente",
+        "weight": 3
+      },
+      {
+        "word": "silencio como testimonio",
+        "weight": 3
+      },
+      {
+        "word": "verdad involuntaria",
+        "weight": 3
+      },
+      {
+        "word": "desajuste",
+        "weight": 2
+      },
+      {
+        "word": "desposesion",
+        "weight": 2
+      },
+      {
+        "word": "disociacion",
+        "weight": 2
+      },
+      {
+        "word": "involuntariedad",
+        "weight": 2
+      },
+      {
+        "word": "mutismo",
+        "weight": 2
+      },
+      {
+        "word": "retirada",
+        "weight": 2
+      },
+      {
+        "word": "cerrar",
+        "weight": 1
+      },
+      {
+        "word": "cosas",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "fingir",
+        "weight": 1
+      },
+      {
+        "word": "fuera",
+        "weight": 1
+      },
+      {
+        "word": "gente",
+        "weight": 1
+      },
+      {
+        "word": "mentir",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "vagar",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-28",
     "month": "2026-04",
     "file": "textos/2026-04-28.txt",

@@ -1,0 +1,31 @@
+FECHA: 2026-04-29
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Vago por fuera de las cosas
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+el cuerpo no puede mentir
+no puede fingir
+los ojos cierran
+antes de que las palabras
+se elijeron
+
+# POEMA_CITADO
+
+Vago por fuera de las cosas
+	Salgo de la vida aunque me encuentre allí
+En un momento cualquiera
+	Con la gente
+Sin premeditarlo
+	Me ausento del cuerpo
+Entre los cuerpos
+
+# TEXTO
+
+el cuerpo no puede mentir
+no puede fingir
+los ojos cierran
+antes de que las palabras
+se elijeron
