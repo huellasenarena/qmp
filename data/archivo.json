@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-04-30",
+    "month": "2026-04",
+    "file": "textos/2026-04-30.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "cuando mis ojos pesan",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Vago por fuera de las cosas",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "agotamiento",
+        "weight": 3
+      },
+      {
+        "word": "disociacion",
+        "weight": 3
+      },
+      {
+        "word": "el descanso como opresion",
+        "weight": 3
+      },
+      {
+        "word": "la vision como encierro",
+        "weight": 3
+      },
+      {
+        "word": "mandato",
+        "weight": 3
+      },
+      {
+        "word": "suspension de la agencia",
+        "weight": 3
+      },
+      {
+        "word": "adormecimiento",
+        "weight": 2
+      },
+      {
+        "word": "ausencia corporal",
+        "weight": 2
+      },
+      {
+        "word": "coaccion",
+        "weight": 2
+      },
+      {
+        "word": "inmovilidad",
+        "weight": 2
+      },
+      {
+        "word": "repeticion compulsiva",
+        "weight": 2
+      },
+      {
+        "word": "retirada",
+        "weight": 2
+      },
+      {
+        "word": "colchon",
+        "weight": 1
+      },
+      {
+        "word": "cubrir",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "peso",
+        "weight": 1
+      },
+      {
+        "word": "tengo que",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-29",
     "month": "2026-04",
     "file": "textos/2026-04-29.txt",
