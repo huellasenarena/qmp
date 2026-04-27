@@ -1,0 +1,34 @@
+FECHA: 2026-05-01
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Vago por fuera de las cosas
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+respirar otra respiración
+no hay una buena o mala
+solo hay si me permita vivir
+
+escribir otra palabra
+peor que la última
+más ruidosa que la próxima
+se apaga y no la veo
+
+# POEMA_CITADO
+
+Vago por fuera de las cosas
+	Salgo de la vida aunque me encuentre allí
+En un momento cualquiera
+	Con la gente
+Sin premeditarlo
+	Me ausento del cuerpo
+Entre los cuerpos
+
+# TEXTO
+
+El narrador cuenta su sentimiento imprevisible y general de alienación de sí mismo y de la gente.
+
+Este sentimiento tiene una calidad contradictoria ("Salgo de la vida aunque me encuentre allí", "me ausento del cuerpo Entre los cuerpos"), contribuyendo a una pregunta epistemológica: el narrador tiene un sentimiento que no está alienado con el mundo físico.
+
+Para mí el poema sugiere que los sentimientos existen en su propio mundo, separado del mundo natural; lo psicológico está separado del físico.

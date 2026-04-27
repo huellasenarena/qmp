@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-30",
-  "month": "2026-04",
-  "file": "textos/2026-04-30.txt",
+  "date": "2026-05-01",
+  "month": "2026-05",
+  "file": "textos/2026-05-01.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "cuando mis ojos pesan",
+  "my_poem_snippet": "respirar otra respiración",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Vago por fuera de las cosas",
@@ -12,59 +12,51 @@
   },
   "keywords": [
     {
-      "word": "agotamiento",
+      "word": "agotamiento del signo",
       "weight": 3
     },
     {
-      "word": "disociacion",
+      "word": "alteridad interior",
       "weight": 3
     },
     {
-      "word": "el descanso como opresion",
+      "word": "disociacion corporal",
       "weight": 3
     },
     {
-      "word": "la vision como encierro",
+      "word": "habitabilidad de la falla",
       "weight": 3
     },
     {
-      "word": "mandato",
-      "weight": 3
-    },
-    {
-      "word": "suspension de la agencia",
-      "weight": 3
-    },
-    {
-      "word": "adormecimiento",
+      "word": "borramiento",
       "weight": 2
     },
     {
-      "word": "ausencia corporal",
+      "word": "deriva",
       "weight": 2
     },
     {
-      "word": "coaccion",
+      "word": "desanclaje",
       "weight": 2
     },
     {
-      "word": "inmovilidad",
+      "word": "exterioridad",
       "weight": 2
     },
     {
-      "word": "repeticion compulsiva",
+      "word": "inadecuacion",
       "weight": 2
     },
     {
-      "word": "retirada",
+      "word": "intermitencia",
       "weight": 2
     },
     {
-      "word": "colchon",
+      "word": "apagarse",
       "weight": 1
     },
     {
-      "word": "cubrir",
+      "word": "cosas",
       "weight": 1
     },
     {
@@ -72,15 +64,31 @@
       "weight": 1
     },
     {
-      "word": "ojos",
+      "word": "escribir",
       "weight": 1
     },
     {
-      "word": "peso",
+      "word": "fuera",
       "weight": 1
     },
     {
-      "word": "tengo que",
+      "word": "palabra",
+      "weight": 1
+    },
+    {
+      "word": "respiracion",
+      "weight": 1
+    },
+    {
+      "word": "ruido",
+      "weight": 1
+    },
+    {
+      "word": "ver",
+      "weight": 1
+    },
+    {
+      "word": "vida",
       "weight": 1
     }
   ]

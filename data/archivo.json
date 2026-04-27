@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-05-01",
+    "month": "2026-05",
+    "file": "textos/2026-05-01.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "respirar otra respiración",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Vago por fuera de las cosas",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "agotamiento del signo",
+        "weight": 3
+      },
+      {
+        "word": "alteridad interior",
+        "weight": 3
+      },
+      {
+        "word": "disociacion corporal",
+        "weight": 3
+      },
+      {
+        "word": "habitabilidad de la falla",
+        "weight": 3
+      },
+      {
+        "word": "borramiento",
+        "weight": 2
+      },
+      {
+        "word": "deriva",
+        "weight": 2
+      },
+      {
+        "word": "desanclaje",
+        "weight": 2
+      },
+      {
+        "word": "exterioridad",
+        "weight": 2
+      },
+      {
+        "word": "inadecuacion",
+        "weight": 2
+      },
+      {
+        "word": "intermitencia",
+        "weight": 2
+      },
+      {
+        "word": "apagarse",
+        "weight": 1
+      },
+      {
+        "word": "cosas",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "escribir",
+        "weight": 1
+      },
+      {
+        "word": "fuera",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "respiracion",
+        "weight": 1
+      },
+      {
+        "word": "ruido",
+        "weight": 1
+      },
+      {
+        "word": "ver",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-04-30",
     "month": "2026-04",
     "file": "textos/2026-04-30.txt",
