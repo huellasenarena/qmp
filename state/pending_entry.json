@@ -1,9 +1,9 @@
 {
-  "date": "2026-05-01",
+  "date": "2026-05-02",
   "month": "2026-05",
-  "file": "textos/2026-05-01.txt",
+  "file": "textos/2026-05-02.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "respirar otra respiración",
+  "my_poem_snippet": "me enfoco en lo que quiero",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Vago por fuera de las cosas",
@@ -12,83 +12,79 @@
   },
   "keywords": [
     {
-      "word": "agotamiento del signo",
+      "word": "atencion sitiada",
       "weight": 3
     },
     {
-      "word": "alteridad interior",
+      "word": "economia defensiva",
       "weight": 3
     },
     {
-      "word": "disociacion corporal",
+      "word": "el goce como producto de la eliminacion",
       "weight": 3
     },
     {
-      "word": "habitabilidad de la falla",
+      "word": "la produccion como saldo de la defensa",
       "weight": 3
     },
     {
-      "word": "borramiento",
+      "word": "microviolencia",
+      "weight": 3
+    },
+    {
+      "word": "prioridad de la amenaza",
+      "weight": 3
+    },
+    {
+      "word": "combate",
       "weight": 2
     },
     {
-      "word": "deriva",
+      "word": "contabilidad",
       "weight": 2
     },
     {
-      "word": "desanclaje",
+      "word": "desgaste",
       "weight": 2
     },
     {
-      "word": "exterioridad",
+      "word": "desplazamiento",
       "weight": 2
     },
     {
-      "word": "inadecuacion",
+      "word": "enfoque",
       "weight": 2
     },
     {
-      "word": "intermitencia",
+      "word": "equivalencia",
       "weight": 2
     },
     {
-      "word": "apagarse",
+      "word": "interrupcion",
+      "weight": 2
+    },
+    {
+      "word": "repeticion",
+      "weight": 2
+    },
+    {
+      "word": "cancion",
       "weight": 1
     },
     {
-      "word": "cosas",
+      "word": "herramienta",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "mosquito",
       "weight": 1
     },
     {
-      "word": "escribir",
+      "word": "orgasmo",
       "weight": 1
     },
     {
-      "word": "fuera",
-      "weight": 1
-    },
-    {
-      "word": "palabra",
-      "weight": 1
-    },
-    {
-      "word": "respiracion",
-      "weight": 1
-    },
-    {
-      "word": "ruido",
-      "weight": 1
-    },
-    {
-      "word": "ver",
-      "weight": 1
-    },
-    {
-      "word": "vida",
+      "word": "trabajo",
       "weight": 1
     }
   ]
