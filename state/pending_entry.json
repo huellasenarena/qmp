@@ -1,90 +1,110 @@
 {
-  "date": "2026-05-02",
+  "date": "2026-05-03",
   "month": "2026-05",
-  "file": "textos/2026-05-02.txt",
+  "file": "textos/2026-05-03.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "me enfoco en lo que quiero",
+  "my_poem_snippet": "para saber lo que quiero",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Vago por fuera de las cosas",
+    "poem_title": "Trozos",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "atencion sitiada",
+      "word": "agencia supletoria",
       "weight": 3
     },
     {
-      "word": "economia defensiva",
+      "word": "agotamiento como potencia",
       "weight": 3
     },
     {
-      "word": "el goce como producto de la eliminacion",
+      "word": "autoconocimiento relacional",
       "weight": 3
     },
     {
-      "word": "la produccion como saldo de la defensa",
+      "word": "deseo heteronomo",
       "weight": 3
     },
     {
-      "word": "microviolencia",
+      "word": "desposesion del yo",
       "weight": 3
     },
     {
-      "word": "prioridad de la amenaza",
-      "weight": 3
-    },
-    {
-      "word": "combate",
+      "word": "autoalienacion",
       "weight": 2
     },
     {
-      "word": "contabilidad",
+      "word": "delegacion del juicio",
       "weight": 2
     },
     {
-      "word": "desgaste",
+      "word": "dependencia del otro",
       "weight": 2
     },
     {
-      "word": "desplazamiento",
+      "word": "diseminacion en la voz",
       "weight": 2
     },
     {
-      "word": "enfoque",
+      "word": "enunciacion del deseo",
       "weight": 2
     },
     {
-      "word": "equivalencia",
+      "word": "fragmentacion corporal",
       "weight": 2
     },
     {
-      "word": "interrupcion",
+      "word": "incertidumbre identitaria",
       "weight": 2
     },
     {
-      "word": "repeticion",
+      "word": "negociacion del limite",
       "weight": 2
     },
     {
-      "word": "cancion",
+      "word": "persistencia precaria",
+      "weight": 2
+    },
+    {
+      "word": "coche",
       "weight": 1
     },
     {
-      "word": "herramienta",
+      "word": "conducir",
       "weight": 1
     },
     {
-      "word": "mosquito",
+      "word": "empujar",
       "weight": 1
     },
     {
-      "word": "orgasmo",
+      "word": "juntarse",
       "weight": 1
     },
     {
-      "word": "trabajo",
+      "word": "morir",
+      "weight": 1
+    },
+    {
+      "word": "petroleo",
+      "weight": 1
+    },
+    {
+      "word": "piel",
+      "weight": 1
+    },
+    {
+      "word": "pregunta",
+      "weight": 1
+    },
+    {
+      "word": "trozos",
+      "weight": 1
+    },
+    {
+      "word": "voces",
       "weight": 1
     }
   ]

@@ -1,0 +1,36 @@
+FECHA: 2026-05-03
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Trozos
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+para saber lo que quiero
+te lo comparto.
+no como una pregunta
+pero como un coche
+que paulatinamente
+se acaba del petróleo
+cuando lo ves a punto
+de morir
+dices si se puede o no
+conducir un poco más
+y yo lo empujo
+
+# POEMA_CITADO
+
+Repartidos entre |mil voces,
+|trozos de piel.
+
+
+|Si alguna vez logro juntarm|e,
+|¿quién seré?
+
+# TEXTO
+
+En la primera estrofa el cuerpo del hablante está dividido en trozos y distribuidos a voces. Vemos en esta imagen que la voz –el pensamiento y la expresión– tiene posesión sobre lo físico.
+
+En la segunda, el narrador comparte que la unión queda poco probable (“alguna vez”) y desconocida.
+
+A mis ojos el poema dramatiza el sentimiento de desconexión al yuxtaponer un cuerpo –una unidad– con la división –trozos del cuerpo–; entre lo que se ve y lo que se siente. Este sentimiento de división crea una autoalienación en el narrador.
