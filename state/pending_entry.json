@@ -1,110 +1,98 @@
 {
-  "date": "2026-05-03",
+  "date": "2026-05-04",
   "month": "2026-05",
-  "file": "textos/2026-05-03.txt",
+  "file": "textos/2026-05-04.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "para saber lo que quiero",
+  "my_poem_snippet": "cuanto más sencillo",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Trozos",
+    "poem_title": "Anuncia",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "agencia supletoria",
+      "word": "autonomia del lenguaje",
       "weight": 3
     },
     {
-      "word": "agotamiento como potencia",
+      "word": "escritura como sustraccion perceptiva",
       "weight": 3
     },
     {
-      "word": "autoconocimiento relacional",
+      "word": "rechazo como enunciacion",
       "weight": 3
     },
     {
-      "word": "deseo heteronomo",
+      "word": "rezago como potencia semantica",
       "weight": 3
     },
     {
-      "word": "desposesion del yo",
+      "word": "sencillez como exceso de sentido",
       "weight": 3
     },
     {
-      "word": "autoalienacion",
+      "word": "desaprendizaje",
       "weight": 2
     },
     {
-      "word": "delegacion del juicio",
+      "word": "desfase",
       "weight": 2
     },
     {
-      "word": "dependencia del otro",
+      "word": "despojamiento",
       "weight": 2
     },
     {
-      "word": "diseminacion en la voz",
+      "word": "distanciamiento",
       "weight": 2
     },
     {
-      "word": "enunciacion del deseo",
+      "word": "elision",
       "weight": 2
     },
     {
-      "word": "fragmentacion corporal",
+      "word": "erosion del yo",
       "weight": 2
     },
     {
-      "word": "incertidumbre identitaria",
+      "word": "incertidumbre",
       "weight": 2
     },
     {
-      "word": "negociacion del limite",
-      "weight": 2
-    },
-    {
-      "word": "persistencia precaria",
-      "weight": 2
-    },
-    {
-      "word": "coche",
+      "word": "casa",
       "weight": 1
     },
     {
-      "word": "conducir",
+      "word": "decir",
       "weight": 1
     },
     {
-      "word": "empujar",
+      "word": "entender",
       "weight": 1
     },
     {
-      "word": "juntarse",
+      "word": "escribir",
       "weight": 1
     },
     {
-      "word": "morir",
+      "word": "puerta",
       "weight": 1
     },
     {
-      "word": "petroleo",
+      "word": "ruinas",
       "weight": 1
     },
     {
-      "word": "piel",
+      "word": "sentir",
       "weight": 1
     },
     {
-      "word": "pregunta",
+      "word": "ver",
       "weight": 1
     },
     {
-      "word": "trozos",
-      "weight": 1
-    },
-    {
-      "word": "voces",
+      "word": "yo",
       "weight": 1
     }
   ]

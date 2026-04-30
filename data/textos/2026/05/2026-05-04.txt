@@ -1,0 +1,36 @@
+FECHA: 2026-05-04
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Anuncia
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+cuanto más sencillo
+más |dice
+|rechazo
+|rezago
+
+cuanto más escribo
+menos entiendo
+|veo
+|siento
+
+# POEMA_CITADO
+
+El último yo me lo dijo:
+
+-Te despojarás de mí tan pronto cruces la puerta.
+Al volver, la casa estaba en ruinas.
+
+# TEXTO
+
+cuanto más sencillo
+más |dice
+|rechazo
+|rezago
+
+cuanto más escribo
+menos entiendo
+|veo
+|siento

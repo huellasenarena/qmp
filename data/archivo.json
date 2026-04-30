@@ -1,5 +1,104 @@
 [
   {
+    "date": "2026-05-04",
+    "month": "2026-05",
+    "file": "textos/2026-05-04.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "cuanto más sencillo",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Anuncia",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autonomia del lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "escritura como sustraccion perceptiva",
+        "weight": 3
+      },
+      {
+        "word": "rechazo como enunciacion",
+        "weight": 3
+      },
+      {
+        "word": "rezago como potencia semantica",
+        "weight": 3
+      },
+      {
+        "word": "sencillez como exceso de sentido",
+        "weight": 3
+      },
+      {
+        "word": "desaprendizaje",
+        "weight": 2
+      },
+      {
+        "word": "desfase",
+        "weight": 2
+      },
+      {
+        "word": "despojamiento",
+        "weight": 2
+      },
+      {
+        "word": "distanciamiento",
+        "weight": 2
+      },
+      {
+        "word": "elision",
+        "weight": 2
+      },
+      {
+        "word": "erosion del yo",
+        "weight": 2
+      },
+      {
+        "word": "incertidumbre",
+        "weight": 2
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "decir",
+        "weight": 1
+      },
+      {
+        "word": "entender",
+        "weight": 1
+      },
+      {
+        "word": "escribir",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "ruinas",
+        "weight": 1
+      },
+      {
+        "word": "sentir",
+        "weight": 1
+      },
+      {
+        "word": "ver",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-03",
     "month": "2026-05",
     "file": "textos/2026-05-03.txt",
