@@ -1,0 +1,30 @@
+FECHA: 2026-05-05
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Anuncia
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+¿prioridades?
+	no llevar a cabo mis prioridades
+¿metas?
+	hacer lo contrario de mis metas
+¿pensar?
+	en lugar de dormir
+
+# POEMA_CITADO
+
+El último yo me lo dijo:
+
+-Te despojarás de mí tan pronto cruces la puerta.
+Al volver, la casa estaba en ruinas.
+
+# TEXTO
+
+¿prioridades?
+	no llevar a cabo mis prioridades
+¿metas?
+	hacer lo contrario de mis metas
+¿pensar?
+	en lugar de dormir

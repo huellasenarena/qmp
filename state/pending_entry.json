@@ -1,9 +1,9 @@
 {
-  "date": "2026-05-04",
+  "date": "2026-05-05",
   "month": "2026-05",
-  "file": "textos/2026-05-04.txt",
+  "file": "textos/2026-05-05.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "cuanto más sencillo",
+  "my_poem_snippet": "¿prioridades?",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Anuncia",
@@ -12,51 +12,51 @@
   },
   "keywords": [
     {
-      "word": "autonomia del lenguaje",
+      "word": "autoboicot",
       "weight": 3
     },
     {
-      "word": "escritura como sustraccion perceptiva",
+      "word": "contrafinalidad",
       "weight": 3
     },
     {
-      "word": "rechazo como enunciacion",
+      "word": "desposesion del yo",
       "weight": 3
     },
     {
-      "word": "rezago como potencia semantica",
+      "word": "fracaso como programa",
       "weight": 3
     },
     {
-      "word": "sencillez como exceso de sentido",
+      "word": "negatividad activa",
       "weight": 3
     },
     {
-      "word": "desaprendizaje",
+      "word": "voluntad invertida",
+      "weight": 3
+    },
+    {
+      "word": "autointerrogacion",
       "weight": 2
     },
     {
-      "word": "desfase",
+      "word": "derrumbe",
       "weight": 2
     },
     {
-      "word": "despojamiento",
+      "word": "desprendimiento",
       "weight": 2
     },
     {
-      "word": "distanciamiento",
+      "word": "escision",
       "weight": 2
     },
     {
-      "word": "elision",
+      "word": "sustitucion",
       "weight": 2
     },
     {
-      "word": "erosion del yo",
-      "weight": 2
-    },
-    {
-      "word": "incertidumbre",
+      "word": "vigilia",
       "weight": 2
     },
     {
@@ -64,15 +64,19 @@
       "weight": 1
     },
     {
-      "word": "decir",
+      "word": "dormir",
       "weight": 1
     },
     {
-      "word": "entender",
+      "word": "metas",
       "weight": 1
     },
     {
-      "word": "escribir",
+      "word": "pensar",
+      "weight": 1
+    },
+    {
+      "word": "prioridades",
       "weight": 1
     },
     {
@@ -84,11 +88,7 @@
       "weight": 1
     },
     {
-      "word": "sentir",
-      "weight": 1
-    },
-    {
-      "word": "ver",
+      "word": "volver",
       "weight": 1
     },
     {

@@ -1,5 +1,104 @@
 [
   {
+    "date": "2026-05-05",
+    "month": "2026-05",
+    "file": "textos/2026-05-05.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "¿prioridades?",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Anuncia",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autoboicot",
+        "weight": 3
+      },
+      {
+        "word": "contrafinalidad",
+        "weight": 3
+      },
+      {
+        "word": "desposesion del yo",
+        "weight": 3
+      },
+      {
+        "word": "fracaso como programa",
+        "weight": 3
+      },
+      {
+        "word": "negatividad activa",
+        "weight": 3
+      },
+      {
+        "word": "voluntad invertida",
+        "weight": 3
+      },
+      {
+        "word": "autointerrogacion",
+        "weight": 2
+      },
+      {
+        "word": "derrumbe",
+        "weight": 2
+      },
+      {
+        "word": "desprendimiento",
+        "weight": 2
+      },
+      {
+        "word": "escision",
+        "weight": 2
+      },
+      {
+        "word": "sustitucion",
+        "weight": 2
+      },
+      {
+        "word": "vigilia",
+        "weight": 2
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "dormir",
+        "weight": 1
+      },
+      {
+        "word": "metas",
+        "weight": 1
+      },
+      {
+        "word": "pensar",
+        "weight": 1
+      },
+      {
+        "word": "prioridades",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "ruinas",
+        "weight": 1
+      },
+      {
+        "word": "volver",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-04",
     "month": "2026-05",
     "file": "textos/2026-05-04.txt",
