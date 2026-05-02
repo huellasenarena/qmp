@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-05-06",
+    "month": "2026-05",
+    "file": "textos/2026-05-06.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "si camino hasta la mitad",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Anuncia",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "cuantificacion del sacrificio",
+        "weight": 3
+      },
+      {
+        "word": "culpabilizacion de la potencia",
+        "weight": 3
+      },
+      {
+        "word": "imperativo de totalidad",
+        "weight": 3
+      },
+      {
+        "word": "meritocracia espiritual",
+        "weight": 3
+      },
+      {
+        "word": "parcialidad como falta",
+        "weight": 3
+      },
+      {
+        "word": "teleologia del ascenso",
+        "weight": 3
+      },
+      {
+        "word": "autoexigencia",
+        "weight": 2
+      },
+      {
+        "word": "calculo de merito",
+        "weight": 2
+      },
+      {
+        "word": "gradacion del esfuerzo",
+        "weight": 2
+      },
+      {
+        "word": "juicio trascendente",
+        "weight": 2
+      },
+      {
+        "word": "proporcionalidad negada",
+        "weight": 2
+      },
+      {
+        "word": "recompensa denegada",
+        "weight": 2
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      },
+      {
+        "word": "cima",
+        "weight": 1
+      },
+      {
+        "word": "cruces",
+        "weight": 1
+      },
+      {
+        "word": "jesus",
+        "weight": 1
+      },
+      {
+        "word": "mitad",
+        "weight": 1
+      },
+      {
+        "word": "montana",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-05",
     "month": "2026-05",
     "file": "textos/2026-05-05.txt",

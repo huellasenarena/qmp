@@ -1,9 +1,9 @@
 {
-  "date": "2026-05-05",
+  "date": "2026-05-06",
   "month": "2026-05",
-  "file": "textos/2026-05-05.txt",
+  "file": "textos/2026-05-06.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "¿prioridades?",
+  "my_poem_snippet": "si camino hasta la mitad",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Anuncia",
@@ -12,87 +12,75 @@
   },
   "keywords": [
     {
-      "word": "autoboicot",
+      "word": "cuantificacion del sacrificio",
       "weight": 3
     },
     {
-      "word": "contrafinalidad",
+      "word": "culpabilizacion de la potencia",
       "weight": 3
     },
     {
-      "word": "desposesion del yo",
+      "word": "imperativo de totalidad",
       "weight": 3
     },
     {
-      "word": "fracaso como programa",
+      "word": "meritocracia espiritual",
       "weight": 3
     },
     {
-      "word": "negatividad activa",
+      "word": "parcialidad como falta",
       "weight": 3
     },
     {
-      "word": "voluntad invertida",
+      "word": "teleologia del ascenso",
       "weight": 3
     },
     {
-      "word": "autointerrogacion",
+      "word": "autoexigencia",
       "weight": 2
     },
     {
-      "word": "derrumbe",
+      "word": "calculo de merito",
       "weight": 2
     },
     {
-      "word": "desprendimiento",
+      "word": "gradacion del esfuerzo",
       "weight": 2
     },
     {
-      "word": "escision",
+      "word": "juicio trascendente",
       "weight": 2
     },
     {
-      "word": "sustitucion",
+      "word": "proporcionalidad negada",
       "weight": 2
     },
     {
-      "word": "vigilia",
+      "word": "recompensa denegada",
       "weight": 2
     },
     {
-      "word": "casa",
+      "word": "camino",
       "weight": 1
     },
     {
-      "word": "dormir",
+      "word": "cima",
       "weight": 1
     },
     {
-      "word": "metas",
+      "word": "cruces",
       "weight": 1
     },
     {
-      "word": "pensar",
+      "word": "jesus",
       "weight": 1
     },
     {
-      "word": "prioridades",
+      "word": "mitad",
       "weight": 1
     },
     {
-      "word": "puerta",
-      "weight": 1
-    },
-    {
-      "word": "ruinas",
-      "weight": 1
-    },
-    {
-      "word": "volver",
-      "weight": 1
-    },
-    {
-      "word": "yo",
+      "word": "montana",
       "weight": 1
     }
   ]
