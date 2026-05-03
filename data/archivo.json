@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-05-07",
+    "month": "2026-05",
+    "file": "textos/2026-05-07.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "había encontrado el yo de ayer",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Anuncia",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "desidentificacion",
+        "weight": 3
+      },
+      {
+        "word": "encuentro como perdida",
+        "weight": 3
+      },
+      {
+        "word": "irreversibilidad",
+        "weight": 3
+      },
+      {
+        "word": "renuncia al reconocimiento",
+        "weight": 3
+      },
+      {
+        "word": "salida como despojo",
+        "weight": 3
+      },
+      {
+        "word": "cruce del umbral",
+        "weight": 2
+      },
+      {
+        "word": "desprendimiento",
+        "weight": 2
+      },
+      {
+        "word": "elusion de la mirada",
+        "weight": 2
+      },
+      {
+        "word": "escision temporal",
+        "weight": 2
+      },
+      {
+        "word": "fuga del yo",
+        "weight": 2
+      },
+      {
+        "word": "no retorno",
+        "weight": 2
+      },
+      {
+        "word": "ayer",
+        "weight": 1
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "ruinas",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-06",
     "month": "2026-05",
     "file": "textos/2026-05-06.txt",

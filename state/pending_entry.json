@@ -1,9 +1,9 @@
 {
-  "date": "2026-05-06",
+  "date": "2026-05-07",
   "month": "2026-05",
-  "file": "textos/2026-05-06.txt",
+  "file": "textos/2026-05-07.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "si camino hasta la mitad",
+  "my_poem_snippet": "había encontrado el yo de ayer",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Anuncia",
@@ -12,75 +12,71 @@
   },
   "keywords": [
     {
-      "word": "cuantificacion del sacrificio",
+      "word": "desidentificacion",
       "weight": 3
     },
     {
-      "word": "culpabilizacion de la potencia",
+      "word": "encuentro como perdida",
       "weight": 3
     },
     {
-      "word": "imperativo de totalidad",
+      "word": "irreversibilidad",
       "weight": 3
     },
     {
-      "word": "meritocracia espiritual",
+      "word": "renuncia al reconocimiento",
       "weight": 3
     },
     {
-      "word": "parcialidad como falta",
+      "word": "salida como despojo",
       "weight": 3
     },
     {
-      "word": "teleologia del ascenso",
-      "weight": 3
-    },
-    {
-      "word": "autoexigencia",
+      "word": "cruce del umbral",
       "weight": 2
     },
     {
-      "word": "calculo de merito",
+      "word": "desprendimiento",
       "weight": 2
     },
     {
-      "word": "gradacion del esfuerzo",
+      "word": "elusion de la mirada",
       "weight": 2
     },
     {
-      "word": "juicio trascendente",
+      "word": "escision temporal",
       "weight": 2
     },
     {
-      "word": "proporcionalidad negada",
+      "word": "fuga del yo",
       "weight": 2
     },
     {
-      "word": "recompensa denegada",
+      "word": "no retorno",
       "weight": 2
     },
     {
-      "word": "camino",
+      "word": "ayer",
       "weight": 1
     },
     {
-      "word": "cima",
+      "word": "casa",
       "weight": 1
     },
     {
-      "word": "cruces",
+      "word": "ojos",
       "weight": 1
     },
     {
-      "word": "jesus",
+      "word": "puerta",
       "weight": 1
     },
     {
-      "word": "mitad",
+      "word": "ruinas",
       "weight": 1
     },
     {
-      "word": "montana",
+      "word": "yo",
       "weight": 1
     }
   ]

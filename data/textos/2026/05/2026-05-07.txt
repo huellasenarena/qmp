@@ -1,0 +1,30 @@
+FECHA: 2026-05-07
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Anuncia
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+había encontrado el yo de ayer
+al salir
+no había tenido ganas
+mirarlo en los ojos
+se había ido y nunca lo encontré
+de nuevo
+
+# POEMA_CITADO
+
+El último yo me lo dijo:
+
+-Te despojarás de mí tan pronto cruces la puerta.
+Al volver, la casa estaba en ruinas.
+
+# TEXTO
+
+había encontrado el yo de ayer
+al salir
+no había tenido ganas
+mirarlo en los ojos
+se había ido y nunca lo encontré
+de nuevo
