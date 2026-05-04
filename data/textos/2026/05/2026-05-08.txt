@@ -1,0 +1,48 @@
+FECHA: 2026-05-08
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Anuncia
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+si no tuviera que besarte
+para darme un sentido
+lo haría
+
+si bastara escucharme
+para mirar el mundo
+no viajaría
+
+si cada momento solito
+me llenara con vida
+
+y cada paso
+con fuerza
+
+no me expresaría
+
+# POEMA_CITADO
+
+El último yo me lo dijo:
+
+-Te despojarás de mí tan pronto cruces la puerta.
+Al volver, la casa estaba en ruinas.
+
+# TEXTO
+
+si no tuviera que besarte
+para darme un sentido
+lo haría
+
+si bastara escucharme
+para mirar el mundo
+no viajaría
+
+si cada momento solito
+me llenara con vida
+
+y cada paso
+con fuerza
+
+no me expresaría

@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-05-08",
+    "month": "2026-05",
+    "file": "textos/2026-05-08.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "si no tuviera que besarte",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Anuncia",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "desposesion identitaria",
+        "weight": 3
+      },
+      {
+        "word": "exterioridad como condicion de vida",
+        "weight": 3
+      },
+      {
+        "word": "heteronomia del sentido",
+        "weight": 3
+      },
+      {
+        "word": "insuficiencia del yo",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje como suplencia",
+        "weight": 3
+      },
+      {
+        "word": "otredad constitutiva",
+        "weight": 3
+      },
+      {
+        "word": "autoescucha insuficiente",
+        "weight": 2
+      },
+      {
+        "word": "busqueda de sentido",
+        "weight": 2
+      },
+      {
+        "word": "cruce de umbral",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento compensatorio",
+        "weight": 2
+      },
+      {
+        "word": "mediacion corporal",
+        "weight": 2
+      },
+      {
+        "word": "plenitud negada",
+        "weight": 2
+      },
+      {
+        "word": "retorno en ruina",
+        "weight": 2
+      },
+      {
+        "word": "vaciamiento del yo",
+        "weight": 2
+      },
+      {
+        "word": "beso",
+        "weight": 1
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "escucha",
+        "weight": 1
+      },
+      {
+        "word": "fuerza",
+        "weight": 1
+      },
+      {
+        "word": "momento",
+        "weight": 1
+      },
+      {
+        "word": "mundo",
+        "weight": 1
+      },
+      {
+        "word": "paso",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "ruinas",
+        "weight": 1
+      },
+      {
+        "word": "viaje",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-07",
     "month": "2026-05",
     "file": "textos/2026-05-07.txt",
