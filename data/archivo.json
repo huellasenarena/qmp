@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-05-09",
+    "month": "2026-05",
+    "file": "textos/2026-05-09.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "el tiempo mío",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Anuncia",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "alteridad temporal",
+        "weight": 3
+      },
+      {
+        "word": "desposesion",
+        "weight": 3
+      },
+      {
+        "word": "identidad escindida",
+        "weight": 3
+      },
+      {
+        "word": "negacion como agencia",
+        "weight": 3
+      },
+      {
+        "word": "pertenencia invertida",
+        "weight": 3
+      },
+      {
+        "word": "cesion",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento subjetivo",
+        "weight": 2
+      },
+      {
+        "word": "desprendimiento",
+        "weight": 2
+      },
+      {
+        "word": "rechazo",
+        "weight": 2
+      },
+      {
+        "word": "reciprocidad fallida",
+        "weight": 2
+      },
+      {
+        "word": "tension posesiva",
+        "weight": 2
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "cruce",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "regreso",
+        "weight": 1
+      },
+      {
+        "word": "ruinas",
+        "weight": 1
+      },
+      {
+        "word": "tiempo",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-08",
     "month": "2026-05",
     "file": "textos/2026-05-08.txt",

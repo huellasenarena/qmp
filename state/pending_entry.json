@@ -1,9 +1,9 @@
 {
-  "date": "2026-05-08",
+  "date": "2026-05-09",
   "month": "2026-05",
-  "file": "textos/2026-05-08.txt",
+  "file": "textos/2026-05-09.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "si no tuviera que besarte",
+  "my_poem_snippet": "el tiempo mío",
   "analysis": {
     "poet": "Violeta Villalba",
     "poem_title": "Anuncia",
@@ -12,87 +12,55 @@
   },
   "keywords": [
     {
-      "word": "desposesion identitaria",
+      "word": "alteridad temporal",
       "weight": 3
     },
     {
-      "word": "exterioridad como condicion de vida",
+      "word": "desposesion",
       "weight": 3
     },
     {
-      "word": "heteronomia del sentido",
+      "word": "identidad escindida",
       "weight": 3
     },
     {
-      "word": "insuficiencia del yo",
+      "word": "negacion como agencia",
       "weight": 3
     },
     {
-      "word": "lenguaje como suplencia",
+      "word": "pertenencia invertida",
       "weight": 3
     },
     {
-      "word": "otredad constitutiva",
-      "weight": 3
-    },
-    {
-      "word": "autoescucha insuficiente",
+      "word": "cesion",
       "weight": 2
     },
     {
-      "word": "busqueda de sentido",
+      "word": "desplazamiento subjetivo",
       "weight": 2
     },
     {
-      "word": "cruce de umbral",
+      "word": "desprendimiento",
       "weight": 2
     },
     {
-      "word": "desplazamiento compensatorio",
+      "word": "rechazo",
       "weight": 2
     },
     {
-      "word": "mediacion corporal",
+      "word": "reciprocidad fallida",
       "weight": 2
     },
     {
-      "word": "plenitud negada",
+      "word": "tension posesiva",
       "weight": 2
-    },
-    {
-      "word": "retorno en ruina",
-      "weight": 2
-    },
-    {
-      "word": "vaciamiento del yo",
-      "weight": 2
-    },
-    {
-      "word": "beso",
-      "weight": 1
     },
     {
       "word": "casa",
       "weight": 1
     },
     {
-      "word": "escucha",
-      "weight": 1
-    },
-    {
-      "word": "fuerza",
-      "weight": 1
-    },
-    {
-      "word": "momento",
-      "weight": 1
-    },
-    {
-      "word": "mundo",
-      "weight": 1
-    },
-    {
-      "word": "paso",
+      "word": "cruce",
       "weight": 1
     },
     {
@@ -100,15 +68,19 @@
       "weight": 1
     },
     {
+      "word": "regreso",
+      "weight": 1
+    },
+    {
       "word": "ruinas",
       "weight": 1
     },
     {
-      "word": "viaje",
+      "word": "tiempo",
       "weight": 1
     },
     {
-      "word": "vida",
+      "word": "yo",
       "weight": 1
     }
   ]

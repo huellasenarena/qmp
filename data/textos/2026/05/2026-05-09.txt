@@ -1,0 +1,30 @@
+FECHA: 2026-05-09
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Anuncia
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+el tiempo mío
+que no me pertenece
+
+y el tiempo tuyo
+que me ofrece
+y me niego
+
+# POEMA_CITADO
+
+El último yo me lo dijo:
+
+-Te despojarás de mí tan pronto cruces la puerta.
+Al volver, la casa estaba en ruinas.
+
+# TEXTO
+
+el tiempo mío
+que no me pertenece
+
+y el tiempo tuyo
+que me ofrece
+y me niego
