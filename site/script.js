@@ -323,9 +323,18 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
       return escapeHtml(before + after);
     }
 
-    // Línea continuación: "| el cansancio"
+    // Línea continuación: "| el cansancio" o "| Si alguna vez |logro juntarme,"
     const content = after.replace(/^\s+/, '');
     const pad = anchorPx ?? 0;
+
+    // | interior en una continuación → redefine el ancla desde la posición indenteada
+    const innerPipe = content.indexOf('|');
+    if (innerPipe !== -1) {
+      const innerBefore = content.slice(0, innerPipe);
+      const innerAfter  = content.slice(innerPipe + 1);
+      anchorPx = pad + ctx.measureText(innerBefore).width;
+      return `<span class="indent" style="padding-left:${pad}px">${escapeHtml(innerBefore + innerAfter)}</span>`;
+    }
 
     return `<span class="indent" style="padding-left:${pad}px">${escapeHtml(content)}</span>`;
   }).join('\n');
@@ -414,6 +423,13 @@ function renderCitedPoem(citedPoemText, ctx = null) {
         } else {
           const content = after.replace(/^\s+/, '');
           const pad = anchorPx ?? 0;
+          const innerPipe = content.indexOf('|');
+          if (innerPipe !== -1) {
+            const innerBefore = content.slice(0, innerPipe);
+            const innerAfter  = content.slice(innerPipe + 1);
+            anchorPx = pad + ctx.measureText(innerBefore).width;
+            return `<span class="indent" style="padding-left:${pad}px">${renderCitedInlineWithState(innerBefore + innerAfter, state)}</span>`;
+          }
           return `<span class="indent" style="padding-left:${pad}px">${renderCitedInlineWithState(content, state)}</span>`;
         }
       }
