@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-05-10",
+    "month": "2026-05",
+    "file": "textos/2026-05-10.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "si hubiera podido decir no lo habría hecho",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Anuncio",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "aceptacion como dano",
+        "weight": 3
+      },
+      {
+        "word": "agencia suspendida",
+        "weight": 3
+      },
+      {
+        "word": "asimetria de poder",
+        "weight": 3
+      },
+      {
+        "word": "consentimiento coaccionado",
+        "weight": 3
+      },
+      {
+        "word": "desposesion subjetiva",
+        "weight": 3
+      },
+      {
+        "word": "reemplazabilidad",
+        "weight": 3
+      },
+      {
+        "word": "abandono",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento",
+        "weight": 2
+      },
+      {
+        "word": "fractura vincular",
+        "weight": 2
+      },
+      {
+        "word": "imposicion",
+        "weight": 2
+      },
+      {
+        "word": "transito",
+        "weight": 2
+      },
+      {
+        "word": "vulnerabilizacion",
+        "weight": 2
+      },
+      {
+        "word": "acepte",
+        "weight": 1
+      },
+      {
+        "word": "casa",
+        "weight": 1
+      },
+      {
+        "word": "cruzar",
+        "weight": 1
+      },
+      {
+        "word": "desorden",
+        "weight": 1
+      },
+      {
+        "word": "despojaras",
+        "weight": 1
+      },
+      {
+        "word": "golpe",
+        "weight": 1
+      },
+      {
+        "word": "no",
+        "weight": 1
+      },
+      {
+        "word": "otro",
+        "weight": 1
+      },
+      {
+        "word": "pasar",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "ruinas",
+        "weight": 1
+      },
+      {
+        "word": "volver",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-09",
     "month": "2026-05",
     "file": "textos/2026-05-09.txt",

@@ -1,66 +1,98 @@
 {
-  "date": "2026-05-09",
+  "date": "2026-05-10",
   "month": "2026-05",
-  "file": "textos/2026-05-09.txt",
+  "file": "textos/2026-05-10.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "el tiempo mío",
+  "my_poem_snippet": "si hubiera podido decir no lo habría hecho",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Anuncia",
+    "poem_title": "Anuncio",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "alteridad temporal",
+      "word": "aceptacion como dano",
       "weight": 3
     },
     {
-      "word": "desposesion",
+      "word": "agencia suspendida",
       "weight": 3
     },
     {
-      "word": "identidad escindida",
+      "word": "asimetria de poder",
       "weight": 3
     },
     {
-      "word": "negacion como agencia",
+      "word": "consentimiento coaccionado",
       "weight": 3
     },
     {
-      "word": "pertenencia invertida",
+      "word": "desposesion subjetiva",
       "weight": 3
     },
     {
-      "word": "cesion",
+      "word": "reemplazabilidad",
+      "weight": 3
+    },
+    {
+      "word": "abandono",
       "weight": 2
     },
     {
-      "word": "desplazamiento subjetivo",
+      "word": "desplazamiento",
       "weight": 2
     },
     {
-      "word": "desprendimiento",
+      "word": "fractura vincular",
       "weight": 2
     },
     {
-      "word": "rechazo",
+      "word": "imposicion",
       "weight": 2
     },
     {
-      "word": "reciprocidad fallida",
+      "word": "transito",
       "weight": 2
     },
     {
-      "word": "tension posesiva",
+      "word": "vulnerabilizacion",
       "weight": 2
+    },
+    {
+      "word": "acepte",
+      "weight": 1
     },
     {
       "word": "casa",
       "weight": 1
     },
     {
-      "word": "cruce",
+      "word": "cruzar",
+      "weight": 1
+    },
+    {
+      "word": "desorden",
+      "weight": 1
+    },
+    {
+      "word": "despojaras",
+      "weight": 1
+    },
+    {
+      "word": "golpe",
+      "weight": 1
+    },
+    {
+      "word": "no",
+      "weight": 1
+    },
+    {
+      "word": "otro",
+      "weight": 1
+    },
+    {
+      "word": "pasar",
       "weight": 1
     },
     {
@@ -68,19 +100,11 @@
       "weight": 1
     },
     {
-      "word": "regreso",
-      "weight": 1
-    },
-    {
       "word": "ruinas",
       "weight": 1
     },
     {
-      "word": "tiempo",
-      "weight": 1
-    },
-    {
-      "word": "yo",
+      "word": "volver",
       "weight": 1
     }
   ]

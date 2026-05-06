@@ -1,0 +1,27 @@
+FECHA: 2026-05-10
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Anuncio
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+si hubiera podido decir no lo habría hecho
+pero acepté
+por lo cual cuando tu dijiste pasar a otro
+era peor golpe
+
+# POEMA_CITADO
+
+El último yo me lo dijo:
+
+-Te despojarás de mí tan pronto cruces la puerta.
+Al volver, la casa estaba en ruinas.
+
+# TEXTO
+
+Unos días limpiamos y otros días el desorden no nos importa; cada persona tiene aspectos diversos que se presentan y se van. Una lectura posible del poema es que nuestra calificación de la realidad cambia según nuestro aspecto presente.
+
+No es que existamos en lugares diferentes, como leo el poema, sino que lo que describimos como "ruinas" es percibido por versiones diferentes de nosotros. En la casa, no se preocupaba del desorden; pero el narrador tiene la lucidez de decirse que lo que vive ahora es efímero, y que va a volver alguien diferente.
+
+Acá la diferencia es física ("Te despojarás"), pero yo leo como una diferencia simbólica: al cruzar un umbral, incluso un umbral tan pequeño como el que separa nuestro hogar de afuera, cambiamos. Puede ser que respiremos un aire diferente; vemos una calle caótica; la lluvia nos toca. Por lo tanto retornamos como una persona diferente.
