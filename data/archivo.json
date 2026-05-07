@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-05-11",
+    "month": "2026-05",
+    "file": "textos/2026-05-11.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "esta idea va a la lista",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Luto",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "archivo de la ausencia",
+        "weight": 3
+      },
+      {
+        "word": "bloqueo enunciativo",
+        "weight": 3
+      },
+      {
+        "word": "caducidad afectiva",
+        "weight": 3
+      },
+      {
+        "word": "desaparicion previa",
+        "weight": 3
+      },
+      {
+        "word": "posibilidad como descarte",
+        "weight": 3
+      },
+      {
+        "word": "desplazamiento",
+        "weight": 2
+      },
+      {
+        "word": "diferimiento",
+        "weight": 2
+      },
+      {
+        "word": "evanescencia",
+        "weight": 2
+      },
+      {
+        "word": "incomparecencia",
+        "weight": 2
+      },
+      {
+        "word": "rechazo",
+        "weight": 2
+      },
+      {
+        "word": "sofocacion",
+        "weight": 2
+      },
+      {
+        "word": "virtualidad",
+        "weight": 2
+      },
+      {
+        "word": "ardor",
+        "weight": 1
+      },
+      {
+        "word": "caballo",
+        "weight": 1
+      },
+      {
+        "word": "cuerdas",
+        "weight": 1
+      },
+      {
+        "word": "escritura",
+        "weight": 1
+      },
+      {
+        "word": "garganta",
+        "weight": 1
+      },
+      {
+        "word": "idea",
+        "weight": 1
+      },
+      {
+        "word": "lista",
+        "weight": 1
+      },
+      {
+        "word": "pajaro negro",
+        "weight": 1
+      },
+      {
+        "word": "pecho",
+        "weight": 1
+      },
+      {
+        "word": "poemas",
+        "weight": 1
+      },
+      {
+        "word": "sentimientos",
+        "weight": 1
+      },
+      {
+        "word": "zanja",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-10",
     "month": "2026-05",
     "file": "textos/2026-05-10.txt",

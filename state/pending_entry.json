@@ -1,110 +1,110 @@
 {
-  "date": "2026-05-10",
+  "date": "2026-05-11",
   "month": "2026-05",
-  "file": "textos/2026-05-10.txt",
+  "file": "textos/2026-05-11.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "si hubiera podido decir no lo habría hecho",
+  "my_poem_snippet": "esta idea va a la lista",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Anuncio",
+    "poem_title": "Luto",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "aceptacion como dano",
+      "word": "archivo de la ausencia",
       "weight": 3
     },
     {
-      "word": "agencia suspendida",
+      "word": "bloqueo enunciativo",
       "weight": 3
     },
     {
-      "word": "asimetria de poder",
+      "word": "caducidad afectiva",
       "weight": 3
     },
     {
-      "word": "consentimiento coaccionado",
+      "word": "desaparicion previa",
       "weight": 3
     },
     {
-      "word": "desposesion subjetiva",
+      "word": "posibilidad como descarte",
       "weight": 3
-    },
-    {
-      "word": "reemplazabilidad",
-      "weight": 3
-    },
-    {
-      "word": "abandono",
-      "weight": 2
     },
     {
       "word": "desplazamiento",
       "weight": 2
     },
     {
-      "word": "fractura vincular",
+      "word": "diferimiento",
       "weight": 2
     },
     {
-      "word": "imposicion",
+      "word": "evanescencia",
       "weight": 2
     },
     {
-      "word": "transito",
+      "word": "incomparecencia",
       "weight": 2
     },
     {
-      "word": "vulnerabilizacion",
+      "word": "rechazo",
       "weight": 2
     },
     {
-      "word": "acepte",
+      "word": "sofocacion",
+      "weight": 2
+    },
+    {
+      "word": "virtualidad",
+      "weight": 2
+    },
+    {
+      "word": "ardor",
       "weight": 1
     },
     {
-      "word": "casa",
+      "word": "caballo",
       "weight": 1
     },
     {
-      "word": "cruzar",
+      "word": "cuerdas",
       "weight": 1
     },
     {
-      "word": "desorden",
+      "word": "escritura",
       "weight": 1
     },
     {
-      "word": "despojaras",
+      "word": "garganta",
       "weight": 1
     },
     {
-      "word": "golpe",
+      "word": "idea",
       "weight": 1
     },
     {
-      "word": "no",
+      "word": "lista",
       "weight": 1
     },
     {
-      "word": "otro",
+      "word": "pajaro negro",
       "weight": 1
     },
     {
-      "word": "pasar",
+      "word": "pecho",
       "weight": 1
     },
     {
-      "word": "puerta",
+      "word": "poemas",
       "weight": 1
     },
     {
-      "word": "ruinas",
+      "word": "sentimientos",
       "weight": 1
     },
     {
-      "word": "volver",
+      "word": "zanja",
       "weight": 1
     }
   ]
