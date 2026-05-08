@@ -1,110 +1,90 @@
 {
-  "date": "2026-05-11",
+  "date": "2026-05-12",
   "month": "2026-05",
-  "file": "textos/2026-05-11.txt",
+  "file": "textos/2026-05-12.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "esta idea va a la lista",
+  "my_poem_snippet": "un rechazo",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Luto",
+    "poem_title": "Mudanza",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "archivo de la ausencia",
+      "word": "alteridad como identidad",
       "weight": 3
     },
     {
-      "word": "bloqueo enunciativo",
+      "word": "encarnacion de la metamorfosis",
       "weight": 3
     },
     {
-      "word": "caducidad afectiva",
+      "word": "rechazo como origen",
       "weight": 3
     },
     {
-      "word": "desaparicion previa",
+      "word": "temporalidad insuficiente",
       "weight": 3
     },
     {
-      "word": "posibilidad como descarte",
+      "word": "yo descentrado",
       "weight": 3
     },
     {
-      "word": "desplazamiento",
+      "word": "autointerrogacion",
       "weight": 2
     },
     {
-      "word": "diferimiento",
+      "word": "desidentificacion",
       "weight": 2
     },
     {
-      "word": "evanescencia",
+      "word": "devenir",
       "weight": 2
     },
     {
-      "word": "incomparecencia",
+      "word": "enumeracion",
       "weight": 2
+    },
+    {
+      "word": "pasaje alma carne",
+      "weight": 2
+    },
+    {
+      "word": "reiteracion",
+      "weight": 2
+    },
+    {
+      "word": "alma",
+      "weight": 1
+    },
+    {
+      "word": "carne",
+      "weight": 1
+    },
+    {
+      "word": "falta",
+      "weight": 1
+    },
+    {
+      "word": "metamorfosis",
+      "weight": 1
+    },
+    {
+      "word": "otra",
+      "weight": 1
     },
     {
       "word": "rechazo",
-      "weight": 2
-    },
-    {
-      "word": "sofocacion",
-      "weight": 2
-    },
-    {
-      "word": "virtualidad",
-      "weight": 2
-    },
-    {
-      "word": "ardor",
       "weight": 1
     },
     {
-      "word": "caballo",
+      "word": "tiempo",
       "weight": 1
     },
     {
-      "word": "cuerdas",
-      "weight": 1
-    },
-    {
-      "word": "escritura",
-      "weight": 1
-    },
-    {
-      "word": "garganta",
-      "weight": 1
-    },
-    {
-      "word": "idea",
-      "weight": 1
-    },
-    {
-      "word": "lista",
-      "weight": 1
-    },
-    {
-      "word": "pajaro negro",
-      "weight": 1
-    },
-    {
-      "word": "pecho",
-      "weight": 1
-    },
-    {
-      "word": "poemas",
-      "weight": 1
-    },
-    {
-      "word": "sentimientos",
-      "weight": 1
-    },
-    {
-      "word": "zanja",
+      "word": "yo",
       "weight": 1
     }
   ]

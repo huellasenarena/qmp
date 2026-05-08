@@ -1,5 +1,96 @@
 [
   {
+    "date": "2026-05-12",
+    "month": "2026-05",
+    "file": "textos/2026-05-12.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "un rechazo",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Mudanza",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "alteridad como identidad",
+        "weight": 3
+      },
+      {
+        "word": "encarnacion de la metamorfosis",
+        "weight": 3
+      },
+      {
+        "word": "rechazo como origen",
+        "weight": 3
+      },
+      {
+        "word": "temporalidad insuficiente",
+        "weight": 3
+      },
+      {
+        "word": "yo descentrado",
+        "weight": 3
+      },
+      {
+        "word": "autointerrogacion",
+        "weight": 2
+      },
+      {
+        "word": "desidentificacion",
+        "weight": 2
+      },
+      {
+        "word": "devenir",
+        "weight": 2
+      },
+      {
+        "word": "enumeracion",
+        "weight": 2
+      },
+      {
+        "word": "pasaje alma carne",
+        "weight": 2
+      },
+      {
+        "word": "reiteracion",
+        "weight": 2
+      },
+      {
+        "word": "alma",
+        "weight": 1
+      },
+      {
+        "word": "carne",
+        "weight": 1
+      },
+      {
+        "word": "falta",
+        "weight": 1
+      },
+      {
+        "word": "metamorfosis",
+        "weight": 1
+      },
+      {
+        "word": "otra",
+        "weight": 1
+      },
+      {
+        "word": "rechazo",
+        "weight": 1
+      },
+      {
+        "word": "tiempo",
+        "weight": 1
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-11",
     "month": "2026-05",
     "file": "textos/2026-05-11.txt",

@@ -1,0 +1,39 @@
+FECHA: 2026-05-12
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Mudanza
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+un rechazo
+falta de tiempo
+dos rechazo’
+¿viene de yo?
+tres
+
+# POEMA_CITADO
+
+Soy la metamorfosis del alma
+en carne propia.
+Soy otra.
+
+
+
+
+
+Siempre otra.
+
+# TEXTO
+
+La voz poética se define por el cambio constante del alma con un envoltorio de carne, por lo cual, como yo lo interpreto, su "yo" no es un estado congelado sino el progreso de un "otra" a otro "otra".
+
+La idea de "mudanza" me parece curiosa: cuando nos mudamos, tomamos lo que hemos acumulado y lo ponemos en otro envoltorio: un nuevo hogar. En cambio, vemos acá que el envoltorio es el mismo, pero el contenido cambia.
+
+Asimismo, una mudanza es una decisión deliberada, a diferencia de una metamorfosis que tiene la connotación de ser natural e inevitable.
+
+Puede ser que acá el hablante se vea como el hogar que guarda las posesiones acumuladas antes de que se reemplacen.
+
+Así, su alma siempre se está llenando, pero las frases "Soy otra. Siempre otra." aluden a una alineación en la medida en que no se conoce sino por el cambio.
+
+El poema sugiere que la dicotomía entre el alma y el cuerpo es más profunda: más allá de esta dicotomía existe la dicotomía entre los estados del alma; no se reduce a un "yo".
