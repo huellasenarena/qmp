@@ -1,5 +1,195 @@
 [
   {
+    "date": "2026-05-14",
+    "month": "2026-05",
+    "file": "textos/2026-05-14.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "al matar tu mosca",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Sleepless",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "audibilidad de lo visible",
+        "weight": 3
+      },
+      {
+        "word": "culpa confesional",
+        "weight": 3
+      },
+      {
+        "word": "desplazamiento identitario",
+        "weight": 3
+      },
+      {
+        "word": "intimidad vulnerada",
+        "weight": 3
+      },
+      {
+        "word": "violencia reveladora",
+        "weight": 3
+      },
+      {
+        "word": "animalizacion",
+        "weight": 2
+      },
+      {
+        "word": "desdoblamiento",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "intrusion",
+        "weight": 2
+      },
+      {
+        "word": "reconocimiento",
+        "weight": 2
+      },
+      {
+        "word": "sinestesia",
+        "weight": 2
+      },
+      {
+        "word": "admitir",
+        "weight": 1
+      },
+      {
+        "word": "alas",
+        "weight": 1
+      },
+      {
+        "word": "escuchar",
+        "weight": 1
+      },
+      {
+        "word": "matar",
+        "weight": 1
+      },
+      {
+        "word": "mosca",
+        "weight": 1
+      },
+      {
+        "word": "ver",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "month": "2026-05",
+    "file": "textos/2026-05-13.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "está llena la caja",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Si la palabra",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "frontera del yo",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje como carga",
+        "weight": 3
+      },
+      {
+        "word": "mezcla como desposesion",
+        "weight": 3
+      },
+      {
+        "word": "propiedad como identidad",
+        "weight": 3
+      },
+      {
+        "word": "saturacion",
+        "weight": 3
+      },
+      {
+        "word": "silencio como expansion",
+        "weight": 3
+      },
+      {
+        "word": "apropiacion",
+        "weight": 2
+      },
+      {
+        "word": "archivo",
+        "weight": 2
+      },
+      {
+        "word": "desborde",
+        "weight": 2
+      },
+      {
+        "word": "lastre",
+        "weight": 2
+      },
+      {
+        "word": "persistencia",
+        "weight": 2
+      },
+      {
+        "word": "rechazo",
+        "weight": 2
+      },
+      {
+        "word": "transmision",
+        "weight": 2
+      },
+      {
+        "word": "caja",
+        "weight": 1
+      },
+      {
+        "word": "conversaciones",
+        "weight": 1
+      },
+      {
+        "word": "espacio",
+        "weight": 1
+      },
+      {
+        "word": "guerras",
+        "weight": 1
+      },
+      {
+        "word": "libros",
+        "weight": 1
+      },
+      {
+        "word": "llevar",
+        "weight": 1
+      },
+      {
+        "word": "muro",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "pertenencias",
+        "weight": 1
+      },
+      {
+        "word": "peso",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-12",
     "month": "2026-05",
     "file": "textos/2026-05-12.txt",

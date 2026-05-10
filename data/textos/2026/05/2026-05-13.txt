@@ -1,0 +1,37 @@
+FECHA: 2026-05-13
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Si la palabra
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+está llena la caja
+con libros y guerras
+cada conversación tenida
+
+pesa demasiado
+con sus perteneces
+y quieres también los míos
+
+pero luego se mezclarían
+no sería tuya la caja
+y yo no quería llevarla
+
+# POEMA_CITADO
+
+Si la palabra no encuentra muro,
+se extiende y se convierte en silencio.
+
+>> La palabra no muera,
+>> solamente se toma el espacio infinito
+
+# TEXTO
+
+Una palabra dicha se convierte en silencio si hay muros o no, por lo cual me pregunto si quiere decir que la palabra tal y como es se convierte en un ser inmortal, formando parte de un espacio intemporal.
+
+Una idea que me atraviesa es que puede ser que el muro es metafórico más bien que literal. Puede ser el bloque entre el escritor y su expresión, por ejemplo, y sin este bloque las palabras del escritor fluyen y existen por siempre.
+
+Aún así queda la pregunta de a qué se parece la palabra si no muere. El poema alude a un aspecto místico y espiritual de la palabra; las palabras son poderosas–se extienden y no mueren.
+
+Una lectura posible es no tomar el poema literalmente, más bien considerarlo una declaración sobre el poder de la palabra.

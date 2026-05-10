@@ -1,90 +1,82 @@
 {
-  "date": "2026-05-12",
+  "date": "2026-05-14",
   "month": "2026-05",
-  "file": "textos/2026-05-12.txt",
+  "file": "textos/2026-05-14.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "un rechazo",
+  "my_poem_snippet": "al matar tu mosca",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Mudanza",
+    "poem_title": "Sleepless",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "alteridad como identidad",
+      "word": "audibilidad de lo visible",
       "weight": 3
     },
     {
-      "word": "encarnacion de la metamorfosis",
+      "word": "culpa confesional",
       "weight": 3
     },
     {
-      "word": "rechazo como origen",
+      "word": "desplazamiento identitario",
       "weight": 3
     },
     {
-      "word": "temporalidad insuficiente",
+      "word": "intimidad vulnerada",
       "weight": 3
     },
     {
-      "word": "yo descentrado",
+      "word": "violencia reveladora",
       "weight": 3
     },
     {
-      "word": "autointerrogacion",
+      "word": "animalizacion",
       "weight": 2
     },
     {
-      "word": "desidentificacion",
+      "word": "desdoblamiento",
       "weight": 2
     },
     {
-      "word": "devenir",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "enumeracion",
+      "word": "intrusion",
       "weight": 2
     },
     {
-      "word": "pasaje alma carne",
+      "word": "reconocimiento",
       "weight": 2
     },
     {
-      "word": "reiteracion",
+      "word": "sinestesia",
       "weight": 2
     },
     {
-      "word": "alma",
+      "word": "admitir",
       "weight": 1
     },
     {
-      "word": "carne",
+      "word": "alas",
       "weight": 1
     },
     {
-      "word": "falta",
+      "word": "escuchar",
       "weight": 1
     },
     {
-      "word": "metamorfosis",
+      "word": "matar",
       "weight": 1
     },
     {
-      "word": "otra",
+      "word": "mosca",
       "weight": 1
     },
     {
-      "word": "rechazo",
-      "weight": 1
-    },
-    {
-      "word": "tiempo",
-      "weight": 1
-    },
-    {
-      "word": "yo",
+      "word": "ver",
       "weight": 1
     }
   ]

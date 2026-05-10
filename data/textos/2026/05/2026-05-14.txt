@@ -1,0 +1,33 @@
+FECHA: 2026-05-14
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Sleepless
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+al matar tu mosca
+admito
+que veo tus alas
+y las escucho
+
+# POEMA_CITADO
+
+La noche es cruel:
+insiste en jugar a las muñecas rusas.
+
+Los ojos palpan
+como si el cuerpo fuese una caja cerrada.
+
+Viene el grito de la muñeca más pequeña,
+intenta salir, alcanzar algo en la superficie
+
+>>y me araña.
+
+# TEXTO
+
+Intentando dormirse, la voz poética se encuentra entre dos lados opuestos: por un lado hay lo abierto —muñecas rusas y ojos palpando— y por el otro lo cerrado: el cuerpo.
+
+Interpreto las muñecas como la reflexión más y más profunda. En la noche, después de terminar el trabajo, estamos solos con nuestros pensamientos y a veces empezamos a mirar a fondo. Así quedamos sin dormir, con nuestros ojos abiertos, impidiendo que nuestro cuerpo duerma.
+
+Al fin, alcanzamos el nivel más profundo, “la muñeca más pequeña”, y nos daña. Cabe la posibilidad de que, cuanto más reflexionamos, más nos impida dormir.
