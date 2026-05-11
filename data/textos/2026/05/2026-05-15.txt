@@ -1,0 +1,37 @@
+FECHA: 2026-05-15
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Surreal Mind
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+estar contigo o estar sola
+elijo la segunda
+
+conversarme a mi misma
+sin la perforación de ideas tuya’
+
+veo la fin del camino
+sin hacer algún paso
+
+# POEMA_CITADO
+
+Se multiplican las paredes y atravieso el sueño.
+Columnas de aguas oscuras se yerguen sobre mí y,
+al tiempo,
+todo es un acceso de colores impensables.
+
+
+
+
+El mar
+					espeluznante
+
+gran espejo de mi mente.
+
+# TEXTO
+
+Por un lado el sueño implica miedo —las paredes crean la imagen de ser atrapado; aguas oscuras, lo desconocido o incluso el hundimiento; el mar, el terror— pero por otro reflejan la mente del hablante. Cabe la posibilidad de que la voz poética dramatice la calidad reveladora de sus sueños al afirmar que revelan lo más profundo de su mente, incluso lo que esconde al estar despierto.
+
+El narrador está rodeado por la oscuridad ("aguas oscuras") pero la califica como "colores impensables". Una lectura posible es que, por el hecho de que pensar es una actividad activa, el sueño lleva a la superficie lo que no se piensa al estar despierto. En particular, que lo que piensa conscientemente rechaza lo oscuro, y solo en el sueño se ve.

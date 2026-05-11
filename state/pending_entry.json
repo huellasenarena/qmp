@@ -1,82 +1,106 @@
 {
-  "date": "2026-05-14",
+  "date": "2026-05-15",
   "month": "2026-05",
-  "file": "textos/2026-05-14.txt",
+  "file": "textos/2026-05-15.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "al matar tu mosca",
+  "my_poem_snippet": "estar contigo o estar sola",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Sleepless",
+    "poem_title": "Surreal Mind",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "audibilidad de lo visible",
+      "word": "inmovilidad reveladora",
       "weight": 3
     },
     {
-      "word": "culpa confesional",
+      "word": "opacidad reveladora",
       "weight": 3
     },
     {
-      "word": "desplazamiento identitario",
+      "word": "soberania mental",
       "weight": 3
     },
     {
-      "word": "intimidad vulnerada",
+      "word": "soledad electiva",
       "weight": 3
     },
     {
-      "word": "violencia reveladora",
+      "word": "violencia epistemica",
       "weight": 3
     },
     {
-      "word": "animalizacion",
+      "word": "autointerlocucion",
       "weight": 2
     },
     {
-      "word": "desdoblamiento",
+      "word": "desvinculacion",
       "weight": 2
     },
     {
-      "word": "exposicion",
+      "word": "espejamiento",
       "weight": 2
     },
     {
-      "word": "intrusion",
+      "word": "limite",
       "weight": 2
     },
     {
-      "word": "reconocimiento",
+      "word": "rechazo de la intrusion",
       "weight": 2
     },
     {
-      "word": "sinestesia",
+      "word": "repliegue",
       "weight": 2
     },
     {
-      "word": "admitir",
+      "word": "revelacion onirica",
+      "weight": 2
+    },
+    {
+      "word": "aguas oscuras",
       "weight": 1
     },
     {
-      "word": "alas",
+      "word": "camino",
       "weight": 1
     },
     {
-      "word": "escuchar",
+      "word": "colores",
       "weight": 1
     },
     {
-      "word": "matar",
+      "word": "espejo",
       "weight": 1
     },
     {
-      "word": "mosca",
+      "word": "ideas",
       "weight": 1
     },
     {
-      "word": "ver",
+      "word": "mar",
+      "weight": 1
+    },
+    {
+      "word": "mente",
+      "weight": 1
+    },
+    {
+      "word": "paredes",
+      "weight": 1
+    },
+    {
+      "word": "paso",
+      "weight": 1
+    },
+    {
+      "word": "perforacion",
+      "weight": 1
+    },
+    {
+      "word": "sueno",
       "weight": 1
     }
   ]

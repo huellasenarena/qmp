@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-05-15",
+    "month": "2026-05",
+    "file": "textos/2026-05-15.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "estar contigo o estar sola",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Surreal Mind",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "inmovilidad reveladora",
+        "weight": 3
+      },
+      {
+        "word": "opacidad reveladora",
+        "weight": 3
+      },
+      {
+        "word": "soberania mental",
+        "weight": 3
+      },
+      {
+        "word": "soledad electiva",
+        "weight": 3
+      },
+      {
+        "word": "violencia epistemica",
+        "weight": 3
+      },
+      {
+        "word": "autointerlocucion",
+        "weight": 2
+      },
+      {
+        "word": "desvinculacion",
+        "weight": 2
+      },
+      {
+        "word": "espejamiento",
+        "weight": 2
+      },
+      {
+        "word": "limite",
+        "weight": 2
+      },
+      {
+        "word": "rechazo de la intrusion",
+        "weight": 2
+      },
+      {
+        "word": "repliegue",
+        "weight": 2
+      },
+      {
+        "word": "revelacion onirica",
+        "weight": 2
+      },
+      {
+        "word": "aguas oscuras",
+        "weight": 1
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      },
+      {
+        "word": "colores",
+        "weight": 1
+      },
+      {
+        "word": "espejo",
+        "weight": 1
+      },
+      {
+        "word": "ideas",
+        "weight": 1
+      },
+      {
+        "word": "mar",
+        "weight": 1
+      },
+      {
+        "word": "mente",
+        "weight": 1
+      },
+      {
+        "word": "paredes",
+        "weight": 1
+      },
+      {
+        "word": "paso",
+        "weight": 1
+      },
+      {
+        "word": "perforacion",
+        "weight": 1
+      },
+      {
+        "word": "sueno",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-14",
     "month": "2026-05",
     "file": "textos/2026-05-14.txt",
