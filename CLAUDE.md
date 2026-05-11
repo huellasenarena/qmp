@@ -20,6 +20,11 @@ Daily poetry publication platform at quemalpoema.com. Each day: one original poe
 │   │   ├── gdocs_pull_poem_by_date.py
 │   │   ├── gdocs_pull_analysis_by_date.py
 │   │   └── gdocs_get_limit_date.py
+│   ├── appsscript/         # Google Apps Script — managed with clasp
+│   │   ├── atajo.js        # Web app (doPost): receives text from iOS/macOS Shortcut, writes to Google Docs
+│   │   ├── QMP New Entry.js  # Menu-driven publish from "Entrada Pendiente" tab in Docs
+│   │   ├── appsscript.json # Apps Script manifest
+│   │   └── .clasp.json     # clasp config (script ID)
 │   ├── qcrear.py           # Create a new entry (pull from Docs → .txt → archivo.json → commit)
 │   ├── qcambiar.py         # Edit an existing draft before publishing
 │   ├── update_entry.py     # Re-pull and update an already-published entry
@@ -111,6 +116,24 @@ BOOK_TITLE: ...
 | `OPENAI_API_KEY` | Keyword generation via OpenAI |
 
 The keyfile is written to `.secrets/sa.json` by a Python heredoc step (not bash `echo`) to avoid newline issues. `QMP_GDOCS_SA_KEYFILE` is passed via the `env:` block of the step that needs it, not via shell `export`.
+
+---
+
+## iOS/macOS Shortcut → Google Docs flow
+
+The "publicar" Shortcut sends content written in iA Writer directly to Google Docs via the Apps Script web app:
+
+1. Shortcut gets text (from share sheet or clipboard), does an empty check, then POSTs `{"text": "..."}` to the Apps Script `/exec` URL.
+2. `atajo.js` (`doPost`) parses the text and writes poems/analyses to the appropriate tabs in the Google Doc.
+3. Returns `{ok: true, publicados: N}` on success or `{ok: false, error: "..."}` on failure — the Shortcut shows a notification or alert accordingly.
+
+**Input format** (plain text, no special app required):
+- One or more `# Poema` and/or `# Análisis` blocks (in any combination)
+- Each block must have `## Versión final` with content
+- `## Notas` is optional; free text before `## Versión final` is the `pre` section
+- Descriptors are optional: `# Poema` or `# Poema - my descriptor` both work
+
+**To deploy Apps Script changes:** `cd scripts/appsscript && clasp push`
 
 ---
 
