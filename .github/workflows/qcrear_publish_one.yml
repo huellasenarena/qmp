@@ -144,41 +144,61 @@ jobs:
           except Exception:
               keywords = []
 
+          def send(text):
+              data = urllib.parse.urlencode({
+                  "chat_id": chat_id,
+                  "text": text,
+                  "parse_mode": "HTML",
+              }).encode()
+              req = urllib.request.Request(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  data=data, method="POST"
+              )
+              with urllib.request.urlopen(req) as resp:
+                  print(resp.read().decode())
+
           esc = html.escape
           title = headers.get("MY_POEM_TITLE", "").strip()
           poet = headers.get("POETA", "").strip()
           poem_title_cited = headers.get("POEM_TITLE", "").strip()
+          book_title = headers.get("BOOK_TITLE", "").strip()
           poem = sections.get("POEMA", "")
+          cited_poem = sections.get("POEMA_CITADO", "")
+          analysis = sections.get("TEXTO", "")
 
+          cited_lines = [l for l in cited_poem.split("\n") if l.strip()]
+          cited_snippet = "\n".join(cited_lines[:5])
+
+          # Message 1: poem + cited snippet + keywords
           parts = [f"📖 <b>Que Mal Poema</b> — {esc(date)}"]
           if title:
               parts.append(f"<b>{esc(title)}</b>")
           if poem:
               parts.append(esc(poem))
           if poet or poem_title_cited:
-              cited = "<i>citado: " + esc(poem_title_cited or "")
+              cited_header = "<i>" + esc(poem_title_cited or "")
               if poet:
-                  cited += f" ({esc(poet)})"
-              cited += "</i>"
-              parts.append(cited)
+                  cited_header += f" — {esc(poet)}"
+              if book_title:
+                  cited_header += f", {esc(book_title)}"
+              cited_header += "</i>"
+              parts.append(cited_header)
+          if cited_snippet:
+              parts.append(esc(cited_snippet) + "\n…")
           if keywords:
               parts.append("🏷 " + " · ".join(esc(k) for k in keywords))
           parts.append("https://quemalpoema.com")
 
-          message = "\n\n".join(parts)
-          if len(message) > 4000:
-              message = message[:4000] + "…"
+          msg1 = "\n\n".join(parts)
+          if len(msg1) > 4000:
+              msg1 = msg1[:4000] + "…"
+          send(msg1)
 
-          data = urllib.parse.urlencode({
-              "chat_id": chat_id,
-              "text": message,
-              "parse_mode": "HTML",
-          }).encode()
-          req = urllib.request.Request(
-              f"https://api.telegram.org/bot{token}/sendMessage",
-              data=data, method="POST"
-          )
-          with urllib.request.urlopen(req) as resp:
-              print(resp.read().decode())
+          # Message 2: full analysis
+          if analysis:
+              msg2 = f"<b>Análisis — {esc(date)}</b>\n\n{esc(analysis)}"
+              if len(msg2) > 4000:
+                  msg2 = msg2[:4000] + "…"
+              send(msg2)
           PY
 
