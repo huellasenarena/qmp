@@ -148,12 +148,20 @@ jobs:
           cited_lines = [l for l in cited_poem.split("\n") if l.strip()]
           cited_snippet = "\n".join(cited_lines[:5])
 
-          # Message 1: poem + cited snippet + keywords
-          parts = [f"📖 <b>Que Mal Poema</b> — {esc(date)}"]
+          # Message 1: my poem
+          parts1 = [f"📖 <b>Que Mal Poema</b> — {esc(date)}"]
           if title:
-              parts.append(f"<b>{esc(title)}</b>")
+              parts1.append(f"<b>{esc(title)}</b>")
           if poem:
-              parts.append(esc(poem))
+              parts1.append(esc(poem))
+          parts1.append("https://quemalpoema.com")
+          msg1 = "\n\n".join(parts1)
+          if len(msg1) > 4000:
+              msg1 = msg1[:4000] + "…"
+          send(msg1)
+
+          # Message 2: cited poem snippet + analysis
+          parts2 = []
           if poet or poem_title_cited:
               cited_header = "<i>" + esc(poem_title_cited or "")
               if poet:
@@ -161,22 +169,18 @@ jobs:
               if book_title:
                   cited_header += f", {esc(book_title)}"
               cited_header += "</i>"
-              parts.append(cited_header)
+              parts2.append(cited_header)
           if cited_snippet:
-              parts.append(esc(cited_snippet) + "\n…")
-          if keywords:
-              parts.append("🏷 " + " · ".join(esc(k) for k in keywords))
-          parts.append("https://quemalpoema.com")
-
-          msg1 = "\n\n".join(parts)
-          if len(msg1) > 4000:
-              msg1 = msg1[:4000] + "…"
-          send(msg1)
-
-          # Message 2: full analysis
+              parts2.append(esc(cited_snippet) + "\n…")
           if analysis:
-              msg2 = f"<b>Análisis — {esc(date)}</b>\n\n{esc(analysis)}"
+              parts2.append(esc(analysis))
+          if parts2:
+              msg2 = "\n\n".join(parts2)
               if len(msg2) > 4000:
                   msg2 = msg2[:4000] + "…"
               send(msg2)
+
+          # Message 3: keywords
+          if keywords:
+              send("🏷 " + " · ".join(esc(k) for k in keywords))
           PY
