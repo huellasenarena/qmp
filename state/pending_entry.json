@@ -1,106 +1,114 @@
 {
-  "date": "2026-05-15",
+  "date": "2026-05-16",
   "month": "2026-05",
-  "file": "textos/2026-05-15.txt",
+  "file": "textos/2026-05-16.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "estar contigo o estar sola",
+  "my_poem_snippet": "de mi mano izquierda",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Surreal Mind",
+    "poem_title": "Insecto",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "inmovilidad reveladora",
+      "word": "ausencia como precipitacion de la finitud",
       "weight": 3
     },
     {
-      "word": "opacidad reveladora",
+      "word": "interdependencia vital",
       "weight": 3
     },
     {
-      "word": "soberania mental",
+      "word": "tacto como moratoria",
       "weight": 3
     },
     {
-      "word": "soledad electiva",
+      "word": "temporalidad corporal",
       "weight": 3
     },
     {
-      "word": "violencia epistemica",
+      "word": "vulnerabilidad encarnada",
       "weight": 3
     },
     {
-      "word": "autointerlocucion",
+      "word": "contacto",
       "weight": 2
     },
     {
-      "word": "desvinculacion",
+      "word": "continuidad fragil",
       "weight": 2
     },
     {
-      "word": "espejamiento",
+      "word": "desamparo",
       "weight": 2
     },
     {
-      "word": "limite",
+      "word": "desgaste",
       "weight": 2
     },
     {
-      "word": "rechazo de la intrusion",
+      "word": "desvanecimiento",
       "weight": 2
     },
     {
-      "word": "repliegue",
+      "word": "lateralidad",
       "weight": 2
     },
     {
-      "word": "revelacion onirica",
+      "word": "separacion",
       "weight": 2
     },
     {
-      "word": "aguas oscuras",
+      "word": "soledad",
+      "weight": 2
+    },
+    {
+      "word": "transito",
+      "weight": 2
+    },
+    {
+      "word": "derecha",
       "weight": 1
     },
     {
-      "word": "camino",
+      "word": "fosas nasales",
       "weight": 1
     },
     {
-      "word": "colores",
+      "word": "habitacion",
       "weight": 1
     },
     {
-      "word": "espejo",
+      "word": "humedad",
       "weight": 1
     },
     {
-      "word": "ideas",
+      "word": "izquierda",
       "weight": 1
     },
     {
-      "word": "mar",
+      "word": "luz",
       "weight": 1
     },
     {
-      "word": "mente",
+      "word": "mano",
       "weight": 1
     },
     {
-      "word": "paredes",
+      "word": "orificio",
       "weight": 1
     },
     {
-      "word": "paso",
+      "word": "salida",
       "weight": 1
     },
     {
-      "word": "perforacion",
+      "word": "sotano",
       "weight": 1
     },
     {
-      "word": "sueno",
+      "word": "vida",
       "weight": 1
     }
   ]

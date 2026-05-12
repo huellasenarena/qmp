@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-05-16",
+    "month": "2026-05",
+    "file": "textos/2026-05-16.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "de mi mano izquierda",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Insecto",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "ausencia como precipitacion de la finitud",
+        "weight": 3
+      },
+      {
+        "word": "interdependencia vital",
+        "weight": 3
+      },
+      {
+        "word": "tacto como moratoria",
+        "weight": 3
+      },
+      {
+        "word": "temporalidad corporal",
+        "weight": 3
+      },
+      {
+        "word": "vulnerabilidad encarnada",
+        "weight": 3
+      },
+      {
+        "word": "contacto",
+        "weight": 2
+      },
+      {
+        "word": "continuidad fragil",
+        "weight": 2
+      },
+      {
+        "word": "desamparo",
+        "weight": 2
+      },
+      {
+        "word": "desgaste",
+        "weight": 2
+      },
+      {
+        "word": "desvanecimiento",
+        "weight": 2
+      },
+      {
+        "word": "lateralidad",
+        "weight": 2
+      },
+      {
+        "word": "separacion",
+        "weight": 2
+      },
+      {
+        "word": "soledad",
+        "weight": 2
+      },
+      {
+        "word": "transito",
+        "weight": 2
+      },
+      {
+        "word": "derecha",
+        "weight": 1
+      },
+      {
+        "word": "fosas nasales",
+        "weight": 1
+      },
+      {
+        "word": "habitacion",
+        "weight": 1
+      },
+      {
+        "word": "humedad",
+        "weight": 1
+      },
+      {
+        "word": "izquierda",
+        "weight": 1
+      },
+      {
+        "word": "luz",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "orificio",
+        "weight": 1
+      },
+      {
+        "word": "salida",
+        "weight": 1
+      },
+      {
+        "word": "sotano",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-15",
     "month": "2026-05",
     "file": "textos/2026-05-15.txt",

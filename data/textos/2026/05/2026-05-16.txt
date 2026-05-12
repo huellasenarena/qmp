@@ -1,0 +1,44 @@
+FECHA: 2026-05-16
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Insecto
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+de mi mano izquierda
+se desvanece la vida
+hasta mi mano derecha
+
+si tuviera tu mano
+se desvanecería
+más lentamente
+
+helas
+
+# POEMA_CITADO
+
+Apago la luz
+y la habitación deja de serlo:
+sótano del mundo,
+orificio de la vida.
+
+
+
+
+Humedad
+perfora las fosas nasales.
+No hay salida
+y estoy sola.
+
+# TEXTO
+
+Me resulta ser un rompecabezas *Insecto*, pero me atraviesa una teoría sobre su sentido.
+
+La luz tiene un poder transformador: con ella, la habitación se vive; sin ella, se convierte en una oscuridad intensa–el sótano del mundo, el orificio de la vida. (Me detengo en esta última línea. ¿Quiere decir que la vida es nada más que la ausencia, o que hay una ausencia total de vida? En cualquier caso, es una metáfora pesimista.)
+
+De algún lugar viene la humedad... ¿Es la humedad de la noche? ¿Se produce por la oscuridad? ¿Viene de una máquina de humidificación que puede ayudar al sueño? De todas formas tiene una cualidad poderosa, como la luz: "perfora las fosas nasales". La palabra perfora muestra una violencia: el narrador se vuelve vulnerable por la oscuridad y la humedad.
+
+Pensando en otros poemas de este poemario–*Surreal mind*, *Sleepless*, e *insomnia*–el autor se fascina con el sueño y lo dramatiza. Cabe la posibilidad de que este poema implique temas parecidos. No solo el sueño se hace en la oscuridad sino en la *soledad*, ambas presentadas en el poema. A mayor abundamiento, dramatiza la desagradabilidad de este momento en la cama justo antes de dormir.
+
+Concentrémonos en el título, *Insecto*. A primera vista me pareció una combinación sin sentido pero ya me viene una idea: los insectos se sienten atraídos por la luz; sin la luz flotan sin saber dónde ir. ¿Puede ser que la voz poética se vea como este insecto perturbado por el nuevo ambiente sin luz del que no puede escapar?
