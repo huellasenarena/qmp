@@ -1,0 +1,29 @@
+FECHA: 2026-05-17
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Autodetonación
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+si no llevara perfume
+el rechazo no habría dolida tanto
+si no esperara para tí
+no habría perdido otro
+
+# POEMA_CITADO
+
+Explotó en pedazos la escritur|a:
+|huérfanos quedaron los versos.
+
+# TEXTO
+
+La escritura suele parecer seca–inanimada tinta negra organizada por encima de un papel blanco–por lo cual la dramatización de *Autodetonación* me llama la atención.
+
+El título puede implicar una elección destructiva por parte de las palabras; el orden típicamente asociado con la escritura se rompe con una explosión, quedando los versos aislados.
+
+Al mismo tiempo, puede implicar algo dentro de las palabras que se detonó, no las palabras en sí mismas, por lo cual las palabras son víctimas más bien que actores.
+
+Se oponen esas ideas–la una implicando un papel activo y la otra, pasiva. Yo, dado el uso de la palabra "huérfanos" que carga una imagen de un niño victimizado, tengo la inclinación de considerar que las palabras experimentan esa destrucción sin querer.
+
+Se lee como un momento de una historia más grande, dejándome preguntando qué pasó antes que llevó a esta explosión, pero se niega al lector esta aclaración. Cabe la posibilidad de que ese verso pequeño sea *la ejemplificación* de este desorden; la conexión no existe en este mundo poético y se refleja en la estructura y contenido del poema.

@@ -1,114 +1,78 @@
 {
-  "date": "2026-05-16",
+  "date": "2026-05-17",
   "month": "2026-05",
-  "file": "textos/2026-05-16.txt",
+  "file": "textos/2026-05-17.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "de mi mano izquierda",
+  "my_poem_snippet": "si no llevara perfume",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Insecto",
+    "poem_title": "Autodetonación",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "ausencia como precipitacion de la finitud",
+      "word": "adorno como vulnerabilidad",
       "weight": 3
     },
     {
-      "word": "interdependencia vital",
+      "word": "autoculpabilizacion",
       "weight": 3
     },
     {
-      "word": "tacto como moratoria",
+      "word": "dependencia del reconocimiento",
       "weight": 3
     },
     {
-      "word": "temporalidad corporal",
+      "word": "espera como perdida",
       "weight": 3
     },
     {
-      "word": "vulnerabilidad encarnada",
+      "word": "subordinacion al otro",
       "weight": 3
     },
     {
-      "word": "contacto",
+      "word": "anticipacion",
       "weight": 2
     },
     {
-      "word": "continuidad fragil",
+      "word": "asimetria afectiva",
       "weight": 2
     },
     {
-      "word": "desamparo",
+      "word": "autoexposicion corporal",
       "weight": 2
     },
     {
-      "word": "desgaste",
+      "word": "causalidad contrafactual",
       "weight": 2
     },
     {
-      "word": "desvanecimiento",
+      "word": "desplazamiento del dano",
       "weight": 2
     },
     {
-      "word": "lateralidad",
-      "weight": 2
-    },
-    {
-      "word": "separacion",
-      "weight": 2
-    },
-    {
-      "word": "soledad",
-      "weight": 2
-    },
-    {
-      "word": "transito",
-      "weight": 2
-    },
-    {
-      "word": "derecha",
+      "word": "dolor",
       "weight": 1
     },
     {
-      "word": "fosas nasales",
+      "word": "espera",
       "weight": 1
     },
     {
-      "word": "habitacion",
+      "word": "otro",
       "weight": 1
     },
     {
-      "word": "humedad",
+      "word": "perdida",
       "weight": 1
     },
     {
-      "word": "izquierda",
+      "word": "perfume",
       "weight": 1
     },
     {
-      "word": "luz",
-      "weight": 1
-    },
-    {
-      "word": "mano",
-      "weight": 1
-    },
-    {
-      "word": "orificio",
-      "weight": 1
-    },
-    {
-      "word": "salida",
-      "weight": 1
-    },
-    {
-      "word": "sotano",
-      "weight": 1
-    },
-    {
-      "word": "vida",
+      "word": "rechazo",
       "weight": 1
     }
   ]

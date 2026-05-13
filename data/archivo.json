@@ -1,5 +1,84 @@
 [
   {
+    "date": "2026-05-17",
+    "month": "2026-05",
+    "file": "textos/2026-05-17.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "si no llevara perfume",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Autodetonación",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "adorno como vulnerabilidad",
+        "weight": 3
+      },
+      {
+        "word": "autoculpabilizacion",
+        "weight": 3
+      },
+      {
+        "word": "dependencia del reconocimiento",
+        "weight": 3
+      },
+      {
+        "word": "espera como perdida",
+        "weight": 3
+      },
+      {
+        "word": "subordinacion al otro",
+        "weight": 3
+      },
+      {
+        "word": "anticipacion",
+        "weight": 2
+      },
+      {
+        "word": "asimetria afectiva",
+        "weight": 2
+      },
+      {
+        "word": "autoexposicion corporal",
+        "weight": 2
+      },
+      {
+        "word": "causalidad contrafactual",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento del dano",
+        "weight": 2
+      },
+      {
+        "word": "dolor",
+        "weight": 1
+      },
+      {
+        "word": "espera",
+        "weight": 1
+      },
+      {
+        "word": "otro",
+        "weight": 1
+      },
+      {
+        "word": "perdida",
+        "weight": 1
+      },
+      {
+        "word": "perfume",
+        "weight": 1
+      },
+      {
+        "word": "rechazo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-16",
     "month": "2026-05",
     "file": "textos/2026-05-16.txt",
