@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-05-18",
+    "month": "2026-05",
+    "file": "textos/2026-05-18.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "ser especial",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Escribir",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "deseo de excepcion",
+        "weight": 3
+      },
+      {
+        "word": "heteronomia afectiva",
+        "weight": 3
+      },
+      {
+        "word": "singularidad conferida",
+        "weight": 3
+      },
+      {
+        "word": "subjetivacion relacional",
+        "weight": 3
+      },
+      {
+        "word": "sujecion como distincion",
+        "weight": 3
+      },
+      {
+        "word": "autoenunciacion",
+        "weight": 2
+      },
+      {
+        "word": "autoimagen",
+        "weight": 2
+      },
+      {
+        "word": "exclusividad",
+        "weight": 2
+      },
+      {
+        "word": "inscripcion corporal",
+        "weight": 2
+      },
+      {
+        "word": "interpelacion",
+        "weight": 2
+      },
+      {
+        "word": "sinceramiento",
+        "weight": 2
+      },
+      {
+        "word": "vulnerabilidad",
+        "weight": 2
+      },
+      {
+        "word": "arder",
+        "weight": 1
+      },
+      {
+        "word": "comportamiento",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "entranas",
+        "weight": 1
+      },
+      {
+        "word": "escucha",
+        "weight": 1
+      },
+      {
+        "word": "exorcismo",
+        "weight": 1
+      },
+      {
+        "word": "fingir",
+        "weight": 1
+      },
+      {
+        "word": "hechizo",
+        "weight": 1
+      },
+      {
+        "word": "instante",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "sangre",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-17",
     "month": "2026-05",
     "file": "textos/2026-05-17.txt",

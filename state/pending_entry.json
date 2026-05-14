@@ -1,78 +1,106 @@
 {
-  "date": "2026-05-17",
+  "date": "2026-05-18",
   "month": "2026-05",
-  "file": "textos/2026-05-17.txt",
+  "file": "textos/2026-05-18.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "si no llevara perfume",
+  "my_poem_snippet": "ser especial",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Autodetonación",
+    "poem_title": "Escribir",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "adorno como vulnerabilidad",
+      "word": "deseo de excepcion",
       "weight": 3
     },
     {
-      "word": "autoculpabilizacion",
+      "word": "heteronomia afectiva",
       "weight": 3
     },
     {
-      "word": "dependencia del reconocimiento",
+      "word": "singularidad conferida",
       "weight": 3
     },
     {
-      "word": "espera como perdida",
+      "word": "subjetivacion relacional",
       "weight": 3
     },
     {
-      "word": "subordinacion al otro",
+      "word": "sujecion como distincion",
       "weight": 3
     },
     {
-      "word": "anticipacion",
+      "word": "autoenunciacion",
       "weight": 2
     },
     {
-      "word": "asimetria afectiva",
+      "word": "autoimagen",
       "weight": 2
     },
     {
-      "word": "autoexposicion corporal",
+      "word": "exclusividad",
       "weight": 2
     },
     {
-      "word": "causalidad contrafactual",
+      "word": "inscripcion corporal",
       "weight": 2
     },
     {
-      "word": "desplazamiento del dano",
+      "word": "interpelacion",
       "weight": 2
     },
     {
-      "word": "dolor",
+      "word": "sinceramiento",
+      "weight": 2
+    },
+    {
+      "word": "vulnerabilidad",
+      "weight": 2
+    },
+    {
+      "word": "arder",
       "weight": 1
     },
     {
-      "word": "espera",
+      "word": "comportamiento",
       "weight": 1
     },
     {
-      "word": "otro",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "perdida",
+      "word": "entranas",
       "weight": 1
     },
     {
-      "word": "perfume",
+      "word": "escucha",
       "weight": 1
     },
     {
-      "word": "rechazo",
+      "word": "exorcismo",
+      "weight": 1
+    },
+    {
+      "word": "fingir",
+      "weight": 1
+    },
+    {
+      "word": "hechizo",
+      "weight": 1
+    },
+    {
+      "word": "instante",
+      "weight": 1
+    },
+    {
+      "word": "ojos",
+      "weight": 1
+    },
+    {
+      "word": "sangre",
       "weight": 1
     }
   ]

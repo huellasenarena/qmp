@@ -1,0 +1,51 @@
+FECHA: 2026-05-18
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Escribir
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+ser especial
+no es absoluto
+es ser especial
+en los ojos tuyos
+
+entonces lanza un hechizo
+sobre mi cuerpo
+que nunca has hecho
+a ningún otro
+
+es tu comportamiento
+que afecta como
+yo me percibo
+y lo que yo hago
+
+# POEMA_CITADO
+
+>>artificio de sangre
+>>exorcismo de las entrañas
+
+>>arder sinceramente
+>>dejarlo todo en el instante
+
+>>hablarse a sí mismo
+>>dejar de fingir
+
+>>porque nadie escucha
+
+# TEXTO
+
+El hablante lírico vacila entre lo positivo y lo negativo —lo que se hace y lo que se disminuye— con el fin de dramatizar la escritura como una catarsis intensa.
+
+Por un lado menciona "artificio", "arder", "hablar", palabras que implican la actividad —un artificio es una construcción maestra, mientras que arder y hablar son verbos activos—. Por otro lado hay lo que se rezaga: las entrañas, todo, y la insinceridad.
+
+A mis ojos la tercera estrofa sirve para aclarar la ambigüedad de las primeras dos estrofas; de ideas poco precisas —artificio de sangre y arder— pasamos por hablarse, que no solo es más específico, sino que da un sentido a "de sangre" y "arder": muestra, según una interpretación, que "sangre" puede representar la voz auténtica y arder puede resultar de escuchar esta voz.
+
+No obstante, no diría que sea tan sencillo como eso. Un artificio es artificial, pero el narrador dice "dejar de fingir". Igualmente, "dejarlo todo" puede incluir "arder" en sí mismo y las entrañas parecen ser reales, por lo cual esta yuxtaposición neta no se tiene.
+
+La pregunta es cómo relacionar la primera línea de una estrofa con la segunda... ¿cuál verbo cabe entre las líneas? Cabe la posibilidad de que "llevar a" sea el conector: un artificio de sangre lleva a un exorcismo de las entrañas y arder sinceramente lleva a dejarlo todo.
+
+La última línea merece consideración. Caben bastantes interpretaciones: nadie escucha, entonces no vale la pena fingir porque nadie presta atención; la escritura se hace para el escritor, no para el mundo; la pena de la escritura se produce porque nadie la lee; el hablante usa ese rechazo como motivación...
+
+Hay pruebas para ambas: el exorcismo y dejar de fingir pueden ser el resultado de que el hablante no se siente obligado a presentarse de manera inauténtica; la pena del exorcismo o de arder pueden ser el resultado de ser ignorado. Creo que ambas interpretaciones aplican acá: el rechazo duele *y* permite ser auténtico.
