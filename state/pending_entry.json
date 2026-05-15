@@ -1,106 +1,74 @@
 {
-  "date": "2026-05-18",
+  "date": "2026-05-19",
   "month": "2026-05",
-  "file": "textos/2026-05-18.txt",
+  "file": "textos/2026-05-19.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "ser especial",
+  "my_poem_snippet": "una calle sin salida",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Escribir",
+    "poem_title": "Ruinas circulares",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "deseo de excepcion",
+      "word": "autoconstruccion del limite",
       "weight": 3
     },
     {
-      "word": "heteronomia afectiva",
+      "word": "clausura protectora",
       "weight": 3
     },
     {
-      "word": "singularidad conferida",
+      "word": "descredito del progreso",
       "weight": 3
     },
     {
-      "word": "subjetivacion relacional",
+      "word": "rechazo de la llegada",
       "weight": 3
     },
     {
-      "word": "sujecion como distincion",
+      "word": "retorno imposible",
       "weight": 3
     },
     {
-      "word": "autoenunciacion",
+      "word": "autoexilio",
       "weight": 2
     },
     {
-      "word": "autoimagen",
+      "word": "desarraigo",
       "weight": 2
     },
     {
-      "word": "exclusividad",
+      "word": "desvio",
       "weight": 2
     },
     {
-      "word": "inscripcion corporal",
+      "word": "imaginacion compensatoria",
       "weight": 2
     },
     {
-      "word": "interpelacion",
+      "word": "incorporeidad",
       "weight": 2
     },
     {
-      "word": "sinceramiento",
-      "weight": 2
-    },
-    {
-      "word": "vulnerabilidad",
-      "weight": 2
-    },
-    {
-      "word": "arder",
+      "word": "autopista",
       "weight": 1
     },
     {
-      "word": "comportamiento",
+      "word": "calle",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "llegada",
       "weight": 1
     },
     {
-      "word": "entranas",
+      "word": "mente",
       "weight": 1
     },
     {
-      "word": "escucha",
-      "weight": 1
-    },
-    {
-      "word": "exorcismo",
-      "weight": 1
-    },
-    {
-      "word": "fingir",
-      "weight": 1
-    },
-    {
-      "word": "hechizo",
-      "weight": 1
-    },
-    {
-      "word": "instante",
-      "weight": 1
-    },
-    {
-      "word": "ojos",
-      "weight": 1
-    },
-    {
-      "word": "sangre",
+      "word": "salida",
       "weight": 1
     }
   ]

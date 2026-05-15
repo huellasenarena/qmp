@@ -1,0 +1,50 @@
+FECHA: 2026-05-19
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Ruinas circulares
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+una calle sin salida
+que había eligido crear de mi mente
+porque la autopista
+decepciona cuando llegue
+
+# POEMA_CITADO
+
+>>La casa está oscura y mojada.
+>>Un niño juega con los juguetes viejos
+>>que abandoné tras el destierro.
+
+
+
+Jardín: rosas rojas, caracoles, orugas.
+Cocina: pastillas de chocolate que robábamos.
+Sala: árbol de navidad en invierno.
+Comedor: mesa de seis, sillas volteadas, comerse el silencio.
+Escaleras: jugar al escondite con las sombras.
+
+Una bomba abrió la puerta de la calle.
+Pelotas invisibles quebraron las ventanas.
+
+La golosa quedó sin niñas.
+El árbol de feijoa aún las aguarda.
+Los gatos siempre vuelven.
+Yo vuelvo,
+vuelvo,
+incorpórea.
+
+>>La carpa en el jardín,
+>>la manguera,
+>>los disfraces para ser como mi madre.
+
+# TEXTO
+
+Hace preguntas el poema... pero no me da mucho. El narrador está sin cuerpo, y las pelotas son invisibles, haciéndome pensar que es una escena imaginaria: todo —el destierro, las sillas volteadas, la bomba— no ocurrió en el mundo físico.
+
+Al final está el momento más íntimo del poema: "los disfraces para ser como mi madre." Una lectura posible es que la voz poética es la versión adulta que reflexiona sobre su infancia trágica; ya adulta, intenta ser como su madre, sin embargo, no alcanza.
+
+Por lo tanto, el título puede insinuar este proceso de continuamente mirar su pasado de ruinas.
+
+Pero no sé; no me da mucho.

@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-05-19",
+    "month": "2026-05",
+    "file": "textos/2026-05-19.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "una calle sin salida",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Ruinas circulares",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autoconstruccion del limite",
+        "weight": 3
+      },
+      {
+        "word": "clausura protectora",
+        "weight": 3
+      },
+      {
+        "word": "descredito del progreso",
+        "weight": 3
+      },
+      {
+        "word": "rechazo de la llegada",
+        "weight": 3
+      },
+      {
+        "word": "retorno imposible",
+        "weight": 3
+      },
+      {
+        "word": "autoexilio",
+        "weight": 2
+      },
+      {
+        "word": "desarraigo",
+        "weight": 2
+      },
+      {
+        "word": "desvio",
+        "weight": 2
+      },
+      {
+        "word": "imaginacion compensatoria",
+        "weight": 2
+      },
+      {
+        "word": "incorporeidad",
+        "weight": 2
+      },
+      {
+        "word": "autopista",
+        "weight": 1
+      },
+      {
+        "word": "calle",
+        "weight": 1
+      },
+      {
+        "word": "llegada",
+        "weight": 1
+      },
+      {
+        "word": "mente",
+        "weight": 1
+      },
+      {
+        "word": "salida",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-18",
     "month": "2026-05",
     "file": "textos/2026-05-18.txt",
