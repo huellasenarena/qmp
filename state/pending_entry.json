@@ -1,74 +1,114 @@
 {
-  "date": "2026-05-19",
+  "date": "2026-05-20",
   "month": "2026-05",
-  "file": "textos/2026-05-19.txt",
+  "file": "textos/2026-05-20.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "una calle sin salida",
+  "my_poem_snippet": "la poesía amo",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Ruinas circulares",
+    "poem_title": "Grieta",
     "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "autoconstruccion del limite",
+      "word": "escision del yo",
       "weight": 3
     },
     {
-      "word": "clausura protectora",
+      "word": "escrutinio",
       "weight": 3
     },
     {
-      "word": "descredito del progreso",
+      "word": "expropiacion del lenguaje",
       "weight": 3
     },
     {
-      "word": "rechazo de la llegada",
+      "word": "instrumentalizacion",
       "weight": 3
     },
     {
-      "word": "retorno imposible",
+      "word": "libertad como abismo",
       "weight": 3
     },
     {
-      "word": "autoexilio",
+      "word": "publicizacion de la intimidad",
+      "weight": 3
+    },
+    {
+      "word": "autoexposicion",
       "weight": 2
     },
     {
-      "word": "desarraigo",
+      "word": "cuidado",
       "weight": 2
     },
     {
-      "word": "desvio",
+      "word": "desplazamiento del deseo",
       "weight": 2
     },
     {
-      "word": "imaginacion compensatoria",
+      "word": "disonancia",
       "weight": 2
     },
     {
-      "word": "incorporeidad",
+      "word": "enunciacion",
       "weight": 2
     },
     {
-      "word": "autopista",
+      "word": "evasion",
+      "weight": 2
+    },
+    {
+      "word": "interpelacion",
+      "weight": 2
+    },
+    {
+      "word": "olvido",
+      "weight": 2
+    },
+    {
+      "word": "subordinacion",
+      "weight": 2
+    },
+    {
+      "word": "temblor",
+      "weight": 2
+    },
+    {
+      "word": "vigilancia",
+      "weight": 2
+    },
+    {
+      "word": "alumnos",
       "weight": 1
     },
     {
-      "word": "calle",
+      "word": "discurso",
       "weight": 1
     },
     {
-      "word": "llegada",
+      "word": "jefe",
       "weight": 1
     },
     {
-      "word": "mente",
+      "word": "ojos",
       "weight": 1
     },
     {
-      "word": "salida",
+      "word": "poesia",
+      "weight": 1
+    },
+    {
+      "word": "preguntas",
+      "weight": 1
+    },
+    {
+      "word": "risa",
+      "weight": 1
+    },
+    {
+      "word": "sala",
       "weight": 1
     }
   ]

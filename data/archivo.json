@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-05-20",
+    "month": "2026-05",
+    "file": "textos/2026-05-20.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "la poesía amo",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Grieta",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "escision del yo",
+        "weight": 3
+      },
+      {
+        "word": "escrutinio",
+        "weight": 3
+      },
+      {
+        "word": "expropiacion del lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "instrumentalizacion",
+        "weight": 3
+      },
+      {
+        "word": "libertad como abismo",
+        "weight": 3
+      },
+      {
+        "word": "publicizacion de la intimidad",
+        "weight": 3
+      },
+      {
+        "word": "autoexposicion",
+        "weight": 2
+      },
+      {
+        "word": "cuidado",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento del deseo",
+        "weight": 2
+      },
+      {
+        "word": "disonancia",
+        "weight": 2
+      },
+      {
+        "word": "enunciacion",
+        "weight": 2
+      },
+      {
+        "word": "evasion",
+        "weight": 2
+      },
+      {
+        "word": "interpelacion",
+        "weight": 2
+      },
+      {
+        "word": "olvido",
+        "weight": 2
+      },
+      {
+        "word": "subordinacion",
+        "weight": 2
+      },
+      {
+        "word": "temblor",
+        "weight": 2
+      },
+      {
+        "word": "vigilancia",
+        "weight": 2
+      },
+      {
+        "word": "alumnos",
+        "weight": 1
+      },
+      {
+        "word": "discurso",
+        "weight": 1
+      },
+      {
+        "word": "jefe",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "poesia",
+        "weight": 1
+      },
+      {
+        "word": "preguntas",
+        "weight": 1
+      },
+      {
+        "word": "risa",
+        "weight": 1
+      },
+      {
+        "word": "sala",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-19",
     "month": "2026-05",
     "file": "textos/2026-05-19.txt",

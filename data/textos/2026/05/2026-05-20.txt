@@ -1,0 +1,51 @@
+FECHA: 2026-05-20
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Grieta
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+la poesía amo
+y le leo con cuidado
+
+dar un discurso sobre ella
+mi jefe me pregunta
+
+y al darlo en la sala
+ante alumnos pensando en culear
+cada pregunta y risa
+con mí emepeza y termina
+
+# POEMA_CITADO
+
+Tiemblo:
+
+¿Al menos un yo logrará evadirse,
+al menos uno saltará al abismo de la libertad,
+huir de la estampida de ojos?
+
+
+
+Trotan animales en mi pecho
+espantos
+ladrones del lenguaje.
+
+Dios
+sálvame de la maldición de los olvidos
+
+# TEXTO
+
+La primera palabra lanza al lector al poema, anclando los pensamientos del hablante lírico con su reacción física. En sus pensamientos hay un conflicto interno quebrándose: ¿puede evitar la intensidad de las miradas en su entorno? Sin embargo, lograr escapar de, en mi lectura, el juicio, no se hace fácilmente: esta libertad se presenta como un abismo al que hay que saltar; es lo oscuro y desconocido. Por si fuera poco, la voz poética no está segura si *puede* hacerlo, preguntándose si existe "al menos" una versión de ella.
+
+No es solo fuera de su cuerpo donde hay lo animal ("estampida"), sino adentro también ("Trotan animales en mi pecho"), y esos animales tienen la misma calidad espantosa de su ambiente.
+
+Al final, reza para que Dios le ayude, mostrando de nuevo que se percibe incapaz de manejar esos sentimientos ella misma.
+
+A mi juicio el narrador tiene la ambición de recordar su voz auténtica pero siente una grieta en él por una presión percibida en su ambiente (cabe la posibilidad de que quiera ser recordado por la sociedad, pero dada la connotación negativa que tiene, creo que más bien quiere acordarse). Esa presión se interioriza hasta que la siente en sí mismo, robando su propia voz (segunda estrofa). Tiene la calidad animal, a mi parecer, porque lo animal no existe al nivel intelectual donde viven las palabras y las ideas; más bien encarna la agresividad y el esfuerzo.
+
+Relacionando eso con el título, cabe la posibilidad de que el hablante se sienta roto por su entorno, aprisionado por su intensidad e inseguro de cómo escapar.
+
+Para finalizar, quiero subrayar otra posibilidad: la grieta puede significar que su versión actual cambia, creando la oportunidad para que una nueva venga y se exprese, como un huevo se agrieta cuando alcanza la vida.
+
+En mi lectura el narrador se siente sin gran confianza, pero no se ha abandonado a sí mismo; tiene lucidez sobre el problema y busca el coraje de enfrentarlo.
