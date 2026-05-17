@@ -1,114 +1,86 @@
 {
-  "date": "2026-05-20",
+  "date": "2026-05-21",
   "month": "2026-05",
-  "file": "textos/2026-05-20.txt",
+  "file": "textos/2026-05-21.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "la poesía amo",
+  "my_poem_snippet": "sintiéndome y mirando",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Grieta",
-    "poem_snippet": "",
+    "poem_title": "",
+    "poem_snippet": "¿Cómo asir las palabras, retenerlas?",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "escision del yo",
+      "word": "autoconciencia",
       "weight": 3
     },
     {
-      "word": "escrutinio",
+      "word": "desencaje",
       "weight": 3
     },
     {
-      "word": "expropiacion del lenguaje",
+      "word": "no pertenencia",
       "weight": 3
     },
     {
-      "word": "instrumentalizacion",
+      "word": "perfeccion normativa",
       "weight": 3
     },
     {
-      "word": "libertad como abismo",
+      "word": "presencia disruptiva",
       "weight": 3
     },
     {
-      "word": "publicizacion de la intimidad",
+      "word": "torpeza como potencia",
       "weight": 3
     },
     {
-      "word": "autoexposicion",
+      "word": "asimetria",
       "weight": 2
     },
     {
-      "word": "cuidado",
+      "word": "distancia",
       "weight": 2
     },
     {
-      "word": "desplazamiento del deseo",
+      "word": "extranamiento",
       "weight": 2
     },
     {
-      "word": "disonancia",
+      "word": "geometria social",
       "weight": 2
     },
     {
-      "word": "enunciacion",
+      "word": "observacion",
       "weight": 2
     },
     {
-      "word": "evasion",
+      "word": "ruptura",
       "weight": 2
     },
     {
-      "word": "interpelacion",
-      "weight": 2
-    },
-    {
-      "word": "olvido",
-      "weight": 2
-    },
-    {
-      "word": "subordinacion",
-      "weight": 2
-    },
-    {
-      "word": "temblor",
-      "weight": 2
-    },
-    {
-      "word": "vigilancia",
-      "weight": 2
-    },
-    {
-      "word": "alumnos",
+      "word": "banco",
       "weight": 1
     },
     {
-      "word": "discurso",
+      "word": "bromas",
       "weight": 1
     },
     {
-      "word": "jefe",
+      "word": "cervezas",
       "weight": 1
     },
     {
-      "word": "ojos",
+      "word": "circulo",
       "weight": 1
     },
     {
-      "word": "poesia",
+      "word": "cono",
       "weight": 1
     },
     {
-      "word": "preguntas",
-      "weight": 1
-    },
-    {
-      "word": "risa",
-      "weight": 1
-    },
-    {
-      "word": "sala",
+      "word": "gente",
       "weight": 1
     }
   ]

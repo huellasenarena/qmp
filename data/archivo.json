@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-05-21",
+    "month": "2026-05",
+    "file": "textos/2026-05-21.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "sintiéndome y mirando",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "",
+      "poem_snippet": "¿Cómo asir las palabras, retenerlas?",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autoconciencia",
+        "weight": 3
+      },
+      {
+        "word": "desencaje",
+        "weight": 3
+      },
+      {
+        "word": "no pertenencia",
+        "weight": 3
+      },
+      {
+        "word": "perfeccion normativa",
+        "weight": 3
+      },
+      {
+        "word": "presencia disruptiva",
+        "weight": 3
+      },
+      {
+        "word": "torpeza como potencia",
+        "weight": 3
+      },
+      {
+        "word": "asimetria",
+        "weight": 2
+      },
+      {
+        "word": "distancia",
+        "weight": 2
+      },
+      {
+        "word": "extranamiento",
+        "weight": 2
+      },
+      {
+        "word": "geometria social",
+        "weight": 2
+      },
+      {
+        "word": "observacion",
+        "weight": 2
+      },
+      {
+        "word": "ruptura",
+        "weight": 2
+      },
+      {
+        "word": "banco",
+        "weight": 1
+      },
+      {
+        "word": "bromas",
+        "weight": 1
+      },
+      {
+        "word": "cervezas",
+        "weight": 1
+      },
+      {
+        "word": "circulo",
+        "weight": 1
+      },
+      {
+        "word": "cono",
+        "weight": 1
+      },
+      {
+        "word": "gente",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-20",
     "month": "2026-05",
     "file": "textos/2026-05-20.txt",
