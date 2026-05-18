@@ -1,86 +1,82 @@
 {
-  "date": "2026-05-21",
+  "date": "2026-05-22",
   "month": "2026-05",
-  "file": "textos/2026-05-21.txt",
+  "file": "textos/2026-05-22.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "sintiéndome y mirando",
+  "my_poem_snippet": "en la lontananza",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": "¿Cómo asir las palabras, retenerlas?",
+    "poem_title": "Hondura",
+    "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "autoconciencia",
+      "word": "comunidad negada",
       "weight": 3
     },
     {
-      "word": "desencaje",
+      "word": "jerarquia",
       "weight": 3
     },
     {
-      "word": "no pertenencia",
+      "word": "superioridad compensatoria",
       "weight": 3
     },
     {
-      "word": "perfeccion normativa",
+      "word": "triunfo como aislamiento",
       "weight": 3
     },
     {
-      "word": "presencia disruptiva",
+      "word": "verticalidad",
       "weight": 3
     },
     {
-      "word": "torpeza como potencia",
-      "weight": 3
-    },
-    {
-      "word": "asimetria",
+      "word": "aprendizaje",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "autoafirmacion",
       "weight": 2
     },
     {
-      "word": "extranamiento",
+      "word": "comparacion",
       "weight": 2
     },
     {
-      "word": "geometria social",
+      "word": "desvinculacion",
       "weight": 2
     },
     {
-      "word": "observacion",
+      "word": "distanciamiento",
       "weight": 2
     },
     {
-      "word": "ruptura",
+      "word": "exclusion",
       "weight": 2
     },
     {
-      "word": "banco",
+      "word": "cima",
       "weight": 1
     },
     {
-      "word": "bromas",
+      "word": "compartir",
       "weight": 1
     },
     {
-      "word": "cervezas",
+      "word": "lontananza",
       "weight": 1
     },
     {
-      "word": "circulo",
+      "word": "montana",
       "weight": 1
     },
     {
-      "word": "cono",
+      "word": "parejas",
       "weight": 1
     },
     {
-      "word": "gente",
+      "word": "pie",
       "weight": 1
     }
   ]
