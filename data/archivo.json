@@ -1,5 +1,108 @@
 [
   {
+    "date": "2026-05-23",
+    "month": "2026-05",
+    "file": "textos/2026-05-23.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "esa línea cansada",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "",
+      "poem_snippet": "Quedarse mirando tu nombre",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autoria precaria",
+        "weight": 3
+      },
+      {
+        "word": "desposesion de la palabra",
+        "weight": 3
+      },
+      {
+        "word": "identidad producida por el signo",
+        "weight": 3
+      },
+      {
+        "word": "poetica de la insuficiencia",
+        "weight": 3
+      },
+      {
+        "word": "significacion inestable",
+        "weight": 3
+      },
+      {
+        "word": "subjetividad sitiada por el lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "autointerrogacion",
+        "weight": 2
+      },
+      {
+        "word": "cercamiento",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento identitario",
+        "weight": 2
+      },
+      {
+        "word": "extraccion",
+        "weight": 2
+      },
+      {
+        "word": "mediacion simbolica",
+        "weight": 2
+      },
+      {
+        "word": "nominacion",
+        "weight": 2
+      },
+      {
+        "word": "violencia inscriptiva",
+        "weight": 2
+      },
+      {
+        "word": "cabeza",
+        "weight": 1
+      },
+      {
+        "word": "figura",
+        "weight": 1
+      },
+      {
+        "word": "letra",
+        "weight": 1
+      },
+      {
+        "word": "linea",
+        "weight": 1
+      },
+      {
+        "word": "mirada",
+        "weight": 1
+      },
+      {
+        "word": "nombre",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      },
+      {
+        "word": "signos",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-22",
     "month": "2026-05",
     "file": "textos/2026-05-22.txt",

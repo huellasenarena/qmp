@@ -1,82 +1,102 @@
 {
-  "date": "2026-05-22",
+  "date": "2026-05-23",
   "month": "2026-05",
-  "file": "textos/2026-05-22.txt",
+  "file": "textos/2026-05-23.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "en la lontananza",
+  "my_poem_snippet": "esa línea cansada",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Hondura",
-    "poem_snippet": "",
+    "poem_title": "",
+    "poem_snippet": "Quedarse mirando tu nombre",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "comunidad negada",
+      "word": "autoria precaria",
       "weight": 3
     },
     {
-      "word": "jerarquia",
+      "word": "desposesion de la palabra",
       "weight": 3
     },
     {
-      "word": "superioridad compensatoria",
+      "word": "identidad producida por el signo",
       "weight": 3
     },
     {
-      "word": "triunfo como aislamiento",
+      "word": "poetica de la insuficiencia",
       "weight": 3
     },
     {
-      "word": "verticalidad",
+      "word": "significacion inestable",
       "weight": 3
     },
     {
-      "word": "aprendizaje",
+      "word": "subjetividad sitiada por el lenguaje",
+      "weight": 3
+    },
+    {
+      "word": "autointerrogacion",
       "weight": 2
     },
     {
-      "word": "autoafirmacion",
+      "word": "cercamiento",
       "weight": 2
     },
     {
-      "word": "comparacion",
+      "word": "desplazamiento identitario",
       "weight": 2
     },
     {
-      "word": "desvinculacion",
+      "word": "extraccion",
       "weight": 2
     },
     {
-      "word": "distanciamiento",
+      "word": "mediacion simbolica",
       "weight": 2
     },
     {
-      "word": "exclusion",
+      "word": "nominacion",
       "weight": 2
     },
     {
-      "word": "cima",
+      "word": "violencia inscriptiva",
+      "weight": 2
+    },
+    {
+      "word": "cabeza",
       "weight": 1
     },
     {
-      "word": "compartir",
+      "word": "figura",
       "weight": 1
     },
     {
-      "word": "lontananza",
+      "word": "letra",
       "weight": 1
     },
     {
-      "word": "montana",
+      "word": "linea",
       "weight": 1
     },
     {
-      "word": "parejas",
+      "word": "mirada",
       "weight": 1
     },
     {
-      "word": "pie",
+      "word": "nombre",
+      "weight": 1
+    },
+    {
+      "word": "palabra",
+      "weight": 1
+    },
+    {
+      "word": "poema",
+      "weight": 1
+    },
+    {
+      "word": "signos",
       "weight": 1
     }
   ]
