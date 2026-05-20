@@ -1,102 +1,94 @@
 {
-  "date": "2026-05-23",
+  "date": "2026-05-24",
   "month": "2026-05",
-  "file": "textos/2026-05-23.txt",
+  "file": "textos/2026-05-24.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "esa línea cansada",
+  "my_poem_snippet": "me disgustas",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": "Quedarse mirando tu nombre",
+    "poem_title": "Yo",
+    "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "autoria precaria",
+      "word": "anulacion",
       "weight": 3
     },
     {
-      "word": "desposesion de la palabra",
+      "word": "encubrimiento",
       "weight": 3
     },
     {
-      "word": "identidad producida por el signo",
+      "word": "lo vital como coartada",
       "weight": 3
     },
     {
-      "word": "poetica de la insuficiencia",
+      "word": "naturalizacion de la violencia",
       "weight": 3
     },
     {
-      "word": "significacion inestable",
+      "word": "suspension vital",
       "weight": 3
     },
     {
-      "word": "subjetividad sitiada por el lenguaje",
-      "weight": 3
-    },
-    {
-      "word": "autointerrogacion",
+      "word": "camuflaje",
       "weight": 2
     },
     {
-      "word": "cercamiento",
+      "word": "cegamiento",
       "weight": 2
     },
     {
-      "word": "desplazamiento identitario",
+      "word": "complicidad",
       "weight": 2
     },
     {
-      "word": "extraccion",
+      "word": "expulsion",
       "weight": 2
     },
     {
-      "word": "mediacion simbolica",
+      "word": "renuncia",
       "weight": 2
     },
     {
-      "word": "nominacion",
+      "word": "repulsion",
       "weight": 2
     },
     {
-      "word": "violencia inscriptiva",
+      "word": "tolerancia",
       "weight": 2
     },
     {
-      "word": "cabeza",
+      "word": "asesinos",
       "weight": 1
     },
     {
-      "word": "figura",
+      "word": "dormir",
       "weight": 1
     },
     {
-      "word": "letra",
+      "word": "grito",
       "weight": 1
     },
     {
-      "word": "linea",
+      "word": "ojos",
       "weight": 1
     },
     {
-      "word": "mirada",
+      "word": "pais",
       "weight": 1
     },
     {
-      "word": "nombre",
+      "word": "quitar",
       "weight": 1
     },
     {
-      "word": "palabra",
+      "word": "verde",
       "weight": 1
     },
     {
-      "word": "poema",
-      "weight": 1
-    },
-    {
-      "word": "signos",
+      "word": "vivir",
       "weight": 1
     }
   ]

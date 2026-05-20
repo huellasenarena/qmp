@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-05-24",
+    "month": "2026-05",
+    "file": "textos/2026-05-24.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "me disgustas",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Yo",
+      "poem_snippet": "",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "anulacion",
+        "weight": 3
+      },
+      {
+        "word": "encubrimiento",
+        "weight": 3
+      },
+      {
+        "word": "lo vital como coartada",
+        "weight": 3
+      },
+      {
+        "word": "naturalizacion de la violencia",
+        "weight": 3
+      },
+      {
+        "word": "suspension vital",
+        "weight": 3
+      },
+      {
+        "word": "camuflaje",
+        "weight": 2
+      },
+      {
+        "word": "cegamiento",
+        "weight": 2
+      },
+      {
+        "word": "complicidad",
+        "weight": 2
+      },
+      {
+        "word": "expulsion",
+        "weight": 2
+      },
+      {
+        "word": "renuncia",
+        "weight": 2
+      },
+      {
+        "word": "repulsion",
+        "weight": 2
+      },
+      {
+        "word": "tolerancia",
+        "weight": 2
+      },
+      {
+        "word": "asesinos",
+        "weight": 1
+      },
+      {
+        "word": "dormir",
+        "weight": 1
+      },
+      {
+        "word": "grito",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "pais",
+        "weight": 1
+      },
+      {
+        "word": "quitar",
+        "weight": 1
+      },
+      {
+        "word": "verde",
+        "weight": 1
+      },
+      {
+        "word": "vivir",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-23",
     "month": "2026-05",
     "file": "textos/2026-05-23.txt",

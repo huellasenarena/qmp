@@ -1,0 +1,43 @@
+FECHA: 2026-05-24
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: Yo
+BOOK_TITLE: Fragmentario
+
+# POEMA
+
+me disgustas
+me repugnas
+me haces querer gritar
+me haces querer quitar
+
+un país
+
+donde el verde
+al verte
+te hace tolerable
+
+donde el verde
+cubre nuestros ojos
+de los asesinos
+
+donde
+quiero dormir
+no quiero vivir
+
+# POEMA_CITADO
+
+No es un yo, ni dos. Es toda una jauría de lobos luchando por
+un pedazo de carne.
+
+# TEXTO
+
+La dicotomía no es entre el cuerpo y la mente, sino entre las versiones multiplicadas de "yo"; plantea que el cuerpo—una interpretación del pedazo de carne—no forma parte de la identidad; más bien, es la presa de las versiones luchando. En conjunto, esas versiones forman el "Yo" del título.
+
+Esa perspectiva va en contra de la unidad y dicotomía presentadas por ciertos filósofos. Aristóteles con su idea de que la persona combina lo físico y lo espiritual, por ejemplo, o la idea religiosa de que tenemos un lado bueno y un lado malo. La primera frase puede leerse como una refutación de esas ideas comunes.
+
+"Jauría de lobos" me hace preguntar si el hablante lírico siente un control sobre su vida. Cabe la posibilidad de que se sienta fuera de control y lo que es resulte de una competencia de fuerza en lugar de decisiones racionales.
+
+Igualmente, ¿puede que se vea como una víctima? La lucha es fiera y sin escrúpulos, por lo cual ciertos "yos" deben perder.
+
+Por sobre todas las cosas, el poema es una dramatización de su percepción de identidades multiplicadas.
