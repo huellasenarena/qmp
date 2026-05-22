@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-05-26",
+    "month": "2026-05",
+    "file": "textos/2026-05-26.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "en la cabeza",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "",
+      "poem_snippet": ">>Vino el pasado como un alacrán:",
+      "book_title": "Fragmentario"
+    },
+    "keywords": [
+      {
+        "word": "autogobierno",
+        "weight": 3
+      },
+      {
+        "word": "interiorizacion del conflicto",
+        "weight": 3
+      },
+      {
+        "word": "primacia de la interpretacion",
+        "weight": 3
+      },
+      {
+        "word": "soberania narrativa",
+        "weight": 3
+      },
+      {
+        "word": "victimismo electivo",
+        "weight": 3
+      },
+      {
+        "word": "anticipacion",
+        "weight": 2
+      },
+      {
+        "word": "desdoblamiento",
+        "weight": 2
+      },
+      {
+        "word": "eleccion",
+        "weight": 2
+      },
+      {
+        "word": "queja",
+        "weight": 2
+      },
+      {
+        "word": "repeticion",
+        "weight": 2
+      },
+      {
+        "word": "rumiacion",
+        "weight": 2
+      },
+      {
+        "word": "cabeza",
+        "weight": 1
+      },
+      {
+        "word": "espejo",
+        "weight": 1
+      },
+      {
+        "word": "futuro",
+        "weight": 1
+      },
+      {
+        "word": "mirada",
+        "weight": 1
+      },
+      {
+        "word": "pasado",
+        "weight": 1
+      },
+      {
+        "word": "veneno",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-05-24",
     "month": "2026-05",
     "file": "textos/2026-05-24.txt",

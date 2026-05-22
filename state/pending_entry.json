@@ -1,94 +1,82 @@
 {
-  "date": "2026-05-24",
+  "date": "2026-05-26",
   "month": "2026-05",
-  "file": "textos/2026-05-24.txt",
+  "file": "textos/2026-05-26.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "me disgustas",
+  "my_poem_snippet": "en la cabeza",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "Yo",
-    "poem_snippet": "",
+    "poem_title": "",
+    "poem_snippet": ">>Vino el pasado como un alacrán:",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "anulacion",
+      "word": "autogobierno",
       "weight": 3
     },
     {
-      "word": "encubrimiento",
+      "word": "interiorizacion del conflicto",
       "weight": 3
     },
     {
-      "word": "lo vital como coartada",
+      "word": "primacia de la interpretacion",
       "weight": 3
     },
     {
-      "word": "naturalizacion de la violencia",
+      "word": "soberania narrativa",
       "weight": 3
     },
     {
-      "word": "suspension vital",
+      "word": "victimismo electivo",
       "weight": 3
     },
     {
-      "word": "camuflaje",
+      "word": "anticipacion",
       "weight": 2
     },
     {
-      "word": "cegamiento",
+      "word": "desdoblamiento",
       "weight": 2
     },
     {
-      "word": "complicidad",
+      "word": "eleccion",
       "weight": 2
     },
     {
-      "word": "expulsion",
+      "word": "queja",
       "weight": 2
     },
     {
-      "word": "renuncia",
+      "word": "repeticion",
       "weight": 2
     },
     {
-      "word": "repulsion",
+      "word": "rumiacion",
       "weight": 2
     },
     {
-      "word": "tolerancia",
-      "weight": 2
-    },
-    {
-      "word": "asesinos",
+      "word": "cabeza",
       "weight": 1
     },
     {
-      "word": "dormir",
+      "word": "espejo",
       "weight": 1
     },
     {
-      "word": "grito",
+      "word": "futuro",
       "weight": 1
     },
     {
-      "word": "ojos",
+      "word": "mirada",
       "weight": 1
     },
     {
-      "word": "pais",
+      "word": "pasado",
       "weight": 1
     },
     {
-      "word": "quitar",
-      "weight": 1
-    },
-    {
-      "word": "verde",
-      "weight": 1
-    },
-    {
-      "word": "vivir",
+      "word": "veneno",
       "weight": 1
     }
   ]
