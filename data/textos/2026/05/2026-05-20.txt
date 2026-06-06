@@ -2,7 +2,7 @@ FECHA: 2026-05-20
 MY_POEM_TITLE: 
 POETA: Violeta Villalba
 POEM_TITLE: Grieta
-BOOK_TITLE: Fragmentario
+BOOK_TITLE: Fragmentaria
 
 # POEMA
 

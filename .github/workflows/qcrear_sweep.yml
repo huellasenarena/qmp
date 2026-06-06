@@ -64,6 +64,10 @@ jobs:
           print("Wrote", p)
           PY
 
+      - name: Save HEAD before sweep
+        id: pre_sweep
+        run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+
       - name: Run sweep
         env:
           QMP_GDOCS_SA_KEYFILE: ${{ github.workspace }}/.secrets/sa.json
@@ -78,7 +82,12 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PRE_SWEEP_SHA: ${{ steps.pre_sweep.outputs.sha }}
         run: |
+          if [ "$(git rev-parse HEAD)" = "$PRE_SWEEP_SHA" ]; then
+            echo "No new commit from sweep, skipping notification"
+            exit 0
+          fi
           NOTIFY_DATE=$(git log --name-only -1 --format="" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}\.txt$' | head -1 | sed 's/\.txt//')
           if [ -z "$NOTIFY_DATE" ]; then
             echo "No new poem in last commit, skipping notification"

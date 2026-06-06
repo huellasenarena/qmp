@@ -2,7 +2,7 @@ FECHA: 2026-04-10
 MY_POEM_TITLE: xy
 POETA: Violeta Villalba
 POEM_TITLE: Matutina
-BOOK_TITLE: Fragmentario
+BOOK_TITLE: Fragmentaria
 
 # POEMA
 el puente con la cerca

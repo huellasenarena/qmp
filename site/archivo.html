@@ -84,6 +84,10 @@
         .replaceAll("'", '&#39;');
     }
 
+    function stripFormatMarkers(text) {
+      return (text || '').replace(/^\s*>>\s*/, '').replace(/\|/g, '');
+    }
+
     function ellipsizeWords(text, maxWords = 8) {
       const words = (text || '').trim().split(/\s+/).filter(Boolean);
       if (words.length === 0) return '';
@@ -175,10 +179,10 @@
           li.appendChild(a);
 
           const myTitleRaw = (entry.my_poem_title || '').trim();
-          const mySnippetRaw = (entry.my_poem_snippet || '').trim();
+          const mySnippetRaw = stripFormatMarkers((entry.my_poem_snippet || '').trim());
 
           const analyzedTitleRaw = (entry.analysis?.poem_title || '').trim();
-          const analyzedSnippetRaw = (entry.analysis?.poem_snippet || '').trim();
+          const analyzedSnippetRaw = stripFormatMarkers((entry.analysis?.poem_snippet || '').trim());
 
           const analyzedPoet = (entry.analysis?.poet || '').trim();
 

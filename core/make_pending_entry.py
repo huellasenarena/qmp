@@ -23,9 +23,8 @@ META_ALIASES = {
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 def clean_snippet_line(line: str) -> str:
-    # remove ALL pipes for snippet only
     s = (line or "").replace("|", " ")
-    # collapse whitespace
+    s = re.sub(r"^>>", "", s)  # strip right-align marker at start of line
     s = re.sub(r"\s+", " ", s).strip()
     return s
 

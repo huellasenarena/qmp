@@ -2,7 +2,7 @@ FECHA: 2026-04-18
 MY_POEM_TITLE: 
 POETA: Violeta Villalba
 POEM_TITLE: Matutina
-BOOK_TITLE: Fragmentario
+BOOK_TITLE: Fragmentaria
 
 # POEMA
 

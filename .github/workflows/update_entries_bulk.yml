@@ -1,0 +1,114 @@
+name: Update Entries (bulk)
+
+# ──────────────────────────────────────────────────────────
+# Uso: Actions → Update Entries (bulk) → Run workflow
+#   dates           : Fechas a actualizar, una por línea o separadas por comas
+#                     Ejemplos: "2026-05-10, 2026-05-12"
+#                               "2026-05-10
+#                                2026-05-12"
+#   regen_keywords  : true  → regenera keywords con OpenAI en todas las fechas
+#                     false → conserva las keywords existentes (default)
+# ──────────────────────────────────────────────────────────
+
+on:
+  workflow_dispatch:
+    inputs:
+      dates:
+        description: 'Fechas a actualizar (YYYY-MM-DD, una por línea o separadas por comas)'
+        required: true
+        type: string
+      regen_keywords:
+        description: 'Regenerar keywords (por defecto: conservar)'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Write service account keyfile
+        env:
+          QMP_GDOCS_SA_KEY_JSON: ${{ secrets.QMP_GDOCS_SA_KEY_JSON }}
+        run: |
+          mkdir -p .secrets
+          python - <<'PY'
+          import os, pathlib
+          p = pathlib.Path(".secrets/sa.json")
+          p.write_text(os.environ["QMP_GDOCS_SA_KEY_JSON"], encoding="utf-8")
+          print("Wrote", p)
+          PY
+          chmod 600 .secrets/sa.json
+
+      - name: Write gdocs.json config
+        env:
+          QMP_GDOCS_CONFIG_JSON: ${{ secrets.QMP_GDOCS_CONFIG_JSON }}
+        run: |
+          mkdir -p ~/.config/qmp
+          python - <<'PY'
+          import os, pathlib
+          p = pathlib.Path.home() / ".config" / "qmp" / "gdocs.json"
+          p.write_text(os.environ["QMP_GDOCS_CONFIG_JSON"], encoding="utf-8")
+          print("Wrote", p)
+          PY
+
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Update entries
+        env:
+          QMP_GDOCS_SA_KEYFILE: ${{ github.workspace }}/.secrets/sa.json
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          DATES_INPUT: ${{ inputs.dates }}
+          REGEN_KEYWORDS: ${{ inputs.regen_keywords }}
+        run: |
+          python - <<'PY'
+          import os, re, subprocess, sys
+
+          raw = os.environ["DATES_INPUT"]
+          dates = [d.strip() for d in re.split(r'[\n,]+', raw) if d.strip()]
+
+          date_re = re.compile(r'^\d{4}-\d{2}-\d{2}$')
+          invalid = [d for d in dates if not date_re.match(d)]
+          if invalid:
+              sys.exit(f"ERROR: fechas inválidas: {invalid} — usa YYYY-MM-DD")
+
+          if not dates:
+              sys.exit("ERROR: no se encontraron fechas")
+
+          regen = os.environ.get("REGEN_KEYWORDS", "false").lower() == "true"
+          errors = []
+
+          for date in dates:
+              print(f"\n=== Actualizando {date} ===")
+              cmd = ["python", "scripts/update_entry.py", "--date", date]
+              if regen:
+                  cmd.append("--regen-keywords")
+              result = subprocess.run(cmd, capture_output=False)
+              if result.returncode != 0:
+                  errors.append(date)
+                  print(f"ERROR en {date} (código {result.returncode})")
+
+          if errors:
+              sys.exit(f"\nFallaron: {errors}")
+          else:
+              print(f"\nActualizadas {len(dates)} entradas correctamente.")
+          PY
