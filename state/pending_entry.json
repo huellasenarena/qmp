@@ -1,34 +1,34 @@
 {
-  "date": "2026-05-26",
+  "date": "2026-05-17",
   "month": "2026-05",
-  "file": "textos/2026-05-26.txt",
+  "file": "textos/2026-05-17.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "en la cabeza",
+  "my_poem_snippet": "si no llevara perfume",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": ">>Vino el pasado como un alacrán:",
+    "poem_title": "Autodetonación",
+    "poem_snippet": "",
     "book_title": "Fragmentario"
   },
   "keywords": [
     {
-      "word": "autogobierno",
+      "word": "adorno como vulnerabilidad",
       "weight": 3
     },
     {
-      "word": "interiorizacion del conflicto",
+      "word": "autoculpabilizacion",
       "weight": 3
     },
     {
-      "word": "primacia de la interpretacion",
+      "word": "dependencia del reconocimiento",
       "weight": 3
     },
     {
-      "word": "soberania narrativa",
+      "word": "espera como perdida",
       "weight": 3
     },
     {
-      "word": "victimismo electivo",
+      "word": "subordinacion al otro",
       "weight": 3
     },
     {
@@ -36,47 +36,43 @@
       "weight": 2
     },
     {
-      "word": "desdoblamiento",
+      "word": "asimetria afectiva",
       "weight": 2
     },
     {
-      "word": "eleccion",
+      "word": "autoexposicion corporal",
       "weight": 2
     },
     {
-      "word": "queja",
+      "word": "causalidad contrafactual",
       "weight": 2
     },
     {
-      "word": "repeticion",
+      "word": "desplazamiento del dano",
       "weight": 2
     },
     {
-      "word": "rumiacion",
-      "weight": 2
-    },
-    {
-      "word": "cabeza",
+      "word": "dolor",
       "weight": 1
     },
     {
-      "word": "espejo",
+      "word": "espera",
       "weight": 1
     },
     {
-      "word": "futuro",
+      "word": "otro",
       "weight": 1
     },
     {
-      "word": "mirada",
+      "word": "perdida",
       "weight": 1
     },
     {
-      "word": "pasado",
+      "word": "perfume",
       "weight": 1
     },
     {
-      "word": "veneno",
+      "word": "rechazo",
       "weight": 1
     }
   ]

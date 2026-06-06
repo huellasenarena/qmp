@@ -1,23 +1,20 @@
 FECHA: 2026-05-17
-MY_POEM_TITLE: 
+MY_POEM_TITLE:
 POETA: Violeta Villalba
 POEM_TITLE: Autodetonación
 BOOK_TITLE: Fragmentaria
 
 # POEMA
-
 si no llevara perfume
-el rechazo no habría dolida tanto
+el rechazo no habría dolido tanto
 si no esperara para tí
 no habría perdido otro
 
 # POEMA_CITADO
-
 Explotó en pedazos la escritur|a:
 |huérfanos quedaron los versos.
 
 # TEXTO
-
 La escritura suele parecer seca–inanimada tinta negra organizada por encima de un papel blanco–por lo cual la dramatización de *Autodetonación* me llama la atención.
 
 El título puede implicar una elección destructiva por parte de las palabras; el orden típicamente asociado con la escritura se rompe con una explosión, quedando los versos aislados.
