@@ -51,6 +51,11 @@ def parse_meta_and_body(raw: str) -> Tuple[Dict[str, str], str]:
 
 def extract_sections(body: str) -> Dict[str, str]:
     sections: Dict[str, str] = {}
+    # Recortar secciones de transparencia IA (# BORRADOR / # CONVERSACION) para
+    # que # TEXTO no las absorba; no se usan para metadatos del archivo.
+    extras_m = re.search(r"(?m)^\s*#\s*(BORRADOR|CONVERSACION)\s*$", body)
+    if extras_m:
+        body = body[: extras_m.start()]
     header_re = re.compile(r"(?m)^\s*#\s*(POEMA|POEMA_CITADO|TEXTO)\s*$")
     matches = list(header_re.finditer(body))
     for idx, m in enumerate(matches):

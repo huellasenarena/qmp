@@ -80,8 +80,31 @@ BOOK_TITLE: ...
 <cited poem text>
 
 # TEXTO
-<prose analysis>
+<prose analysis — the published, AI-corrected version>
+
+# BORRADOR
+<optional: the author's own draft submitted for correction (their voice, with errors)>
+
+# CONVERSACION
+<optional: a claude.ai share link (or pasted transcript)>
 ```
+
+**AI-transparency sections (`# BORRADOR`, `# CONVERSACION`)** are **independent and optional**: an entry may have neither (all pre-2026-08 entries), only `# CONVERSACION` (the common case — a claude.ai link), only `# BORRADOR`, or both. When present they come **after `# TEXTO`**, and if both are present the order is `# BORRADOR` then `# CONVERSACION` (last). They power the "Cómo usé la IA" disclosure on the site, whose tabs are built from whichever sections exist: published + conversation, published + draft, or all three. When neither is present, the site shows no disclosure at all.
+
+- `validate_entry.py` rejects a section that is present but **empty**, and rejects `# BORRADOR` appearing *after* `# CONVERSACION` (order is checked before emptiness, since a leading `# CONVERSACION` swallows the rest of the file and would otherwise report a misleading "empty" error). These sections never reach `archivo.json` (metadata only) and are preserved across `validate_entry.py --mode normalize`.
+- **`# CONVERSACION` is normally a link** (`https://claude.ai/share/…`). The site renders it as a "Ver la conversación con Claude →" button. If instead it holds pasted text, the site falls back to chat bubbles: a line containing **only** `[YO]`, `[TÚ]`, or `[CLAUDE]` (case/accent-insensitive) starts a turn. It is read **verbatim** end-to-end (its content may contain `#` lines), so `parseEntry` and `validate_entry.py` stop interpreting headers once inside it. Keep it last.
+
+**How the author writes them (authoring flow).** The conversation happens in claude.ai, not Google Docs — and claude.ai share pages are Cloudflare-protected, so they **cannot** be scraped server-side. Instead, the author appends two plain-text markers **after** the analysis ("Versión final") in iA Writer:
+
+```
+## Borrador final
+<my draft before Claude's grammar fixes>
+
+## Conversación con IA
+https://claude.ai/share/xxxxxxxx
+```
+
+These ride through the existing pipeline untouched (Atajo → `atajo.js` → Google Docs → pull) because `atajo.js` passes unrecognized `##` lines through as text and the analysis pull takes everything after the single `## Versión final`. Then `core/ia_sections.py::split_ia_markers` (called by `qcrear.py` and `update_entry.py`) splits the pulled analysis into clean `# TEXTO` + `# BORRADOR` + `# CONVERSACION`, which `render_txt` writes to the `.txt`. **No changes to `atajo.js`, the Google Docs schema, the pull, or the GitHub Actions YAML are needed.** Keep the published analysis under `## Versión final` (not `## Versión final (con IA)`) — a second "Versión final"-matching heading breaks the analysis pull.
 
 ---
 

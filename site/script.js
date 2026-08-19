@@ -54,22 +54,29 @@ function textToParagraphs(text) {
 
 // Parser que SOLO reconoce encabezados de sección exactos
 function parseEntry(text) {
-  const allowed = new Set(['POEMA', 'ANALISIS', 'POEMA_CITADO', 'TEXTO']);
+  const allowed = new Set(['POEMA', 'ANALISIS', 'POEMA_CITADO', 'TEXTO', 'BORRADOR', 'CONVERSACION']);
   const sections = {};
   let current = null;
+  // CONVERSACION es la última sección y se lee VERBATIM: su contenido puede
+  // contener líneas que empiezan con '#', así que dejamos de interpretar
+  // encabezados una vez dentro de ella.
+  let verbatim = false;
 
   (text || '').split('\n').forEach(line => {
-    const m = line.match(/^#\s+(.+)\s*$/);
-    if (m) {
-      const name = m[1].trim();
-      if (allowed.has(name)) {
-        current = name;
-        sections[current] = [];
-      } else if (current) {
-        // contenido dentro de una sección
-        sections[current].push(line.replace(/^#\s+/, ''));
+    if (!verbatim) {
+      const m = line.match(/^#\s+(.+)\s*$/);
+      if (m) {
+        const name = m[1].trim();
+        if (allowed.has(name)) {
+          current = name;
+          sections[current] = [];
+          if (name === 'CONVERSACION') verbatim = true;
+        } else if (current) {
+          // contenido dentro de una sección
+          sections[current].push(line.replace(/^#\s+/, ''));
+        }
+        return;
       }
-      return;
     }
     if (current) sections[current].push(line);
   });
@@ -77,9 +84,232 @@ function parseEntry(text) {
   return {
     poem: (sections['POEMA'] || []).join('\n').replace(/\s+$/,''),
     citedPoem: (sections['POEMA_CITADO'] || []).join('\n').trim(),
-    analysisText: (sections['TEXTO'] || []).join('\n').trim()
+    analysisText: (sections['TEXTO'] || []).join('\n').trim(),
+    // Artefactos de transparencia IA (opcionales)
+    borrador: (sections['BORRADOR'] || []).join('\n').trim(),
+    conversation: (sections['CONVERSACION'] || []).join('\n').trim()
   };
 }
+
+// =========================
+//  Transparencia IA
+// =========================
+// Convierte la conversación en burbujas. Los turnos se separan con líneas
+// que contienen SOLO un marcador de hablante: [YO] / [TÚ] / [CLAUDE]
+// (sin distinción de mayúsculas/acentos). El texto antes del primer marcador
+// se muestra como nota introductoria.
+function renderConversation(text) {
+  const raw = (text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+  if (!raw) return '';
+
+  const speakerRe = /^\s*\[\s*(yo|t[uú]|claude)\s*\]\s*$/i;
+  const lines = raw.split('\n');
+
+  const turns = [];
+  let curSpeaker = null;
+  let buf = [];
+
+  const flush = () => {
+    const body = buf.join('\n').trim();
+    if (body) turns.push({ speaker: curSpeaker, body });
+    buf = [];
+  };
+
+  for (const line of lines) {
+    const m = line.match(speakerRe);
+    if (m) {
+      flush();
+      curSpeaker = /claude/i.test(m[1]) ? 'claude' : 'yo';
+    } else {
+      buf.push(line);
+    }
+  }
+  flush();
+
+  // Sin marcadores: mostramos todo como bloque preformateado.
+  if (!turns.some(t => t.speaker)) {
+    return `<pre class="ia-conv-raw">${escapeHtml(raw)}</pre>`;
+  }
+
+  return turns.map(t => {
+    if (!t.speaker) {
+      return `<p class="ia-conv-note">${applyInlineFormatting(escapeHtml(t.body)).replace(/\n/g, '<br>')}</p>`;
+    }
+    const who = t.speaker === 'claude' ? 'Claude' : 'Yo';
+    const body = applyInlineFormatting(escapeHtml(t.body)).replace(/\n/g, '<br>');
+    return `<div class="ia-turn ia-turn-${t.speaker}">` +
+           `<div class="ia-who">${who}</div>` +
+           `<div class="ia-bubble">${body}</div></div>`;
+  }).join('');
+}
+
+// La sección # CONVERSACION puede ser:
+//  - una URL (modelo "enlace": link a la conversación pública en claude.ai), o
+//  - texto con turnos [YO]/[CLAUDE] (modelo "embebido": burbujas).
+function isUrl(s) {
+  return /^https?:\/\/\S+$/i.test((s || '').trim());
+}
+
+function renderConversationView(content) {
+  const raw = (content || '').trim();
+  if (isUrl(raw)) {
+    const safe = escapeHtml(raw);
+    return `<div class="ia-conv-link">` +
+      `<p>Esta conversación ocurrió en claude.ai. Puedes verla completa aquí:</p>` +
+      `<a class="ia-conv-button" href="${safe}" target="_blank" rel="noopener noreferrer">` +
+      `Ver la conversación con Claude →</a></div>`;
+  }
+  return `<div class="ia-conv">${renderConversation(raw)}</div>`;
+}
+
+// Botón "i" con tooltip: hover en escritorio, tap para abrir/cerrar en móvil.
+function createInfoButton(text) {
+  const wrap = document.createElement('span');
+  wrap.className = 'ia-info-wrap';
+
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'ia-info';
+  btn.setAttribute('aria-label', 'Por qué guardo estas conversaciones');
+  btn.setAttribute('aria-expanded', 'false');
+  btn.textContent = 'i';
+
+  const tip = document.createElement('span');
+  tip.className = 'ia-tooltip';
+  tip.setAttribute('role', 'tooltip');
+  tip.textContent = text;
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = wrap.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    if (!wrap.contains(e.target)) {
+      wrap.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      wrap.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  wrap.appendChild(btn);
+  wrap.appendChild(tip);
+  return wrap;
+}
+
+// Construye el bloque desplegable de transparencia y lo inserta después
+// de .analysis-text. Devuelve sin hacer nada si no hay artefactos.
+function renderTransparency(parsed) {
+  const host = document.querySelector('.analysis-text');
+  if (!host) return;
+
+  // Limpia un widget previo (por si se re-renderiza)
+  const prev = document.querySelector('.ia-transparencia');
+  if (prev) prev.remove();
+
+  const hasBorrador = !!(parsed.borrador && parsed.borrador.trim());
+  const hasConv = !!(parsed.conversation && parsed.conversation.trim());
+  if (!hasBorrador && !hasConv) return;
+
+  const views = [];
+  views.push({
+    id: 'publicada',
+    label: 'Versión publicada',
+    html: textToParagraphs(parsed.analysisText)
+  });
+  if (hasBorrador) {
+    views.push({
+      id: 'borrador',
+      label: 'Mi versión',
+      html: textToParagraphs(parsed.borrador)
+    });
+  }
+  if (hasConv) {
+    views.push({
+      id: 'conversacion',
+      label: 'Conversación con Claude',
+      html: renderConversationView(parsed.conversation)
+    });
+  }
+
+  const section = document.createElement('section');
+  section.className = 'ia-transparencia';
+
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'ia-toggle';
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.textContent = '✦ Cómo usé la IA en este texto ↓';
+
+  const panel = document.createElement('div');
+  panel.className = 'ia-panel';
+  panel.hidden = true;
+
+  const intro = document.createElement('p');
+  intro.className = 'ia-intro';
+  intro.textContent =
+    'Este análisis lo escribí yo. Después conversé con Claude (una IA) para ' +
+    'afinarlo y, al final, le pedí que corrigiera mis errores gramaticales ' +
+    'conservando mi voz. Lo que se publica es esa última versión corregida; ' +
+    'aquí puedes ver también las etapas anteriores.';
+  panel.appendChild(intro);
+
+  const tabs = document.createElement('div');
+  tabs.className = 'ia-tabs';
+  const viewEls = {};
+
+  views.forEach((v, i) => {
+    const tab = document.createElement('button');
+    tab.type = 'button';
+    tab.className = 'ia-tab' + (i === 0 ? ' active' : '');
+    tab.dataset.view = v.id;
+    tab.textContent = v.label;
+    tabs.appendChild(tab);
+
+    const view = document.createElement('div');
+    view.className = 'ia-view';
+    view.dataset.view = v.id;
+    view.hidden = i !== 0;
+    view.innerHTML = v.html;
+    viewEls[v.id] = view;
+
+    tab.addEventListener('click', () => {
+      tabs.querySelectorAll('.ia-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      Object.entries(viewEls).forEach(([id, el]) => { el.hidden = id !== v.id; });
+    });
+  });
+
+  panel.appendChild(tabs);
+  views.forEach(v => panel.appendChild(viewEls[v.id]));
+
+  toggle.addEventListener('click', () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.textContent = open
+      ? '✦ Cómo usé la IA en este texto ↑'
+      : '✦ Cómo usé la IA en este texto ↓';
+  });
+
+  const header = document.createElement('div');
+  header.className = 'ia-header';
+  header.appendChild(toggle);
+  header.appendChild(createInfoButton(
+    "Plus l'IA s'utilise, plus la frontière entre l'humain et la machine " +
+    "s'efface. Je veux être transparent sur mon utilisation de l'IA."
+  ));
+
+  section.appendChild(header);
+  section.appendChild(panel);
+  host.insertAdjacentElement('afterend', section);
+}
+
 
 function renderPoemWithOptionalTitle(text) {
   if (!text) return '';
@@ -649,6 +879,9 @@ async function loadTodayEntry() {
 
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
 
+  // Bloque de transparencia IA (si la entrada lo incluye)
+  renderTransparency(parsed);
+
   // Meta del poema citado (2 líneas)
   setCitedMeta(chosen);
 
@@ -706,6 +939,9 @@ async function loadPastEntry() {
   }
 
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
+
+  // Bloque de transparencia IA (si la entrada lo incluye)
+  renderTransparency(parsed);
 
   setCitedMeta(chosen);
 

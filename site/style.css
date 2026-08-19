@@ -258,6 +258,190 @@ pre.analysis-poem strong {
   color: #444;
 }
 
+/* =========================
+   Transparencia IA
+   ========================= */
+.ia-transparencia {
+  max-width: 600px;
+  margin: 8px 0 36px 0;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.ia-toggle {
+  display: inline-block;
+  padding: 4px 14px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  color: #555;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
+.ia-toggle:hover { background: #e8e8e8; border-color: #ccc; color: #222; }
+.ia-toggle:focus { outline: none; box-shadow: 0 0 0 1px #ddd; }
+
+.ia-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botón "i" + tooltip */
+.ia-info-wrap {
+  position: relative;
+  display: inline-flex;
+}
+.ia-info {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  font-size: 0.72rem;
+  font-style: italic;
+  font-family: Georgia, serif;
+  line-height: 1;
+  color: #777;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.ia-info:hover { background: #e8e8e8; color: #222; }
+.ia-info:focus { outline: none; box-shadow: 0 0 0 1px #ccc; }
+
+.ia-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 260px;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: #fafafa;
+  background: #222;
+  border-radius: 8px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+.ia-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #222;
+}
+.ia-info-wrap:hover .ia-tooltip,
+.ia-info:focus + .ia-tooltip,
+.ia-info-wrap.is-open .ia-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ia-panel { margin-top: 16px; }
+
+.ia-intro {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #666;
+  font-style: italic;
+  margin: 0 0 16px 0;
+}
+
+.ia-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+.ia-tab {
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  color: #555;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.ia-tab:hover { border-color: #bbb; color: #222; }
+.ia-tab.active {
+  background: #222;
+  border-color: #222;
+  color: #fafafa;
+}
+
+.ia-view .analysis-lead::first-letter { font-size: inherit; float: none; }
+.ia-view p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0 0 18px 0;
+  color: #222;
+}
+
+/* Conversación */
+.ia-conv { display: flex; flex-direction: column; gap: 14px; }
+.ia-conv-note {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+}
+.ia-turn { max-width: 90%; }
+.ia-turn-yo { align-self: flex-end; text-align: right; }
+.ia-turn-claude { align-self: flex-start; }
+.ia-who {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 3px;
+}
+.ia-bubble {
+  display: inline-block;
+  text-align: left;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.ia-turn-yo .ia-bubble { background: #ebf1f7; color: #1c2733; }
+.ia-turn-claude .ia-bubble { background: #f2f2f2; color: #222; }
+.ia-conv-raw {
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Conversación como enlace (modelo "link a claude.ai") */
+.ia-conv-link p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 12px 0;
+}
+.ia-conv-button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  color: #fafafa;
+  background: #222;
+  border: 1px solid #222;
+  border-radius: 999px;
+  text-decoration: none;
+}
+.ia-conv-button:hover { background: #000; }
+
 ul {
   list-style: none;
   padding: 0;

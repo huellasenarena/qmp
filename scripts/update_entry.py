@@ -23,6 +23,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
+sys.path.insert(0, str(REPO_ROOT / "core"))
+from ia_sections import split_ia_markers  # noqa: E402
+
 
 # ──────────────────────────────────────────
 # Paths
@@ -113,6 +116,8 @@ def render_txt(
     poema: str,
     poema_citado: str,
     texto: str,
+    borrador: str = "",
+    conversacion: str = "",
 ) -> str:
     """Genera el contenido del archivo YYYY-MM-DD.txt."""
     parts = [
@@ -132,6 +137,11 @@ def render_txt(
         normalize_text_for_hash(texto),
         "",
     ]
+    # Transparencia IA (opcional, todo-o-nada lo valida validate_entry.py)
+    if (borrador or "").strip():
+        parts += ["# BORRADOR", normalize_text_for_hash(borrador), ""]
+    if (conversacion or "").strip():
+        parts += ["# CONVERSACION", (conversacion or "").strip(), ""]
     return "\n".join(parts)
 
 def write_txt_atomic(path: Path, content: str) -> None:
@@ -244,6 +254,9 @@ def main() -> int:
     poema_citado  = (analysis_obj.get("poem_citado") or "")
     texto         = (analysis_obj.get("analysis")    or "")
 
+    # Separar transparencia IA (marcadores al final del análisis)
+    texto, ia_borrador, ia_conversacion = split_ia_markers(texto)
+
     if not normalize_text_for_hash(poem_text):
         print(f"[update] ERROR: # POEMA está vacío en Google Docs para {date}", file=sys.stderr)
         return 1
@@ -260,7 +273,8 @@ def main() -> int:
     # 3. Escribir .txt (sobrescribe si existe)
     txt_path = txt_path_for_date(date)
     content  = render_txt(date, my_poem_title, poeta, poem_title, book_title,
-                          poem_text, poema_citado, texto)
+                          poem_text, poema_citado, texto,
+                          borrador=ia_borrador, conversacion=ia_conversacion)
     old_txt = txt_path.read_text(encoding="utf-8") if txt_path.exists() else None
     txt_changed = old_txt != content
     if not args.dry_run:

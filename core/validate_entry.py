@@ -17,6 +17,35 @@ META_KEYS = ["FECHA", "MY_POEM_TITLE", "POETA", "POEM_TITLE", "BOOK_TITLE"]
 HDR_RE = re.compile(r"(?m)^\s*#\s*(POEMA|POEMA_CITADO|TEXTO)\s*$")
 META_LINE_RE = re.compile(r"^\s*([A-Z_]+)\s*:\s*(.*)\s*$")
 
+# Secciones opcionales de transparencia IA. Van DESPUÉS de # TEXTO y se
+# conservan VERBATIM (su contenido puede tener líneas que empiezan con '#',
+# blank lines significativas, etc.). CONVERSACION debe ir al final.
+EXTRA_HDR_RE = re.compile(r"(?m)^\s*#\s*(BORRADOR|CONVERSACION)\s*$")
+
+
+def _split_extras(body: str) -> Tuple[str, str]:
+    """Separa el cuerpo en (core, extras). 'core' es lo previo al primer
+    encabezado de transparencia (# BORRADOR / # CONVERSACION); 'extras' es
+    ese encabezado y todo lo que sigue, sin tocar."""
+    m = EXTRA_HDR_RE.search(body)
+    if not m:
+        return body, ""
+    return body[: m.start()], body[m.start():]
+
+
+def _extract_extras(extras: str) -> Dict[str, str]:
+    """Devuelve {BORRADOR: ..., CONVERSACION: ...} con el contenido de cada
+    sección de transparencia presente en el bloque extras."""
+    out: Dict[str, str] = {}
+    mb = re.search(r"(?m)^\s*#\s*BORRADOR\s*$", extras)
+    mc = re.search(r"(?m)^\s*#\s*CONVERSACION\s*$", extras)
+    if mb:
+        end = mc.start() if mc else len(extras)
+        out["BORRADOR"] = extras[mb.end():end].strip()
+    if mc:
+        out["CONVERSACION"] = extras[mc.end():].strip()
+    return out
+
 
 @dataclass
 class Parsed:
@@ -90,8 +119,30 @@ def parse_and_validate(date_str: str, txt_path: Path) -> Parsed:
     if txt_path.stem != date_str:
         raise SystemExit(f"Nombre de archivo ({txt_path.stem}) no coincide con FECHA ({date_str})")
 
+    # Separar secciones de transparencia IA (opcionales) antes de extraer las
+    # secciones obligatorias, para que # TEXTO no las absorba.
+    core_body, extras = _split_extras(body)
+
+    # Secciones de transparencia IA: cada una es INDEPENDIENTE y OPCIONAL.
+    # Casos válidos: ninguna (entradas antiguas), sólo # CONVERSACION (el caso
+    # normal: un link a claude.ai), sólo # BORRADOR, o ambas. Si está presente,
+    # una sección no puede estar vacía; y si están las dos, CONVERSACION va
+    # última (se lee verbatim hasta el final del archivo).
+    if extras.strip():
+        # El orden se comprueba ANTES que el vacío: si CONVERSACION va primero
+        # se traga el resto del archivo (se lee verbatim) y # BORRADOR saldría
+        # vacío, con un mensaje engañoso.
+        mb = re.search(r"(?m)^\s*#\s*BORRADOR\s*$", extras)
+        mc = re.search(r"(?m)^\s*#\s*CONVERSACION\s*$", extras)
+        if mb and mc and mb.start() > mc.start():
+            raise SystemExit("Orden inválido: # BORRADOR debe ir antes de # CONVERSACION")
+        ex = _extract_extras(extras)
+        for name in ("BORRADOR", "CONVERSACION"):
+            if name in ex and not ex[name].strip():
+                raise SystemExit(f"Sección vacía: # {name}")
+
     # sections
-    sections = _extract_sections(body)
+    sections = _extract_sections(core_body)
     for name in SECTION_ORDER:
         if name not in sections:
             raise SystemExit(f"Falta sección: # {name}")
@@ -124,7 +175,8 @@ def normalize_text(date_str: str, txt_path: Path) -> Tuple[str, bool]:
     """
     raw = _read(txt_path)
     meta, body = _parse_meta_and_rest(raw)
-    sections = _extract_sections(body)
+    core_body, extras = _split_extras(body)
+    sections = _extract_sections(core_body)
 
     # Keep metadata values, but normalize FECHA to exact date_str
     meta2 = {k: meta.get(k, "") for k in META_KEYS}
@@ -158,6 +210,13 @@ def normalize_text(date_str: str, txt_path: Path) -> Tuple[str, bool]:
     add_section("POEMA_CITADO", citado)
     parts.append("")
     add_section("TEXTO", texto)
+
+    # Secciones de transparencia IA: se anexan VERBATIM (solo se recortan
+    # blank lines exteriores), separadas por una línea en blanco.
+    extras_clean = extras.strip("\n").rstrip()
+    if extras_clean:
+        parts.append("")
+        parts.append(extras_clean)
 
     normalized = "\n".join(parts).rstrip() + "\n"
     changed = (normalized != raw)
