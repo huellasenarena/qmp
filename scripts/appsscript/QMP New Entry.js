@@ -346,11 +346,24 @@ function assertNotDuplicateFast_(destBody, yyMmDd, descriptor) {
  * DATES (YYMMDD)
  * ----------------------------- */
 function computeNextDateFromBodyFast_(body) {
+  const hoy  = formatYyMmDd_(new Date());
   const last = findLastYyMmDdInBodyFast_(body);
-  if (!last) return formatYyMmDd_(new Date());
+  if (!last) return hoy;
+
+  // Comparamos como texto yyMMdd: el orden lexicográfico es el cronológico.
+  // Si la última fecha del doc quedó en el pasado (pausa larga), no rellenamos
+  // el hueco: retomamos en hoy.
+  if (yyMmDdParts_(last.yy, last.mm, last.dd) < hoy) return hoy;
+
+  // Secuencia normal (hoy o futuro): día siguiente, para poder escribir por adelantado.
   const d = yyMmDdToDate_(last.yy, last.mm, last.dd);
   d.setDate(d.getDate() + 1);
   return formatYyMmDd_(d);
+}
+
+function yyMmDdParts_(yy, mm, dd) {
+  const p = (n) => (n < 10 ? "0" : "") + n;
+  return p(yy) + p(mm) + p(dd);
 }
 
 function findLastYyMmDdInBodyFast_(body) {
