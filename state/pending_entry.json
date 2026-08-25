@@ -1,78 +1,103 @@
 {
-  "date": "2026-05-17",
-  "month": "2026-05",
-  "file": "textos/2026-05-17.txt",
+  "date": "2026-08-24",
+  "month": "2026-08",
+  "file": "textos/2026-08-24.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "si no llevara perfume",
+  "my_poem_snippet": "el barco con la chimenea nunca tocada",
   "analysis": {
-    "poet": "Violeta Villalba",
-    "poem_title": "Autodetonación",
+    "poet": "Nathaniel Hawthorne",
+    "poem_title": "La Catástrofe del Señor Higginbotham",
     "poem_snippet": "",
-    "book_title": "Fragmentario"
+    "book_title": "",
+    "pdf": "/data/pdfs/La-Catástrofe-del-Señor-Higginbotham.pdf"
   },
   "keywords": [
     {
-      "word": "adorno como vulnerabilidad",
+      "word": "autoorientacion",
       "weight": 3
     },
     {
-      "word": "autoculpabilizacion",
+      "word": "contemplacion activa",
       "weight": 3
     },
     {
-      "word": "dependencia del reconocimiento",
+      "word": "discernimiento",
       "weight": 3
     },
     {
-      "word": "espera como perdida",
+      "word": "potencia de lo intacto",
       "weight": 3
     },
     {
-      "word": "subordinacion al otro",
+      "word": "soberania de la mirada",
       "weight": 3
     },
     {
-      "word": "anticipacion",
+      "word": "umbral de experiencia",
+      "weight": 3
+    },
+    {
+      "word": "clasificacion",
       "weight": 2
     },
     {
-      "word": "asimetria afectiva",
+      "word": "distancia",
       "weight": 2
     },
     {
-      "word": "autoexposicion corporal",
+      "word": "iniciacion",
       "weight": 2
     },
     {
-      "word": "causalidad contrafactual",
+      "word": "jerarquia",
       "weight": 2
     },
     {
-      "word": "desplazamiento del dano",
+      "word": "persistencia",
       "weight": 2
     },
     {
-      "word": "dolor",
+      "word": "reconocimiento",
+      "weight": 2
+    },
+    {
+      "word": "senalizacion",
+      "weight": 2
+    },
+    {
+      "word": "vigilancia",
+      "weight": 2
+    },
+    {
+      "word": "barco",
       "weight": 1
     },
     {
-      "word": "espera",
+      "word": "chimenea",
       "weight": 1
     },
     {
-      "word": "otro",
+      "word": "debutantes",
       "weight": 1
     },
     {
-      "word": "perdida",
+      "word": "dia",
       "weight": 1
     },
     {
-      "word": "perfume",
+      "word": "encendido",
       "weight": 1
     },
     {
-      "word": "rechazo",
+      "word": "faros",
+      "weight": 1
+    },
+    {
+      "word": "mirada",
+      "weight": 1
+    },
+    {
+      "word": "veteranos",
       "weight": 1
     }
   ]
