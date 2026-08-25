@@ -744,15 +744,15 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
             raise RuntimeError(
                 "Modo PDF activado (poema citado vacío), pero falta metadato obligatorio: Título:"
             )
-        if not book_title:
-            raise RuntimeError(
-                "Modo PDF activado (poema citado vacío), pero falta metadato obligatorio: Libro:"
-            )
-
         def _slug(s: str) -> str:
             return "-".join(s.strip().split())
 
-        pdf_path = f"/data/pdfs/{_slug(book_title)}/{_slug(poem_title)}.pdf"
+        # Libro es opcional: un texto suelto (un cuento que no viene de un libro)
+        # vive en la raíz de data/pdfs/ en vez de en una carpeta de libro.
+        if book_title:
+            pdf_path = f"/data/pdfs/{_slug(book_title)}/{_slug(poem_title)}.pdf"
+        else:
+            pdf_path = f"/data/pdfs/{_slug(poem_title)}.pdf"
         println(f"[qcrear] verificando PDF: {pdf_path}")
         full_pdf = repo_root() / pdf_path.lstrip("/")
         if not full_pdf.exists():
