@@ -161,46 +161,6 @@ function renderConversationView(content) {
   return `<div class="ia-conv">${renderConversation(raw)}</div>`;
 }
 
-// Botón "i" con tooltip: hover en escritorio, tap para abrir/cerrar en móvil.
-function createInfoButton(text) {
-  const wrap = document.createElement('span');
-  wrap.className = 'ia-info-wrap';
-
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.className = 'ia-info';
-  btn.setAttribute('aria-label', 'Por qué guardo estas conversaciones');
-  btn.setAttribute('aria-expanded', 'false');
-  btn.textContent = 'i';
-
-  const tip = document.createElement('span');
-  tip.className = 'ia-tooltip';
-  tip.setAttribute('role', 'tooltip');
-  tip.textContent = text;
-
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const open = wrap.classList.toggle('is-open');
-    btn.setAttribute('aria-expanded', String(open));
-  });
-  document.addEventListener('click', (e) => {
-    if (!wrap.contains(e.target)) {
-      wrap.classList.remove('is-open');
-      btn.setAttribute('aria-expanded', 'false');
-    }
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      wrap.classList.remove('is-open');
-      btn.setAttribute('aria-expanded', 'false');
-    }
-  });
-
-  wrap.appendChild(btn);
-  wrap.appendChild(tip);
-  return wrap;
-}
-
 // Construye el bloque desplegable de transparencia y lo inserta después
 // de .analysis-text. Devuelve sin hacer nada si no hay artefactos.
 function renderTransparency(parsed) {
@@ -294,15 +254,7 @@ function renderTransparency(parsed) {
       : '✦ Cómo usé la IA en este texto ↓';
   });
 
-  const header = document.createElement('div');
-  header.className = 'ia-header';
-  header.appendChild(toggle);
-  header.appendChild(createInfoButton(
-    "Plus l'IA s'utilise, plus la frontière entre l'humain et la machine " +
-    "s'efface. Je veux être transparent sur mon utilisation de l'IA."
-  ));
-
-  section.appendChild(header);
+  section.appendChild(toggle);
   section.appendChild(panel);
   host.insertAdjacentElement('afterend', section);
 }
