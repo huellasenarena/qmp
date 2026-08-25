@@ -155,7 +155,6 @@ function renderConversationView(content) {
   if (isUrl(raw)) {
     const safe = escapeHtml(raw);
     return `<div class="ia-conv-link">` +
-      `<p>Esta conversación ocurrió en claude.ai. Puedes verla completa aquí:</p>` +
       `<a class="ia-conv-button" href="${safe}" target="_blank" rel="noopener noreferrer">` +
       `Ver la conversación con Claude →</a></div>`;
   }
@@ -216,12 +215,9 @@ function renderTransparency(parsed) {
   const hasConv = !!(parsed.conversation && parsed.conversation.trim());
   if (!hasBorrador && !hasConv) return;
 
+  // El análisis publicado ya está arriba en la página: aquí sólo van los
+  // artefactos (mi borrador, si existe, y el enlace a la conversación).
   const views = [];
-  views.push({
-    id: 'publicada',
-    label: 'Versión publicada',
-    html: textToParagraphs(parsed.analysisText)
-  });
   if (hasBorrador) {
     views.push({
       id: 'borrador',
@@ -253,10 +249,10 @@ function renderTransparency(parsed) {
   const intro = document.createElement('p');
   intro.className = 'ia-intro';
   intro.textContent =
-    'Este análisis lo escribí yo. Después conversé con Claude (una IA) para ' +
-    'afinarlo y, al final, le pedí que corrigiera mis errores gramaticales ' +
-    'conservando mi voz. Lo que se publica es esa última versión corregida; ' +
-    'aquí puedes ver también las etapas anteriores.';
+    'Utilizo la inteligencia artificial como entrenador. Por debajo hay un ' +
+    'enlace donde puedes ver mi conversación con la IA. Hago eso porque ' +
+    'vivimos en un tiempo donde se utiliza a diario pero a menudo sin ' +
+    'divulgación. Quiero que mi utilización de IA sea clara.';
   panel.appendChild(intro);
 
   const tabs = document.createElement('div');
@@ -285,7 +281,8 @@ function renderTransparency(parsed) {
     });
   });
 
-  panel.appendChild(tabs);
+  // Con una sola vista (el caso normal: sólo el enlace) las pestañas sobran.
+  if (views.length > 1) panel.appendChild(tabs);
   views.forEach(v => panel.appendChild(viewEls[v.id]));
 
   toggle.addEventListener('click', () => {
