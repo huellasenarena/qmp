@@ -1,0 +1,7 @@
+{
+  "_comentario": "Respuesta de ejemplo de POST /predecir — lo que devuelve la caja de texto libre. 'probs' es la confianza del modelo en cada nota (1, 2, 3); usala si quieres, o ignorala.",
+  "modelo": 2,
+  "gemini": 3,
+  "probs": [0.21, 0.54, 0.25],
+  "aviso": null
+}
