@@ -118,8 +118,14 @@ def render_txt(
     texto: str,
     borrador: str = "",
     conversacion: str = "",
+    gusto=None,
 ) -> str:
-    """Genera el contenido del archivo YYYY-MM-DD.txt."""
+    """Genera el contenido del archivo YYYY-MM-DD.txt.
+
+    gusto=None significa que el autor no escribió el marcador; gusto="" que lo
+    escribió sin nota (día sin poema en texto). Salen siempre en este orden:
+    BORRADOR, GUSTO, CONVERSACION.
+    """
     parts = [
         f"FECHA: {target}",
         f"MY_POEM_TITLE: {my_poem_title}".rstrip(),
@@ -137,9 +143,11 @@ def render_txt(
         normalize_text_for_hash(texto),
         "",
     ]
-    # Transparencia IA (opcional, todo-o-nada lo valida validate_entry.py)
+    # Secciones finales (lo que es obligatorio lo valida validate_entry.py)
     if (borrador or "").strip():
         parts += ["# BORRADOR", normalize_text_for_hash(borrador), ""]
+    if gusto is not None:
+        parts += ["# GUSTO", (gusto or "").strip(), ""]
     if (conversacion or "").strip():
         parts += ["# CONVERSACION", (conversacion or "").strip(), ""]
     return "\n".join(parts)
@@ -255,7 +263,7 @@ def main() -> int:
     texto         = (analysis_obj.get("analysis")    or "")
 
     # Separar transparencia IA (marcadores al final del análisis)
-    texto, ia_borrador, ia_conversacion = split_ia_markers(texto)
+    texto, ia_borrador, ia_gusto, ia_conversacion = split_ia_markers(texto)
 
     if not normalize_text_for_hash(poem_text):
         print(f"[update] ERROR: # POEMA está vacío en Google Docs para {date}", file=sys.stderr)
@@ -274,7 +282,8 @@ def main() -> int:
     txt_path = txt_path_for_date(date)
     content  = render_txt(date, my_poem_title, poeta, poem_title, book_title,
                           poem_text, poema_citado, texto,
-                          borrador=ia_borrador, conversacion=ia_conversacion)
+                          borrador=ia_borrador, conversacion=ia_conversacion,
+                          gusto=ia_gusto)
     old_txt = txt_path.read_text(encoding="utf-8") if txt_path.exists() else None
     txt_changed = old_txt != content
     if not args.dry_run:
