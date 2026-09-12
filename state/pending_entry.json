@@ -1,103 +1,59 @@
 {
-  "date": "2026-08-24",
-  "month": "2026-08",
-  "file": "textos/2026-08-24.txt",
+  "date": "2026-09-12",
+  "month": "2026-09",
+  "file": "textos/2026-09-12.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "el barco con la chimenea nunca tocada",
+  "my_poem_snippet": "prueba poema mio",
   "analysis": {
     "poet": "Nathaniel Hawthorne",
-    "poem_title": "La Catástrofe del Señor Higginbotham",
+    "poem_title": "prueba título",
     "poem_snippet": "",
     "book_title": "",
-    "pdf": "/data/pdfs/La-Catástrofe-del-Señor-Higginbotham.pdf"
+    "gusto": 2
   },
   "keywords": [
     {
-      "word": "autoorientacion",
+      "word": "autoria",
       "weight": 3
     },
     {
-      "word": "contemplacion activa",
+      "word": "autorreferencia",
       "weight": 3
     },
     {
-      "word": "discernimiento",
+      "word": "provisionalidad",
       "weight": 3
     },
     {
-      "word": "potencia de lo intacto",
-      "weight": 3
-    },
-    {
-      "word": "soberania de la mirada",
-      "weight": 3
-    },
-    {
-      "word": "umbral de experiencia",
-      "weight": 3
-    },
-    {
-      "word": "clasificacion",
+      "word": "deixis",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "ensayo",
       "weight": 2
     },
     {
-      "word": "iniciacion",
+      "word": "enunciacion",
       "weight": 2
     },
     {
-      "word": "jerarquia",
+      "word": "posesion",
       "weight": 2
     },
     {
-      "word": "persistencia",
-      "weight": 2
-    },
-    {
-      "word": "reconocimiento",
-      "weight": 2
-    },
-    {
-      "word": "senalizacion",
-      "weight": 2
-    },
-    {
-      "word": "vigilancia",
-      "weight": 2
-    },
-    {
-      "word": "barco",
+      "word": "aqui",
       "weight": 1
     },
     {
-      "word": "chimenea",
+      "word": "mio",
       "weight": 1
     },
     {
-      "word": "debutantes",
+      "word": "poema",
       "weight": 1
     },
     {
-      "word": "dia",
-      "weight": 1
-    },
-    {
-      "word": "encendido",
-      "weight": 1
-    },
-    {
-      "word": "faros",
-      "weight": 1
-    },
-    {
-      "word": "mirada",
-      "weight": 1
-    },
-    {
-      "word": "veteranos",
+      "word": "prueba",
       "weight": 1
     }
   ]
