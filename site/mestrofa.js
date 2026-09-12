@@ -54,7 +54,21 @@ const TEXTOS = {
   errorPrediccion: 'no pude leer este texto, probá de nuevo',
   errorTope:     'se acabaron las lecturas de hoy, volvé mañana',
   errorVacio:    'escribí algo primero',
-  errorLargo:    'el texto es muy largo: 6000 caracteres como máximo'
+  errorLargo:    'el texto es muy largo: 6000 caracteres como máximo',
+
+  // El servidor manda una clave, no una frase, para que el texto sea de la
+  // casa. Las de arriba son de /predecir (campo "aviso"); las de abajo, de
+  // /hoy (campo "motivo"). Una clave que no esté aquí no enseña nada.
+  avisos: {
+    conocido:       'este poema ya está en mi corpus, así que no vale como prueba',
+    sin_gemini:     'el modelo genérico no contestó esta vez',
+    corto:          'es un texto muy corto: la predicción vale poco',
+
+    sin_entradas:   'todavía no hay ninguna entrada',
+    sin_nota:       'esta entrada no lleva nota mía',
+    sin_prediccion: 'no hubo predicción para este día',
+    sin_texto:      'la entrada de hoy no trae poema en texto'
+  }
 };
 
 const LIMITE = 6000;
@@ -127,6 +141,13 @@ async function pdfDelDia(fecha) {
     console.error(e);
     return '';
   }
+}
+
+// Traduce una clave del servidor a una frase nuestra. Clave desconocida o
+// ausente devuelve '' — nunca se enseña la clave cruda.
+function frasePorClave(clave) {
+  if (!clave) return '';
+  return TEXTOS.avisos[clave] || '';
 }
 
 function aviso(texto) {
@@ -338,8 +359,9 @@ async function cargarElDia() {
       nota.hidden = false;
     }
   } else {
-    // Nunca se inventa un número que venga vacío.
-    aviso(TEXTOS.nada);
+    // Nunca se inventa un número que venga vacío. El servidor dice por qué
+    // con una clave; si no la reconocemos, queda el aviso de siempre.
+    aviso(frasePorClave(datos.motivo) || TEXTOS.nada);
     pintarMarcadorSuelto(datos);
   }
 }
@@ -404,11 +426,12 @@ function pintarPrediccion(res) {
   );
   caja.appendChild(fila);
 
-  // El servidor puede mandar una advertencia suya sobre el texto.
-  if (res.aviso) {
+  // El servidor manda una clave ("corto", "conocido"…), no una frase.
+  const frase = frasePorClave(res.aviso);
+  if (frase) {
     const nota = document.createElement('p');
     nota.className = 'ms-pred-aviso';
-    nota.textContent = res.aviso;
+    nota.textContent = frase;
     caja.appendChild(nota);
   }
 
