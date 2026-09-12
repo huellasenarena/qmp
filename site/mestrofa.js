@@ -1,9 +1,12 @@
 // =========================================================================
 //  A mí me strofa
 // =========================================================================
-//  De dónde salen los datos del día. Para pasar del ejemplo al servidor de
-//  verdad no hay que cambiar nada más que esta línea.
-const API_BASE = '/data/mestrofa-demo.json';  // luego: https://...run.app/hoy
+//  De dónde salen los datos. El servidor vive en el proyecto hermano
+//  (a-mi-mestrofa) y sólo acepta llamadas desde https://www.quemalpoema.com,
+//  así que en local la página carga pero estas dos llamadas fallan.
+const SERVIDOR    = 'https://mestrofa-232425793411.us-central1.run.app';
+const API_BASE    = SERVIDOR + '/hoy';
+const API_PREDECIR = SERVIDOR + '/predecir';
 
 
 // =========================================================================
@@ -49,6 +52,7 @@ const TEXTOS = {
   notaDia:       'estos números son del {fecha}',   // {fecha} = el día de los números
   errorDia:      'no pude cargar los datos de hoy',
   errorPrediccion: 'no pude leer este texto, probá de nuevo',
+  errorTope:     'se acabaron las lecturas de hoy, volvé mañana',
   errorVacio:    'escribí algo primero',
   errorLargo:    'el texto es muy largo: 6000 caracteres como máximo'
 };
@@ -57,31 +61,22 @@ const LIMITE = 6000;
 
 
 // =========================================================================
-//  Acceso a datos — lo único que cambia el día que exista el servidor
+//  Acceso a datos
 // =========================================================================
 
-// Mientras no haya servidor: ?demo=sin-duelo enseña el segundo ejemplo.
-// Esta función entera se borra cuando API_BASE apunte al servidor.
-function urlDelDia() {
-  const demo = new URLSearchParams(window.location.search).get('demo');
-  if (demo === 'sin-duelo') return '/data/mestrofa-demo-sin-duelo.json';
-  return API_BASE;
-}
-
-// La caja de texto. Hoy devuelve el ejemplo, con un retardo para que se vea
-// el botón pensando. Mañana el cuerpo es un POST al servidor y nada más
-// cambia en toda la página:
-//   const r = await fetch(API_PREDECIR, {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({ texto })
-//   });
-//   if (!r.ok) throw new Error('http ' + r.status);
-//   return r.json();
+// La caja de texto. El servidor tiene un tope de 50 lecturas al día y
+// responde 429 al pasarlo; eso se avisa distinto que un fallo de verdad.
 async function predecir(texto) {
-  void texto;                                    // hoy no se usa: es el ejemplo
-  await new Promise(r => setTimeout(r, 700));
-  const r = await fetch('/data/mestrofa-demo-predecir.json');
+  const r = await fetch(API_PREDECIR, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ texto })
+  });
+  if (r.status === 429) {
+    const e = new Error('tope diario');
+    e.tope = true;
+    throw e;
+  }
   if (!r.ok) throw new Error('http ' + r.status);
   return r.json();
 }
@@ -317,7 +312,7 @@ function hayNumeros(datos) {
 async function cargarElDia() {
   let datos;
   try {
-    const r = await fetch(urlDelDia());
+    const r = await fetch(API_BASE);
     if (!r.ok) throw new Error('http ' + r.status);
     datos = await r.json();
   } catch (e) {
@@ -451,7 +446,7 @@ function montarCaja() {
       pintarPrediccion(await predecir(texto));
     } catch (e) {
       console.error(e);
-      error(TEXTOS.errorPrediccion);
+      error(e && e.tope ? TEXTOS.errorTope : TEXTOS.errorPrediccion);
     } finally {
       boton.disabled = false;
       boton.textContent = TEXTOS.boton;
