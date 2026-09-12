@@ -17,15 +17,26 @@ META_KEYS = ["FECHA", "MY_POEM_TITLE", "POETA", "POEM_TITLE", "BOOK_TITLE"]
 HDR_RE = re.compile(r"(?m)^\s*#\s*(POEMA|POEMA_CITADO|TEXTO)\s*$")
 META_LINE_RE = re.compile(r"^\s*([A-Z_]+)\s*:\s*(.*)\s*$")
 
-# Secciones opcionales de transparencia IA. Van DESPUÉS de # TEXTO y se
-# conservan VERBATIM (su contenido puede tener líneas que empiezan con '#',
-# blank lines significativas, etc.). CONVERSACION debe ir al final.
-EXTRA_HDR_RE = re.compile(r"(?m)^\s*#\s*(BORRADOR|CONVERSACION)\s*$")
+# Secciones que van DESPUÉS de # TEXTO y se conservan VERBATIM (su contenido
+# puede tener líneas que empiezan con '#', blank lines significativas, etc.).
+# CONVERSACION debe ir al final. BORRADOR y CONVERSACION son opcionales;
+# GUSTO es obligatoria a partir de GUSTO_DESDE.
+EXTRA_HDR_RE = re.compile(r"(?m)^\s*#\s*(BORRADOR|GUSTO|CONVERSACION)\s*$")
+
+# Orden en que deben aparecer las que estén presentes.
+EXTRA_ORDER = ("BORRADOR", "GUSTO", "CONVERSACION")
+
+# La nota de gusto del poema citado se exige desde esta fecha. Antes no existía:
+# las 164 entradas publicadas no la llevan y deben seguir validando.
+GUSTO_DESDE = "2026-09-11"
+
+# Valores admitidos en # GUSTO: 1 no me gusta, 2 medio, 3 me gusta.
+GUSTO_VALIDOS = {"1", "2", "3"}
 
 
 def _split_extras(body: str) -> Tuple[str, str]:
     """Separa el cuerpo en (core, extras). 'core' es lo previo al primer
-    encabezado de transparencia (# BORRADOR / # CONVERSACION); 'extras' es
+    encabezado extra (# BORRADOR / # GUSTO / # CONVERSACION); 'extras' es
     ese encabezado y todo lo que sigue, sin tocar."""
     m = EXTRA_HDR_RE.search(body)
     if not m:
@@ -33,17 +44,27 @@ def _split_extras(body: str) -> Tuple[str, str]:
     return body[: m.start()], body[m.start():]
 
 
+def _extra_positions(extras: str) -> Dict[str, Tuple[int, int]]:
+    """Devuelve {NOMBRE: (inicio_del_encabezado, fin_del_encabezado)} para cada
+    sección extra presente, en el orden en que aparecen."""
+    out: Dict[str, Tuple[int, int]] = {}
+    for m in EXTRA_HDR_RE.finditer(extras):
+        name = m.group(1)
+        if name not in out:
+            out[name] = (m.start(), m.end())
+    return out
+
+
 def _extract_extras(extras: str) -> Dict[str, str]:
-    """Devuelve {BORRADOR: ..., CONVERSACION: ...} con el contenido de cada
-    sección de transparencia presente en el bloque extras."""
+    """Devuelve {BORRADOR: ..., GUSTO: ..., CONVERSACION: ...} con el contenido
+    de cada sección extra presente. Cada una llega hasta la siguiente."""
+    pos = _extra_positions(extras)
+    inicios = sorted((ini, name) for name, (ini, _fin) in pos.items())
     out: Dict[str, str] = {}
-    mb = re.search(r"(?m)^\s*#\s*BORRADOR\s*$", extras)
-    mc = re.search(r"(?m)^\s*#\s*CONVERSACION\s*$", extras)
-    if mb:
-        end = mc.start() if mc else len(extras)
-        out["BORRADOR"] = extras[mb.end():end].strip()
-    if mc:
-        out["CONVERSACION"] = extras[mc.end():].strip()
+    for idx, (_ini, name) in enumerate(inicios):
+        fin_hdr = pos[name][1]
+        end = inicios[idx + 1][0] if idx + 1 < len(inicios) else len(extras)
+        out[name] = extras[fin_hdr:end].strip()
     return out
 
 
@@ -128,18 +149,33 @@ def parse_and_validate(date_str: str, txt_path: Path) -> Parsed:
     # normal: un link a claude.ai), sólo # BORRADOR, o ambas. Si está presente,
     # una sección no puede estar vacía; y si están las dos, CONVERSACION va
     # última (se lee verbatim hasta el final del archivo).
-    if extras.strip():
+    pos_extras = _extra_positions(extras) if extras.strip() else {}
+    ex: Dict[str, str] = {}
+
+    if pos_extras:
         # El orden se comprueba ANTES que el vacío: si CONVERSACION va primero
-        # se traga el resto del archivo (se lee verbatim) y # BORRADOR saldría
-        # vacío, con un mensaje engañoso.
-        mb = re.search(r"(?m)^\s*#\s*BORRADOR\s*$", extras)
-        mc = re.search(r"(?m)^\s*#\s*CONVERSACION\s*$", extras)
-        if mb and mc and mb.start() > mc.start():
-            raise SystemExit("Orden inválido: # BORRADOR debe ir antes de # CONVERSACION")
+        # se traga el resto del archivo (se lee verbatim) y las demás saldrían
+        # vacías, con un mensaje engañoso.
+        presentes = [n for n in EXTRA_ORDER if n in pos_extras]
+        por_posicion = [n for _i, n in sorted((v[0], k) for k, v in pos_extras.items())]
+        if presentes != por_posicion:
+            raise SystemExit(
+                "Orden inválido en las secciones finales: deben ir "
+                + ", ".join("# " + n for n in presentes)
+            )
         ex = _extract_extras(extras)
+        # GUSTO puede estar vacía (días sin poema en texto); las otras dos no.
         for name in ("BORRADOR", "CONVERSACION"):
             if name in ex and not ex[name].strip():
                 raise SystemExit(f"Sección vacía: # {name}")
+
+    # La nota de gusto es obligatoria desde GUSTO_DESDE.
+    if date_str >= GUSTO_DESDE and "GUSTO" not in pos_extras:
+        raise SystemExit(
+            f"Falta sección: # GUSTO (obligatoria desde {GUSTO_DESDE}). "
+            "Escribe '## Gusto' en el análisis, antes de '## Conversación con IA'. "
+            "Si la entrada no lleva poema en texto, déjala vacía."
+        )
 
     # sections
     sections = _extract_sections(core_body)
@@ -159,6 +195,22 @@ def parse_and_validate(date_str: str, txt_path: Path) -> Parsed:
         content = sections.get(name, "")
         if not content.strip():
             raise SystemExit(f"Sección vacía: # {name}")
+
+    # La nota: si hay poema citado en texto tiene que llevar número; si la
+    # entrada va en modo PDF, la sección se queda vacía a propósito.
+    if "GUSTO" in pos_extras:
+        gusto = ex.get("GUSTO", "").strip()
+        hay_poema_citado = bool(sections.get("POEMA_CITADO", "").strip())
+        if gusto and gusto not in GUSTO_VALIDOS:
+            raise SystemExit(
+                f"# GUSTO inválido: {gusto!r}. Tiene que ser 1, 2 o 3 "
+                "(1 no me gusta, 2 medio, 3 me gusta)."
+            )
+        if not gusto and hay_poema_citado:
+            raise SystemExit(
+                "Sección vacía: # GUSTO. Esta entrada lleva poema citado en "
+                "texto, así que necesita nota (1, 2 o 3)."
+            )
 
     return Parsed(meta_raw=meta, sections=sections)
 

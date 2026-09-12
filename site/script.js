@@ -54,7 +54,7 @@ function textToParagraphs(text) {
 
 // Parser que SOLO reconoce encabezados de sección exactos
 function parseEntry(text) {
-  const allowed = new Set(['POEMA', 'ANALISIS', 'POEMA_CITADO', 'TEXTO', 'BORRADOR', 'CONVERSACION']);
+  const allowed = new Set(['POEMA', 'ANALISIS', 'POEMA_CITADO', 'TEXTO', 'BORRADOR', 'GUSTO', 'CONVERSACION']);
   const sections = {};
   let current = null;
   // CONVERSACION es la última sección y se lee VERBATIM: su contenido puede
@@ -87,6 +87,9 @@ function parseEntry(text) {
     analysisText: (sections['TEXTO'] || []).join('\n').trim(),
     // Artefactos de transparencia IA (opcionales)
     borrador: (sections['BORRADOR'] || []).join('\n').trim(),
+    // La nota no se enseña en el sitio; se reconoce sólo para que no se cuele
+    // dentro del borrador o del análisis como texto suelto.
+    gusto: (sections['GUSTO'] || []).join('\n').trim(),
     conversation: (sections['CONVERSACION'] || []).join('\n').trim()
   };
 }

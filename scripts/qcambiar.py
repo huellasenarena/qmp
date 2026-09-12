@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from datetime import datetime
@@ -109,9 +110,21 @@ def parse_metadata_from_txt(raw: str) -> Dict[str, str]:
     return out
 
 
+# Bloque final del .txt (# BORRADOR / # GUSTO / # CONVERSACION). qcambiar sólo
+# reescribe poema, poema citado y análisis, así que este bloque se arrastra
+# VERBATIM: antes se perdía en cada edición y con él el borrador, la nota y el
+# enlace a la conversación.
+EXTRAS_HDR_RE = re.compile(r"(?m)^\s*#\s*(BORRADOR|GUSTO|CONVERSACION)\s*$")
+
+
+def extract_extras_raw(raw: str) -> str:
+    m = EXTRAS_HDR_RE.search(raw or "")
+    return raw[m.start():].strip("\n").rstrip() if m else ""
+
+
 def read_current_payload(date_str: str, txt_path: Path) -> Dict[str, Any]:
     if not txt_path.exists():
-        return {"date": date_str, **{k: "" for k in DATE_KEYS}, **{k: "" for k in SECTION_KEYS}}
+        return {"date": date_str, **{k: "" for k in DATE_KEYS}, **{k: "" for k in SECTION_KEYS}, "extras": ""}
     raw = txt_path.read_text(encoding="utf-8")
     meta = parse_metadata_from_txt(raw)
     return {
@@ -123,6 +136,7 @@ def read_current_payload(date_str: str, txt_path: Path) -> Dict[str, Any]:
         "poema": extract_section(raw, "# POEMA"),
         "poema_citado": extract_section(raw, "# POEMA_CITADO"),
         "texto": extract_section(raw, "# TEXTO"),
+        "extras": extract_extras_raw(raw),
     }
 
 
@@ -322,6 +336,13 @@ def render_txt(target: str, payload: Dict[str, Any]) -> str:
     parts.append("# TEXTO")
     parts.append(_clean_section_for_write(payload.get("texto", "")))
     parts.append("")
+
+    # Bloque final, tal cual venía: qcambiar no lo edita, sólo lo conserva.
+    extras = (payload.get("extras") or "").strip("\n").rstrip()
+    if extras:
+        parts.append(extras)
+        parts.append("")
+
     return "\n".join(parts)
 
 

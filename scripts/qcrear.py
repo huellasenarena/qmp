@@ -438,14 +438,18 @@ def render_txt(
     texto: str,
     borrador: str = "",
     conversacion: str = "",
+    gusto=None,
 ) -> str:
     """
     Genera el archivo YYYY-MM-DD.txt completo como build output.
     Metadatos son opcionales pero siempre presentes.
     Los 3 escritos son obligatorios y ya fueron validados antes.
-    Las secciones de transparencia IA (# BORRADOR / # CONVERSACION) se emiten
-    sólo si vienen del análisis (marcadores ## Borrador final / ## Conversación
-    con IA, ya extraídos con split_ia_markers).
+    Las secciones finales (# BORRADOR / # GUSTO / # CONVERSACION) se emiten
+    sólo si vienen del análisis (marcadores ## Borrador final / ## Gusto /
+    ## Conversación con IA, ya extraídos con split_ia_markers).
+    # GUSTO se emite aunque venga vacía: gusto=None significa que el autor no
+    escribió el marcador, y gusto="" que lo escribió sin nota (día sin poema
+    en texto). El orden de salida es siempre BORRADOR, GUSTO, CONVERSACION.
     """
     # Ojo: mantenemos los keys estilo máquina (como tu template actual).
     # Si luego quieres volver a "Poeta:"/"Título:" humano, lo ajustamos.
@@ -474,6 +478,10 @@ def render_txt(
     if (borrador or "").strip():
         parts.append("# BORRADOR")
         parts.append(normalize_text_for_hash(borrador))
+        parts.append("")
+    if gusto is not None:
+        parts.append("# GUSTO")
+        parts.append((gusto or "").strip())
         parts.append("")
     if (conversacion or "").strip():
         parts.append("# CONVERSACION")
@@ -733,7 +741,7 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
 
     # Separar transparencia IA (marcadores ## Borrador final / ## Conversación
     # con IA al final del análisis). texto queda limpio para fingerprint y # TEXTO.
-    texto, ia_borrador, ia_conversacion = split_ia_markers(texto)
+    texto, ia_borrador, ia_gusto, ia_conversacion = split_ia_markers(texto)
 
     # --- Modo PDF ---
     pdf_mode = (normalize_text_for_hash(poema_citado) == "")
@@ -829,7 +837,7 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
                         target=target, my_poem_title=my_poem_title, poeta=poeta,
                         poem_title=poem_title, book_title=book_title,
                         poema=poem_text, poema_citado=poema_citado, texto=texto,
-                        borrador=ia_borrador, conversacion=ia_conversacion,
+                        borrador=ia_borrador, conversacion=ia_conversacion, gusto=ia_gusto,
                     )
                     write_txt_atomic(txt_path, content)
                     println(f"[qcrear] ✅ Generado: {txt_path}")
@@ -840,7 +848,7 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
                     target=target, my_poem_title=my_poem_title, poeta=poeta,
                     poem_title=poem_title, book_title=book_title,
                     poema=poem_text, poema_citado=poema_citado, texto=texto,
-                    borrador=ia_borrador, conversacion=ia_conversacion,
+                    borrador=ia_borrador, conversacion=ia_conversacion, gusto=ia_gusto,
                 )
                 write_txt_atomic(txt_path, content)
                 println(f"[qcrear] ✅ Generado: {txt_path}")
@@ -850,7 +858,7 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
                 target=target, my_poem_title=my_poem_title, poeta=poeta,
                 poem_title=poem_title, book_title=book_title,
                 poema=poem_text, poema_citado=poema_citado, texto=texto,
-                borrador=ia_borrador, conversacion=ia_conversacion,
+                borrador=ia_borrador, conversacion=ia_conversacion, gusto=ia_gusto,
             )
             write_txt_atomic(txt_path, content)
             println(f"[qcrear] ✅ {target} — txt generado")

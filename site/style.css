@@ -428,3 +428,270 @@ select, input {
   margin-left: auto;
   color: #555;
 }
+
+/* =========================
+   A mí me strofa
+   ========================= */
+
+.ms-intro {
+  max-width: 600px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #222;
+  margin: 0 0 36px 0;
+}
+
+/* El PDF del día, cuando la entrada no trae poema en texto */
+.ms-pdf {
+  margin: 10px 0 36px 0;
+}
+
+/* De qué día son los números, cuando no son de hoy */
+.ms-nota-dia {
+  max-width: 600px;
+  font-size: 0.82rem;
+  color: #555;
+  font-style: italic;
+  margin: 0 0 12px 0;
+}
+
+/* Los tres números */
+.ms-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 600px;
+  border-top: 1px solid #eee;
+  padding: 18px 0 0 0;
+}
+
+.ms-col {
+  text-align: center;
+  padding: 0 6px;
+  border-left: 1px solid #eee;
+}
+
+.ms-col:first-child {
+  border-left: 0;
+}
+
+.ms-col-lab {
+  font-size: 0.68rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.ms-col-num {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.ms-col-word {
+  font-size: 0.82rem;
+  color: #555;
+  min-height: 1.3em;
+}
+
+.ms-col-mark {
+  font-size: 0.78rem;
+  color: #444;
+  margin-top: 8px;
+  min-height: 1.2em;
+}
+
+.ms-col-score {
+  font-size: 0.72rem;
+  color: #555;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+  font-variant-numeric: tabular-nums;
+}
+
+/* El marcador suelto, los días sin números */
+.ms-marcador-solo {
+  max-width: 600px;
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0 0 36px 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* "no encontré nada" y los fallos de carga */
+.ms-aviso {
+  max-width: 600px;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+  margin: 18px 0 24px 0;
+  padding-left: 18px;
+  border-left: 2px solid #eee;
+}
+
+/* La caja de texto */
+.ms-caja {
+  max-width: 600px;
+  margin-top: 48px;
+  border-top: 1px solid #eee;
+  padding-top: 28px;
+}
+
+.ms-caja-intro {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 14px 0;
+}
+
+.ms-textarea {
+  width: 100%;
+  /* el sitio no usa box-sizing global: sin esto el relleno se suma al 100%
+     y la caja se sale de la pantalla en el móvil */
+  box-sizing: border-box;
+  min-height: 96px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 12px 14px;
+  resize: vertical;
+}
+
+.ms-textarea:focus {
+  outline: none;
+  border-color: #bbb;
+}
+
+.ms-caja-fila {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.ms-btn {
+  padding: 4px 14px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  color: #444;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.ms-btn:hover:not(:disabled) {
+  background: #e8e8e8;
+  border-color: #ccc;
+  color: #222;
+}
+
+.ms-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+.ms-btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.ms-contador {
+  margin-left: auto;
+  font-size: 0.76rem;
+  color: #555;
+  font-variant-numeric: tabular-nums;
+}
+
+.ms-error {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 14px 0 0 0;
+  padding-left: 14px;
+  border-left: 2px solid #ddd;
+}
+
+/* El resultado de la caja */
+.ms-pred {
+  margin-top: 22px;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+}
+
+.ms-pred-fila {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ms-pred-num {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.ms-probs {
+  display: flex;
+  gap: 3px;
+  width: 130px;
+  max-width: 100%;
+  margin-top: 8px;
+}
+
+.ms-prob {
+  height: 4px;
+  background: #ddd;
+}
+
+.ms-prob.es-alta {
+  background: #555;
+}
+
+.ms-pred-aviso {
+  font-size: 0.82rem;
+  color: #555;
+  font-style: italic;
+  margin: 16px 0 0 0;
+}
+
+@media (max-width: 600px) {
+  .ms-col {
+    padding: 0 3px;
+  }
+
+  .ms-col-num {
+    font-size: 1.9rem;
+  }
+
+  /* En pantalla estrecha "Modelo genérico" y "adivina de nuevo" parten en dos
+     líneas. Se reservan las dos para que los números de las tres columnas
+     queden a la misma altura. */
+  .ms-col-lab {
+    letter-spacing: 0.08em;
+    font-size: 0.62rem;
+    min-height: 2.4em;
+  }
+
+  .ms-col-word,
+  .ms-col-mark {
+    font-size: 0.72rem;
+  }
+
+  .ms-col-mark {
+    min-height: 2.4em;
+  }
+
+  .ms-col-score {
+    font-size: 0.68rem;
+  }
+
+  .ms-pred-fila {
+    gap: 28px;
+  }
+}

@@ -49,11 +49,30 @@ def parse_meta_and_body(raw: str) -> Tuple[Dict[str, str], str]:
     body = "\n".join(lines[i:]).strip()
     return meta, body
 
+EXTRAS_HDR_RE = re.compile(r"(?m)^\s*#\s*(BORRADOR|GUSTO|CONVERSACION)\s*$")
+
+
+def extract_gusto(body: str) -> str:
+    """La nota del poema citado (# GUSTO). Devuelve "" si no hay o está vacía.
+
+    Es el único dato del bloque final que sí es metadato: viaja a archivo.json
+    para que el recomendador lo lea. El borrador y la conversación no.
+    """
+    m = re.search(r"(?m)^\s*#\s*GUSTO\s*$", body)
+    if not m:
+        return ""
+    resto = body[m.end():]
+    sig = EXTRAS_HDR_RE.search(resto)
+    if sig:
+        resto = resto[: sig.start()]
+    return resto.strip()
+
+
 def extract_sections(body: str) -> Dict[str, str]:
     sections: Dict[str, str] = {}
-    # Recortar secciones de transparencia IA (# BORRADOR / # CONVERSACION) para
-    # que # TEXTO no las absorba; no se usan para metadatos del archivo.
-    extras_m = re.search(r"(?m)^\s*#\s*(BORRADOR|CONVERSACION)\s*$", body)
+    # Recortar el bloque final (# BORRADOR / # GUSTO / # CONVERSACION) para que
+    # # TEXTO no lo absorba.
+    extras_m = EXTRAS_HDR_RE.search(body)
     if extras_m:
         body = body[: extras_m.start()]
     header_re = re.compile(r"(?m)^\s*#\s*(POEMA|POEMA_CITADO|TEXTO)\s*$")
@@ -101,6 +120,7 @@ def main() -> None:
     raw = txt_path.read_text(encoding="utf-8")
 
     meta, body = parse_meta_and_body(raw)
+    gusto = extract_gusto(body)
     sections = extract_sections(body)
 
     # date: from meta or filename
@@ -132,6 +152,11 @@ def main() -> None:
             "TEXTO": sections.get("TEXTO", ""),
         },
     }
+
+    # La nota sólo aparece si existe: así las 164 entradas viejas no cambian
+    # y no se marcan como modificadas al reprocesarlas.
+    if gusto:
+        entry["analysis"]["gusto"] = int(gusto)
 
     out_path = Path(args.out)
     if not out_path.is_absolute():

@@ -1,0 +1,19 @@
+{
+  "_comentario": "Datos de ejemplo para maquetar site/mestrofa.html en el repo qmp. Los numeros son inventados. La forma es la que devolvera el endpoint /hoy cuando exista el servidor.",
+  "fecha": "2026-05-24",
+  "poeta": "Violeta Villalba",
+  "titulo": "Yo",
+  "libro": "Fragmentaria",
+  "texto_url": "/data/textos/2026/05/2026-05-24.txt",
+  "hay_duelo": true,
+  "gusto": 3,
+  "pred_modelo": 3,
+  "pred_gemini": 2,
+  "predicho_el": "2026-05-24T07:12:00Z",
+  "marcador": {
+    "desde": "2026-05-01",
+    "total": 20,
+    "modelo": { "aciertos": 12 },
+    "gemini": { "aciertos": 7 }
+  }
+}

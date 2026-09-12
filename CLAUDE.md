@@ -85,13 +85,22 @@ BOOK_TITLE: ...
 # BORRADOR
 <optional: the author's own draft submitted for correction (their voice, with errors)>
 
+# GUSTO
+<the author's 1/2/3 rating of the cited poem — empty on PDF-mode days>
+
 # CONVERSACION
 <optional: a claude.ai share link (or pasted transcript)>
 ```
 
+**`# GUSTO` — the rating, mandatory since 2026-09-11.** It carries the author's judgment of the **cited** poem on the same 1/2/3 scale the sibling recommender uses (1 = dislike, 2 = middling, 3 = like), and it is the one part of the final block that is *metadata*: `make_pending_entry.py` reads it into `archivo.json` as `analysis.gusto` (an int, omitted entirely when there is no rating, so the 164 older entries are untouched). The site never displays it.
+
+- **The section is always present**, even on days with no poem to rate. On PDF-mode days it is written with nothing inside — the habit of having the section is what keeps the rating from being forgotten.
+- `validate_entry.py` enforces it via `GUSTO_DESDE = "2026-09-11"`: entries dated on or after that **must** carry a `# GUSTO` header or publishing fails loudly (deliberately — a silent miss costs a day of training data). Entries before that date are exempt, so every published entry still validates. A present-but-empty section is an error **only when `# POEMA_CITADO` has text**; a non-empty value must be `1`, `2` or `3`.
+- In PDF mode `qcrear.py` forgives *only* the "Sección vacía: # POEMA_CITADO" message, so an empty `# GUSTO` passes there while a missing one still blocks the publish.
+
 **AI-transparency sections (`# BORRADOR`, `# CONVERSACION`)** are **independent and optional**: an entry may have neither (all pre-2026-08 entries), only `# CONVERSACION` (the common case — a claude.ai link), only `# BORRADOR`, or both. When present they come **after `# TEXTO`**, and if both are present the order is `# BORRADOR` then `# CONVERSACION` (last). They power the "Cómo usé la IA" disclosure on the site, whose tabs are built from whichever sections exist: published + conversation, published + draft, or all three. When neither is present, the site shows no disclosure at all.
 
-- `validate_entry.py` rejects a section that is present but **empty**, and rejects `# BORRADOR` appearing *after* `# CONVERSACION` (order is checked before emptiness, since a leading `# CONVERSACION` swallows the rest of the file and would otherwise report a misleading "empty" error). These sections never reach `archivo.json` (metadata only) and are preserved across `validate_entry.py --mode normalize`.
+- The final block is always written in the order `# BORRADOR`, `# GUSTO`, `# CONVERSACION`, and `validate_entry.py` rejects any other order among the sections present (order is checked before emptiness, since a leading `# CONVERSACION` swallows the rest of the file and would otherwise report a misleading "empty" error). It also rejects `# BORRADOR` / `# CONVERSACION` present but **empty**. These sections never reach `archivo.json` (metadata only) and are preserved across `validate_entry.py --mode normalize`.
 - **`# CONVERSACION` is normally a link** (`https://claude.ai/share/…`). The site renders it as a "Ver la conversación con Claude →" button. If instead it holds pasted text, the site falls back to chat bubbles: a line containing **only** `[YO]`, `[TÚ]`, or `[CLAUDE]` (case/accent-insensitive) starts a turn. It is read **verbatim** end-to-end (its content may contain `#` lines), so `parseEntry` and `validate_entry.py` stop interpreting headers once inside it. Keep it last.
 
 **How the author writes them (authoring flow).** The conversation happens in claude.ai, not Google Docs — and claude.ai share pages are Cloudflare-protected, so they **cannot** be scraped server-side. Instead, the author appends two plain-text markers **after** the analysis ("Versión final") in iA Writer:
@@ -100,9 +109,14 @@ BOOK_TITLE: ...
 ## Borrador final
 <my draft before Claude's grammar fixes>
 
+## Gusto
+3
+
 ## Conversación con IA
 https://claude.ai/share/xxxxxxxx
 ```
+
+`split_ia_markers` cuts each marker up to the next one that appears, so the **order in iA Writer no longer matters** — a `## Gusto` written after the conversation link is still captured, and the `.txt` always comes out in canonical order. `## Notas` remains unusable as a marker name: `atajo.js` routes it to a separate Docs tab and the pull never sees it.
 
 These ride through the existing pipeline untouched (Atajo → `atajo.js` → Google Docs → pull) because `atajo.js` passes unrecognized `##` lines through as text and the analysis pull takes everything after the single `## Versión final`. Then `core/ia_sections.py::split_ia_markers` (called by `qcrear.py` and `update_entry.py`) splits the pulled analysis into clean `# TEXTO` + `# BORRADOR` + `# CONVERSACION`, which `render_txt` writes to the `.txt`. **No changes to `atajo.js`, the Google Docs schema, the pull, or the GitHub Actions YAML are needed.** Keep the published analysis under `## Versión final` (not `## Versión final (con IA)`) — a second "Versión final"-matching heading breaks the analysis pull.
 
@@ -159,6 +173,20 @@ The "publicar" Shortcut sends content written in iA Writer directly to Google Do
 **To deploy Apps Script changes:** `cd scripts/appsscript && clasp push`
 
 ---
+
+## Sibling project — A mi mestrofa (poetry taste predictor)
+
+`~/Desktop/a-mi-mestrofa` · **separate repo, deliberately.**
+
+A personal poetry recommender (Python, scikit-learn, Vertex AI, BigQuery) that learns the author's taste from rated poems and predicts whether they'll like a new one. QMP is its natural data source: every entry cites a poem the author read and judged.
+
+**Do not merge the repos** (decided 2026-09-10). This repo *is* the website — GitHub Pages serves from the root — so anything merged in gets published, including that project's `data/poemas.csv` (187 full third-party poems plus the author's private ratings). They connect through data instead: QMP already publishes `data/archivo.json` and `data/textos/**/*.txt` over HTTPS, and the recommender consumes them. One-way coupling — nothing in QMP depends on the recommender, and a failure over there cannot break this site.
+
+**The `## Gusto` rating — done 2026-09-11.** The marker rides through the pipeline untouched like the AI-transparency ones, is split out in `core/ia_sections.py`, and lands in `archivo.json` as `analysis.gusto`. Mandatory from that date on; see the rules under "Entry .txt format". Nothing was needed in `atajo.js`, the Docs schema, the pull or the workflows. The recommender's importer can now read the rating straight off the published `archivo.json`.
+
+**The page — `site/mestrofa.html`.** The blog's visible half of the connection: today's cited poem, the three numbers (real rating vs. the author's model vs. a generic model) and a free-text box. It reads `API_BASE` — one line, currently the demo files in `data/mestrofa-demo*.json`, later the recommender's endpoint. It asks the server for `fecha_duelo` when the numbers belong to an earlier day; until that arrives the no-numbers state shows "no encontré nada".
+
+Full design, hazards and open decisions: `~/Desktop/a-mi-mestrofa/docs/conexion-qmp.md`.
 
 ## Working branch
 

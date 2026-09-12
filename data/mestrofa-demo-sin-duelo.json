@@ -1,0 +1,20 @@
+{
+  "_comentario": "Segundo caso a maquetar: entrada sin poema citado en texto (modo PDF, u otro idioma). La pagina muestra el poema si lo hay y OCULTA los tres numeros. No inventar nada.",
+  "fecha": "2026-08-24",
+  "poeta": "Nathaniel Hawthorne",
+  "titulo": "La Catástrofe del Señor Higginbotham",
+  "libro": "",
+  "texto_url": "/data/textos/2026/08/2026-08-24.txt",
+  "hay_duelo": false,
+  "motivo": "La entrada de hoy no trae poema en texto.",
+  "gusto": null,
+  "pred_modelo": null,
+  "pred_gemini": null,
+  "predicho_el": null,
+  "marcador": {
+    "desde": "2026-05-01",
+    "total": 20,
+    "modelo": { "aciertos": 12 },
+    "gemini": { "aciertos": 7 }
+  }
+}
