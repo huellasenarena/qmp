@@ -57,17 +57,24 @@ const TEXTOS = {
   errorLargo:    'el texto es muy largo: 6000 caracteres como máximo',
 
   // El servidor manda una clave, no una frase, para que el texto sea de la
-  // casa. Las de arriba son de /predecir (campo "aviso"); las de abajo, de
-  // /hoy (campo "motivo"). Una clave que no esté aquí no enseña nada.
-  avisos: {
-    conocido:       'este poema ya está en mi corpus, así que no vale como prueba',
-    sin_gemini:     'el modelo genérico no contestó esta vez',
-    corto:          'es un texto muy corto: la predicción vale poco',
+  // casa. Una clave que no esté en estas listas no enseña nada.
 
-    sin_entradas:   'todavía no hay ninguna entrada',
-    sin_nota:       'esta entrada no lleva nota mía',
-    sin_prediccion: 'no hubo predicción para este día',
-    sin_texto:      'la entrada de hoy no trae poema en texto'
+  // Campo "aviso" de POST /predecir: sobre el texto que pegó el visitante.
+  avisos: {
+    conocido:   'este poema ya está en mi corpus, así que no vale como prueba',
+    sin_gemini: 'el modelo genérico no contestó esta vez',
+    corto:      'es un texto muy corto: la predicción vale poco'
+  },
+
+  // Campo "motivo" de GET /hoy: por qué hoy no hay tres números.
+  // Ojo con "pendiente": es pasajero, la predicción llega en minutos. Tiene
+  // que sonar a "todavía no", no a "no hubo".
+  motivos: {
+    sin_entradas: 'todavía no hay ninguna entrada',
+    sin_nota:     'todavía no le puse nota a este poema',
+    pendiente:    'la predicción llega en unos minutos',
+    ya_visto:     'el modelo ya conocía este poema, así que hoy no hay duelo',
+    sin_texto:    'la entrada de hoy no trae poema en texto'
   }
 };
 
@@ -143,11 +150,12 @@ async function pdfDelDia(fecha) {
   }
 }
 
-// Traduce una clave del servidor a una frase nuestra. Clave desconocida o
-// ausente devuelve '' — nunca se enseña la clave cruda.
-function frasePorClave(clave) {
+// Traduce una clave del servidor a una frase nuestra, buscándola en la lista
+// que toque. Clave desconocida o ausente devuelve '' — nunca se enseña la
+// clave cruda.
+function frasePorClave(lista, clave) {
   if (!clave) return '';
-  return TEXTOS.avisos[clave] || '';
+  return lista[clave] || '';
 }
 
 function aviso(texto) {
@@ -361,7 +369,7 @@ async function cargarElDia() {
   } else {
     // Nunca se inventa un número que venga vacío. El servidor dice por qué
     // con una clave; si no la reconocemos, queda el aviso de siempre.
-    aviso(frasePorClave(datos.motivo) || TEXTOS.nada);
+    aviso(frasePorClave(TEXTOS.motivos, datos.motivo) || TEXTOS.nada);
     pintarMarcadorSuelto(datos);
   }
 }
@@ -427,7 +435,7 @@ function pintarPrediccion(res) {
   caja.appendChild(fila);
 
   // El servidor manda una clave ("corto", "conocido"…), no una frase.
-  const frase = frasePorClave(res.aviso);
+  const frase = frasePorClave(TEXTOS.avisos, res.aviso);
   if (frase) {
     const nota = document.createElement('p');
     nota.className = 'ms-pred-aviso';
