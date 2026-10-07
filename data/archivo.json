@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-10-07",
+    "month": "2026-10",
+    "file": "textos/2026-10-07.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "yo soy un río",
+    "analysis": {
+      "poet": "Javier Heraud",
+      "poem_title": "",
+      "poem_snippet": "I",
+      "book_title": "Poesía Reunida",
+      "gusto": 1
+    },
+    "keywords": [
+      {
+        "word": "corporeidad liquida",
+        "weight": 3
+      },
+      {
+        "word": "devenir irreductible",
+        "weight": 3
+      },
+      {
+        "word": "fijeza deseada",
+        "weight": 3
+      },
+      {
+        "word": "identidad procesual",
+        "weight": 3
+      },
+      {
+        "word": "intimidad sin posesion",
+        "weight": 3
+      },
+      {
+        "word": "aproximacion",
+        "weight": 2
+      },
+      {
+        "word": "autodefinicion",
+        "weight": 2
+      },
+      {
+        "word": "continuidad",
+        "weight": 2
+      },
+      {
+        "word": "interrupcion fantaseada",
+        "weight": 2
+      },
+      {
+        "word": "rozamiento",
+        "weight": 2
+      },
+      {
+        "word": "tension entre deseo e identidad",
+        "weight": 2
+      },
+      {
+        "word": "acaricia",
+        "weight": 1
+      },
+      {
+        "word": "algas",
+        "weight": 1
+      },
+      {
+        "word": "congelado",
+        "weight": 1
+      },
+      {
+        "word": "escalas",
+        "weight": 1
+      },
+      {
+        "word": "flujo",
+        "weight": 1
+      },
+      {
+        "word": "pescado",
+        "weight": 1
+      },
+      {
+        "word": "rio",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-06",
     "month": "2026-10",
     "file": "textos/2026-10-06.txt",

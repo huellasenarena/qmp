@@ -1,83 +1,83 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "month": "2026-10",
-  "file": "textos/2026-10-06.txt",
+  "file": "textos/2026-10-07.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "no me mira así",
+  "my_poem_snippet": "yo soy un río",
   "analysis": {
-    "poet": "Luis Llorente Benito",
-    "poem_title": "Plenitud de la Dicha",
-    "poem_snippet": "",
-    "book_title": "",
+    "poet": "Javier Heraud",
+    "poem_title": "",
+    "poem_snippet": "I",
+    "book_title": "Poesía Reunida",
     "gusto": 1
   },
   "keywords": [
     {
-      "word": "ajenidad de la escritura",
+      "word": "corporeidad liquida",
       "weight": 3
     },
     {
-      "word": "carencia de cauce",
+      "word": "devenir irreductible",
       "weight": 3
     },
     {
-      "word": "desposesion autoral",
+      "word": "fijeza deseada",
       "weight": 3
     },
     {
-      "word": "identidad escindida",
+      "word": "identidad procesual",
       "weight": 3
     },
     {
-      "word": "inversion de agencia",
+      "word": "intimidad sin posesion",
       "weight": 3
     },
     {
-      "word": "duda de autoria",
+      "word": "aproximacion",
       "weight": 2
     },
     {
-      "word": "flujo frustrado",
+      "word": "autodefinicion",
       "weight": 2
     },
     {
-      "word": "interpelacion",
+      "word": "continuidad",
       "weight": 2
     },
     {
-      "word": "intimidad rota",
+      "word": "interrupcion fantaseada",
       "weight": 2
     },
     {
-      "word": "no reconocimiento",
+      "word": "rozamiento",
       "weight": 2
     },
     {
-      "word": "posesion inestable",
+      "word": "tension entre deseo e identidad",
       "weight": 2
     },
     {
-      "word": "reproche",
-      "weight": 2
-    },
-    {
-      "word": "boligrafo",
+      "word": "acaricia",
       "weight": 1
     },
     {
-      "word": "cuaderno",
+      "word": "algas",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "congelado",
       "weight": 1
     },
     {
-      "word": "mirada",
+      "word": "escalas",
       "weight": 1
     },
     {
-      "word": "recuerdo",
+      "word": "flujo",
+      "weight": 1
+    },
+    {
+      "word": "pescado",
       "weight": 1
     },
     {
