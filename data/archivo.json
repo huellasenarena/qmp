@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-10-06",
+    "month": "2026-10",
+    "file": "textos/2026-10-06.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "no me mira así",
+    "analysis": {
+      "poet": "Luis Llorente Benito",
+      "poem_title": "Plenitud de la Dicha",
+      "poem_snippet": "",
+      "book_title": "",
+      "gusto": 1
+    },
+    "keywords": [
+      {
+        "word": "ajenidad de la escritura",
+        "weight": 3
+      },
+      {
+        "word": "carencia de cauce",
+        "weight": 3
+      },
+      {
+        "word": "desposesion autoral",
+        "weight": 3
+      },
+      {
+        "word": "identidad escindida",
+        "weight": 3
+      },
+      {
+        "word": "inversion de agencia",
+        "weight": 3
+      },
+      {
+        "word": "duda de autoria",
+        "weight": 2
+      },
+      {
+        "word": "flujo frustrado",
+        "weight": 2
+      },
+      {
+        "word": "interpelacion",
+        "weight": 2
+      },
+      {
+        "word": "intimidad rota",
+        "weight": 2
+      },
+      {
+        "word": "no reconocimiento",
+        "weight": 2
+      },
+      {
+        "word": "posesion inestable",
+        "weight": 2
+      },
+      {
+        "word": "reproche",
+        "weight": 2
+      },
+      {
+        "word": "boligrafo",
+        "weight": 1
+      },
+      {
+        "word": "cuaderno",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "mirada",
+        "weight": 1
+      },
+      {
+        "word": "recuerdo",
+        "weight": 1
+      },
+      {
+        "word": "rio",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-08-24",
     "month": "2026-08",
     "file": "textos/2026-08-24.txt",

@@ -1,95 +1,75 @@
 {
-  "date": "2026-08-24",
-  "month": "2026-08",
-  "file": "textos/2026-08-24.txt",
+  "date": "2026-10-06",
+  "month": "2026-10",
+  "file": "textos/2026-10-06.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "el barco con la chimenea nunca tocada",
+  "my_poem_snippet": "no me mira así",
   "analysis": {
-    "poet": "Nathaniel Hawthorne",
-    "poem_title": "La Catástrofe del Señor Higginbotham",
+    "poet": "Luis Llorente Benito",
+    "poem_title": "Plenitud de la Dicha",
     "poem_snippet": "",
     "book_title": "",
-    "pdf": "/data/pdfs/La-Catástrofe-del-Señor-Higginbotham.pdf"
+    "gusto": 1
   },
   "keywords": [
     {
-      "word": "autoorientacion",
+      "word": "ajenidad de la escritura",
       "weight": 3
     },
     {
-      "word": "contemplacion activa",
+      "word": "carencia de cauce",
       "weight": 3
     },
     {
-      "word": "discernimiento",
+      "word": "desposesion autoral",
       "weight": 3
     },
     {
-      "word": "potencia de lo intacto",
+      "word": "identidad escindida",
       "weight": 3
     },
     {
-      "word": "soberania de la mirada",
+      "word": "inversion de agencia",
       "weight": 3
     },
     {
-      "word": "umbral de experiencia",
-      "weight": 3
-    },
-    {
-      "word": "clasificacion",
+      "word": "duda de autoria",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "flujo frustrado",
       "weight": 2
     },
     {
-      "word": "iniciacion",
+      "word": "interpelacion",
       "weight": 2
     },
     {
-      "word": "jerarquia",
+      "word": "intimidad rota",
       "weight": 2
     },
     {
-      "word": "persistencia",
+      "word": "no reconocimiento",
       "weight": 2
     },
     {
-      "word": "reconocimiento",
+      "word": "posesion inestable",
       "weight": 2
     },
     {
-      "word": "senalizacion",
+      "word": "reproche",
       "weight": 2
     },
     {
-      "word": "vigilancia",
-      "weight": 2
-    },
-    {
-      "word": "barco",
+      "word": "boligrafo",
       "weight": 1
     },
     {
-      "word": "chimenea",
+      "word": "cuaderno",
       "weight": 1
     },
     {
-      "word": "debutantes",
-      "weight": 1
-    },
-    {
-      "word": "dia",
-      "weight": 1
-    },
-    {
-      "word": "encendido",
-      "weight": 1
-    },
-    {
-      "word": "faros",
+      "word": "mano",
       "weight": 1
     },
     {
@@ -97,7 +77,11 @@
       "weight": 1
     },
     {
-      "word": "veteranos",
+      "word": "recuerdo",
+      "weight": 1
+    },
+    {
+      "word": "rio",
       "weight": 1
     }
   ]

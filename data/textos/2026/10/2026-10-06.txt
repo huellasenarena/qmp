@@ -1,0 +1,46 @@
+FECHA: 2026-10-06
+MY_POEM_TITLE: 
+POETA: Luis Llorente Benito
+POEM_TITLE: Plenitud de la Dicha
+BOOK_TITLE:
+
+# POEMA
+
+no me mira así
+cuaderno mío
+mereces un río
+que nunca recibí
+
+no me recuerda a mí
+bolígrafo mío
+¿hay otra mano?
+no me mira así
+
+# POEMA_CITADO
+
+13-10-2003
+
+Hoy
+alcanzo la dicha una vez más.
+Pienso en el sexo de los amantes que realmente no existen,
+que entre los jirones de la sombra se esfuman. Abrazo una humareda de
+silencios,
+me hundo en la espuma del pasado, late en fuego en la penumbra,
+resplandece el tiempo del ser. Y se deshace el cuerpo de la luz
+con una lluvia de ceniza, alterándose el principio de la muerte
+en las ruinas del deseo. Ahora un viento sin voz me arrebata la memoria,
+y grito para dar las gracias. Se detiene el curso de las horas:
+los instantes
+el el río
+son mentira.
+
+# TEXTO
+
+Hace meses que no escribo aquí con regularidad y creo saber por qué. Leí este poema y, sí, hay bastantes palabras que no conozco (jiron, humaread, late, resplandecer…) pero creo que hay algo más profundo: incluso cuando conozca esas palabras no me da nada: “jirones de la sombra” no me da nada… y creo que eso es porque llevo meses sin escribir a diario… leo eso y… no tengo nada en mi mente. Escribir sobre esa mierda sería una mentira.
+
+De la misma manera que para practicar el yoga solo, motivado solamente por mí mismo, asociando el mat con *la dicha*, hay que asociar la poesía con algo feliz… y eso es precisamente mi problema.
+
+Hay un sentimiento de inferioridad en lo que leo aquí… como me siento estupido al no recibir algo. Pero creo que lo que tengo que hacer es encontrar los poemas que me den placer… y ser honesto cuando algo me parece mierda completa… y este poema es mierda completa.
+
+# GUSTO
+1
