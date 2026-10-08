@@ -48,7 +48,7 @@ const TEXTOS = {
   boton: 'leer mi mente',
 
   // Mientras se espera al servidor: van rotando, con "." ".." "..." detrás
-  espera: ['estoy pensando', 'casi completo', 'mas de café'],
+  espera: ['estoy pensando', 'casi completo', 'más de café'],
 
   // --- provisionales, escritos por Claude a la espera de los del autor ---
   botonPensando: 'leyendo…',

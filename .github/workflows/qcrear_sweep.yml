@@ -69,7 +69,9 @@ jobs:
         run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
       - name: Run sweep
+        id: sweep
         env:
+          QMP_SWEEP_ERRORS: ${{ runner.temp }}/sweep_errors.txt
           QMP_GDOCS_SA_KEYFILE: ${{ github.workspace }}/.secrets/sa.json
           PYTHONPATH: ${{ github.workspace }}/scripts:${{ github.workspace }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -192,4 +194,54 @@ jobs:
           # Message 3: keywords
           if keywords:
               send("🏷 " + " · ".join(esc(k) for k in keywords))
+          PY
+
+      # Avisa si el sweep saltó alguna fecha o si algo falló. Sin esto, una
+      # entrada saltada pasa en silencio: el run sale en verde y no hay commit.
+      - name: Alert Telegram on errors
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ERRORS_FILE: ${{ runner.temp }}/sweep_errors.txt
+          JOB_STATUS: ${{ job.status }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import html, os, urllib.parse, urllib.request
+          from pathlib import Path
+
+          token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+          chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
+          if not token or not chat_id:
+              raise SystemExit("Telegram secrets not configured, skipping")
+
+          errors_file = Path(os.environ["ERRORS_FILE"])
+          errors = errors_file.read_text(encoding="utf-8").strip() if errors_file.exists() else ""
+          failed = os.environ.get("JOB_STATUS") != "success"
+
+          if not errors and not failed:
+              print("Sin errores, no hay alerta")
+              raise SystemExit(0)
+
+          parts = ["⚠️ <b>Que Mal Poema</b> — el sweep no publicó todo"]
+          if errors:
+              parts.append("Fechas saltadas:\n" + html.escape(errors))
+          if failed:
+              parts.append("El workflow falló.")
+          parts.append(os.environ["RUN_URL"])
+          text = "\n\n".join(parts)[:4000]
+
+          data = urllib.parse.urlencode({
+              "chat_id": chat_id,
+              "text": text,
+              "parse_mode": "HTML",
+              "disable_web_page_preview": "true",
+          }).encode()
+          req = urllib.request.Request(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data=data, method="POST"
+          )
+          with urllib.request.urlopen(req) as resp:
+              print(resp.read().decode())
           PY

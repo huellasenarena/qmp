@@ -1058,6 +1058,19 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
 # run_sweep
 # -----------------------------
 
+def report_skipped(skipped: list[tuple[str, str]]) -> None:
+    """
+    Deja las fechas saltadas en el archivo que indique QMP_SWEEP_ERRORS (una
+    por línea: "fecha: primera línea del error"), para que el workflow avise
+    por Telegram. Sin esa variable no hace nada.
+    """
+    out = os.environ.get("QMP_SWEEP_ERRORS")
+    if not out or not skipped:
+        return
+    lines = [f"{d}: {(reason.strip().splitlines() or [''])[0]}" for d, reason in skipped]
+    Path(out).write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def run_sweep() -> int:
     """
     Detecta todas las fechas no publicadas entre la última en archivo.json
@@ -1111,6 +1124,7 @@ def run_sweep() -> int:
             println(f"[sweep] {len(skipped)} fecha(s) con errores:")
             for d, reason in skipped:
                 println(f"  - {d}: {reason}")
+        report_skipped(skipped)
         return 0
 
     # Commit único
@@ -1151,6 +1165,7 @@ def run_sweep() -> int:
         println(f"\n[sweep] {len(skipped)} fecha(s) saltadas por error:")
         for d, reason in skipped:
             println(f"  ⚠ {d}: {reason}")
+        report_skipped(skipped)
 
     return 0
 
