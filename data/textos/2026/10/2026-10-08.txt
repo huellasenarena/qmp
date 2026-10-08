@@ -1,0 +1,59 @@
+FECHA: 2026-10-08
+MY_POEM_TITLE: 
+POETA: Javier Heraud
+POEM_TITLE: 
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+soy el lago
+
+he escuchado
+de los amantes
+que mantengo
+a flote
+que hay un río
+en cierto lugar
+
+se desliza
+se limpia
+ha encontrado
+el océano
+
+soy el lago
+solo yo
+el lago
+
+# POEMA_CITADO
+
+II
+
+Yo soy un río
+un río
+un río
+cristalino en la
+mañana.
+A veces soy
+tierno y
+bondadoso. Me
+deslizo suavamente
+por los valles fértiles,
+doy de beber miles de veces
+al ganado, a la gente dócil.
+Los niños se me acercan de
+día,
+y
+de noche trémulos amantes
+apoyan sus ojos en los míos,
+y hunden sus brazos
+en la oscura claridad
+de mis aguas fantasmales.
+
+# TEXTO
+
+¡Vale, este poema me da algo más que el precedente! Utilizando esta metáfora del río, la voz poética nos presenta un mundo completo. El río tiene un carácter complejo –claro, gentil, acogedor, en marcha, generoso y opaco– y hay cambios y movimiento –el río que se desliza y los seres en su entorno–. Yo leo la voz poética como el río en sí mismo, aunque cabe la posibilidad de que sea un humano que se ve en el río.
+
+¿Pero me dice algo más profundo? ¿Hay un crítico del ser humano, dado palabras como “dócil” y luego la invasión de los brazos de amantes? Tal vez dice que la naturaleza existe independientemente del ser humano: tiene su própia personalidad (“cristalino”, “soy tierno y bondadoso”) y puede observar el mundo (en este caso, observa a los animales y seres humanos). El poema sirve como un tipo de inversión, donde el ser humano es observado por la naturaleza; puede que este sea lo que me da el poema, que cada cosa en el mundo tiene su propio punto de vista.
+
+# GUSTO
+2

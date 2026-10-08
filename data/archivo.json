@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-10-08",
+    "month": "2026-10",
+    "file": "textos/2026-10-08.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "soy el lago",
+    "analysis": {
+      "poet": "Javier Heraud",
+      "poem_title": "",
+      "poem_snippet": "II",
+      "book_title": "Poesía Reunida",
+      "gusto": 2
+    },
+    "keywords": [
+      {
+        "word": "autoafirmacion",
+        "weight": 3
+      },
+      {
+        "word": "contencion",
+        "weight": 3
+      },
+      {
+        "word": "inmanencia",
+        "weight": 3
+      },
+      {
+        "word": "plenitud sin destino",
+        "weight": 3
+      },
+      {
+        "word": "quietud como potencia",
+        "weight": 3
+      },
+      {
+        "word": "singularidad",
+        "weight": 3
+      },
+      {
+        "word": "autodesignacion",
+        "weight": 2
+      },
+      {
+        "word": "contraste",
+        "weight": 2
+      },
+      {
+        "word": "diferenciacion",
+        "weight": 2
+      },
+      {
+        "word": "distancia",
+        "weight": 2
+      },
+      {
+        "word": "indirectitud",
+        "weight": 2
+      },
+      {
+        "word": "mediacion verbal",
+        "weight": 2
+      },
+      {
+        "word": "perspectiva no humana",
+        "weight": 2
+      },
+      {
+        "word": "sostenimiento",
+        "weight": 2
+      },
+      {
+        "word": "amantes",
+        "weight": 1
+      },
+      {
+        "word": "deslizarse",
+        "weight": 1
+      },
+      {
+        "word": "flote",
+        "weight": 1
+      },
+      {
+        "word": "lago",
+        "weight": 1
+      },
+      {
+        "word": "limpiarse",
+        "weight": 1
+      },
+      {
+        "word": "lugar",
+        "weight": 1
+      },
+      {
+        "word": "oceano",
+        "weight": 1
+      },
+      {
+        "word": "rio",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-07",
     "month": "2026-10",
     "file": "textos/2026-10-07.txt",
