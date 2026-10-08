@@ -1,99 +1,83 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-07",
   "month": "2026-10",
-  "file": "textos/2026-10-08.txt",
+  "file": "textos/2026-10-07.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "soy el lago",
+  "my_poem_snippet": "yo soy un río",
   "analysis": {
     "poet": "Javier Heraud",
     "poem_title": "",
-    "poem_snippet": "II",
+    "poem_snippet": "1",
     "book_title": "Poesía Reunida",
-    "gusto": 2
+    "gusto": 1
   },
   "keywords": [
     {
-      "word": "autoafirmacion",
+      "word": "corporeidad liquida",
       "weight": 3
     },
     {
-      "word": "contencion",
+      "word": "devenir irreductible",
       "weight": 3
     },
     {
-      "word": "inmanencia",
+      "word": "fijeza deseada",
       "weight": 3
     },
     {
-      "word": "plenitud sin destino",
+      "word": "identidad procesual",
       "weight": 3
     },
     {
-      "word": "quietud como potencia",
+      "word": "intimidad sin posesion",
       "weight": 3
     },
     {
-      "word": "singularidad",
-      "weight": 3
-    },
-    {
-      "word": "autodesignacion",
+      "word": "aproximacion",
       "weight": 2
     },
     {
-      "word": "contraste",
+      "word": "autodefinicion",
       "weight": 2
     },
     {
-      "word": "diferenciacion",
+      "word": "continuidad",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "interrupcion fantaseada",
       "weight": 2
     },
     {
-      "word": "indirectitud",
+      "word": "rozamiento",
       "weight": 2
     },
     {
-      "word": "mediacion verbal",
+      "word": "tension entre deseo e identidad",
       "weight": 2
     },
     {
-      "word": "perspectiva no humana",
-      "weight": 2
-    },
-    {
-      "word": "sostenimiento",
-      "weight": 2
-    },
-    {
-      "word": "amantes",
+      "word": "acaricia",
       "weight": 1
     },
     {
-      "word": "deslizarse",
+      "word": "algas",
       "weight": 1
     },
     {
-      "word": "flote",
+      "word": "congelado",
       "weight": 1
     },
     {
-      "word": "lago",
+      "word": "escalas",
       "weight": 1
     },
     {
-      "word": "limpiarse",
+      "word": "flujo",
       "weight": 1
     },
     {
-      "word": "lugar",
-      "weight": 1
-    },
-    {
-      "word": "oceano",
+      "word": "pescado",
       "weight": 1
     },
     {
