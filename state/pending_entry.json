@@ -1,83 +1,99 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "month": "2026-10",
-  "file": "textos/2026-10-07.txt",
+  "file": "textos/2026-10-08.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "yo soy un río",
+  "my_poem_snippet": "soy el lago",
   "analysis": {
     "poet": "Javier Heraud",
     "poem_title": "",
-    "poem_snippet": "1",
+    "poem_snippet": "2",
     "book_title": "Poesía Reunida",
-    "gusto": 1
+    "gusto": 2
   },
   "keywords": [
     {
-      "word": "corporeidad liquida",
+      "word": "autoafirmacion",
       "weight": 3
     },
     {
-      "word": "devenir irreductible",
+      "word": "contencion",
       "weight": 3
     },
     {
-      "word": "fijeza deseada",
+      "word": "inmanencia",
       "weight": 3
     },
     {
-      "word": "identidad procesual",
+      "word": "plenitud sin destino",
       "weight": 3
     },
     {
-      "word": "intimidad sin posesion",
+      "word": "quietud como potencia",
       "weight": 3
     },
     {
-      "word": "aproximacion",
+      "word": "singularidad",
+      "weight": 3
+    },
+    {
+      "word": "autodesignacion",
       "weight": 2
     },
     {
-      "word": "autodefinicion",
+      "word": "contraste",
       "weight": 2
     },
     {
-      "word": "continuidad",
+      "word": "diferenciacion",
       "weight": 2
     },
     {
-      "word": "interrupcion fantaseada",
+      "word": "distancia",
       "weight": 2
     },
     {
-      "word": "rozamiento",
+      "word": "indirectitud",
       "weight": 2
     },
     {
-      "word": "tension entre deseo e identidad",
+      "word": "mediacion verbal",
       "weight": 2
     },
     {
-      "word": "acaricia",
+      "word": "perspectiva no humana",
+      "weight": 2
+    },
+    {
+      "word": "sostenimiento",
+      "weight": 2
+    },
+    {
+      "word": "amantes",
       "weight": 1
     },
     {
-      "word": "algas",
+      "word": "deslizarse",
       "weight": 1
     },
     {
-      "word": "congelado",
+      "word": "flote",
       "weight": 1
     },
     {
-      "word": "escalas",
+      "word": "lago",
       "weight": 1
     },
     {
-      "word": "flujo",
+      "word": "limpiarse",
       "weight": 1
     },
     {
-      "word": "pescado",
+      "word": "lugar",
+      "weight": 1
+    },
+    {
+      "word": "oceano",
       "weight": 1
     },
     {
