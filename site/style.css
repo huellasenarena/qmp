@@ -519,6 +519,15 @@ select, input {
   font-variant-numeric: tabular-nums;
 }
 
+/* "estoy pensando..." mientras se espera al servidor */
+.ms-espera {
+  max-width: 600px;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+  margin: 18px 0 24px 0;
+}
+
 /* "no encontré nada" y los fallos de carga */
 .ms-aviso {
   max-width: 600px;

@@ -47,6 +47,9 @@ const TEXTOS = {
 
   boton: 'leer mi mente',
 
+  // Mientras se espera al servidor: van rotando, con "." ".." "..." detrás
+  espera: ['estoy pensando', 'casi completo', 'mas de café'],
+
   // --- provisionales, escritos por Claude a la espera de los del autor ---
   botonPensando: 'leyendo…',
   notaDia:       'estos números son del {fecha}',   // {fecha} = el día de los números
@@ -156,6 +159,30 @@ async function pdfDelDia(fecha) {
 function frasePorClave(lista, clave) {
   if (!clave) return '';
   return lista[clave] || '';
+}
+
+// "estoy pensando." → ".." → "..." → "casi completo." … mientras se espera.
+// Sólo aparece si la espera pasa de medio segundo, para no parpadear cuando
+// el servidor contesta enseguida. Devuelve la función que la apaga.
+function esperar(el) {
+  let paso = 0;
+  const pintar = () => {
+    const frase = TEXTOS.espera[Math.floor(paso / 3) % TEXTOS.espera.length];
+    el.textContent = frase + '.'.repeat(paso % 3 + 1);
+    paso++;
+  };
+  let reloj;
+  const arranque = setTimeout(() => {
+    pintar();
+    el.hidden = false;
+    reloj = setInterval(pintar, 500);
+  }, 500);
+  return () => {
+    clearTimeout(arranque);
+    clearInterval(reloj);
+    el.hidden = true;
+    el.textContent = '';
+  };
 }
 
 function aviso(texto) {
@@ -340,6 +367,7 @@ function hayNumeros(datos) {
 
 async function cargarElDia() {
   let datos;
+  const parar = esperar(document.getElementById('ms-espera'));
   try {
     const r = await fetch(API_BASE);
     if (!r.ok) throw new Error('http ' + r.status);
@@ -348,6 +376,8 @@ async function cargarElDia() {
     console.error(e);
     aviso(TEXTOS.errorDia);
     return;
+  } finally {
+    parar();
   }
 
   const elFecha = document.getElementById('ms-fecha');
@@ -472,6 +502,7 @@ function montarCaja() {
     salida.hidden = true;
     boton.disabled = true;
     boton.textContent = TEXTOS.botonPensando;
+    const parar = esperar(document.getElementById('ms-espera-pred'));
 
     try {
       pintarPrediccion(await predecir(texto));
@@ -479,6 +510,7 @@ function montarCaja() {
       console.error(e);
       error(e && e.tope ? TEXTOS.errorTope : TEXTOS.errorPrediccion);
     } finally {
+      parar();
       boton.disabled = false;
       boton.textContent = TEXTOS.boton;
     }
