@@ -1,99 +1,103 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "month": "2026-10",
-  "file": "textos/2026-10-08.txt",
+  "file": "textos/2026-10-09.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "soy el lago",
+  "my_poem_snippet": "ojalá que este río",
   "analysis": {
     "poet": "Javier Heraud",
     "poem_title": "",
-    "poem_snippet": "2",
+    "poem_snippet": "3",
     "book_title": "Poesía Reunida",
-    "gusto": 2
+    "gusto": 1
   },
   "keywords": [
     {
-      "word": "autoafirmacion",
+      "word": "animalidad como acceso",
       "weight": 3
     },
     {
-      "word": "contencion",
+      "word": "desborde como despertar",
       "weight": 3
     },
     {
-      "word": "inmanencia",
+      "word": "fuerza como don",
       "weight": 3
     },
     {
-      "word": "plenitud sin destino",
+      "word": "irrupcion de lo no humano",
       "weight": 3
     },
     {
-      "word": "quietud como potencia",
+      "word": "materializacion del pensamiento",
       "weight": 3
     },
     {
-      "word": "singularidad",
+      "word": "renuncia a la soberania del yo",
       "weight": 3
     },
     {
-      "word": "autodesignacion",
+      "word": "amoralidad natural",
       "weight": 2
     },
     {
-      "word": "contraste",
+      "word": "autoconciencia elemental",
       "weight": 2
     },
     {
-      "word": "diferenciacion",
+      "word": "autoofrecimiento",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "deseo de intervencion",
       "weight": 2
     },
     {
-      "word": "indirectitud",
+      "word": "desjerarquizacion humano animal",
       "weight": 2
     },
     {
-      "word": "mediacion verbal",
+      "word": "inundacion de la conciencia",
       "weight": 2
     },
     {
-      "word": "perspectiva no humana",
+      "word": "potencia sin voluntad",
       "weight": 2
     },
     {
-      "word": "sostenimiento",
+      "word": "ruptura del limite corporal",
       "weight": 2
     },
     {
-      "word": "amantes",
+      "word": "agua",
       "weight": 1
     },
     {
-      "word": "deslizarse",
+      "word": "animales",
       "weight": 1
     },
     {
-      "word": "flote",
+      "word": "cascadas",
       "weight": 1
     },
     {
-      "word": "lago",
+      "word": "cerebro",
       "weight": 1
     },
     {
-      "word": "limpiarse",
+      "word": "corazones",
       "weight": 1
     },
     {
-      "word": "lugar",
+      "word": "cuerpos",
       "weight": 1
     },
     {
-      "word": "oceano",
+      "word": "ganado",
+      "weight": 1
+    },
+    {
+      "word": "piedras",
       "weight": 1
     },
     {
