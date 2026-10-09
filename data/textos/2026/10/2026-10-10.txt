@@ -1,0 +1,51 @@
+FECHA: 2026-10-10
+MY_POEM_TITLE: 
+POETA: Javier Heraud
+POEM_TITLE: Poesía Reunida
+BOOK_TITLE:
+
+# POEMA
+
+¿por qué entras a su bosque?
+¿eso en una planta o un hongo?
+	algo está llamándome
+	para pensar más allá de los números
+
+¿y si te equivocas?
+¿y no ves las venenosas?
+	puedo imponer mi orden
+	para que concuerden
+
+# POEMA_CITADO
+
+4
+
+Y es aquí cuando
+más me precipito.
+Cuando puedo llegar
+a
+los corazones,
+cuando puedo
+cogerlos por la
+sangre,
+cuando puedo
+mirarlos desde adentro.
+Y mi furia se
+torna apacible,
+y me vuelvo
+árbol,
+y me estanco
+como un árbol
+y me silencio
+como una piedra,
+y callo como una
+rosa sin espinas.
+
+# TEXTO
+
+El río continúa... esta vez diciendo que le gusta coger los corazones y mirar dentro... mirarlos lo pacifica. Hasta ahora vemos que el río encarna la acción, el flujo, la furia, lo penetrante; el árbol la paz, el silencio, lo sólido, lo inmutable.
+
+La imagen del fin, de la rosa sin espinas, me gusta... pero el poema en conjunto no me da nada; ¿se habla de sí mismo? ¿Sino, qué puede significar el río? No sé... voy a leer esos nueve poemas pero esos poemas no me dan casi nada.
+
+# GUSTO
+1

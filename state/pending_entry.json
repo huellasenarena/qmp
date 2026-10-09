@@ -1,107 +1,79 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "month": "2026-10",
-  "file": "textos/2026-10-09.txt",
+  "file": "textos/2026-10-10.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "ojalá que este río",
+  "my_poem_snippet": "¿por qué entras a su bosque?",
   "analysis": {
     "poet": "Javier Heraud",
-    "poem_title": "",
-    "poem_snippet": "3",
-    "book_title": "Poesía Reunida",
+    "poem_title": "Poesía Reunida",
+    "poem_snippet": "",
+    "book_title": "",
     "gusto": 1
   },
   "keywords": [
     {
-      "word": "animalidad como acceso",
+      "word": "atraccion por lo indeterminado",
       "weight": 3
     },
     {
-      "word": "desborde como despertar",
+      "word": "coercion taxonomica",
       "weight": 3
     },
     {
-      "word": "fuerza como don",
+      "word": "desborde de la medida",
       "weight": 3
     },
     {
-      "word": "irrupcion de lo no humano",
+      "word": "error productivo",
       "weight": 3
     },
     {
-      "word": "materializacion del pensamiento",
+      "word": "impulso clasificatorio",
       "weight": 3
     },
     {
-      "word": "renuncia a la soberania del yo",
-      "weight": 3
-    },
-    {
-      "word": "amoralidad natural",
+      "word": "cuantificacion",
       "weight": 2
     },
     {
-      "word": "autoconciencia elemental",
+      "word": "deseo de orden",
       "weight": 2
     },
     {
-      "word": "autoofrecimiento",
+      "word": "homologacion",
       "weight": 2
     },
     {
-      "word": "deseo de intervencion",
+      "word": "indeterminacion",
       "weight": 2
     },
     {
-      "word": "desjerarquizacion humano animal",
+      "word": "interpelacion",
       "weight": 2
     },
     {
-      "word": "inundacion de la conciencia",
+      "word": "riesgo perceptivo",
       "weight": 2
     },
     {
-      "word": "potencia sin voluntad",
-      "weight": 2
-    },
-    {
-      "word": "ruptura del limite corporal",
-      "weight": 2
-    },
-    {
-      "word": "agua",
+      "word": "bosque",
       "weight": 1
     },
     {
-      "word": "animales",
+      "word": "hongo",
       "weight": 1
     },
     {
-      "word": "cascadas",
+      "word": "numeros",
       "weight": 1
     },
     {
-      "word": "cerebro",
+      "word": "planta",
       "weight": 1
     },
     {
-      "word": "corazones",
-      "weight": 1
-    },
-    {
-      "word": "cuerpos",
-      "weight": 1
-    },
-    {
-      "word": "ganado",
-      "weight": 1
-    },
-    {
-      "word": "piedras",
-      "weight": 1
-    },
-    {
-      "word": "rio",
+      "word": "veneno",
       "weight": 1
     }
   ]

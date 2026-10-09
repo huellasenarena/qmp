@@ -1,5 +1,85 @@
 [
   {
+    "date": "2026-10-10",
+    "month": "2026-10",
+    "file": "textos/2026-10-10.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "¿por qué entras a su bosque?",
+    "analysis": {
+      "poet": "Javier Heraud",
+      "poem_title": "Poesía Reunida",
+      "poem_snippet": "",
+      "book_title": "",
+      "gusto": 1
+    },
+    "keywords": [
+      {
+        "word": "atraccion por lo indeterminado",
+        "weight": 3
+      },
+      {
+        "word": "coercion taxonomica",
+        "weight": 3
+      },
+      {
+        "word": "desborde de la medida",
+        "weight": 3
+      },
+      {
+        "word": "error productivo",
+        "weight": 3
+      },
+      {
+        "word": "impulso clasificatorio",
+        "weight": 3
+      },
+      {
+        "word": "cuantificacion",
+        "weight": 2
+      },
+      {
+        "word": "deseo de orden",
+        "weight": 2
+      },
+      {
+        "word": "homologacion",
+        "weight": 2
+      },
+      {
+        "word": "indeterminacion",
+        "weight": 2
+      },
+      {
+        "word": "interpelacion",
+        "weight": 2
+      },
+      {
+        "word": "riesgo perceptivo",
+        "weight": 2
+      },
+      {
+        "word": "bosque",
+        "weight": 1
+      },
+      {
+        "word": "hongo",
+        "weight": 1
+      },
+      {
+        "word": "numeros",
+        "weight": 1
+      },
+      {
+        "word": "planta",
+        "weight": 1
+      },
+      {
+        "word": "veneno",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-09",
     "month": "2026-10",
     "file": "textos/2026-10-09.txt",
