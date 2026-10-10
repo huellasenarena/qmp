@@ -369,7 +369,9 @@ async function cargarElDia() {
   let datos;
   const parar = esperar(document.getElementById('ms-espera'));
   try {
-    const r = await fetch(API_BASE);
+    // La fecha del lector, como la portada: así las entradas programadas
+    // por adelantado no salen antes de su día.
+    const r = await fetch(API_BASE + '?fecha=' + getTodayISO());
     if (!r.ok) throw new Error('http ' + r.status);
     datos = await r.json();
   } catch (e) {
