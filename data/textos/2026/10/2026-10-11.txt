@@ -1,0 +1,44 @@
+FECHA: 2026-10-11
+MY_POEM_TITLE: 
+POETA: Javier Heraud
+POEM_TITLE: Poesía Reunida
+BOOK_TITLE:
+
+# POEMA
+
+tras una noche de sueño
+sigo cansado
+no me mantiene despierto
+hacer un escrito
+no me dans muchas ganas
+pensar en poemas
+que van a ser almacenados
+y nunca compartidos
+porque no saben a donde ir
+y yo no sé como escribir
+cómo escribir
+
+# POEMA_CITADO
+
+5
+
+Yo soy un río.
+Yo sol el río
+eterno de la
+dicha. Ya siento
+las brisas cercanas,
+ya siento el viento
+en mis mejillas,
+y mi viaje a través
+de montes, ríos,
+lagos y praderas
+se torna inacabable.
+
+# TEXTO
+
+No más *un* río cualquiera, el río de este poema es específicamente “*el* río de la dicha,” con un rostro y un viaje en la naturaleza, desde las montañas hacia los lagos. Yendo más allá del texto, es el primero poema donde puedo dar una interpretación que significa algo para mí: el autor sí mismo puede ser el río, y está lleno de felicidad al viajar en este mundo.
+
+No nos dice si tiene dicha *por* el viaje o si el viaje sigue de su dicha, y tal vez eso cabe bien con el resto del poema, donde el río existe y ya; su comportamiento –baja por las piedras, se desliza, se desborda...– se hace sin causa u objetivo... simplemente porque es lo que hace un río; como la dicha y el viaje están, sin necesitar una explicación.
+
+# GUSTO
+2

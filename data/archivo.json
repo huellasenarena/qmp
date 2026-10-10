@@ -1,5 +1,281 @@
 [
   {
+    "date": "2026-10-13",
+    "month": "2026-10",
+    "file": "textos/2026-10-13.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "soy yo que cierre sus ojos ante el río",
+    "analysis": {
+      "poet": "Javier Heraud",
+      "poem_title": "",
+      "poem_snippet": "7",
+      "book_title": "Poesía Reunida",
+      "gusto": 1
+    },
+    "keywords": [
+      {
+        "word": "ceguera voluntaria",
+        "weight": 3
+      },
+      {
+        "word": "finitud",
+        "weight": 3
+      },
+      {
+        "word": "flujo como permanencia",
+        "weight": 3
+      },
+      {
+        "word": "incomunicacion",
+        "weight": 3
+      },
+      {
+        "word": "ocultamiento",
+        "weight": 3
+      },
+      {
+        "word": "desvinculo",
+        "weight": 2
+      },
+      {
+        "word": "opacidad relacional",
+        "weight": 2
+      },
+      {
+        "word": "simulacro afectivo",
+        "weight": 2
+      },
+      {
+        "word": "sustraccion del otro",
+        "weight": 2
+      },
+      {
+        "word": "canto",
+        "weight": 1
+      },
+      {
+        "word": "compartir",
+        "weight": 1
+      },
+      {
+        "word": "esconderse",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "rio",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "month": "2026-10",
+    "file": "textos/2026-10-12.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "río, por favor, quédate en un lugar",
+    "analysis": {
+      "poet": "Javier Heraud",
+      "poem_title": "",
+      "poem_snippet": "6",
+      "book_title": "Poesía Reunida",
+      "gusto": 1
+    },
+    "keywords": [
+      {
+        "word": "desborde de fronteras",
+        "weight": 3
+      },
+      {
+        "word": "descentramiento humano",
+        "weight": 3
+      },
+      {
+        "word": "inaprehensibilidad",
+        "weight": 3
+      },
+      {
+        "word": "materia que siente",
+        "weight": 3
+      },
+      {
+        "word": "opacidad del sentir",
+        "weight": 3
+      },
+      {
+        "word": "porosidad identitaria",
+        "weight": 3
+      },
+      {
+        "word": "desorientacion perceptiva",
+        "weight": 2
+      },
+      {
+        "word": "dispersion",
+        "weight": 2
+      },
+      {
+        "word": "errancia",
+        "weight": 2
+      },
+      {
+        "word": "indeterminacion",
+        "weight": 2
+      },
+      {
+        "word": "permeacion",
+        "weight": 2
+      },
+      {
+        "word": "yuxtaposicion",
+        "weight": 2
+      },
+      {
+        "word": "agua",
+        "weight": 1
+      },
+      {
+        "word": "arbol",
+        "weight": 1
+      },
+      {
+        "word": "arena",
+        "weight": 1
+      },
+      {
+        "word": "cielos",
+        "weight": 1
+      },
+      {
+        "word": "hojas",
+        "weight": 1
+      },
+      {
+        "word": "piedra",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "riberas",
+        "weight": 1
+      },
+      {
+        "word": "rio",
+        "weight": 1
+      },
+      {
+        "word": "viento",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "month": "2026-10",
+    "file": "textos/2026-10-11.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "tras una noche de sueño",
+    "analysis": {
+      "poet": "Javier Heraud",
+      "poem_title": "Poesía Reunida",
+      "poem_snippet": "",
+      "book_title": "",
+      "gusto": 2
+    },
+    "keywords": [
+      {
+        "word": "agotamiento del deseo",
+        "weight": 3
+      },
+      {
+        "word": "circulacion frustrada",
+        "weight": 3
+      },
+      {
+        "word": "descanso fallido",
+        "weight": 3
+      },
+      {
+        "word": "escritura como no-despertar",
+        "weight": 3
+      },
+      {
+        "word": "impotencia expresiva",
+        "weight": 3
+      },
+      {
+        "word": "archivo intimo",
+        "weight": 2
+      },
+      {
+        "word": "estancamiento",
+        "weight": 2
+      },
+      {
+        "word": "falta de destinatario",
+        "weight": 2
+      },
+      {
+        "word": "incertidumbre formal",
+        "weight": 2
+      },
+      {
+        "word": "incomunicacion",
+        "weight": 2
+      },
+      {
+        "word": "repliegue",
+        "weight": 2
+      },
+      {
+        "word": "almacenados",
+        "weight": 1
+      },
+      {
+        "word": "cansado",
+        "weight": 1
+      },
+      {
+        "word": "compartidos",
+        "weight": 1
+      },
+      {
+        "word": "despierto",
+        "weight": 1
+      },
+      {
+        "word": "escribir",
+        "weight": 1
+      },
+      {
+        "word": "escrito",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "poemas",
+        "weight": 1
+      },
+      {
+        "word": "sueno",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-10",
     "month": "2026-10",
     "file": "textos/2026-10-10.txt",

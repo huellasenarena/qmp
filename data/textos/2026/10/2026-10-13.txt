@@ -1,0 +1,37 @@
+FECHA: 2026-10-13
+MY_POEM_TITLE: 
+POETA: Javier Heraud
+POEM_TITLE: 
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+soy yo que cierre sus ojos ante el río
+no más parecezco sensible contigo
+
+el río permanece
+y la vida desparece
+
+¿es en el río donde te escondes?
+mientras que no compartes
+
+# POEMA_CITADO
+
+7
+
+Yo soy el río que canta
+al mediodía y a los
+hombres,
+que canta ante sus
+tumbas,
+el que vuelve su rostro
+antes los cauces sagrados
+
+# TEXTO
+
+Seguimos con otro poema que me da poco... por un lado hay una forma de servicio –canta– pero luego dice que, a mi parecer, elige evitar lo sagrado... poco claro; muy dispar.
+
+Me acuerdo haber comprado este libro en Lima, tras pedir recomendaciones de libros de poesia. Esa fue la recomendación... poemas de mierda, a mi juicio.
+
+# GUSTO
+1

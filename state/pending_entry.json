@@ -1,79 +1,75 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-13",
   "month": "2026-10",
-  "file": "textos/2026-10-10.txt",
+  "file": "textos/2026-10-13.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "¿por qué entras a su bosque?",
+  "my_poem_snippet": "soy yo que cierre sus ojos ante el río",
   "analysis": {
     "poet": "Javier Heraud",
-    "poem_title": "Poesía Reunida",
-    "poem_snippet": "",
-    "book_title": "",
+    "poem_title": "",
+    "poem_snippet": "7",
+    "book_title": "Poesía Reunida",
     "gusto": 1
   },
   "keywords": [
     {
-      "word": "atraccion por lo indeterminado",
+      "word": "ceguera voluntaria",
       "weight": 3
     },
     {
-      "word": "coercion taxonomica",
+      "word": "finitud",
       "weight": 3
     },
     {
-      "word": "desborde de la medida",
+      "word": "flujo como permanencia",
       "weight": 3
     },
     {
-      "word": "error productivo",
+      "word": "incomunicacion",
       "weight": 3
     },
     {
-      "word": "impulso clasificatorio",
+      "word": "ocultamiento",
       "weight": 3
     },
     {
-      "word": "cuantificacion",
+      "word": "desvinculo",
       "weight": 2
     },
     {
-      "word": "deseo de orden",
+      "word": "opacidad relacional",
       "weight": 2
     },
     {
-      "word": "homologacion",
+      "word": "simulacro afectivo",
       "weight": 2
     },
     {
-      "word": "indeterminacion",
+      "word": "sustraccion del otro",
       "weight": 2
     },
     {
-      "word": "interpelacion",
-      "weight": 2
-    },
-    {
-      "word": "riesgo perceptivo",
-      "weight": 2
-    },
-    {
-      "word": "bosque",
+      "word": "canto",
       "weight": 1
     },
     {
-      "word": "hongo",
+      "word": "compartir",
       "weight": 1
     },
     {
-      "word": "numeros",
+      "word": "esconderse",
       "weight": 1
     },
     {
-      "word": "planta",
+      "word": "ojos",
       "weight": 1
     },
     {
-      "word": "veneno",
+      "word": "rio",
+      "weight": 1
+    },
+    {
+      "word": "vida",
       "weight": 1
     }
   ]

@@ -1,0 +1,52 @@
+FECHA: 2026-10-12
+MY_POEM_TITLE: 
+POETA: Javier Heraud
+POEM_TITLE: 
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+río, por favor, quédate en un lugar
+mi cerebro pequeño no te puede seguir
+río, por favor, para de andar
+yo solo veo agua; no te veo sentir
+
+	hojas del árbol, aquí y allá,
+	por las riberas y los cielos
+	arena y agua
+
+	te trae el viento; nada te evitó
+	¿qué es lo que ves
+	al cruzar el río?
+
+# POEMA_CITADO
+
+6
+
+Yo soy el río que viaja en las riberas,
+	árbol o piedra seca
+yo soy el río que viaja en las orillas,
+	puerta o corazón abierto
+yo soy el río que viaja por los pasta,
+	flor o rosa cortada
+yo soy el río que viaja por las calle,
+	tierra o cielo mojado
+yo soy el río que viaja por los montes,
+	roca o sal quemada
+yo soy el río que viaja por las casa,
+	mesa o silla colgada
+yo soy el río que viaja dentro de los hombres,
+	árbol fruta
+	rosa piedra
+	mesa corazón
+	corazón y puerta
+	retornados.
+
+# TEXTO
+
+Tras un poema que casi me haya gustado... retornamos a la mierda. Hay una yuxtaposición de cosas –árbol/piedra; puerta/corazón; tierra/cielo– mientras que el río siga, un río que está en todos los lugares. ¿Tal vez nos habla sobre sus viajes en la naturaleza? ¿Que la voz poética está por todas partes, hasta el alma del hombre?
+
+Pero este poema me da un sentido de insulto... ¿cómo así que escribió eso y quería compartirlo? Es un poema que le da mala fama a la poesía; una serie de palabras mezcladas sin orden; no lo quiero ver más.
+
+# GUSTO
+1
