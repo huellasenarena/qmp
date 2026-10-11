@@ -1,63 +1,91 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-15",
   "month": "2026-10",
-  "file": "textos/2026-10-13.txt",
+  "file": "textos/2026-10-15.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "soy yo que cierre sus ojos ante el río",
+  "my_poem_snippet": "soy los ojos",
   "analysis": {
     "poet": "Javier Heraud",
     "poem_title": "",
-    "poem_snippet": "7",
+    "poem_snippet": "9",
     "book_title": "Poesía Reunida",
-    "gusto": 1
+    "gusto": 2
   },
   "keywords": [
     {
-      "word": "ceguera voluntaria",
+      "word": "disolucion identitaria",
       "weight": 3
     },
     {
-      "word": "finitud",
+      "word": "distancia como vinculo",
       "weight": 3
     },
     {
-      "word": "flujo como permanencia",
+      "word": "escucha como retirada",
       "weight": 3
     },
     {
-      "word": "incomunicacion",
+      "word": "porosidad del limite",
       "weight": 3
     },
     {
-      "word": "ocultamiento",
+      "word": "silencio como accion",
       "weight": 3
     },
     {
-      "word": "desvinculo",
+      "word": "subjetividad relacional",
+      "weight": 3
+    },
+    {
+      "word": "acallamiento",
       "weight": 2
     },
     {
-      "word": "opacidad relacional",
+      "word": "alternancia enunciativa",
       "weight": 2
     },
     {
-      "word": "simulacro afectivo",
+      "word": "confluencia",
       "weight": 2
     },
     {
-      "word": "sustraccion del otro",
+      "word": "desposesion del entorno",
       "weight": 2
+    },
+    {
+      "word": "fragmentacion del yo",
+      "weight": 2
+    },
+    {
+      "word": "regulacion de la cercania",
+      "weight": 2
+    },
+    {
+      "word": "aguas",
+      "weight": 1
+    },
+    {
+      "word": "boca",
+      "weight": 1
     },
     {
       "word": "canto",
       "weight": 1
     },
     {
-      "word": "compartir",
+      "word": "cielo",
       "weight": 1
     },
     {
-      "word": "esconderse",
+      "word": "dia",
+      "weight": 1
+    },
+    {
+      "word": "gritos",
+      "weight": 1
+    },
+    {
+      "word": "oceano",
       "weight": 1
     },
     {
@@ -65,11 +93,19 @@
       "weight": 1
     },
     {
+      "word": "orejas",
+      "weight": 1
+    },
+    {
+      "word": "orillas",
+      "weight": 1
+    },
+    {
       "word": "rio",
       "weight": 1
     },
     {
-      "word": "vida",
+      "word": "voz",
       "weight": 1
     }
   ]

@@ -1,0 +1,80 @@
+FECHA: 2026-10-15
+MY_POEM_TITLE: 
+POETA: Javier Heraud
+POEM_TITLE: 
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+soy los ojos
+que te observan
+a veces de cerca
+a veces de lejos
+
+soy las orejas
+abiertas a tu voz
+que pueden alejarse de vos
+como orillas
+
+soy la boca
+me callo
+o te hablo
+y avanza el día
+
+# POEMA_CITADO
+
+9
+
+Llegará la hora
+en que tendré que
+desembocar en los
+océanos,
+que mezclar mis
+aguas limpias con sus
+aguas turbias,
+que tendré que
+silenciar mi canto
+luminoso,
+que tendré que acallar
+mis gritos furiosos al
+alba de todos los días,
+que clarear mis ojos
+con el mar.
+El día llegará,
+y en los mares inmensos
+no veré más mis campos
+fértiles,
+no veré mis árboles
+verdes
+mi viento cercano,
+mi cielo claro,
+mi lago oscuro,
+mi sol,
+mis nubes,
+ni veré nada,
+nada,
+únicamente el
+cielo azul
+inmenso
+y
+todo se disolverá en
+una llanura de agua,
+en donde un canto o un poema más
+solo serán ríos pequeños que bajan,
+ríos caudalosos que bajan a juntarse
+en mis nuevas aguas luminosas,
+en mis nuevas
+aguas apagadas.
+
+# TEXTO
+
+La hora vino para el río de unirse con el océano, perdiendo su lugar y identidad al ensuciarse en el agua vasto. No más podrá gritar o cantar; no más podrá ver su entorno familiar con sus campos y árboles; no más tendrá *algo*... solo un “cielo azul inmenso.” Sus palabras perdrán volumen en este lugar a la vez luminoso y apagado.
+
+Me da algo más este poema, en particular las últimas líneas. El océano es vasto y brilla, pero en el océano los ríos se convierten en... nada. Es su claridad avasalladora que silencia los ríos.
+
+Durante las primeras ocho partes vimos un mundo completo con animales, humanos, generosidad, furia y varios lugares... pero eso terminará *y el río lo sabe*: esta aventura a través su mundo, desde campos hasta ciudades, un día cerrará.
+
+Puede ser una metáfora, aunque no se dice de manera explícita; una metáfora para nuestros propios caminos en la vida que llegarán a su fin en un momento; una metáfora de la realización de que el mundo es más vasto que pensamos y que lo que hacemos pierde su sentido ante esta sencilla manta abrumadora.
+
+# GUSTO
+2
