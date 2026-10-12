@@ -1,5 +1,105 @@
 [
   {
+    "date": "2026-10-16",
+    "month": "2026-10",
+    "file": "textos/2026-10-16.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "flotando en las nubes",
+    "analysis": {
+      "poet": "Ana Varela Tafur",
+      "poem_title": "Aquí Me Guío con la Luna",
+      "poem_snippet": "",
+      "book_title": "Lo Que No Veo en Visiones",
+      "gusto": 1
+    },
+    "keywords": [
+      {
+        "word": "alienacion del lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "descorporeizacion",
+        "weight": 3
+      },
+      {
+        "word": "negacion como lucidez",
+        "weight": 3
+      },
+      {
+        "word": "obscenidad como acceso a lo real",
+        "weight": 3
+      },
+      {
+        "word": "testimonio como sustancia",
+        "weight": 3
+      },
+      {
+        "word": "vaciamiento estetico",
+        "weight": 3
+      },
+      {
+        "word": "ajenidad",
+        "weight": 2
+      },
+      {
+        "word": "confusion",
+        "weight": 2
+      },
+      {
+        "word": "desajuste",
+        "weight": 2
+      },
+      {
+        "word": "desencanto",
+        "weight": 2
+      },
+      {
+        "word": "distancia",
+        "weight": 2
+      },
+      {
+        "word": "incomunicacion",
+        "weight": 2
+      },
+      {
+        "word": "materialidad",
+        "weight": 2
+      },
+      {
+        "word": "rechazo",
+        "weight": 2
+      },
+      {
+        "word": "calles",
+        "weight": 1
+      },
+      {
+        "word": "memoria",
+        "weight": 1
+      },
+      {
+        "word": "nubes",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "poemas",
+        "weight": 1
+      },
+      {
+        "word": "porno",
+        "weight": 1
+      },
+      {
+        "word": "seres",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-15",
     "month": "2026-10",
     "file": "textos/2026-10-15.txt",

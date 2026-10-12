@@ -1,111 +1,99 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "month": "2026-10",
-  "file": "textos/2026-10-15.txt",
+  "file": "textos/2026-10-16.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "soy los ojos",
+  "my_poem_snippet": "flotando en las nubes",
   "analysis": {
-    "poet": "Javier Heraud",
-    "poem_title": "",
-    "poem_snippet": "9",
-    "book_title": "Poesía Reunida",
-    "gusto": 2
+    "poet": "Ana Varela Tafur",
+    "poem_title": "Aquí Me Guío con la Luna",
+    "poem_snippet": "",
+    "book_title": "Lo Que No Veo en Visiones",
+    "gusto": 1
   },
   "keywords": [
     {
-      "word": "disolucion identitaria",
+      "word": "alienacion del lenguaje",
       "weight": 3
     },
     {
-      "word": "distancia como vinculo",
+      "word": "descorporeizacion",
       "weight": 3
     },
     {
-      "word": "escucha como retirada",
+      "word": "negacion como lucidez",
       "weight": 3
     },
     {
-      "word": "porosidad del limite",
+      "word": "obscenidad como acceso a lo real",
       "weight": 3
     },
     {
-      "word": "silencio como accion",
+      "word": "testimonio como sustancia",
       "weight": 3
     },
     {
-      "word": "subjetividad relacional",
+      "word": "vaciamiento estetico",
       "weight": 3
     },
     {
-      "word": "acallamiento",
+      "word": "ajenidad",
       "weight": 2
     },
     {
-      "word": "alternancia enunciativa",
+      "word": "confusion",
       "weight": 2
     },
     {
-      "word": "confluencia",
+      "word": "desajuste",
       "weight": 2
     },
     {
-      "word": "desposesion del entorno",
+      "word": "desencanto",
       "weight": 2
     },
     {
-      "word": "fragmentacion del yo",
+      "word": "distancia",
       "weight": 2
     },
     {
-      "word": "regulacion de la cercania",
+      "word": "incomunicacion",
       "weight": 2
     },
     {
-      "word": "aguas",
+      "word": "materialidad",
+      "weight": 2
+    },
+    {
+      "word": "rechazo",
+      "weight": 2
+    },
+    {
+      "word": "calles",
       "weight": 1
     },
     {
-      "word": "boca",
+      "word": "memoria",
       "weight": 1
     },
     {
-      "word": "canto",
+      "word": "nubes",
       "weight": 1
     },
     {
-      "word": "cielo",
+      "word": "palabras",
       "weight": 1
     },
     {
-      "word": "dia",
+      "word": "poemas",
       "weight": 1
     },
     {
-      "word": "gritos",
+      "word": "porno",
       "weight": 1
     },
     {
-      "word": "oceano",
-      "weight": 1
-    },
-    {
-      "word": "ojos",
-      "weight": 1
-    },
-    {
-      "word": "orejas",
-      "weight": 1
-    },
-    {
-      "word": "orillas",
-      "weight": 1
-    },
-    {
-      "word": "rio",
-      "weight": 1
-    },
-    {
-      "word": "voz",
+      "word": "seres",
       "weight": 1
     }
   ]

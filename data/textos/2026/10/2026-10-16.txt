@@ -1,0 +1,74 @@
+FECHA: 2026-10-16
+MY_POEM_TITLE: 
+POETA: Ana Varela Tafur
+POEM_TITLE: Aquí Me Guío con la Luna
+BOOK_TITLE: Lo Que No Veo en Visiones
+
+# POEMA
+
+flotando en las nubes
+se encuentran tus poemas
+tan lejos de los seres
+y carentes de substancia
+
+calles y la desesperación
+palabras tuyas escritas
+me llenan de confusión
+
+ante esta mierda
+tengo que decir no
+voy a leer una memoria
+o buscar un porno
+
+# POEMA_CITADO
+
+¿Acaso mi alma pena mientras caigo desesperada
+	en el puerto de mis pasos?
+¿O es mi destino de destierro que me trae
+	despierta en este campo abandonado?
+Aquí me guío con la luna, domino mis pasos
+				inseguros
+y evoco mis sueños soñados en los
+				barrancos.
+Entonces, me pregunto, ¿qué hago envuelta
+						en esta nube espesa,
+en este puerto ajeno que me atrevo a nombrar
+						en silencio?
+Porque sé que es de noche y vuelvo a inventarme
+					en estas calles
+que son desvíos que alargan mis caminos.
+Sin embargo, nadie me responde,
+	las nieblas callas sin ser,
+sin ser el viento fresco que preciso sentir
+						del río,
+mientras la ciudad me apabulla y arranca mis días
+	sembrados en los frutales.
+Nadie me despierta en la profundidad de mis despojos
+ni me proteger como las sombras de los plantíos.
+	Entonces, sé que he regresado a mis pesadillas,
+que he tocado cielos desmayados y plazas hundidas
+				en pozos cotidianos.
+Al amanecer busco despertar lejos del
+						infierno.
+
+# TEXTO
+
+Estoy leyendo la memoria de un periodista que fue arrestado; un libro conmovedor. En la mañana leí sobre la utilización de la IA para desarrollar vacunas.
+
+Ya, leo este poema. Un narrador anónimo se enfrenta a... no tengo idea. Leí este poema y no tengo idea de lo que leí.
+
+Si puedo leer una memoria interesante o artículos de ciencia... ¿por qué leer esta mierda?
+
+Creo que este poema encaja, como Heraud, la mala reputación de la poesía... no hay nada dentro... este autor no podría escribir la letra de una canción de pop. Es mierda completa.
+
+Vamos por partes:
+1. el puerto de mis pasos... ¿o sea el camino hasta ahora?
+2. ¿por qué te atreves a nombra el puerto?
+3. hay un campo, nubes, un puerto, calles... ¿dónde estás? ¿Qué te motiva inventarte allí?
+4. ¿callan sin ser????
+...
+
+No vale la pena pensar más... esta poesía que estoy leyendo esos últimos días no puede competir con un buen artículo o buena novela... es mierda.
+
+# GUSTO
+1
