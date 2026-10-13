@@ -1,0 +1,61 @@
+FECHA: 2026-10-17
+MY_POEM_TITLE: 
+POETA: Fernando Pesántez-Avilés
+POEM_TITLE: Resurrección
+BOOK_TITLE: Poemar-IA
+
+# POEMA
+
+cae el sol
+y la canción termina
+pero no escuchaste
+de manera atenta
+
+esperas el principio
+pero piensas en los finales;
+escuchas impasiblemente
+las notas musicales
+
+en el silencio sin embargo
+con la luz apagada
+puedes imaginar los compases
+tu propia música
+
+# POEMA_CITADO
+
+Con onda pena te vi morir,
+presencié impasible como se consumía tu luz,
+no volqué ni una sola lágrima en mis mejillas,
+quise que pasara pronto,
+y así fue,
+sin darme cuenta, llegó la noche,
+mientras tú incandescente, rozaste por última
+vez el firmamento,
+entonces llegó el ocaso,
+y con él, retornó la esperanza de volver a verte;
+y, con onda pena volveré a perderte.
+
+# TEXTO
+
+Dado mi experiencia con la informática, busqué libros de poesía que hablan sobre la inteligencia artificial. En este poemario, con el título ingenioso “Poemar-IA,” hay una colección de poemas, seguidos de los comentarios del escritor, de una IA y de una tercera persona.
+
+Aquí tenemos el primer poema, *Resurrección.* Después de haber leído 10 poemas horribles (a mi juicio), este fue un cambio bienvenido... hay *algo* aquí que suscita mi curiosidad.
+
+La voz poética siente un dolor al ver a alguien (¿o algo?) muere, pero este dolor no se ve; queda “impasible” y no lloró. Al caer la noche, quiere verlo de nuevo, y el dolor de la pérdida vendrá.
+
+A mi parecer el poema se caracteriza por un duelo paralizante, una misericordia y un ciclo de pérdida.
+
+Mi interpretación, aunque reconozco que hay otras, es que el narrador, abrumado por la muerte inminente, experimenta una desconexión entre su cuerpo y psique. El hecho de que quiera un fin rápido me hace pensar que la muerte es dolorosa o que el narrador quiere poner fin a su propia pena o ambos.
+
+Aunque la nueva onda de pena todavía no está, la voz lírica sabe que está viniendo, creando un ciclo de duelo que da al poema un sentido fatalista.
+
+**Comentarios del autor:**
+
+*Este poema es la alegría del afán del hombre por el diario vivir, así de simple sería explicarlo, sin embargo, se utiliza a modo de metáfora la imagen de nostalgia por la puesta del sol, el ciclo de la rutina que al hombre no le permite gozar de su necesidad propia de vivir en felicidad y aprovecha cada instante de su presente. Además, es un reclamo por la culpa de lo pasado y la preocupación inútil del futuro.*
+
+Ok, mi lectura era tan diferente de la del autor. Yo interpreté literalmente la muerte y no me di cuenta del deseo “por el diario vivir;” me imagino que vemos eso en la línea “retornó la esperanza de volver a verte” que viene a la puesta del sol. No pude observar este sentido de estar estancado y no apreciar el momento actual por el pasado o futuro.
+
+Me gusta tener esos comentarios del autor que me dan una nueva perspectiva sobre el poema (y, diría, una “mejor” perspectiva... ¡hay muchas cosas que no consideré!).
+
+# GUSTO
+3

@@ -1,99 +1,91 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-19",
   "month": "2026-10",
-  "file": "textos/2026-10-16.txt",
+  "file": "textos/2026-10-19.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "flotando en las nubes",
+  "my_poem_snippet": "no hay besos o abrazos",
   "analysis": {
-    "poet": "Ana Varela Tafur",
-    "poem_title": "Aquí Me Guío con la Luna",
+    "poet": "Fernando Pesántez-Avilés",
+    "poem_title": "Un sí",
     "poem_snippet": "",
-    "book_title": "Lo Que No Veo en Visiones",
-    "gusto": 1
+    "book_title": "Poemar-IA",
+    "gusto": 2
   },
   "keywords": [
     {
-      "word": "alienacion del lenguaje",
+      "word": "emancipacion sin ruptura",
       "weight": 3
     },
     {
-      "word": "descorporeizacion",
+      "word": "estabilidad como amor",
       "weight": 3
     },
     {
-      "word": "negacion como lucidez",
+      "word": "hospitalidad incondicional",
       "weight": 3
     },
     {
-      "word": "obscenidad como acceso a lo real",
+      "word": "insuficiencia del lenguaje",
       "weight": 3
     },
     {
-      "word": "testimonio como sustancia",
+      "word": "materialidad del amparo",
       "weight": 3
     },
     {
-      "word": "vaciamiento estetico",
-      "weight": 3
-    },
-    {
-      "word": "ajenidad",
+      "word": "acogida del fracaso",
       "weight": 2
     },
     {
-      "word": "confusion",
+      "word": "contencion afectiva",
       "weight": 2
     },
     {
-      "word": "desajuste",
+      "word": "continuidad vincular",
       "weight": 2
     },
     {
-      "word": "desencanto",
+      "word": "retorno",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "umbral de autonomia",
       "weight": 2
     },
     {
-      "word": "incomunicacion",
-      "weight": 2
-    },
-    {
-      "word": "materialidad",
-      "weight": 2
-    },
-    {
-      "word": "rechazo",
-      "weight": 2
-    },
-    {
-      "word": "calles",
+      "word": "abrazos",
       "weight": 1
     },
     {
-      "word": "memoria",
+      "word": "besos",
       "weight": 1
     },
     {
-      "word": "nubes",
+      "word": "caminos",
       "weight": 1
     },
     {
-      "word": "palabras",
+      "word": "casitas",
       "weight": 1
     },
     {
-      "word": "poemas",
+      "word": "fracasos",
       "weight": 1
     },
     {
-      "word": "porno",
+      "word": "graduacion",
       "weight": 1
     },
     {
-      "word": "seres",
+      "word": "palabra",
+      "weight": 1
+    },
+    {
+      "word": "refugio",
+      "weight": 1
+    },
+    {
+      "word": "sonrisas",
       "weight": 1
     }
   ]

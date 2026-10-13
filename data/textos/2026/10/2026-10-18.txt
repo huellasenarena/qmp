@@ -1,0 +1,65 @@
+FECHA: 2026-10-18
+MY_POEM_TITLE: 
+POETA: Fernando Pesántez-Avilés
+POEM_TITLE: A tí
+BOOK_TITLE: Poemar-IA
+
+# POEMA
+
+miro la ventana
+puedo abrirlo
+decir una palabra
+pero no, decido
+
+miro la ventana
+desde mi sofá
+la luz brilla
+cierro la sombra
+
+toco la ventana
+ya a las cincuenta
+es una noche oscura
+antes, haber debería
+
+pinto la ventana
+una gris sencilla
+si hablara la vez primera
+sería abierta
+
+# POEMA_CITADO
+
+Desperté para buscarte,
+no recuerdo sino aquella ventana,
+por la que antes de dormir goce de la lluvia caer,
+era simplemente un niño, que miraba las tardes con
+dulce alegría,
+sin embargo, al despertar y no enconarte,
+lloré aquella vez amargamente.
+Dónde estás, dónde has ido,
+pensé y gemí por ello, más de una vez,
+lloré y gemí tantas veces,
+que hasta ahora sigo mirando por la ventana.
+Han pasado cincuenta años,
+Y aunque sé dónde ahora estás,
+No dejaré de llorarte y de gemir por aquella tarde.
+
+# TEXTO
+
+Teniendo en cuenta que el poema precedente del mismo autor habló sobre el arrepentimiento y la posibilidad esperada, tengo la impresión que aquí haya algo semejente: había una “ventana” a través de la cual ve algo... ¿una oportunidad? ¿una posibilidad?...  pero no lo encontró.
+
+El tiempo pasa y pasa –cincuenta años– y todavía espera (“hasta ahora sigo mirando por la ventana”); la alegría que tenía de niño ya es amarga.
+
+Lo interesante es que *sabe* dónde está... puede que sea por falta de coraje que no vaya a encontrarlo; o porque ya no es posible.
+
+Me gusta este poema, pero es un poco más cursi que el precedente: hay palabras clichés –llorar, en particular– y prefiero la metáfora del otro, aquella de la puesta de sol.
+
+**Comentarios del autor:**
+*El poema se escribe por la necesidad de reconocimiento de las angustias y frustraciones que las personas arrastramos a lo largo de nuestra vida y que han sido aquellas experiencias las que marcan el comportamiento como adultos.*
+
+*Es reconocer el tiempo exacto de nuestros mayores temores que nos paralizan y no nos dejan salir de estados emocionales de perturbación. Se busca en el poema, encontrar el tiempo exacto para sufrir y que siendo necesario llorarlo y amargarnos, no debe luego ser reclamado ya que aquello significa volver al sometimiento del penar.*
+---
+
+¿Creo que el poema tiene, como el precedente, un sentido fatalista; no porque experiencias de nuestra juventud sigan con nosotros, sino que estas nos afectan tanto. Me puedo identificar con eso, pero tiene un determinismo trágico y un círculo vicioso de esperanza y decepción.
+
+# GUSTO
+2

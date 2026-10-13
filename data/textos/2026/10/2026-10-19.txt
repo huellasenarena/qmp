@@ -1,0 +1,58 @@
+FECHA: 2026-10-19
+MY_POEM_TITLE: 
+POETA: Fernando Pesántez-Avilés
+POEM_TITLE: Un sí
+BOOK_TITLE: Poemar-IA
+
+# POEMA
+
+no hay besos o abrazos
+enhorabuena o sonrisas
+solo unas casitas
+donde son bienvenidos
+
+no importa adónde vayas
+o tus fracasos varios
+aquí siempre volverás
+entre sus caminos
+
+una palabra no te puede refugiar
+cuando te veo graduar
+Mil formas hay de amar
+la mía es estabilizar
+
+# POEMA_CITADO
+
+Mil formas hay de quererte,
+son más de mil las cosas que aún podemos compartir,
+pero no estás como antes,
+tus pasos se han vuelto sobre los míos,
+mis pesares sucumben ante la posibilidad de mirarte,
+frente a un altar vestida en lino.
+No eres ya la niña aquella que crie a la sombra mía,
+te has vuelto posesión de un aquel a quien diste un sí,
+será él quien ahora descubra nuevas formas para abrazarte,
+Y está muy bien, porque las mías fueron las de un padre.
+Mil formas hay de quererte,
+mil juegos dejaste guardados en un cajón de colores,
+te vi crecer y tantas veces besé tus mejillas,
+hoy debes ser tú quien descubra nuevas formas de amor,
+y debe ser en aquel a quien diste un sí,
+A cada quien se puede amar de mil formas,
+a ti te amaré bajo las mías,
+tan solo con el cariño de un padre,
+que siempre soñó verte crecer, jugar, reír y llorar,
+esas fueron mis mil formas de amarte.
+
+# TEXTO
+
+Continuemos con otros poemas íntimos de Pesántez-Avilés, esa vez con un poema dónde un padre se da cuenta de la independencia de su hija: ya no está en su sombra; más bien, la hija está cambiando de formas masculinas en su vida, desde su padre hasta un novio.
+
+En lugar de mirar esa transición con arrepentimiento o duelo, el padre reacciona con felicidad, reconociendo que “Mil formas hay de quererte” y el amor que puede ofrecer no es mejor que lo que pueda ofrecer un novio. También reconoce que ya está la hora *para ella* de dar su propio amor.
+
+Me parece una perspectiva sana sobre la crianza de un hijo: no hay sentimientos de posesión o control; solo hubo un amor que había dado hasta que el niño pudo dar y recibir otro.
+
+Pienso en los estilos de apego. Tal vez este poema sirve para mostrar un estilo de apego sano: el padre hizo lo que pudo para que el hijo se sintiera amado y listo para descubrir las otras formas de amar.
+
+# GUSTO
+2
