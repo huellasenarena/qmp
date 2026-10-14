@@ -1,0 +1,49 @@
+FECHA: 2026-10-14
+MY_POEM_TITLE:
+POETA: Javier Heraud
+POEM_TITLE:
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+¿hay una llave?
+¿o está abierta la caja?
+silencio cuando se sacude
+tal vez temas que sea vacía
+
+no existe
+me apresuro a declarar
+la llave no es real
+pero soy yo que
+es superficial
+
+# POEMA_CITADO
+8
+
+Yo soy el río anochecido.
+Yo bajo por las hondas
+quebradas,
+por los ignotos pueblos
+olvidados,
+por las ciudades
+atestadas de público
+en las vitrinas
+Yo soy el río,
+ya voy por las praderas,
+hay árboles a mi alrededor
+cubiertos de palomas,
+los árboles cantan con
+el río,
+los árboles cantan
+con mi corazón de pájaro,
+los ríos cantan con mis
+brazos.
+
+# TEXTO
+Iba a escribir sobre este poema, pero me acordé de que tenía que limpiar mi ropa... creo que eso fue una manera de inconscientemente evitar este poema... Y ya tras leerlo, creo que mi subconsciente tenía razón: como los otros poemas en esta colección, no me ofrece nada; por ende, no quería escribir sobre él.
+
+Como en otros poemas donde el río va por todas partes –calles, montes, casas, campos...–, desde pueblos hasta ciudades... y no me ofrece mucho.
+
+Me pregunto si falte algo sobre la historia personal del autor que explique su interés por la naturaleza; ¿hay una llave allí? Si es así, esos poemas no me interesan... es un señal de que lo que dice no se mantienen de pie de sí mismos; es un señal de que no pudo transmitir lo que quería decir de manera intemporal; es un señal de que no respeta al lector, porque tienen que hacer más trabajo más allá del texto.
+
+# GUSTO
+1

@@ -1,87 +1,83 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-14",
   "month": "2026-10",
-  "file": "textos/2026-10-20.txt",
+  "file": "textos/2026-10-14.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "ayer fue ayer",
+  "my_poem_snippet": "¿hay una llave?",
   "analysis": {
-    "poet": "Fernando Pesántez-Avilés",
-    "poem_title": "De tierra",
-    "poem_snippet": "",
-    "book_title": "Poemar-IA",
-    "gusto": 2
+    "poet": "Javier Heraud",
+    "poem_title": "",
+    "poem_snippet": "8",
+    "book_title": "Poesía Reunida",
+    "gusto": 1
   },
   "keywords": [
     {
-      "word": "agotamiento del deseo",
+      "word": "acceso no instrumental",
       "weight": 3
     },
     {
-      "word": "caducidad de lo invulnerable",
+      "word": "falta de interioridad",
       "weight": 3
     },
     {
-      "word": "desidentificacion",
+      "word": "indeterminacion ontologica",
       "weight": 3
     },
     {
-      "word": "temporalidad corrosiva",
+      "word": "negacion defensiva",
       "weight": 3
     },
     {
-      "word": "virilidad precaria",
+      "word": "superficialidad del yo",
       "weight": 3
     },
     {
-      "word": "desgaste",
+      "word": "vacio como revelacion",
+      "weight": 3
+    },
+    {
+      "word": "apertura previa",
       "weight": 2
     },
     {
-      "word": "discontinuidad",
+      "word": "autoimplicacion",
       "weight": 2
     },
     {
-      "word": "exceso",
+      "word": "desplazamiento del juicio",
       "weight": 2
     },
     {
-      "word": "extranamiento",
+      "word": "prueba por ausencia",
       "weight": 2
     },
     {
-      "word": "incertidumbre",
+      "word": "urgencia enunciativa",
       "weight": 2
     },
     {
-      "word": "repeticion",
-      "weight": 2
-    },
-    {
-      "word": "amor",
+      "word": "caja",
       "weight": 1
     },
     {
-      "word": "ayer",
+      "word": "declaracion",
       "weight": 1
     },
     {
-      "word": "besito",
+      "word": "llave",
       "weight": 1
     },
     {
-      "word": "despertar",
+      "word": "sacudida",
       "weight": 1
     },
     {
-      "word": "disfuncion erectil",
+      "word": "silencio",
       "weight": 1
     },
     {
-      "word": "manana",
-      "weight": 1
-    },
-    {
-      "word": "te amo",
+      "word": "yo",
       "weight": 1
     }
   ]
