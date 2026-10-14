@@ -1,91 +1,87 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "month": "2026-10",
-  "file": "textos/2026-10-19.txt",
+  "file": "textos/2026-10-20.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "no hay besos o abrazos",
+  "my_poem_snippet": "ayer fue ayer",
   "analysis": {
     "poet": "Fernando Pesántez-Avilés",
-    "poem_title": "Un sí",
+    "poem_title": "De tierra",
     "poem_snippet": "",
     "book_title": "Poemar-IA",
     "gusto": 2
   },
   "keywords": [
     {
-      "word": "emancipacion sin ruptura",
+      "word": "agotamiento del deseo",
       "weight": 3
     },
     {
-      "word": "estabilidad como amor",
+      "word": "caducidad de lo invulnerable",
       "weight": 3
     },
     {
-      "word": "hospitalidad incondicional",
+      "word": "desidentificacion",
       "weight": 3
     },
     {
-      "word": "insuficiencia del lenguaje",
+      "word": "temporalidad corrosiva",
       "weight": 3
     },
     {
-      "word": "materialidad del amparo",
+      "word": "virilidad precaria",
       "weight": 3
     },
     {
-      "word": "acogida del fracaso",
+      "word": "desgaste",
       "weight": 2
     },
     {
-      "word": "contencion afectiva",
+      "word": "discontinuidad",
       "weight": 2
     },
     {
-      "word": "continuidad vincular",
+      "word": "exceso",
       "weight": 2
     },
     {
-      "word": "retorno",
+      "word": "extranamiento",
       "weight": 2
     },
     {
-      "word": "umbral de autonomia",
+      "word": "incertidumbre",
       "weight": 2
     },
     {
-      "word": "abrazos",
+      "word": "repeticion",
+      "weight": 2
+    },
+    {
+      "word": "amor",
       "weight": 1
     },
     {
-      "word": "besos",
+      "word": "ayer",
       "weight": 1
     },
     {
-      "word": "caminos",
+      "word": "besito",
       "weight": 1
     },
     {
-      "word": "casitas",
+      "word": "despertar",
       "weight": 1
     },
     {
-      "word": "fracasos",
+      "word": "disfuncion erectil",
       "weight": 1
     },
     {
-      "word": "graduacion",
+      "word": "manana",
       "weight": 1
     },
     {
-      "word": "palabra",
-      "weight": 1
-    },
-    {
-      "word": "refugio",
-      "weight": 1
-    },
-    {
-      "word": "sonrisas",
+      "word": "te amo",
       "weight": 1
     }
   ]

@@ -1,0 +1,46 @@
+FECHA: 2026-10-20
+MY_POEM_TITLE: 
+POETA: Fernando Pesántez-Avilés
+POEM_TITLE: De tierra
+BOOK_TITLE: Poemar-IA
+
+# POEMA
+
+ayer fue ayer
+te dije te amo
+te di un besito
+nada lo pudo romper
+pero ayer fue ayer
+
+en la mañana me desperté
+ayer las veces de amor, mil
+ya tengo disfunción eréctil
+no sé a quien me pareceré
+cuando en la mañana me despertaré
+
+# POEMA_CITADO
+
+Con mis manos rocé el suave y húmedo sentir de tu
+esencia,
+me dejaste extenuado en aquel día,
+te miré una y otra vez,
+y me creí tu señor mientras te doraste al sol.
+Sigues siendo única, y,
+tu rostro bruñido, me dice que no estás sola,
+me dejas ver tu cuerpo, cada vez que te miro.
+Tienes ya otro olor,
+a tierra transmutada,
+por el abrigo del fuego de la hoguera.
+Mis palmas arcilladas me recuerden,
+nuestra aventura,
+y tú para mí,
+simplemente eres perfecta.
+
+# TEXTO
+
+La creación tiene una calidad humana en *De tierra*, un poema en el que un escultor comparte un momento apasionado con su obra, desde el principio “húmedo” hasta cocinarla en la hoguera.
+
+Aunque sea creación suya, la escultura parece tener una independencia de su creador: tiene “esencia,” dio permiso, el narrador se creyó su “señor,” habla y cambia. Para mí este poema se refiere al aspecto espiritual de la creación artística porque presenta este proceso como una aventura plena con otro ser; la experiencia le conmueve al narrador y queda con él como memoria profunda.
+
+# GUSTO
+2

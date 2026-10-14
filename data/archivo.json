@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-10-20",
+    "month": "2026-10",
+    "file": "textos/2026-10-20.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "ayer fue ayer",
+    "analysis": {
+      "poet": "Fernando Pesántez-Avilés",
+      "poem_title": "De tierra",
+      "poem_snippet": "",
+      "book_title": "Poemar-IA",
+      "gusto": 2
+    },
+    "keywords": [
+      {
+        "word": "agotamiento del deseo",
+        "weight": 3
+      },
+      {
+        "word": "caducidad de lo invulnerable",
+        "weight": 3
+      },
+      {
+        "word": "desidentificacion",
+        "weight": 3
+      },
+      {
+        "word": "temporalidad corrosiva",
+        "weight": 3
+      },
+      {
+        "word": "virilidad precaria",
+        "weight": 3
+      },
+      {
+        "word": "desgaste",
+        "weight": 2
+      },
+      {
+        "word": "discontinuidad",
+        "weight": 2
+      },
+      {
+        "word": "exceso",
+        "weight": 2
+      },
+      {
+        "word": "extranamiento",
+        "weight": 2
+      },
+      {
+        "word": "incertidumbre",
+        "weight": 2
+      },
+      {
+        "word": "repeticion",
+        "weight": 2
+      },
+      {
+        "word": "amor",
+        "weight": 1
+      },
+      {
+        "word": "ayer",
+        "weight": 1
+      },
+      {
+        "word": "besito",
+        "weight": 1
+      },
+      {
+        "word": "despertar",
+        "weight": 1
+      },
+      {
+        "word": "disfuncion erectil",
+        "weight": 1
+      },
+      {
+        "word": "manana",
+        "weight": 1
+      },
+      {
+        "word": "te amo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-19",
     "month": "2026-10",
     "file": "textos/2026-10-19.txt",
