@@ -42,20 +42,20 @@ function doPost(e) {
     for (const poema of parsed.poemas) {
       const nextDate = computeNextDateFromBodyFast_(bodyPoemas);
       assertNotDuplicateFast_(bodyPoemas, nextDate, poema.descriptor);
-      if (poema.notes.length > 0)
+      if (hasContent_(poema.notes))
         assertNotDuplicateFast_(bodyNotasPoemas, nextDate, poema.descriptor);
       atajoAppendPoema_(bodyPoemas, nextDate, poema.descriptor, poema.final);
-      if (poema.notes.length > 0)
+      if (hasContent_(poema.notes))
         atajoAppendNotes_(bodyNotasPoemas, nextDate, poema.descriptor, poema.notes);
     }
 
     for (const anal of parsed.analisis) {
       const nextDate = computeNextDateFromBodyFast_(bodyAnalisis);
       assertNotDuplicateFast_(bodyAnalisis, nextDate, anal.descriptor);
-      if (anal.notes.length > 0)
+      if (hasContent_(anal.notes))
         assertNotDuplicateFast_(bodyNotasAnal, nextDate, anal.descriptor);
       atajoAppendAnalisis_(bodyAnalisis, nextDate, anal.descriptor, anal.pre, anal.final);
-      if (anal.notes.length > 0)
+      if (hasContent_(anal.notes))
         atajoAppendNotes_(bodyNotasAnal, nextDate, anal.descriptor, anal.notes);
     }
 

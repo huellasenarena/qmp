@@ -548,8 +548,9 @@ def find_script(*relpaths: str) -> Path:
 def run_validate_and_normalize_txt(date_str: str, txt_path: Path, pdf_mode: bool = False) -> None:
     """
     Valida y normaliza metadata/headers del .txt (idempotente).
-    En modo PDF, permitimos que validate_entry.py falle SOLO por secciones vacías
-    (# POEMA_CITADO y/o # TEXTO), porque esa es precisamente la señal del PDF.
+    En modo PDF, permitimos que validate_entry.py falle SOLO por # POEMA_CITADO
+    vacía, porque esa es precisamente la señal del PDF. validate_entry.py la
+    comprueba en último lugar, así que todo lo demás ya pasó.
     """
     script = find_script("core/validate_entry.py", "scripts/validate_entry.py", "validate_entry.py")
     cmd = [sys.executable, str(script), "--mode", "normalize", date_str, str(txt_path)]
@@ -560,14 +561,8 @@ def run_validate_and_normalize_txt(date_str: str, txt_path: Path, pdf_mode: bool
 
         if pdf_mode:
             # Mensajes típicos del validador
-            allow = (
-                "Sección vacía: # POEMA_CITADO" in msg
-                or "Sección vacía: # TEXTO" in msg
-                or "# POEMA_CITADO" in msg and "vacía" in msg
-                or "# TEXTO" in msg and "vacía" in msg
-            )
-            if allow:
-                println("[qcrear] ⚠️ validate_entry.py marcó secciones vacías, pero estás en modo PDF → OK")
+            if msg == "Sección vacía: # POEMA_CITADO":
+                println("[qcrear] ⚠️ validate_entry.py marcó # POEMA_CITADO vacía, pero estás en modo PDF → OK")
                 return
 
         raise RuntimeError(msg or "validate_entry.py falló")
@@ -773,15 +768,15 @@ def publish_one_date(target: str, defer_commit: bool = False) -> Optional[Publis
         if defer_commit:
             return None
         raise RuntimeError("ERROR: # POEMA está vacío (Google Docs). Corrige en el doc de POEMAS.")
-    if not pdf_mode:
-        if normalize_text_for_hash(poema_citado) == "":
-            raise RuntimeError(
-                "ERROR: # POEMA_CITADO está vacío (Google Docs). Corrige en el doc de ESCRITOS."
-            )
-        if normalize_text_for_hash(texto) == "":
-            raise RuntimeError(
-                "ERROR: # TEXTO está vacío (Google Docs). Corrige en el doc de ESCRITOS (Versión final)."
-            )
+    if not pdf_mode and normalize_text_for_hash(poema_citado) == "":
+        raise RuntimeError(
+            "ERROR: # POEMA_CITADO está vacío (Google Docs). Corrige en el doc de ESCRITOS."
+        )
+    # También en modo PDF: el PDF sustituye al poema citado, no al análisis.
+    if normalize_text_for_hash(texto) == "":
+        raise RuntimeError(
+            "ERROR: # TEXTO está vacío (Google Docs). Corrige en el doc de ESCRITOS (Versión final)."
+        )
 
     fp = docs_fingerprint(poem_text, poema_citado, texto)
 

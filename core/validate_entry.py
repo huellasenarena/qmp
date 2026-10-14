@@ -190,10 +190,13 @@ def parse_and_validate(date_str: str, txt_path: Path) -> Parsed:
     if not (positions["POEMA"] < positions["POEMA_CITADO"] < positions["TEXTO"]):
         raise SystemExit("Orden inválido: debe ser # POEMA, luego # POEMA_CITADO, luego # TEXTO")
 
-    # content non-empty (strip only whitespace/newlines)
+    # content non-empty (strip only whitespace/newlines). POEMA_CITADO se
+    # comprueba al final: en modo PDF qcrear.py perdona ese error, y si saliera
+    # primero ocultaría los que vienen detrás (TEXTO vacío, GUSTO inválido).
     for name in SECTION_ORDER:
-        content = sections.get(name, "")
-        if not content.strip():
+        if name == "POEMA_CITADO":
+            continue
+        if not sections.get(name, "").strip():
             raise SystemExit(f"Sección vacía: # {name}")
 
     # La nota: si hay poema citado en texto tiene que llevar número; si la
@@ -211,6 +214,9 @@ def parse_and_validate(date_str: str, txt_path: Path) -> Parsed:
                 "Sección vacía: # GUSTO. Esta entrada lleva poema citado en "
                 "texto, así que necesita nota (1, 2 o 3)."
             )
+
+    if not sections.get("POEMA_CITADO", "").strip():
+        raise SystemExit("Sección vacía: # POEMA_CITADO")
 
     return Parsed(meta_raw=meta, sections=sections)
 

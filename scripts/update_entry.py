@@ -268,6 +268,9 @@ def main() -> int:
     if not normalize_text_for_hash(poem_text):
         print(f"[update] ERROR: # POEMA está vacío en Google Docs para {date}", file=sys.stderr)
         return 1
+    if not normalize_text_for_hash(texto):
+        print(f"[update] ERROR: # TEXTO está vacío en Google Docs para {date} (Versión final)", file=sys.stderr)
+        return 1
 
     n_poem   = len(normalize_text_for_hash(poem_text).splitlines())
     n_citado = len(normalize_text_for_hash(poema_citado).splitlines())

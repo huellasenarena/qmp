@@ -80,20 +80,20 @@ function qmpPublishPending() {
   for (const poema of parsed.poemas) {
     const nextDate = computeNextDateFromBodyFast_(bodyPoemas);
     assertNotDuplicateFast_(bodyPoemas, nextDate, poema.descriptor);
-    if (poema.notes.length > 0)
+    if (hasContent_(poema.notes))
       assertNotDuplicateFast_(bodyNotasPoemas, nextDate, poema.descriptor);
     appendPoemaFinal_(bodyPoemas, nextDate, poema.descriptor, poema.final);
-    if (poema.notes.length > 0)
+    if (hasContent_(poema.notes))
       appendNotes_(bodyNotasPoemas, nextDate, poema.descriptor, poema.notes);
   }
 
   for (const anal of parsed.analisis) {
     const nextDate = computeNextDateFromBodyFast_(bodyAnalisis);
     assertNotDuplicateFast_(bodyAnalisis, nextDate, anal.descriptor);
-    if (anal.notes.length > 0)
+    if (hasContent_(anal.notes))
       assertNotDuplicateFast_(bodyNotasAnal, nextDate, anal.descriptor);
     appendAnalisisFinal_(bodyAnalisis, nextDate, anal.descriptor, anal.pre, anal.final);
-    if (anal.notes.length > 0)
+    if (hasContent_(anal.notes))
       appendNotes_(bodyNotasAnal, nextDate, anal.descriptor, anal.notes);
   }
 
@@ -208,11 +208,21 @@ function validateParsed_(parsed) {
   if (parsed.poemas.length === 0 && parsed.analisis.length === 0)
     throw new Error("QMP: No encontré 'Poema' ni 'Análisis' en Entrada Pendiente.");
   for (const p of parsed.poemas)
-    if (p.final.length === 0)
-      throw new Error(`QMP: Poema "${p.descriptor}" no tiene ## Versión final.`);
+    if (!hasContent_(p.final))
+      throw new Error(`QMP: Poema "${p.descriptor}" no tiene ## Versión final (o está vacía).`);
   for (const a of parsed.analisis)
-    if (a.final.length === 0)
-      throw new Error(`QMP: Análisis "${a.descriptor}" no tiene ## Versión final.`);
+    if (!hasContent_(a.final))
+      throw new Error(`QMP: Análisis "${a.descriptor}" no tiene ## Versión final (o está vacía).`);
+}
+
+// Líneas en blanco no cuentan: un "## Versión final" seguido de nada es un error.
+// Acepta strings (atajo.js) o items { _text, text | el } (Entrada Pendiente);
+// un elemento no-texto (imagen, tabla) sí cuenta como contenido.
+function hasContent_(lines) {
+  return lines.some(l =>
+    typeof l === "string" ? stripInvisibles_(l).trim() !== ""
+    : l._text ? stripInvisibles_(l.text).trim() !== ""
+    : true);
 }
 
 /* -----------------------------
