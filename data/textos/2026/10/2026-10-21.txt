@@ -1,0 +1,60 @@
+FECHA: 2026-10-21
+MY_POEM_TITLE: 
+POETA: Fernando Pesántez-Avilés
+POEM_TITLE: Soñar en pena
+BOOK_TITLE: Poemar-IA
+
+# POEMA
+
+leer la información nutricional
+de un paquete de galletas
+me resulta más interesante
+que pensar en poemas
+
+sí estoy cansado
+sí me duele la cabeza
+pero este no me para
+cuando me masturbo
+
+se hicieron en alemania
+pone el paquete
+cada galleta la misma
+me excita la idea
+
+un bueno descubrimiento
+tal vez con una patente
+y no pensar en nada más
+salvo en los polvos
+
+# POEMA_CITADO
+
+Cerró los ojos para tomar el aire que aún podía,
+su diestra se situó en su frente,
+sus dedos caminaban en ibas y vueltas por el frío frontis,
+sus penas no eran tan grandes.
+Al abrir sus ojos devolvió un suspiro,
+esta voz comprendió,
+que sus penas eran solo eso,
+simples penas.
+Sonrió entonces,
+y conmovió a todos.
+Ahí estaba ella,
+solamente con sus simples penas.
+Despertó luego, y no había nadie,
+tampoco estaba sus simples penas.
+Para qué dormir y para qué soñar,
+si al despertar, hasta tus penas,
+se van
+
+# TEXTO
+
+A mi juicio se trata de un bebé (“conmovió a todos”) con una pesadilla que despierte y se da cuenta de que sus penas hacían parte de sus sueños.
+
+Las últimas líneas (“Para qué dormir...”) me parecen como un intento de ser profundo pero son, más que nada, unas frases ridículas: i. los sueños no son elecciones con una razón; ii. ¿Quién dice que “se van”? Yo diría que podemos recordar nuestros sueños y son un tema de introspección; iii. pero si las penas se van, ¿por qué es malo?
+
+Además, me resulta raro decir “conmovió a todos” y luego “no había nadie”. Me parece que hay algo bajo la superficie que no noto, pero no me da gran cosa este poema.
+
+Creo que voy a leer un poema más y ya para este libro.
+
+# GUSTO
+1

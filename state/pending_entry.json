@@ -1,83 +1,107 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-21",
   "month": "2026-10",
-  "file": "textos/2026-10-14.txt",
+  "file": "textos/2026-10-21.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "¿hay una llave?",
+  "my_poem_snippet": "leer la información nutricional",
   "analysis": {
-    "poet": "Javier Heraud",
-    "poem_title": "",
-    "poem_snippet": "8",
-    "book_title": "Poesía Reunida",
+    "poet": "Fernando Pesántez-Avilés",
+    "poem_title": "Soñar en pena",
+    "poem_snippet": "",
+    "book_title": "Poemar-IA",
     "gusto": 1
   },
   "keywords": [
     {
-      "word": "acceso no instrumental",
+      "word": "desublimacion poetica",
       "weight": 3
     },
     {
-      "word": "falta de interioridad",
+      "word": "erotizacion de la norma",
       "weight": 3
     },
     {
-      "word": "indeterminacion ontologica",
+      "word": "fetichismo de la mercancia",
       "weight": 3
     },
     {
-      "word": "negacion defensiva",
+      "word": "insistencia pulsional",
       "weight": 3
     },
     {
-      "word": "superficialidad del yo",
+      "word": "la repeticion como excitacion",
       "weight": 3
     },
     {
-      "word": "vacio como revelacion",
+      "word": "suspension del pensamiento",
       "weight": 3
     },
     {
-      "word": "apertura previa",
+      "word": "agotamiento corporal",
       "weight": 2
     },
     {
-      "word": "autoimplicacion",
+      "word": "compulsion",
       "weight": 2
     },
     {
-      "word": "desplazamiento del juicio",
+      "word": "consumo",
       "weight": 2
     },
     {
-      "word": "prueba por ausencia",
+      "word": "desplazamiento del interes",
       "weight": 2
     },
     {
-      "word": "urgencia enunciativa",
+      "word": "estandarizacion",
       "weight": 2
     },
     {
-      "word": "caja",
+      "word": "origen industrial",
+      "weight": 2
+    },
+    {
+      "word": "patentabilidad",
+      "weight": 2
+    },
+    {
+      "word": "serialidad",
+      "weight": 2
+    },
+    {
+      "word": "alemania",
       "weight": 1
     },
     {
-      "word": "declaracion",
+      "word": "descubrimiento",
       "weight": 1
     },
     {
-      "word": "llave",
+      "word": "dolor de cabeza",
       "weight": 1
     },
     {
-      "word": "sacudida",
+      "word": "galletas",
       "weight": 1
     },
     {
-      "word": "silencio",
+      "word": "informacion nutricional",
       "weight": 1
     },
     {
-      "word": "yo",
+      "word": "masturbacion",
+      "weight": 1
+    },
+    {
+      "word": "paquete",
+      "weight": 1
+    },
+    {
+      "word": "poemas",
+      "weight": 1
+    },
+    {
+      "word": "polvos",
       "weight": 1
     }
   ]
