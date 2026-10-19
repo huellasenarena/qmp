@@ -1,107 +1,79 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "month": "2026-10",
-  "file": "textos/2026-10-21.txt",
+  "file": "textos/2026-10-22.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "leer la información nutricional",
+  "my_poem_snippet": "dime tu batalla",
   "analysis": {
-    "poet": "Fernando Pesántez-Avilés",
-    "poem_title": "Soñar en pena",
+    "poet": "José emilio pacheco",
+    "poem_title": "Alta traición",
     "poem_snippet": "",
-    "book_title": "Poemar-IA",
-    "gusto": 1
+    "book_title": "",
+    "gusto": 2
   },
   "keywords": [
     {
-      "word": "desublimacion poetica",
+      "word": "aceptacion de la violencia interna",
       "weight": 3
     },
     {
-      "word": "erotizacion de la norma",
+      "word": "comunidad de la derrota",
       "weight": 3
     },
     {
-      "word": "fetichismo de la mercancia",
+      "word": "intemperie compartida",
       "weight": 3
     },
     {
-      "word": "insistencia pulsional",
+      "word": "reconocimiento en la vulnerabilidad",
       "weight": 3
     },
     {
-      "word": "la repeticion como excitacion",
+      "word": "supervivencia sin victoria",
       "weight": 3
     },
     {
-      "word": "suspension del pensamiento",
-      "weight": 3
-    },
-    {
-      "word": "agotamiento corporal",
+      "word": "aceptacion",
       "weight": 2
     },
     {
-      "word": "compulsion",
+      "word": "interpelacion",
       "weight": 2
     },
     {
-      "word": "consumo",
+      "word": "persistencia",
       "weight": 2
     },
     {
-      "word": "desplazamiento del interes",
+      "word": "resignacion",
       "weight": 2
     },
     {
-      "word": "estandarizacion",
+      "word": "superacion",
       "weight": 2
     },
     {
-      "word": "origen industrial",
+      "word": "testimonio",
       "weight": 2
     },
     {
-      "word": "patentabilidad",
-      "weight": 2
-    },
-    {
-      "word": "serialidad",
-      "weight": 2
-    },
-    {
-      "word": "alemania",
+      "word": "batalla",
       "weight": 1
     },
     {
-      "word": "descubrimiento",
+      "word": "camino",
       "weight": 1
     },
     {
-      "word": "dolor de cabeza",
+      "word": "ira",
       "weight": 1
     },
     {
-      "word": "galletas",
+      "word": "rendirse",
       "weight": 1
     },
     {
-      "word": "informacion nutricional",
-      "weight": 1
-    },
-    {
-      "word": "masturbacion",
-      "weight": 1
-    },
-    {
-      "word": "paquete",
-      "weight": 1
-    },
-    {
-      "word": "poemas",
-      "weight": 1
-    },
-    {
-      "word": "polvos",
+      "word": "vida",
       "weight": 1
     }
   ]

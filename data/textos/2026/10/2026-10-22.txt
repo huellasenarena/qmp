@@ -1,0 +1,38 @@
+FECHA: 2026-10-22
+MY_POEM_TITLE: 
+POETA: José emilio pacheco
+POEM_TITLE: Alta traición
+BOOK_TITLE:
+
+# POEMA
+
+dime tu batalla
+y cómo la superaste
+(o por qué tú te rendiste,
+si sigues con vida)
+
+yo también he conocido
+la ira y resignación
+tú las aceptas sin petición
+y ya nos cruzamos en este camino
+
+# POEMA_CITADO
+
+No amo mi Patria. Su fulgor abstracto
+es inasible.
+Pero (aunque suene mal) daría la vida
+por diez lugares suyos, cierta gente,
+puertos, bosques de pinos, fortalezas,
+una ciudad deshecha, gris, monstruosa,
+varias figuras de su historia,
+montañas
+(y tres o cuatro ríos).
+
+# TEXTO
+
+Con un poema tan directo y corto no tengo mucho que decir; el autor habla sobre un amor que no tiene y una traición, dos abstracciones, antes de denunciar su país por su belleza abstracta; parece ser ironía.
+
+Pero no me da mucho. No es horrible, pero no me toca.
+
+# GUSTO
+2

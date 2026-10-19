@@ -1,5 +1,85 @@
 [
   {
+    "date": "2026-10-22",
+    "month": "2026-10",
+    "file": "textos/2026-10-22.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "dime tu batalla",
+    "analysis": {
+      "poet": "José emilio pacheco",
+      "poem_title": "Alta traición",
+      "poem_snippet": "",
+      "book_title": "",
+      "gusto": 2
+    },
+    "keywords": [
+      {
+        "word": "aceptacion de la violencia interna",
+        "weight": 3
+      },
+      {
+        "word": "comunidad de la derrota",
+        "weight": 3
+      },
+      {
+        "word": "intemperie compartida",
+        "weight": 3
+      },
+      {
+        "word": "reconocimiento en la vulnerabilidad",
+        "weight": 3
+      },
+      {
+        "word": "supervivencia sin victoria",
+        "weight": 3
+      },
+      {
+        "word": "aceptacion",
+        "weight": 2
+      },
+      {
+        "word": "interpelacion",
+        "weight": 2
+      },
+      {
+        "word": "persistencia",
+        "weight": 2
+      },
+      {
+        "word": "resignacion",
+        "weight": 2
+      },
+      {
+        "word": "superacion",
+        "weight": 2
+      },
+      {
+        "word": "testimonio",
+        "weight": 2
+      },
+      {
+        "word": "batalla",
+        "weight": 1
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      },
+      {
+        "word": "ira",
+        "weight": 1
+      },
+      {
+        "word": "rendirse",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-21",
     "month": "2026-10",
     "file": "textos/2026-10-21.txt",
