@@ -1,39 +1,55 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "month": "2026-10",
-  "file": "textos/2026-10-22.txt",
+  "file": "textos/2026-10-23.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "dime tu batalla",
+  "my_poem_snippet": "si tu familia es rica",
   "analysis": {
-    "poet": "José emilio pacheco",
-    "poem_title": "Alta traición",
+    "poet": "Idea Vilariño",
+    "poem_title": "Un Huésped",
     "poem_snippet": "",
-    "book_title": "",
+    "book_title": "Poemas de Amora",
     "gusto": 2
   },
   "keywords": [
     {
-      "word": "aceptacion de la violencia interna",
+      "word": "disculpa subordinada al capital",
       "weight": 3
     },
     {
-      "word": "comunidad de la derrota",
+      "word": "extractivismo epistemico",
       "weight": 3
     },
     {
-      "word": "intemperie compartida",
+      "word": "mercantilizacion del trato",
       "weight": 3
     },
     {
-      "word": "reconocimiento en la vulnerabilidad",
+      "word": "privilegio de clase",
       "weight": 3
     },
     {
-      "word": "supervivencia sin victoria",
+      "word": "valor de uso del otro",
       "weight": 3
     },
     {
-      "word": "aceptacion",
+      "word": "ajenidad",
+      "weight": 2
+    },
+    {
+      "word": "deferencia",
+      "weight": 2
+    },
+    {
+      "word": "distancia de clase",
+      "weight": 2
+    },
+    {
+      "word": "humillacion",
+      "weight": 2
+    },
+    {
+      "word": "instrumentalizacion",
       "weight": 2
     },
     {
@@ -41,39 +57,47 @@
       "weight": 2
     },
     {
-      "word": "persistencia",
+      "word": "sarcasmo",
       "weight": 2
     },
     {
-      "word": "resignacion",
+      "word": "violencia discursiva",
       "weight": 2
     },
     {
-      "word": "superacion",
-      "weight": 2
-    },
-    {
-      "word": "testimonio",
-      "weight": 2
-    },
-    {
-      "word": "batalla",
+      "word": "andes",
       "weight": 1
     },
     {
-      "word": "camino",
+      "word": "cerebro",
       "weight": 1
     },
     {
-      "word": "ira",
+      "word": "cliente",
       "weight": 1
     },
     {
-      "word": "rendirse",
+      "word": "comentario",
       "weight": 1
     },
     {
-      "word": "vida",
+      "word": "estudiar",
+      "weight": 1
+    },
+    {
+      "word": "extracto",
+      "weight": 1
+    },
+    {
+      "word": "familia",
+      "weight": 1
+    },
+    {
+      "word": "retiro",
+      "weight": 1
+    },
+    {
+      "word": "riqueza",
       "weight": 1
     }
   ]

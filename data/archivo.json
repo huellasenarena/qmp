@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-10-23",
+    "month": "2026-10",
+    "file": "textos/2026-10-23.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "si tu familia es rica",
+    "analysis": {
+      "poet": "Idea Vilariño",
+      "poem_title": "Un Huésped",
+      "poem_snippet": "",
+      "book_title": "Poemas de Amora",
+      "gusto": 2
+    },
+    "keywords": [
+      {
+        "word": "disculpa subordinada al capital",
+        "weight": 3
+      },
+      {
+        "word": "extractivismo epistemico",
+        "weight": 3
+      },
+      {
+        "word": "mercantilizacion del trato",
+        "weight": 3
+      },
+      {
+        "word": "privilegio de clase",
+        "weight": 3
+      },
+      {
+        "word": "valor de uso del otro",
+        "weight": 3
+      },
+      {
+        "word": "ajenidad",
+        "weight": 2
+      },
+      {
+        "word": "deferencia",
+        "weight": 2
+      },
+      {
+        "word": "distancia de clase",
+        "weight": 2
+      },
+      {
+        "word": "humillacion",
+        "weight": 2
+      },
+      {
+        "word": "instrumentalizacion",
+        "weight": 2
+      },
+      {
+        "word": "interpelacion",
+        "weight": 2
+      },
+      {
+        "word": "sarcasmo",
+        "weight": 2
+      },
+      {
+        "word": "violencia discursiva",
+        "weight": 2
+      },
+      {
+        "word": "andes",
+        "weight": 1
+      },
+      {
+        "word": "cerebro",
+        "weight": 1
+      },
+      {
+        "word": "cliente",
+        "weight": 1
+      },
+      {
+        "word": "comentario",
+        "weight": 1
+      },
+      {
+        "word": "estudiar",
+        "weight": 1
+      },
+      {
+        "word": "extracto",
+        "weight": 1
+      },
+      {
+        "word": "familia",
+        "weight": 1
+      },
+      {
+        "word": "retiro",
+        "weight": 1
+      },
+      {
+        "word": "riqueza",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-22",
     "month": "2026-10",
     "file": "textos/2026-10-22.txt",

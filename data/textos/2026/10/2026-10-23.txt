@@ -1,0 +1,50 @@
+FECHA: 2026-10-23
+MY_POEM_TITLE: 
+POETA: Idea Vilariño
+POEM_TITLE: Un Huésped
+BOOK_TITLE: Poemas de Amora
+
+# POEMA
+
+si tu familia es rica
+yo pido disculpa’
+y si tu estudiaras los ande’
+¿serías mi cliente?
+
+si no, no retiro
+mi comentario dicho
+sobre tu cerebro peqeuño
+de que nada extracto
+
+# POEMA_CITADO
+
+No sos mío
+no estás
+en mi vida
+a mi lado
+no comés en mi mesa
+ni reís ni cantás
+ni vivís para mí.
+Somos ajenos
+tú
+y yo misma
+y mi casa.
+Sos un extraño
+un huésped
+que no busca no quiere
+más que una cama
+a veces.
+Qué puedo hacer
+cedértela
+pero yo vivo sola.
+
+# TEXTO
+
+La voz poética parece proclamar su individualidad e independencia de otra persona, utilizando la metáfora de un huésped buscando una cama para mostrar la calidad efímera de esta, pero el poema no me da mucho...
+
+Estoy en una aventura de hallar los poemas que me dan algo; que me conmueven; que me tocan el espíritu.
+
+Este poema tiene una simplicidad que me interesa... pero no me ofrece gran cosa.
+
+# GUSTO
+2
