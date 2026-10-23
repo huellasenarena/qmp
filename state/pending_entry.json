@@ -1,91 +1,67 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "month": "2026-10",
-  "file": "textos/2026-10-23.txt",
+  "file": "textos/2026-10-24.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "si tu familia es rica",
+  "my_poem_snippet": "estos pantalones que mi madre me pidió que limpiara",
   "analysis": {
-    "poet": "Idea Vilariño",
-    "poem_title": "Un Huésped",
-    "poem_snippet": "",
-    "book_title": "Poemas de Amora",
+    "poet": "Borys Humenyuk",
+    "poem_title": "",
+    "poem_snippet": "Estas gaviotas que sobrevuelan el campo de batalla–",
+    "book_title": "",
     "gusto": 2
   },
   "keywords": [
     {
-      "word": "disculpa subordinada al capital",
+      "word": "descomposicion como compania",
       "weight": 3
     },
     {
-      "word": "extractivismo epistemico",
+      "word": "domesticidad contaminada",
       "weight": 3
     },
     {
-      "word": "mercantilizacion del trato",
+      "word": "fertilidad invertida",
       "weight": 3
     },
     {
-      "word": "privilegio de clase",
+      "word": "mandato filial mortifero",
       "weight": 3
     },
     {
-      "word": "valor de uso del otro",
+      "word": "memoria erosionada",
       "weight": 3
     },
     {
-      "word": "ajenidad",
+      "word": "arraigo forzado",
       "weight": 2
     },
     {
-      "word": "deferencia",
+      "word": "cuidado invertido",
       "weight": 2
     },
     {
-      "word": "distancia de clase",
+      "word": "erosion del hogar",
       "weight": 2
     },
     {
-      "word": "humillacion",
+      "word": "intimidad con lo residual",
       "weight": 2
     },
     {
-      "word": "instrumentalizacion",
+      "word": "normalizacion de la violencia",
       "weight": 2
     },
     {
-      "word": "interpelacion",
+      "word": "reintegracion terrenal",
       "weight": 2
     },
     {
-      "word": "sarcasmo",
-      "weight": 2
-    },
-    {
-      "word": "violencia discursiva",
-      "weight": 2
-    },
-    {
-      "word": "andes",
+      "word": "color",
       "weight": 1
     },
     {
-      "word": "cerebro",
-      "weight": 1
-    },
-    {
-      "word": "cliente",
-      "weight": 1
-    },
-    {
-      "word": "comentario",
-      "weight": 1
-    },
-    {
-      "word": "estudiar",
-      "weight": 1
-    },
-    {
-      "word": "extracto",
+      "word": "cosquillas",
       "weight": 1
     },
     {
@@ -93,11 +69,35 @@
       "weight": 1
     },
     {
-      "word": "retiro",
+      "word": "guerra",
       "weight": 1
     },
     {
-      "word": "riqueza",
+      "word": "gusanos",
+      "weight": 1
+    },
+    {
+      "word": "limpiar",
+      "weight": 1
+    },
+    {
+      "word": "madre",
+      "weight": 1
+    },
+    {
+      "word": "olor",
+      "weight": 1
+    },
+    {
+      "word": "pantalones",
+      "weight": 1
+    },
+    {
+      "word": "terra",
+      "weight": 1
+    },
+    {
+      "word": "vida",
       "weight": 1
     }
   ]

@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-10-24",
+    "month": "2026-10",
+    "file": "textos/2026-10-24.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "estos pantalones que mi madre me pidió que limpiara",
+    "analysis": {
+      "poet": "Borys Humenyuk",
+      "poem_title": "",
+      "poem_snippet": "Estas gaviotas que sobrevuelan el campo de batalla–",
+      "book_title": "",
+      "gusto": 2
+    },
+    "keywords": [
+      {
+        "word": "descomposicion como compania",
+        "weight": 3
+      },
+      {
+        "word": "domesticidad contaminada",
+        "weight": 3
+      },
+      {
+        "word": "fertilidad invertida",
+        "weight": 3
+      },
+      {
+        "word": "mandato filial mortifero",
+        "weight": 3
+      },
+      {
+        "word": "memoria erosionada",
+        "weight": 3
+      },
+      {
+        "word": "arraigo forzado",
+        "weight": 2
+      },
+      {
+        "word": "cuidado invertido",
+        "weight": 2
+      },
+      {
+        "word": "erosion del hogar",
+        "weight": 2
+      },
+      {
+        "word": "intimidad con lo residual",
+        "weight": 2
+      },
+      {
+        "word": "normalizacion de la violencia",
+        "weight": 2
+      },
+      {
+        "word": "reintegracion terrenal",
+        "weight": 2
+      },
+      {
+        "word": "color",
+        "weight": 1
+      },
+      {
+        "word": "cosquillas",
+        "weight": 1
+      },
+      {
+        "word": "familia",
+        "weight": 1
+      },
+      {
+        "word": "guerra",
+        "weight": 1
+      },
+      {
+        "word": "gusanos",
+        "weight": 1
+      },
+      {
+        "word": "limpiar",
+        "weight": 1
+      },
+      {
+        "word": "madre",
+        "weight": 1
+      },
+      {
+        "word": "olor",
+        "weight": 1
+      },
+      {
+        "word": "pantalones",
+        "weight": 1
+      },
+      {
+        "word": "terra",
+        "weight": 1
+      },
+      {
+        "word": "vida",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-10-23",
     "month": "2026-10",
     "file": "textos/2026-10-23.txt",
